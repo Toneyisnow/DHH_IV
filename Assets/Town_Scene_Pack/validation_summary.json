@@ -1,0 +1,12 @@
+{
+  "menus": 9,
+  "ui": 15,
+  "npc_characters": 5,
+  "npc_frames": 160,
+  "seagull_frames": 8,
+  "png_files": 73,
+  "all_references_exist": true,
+  "rgba_transparency_verified": true,
+  "javascript_syntax_checked": true,
+  "browser_interaction_test": "not completed: local page unavailable through browser tool"
+}

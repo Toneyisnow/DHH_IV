@@ -1,0 +1,97 @@
+{
+  "scale": 0.3333333333,
+  "items": [
+    {
+      "label": "中式宫殿",
+      "width": 183,
+      "originalWidth": 550,
+      "originalHeight": 500,
+      "atlasRect": [
+        0,
+        0,
+        183,
+        167
+      ],
+      "height": 167,
+      "file": "chinese_palace.png",
+      "alpha": 0
+    },
+    {
+      "label": "中式城门",
+      "width": 177,
+      "originalWidth": 530,
+      "originalHeight": 500,
+      "atlasRect": [
+        183,
+        0,
+        177,
+        167
+      ],
+      "height": 167,
+      "file": "chinese_walled_port.png",
+      "alpha": 0
+    },
+    {
+      "label": "中式宝塔",
+      "width": 152,
+      "originalWidth": 456,
+      "originalHeight": 500,
+      "atlasRect": [
+        360,
+        0,
+        152,
+        167
+      ],
+      "height": 167,
+      "file": "chinese_pagoda_port.png",
+      "alpha": 0
+    },
+    {
+      "label": "朝鲜门楼",
+      "width": 183,
+      "originalWidth": 550,
+      "originalHeight": 524,
+      "atlasRect": [
+        0,
+        167,
+        183,
+        175
+      ],
+      "height": 175,
+      "file": "korean_port.png",
+      "alpha": 0
+    },
+    {
+      "label": "日本塔寺",
+      "width": 177,
+      "originalWidth": 530,
+      "originalHeight": 524,
+      "atlasRect": [
+        183,
+        167,
+        177,
+        175
+      ],
+      "height": 175,
+      "file": "japanese_pagoda_port.png",
+      "alpha": 0
+    },
+    {
+      "label": "日本城郭",
+      "width": 152,
+      "originalWidth": 456,
+      "originalHeight": 524,
+      "atlasRect": [
+        360,
+        167,
+        152,
+        175
+      ],
+      "height": 175,
+      "file": "japanese_castle.png",
+      "alpha": 0
+    }
+  ],
+  "method": "Built-in image_gen simplified repaint, then atlas slicing and one-third export",
+  "rounding": "nearest integer pixel"
+}

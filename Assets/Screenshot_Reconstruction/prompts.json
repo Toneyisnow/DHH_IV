@@ -1,0 +1,58 @@
+{
+  "method": "built-in image_gen; screenshot guided reconstruction, not original asset extraction",
+  "reference": "../../Screenshots/Screenshot 2026-10-10 173219.png",
+  "prompts": [
+    {
+      "file": "01_outer_frame.png",
+      "prompt": "Create only a thin antique olive bronze ornamental rectangular screen border matching outermost border of supplied screenshot. Wide 16:9 format. Small scrollwork and carved rosettes along thin rails, especially corners and center top. All ornament restricted to outermost 3 percent of canvas on all sides. Absolutely empty fully alpha transparent center rectangle over remaining 94 percent width and height: NO checkerboard pattern, NO residue, NO texture or decoration in middle, no scene, no logo, no other UI. One isolated complete rectangular frame. Match source dark subtle thin border, no redesign."
+    },
+    {
+      "file": "02_logo.png",
+      "prompt": "Extract and reconstruct ONLY the upper left game emblem. Antique bronze round navigation instrument behind exactly the gold Chinese lettering 大航海時代, large dark red IV to its right, small HD-2D on a dark strip underneath. Preserve original reference emblem design and text arrangement. No surrounding game frame or scenery. One centered isolated logo on genuine transparent alpha. Do not add lettering."
+    },
+    {
+      "file": "03_portrait_frame.png",
+      "prompt": "Reconstruct ONLY the lower left rectangular portrait UI frame, without the woman. Tall rectangle approximately 154:185 width:height, narrow aged bronze beveled outer edges and ornate dark gold curled filigree in all four interior corners. Center opening fully alpha transparent. Match screenshot closely. No portrait, no cream fill, no scene, no text. One complete isolated frame."
+    },
+    {
+      "file": "04_portrait.png",
+      "prompt": "Reconstruct and extract ONLY the lower left woman's bust portrait. Preserve her face, short straight black bob with blunt bangs, warm brown eyes, black Mandarin collar bodice with fine gold botanical embroidery, a large pink peony ornament at neck, red draped cloth over viewer-left shoulder and white translucent sleeve on viewer-right. Bust ending near waist as reference, match pose and realistic hand-painted classical game illustration style. Complete unobstructed hair silhouette. True alpha transparent background. No frame or text. Do not invent a full body."
+    },
+    {
+      "file": "05_dialogue_panel.png",
+      "prompt": "Reconstruct ONLY the bottom cream dialogue panel as one blank UI asset. Wide rectangular 425:104 aspect ratio, thin brown bronze beveled border, warm ivory parchment interior, small ornate gold filigree in four corners. Match reference. Remove ALL name and dialogue text, portrait, compass roundel and red triangle. Genuine transparent outside rectangle, opaque parchment inside. Flat frontal panel, no extra ornaments."
+    },
+    {
+      "file": "06_compass_sheet.png",
+      "prompt": "Generate a plausible reconstructed compass animation spritesheet from the tiny round gold compass at bottom center of reference screenshot. One spritesheet only, 4 columns by 2 rows, exactly eight circular icons, equal square cells, aligned centered with generous equal transparent padding, icons equal size. Fixed aged brass circular rim and cream dial in each icon, only dark thin needle turns clockwise 45 degrees per cell. No labels or cell borders, actual alpha transparency. Crisp classic game UI illustration. This is a reconstructed frame sequence, preserve source understated compass motif."
+    },
+    {
+      "file": "07_ground_texture.png",
+      "prompt": "Reconstruct a single tileable ground material texture matching the sunlit port roadway in reference: worn pale beige limestone rectangular cobbles and sandy ochre grout, irregular small stones, lightly distressed. Orthographic top down material, seamless edges, evenly lit diffuse albedo, no cast shadows, no people, no plants, no buildings, no UI. One square full bleed texture."
+    },
+    {
+      "file": "08_building.png",
+      "prompt": "Reconstruct ONLY the large two story Southeast Asian port building at center right of reference. Preserve steep straw thatch gabled roof with decorative crossed wooden finials, carved dark wooden triangular pediment, dark timber upper story railings, ochre plaster and wooden posts, ground-floor shaded open porch with small thatched awning. Same slightly elevated three-quarter game camera, entire building including roof tips and base visible. Remove all people, palms, surrounding ground, shadows beyond footing and UI. True alpha transparent background. Match warm detailed HD-2D painted miniature style."
+    },
+    {
+      "file": "09_walk_sheet.png",
+      "prompt": "Generate a reconstructed game character walking sprite sheet based on the small black-haired female playable character at center of reference screenshot, red and white outfit, black hair, tiny sheathed sword at hip. HD-2D tiny pixel sprite appearance with dark outlines. Exactly 4 columns x 4 rows on transparent alpha, equal square grid cells, one complete full body sprite per cell, same size and same foot anchor. Rows: facing down toward viewer, facing left, facing right, facing up away from viewer. Columns: left foot forward, passing pose, right foot forward, passing pose. Distinct leg and arm changes within each row, consistent same character. No text, no frame lines, no shadow, no scenery, no UI. Plausible reconstruction not claimed as recovered original frames."
+    },
+    {
+      "file": "10_port_background.png",
+      "prompt": "Reconstruct the harbor scene behind the UI as a complete wide 16:9 clean background plate. Preserve reference geography, horizon, ships left and right, tropical palms, Southeast Asian thatched timber buildings especially main building on right, central sunlit cobbled sandy road and wood piers, miniature HD-2D look and atmospheric soft distance. Remove ALL game frame, logo, portrait, dialogue panel, compass and ALL characters. Fill the bottom and upper left formerly hidden by UI with plausible continuous scenery. No text. Faithful screenshot background restoration."
+    },
+    {
+      "file": "11_thatch_texture.png",
+      "prompt": "Generate a single square seamless repeatable material texture based on the golden straw roof of the main building in supplied game screenshot. Orthographic flat front-on surface, densely layered bundles of dry straw in horizontal courses, fine vertical fibers, warm ochre pale gold with subtle dark gaps. Game painted realism matching reference. Even lighting, no roof silhouette, no beams, no architecture, no perspective, no cast shadows, no text. Fill image edge to edge. Seamless game diffuse texture."
+    },
+    {
+      "file": "12_timber_texture.png",
+      "prompt": "Generate one square seamless repeatable game material texture matching weathered dark honey-brown timber boards of main port building in supplied screenshot. Vertical old wooden planks, varied narrow widths, rich but subtle wood grain, dark thin joints, worn warm edges. Orthographic flat surface diffuse color, even lighting, no directional cast shadows, no architecture or window shapes, no nails arranged into distracting patterns, no text. Full bleed, seamless edges. Match painted miniature classic game aesthetic of reference, subdued warm brown."
+    },
+    {
+      "file": "13_next_indicator.png",
+      "prompt": "Extract/reconstruct the small red downward pointing triangle dialogue advance indicator from bottom right inside dialogue box in supplied screenshot. One simple isolated inverted equilateral triangle, muted crimson fill, thin ivory light border and thin dark brown outer keyline, subtle bevel as reference. Centered on genuinely alpha transparent background with generous padding. No other elements, no letters, no drop shadow, no scene or panel. This is a tiny classic game UI icon, keep very simple."
+    }
+  ]
+}

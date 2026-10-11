@@ -1,0 +1,140 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "file": "01_开场/01_globe.png",
+      "ref": "opening_2.5s.png",
+      "alpha": true,
+      "prompt": "Reconstruct only the antique parchment world GLOBE behind the logo in the reference as a clean standalone game asset. Complete circular sphere fully visible centered with 8% transparent padding, sepia engraved continents latitude longitude fine sailing ships, warm parchment, subtle shaded spherical curvature, matching the reference. Remove ALL title, compass emblem, text overlays, light streaks and copyright. Reconstruct hidden map. No pedestal. Transparent outside sphere. 1536 square.",
+      "source": "C:\\Users\\charl\\.codex\\generated_images\\01a128bd-4aeb-7090-ba3a-baea1589a9fa\\exec-1253e827-0422-4bbf-b88c-18133b6cf3bb.png"
+    },
+    {
+      "file": "01_开场/02_world_map_texture.png",
+      "ref": "opening_2.5s.png",
+      "alpha": false,
+      "prompt": "Create a flat 2:1 equirectangular antique world map texture for the parchment globe in reference. Entire world continents coastlines and fine latitude longitude engraving, tiny sailing ship illustrations, sepia ink on aged ivory parchment. Flat evenly lit rectangular texture edge to edge, no sphere, no logo, no UI, no lighting, no torn edges, no border. Longitudinal edges should visually tile. Full unseen world is reconstructed.",
+      "source": "C:\\Users\\charl\\.codex\\generated_images\\01a128bd-4aeb-7090-ba3a-baea1589a9fa\\exec-11821e63-9347-4989-ba82-2efbf850a30c.png"
+    },
+    {
+      "file": "02_人物选择/01_clean_table_background.png",
+      "ref": "selection_5.5s.png",
+      "alpha": false,
+      "prompt": "Edit reference into clean 16:9 game character-selection background plate. Preserve exact camera perspective, aged world map across upper half, dark wooden tabletop lower half and warm antique palette. REMOVE all seven portrait cards, all frames, hand cursor, top left logo, candle and holder top right, blurry foreground navigation instrument. Inpaint complete wood and paper behind them. No text UI, no portraits, no objects added. Soft warm ambient illumination; avoid strong baked candle halo.",
+      "source": "C:\\Users\\charl\\.codex\\generated_images\\01a128bd-4aeb-7090-ba3a-baea1589a9fa\\exec-5644757a-6f7e-44f9-9503-6d43fa43ec2e.png"
+    },
+    {
+      "file": "02_人物选择/02_map_paper.png",
+      "ref": "selection_5.5s.png",
+      "alpha": true,
+      "prompt": "Reconstruct the aged WORLD MAP PAPER from the reference as a standalone isolated game layer. Single landscape rectangular ancient parchment sheet with slightly worn irregular edges and sepia world map coastal engraving, nautical lines. Straight-on top-down flat unwarped view so game can apply its own perspective. No table, no cards, no candle, no coins, no logo. Complete all obscured regions. Transparent outside paper, generous padding.",
+      "source": "C:\\Users\\charl\\.codex\\generated_images\\01a128bd-4aeb-7090-ba3a-baea1589a9fa\\exec-539e99b2-476b-4d77-8df8-3c1cfd2713fb.png"
+    },
+    {
+      "file": "02_人物选择/03_candle_holder.png",
+      "ref": "selection_5.5s.png",
+      "alpha": true,
+      "prompt": "Extract and reconstruct ONLY the upper-right candle and brass holder from reference, entire object visible with no cropping. Short ivory pillar candle in ornate dark antique brass saucer pedestal holder, viewed from same elevated oblique tabletop camera. UNLIT wick, no flame, no light halo, no tabletop, no map, no portrait cards. Centered standalone transparent game prop with 10% padding. Match realistic warmly lit old-world style.",
+      "source": "C:\\Users\\charl\\.codex\\generated_images\\01a128bd-4aeb-7090-ba3a-baea1589a9fa\\exec-7874e626-79c3-4e63-9bde-6bee3075c5b9.png"
+    },
+    {
+      "file": "02_人物选择/04_flame_sheet.png",
+      "ref": "selection_5.5s.png",
+      "alpha": true,
+      "prompt": "Game sprite sheet of the small warm candle flame for reference scene. ONE flame animation, eight sequential frames in exact 4 columns by 2 rows equal-cell grid, transparent background. Each cell contains ONLY one golden-orange candle flame with white-yellow core and subtle glow, no candle/wick/holder. Consistent size and bottom-center pivot across cells, subtle natural swaying between frames, plenty padding so glow never touches cell borders, no lines or labels.",
+      "source": "C:\\Users\\charl\\.codex\\generated_images\\01a128bd-4aeb-7090-ba3a-baea1589a9fa\\exec-61791784-fbf5-475d-a2df-5ba1843164e8.png"
+    },
+    {
+      "file": "02_人物选择/05_empty_frame.png",
+      "ref": "selection_5.5s.png",
+      "alpha": true,
+      "prompt": "Reconstruct ONE empty portrait frame matching seven cards in reference. Straight-on rectangular near-square portrait opening (inner width:height 0.86), dark aged bronze silver metal, thin raised double rim and ornate delicate scrollwork finials at top and bottom. Game UI asset, fully visible centered. BOTH center aperture and outside must be transparent. NO portrait, NO paper, NO glow, NO cursor, NO background. Do not draw a checkerboard. Frame centered with generous padding.",
+      "source": "C:\\Users\\charl\\.codex\\generated_images\\01a128bd-4aeb-7090-ba3a-baea1589a9fa\\exec-183b02b3-e7ce-49e6-b6bb-07071e636397.png"
+    },
+    {
+      "file": "02_人物选择/06_foreground_instrument.png",
+      "ref": "selection_5.5s.png",
+      "alpha": true,
+      "prompt": "Reconstruct only the foreground nautical instrument partly visible near lower-right in reference: antique brass navigation sextant / quadrant with curved graduated arc and crossing sighting arms. Single complete isolated object viewed obliquely from above, gently soft focus matching foreground depth, dark bronze muted highlights, fully visible with padding on transparent background. No tabletop, map, frames, people, text UI.",
+      "source": "C:\\Users\\charl\\.codex\\generated_images\\01a128bd-4aeb-7090-ba3a-baea1589a9fa\\exec-16dd10a5-22b7-4f4e-987c-70f41842386d.png"
+    },
+    {
+      "file": "02_人物选择/P01_portrait.png",
+      "refAbsolute": "C:/Users/charl/AppData/Local/Temp/codex-clipboard-06323f79-27b9-4583-9d2f-300c7e9b084e.png",
+      "alpha": true,
+      "prompt": "Use case: background-extraction and identity-preserve. User supplied collage is the SOURCE to extract from, not loose inspiration. Output ONLY the character in bottom row, first and only tile: black long-haired young man with green and pale yellow patterned East Asian robe and purple ties. Preserve that exact illustrated character face, facial proportions, hairstyle, clothing, expression, pose, colors and original painted style. Remove white background, search result labels, website caption, all neighboring tiles and all UI. Isolate the character from head down to the lowest torso area visible in its tile; reconstruct only small clipped edges as needed. Do not redesign, beautify, change costume, add body parts or invent accessories. Character centered and fully contained with 8% transparent padding in portrait canvas; smooth genuinely transparent outside silhouette. No frame, no glow, no text, no checkerboard. High fidelity to reference is more important than extra invented detail.",
+      "source": "C:\\Users\\charl\\.codex\\generated_images\\01a128bd-4aeb-7090-ba3a-baea1589a9fa\\exec-3887e1c9-8b67-4aae-99ac-bb8a64c86d8d.png"
+    },
+    {
+      "file": "02_人物选择/P02_portrait.png",
+      "refAbsolute": "C:/Users/charl/AppData/Local/Temp/codex-clipboard-06323f79-27b9-4583-9d2f-300c7e9b084e.png",
+      "alpha": true,
+      "prompt": "Use case: background-extraction and identity-preserve. User supplied collage is the SOURCE to extract from, not loose inspiration. Output ONLY the character in top row, sixth (far right) tile: black long-haired man with gold comb ornament and white and blue richly embroidered clothing. Preserve that exact illustrated character face, facial proportions, hairstyle, clothing, expression, pose, colors and original painted style. Remove white background, search result labels, website caption, all neighboring tiles and all UI. Isolate the character from head down to the lowest torso area visible in its tile; reconstruct only small clipped edges as needed. Do not redesign, beautify, change costume, add body parts or invent accessories. Character centered and fully contained with 8% transparent padding in portrait canvas; smooth genuinely transparent outside silhouette. No frame, no glow, no text, no checkerboard. High fidelity to reference is more important than extra invented detail.",
+      "source": "C:\\Users\\charl\\.codex\\generated_images\\01a128bd-4aeb-7090-ba3a-baea1589a9fa\\exec-7c9544e8-7740-40d1-abbf-99803239fb0f.png",
+      "repair": "Remove ALL background around this character. Keep the character's exact pixels, face, pose, clothing and colors unchanged as far as possible. Delete the dark gray/brown gradient and halo completely, including between arms and torso and below torso. Output PNG with genuinely transparent alpha=0 outside the character silhouette. NO new background, NO glow, NO shadow, NO vignette. Preserve hair detail. This is background removal only."
+    },
+    {
+      "file": "02_人物选择/P03_portrait.png",
+      "refAbsolute": "C:/Users/charl/AppData/Local/Temp/codex-clipboard-06323f79-27b9-4583-9d2f-300c7e9b084e.png",
+      "alpha": true,
+      "prompt": "Use case: background-extraction and identity-preserve. User supplied collage is the SOURCE to extract from, not loose inspiration. Output ONLY the character in top row, fourth tile: long blond-haired tan-skinned man with two narrow braids and dark garment with multicolored geometric woven bands. Preserve that exact illustrated character face, facial proportions, hairstyle, clothing, expression, pose, colors and original painted style. Remove white background, search result labels, website caption, all neighboring tiles and all UI. Isolate the character from head down to the lowest torso area visible in its tile; reconstruct only small clipped edges as needed. Do not redesign, beautify, change costume, add body parts or invent accessories. Character centered and fully contained with 8% transparent padding in portrait canvas; smooth genuinely transparent outside silhouette. No frame, no glow, no text, no checkerboard. High fidelity to reference is more important than extra invented detail.",
+      "source": "C:\\Users\\charl\\.codex\\generated_images\\01a128bd-4aeb-7090-ba3a-baea1589a9fa\\exec-90f0f583-2681-49bd-8bcb-e49a3e41f3d0.png"
+    },
+    {
+      "file": "02_人物选择/P04_portrait.png",
+      "refAbsolute": "C:/Users/charl/AppData/Local/Temp/codex-clipboard-06323f79-27b9-4583-9d2f-300c7e9b084e.png",
+      "alpha": true,
+      "prompt": "Use case: background-extraction and identity-preserve. User supplied collage is the SOURCE to extract from, not loose inspiration. Output ONLY the character in top row, first tile: short sandy blond-haired young man wearing white high ruffled neck and red-and-gold Renaissance tunic. Preserve that exact illustrated character face, facial proportions, hairstyle, clothing, expression, pose, colors and original painted style. Remove white background, search result labels, website caption, all neighboring tiles and all UI. Isolate the character from head down to the lowest torso area visible in its tile; reconstruct only small clipped edges as needed. Do not redesign, beautify, change costume, add body parts or invent accessories. Character centered and fully contained with 8% transparent padding in portrait canvas; smooth genuinely transparent outside silhouette. No frame, no glow, no text, no checkerboard. High fidelity to reference is more important than extra invented detail.",
+      "source": "C:\\Users\\charl\\.codex\\generated_images\\01a128bd-4aeb-7090-ba3a-baea1589a9fa\\exec-63460634-2751-49cf-8fc1-eb5925970abc.png",
+      "repair": "Remove ALL background around this character. Keep the character's exact pixels, face, pose, clothing and colors unchanged as far as possible. Delete the dark gray/brown gradient and halo completely, including between arms and torso and below torso. Output PNG with genuinely transparent alpha=0 outside the character silhouette. NO new background, NO glow, NO shadow, NO vignette. Preserve hair detail. This is background removal only."
+    },
+    {
+      "file": "02_人物选择/P05_portrait.png",
+      "refAbsolute": "C:/Users/charl/AppData/Local/Temp/codex-clipboard-06323f79-27b9-4583-9d2f-300c7e9b084e.png",
+      "alpha": true,
+      "prompt": "Use case: background-extraction and identity-preserve. User supplied collage is the SOURCE to extract from, not loose inspiration. Output ONLY the character in top row, second tile: short curly honey-blond-haired woman with green feather cap and green dress with white lace neckline and pearls. Preserve that exact illustrated character face, facial proportions, hairstyle, clothing, expression, pose, colors and original painted style. Remove white background, search result labels, website caption, all neighboring tiles and all UI. Isolate the character from head down to the lowest torso area visible in its tile; reconstruct only small clipped edges as needed. Do not redesign, beautify, change costume, add body parts or invent accessories. Character centered and fully contained with 8% transparent padding in portrait canvas; smooth genuinely transparent outside silhouette. No frame, no glow, no text, no checkerboard. High fidelity to reference is more important than extra invented detail.",
+      "source": "C:\\Users\\charl\\.codex\\generated_images\\01a128bd-4aeb-7090-ba3a-baea1589a9fa\\exec-592b0a96-d008-4ac1-b478-2f1180b1bfee.png"
+    },
+    {
+      "file": "02_人物选择/P06_portrait.png",
+      "refAbsolute": "C:/Users/charl/AppData/Local/Temp/codex-clipboard-06323f79-27b9-4583-9d2f-300c7e9b084e.png",
+      "alpha": true,
+      "prompt": "Use case: background-extraction and identity-preserve. User supplied collage is the SOURCE to extract from, not loose inspiration. Output ONLY the character in top row, fifth tile: long silver-white-haired stern man with white and gold high-collared coat and navy embroidered chest. Preserve that exact illustrated character face, facial proportions, hairstyle, clothing, expression, pose, colors and original painted style. Remove white background, search result labels, website caption, all neighboring tiles and all UI. Isolate the character from head down to the lowest torso area visible in its tile; reconstruct only small clipped edges as needed. Do not redesign, beautify, change costume, add body parts or invent accessories. Character centered and fully contained with 8% transparent padding in portrait canvas; smooth genuinely transparent outside silhouette. No frame, no glow, no text, no checkerboard. High fidelity to reference is more important than extra invented detail.",
+      "source": "C:\\Users\\charl\\.codex\\generated_images\\01a128bd-4aeb-7090-ba3a-baea1589a9fa\\exec-71aebcaa-be63-4955-b7eb-3f414f3b6957.png"
+    },
+    {
+      "file": "02_人物选择/P07_portrait.png",
+      "refAbsolute": "C:/Users/charl/AppData/Local/Temp/codex-clipboard-06323f79-27b9-4583-9d2f-300c7e9b084e.png",
+      "alpha": true,
+      "prompt": "Use case: background-extraction and identity-preserve. User supplied collage is the SOURCE to extract from, not loose inspiration. Output ONLY the character in top row, third tile: black straight blunt-bang-haired woman with red shawl, black-and-gold floral embroidered vest, pink flower and white sleeves. Preserve that exact illustrated character face, facial proportions, hairstyle, clothing, expression, pose, colors and original painted style. Remove white background, search result labels, website caption, all neighboring tiles and all UI. Isolate the character from head down to the lowest torso area visible in its tile; reconstruct only small clipped edges as needed. Do not redesign, beautify, change costume, add body parts or invent accessories. Character centered and fully contained with 8% transparent padding in portrait canvas; smooth genuinely transparent outside silhouette. No frame, no glow, no text, no checkerboard. High fidelity to reference is more important than extra invented detail.",
+      "source": "C:\\Users\\charl\\.codex\\generated_images\\01a128bd-4aeb-7090-ba3a-baea1589a9fa\\exec-e43ac844-feb7-446d-aae4-c2afeb973889.png",
+      "repair": "Remove ALL background around this character. Keep the character's exact pixels, face, pose, clothing and colors unchanged as far as possible. Delete the dark gray/brown gradient and halo completely, including between arms and torso and below torso. Output PNG with genuinely transparent alpha=0 outside the character silhouette. NO new background, NO glow, NO shadow, NO vignette. Preserve hair detail. This is background removal only."
+    },
+    {
+      "file": "01_开场/06_light_ribbon.png",
+      "ref": "opening_2.5s.png",
+      "alpha": true,
+      "prompt": "Standalone transparent game VFX layer: one flowing white-gold luminous ribbon sweeping left to right in broad gentle S curve and looping up at right, thin bright core with broad very soft golden halo and sparse tiny sparkling dust trail. Matches golden streak from antique nautical title scene reference. No title, no globe, no text, no solid background. Wide landscape composition, whole ribbon contained with generous transparent padding.",
+      "source": "C:\\Users\\charl\\.codex\\generated_images\\01a128bd-4aeb-7090-ba3a-baea1589a9fa\\exec-8c3d770c-da06-4df7-82c1-471dab0e5c7e.png"
+    },
+    {
+      "file": "01_开场/07_sparkle.png",
+      "alpha": true,
+      "prompt": "Single tiny four-point warm white-gold sparkle game particle texture, bright small core, tapered delicate rays, soft radial golden halo fading to real transparency. Centered square with generous empty transparent padding. ONE star only, no text, no background.",
+      "source": "C:\\Users\\charl\\.codex\\generated_images\\01a128bd-4aeb-7090-ba3a-baea1589a9fa\\exec-7a7d920f-12ed-4def-9261-317382f9011e.png"
+    },
+    {
+      "file": "02_人物选择/07_wood_texture.png",
+      "ref": "selection_5.5s.png",
+      "alpha": false,
+      "prompt": "Flat evenly lit dark warm brown aged wooden tabletop texture matching reference lower tabletop, horizontal broad wooden planks with fine grain and subtle wear, edge-to-edge seamless-intended material texture. No map, cards, candle, objects, perspective, shadow, text, vignette, or UI. Straight top-down texture.",
+      "source": "C:\\Users\\charl\\.codex\\generated_images\\01a128bd-4aeb-7090-ba3a-baea1589a9fa\\exec-727fdd4a-91c2-4096-93b0-b434e459833b.png"
+    },
+    {
+      "file": "02_人物选择/08_frame_hover.png",
+      "refAbsolute": "D:/PlayGround/大航海时代复刻/Opening_素材/02_人物选择/05_empty_frame.png",
+      "alpha": true,
+      "prompt": "Create highlighted hover STATE of this exact empty game portrait frame. Preserve identical frame shape, dimensions, ornamental scrollwork, placement and transparent center. Add a narrow luminous pale gold outline following all OUTER silhouette scrolls plus soft golden bloom, matching selection menu hover. Preserve metal details. Outside AND center stay genuinely transparent. Do not change geometry or add any portrait. Same canvas and frame alignment as source.",
+      "source": "C:\\Users\\charl\\.codex\\generated_images\\01a128bd-4aeb-7090-ba3a-baea1589a9fa\\exec-00005885-de52-4ac6-812f-5f04cc8d5e10.png"
+    }
+  ]
+}

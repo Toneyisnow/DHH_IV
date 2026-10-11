@@ -1,0 +1,608 @@
+{
+  "menu_count": 9,
+  "npc_count": 5,
+  "npc_frame_count": 160,
+  "bird_frame_count": 8,
+  "images": [
+    {
+      "file": "generated/hut_left.png",
+      "size": [
+        1372,
+        1146
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.4903
+    },
+    {
+      "file": "generated/hut_right.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparent_fraction": 0.4706
+    },
+    {
+      "file": "generated/market_cart.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.6054
+    },
+    {
+      "file": "generated/market_stall.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparent_fraction": 0.5778
+    },
+    {
+      "file": "generated/menu_buttons.png",
+      "size": [
+        1428,
+        1101
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.6614
+    },
+    {
+      "file": "generated/npc_beige_laborer.png",
+      "size": [
+        887,
+        1774
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.6804
+    },
+    {
+      "file": "generated/npc_blue_worker.png",
+      "size": [
+        887,
+        1774
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.6953
+    },
+    {
+      "file": "generated/npc_brown_townsfolk.png",
+      "size": [
+        887,
+        1774
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.6844
+    },
+    {
+      "file": "generated/npc_green_cart_vendor.png",
+      "size": [
+        887,
+        1774
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.729
+    },
+    {
+      "file": "generated/npc_purple_nw_fix.png",
+      "size": [
+        2172,
+        724
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.741
+    },
+    {
+      "file": "generated/npc_purple_townsfolk.png",
+      "size": [
+        887,
+        1774
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.7197
+    },
+    {
+      "file": "generated/palm_foreground.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparent_fraction": 0.5826
+    },
+    {
+      "file": "generated/palm_mid.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparent_fraction": 0.6757
+    },
+    {
+      "file": "generated/scene_clean.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "transparent_fraction": 0.0
+    },
+    {
+      "file": "generated/seagull_flight.png",
+      "size": [
+        1774,
+        887
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.766
+    },
+    {
+      "file": "generated/ship_far.png",
+      "size": [
+        1363,
+        1154
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.4785
+    },
+    {
+      "file": "generated/ui_frame.png",
+      "size": [
+        1561,
+        1007
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.8653
+    },
+    {
+      "file": "generated/ui_sidebar.png",
+      "size": [
+        1214,
+        1295
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.3745
+    },
+    {
+      "file": "generated/ui_trade.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparent_fraction": 0.2807
+    },
+    {
+      "file": "generated/ui_trade_v2.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparent_fraction": 0.3891
+    },
+    {
+      "file": "ui/cancel_button.png",
+      "size": [
+        388,
+        114
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparent_fraction": 0.013
+    },
+    {
+      "file": "ui/close_button.png",
+      "size": [
+        104,
+        102
+      ],
+      "alpha_range": [
+        0,
+        253
+      ],
+      "transparent_fraction": 0.0372
+    },
+    {
+      "file": "ui/confirm_button.png",
+      "size": [
+        388,
+        114
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparent_fraction": 0.0184
+    },
+    {
+      "file": "ui/data_bar_black.png",
+      "size": [
+        493,
+        104
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.1049
+    },
+    {
+      "file": "ui/data_bar_black_alt.png",
+      "size": [
+        494,
+        104
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.1032
+    },
+    {
+      "file": "ui/dialog_shell.png",
+      "size": [
+        1169,
+        698
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparent_fraction": 0.0048
+    },
+    {
+      "file": "ui/function_button.png",
+      "size": [
+        645,
+        119
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.0691
+    },
+    {
+      "file": "ui/label_bar.png",
+      "size": [
+        623,
+        108
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.1449
+    },
+    {
+      "file": "ui/number_input.png",
+      "size": [
+        368,
+        105
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparent_fraction": 0.0168
+    },
+    {
+      "file": "ui/product_row.png",
+      "size": [
+        638,
+        122
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.1859
+    },
+    {
+      "file": "ui/product_row_alt.png",
+      "size": [
+        638,
+        124
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.1691
+    },
+    {
+      "file": "ui/progress_green.png",
+      "size": [
+        651,
+        97
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.1388
+    },
+    {
+      "file": "ui/progress_track.png",
+      "size": [
+        653,
+        95
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.1055
+    },
+    {
+      "file": "ui/sidebar_background.png",
+      "size": [
+        375,
+        1273
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.0644
+    },
+    {
+      "file": "ui/town_frame.png",
+      "size": [
+        1188,
+        774
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.8654
+    },
+    {
+      "file": "menus/dock.png",
+      "size": [
+        309,
+        354
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.4477
+    },
+    {
+      "file": "menus/exchange.png",
+      "size": [
+        338,
+        326
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.4342
+    },
+    {
+      "file": "menus/gate.png",
+      "size": [
+        234,
+        332
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.2609
+    },
+    {
+      "file": "menus/guild.png",
+      "size": [
+        267,
+        317
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.2856
+    },
+    {
+      "file": "menus/inn.png",
+      "size": [
+        288,
+        312
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.2885
+    },
+    {
+      "file": "menus/palace.png",
+      "size": [
+        215,
+        332
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.3092
+    },
+    {
+      "file": "menus/plaza.png",
+      "size": [
+        371,
+        271
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.3593
+    },
+    {
+      "file": "menus/shipyard.png",
+      "size": [
+        318,
+        367
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.5803
+    },
+    {
+      "file": "menus/tavern.png",
+      "size": [
+        285,
+        294
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.3861
+    },
+    {
+      "file": "npc/npc_beige_laborer.png",
+      "size": [
+        512,
+        1536
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.591
+    },
+    {
+      "file": "npc/npc_blue_worker.png",
+      "size": [
+        512,
+        1536
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.5713
+    },
+    {
+      "file": "npc/npc_brown_townsfolk.png",
+      "size": [
+        512,
+        1536
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.5774
+    },
+    {
+      "file": "npc/npc_green_cart_vendor.png",
+      "size": [
+        512,
+        1536
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.5838
+    },
+    {
+      "file": "npc/npc_purple_townsfolk.png",
+      "size": [
+        512,
+        1536
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.5928
+    },
+    {
+      "file": "birds/seagull_atlas.png",
+      "size": [
+        1024,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.8548
+    }
+  ]
+}

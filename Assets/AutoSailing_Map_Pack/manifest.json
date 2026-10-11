@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "reference": {
+    "file": "08_reference/screenshot.png",
+    "width": 729,
+    "height": 406
+  },
+  "method": "Built-in image_gen reference reconstruction; deterministic line effects. Not original game asset extraction.",
+  "layerOrder": [
+    "map",
+    "normal routes",
+    "selected route",
+    "currents",
+    "port selection",
+    "cities",
+    "ships",
+    "instrument frame",
+    "UI"
+  ],
+  "ships": {
+    "types": [
+      "square",
+      "lateen",
+      "junk"
+    ],
+    "directions": [
+      "N",
+      "NE",
+      "E",
+      "SE",
+      "S",
+      "SW",
+      "W",
+      "NW"
+    ],
+    "note": "Individual PNGs use corrected direction names; original lateen atlas broadside columns are reversed. Angles are illustrative, not exact 3D renders."
+  },
+  "currents": {
+    "sheet": "07_currents/current_sheet.png",
+    "frameWidth": 512,
+    "frameHeight": 256,
+    "columns": 8,
+    "rows": 4,
+    "frameCount": 32,
+    "fps": 16,
+    "loop": true,
+    "durationSeconds": 2,
+    "animatedSvg": "07_currents/current_animated.svg"
+  },
+  "regions": "atlas_regions.json",
+  "limitations": [
+    "Terrain layout and bathymetry are decorative, not a geospatial dataset.",
+    "Hidden content and unseen ship headings were synthesized.",
+    "Generated frames differ from original pixels.",
+    "Sprite anchor values in atlas_regions.json are initial suggestions and may need engine-specific alignment."
+  ]
+}

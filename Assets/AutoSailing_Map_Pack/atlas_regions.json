@@ -1,0 +1,506 @@
+[
+  {
+    "x": 0,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "03_ui/deck.png",
+    "width": 560,
+    "y": 0,
+    "height": 276,
+    "source": "03_ui/atlas.png"
+  },
+  {
+    "x": 560,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "03_ui/consult.png",
+    "width": 560,
+    "y": 0,
+    "height": 276,
+    "source": "03_ui/atlas.png"
+  },
+  {
+    "x": 1120,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "03_ui/assign_sailors.png",
+    "width": 560,
+    "y": 0,
+    "height": 276,
+    "source": "03_ui/atlas.png"
+  },
+  {
+    "x": 0,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "03_ui/functions.png",
+    "width": 560,
+    "y": 276,
+    "height": 196,
+    "source": "03_ui/atlas.png"
+  },
+  {
+    "x": 560,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "03_ui/faction_kurushima.png",
+    "width": 560,
+    "y": 276,
+    "height": 196,
+    "source": "03_ui/atlas.png"
+  },
+  {
+    "x": 1120,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "03_ui/faction_li.png",
+    "width": 560,
+    "y": 276,
+    "height": 196,
+    "source": "03_ui/atlas.png"
+  },
+  {
+    "x": 0,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "03_ui/go_world.png",
+    "width": 560,
+    "y": 472,
+    "height": 194,
+    "source": "03_ui/atlas.png"
+  },
+  {
+    "x": 560,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "03_ui/go_southeast_asia.png",
+    "width": 560,
+    "y": 472,
+    "height": 194,
+    "source": "03_ui/atlas.png"
+  },
+  {
+    "x": 1120,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "03_ui/date.png",
+    "width": 560,
+    "y": 472,
+    "height": 194,
+    "source": "03_ui/atlas.png"
+  },
+  {
+    "x": 0,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "03_ui/enter_port.png",
+    "width": 560,
+    "y": 666,
+    "height": 270,
+    "source": "03_ui/atlas.png"
+  },
+  {
+    "x": 560,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "03_ui/leave_port.png",
+    "width": 560,
+    "y": 666,
+    "height": 270,
+    "source": "03_ui/atlas.png"
+  },
+  {
+    "x": 1120,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "03_ui/plaque_blank.png",
+    "width": 560,
+    "y": 666,
+    "height": 270,
+    "source": "03_ui/atlas.png"
+  },
+  {
+    "x": 0,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "04_cities/chinese_palace.png",
+    "width": 550,
+    "y": 0,
+    "height": 500,
+    "source": "04_cities/atlas.png"
+  },
+  {
+    "x": 550,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "04_cities/chinese_walled_port.png",
+    "width": 530,
+    "y": 0,
+    "height": 500,
+    "source": "04_cities/atlas.png"
+  },
+  {
+    "x": 1080,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "04_cities/chinese_pagoda_port.png",
+    "width": 456,
+    "y": 0,
+    "height": 500,
+    "source": "04_cities/atlas.png"
+  },
+  {
+    "x": 0,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "04_cities/korean_port.png",
+    "width": 550,
+    "y": 500,
+    "height": 524,
+    "source": "04_cities/atlas.png"
+  },
+  {
+    "x": 550,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "04_cities/japanese_pagoda_port.png",
+    "width": 530,
+    "y": 500,
+    "height": 524,
+    "source": "04_cities/atlas.png"
+  },
+  {
+    "x": 1080,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "04_cities/japanese_castle.png",
+    "width": 456,
+    "y": 500,
+    "height": 524,
+    "source": "04_cities/atlas.png"
+  },
+  {
+    "x": 0,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "05_ships/square/N.png",
+    "width": 350,
+    "y": 0,
+    "height": 512,
+    "source": "05_ships/square/atlas.png"
+  },
+  {
+    "x": 350,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "05_ships/square/NE.png",
+    "width": 385,
+    "y": 0,
+    "height": 512,
+    "source": "05_ships/square/atlas.png"
+  },
+  {
+    "x": 735,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "05_ships/square/E.png",
+    "width": 460,
+    "y": 0,
+    "height": 512,
+    "source": "05_ships/square/atlas.png"
+  },
+  {
+    "x": 1195,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "05_ships/square/SE.png",
+    "width": 341,
+    "y": 0,
+    "height": 512,
+    "source": "05_ships/square/atlas.png"
+  },
+  {
+    "x": 0,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "05_ships/square/S.png",
+    "width": 350,
+    "y": 512,
+    "height": 512,
+    "source": "05_ships/square/atlas.png"
+  },
+  {
+    "x": 350,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "05_ships/square/SW.png",
+    "width": 385,
+    "y": 512,
+    "height": 512,
+    "source": "05_ships/square/atlas.png"
+  },
+  {
+    "x": 735,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "05_ships/square/W.png",
+    "width": 460,
+    "y": 512,
+    "height": 512,
+    "source": "05_ships/square/atlas.png"
+  },
+  {
+    "x": 1195,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "05_ships/square/NW.png",
+    "width": 341,
+    "y": 512,
+    "height": 512,
+    "source": "05_ships/square/atlas.png"
+  },
+  {
+    "x": 0,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "05_ships/lateen/N.png",
+    "width": 384,
+    "y": 0,
+    "height": 512,
+    "source": "05_ships/lateen/atlas.png"
+  },
+  {
+    "x": 384,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "05_ships/lateen/NE.png",
+    "width": 396,
+    "y": 0,
+    "height": 512,
+    "source": "05_ships/lateen/atlas.png"
+  },
+  {
+    "x": 780,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "05_ships/lateen/W.png",
+    "width": 420,
+    "y": 0,
+    "height": 512,
+    "source": "05_ships/lateen/atlas.png"
+  },
+  {
+    "x": 1200,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "05_ships/lateen/SE.png",
+    "width": 336,
+    "y": 0,
+    "height": 512,
+    "source": "05_ships/lateen/atlas.png"
+  },
+  {
+    "x": 0,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "05_ships/lateen/S.png",
+    "width": 384,
+    "y": 512,
+    "height": 512,
+    "source": "05_ships/lateen/atlas.png"
+  },
+  {
+    "x": 384,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "05_ships/lateen/SW.png",
+    "width": 396,
+    "y": 512,
+    "height": 512,
+    "source": "05_ships/lateen/atlas.png"
+  },
+  {
+    "x": 780,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "05_ships/lateen/E.png",
+    "width": 420,
+    "y": 512,
+    "height": 512,
+    "source": "05_ships/lateen/atlas.png"
+  },
+  {
+    "x": 1200,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "05_ships/lateen/NW.png",
+    "width": 336,
+    "y": 512,
+    "height": 512,
+    "source": "05_ships/lateen/atlas.png"
+  },
+  {
+    "x": 0,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "05_ships/junk/N.png",
+    "width": 440,
+    "y": 0,
+    "height": 440,
+    "source": "05_ships/junk/atlas.png"
+  },
+  {
+    "x": 440,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "05_ships/junk/NE.png",
+    "width": 410,
+    "y": 0,
+    "height": 440,
+    "source": "05_ships/junk/atlas.png"
+  },
+  {
+    "x": 850,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "05_ships/junk/E.png",
+    "width": 500,
+    "y": 0,
+    "height": 440,
+    "source": "05_ships/junk/atlas.png"
+  },
+  {
+    "x": 1350,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "05_ships/junk/SE.png",
+    "width": 424,
+    "y": 0,
+    "height": 440,
+    "source": "05_ships/junk/atlas.png"
+  },
+  {
+    "x": 0,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "05_ships/junk/S.png",
+    "width": 440,
+    "y": 440,
+    "height": 447,
+    "source": "05_ships/junk/atlas.png"
+  },
+  {
+    "x": 440,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "05_ships/junk/SW.png",
+    "width": 410,
+    "y": 440,
+    "height": 447,
+    "source": "05_ships/junk/atlas.png"
+  },
+  {
+    "x": 850,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "05_ships/junk/W.png",
+    "width": 500,
+    "y": 440,
+    "height": 447,
+    "source": "05_ships/junk/atlas.png"
+  },
+  {
+    "x": 1350,
+    "anchor": [
+      0.5,
+      0.75
+    ],
+    "file": "05_ships/junk/NW.png",
+    "width": 424,
+    "y": 440,
+    "height": 447,
+    "source": "05_ships/junk/atlas.png"
+  }
+]

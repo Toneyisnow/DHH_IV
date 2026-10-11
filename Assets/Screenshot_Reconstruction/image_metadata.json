@@ -1,0 +1,210 @@
+[
+  {
+    "file": "01_outer_frame.png",
+    "width": 1672,
+    "height": 941,
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.8775,
+    "visible_bounds": [
+      0,
+      0,
+      1672,
+      941
+    ]
+  },
+  {
+    "file": "02_logo.png",
+    "width": 1672,
+    "height": 941,
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.6192,
+    "visible_bounds": [
+      172,
+      41,
+      1571,
+      852
+    ]
+  },
+  {
+    "file": "03_portrait_frame.png",
+    "width": 1143,
+    "height": 1376,
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.7194,
+    "visible_bounds": [
+      59,
+      65,
+      1084,
+      1303
+    ]
+  },
+  {
+    "file": "04_portrait.png",
+    "width": 1145,
+    "height": 1374,
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.3814,
+    "visible_bounds": [
+      15,
+      31,
+      1143,
+      1374
+    ]
+  },
+  {
+    "file": "05_dialogue_panel.png",
+    "width": 2017,
+    "height": 780,
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.3605,
+    "visible_bounds": [
+      23,
+      134,
+      1994,
+      633
+    ]
+  },
+  {
+    "file": "06_compass_sheet.png",
+    "width": 1774,
+    "height": 887,
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.5806,
+    "visible_bounds": [
+      80,
+      82,
+      1695,
+      792
+    ]
+  },
+  {
+    "file": "07_ground_texture.png",
+    "width": 1254,
+    "height": 1254,
+    "alpha_range": [
+      255,
+      255
+    ],
+    "transparent_fraction": 0.0,
+    "visible_bounds": [
+      0,
+      0,
+      1254,
+      1254
+    ]
+  },
+  {
+    "file": "08_building.png",
+    "width": 1302,
+    "height": 1208,
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.5063,
+    "visible_bounds": [
+      167,
+      16,
+      1202,
+      1143
+    ]
+  },
+  {
+    "file": "09_walk_sheet.png",
+    "width": 1230,
+    "height": 1278,
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.638,
+    "visible_bounds": [
+      82,
+      50,
+      1150,
+      1221
+    ]
+  },
+  {
+    "file": "10_port_background.png",
+    "width": 1672,
+    "height": 941,
+    "alpha_range": [
+      255,
+      255
+    ],
+    "transparent_fraction": 0.0,
+    "visible_bounds": [
+      0,
+      0,
+      1672,
+      941
+    ]
+  },
+  {
+    "file": "11_thatch_texture.png",
+    "width": 1254,
+    "height": 1254,
+    "alpha_range": [
+      255,
+      255
+    ],
+    "transparent_fraction": 0.0,
+    "visible_bounds": [
+      0,
+      0,
+      1254,
+      1254
+    ]
+  },
+  {
+    "file": "12_timber_texture.png",
+    "width": 1254,
+    "height": 1254,
+    "alpha_range": [
+      255,
+      255
+    ],
+    "transparent_fraction": 0.0,
+    "visible_bounds": [
+      0,
+      0,
+      1254,
+      1254
+    ]
+  },
+  {
+    "file": "13_next_indicator.png",
+    "width": 1312,
+    "height": 1199,
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.959,
+    "visible_bounds": [
+      467,
+      475,
+      846,
+      780
+    ]
+  }
+]

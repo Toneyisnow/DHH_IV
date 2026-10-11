@@ -1,0 +1,336 @@
+{
+  "source": "Opening.mp4 + user supplied seven-character reference",
+  "method": "Built-in image_gen reconstruction; existing logo copied; typography and UI compositions are SVG",
+  "reference_resolution": [
+    726,
+    408
+  ],
+  "portrait_order": [
+    "user collage bottom-left",
+    "top row 6",
+    "top row 4",
+    "top row 1",
+    "top row 2",
+    "top row 5",
+    "top row 3"
+  ],
+  "assets": [
+    {
+      "path": "01_开场/01_globe.png",
+      "bytes": 2958158,
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixels": 461142
+    },
+    {
+      "path": "01_开场/02_world_map_texture.png",
+      "bytes": 3651698,
+      "size": [
+        1774,
+        887
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "01_开场/03_title_existing.png",
+      "bytes": 1569495,
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixels": 974150
+    },
+    {
+      "path": "01_开场/04_remake.svg",
+      "bytes": 382
+    },
+    {
+      "path": "01_开场/05_press_any_key.svg",
+      "bytes": 414
+    },
+    {
+      "path": "01_开场/06_light_ribbon.png",
+      "bytes": 987370,
+      "size": [
+        1983,
+        793
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        253
+      ],
+      "transparent_pixels": 1085530
+    },
+    {
+      "path": "01_开场/07_sparkle.png",
+      "bytes": 194583,
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        253
+      ],
+      "transparent_pixels": 1481959
+    },
+    {
+      "path": "01_开场/08_dark_background.svg",
+      "bytes": 261
+    },
+    {
+      "path": "01_开场/09_vignette.svg",
+      "bytes": 304
+    },
+    {
+      "path": "01_开场/10_soft_glow.svg",
+      "bytes": 357
+    },
+    {
+      "path": "02_人物选择/01_clean_table_background.png",
+      "bytes": 2380653,
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "02_人物选择/02_map_paper.png",
+      "bytes": 3383100,
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixels": 241740
+    },
+    {
+      "path": "02_人物选择/03_candle_holder.png",
+      "bytes": 1623029,
+      "size": [
+        1351,
+        1164
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixels": 483525
+    },
+    {
+      "path": "02_人物选择/04_flame_sheet.png",
+      "bytes": 1163635,
+      "size": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        253
+      ],
+      "transparent_pixels": 606395
+    },
+    {
+      "path": "02_人物选择/05_empty_frame.png",
+      "bytes": 983897,
+      "size": [
+        1348,
+        1167
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixels": 1214721
+    },
+    {
+      "path": "02_人物选择/06_foreground_instrument.png",
+      "bytes": 1377110,
+      "size": [
+        1374,
+        1145
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixels": 1028425
+    },
+    {
+      "path": "02_人物选择/07_wood_texture.png",
+      "bytes": 3152153,
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "02_人物选择/08_frame_hover.png",
+      "bytes": 1198859,
+      "size": [
+        1347,
+        1167
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixels": 1053544
+    },
+    {
+      "path": "02_人物选择/09_hover_outline.svg",
+      "bytes": 1312578
+    },
+    {
+      "path": "02_人物选择/P01_card.svg",
+      "bytes": 4365279
+    },
+    {
+      "path": "02_人物选择/P01_portrait.png",
+      "bytes": 2289708,
+      "size": [
+        1176,
+        1338
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixels": 527334
+    },
+    {
+      "path": "02_人物选择/P02_card.svg",
+      "bytes": 4453471
+    },
+    {
+      "path": "02_人物选择/P02_portrait.png",
+      "bytes": 2355850,
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparent_pixels": 619751
+    },
+    {
+      "path": "02_人物选择/P03_card.svg",
+      "bytes": 3685379
+    },
+    {
+      "path": "02_人物选择/P03_portrait.png",
+      "bytes": 1779782,
+      "size": [
+        1158,
+        1358
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixels": 553657
+    },
+    {
+      "path": "02_人物选择/P04_card.svg",
+      "bytes": 4573187
+    },
+    {
+      "path": "02_人物选择/P04_portrait.png",
+      "bytes": 2445639,
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparent_pixels": 628723
+    },
+    {
+      "path": "02_人物选择/P05_card.svg",
+      "bytes": 3887239
+    },
+    {
+      "path": "02_人物选择/P05_portrait.png",
+      "bytes": 1931176,
+      "size": [
+        1086,
+        1448
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixels": 730657
+    },
+    {
+      "path": "02_人物选择/P06_card.svg",
+      "bytes": 4337819
+    },
+    {
+      "path": "02_人物选择/P06_portrait.png",
+      "bytes": 2269112,
+      "size": [
+        1150,
+        1368
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixels": 483402
+    },
+    {
+      "path": "02_人物选择/P07_card.svg",
+      "bytes": 3851927
+    },
+    {
+      "path": "02_人物选择/P07_portrait.png",
+      "bytes": 1904692,
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparent_pixels": 663189
+    }
+  ]
+}

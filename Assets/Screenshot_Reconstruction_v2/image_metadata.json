@@ -1,0 +1,344 @@
+[
+  {
+    "file": "generated/01_hero_walk_8dir.png",
+    "size": [
+      887,
+      1774
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.6376,
+    "visible_bounds": [
+      50,
+      45,
+      840,
+      1741
+    ]
+  },
+  {
+    "file": "generated/02_npc_navy_walk_8dir.png",
+    "size": [
+      887,
+      1774
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.7214,
+    "visible_bounds": [
+      119,
+      58,
+      764,
+      1647
+    ]
+  },
+  {
+    "file": "generated/03_npc_headwrap_walk_8dir.png",
+    "size": [
+      887,
+      1774
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.7066,
+    "visible_bounds": [
+      97,
+      60,
+      789,
+      1725
+    ]
+  },
+  {
+    "file": "generated/04_npc_strawhat_walk_8dir.png",
+    "size": [
+      887,
+      1774
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.6934,
+    "visible_bounds": [
+      88,
+      87,
+      801,
+      1708
+    ]
+  },
+  {
+    "file": "generated/05_npc_merchant_walk_8dir.png",
+    "size": [
+      887,
+      1774
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.7168,
+    "visible_bounds": [
+      71,
+      57,
+      818,
+      1729
+    ]
+  },
+  {
+    "file": "generated/06_foreground_junk_shadow.png",
+    "size": [
+      1341,
+      1173
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.6573,
+    "visible_bounds": [
+      160,
+      38,
+      1142,
+      1093
+    ]
+  },
+  {
+    "file": "generated/07_midground_junk_shadow.png",
+    "size": [
+      1374,
+      1145
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.6565,
+    "visible_bounds": [
+      166,
+      45,
+      1215,
+      1127
+    ]
+  },
+  {
+    "file": "generated/08_left_palm_shadow.png",
+    "size": [
+      1217,
+      1293
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.709,
+    "visible_bounds": [
+      131,
+      51,
+      1189,
+      1262
+    ]
+  },
+  {
+    "file": "generated/09_palm_single_shadow.png",
+    "size": [
+      1217,
+      1292
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.6315,
+    "visible_bounds": [
+      65,
+      16,
+      912,
+      1196
+    ]
+  },
+  {
+    "file": "generated/10_center_hut_shadow.png",
+    "size": [
+      1188,
+      1324
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.6557,
+    "visible_bounds": [
+      198,
+      124,
+      904,
+      1159
+    ]
+  },
+  {
+    "file": "generated/11_center_back_hut_shadow.png",
+    "size": [
+      1312,
+      1199
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.6809,
+    "visible_bounds": [
+      303,
+      94,
+      977,
+      1073
+    ]
+  },
+  {
+    "file": "generated/12_outer_frame_hd_source.png",
+    "size": [
+      1672,
+      941
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.8568,
+    "visible_bounds": [
+      0,
+      0,
+      1672,
+      941
+    ]
+  },
+  {
+    "file": "generated/13_hero_ne_walk_patch.png",
+    "size": [
+      1239,
+      1269
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.7453,
+    "visible_bounds": [
+      207,
+      90,
+      1044,
+      1189
+    ]
+  },
+  {
+    "file": "generated/outer_frame_1920x1080.png",
+    "size": [
+      1920,
+      1080
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.8565,
+    "visible_bounds": [
+      0,
+      0,
+      1920,
+      1080
+    ]
+  },
+  {
+    "file": "atlases/01_hero_walk_8dir.png",
+    "size": [
+      512,
+      1536
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.522,
+    "visible_bounds": [
+      12,
+      25,
+      497,
+      1522
+    ]
+  },
+  {
+    "file": "atlases/02_npc_navy_walk_8dir.png",
+    "size": [
+      512,
+      1536
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.5425,
+    "visible_bounds": [
+      23,
+      26,
+      488,
+      1521
+    ]
+  },
+  {
+    "file": "atlases/03_npc_headwrap_walk_8dir.png",
+    "size": [
+      512,
+      1536
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.5219,
+    "visible_bounds": [
+      17,
+      20,
+      491,
+      1521
+    ]
+  },
+  {
+    "file": "atlases/04_npc_strawhat_walk_8dir.png",
+    "size": [
+      512,
+      1536
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.501,
+    "visible_bounds": [
+      18,
+      25,
+      493,
+      1521
+    ]
+  },
+  {
+    "file": "atlases/05_npc_merchant_walk_8dir.png",
+    "size": [
+      512,
+      1536
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.5292,
+    "visible_bounds": [
+      20,
+      23,
+      491,
+      1521
+    ]
+  }
+]

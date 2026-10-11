@@ -1,0 +1,62 @@
+{
+  "note": "Suggested runtime parameters, not extracted original animation data.",
+  "globe": {
+    "degrees_per_second": 1,
+    "texture": "01_开场/02_world_map_texture.png",
+    "seamless_verified": false
+  },
+  "press_any_key": {
+    "period_seconds": 1.8,
+    "alpha": [
+      0.3,
+      1
+    ]
+  },
+  "light_sweep": {
+    "duration_seconds": 2.8,
+    "repeat_delay_seconds": 9,
+    "blend": "additive",
+    "control_points_normalized": [
+      [
+        -0.1,
+        0.45
+      ],
+      [
+        0.2,
+        0.65
+      ],
+      [
+        0.58,
+        0.32
+      ],
+      [
+        0.85,
+        0.45
+      ],
+      [
+        1.1,
+        0.3
+      ]
+    ]
+  },
+  "flame": {
+    "texture": "02_人物选择/04_flame_sheet.png",
+    "grid": [
+      4,
+      2
+    ],
+    "frames": 8,
+    "fps": 10,
+    "note": "Generated atlas has noninteger nominal cell dimensions; split using rounded proportional bounds and tune pivots."
+  },
+  "hover": {
+    "enter_ms": 150,
+    "leave_ms": 180,
+    "scale": 1.02,
+    "outline_asset": "02_人物选择/09_hover_outline.svg"
+  },
+  "table": {
+    "camera_to_plane_degrees": 30,
+    "note": "Applies to 3D setup; composed background already has perspective."
+  }
+}

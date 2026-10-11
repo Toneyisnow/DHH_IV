@@ -1,0 +1,11 @@
+{
+  "pngFiles": 88,
+  "shipDirections": 24,
+  "uiControls": 12,
+  "citySprites": 6,
+  "currentFrames": 32,
+  "uniqueCurrentFrames": 32,
+  "transparentArtworkVerified": true,
+  "shipDirectionsVisuallyChecked": true,
+  "notes": "Illustrative heading consistency, not exact 3D projections. Browser preview playback has not been browser-tested."
+}

@@ -1,0 +1,3094 @@
+{
+  "directions": [
+    "S",
+    "SW",
+    "W",
+    "NW",
+    "N",
+    "NE",
+    "E",
+    "SE"
+  ],
+  "frames_per_direction": 4,
+  "cell": [
+    128,
+    192
+  ],
+  "feet_anchor": [
+    64,
+    180
+  ],
+  "note": "Built-in generated artwork, normalized atlas packing using FFmpeg. Inferred motion; review foot sliding and subtle directions.",
+  "characters": [
+    {
+      "file": "atlases/01_hero_walk_8dir.png",
+      "source_sheet": "generated/01_hero_walk_8dir.png",
+      "frames": [
+        {
+          "direction": "S",
+          "phase": 0,
+          "rect": [
+            0,
+            0,
+            128,
+            192
+          ],
+          "source": {
+            "source": "01_hero_walk_8dir.png",
+            "rect": [
+              51,
+              42,
+              119,
+              190
+            ]
+          }
+        },
+        {
+          "direction": "S",
+          "phase": 1,
+          "rect": [
+            128,
+            0,
+            128,
+            192
+          ],
+          "source": {
+            "source": "01_hero_walk_8dir.png",
+            "rect": [
+              274,
+              42,
+              120,
+              191
+            ]
+          }
+        },
+        {
+          "direction": "S",
+          "phase": 2,
+          "rect": [
+            256,
+            0,
+            128,
+            192
+          ],
+          "source": {
+            "source": "01_hero_walk_8dir.png",
+            "rect": [
+              492,
+              42,
+              123,
+              192
+            ]
+          }
+        },
+        {
+          "direction": "S",
+          "phase": 3,
+          "rect": [
+            384,
+            0,
+            128,
+            192
+          ],
+          "source": {
+            "source": "01_hero_walk_8dir.png",
+            "rect": [
+              720,
+              43,
+              118,
+              190
+            ]
+          }
+        },
+        {
+          "direction": "SW",
+          "phase": 0,
+          "rect": [
+            0,
+            192,
+            128,
+            192
+          ],
+          "source": {
+            "source": "01_hero_walk_8dir.png",
+            "rect": [
+              56,
+              250,
+              115,
+              195
+            ]
+          }
+        },
+        {
+          "direction": "SW",
+          "phase": 1,
+          "rect": [
+            128,
+            192,
+            128,
+            192
+          ],
+          "source": {
+            "source": "01_hero_walk_8dir.png",
+            "rect": [
+              277,
+              251,
+              119,
+              194
+            ]
+          }
+        },
+        {
+          "direction": "SW",
+          "phase": 2,
+          "rect": [
+            256,
+            192,
+            128,
+            192
+          ],
+          "source": {
+            "source": "01_hero_walk_8dir.png",
+            "rect": [
+              497,
+              250,
+              115,
+              195
+            ]
+          }
+        },
+        {
+          "direction": "SW",
+          "phase": 3,
+          "rect": [
+            384,
+            192,
+            128,
+            192
+          ],
+          "source": {
+            "source": "01_hero_walk_8dir.png",
+            "rect": [
+              720,
+              251,
+              119,
+              194
+            ]
+          }
+        },
+        {
+          "direction": "W",
+          "phase": 0,
+          "rect": [
+            0,
+            384,
+            128,
+            192
+          ],
+          "source": {
+            "source": "01_hero_walk_8dir.png",
+            "rect": [
+              61,
+              466,
+              122,
+              185
+            ]
+          }
+        },
+        {
+          "direction": "W",
+          "phase": 1,
+          "rect": [
+            128,
+            384,
+            128,
+            192
+          ],
+          "source": {
+            "source": "01_hero_walk_8dir.png",
+            "rect": [
+              281,
+              466,
+              122,
+              185
+            ]
+          }
+        },
+        {
+          "direction": "W",
+          "phase": 2,
+          "rect": [
+            256,
+            384,
+            128,
+            192
+          ],
+          "source": {
+            "source": "01_hero_walk_8dir.png",
+            "rect": [
+              503,
+              466,
+              122,
+              185
+            ]
+          }
+        },
+        {
+          "direction": "W",
+          "phase": 3,
+          "rect": [
+            384,
+            384,
+            128,
+            192
+          ],
+          "source": {
+            "source": "01_hero_walk_8dir.png",
+            "rect": [
+              725,
+              466,
+              118,
+              185
+            ]
+          }
+        },
+        {
+          "direction": "NW",
+          "phase": 0,
+          "rect": [
+            0,
+            576,
+            128,
+            192
+          ],
+          "source": {
+            "source": "01_hero_walk_8dir.png",
+            "rect": [
+              54,
+              671,
+              118,
+              198
+            ]
+          }
+        },
+        {
+          "direction": "NW",
+          "phase": 1,
+          "rect": [
+            128,
+            576,
+            128,
+            192
+          ],
+          "source": {
+            "source": "01_hero_walk_8dir.png",
+            "rect": [
+              280,
+              671,
+              116,
+              198
+            ]
+          }
+        },
+        {
+          "direction": "NW",
+          "phase": 2,
+          "rect": [
+            256,
+            576,
+            128,
+            192
+          ],
+          "source": {
+            "source": "01_hero_walk_8dir.png",
+            "rect": [
+              500,
+              671,
+              118,
+              196
+            ]
+          }
+        },
+        {
+          "direction": "NW",
+          "phase": 3,
+          "rect": [
+            384,
+            576,
+            128,
+            192
+          ],
+          "source": {
+            "source": "01_hero_walk_8dir.png",
+            "rect": [
+              723,
+              671,
+              116,
+              195
+            ]
+          }
+        },
+        {
+          "direction": "N",
+          "phase": 0,
+          "rect": [
+            0,
+            768,
+            128,
+            192
+          ],
+          "source": {
+            "source": "01_hero_walk_8dir.png",
+            "rect": [
+              49,
+              882,
+              125,
+              204
+            ]
+          }
+        },
+        {
+          "direction": "N",
+          "phase": 1,
+          "rect": [
+            128,
+            768,
+            128,
+            192
+          ],
+          "source": {
+            "source": "01_hero_walk_8dir.png",
+            "rect": [
+              270,
+              882,
+              125,
+              203
+            ]
+          }
+        },
+        {
+          "direction": "N",
+          "phase": 2,
+          "rect": [
+            256,
+            768,
+            128,
+            192
+          ],
+          "source": {
+            "source": "01_hero_walk_8dir.png",
+            "rect": [
+              493,
+              883,
+              124,
+              205
+            ]
+          }
+        },
+        {
+          "direction": "N",
+          "phase": 3,
+          "rect": [
+            384,
+            768,
+            128,
+            192
+          ],
+          "source": {
+            "source": "01_hero_walk_8dir.png",
+            "rect": [
+              713,
+              882,
+              125,
+              203
+            ]
+          }
+        },
+        {
+          "direction": "NE",
+          "phase": 0,
+          "rect": [
+            0,
+            960,
+            128,
+            192
+          ],
+          "source": {
+            "source": "13_hero_ne_walk_patch.png",
+            "rect": [
+              204,
+              87,
+              308,
+              489
+            ]
+          }
+        },
+        {
+          "direction": "NE",
+          "phase": 1,
+          "rect": [
+            128,
+            960,
+            128,
+            192
+          ],
+          "source": {
+            "source": "13_hero_ne_walk_patch.png",
+            "rect": [
+              757,
+              89,
+              288,
+              493
+            ]
+          }
+        },
+        {
+          "direction": "NE",
+          "phase": 2,
+          "rect": [
+            256,
+            960,
+            128,
+            192
+          ],
+          "source": {
+            "source": "13_hero_ne_walk_patch.png",
+            "rect": [
+              215,
+              701,
+              304,
+              491
+            ]
+          }
+        },
+        {
+          "direction": "NE",
+          "phase": 3,
+          "rect": [
+            384,
+            960,
+            128,
+            192
+          ],
+          "source": {
+            "source": "13_hero_ne_walk_patch.png",
+            "rect": [
+              757,
+              700,
+              290,
+              480
+            ]
+          }
+        },
+        {
+          "direction": "E",
+          "phase": 0,
+          "rect": [
+            0,
+            1152,
+            128,
+            192
+          ],
+          "source": {
+            "source": "01_hero_walk_8dir.png",
+            "rect": [
+              52,
+              1327,
+              113,
+              185
+            ]
+          }
+        },
+        {
+          "direction": "E",
+          "phase": 1,
+          "rect": [
+            128,
+            1152,
+            128,
+            192
+          ],
+          "source": {
+            "source": "01_hero_walk_8dir.png",
+            "rect": [
+              274,
+              1326,
+              114,
+              189
+            ]
+          }
+        },
+        {
+          "direction": "E",
+          "phase": 2,
+          "rect": [
+            256,
+            1152,
+            128,
+            192
+          ],
+          "source": {
+            "source": "01_hero_walk_8dir.png",
+            "rect": [
+              490,
+              1327,
+              117,
+              187
+            ]
+          }
+        },
+        {
+          "direction": "E",
+          "phase": 3,
+          "rect": [
+            384,
+            1152,
+            128,
+            192
+          ],
+          "source": {
+            "source": "01_hero_walk_8dir.png",
+            "rect": [
+              713,
+              1326,
+              116,
+              186
+            ]
+          }
+        },
+        {
+          "direction": "SE",
+          "phase": 0,
+          "rect": [
+            0,
+            1344,
+            128,
+            192
+          ],
+          "source": {
+            "source": "01_hero_walk_8dir.png",
+            "rect": [
+              54,
+              1541,
+              116,
+              203
+            ]
+          }
+        },
+        {
+          "direction": "SE",
+          "phase": 1,
+          "rect": [
+            128,
+            1344,
+            128,
+            192
+          ],
+          "source": {
+            "source": "01_hero_walk_8dir.png",
+            "rect": [
+              270,
+              1541,
+              120,
+              203
+            ]
+          }
+        },
+        {
+          "direction": "SE",
+          "phase": 2,
+          "rect": [
+            256,
+            1344,
+            128,
+            192
+          ],
+          "source": {
+            "source": "01_hero_walk_8dir.png",
+            "rect": [
+              493,
+              1541,
+              120,
+              203
+            ]
+          }
+        },
+        {
+          "direction": "SE",
+          "phase": 3,
+          "rect": [
+            384,
+            1344,
+            128,
+            192
+          ],
+          "source": {
+            "source": "01_hero_walk_8dir.png",
+            "rect": [
+              716,
+              1541,
+              117,
+              203
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "file": "atlases/02_npc_navy_walk_8dir.png",
+      "source_sheet": "generated/02_npc_navy_walk_8dir.png",
+      "frames": [
+        {
+          "direction": "S",
+          "phase": 0,
+          "rect": [
+            0,
+            0,
+            128,
+            192
+          ],
+          "source": {
+            "source": "02_npc_navy_walk_8dir.png",
+            "rect": [
+              117,
+              55,
+              92,
+              168
+            ]
+          }
+        },
+        {
+          "direction": "S",
+          "phase": 1,
+          "rect": [
+            128,
+            0,
+            128,
+            192
+          ],
+          "source": {
+            "source": "02_npc_navy_walk_8dir.png",
+            "rect": [
+              304,
+              55,
+              91,
+              168
+            ]
+          }
+        },
+        {
+          "direction": "S",
+          "phase": 2,
+          "rect": [
+            256,
+            0,
+            128,
+            192
+          ],
+          "source": {
+            "source": "02_npc_navy_walk_8dir.png",
+            "rect": [
+              490,
+              55,
+              92,
+              170
+            ]
+          }
+        },
+        {
+          "direction": "S",
+          "phase": 3,
+          "rect": [
+            384,
+            0,
+            128,
+            192
+          ],
+          "source": {
+            "source": "02_npc_navy_walk_8dir.png",
+            "rect": [
+              674,
+              55,
+              93,
+              167
+            ]
+          }
+        },
+        {
+          "direction": "SW",
+          "phase": 0,
+          "rect": [
+            0,
+            192,
+            128,
+            192
+          ],
+          "source": {
+            "source": "02_npc_navy_walk_8dir.png",
+            "rect": [
+              117,
+              250,
+              94,
+              174
+            ]
+          }
+        },
+        {
+          "direction": "SW",
+          "phase": 1,
+          "rect": [
+            128,
+            192,
+            128,
+            192
+          ],
+          "source": {
+            "source": "02_npc_navy_walk_8dir.png",
+            "rect": [
+              303,
+              250,
+              92,
+              174
+            ]
+          }
+        },
+        {
+          "direction": "SW",
+          "phase": 2,
+          "rect": [
+            256,
+            192,
+            128,
+            192
+          ],
+          "source": {
+            "source": "02_npc_navy_walk_8dir.png",
+            "rect": [
+              490,
+              250,
+              92,
+              174
+            ]
+          }
+        },
+        {
+          "direction": "SW",
+          "phase": 3,
+          "rect": [
+            384,
+            192,
+            128,
+            192
+          ],
+          "source": {
+            "source": "02_npc_navy_walk_8dir.png",
+            "rect": [
+              674,
+              250,
+              91,
+              174
+            ]
+          }
+        },
+        {
+          "direction": "W",
+          "phase": 0,
+          "rect": [
+            0,
+            384,
+            128,
+            192
+          ],
+          "source": {
+            "source": "02_npc_navy_walk_8dir.png",
+            "rect": [
+              117,
+              450,
+              92,
+              180
+            ]
+          }
+        },
+        {
+          "direction": "W",
+          "phase": 1,
+          "rect": [
+            128,
+            384,
+            128,
+            192
+          ],
+          "source": {
+            "source": "02_npc_navy_walk_8dir.png",
+            "rect": [
+              303,
+              450,
+              92,
+              180
+            ]
+          }
+        },
+        {
+          "direction": "W",
+          "phase": 2,
+          "rect": [
+            256,
+            384,
+            128,
+            192
+          ],
+          "source": {
+            "source": "02_npc_navy_walk_8dir.png",
+            "rect": [
+              489,
+              450,
+              93,
+              180
+            ]
+          }
+        },
+        {
+          "direction": "W",
+          "phase": 3,
+          "rect": [
+            384,
+            384,
+            128,
+            192
+          ],
+          "source": {
+            "source": "02_npc_navy_walk_8dir.png",
+            "rect": [
+              673,
+              450,
+              93,
+              180
+            ]
+          }
+        },
+        {
+          "direction": "NW",
+          "phase": 0,
+          "rect": [
+            0,
+            576,
+            128,
+            192
+          ],
+          "source": {
+            "source": "02_npc_navy_walk_8dir.png",
+            "rect": [
+              116,
+              654,
+              95,
+              180
+            ]
+          }
+        },
+        {
+          "direction": "NW",
+          "phase": 1,
+          "rect": [
+            128,
+            576,
+            128,
+            192
+          ],
+          "source": {
+            "source": "02_npc_navy_walk_8dir.png",
+            "rect": [
+              305,
+              654,
+              88,
+              180
+            ]
+          }
+        },
+        {
+          "direction": "NW",
+          "phase": 2,
+          "rect": [
+            256,
+            576,
+            128,
+            192
+          ],
+          "source": {
+            "source": "02_npc_navy_walk_8dir.png",
+            "rect": [
+              489,
+              654,
+              93,
+              180
+            ]
+          }
+        },
+        {
+          "direction": "NW",
+          "phase": 3,
+          "rect": [
+            384,
+            576,
+            128,
+            192
+          ],
+          "source": {
+            "source": "02_npc_navy_walk_8dir.png",
+            "rect": [
+              674,
+              653,
+              92,
+              181
+            ]
+          }
+        },
+        {
+          "direction": "N",
+          "phase": 0,
+          "rect": [
+            0,
+            768,
+            128,
+            192
+          ],
+          "source": {
+            "source": "02_npc_navy_walk_8dir.png",
+            "rect": [
+              117,
+              857,
+              94,
+              181
+            ]
+          }
+        },
+        {
+          "direction": "N",
+          "phase": 1,
+          "rect": [
+            128,
+            768,
+            128,
+            192
+          ],
+          "source": {
+            "source": "02_npc_navy_walk_8dir.png",
+            "rect": [
+              304,
+              857,
+              91,
+              181
+            ]
+          }
+        },
+        {
+          "direction": "N",
+          "phase": 2,
+          "rect": [
+            256,
+            768,
+            128,
+            192
+          ],
+          "source": {
+            "source": "02_npc_navy_walk_8dir.png",
+            "rect": [
+              487,
+              857,
+              95,
+              181
+            ]
+          }
+        },
+        {
+          "direction": "N",
+          "phase": 3,
+          "rect": [
+            384,
+            768,
+            128,
+            192
+          ],
+          "source": {
+            "source": "02_npc_navy_walk_8dir.png",
+            "rect": [
+              674,
+              856,
+              93,
+              182
+            ]
+          }
+        },
+        {
+          "direction": "NE",
+          "phase": 0,
+          "rect": [
+            0,
+            960,
+            128,
+            192
+          ],
+          "source": {
+            "source": "02_npc_navy_walk_8dir.png",
+            "rect": [
+              117,
+              1061,
+              92,
+              179
+            ]
+          }
+        },
+        {
+          "direction": "NE",
+          "phase": 1,
+          "rect": [
+            128,
+            960,
+            128,
+            192
+          ],
+          "source": {
+            "source": "02_npc_navy_walk_8dir.png",
+            "rect": [
+              303,
+              1061,
+              92,
+              179
+            ]
+          }
+        },
+        {
+          "direction": "NE",
+          "phase": 2,
+          "rect": [
+            256,
+            960,
+            128,
+            192
+          ],
+          "source": {
+            "source": "02_npc_navy_walk_8dir.png",
+            "rect": [
+              490,
+              1061,
+              92,
+              179
+            ]
+          }
+        },
+        {
+          "direction": "NE",
+          "phase": 3,
+          "rect": [
+            384,
+            960,
+            128,
+            192
+          ],
+          "source": {
+            "source": "02_npc_navy_walk_8dir.png",
+            "rect": [
+              673,
+              1061,
+              92,
+              179
+            ]
+          }
+        },
+        {
+          "direction": "E",
+          "phase": 0,
+          "rect": [
+            0,
+            1152,
+            128,
+            192
+          ],
+          "source": {
+            "source": "02_npc_navy_walk_8dir.png",
+            "rect": [
+              117,
+              1266,
+              92,
+              177
+            ]
+          }
+        },
+        {
+          "direction": "E",
+          "phase": 1,
+          "rect": [
+            128,
+            1152,
+            128,
+            192
+          ],
+          "source": {
+            "source": "02_npc_navy_walk_8dir.png",
+            "rect": [
+              302,
+              1266,
+              91,
+              181
+            ]
+          }
+        },
+        {
+          "direction": "E",
+          "phase": 2,
+          "rect": [
+            256,
+            1152,
+            128,
+            192
+          ],
+          "source": {
+            "source": "02_npc_navy_walk_8dir.png",
+            "rect": [
+              489,
+              1266,
+              93,
+              181
+            ]
+          }
+        },
+        {
+          "direction": "E",
+          "phase": 3,
+          "rect": [
+            384,
+            1152,
+            128,
+            192
+          ],
+          "source": {
+            "source": "02_npc_navy_walk_8dir.png",
+            "rect": [
+              673,
+              1266,
+              93,
+              181
+            ]
+          }
+        },
+        {
+          "direction": "SE",
+          "phase": 0,
+          "rect": [
+            0,
+            1344,
+            128,
+            192
+          ],
+          "source": {
+            "source": "02_npc_navy_walk_8dir.png",
+            "rect": [
+              117,
+              1470,
+              93,
+              180
+            ]
+          }
+        },
+        {
+          "direction": "SE",
+          "phase": 1,
+          "rect": [
+            128,
+            1344,
+            128,
+            192
+          ],
+          "source": {
+            "source": "02_npc_navy_walk_8dir.png",
+            "rect": [
+              303,
+              1470,
+              92,
+              180
+            ]
+          }
+        },
+        {
+          "direction": "SE",
+          "phase": 2,
+          "rect": [
+            256,
+            1344,
+            128,
+            192
+          ],
+          "source": {
+            "source": "02_npc_navy_walk_8dir.png",
+            "rect": [
+              487,
+              1470,
+              95,
+              180
+            ]
+          }
+        },
+        {
+          "direction": "SE",
+          "phase": 3,
+          "rect": [
+            384,
+            1344,
+            128,
+            192
+          ],
+          "source": {
+            "source": "02_npc_navy_walk_8dir.png",
+            "rect": [
+              673,
+              1470,
+              93,
+              180
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "file": "atlases/03_npc_headwrap_walk_8dir.png",
+      "source_sheet": "generated/03_npc_headwrap_walk_8dir.png",
+      "frames": [
+        {
+          "direction": "S",
+          "phase": 0,
+          "rect": [
+            0,
+            0,
+            128,
+            192
+          ],
+          "source": {
+            "source": "03_npc_headwrap_walk_8dir.png",
+            "rect": [
+              103,
+              57,
+              97,
+              174
+            ]
+          }
+        },
+        {
+          "direction": "S",
+          "phase": 1,
+          "rect": [
+            128,
+            0,
+            128,
+            192
+          ],
+          "source": {
+            "source": "03_npc_headwrap_walk_8dir.png",
+            "rect": [
+              303,
+              57,
+              92,
+              174
+            ]
+          }
+        },
+        {
+          "direction": "S",
+          "phase": 2,
+          "rect": [
+            256,
+            0,
+            128,
+            192
+          ],
+          "source": {
+            "source": "03_npc_headwrap_walk_8dir.png",
+            "rect": [
+              493,
+              57,
+              94,
+              174
+            ]
+          }
+        },
+        {
+          "direction": "S",
+          "phase": 3,
+          "rect": [
+            384,
+            0,
+            128,
+            192
+          ],
+          "source": {
+            "source": "03_npc_headwrap_walk_8dir.png",
+            "rect": [
+              690,
+              58,
+              90,
+              173
+            ]
+          }
+        },
+        {
+          "direction": "SW",
+          "phase": 0,
+          "rect": [
+            0,
+            192,
+            128,
+            192
+          ],
+          "source": {
+            "source": "03_npc_headwrap_walk_8dir.png",
+            "rect": [
+              108,
+              269,
+              92,
+              173
+            ]
+          }
+        },
+        {
+          "direction": "SW",
+          "phase": 1,
+          "rect": [
+            128,
+            192,
+            128,
+            192
+          ],
+          "source": {
+            "source": "03_npc_headwrap_walk_8dir.png",
+            "rect": [
+              303,
+              269,
+              89,
+              173
+            ]
+          }
+        },
+        {
+          "direction": "SW",
+          "phase": 2,
+          "rect": [
+            256,
+            192,
+            128,
+            192
+          ],
+          "source": {
+            "source": "03_npc_headwrap_walk_8dir.png",
+            "rect": [
+              487,
+              269,
+              101,
+              176
+            ]
+          }
+        },
+        {
+          "direction": "SW",
+          "phase": 3,
+          "rect": [
+            384,
+            192,
+            128,
+            192
+          ],
+          "source": {
+            "source": "03_npc_headwrap_walk_8dir.png",
+            "rect": [
+              695,
+              270,
+              85,
+              172
+            ]
+          }
+        },
+        {
+          "direction": "W",
+          "phase": 0,
+          "rect": [
+            0,
+            384,
+            128,
+            192
+          ],
+          "source": {
+            "source": "03_npc_headwrap_walk_8dir.png",
+            "rect": [
+              109,
+              482,
+              86,
+              169
+            ]
+          }
+        },
+        {
+          "direction": "W",
+          "phase": 1,
+          "rect": [
+            128,
+            384,
+            128,
+            192
+          ],
+          "source": {
+            "source": "03_npc_headwrap_walk_8dir.png",
+            "rect": [
+              302,
+              482,
+              87,
+              169
+            ]
+          }
+        },
+        {
+          "direction": "W",
+          "phase": 2,
+          "rect": [
+            256,
+            384,
+            128,
+            192
+          ],
+          "source": {
+            "source": "03_npc_headwrap_walk_8dir.png",
+            "rect": [
+              494,
+              483,
+              88,
+              168
+            ]
+          }
+        },
+        {
+          "direction": "W",
+          "phase": 3,
+          "rect": [
+            384,
+            384,
+            128,
+            192
+          ],
+          "source": {
+            "source": "03_npc_headwrap_walk_8dir.png",
+            "rect": [
+              691,
+              483,
+              85,
+              168
+            ]
+          }
+        },
+        {
+          "direction": "NW",
+          "phase": 0,
+          "rect": [
+            0,
+            576,
+            128,
+            192
+          ],
+          "source": {
+            "source": "03_npc_headwrap_walk_8dir.png",
+            "rect": [
+              108,
+              695,
+              90,
+              179
+            ]
+          }
+        },
+        {
+          "direction": "NW",
+          "phase": 1,
+          "rect": [
+            128,
+            576,
+            128,
+            192
+          ],
+          "source": {
+            "source": "03_npc_headwrap_walk_8dir.png",
+            "rect": [
+              295,
+              698,
+              96,
+              176
+            ]
+          }
+        },
+        {
+          "direction": "NW",
+          "phase": 2,
+          "rect": [
+            256,
+            576,
+            128,
+            192
+          ],
+          "source": {
+            "source": "03_npc_headwrap_walk_8dir.png",
+            "rect": [
+              489,
+              698,
+              104,
+              176
+            ]
+          }
+        },
+        {
+          "direction": "NW",
+          "phase": 3,
+          "rect": [
+            384,
+            576,
+            128,
+            192
+          ],
+          "source": {
+            "source": "03_npc_headwrap_walk_8dir.png",
+            "rect": [
+              686,
+              699,
+              93,
+              175
+            ]
+          }
+        },
+        {
+          "direction": "N",
+          "phase": 0,
+          "rect": [
+            0,
+            768,
+            128,
+            192
+          ],
+          "source": {
+            "source": "03_npc_headwrap_walk_8dir.png",
+            "rect": [
+              101,
+              912,
+              97,
+              173
+            ]
+          }
+        },
+        {
+          "direction": "N",
+          "phase": 1,
+          "rect": [
+            128,
+            768,
+            128,
+            192
+          ],
+          "source": {
+            "source": "03_npc_headwrap_walk_8dir.png",
+            "rect": [
+              295,
+              913,
+              100,
+              172
+            ]
+          }
+        },
+        {
+          "direction": "N",
+          "phase": 2,
+          "rect": [
+            256,
+            768,
+            128,
+            192
+          ],
+          "source": {
+            "source": "03_npc_headwrap_walk_8dir.png",
+            "rect": [
+              489,
+              912,
+              97,
+              173
+            ]
+          }
+        },
+        {
+          "direction": "N",
+          "phase": 3,
+          "rect": [
+            384,
+            768,
+            128,
+            192
+          ],
+          "source": {
+            "source": "03_npc_headwrap_walk_8dir.png",
+            "rect": [
+              684,
+              914,
+              96,
+              171
+            ]
+          }
+        },
+        {
+          "direction": "NE",
+          "phase": 0,
+          "rect": [
+            0,
+            960,
+            128,
+            192
+          ],
+          "source": {
+            "source": "03_npc_headwrap_walk_8dir.png",
+            "rect": [
+              104,
+              1123,
+              86,
+              170
+            ]
+          }
+        },
+        {
+          "direction": "NE",
+          "phase": 1,
+          "rect": [
+            128,
+            960,
+            128,
+            192
+          ],
+          "source": {
+            "source": "03_npc_headwrap_walk_8dir.png",
+            "rect": [
+              301,
+              1123,
+              82,
+              171
+            ]
+          }
+        },
+        {
+          "direction": "NE",
+          "phase": 2,
+          "rect": [
+            256,
+            960,
+            128,
+            192
+          ],
+          "source": {
+            "source": "03_npc_headwrap_walk_8dir.png",
+            "rect": [
+              493,
+              1123,
+              91,
+              171
+            ]
+          }
+        },
+        {
+          "direction": "NE",
+          "phase": 3,
+          "rect": [
+            384,
+            960,
+            128,
+            192
+          ],
+          "source": {
+            "source": "03_npc_headwrap_walk_8dir.png",
+            "rect": [
+              687,
+              1126,
+              88,
+              168
+            ]
+          }
+        },
+        {
+          "direction": "E",
+          "phase": 0,
+          "rect": [
+            0,
+            1152,
+            128,
+            192
+          ],
+          "source": {
+            "source": "03_npc_headwrap_walk_8dir.png",
+            "rect": [
+              103,
+              1336,
+              83,
+              173
+            ]
+          }
+        },
+        {
+          "direction": "E",
+          "phase": 1,
+          "rect": [
+            128,
+            1152,
+            128,
+            192
+          ],
+          "source": {
+            "source": "03_npc_headwrap_walk_8dir.png",
+            "rect": [
+              298,
+              1337,
+              81,
+              174
+            ]
+          }
+        },
+        {
+          "direction": "E",
+          "phase": 2,
+          "rect": [
+            256,
+            1152,
+            128,
+            192
+          ],
+          "source": {
+            "source": "03_npc_headwrap_walk_8dir.png",
+            "rect": [
+              493,
+              1339,
+              86,
+              173
+            ]
+          }
+        },
+        {
+          "direction": "E",
+          "phase": 3,
+          "rect": [
+            384,
+            1152,
+            128,
+            192
+          ],
+          "source": {
+            "source": "03_npc_headwrap_walk_8dir.png",
+            "rect": [
+              686,
+              1339,
+              83,
+              173
+            ]
+          }
+        },
+        {
+          "direction": "SE",
+          "phase": 0,
+          "rect": [
+            0,
+            1344,
+            128,
+            192
+          ],
+          "source": {
+            "source": "03_npc_headwrap_walk_8dir.png",
+            "rect": [
+              94,
+              1552,
+              107,
+              176
+            ]
+          }
+        },
+        {
+          "direction": "SE",
+          "phase": 1,
+          "rect": [
+            128,
+            1344,
+            128,
+            192
+          ],
+          "source": {
+            "source": "03_npc_headwrap_walk_8dir.png",
+            "rect": [
+              298,
+              1553,
+              95,
+              171
+            ]
+          }
+        },
+        {
+          "direction": "SE",
+          "phase": 2,
+          "rect": [
+            256,
+            1344,
+            128,
+            192
+          ],
+          "source": {
+            "source": "03_npc_headwrap_walk_8dir.png",
+            "rect": [
+              490,
+              1554,
+              108,
+              174
+            ]
+          }
+        },
+        {
+          "direction": "SE",
+          "phase": 3,
+          "rect": [
+            384,
+            1344,
+            128,
+            192
+          ],
+          "source": {
+            "source": "03_npc_headwrap_walk_8dir.png",
+            "rect": [
+              694,
+              1554,
+              98,
+              173
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "file": "atlases/04_npc_strawhat_walk_8dir.png",
+      "source_sheet": "generated/04_npc_strawhat_walk_8dir.png",
+      "frames": [
+        {
+          "direction": "S",
+          "phase": 0,
+          "rect": [
+            0,
+            0,
+            128,
+            192
+          ],
+          "source": {
+            "source": "04_npc_strawhat_walk_8dir.png",
+            "rect": [
+              86,
+              84,
+              103,
+              170
+            ]
+          }
+        },
+        {
+          "direction": "S",
+          "phase": 1,
+          "rect": [
+            128,
+            0,
+            128,
+            192
+          ],
+          "source": {
+            "source": "04_npc_strawhat_walk_8dir.png",
+            "rect": [
+              291,
+              84,
+              103,
+              170
+            ]
+          }
+        },
+        {
+          "direction": "S",
+          "phase": 2,
+          "rect": [
+            256,
+            0,
+            128,
+            192
+          ],
+          "source": {
+            "source": "04_npc_strawhat_walk_8dir.png",
+            "rect": [
+              493,
+              84,
+              103,
+              170
+            ]
+          }
+        },
+        {
+          "direction": "S",
+          "phase": 3,
+          "rect": [
+            384,
+            0,
+            128,
+            192
+          ],
+          "source": {
+            "source": "04_npc_strawhat_walk_8dir.png",
+            "rect": [
+              699,
+              84,
+              103,
+              170
+            ]
+          }
+        },
+        {
+          "direction": "SW",
+          "phase": 0,
+          "rect": [
+            0,
+            192,
+            128,
+            192
+          ],
+          "source": {
+            "source": "04_npc_strawhat_walk_8dir.png",
+            "rect": [
+              85,
+              284,
+              101,
+              174
+            ]
+          }
+        },
+        {
+          "direction": "SW",
+          "phase": 1,
+          "rect": [
+            128,
+            192,
+            128,
+            192
+          ],
+          "source": {
+            "source": "04_npc_strawhat_walk_8dir.png",
+            "rect": [
+              286,
+              284,
+              102,
+              174
+            ]
+          }
+        },
+        {
+          "direction": "SW",
+          "phase": 2,
+          "rect": [
+            256,
+            192,
+            128,
+            192
+          ],
+          "source": {
+            "source": "04_npc_strawhat_walk_8dir.png",
+            "rect": [
+              493,
+              284,
+              101,
+              169
+            ]
+          }
+        },
+        {
+          "direction": "SW",
+          "phase": 3,
+          "rect": [
+            384,
+            192,
+            128,
+            192
+          ],
+          "source": {
+            "source": "04_npc_strawhat_walk_8dir.png",
+            "rect": [
+              699,
+              284,
+              103,
+              174
+            ]
+          }
+        },
+        {
+          "direction": "W",
+          "phase": 0,
+          "rect": [
+            0,
+            384,
+            128,
+            192
+          ],
+          "source": {
+            "source": "04_npc_strawhat_walk_8dir.png",
+            "rect": [
+              86,
+              489,
+              103,
+              178
+            ]
+          }
+        },
+        {
+          "direction": "W",
+          "phase": 1,
+          "rect": [
+            128,
+            384,
+            128,
+            192
+          ],
+          "source": {
+            "source": "04_npc_strawhat_walk_8dir.png",
+            "rect": [
+              288,
+              489,
+              105,
+              177
+            ]
+          }
+        },
+        {
+          "direction": "W",
+          "phase": 2,
+          "rect": [
+            256,
+            384,
+            128,
+            192
+          ],
+          "source": {
+            "source": "04_npc_strawhat_walk_8dir.png",
+            "rect": [
+              493,
+              489,
+              104,
+              177
+            ]
+          }
+        },
+        {
+          "direction": "W",
+          "phase": 3,
+          "rect": [
+            384,
+            384,
+            128,
+            192
+          ],
+          "source": {
+            "source": "04_npc_strawhat_walk_8dir.png",
+            "rect": [
+              699,
+              489,
+              105,
+              181
+            ]
+          }
+        },
+        {
+          "direction": "NW",
+          "phase": 0,
+          "rect": [
+            0,
+            576,
+            128,
+            192
+          ],
+          "source": {
+            "source": "04_npc_strawhat_walk_8dir.png",
+            "rect": [
+              85,
+              708,
+              104,
+              177
+            ]
+          }
+        },
+        {
+          "direction": "NW",
+          "phase": 1,
+          "rect": [
+            128,
+            576,
+            128,
+            192
+          ],
+          "source": {
+            "source": "04_npc_strawhat_walk_8dir.png",
+            "rect": [
+              291,
+              708,
+              103,
+              175
+            ]
+          }
+        },
+        {
+          "direction": "NW",
+          "phase": 2,
+          "rect": [
+            256,
+            576,
+            128,
+            192
+          ],
+          "source": {
+            "source": "04_npc_strawhat_walk_8dir.png",
+            "rect": [
+              493,
+              708,
+              104,
+              175
+            ]
+          }
+        },
+        {
+          "direction": "NW",
+          "phase": 3,
+          "rect": [
+            384,
+            576,
+            128,
+            192
+          ],
+          "source": {
+            "source": "04_npc_strawhat_walk_8dir.png",
+            "rect": [
+              699,
+              708,
+              105,
+              177
+            ]
+          }
+        },
+        {
+          "direction": "N",
+          "phase": 0,
+          "rect": [
+            0,
+            768,
+            128,
+            192
+          ],
+          "source": {
+            "source": "04_npc_strawhat_walk_8dir.png",
+            "rect": [
+              86,
+              921,
+              104,
+              172
+            ]
+          }
+        },
+        {
+          "direction": "N",
+          "phase": 1,
+          "rect": [
+            128,
+            768,
+            128,
+            192
+          ],
+          "source": {
+            "source": "04_npc_strawhat_walk_8dir.png",
+            "rect": [
+              289,
+              920,
+              104,
+              171
+            ]
+          }
+        },
+        {
+          "direction": "N",
+          "phase": 2,
+          "rect": [
+            256,
+            768,
+            128,
+            192
+          ],
+          "source": {
+            "source": "04_npc_strawhat_walk_8dir.png",
+            "rect": [
+              493,
+              921,
+              104,
+              170
+            ]
+          }
+        },
+        {
+          "direction": "N",
+          "phase": 3,
+          "rect": [
+            384,
+            768,
+            128,
+            192
+          ],
+          "source": {
+            "source": "04_npc_strawhat_walk_8dir.png",
+            "rect": [
+              698,
+              921,
+              104,
+              172
+            ]
+          }
+        },
+        {
+          "direction": "NE",
+          "phase": 0,
+          "rect": [
+            0,
+            960,
+            128,
+            192
+          ],
+          "source": {
+            "source": "04_npc_strawhat_walk_8dir.png",
+            "rect": [
+              85,
+              1123,
+              104,
+              174
+            ]
+          }
+        },
+        {
+          "direction": "NE",
+          "phase": 1,
+          "rect": [
+            128,
+            960,
+            128,
+            192
+          ],
+          "source": {
+            "source": "04_npc_strawhat_walk_8dir.png",
+            "rect": [
+              288,
+              1121,
+              104,
+              173
+            ]
+          }
+        },
+        {
+          "direction": "NE",
+          "phase": 2,
+          "rect": [
+            256,
+            960,
+            128,
+            192
+          ],
+          "source": {
+            "source": "04_npc_strawhat_walk_8dir.png",
+            "rect": [
+              493,
+              1121,
+              103,
+              173
+            ]
+          }
+        },
+        {
+          "direction": "NE",
+          "phase": 3,
+          "rect": [
+            384,
+            960,
+            128,
+            192
+          ],
+          "source": {
+            "source": "04_npc_strawhat_walk_8dir.png",
+            "rect": [
+              699,
+              1121,
+              103,
+              176
+            ]
+          }
+        },
+        {
+          "direction": "E",
+          "phase": 0,
+          "rect": [
+            0,
+            1152,
+            128,
+            192
+          ],
+          "source": {
+            "source": "04_npc_strawhat_walk_8dir.png",
+            "rect": [
+              85,
+              1328,
+              104,
+              175
+            ]
+          }
+        },
+        {
+          "direction": "E",
+          "phase": 1,
+          "rect": [
+            128,
+            1152,
+            128,
+            192
+          ],
+          "source": {
+            "source": "04_npc_strawhat_walk_8dir.png",
+            "rect": [
+              288,
+              1328,
+              105,
+              175
+            ]
+          }
+        },
+        {
+          "direction": "E",
+          "phase": 2,
+          "rect": [
+            256,
+            1152,
+            128,
+            192
+          ],
+          "source": {
+            "source": "04_npc_strawhat_walk_8dir.png",
+            "rect": [
+              493,
+              1328,
+              103,
+              175
+            ]
+          }
+        },
+        {
+          "direction": "E",
+          "phase": 3,
+          "rect": [
+            384,
+            1152,
+            128,
+            192
+          ],
+          "source": {
+            "source": "04_npc_strawhat_walk_8dir.png",
+            "rect": [
+              698,
+              1328,
+              104,
+              175
+            ]
+          }
+        },
+        {
+          "direction": "SE",
+          "phase": 0,
+          "rect": [
+            0,
+            1344,
+            128,
+            192
+          ],
+          "source": {
+            "source": "04_npc_strawhat_walk_8dir.png",
+            "rect": [
+              87,
+              1536,
+              102,
+              175
+            ]
+          }
+        },
+        {
+          "direction": "SE",
+          "phase": 1,
+          "rect": [
+            128,
+            1344,
+            128,
+            192
+          ],
+          "source": {
+            "source": "04_npc_strawhat_walk_8dir.png",
+            "rect": [
+              291,
+              1536,
+              102,
+              174
+            ]
+          }
+        },
+        {
+          "direction": "SE",
+          "phase": 2,
+          "rect": [
+            256,
+            1344,
+            128,
+            192
+          ],
+          "source": {
+            "source": "04_npc_strawhat_walk_8dir.png",
+            "rect": [
+              495,
+              1536,
+              102,
+              174
+            ]
+          }
+        },
+        {
+          "direction": "SE",
+          "phase": 3,
+          "rect": [
+            384,
+            1344,
+            128,
+            192
+          ],
+          "source": {
+            "source": "04_npc_strawhat_walk_8dir.png",
+            "rect": [
+              702,
+              1536,
+              102,
+              175
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "file": "atlases/05_npc_merchant_walk_8dir.png",
+      "source_sheet": "generated/05_npc_merchant_walk_8dir.png",
+      "frames": [
+        {
+          "direction": "S",
+          "phase": 0,
+          "rect": [
+            0,
+            0,
+            128,
+            192
+          ],
+          "source": {
+            "source": "05_npc_merchant_walk_8dir.png",
+            "rect": [
+              74,
+              54,
+              100,
+              170
+            ]
+          }
+        },
+        {
+          "direction": "S",
+          "phase": 1,
+          "rect": [
+            128,
+            0,
+            128,
+            192
+          ],
+          "source": {
+            "source": "05_npc_merchant_walk_8dir.png",
+            "rect": [
+              286,
+              54,
+              100,
+              170
+            ]
+          }
+        },
+        {
+          "direction": "S",
+          "phase": 2,
+          "rect": [
+            256,
+            0,
+            128,
+            192
+          ],
+          "source": {
+            "source": "05_npc_merchant_walk_8dir.png",
+            "rect": [
+              506,
+              54,
+              99,
+              170
+            ]
+          }
+        },
+        {
+          "direction": "S",
+          "phase": 3,
+          "rect": [
+            384,
+            0,
+            128,
+            192
+          ],
+          "source": {
+            "source": "05_npc_merchant_walk_8dir.png",
+            "rect": [
+              723,
+              54,
+              98,
+              170
+            ]
+          }
+        },
+        {
+          "direction": "SW",
+          "phase": 0,
+          "rect": [
+            0,
+            192,
+            128,
+            192
+          ],
+          "source": {
+            "source": "05_npc_merchant_walk_8dir.png",
+            "rect": [
+              75,
+              262,
+              99,
+              172
+            ]
+          }
+        },
+        {
+          "direction": "SW",
+          "phase": 1,
+          "rect": [
+            128,
+            192,
+            128,
+            192
+          ],
+          "source": {
+            "source": "05_npc_merchant_walk_8dir.png",
+            "rect": [
+              296,
+              262,
+              90,
+              172
+            ]
+          }
+        },
+        {
+          "direction": "SW",
+          "phase": 2,
+          "rect": [
+            256,
+            192,
+            128,
+            192
+          ],
+          "source": {
+            "source": "05_npc_merchant_walk_8dir.png",
+            "rect": [
+              507,
+              262,
+              93,
+              172
+            ]
+          }
+        },
+        {
+          "direction": "SW",
+          "phase": 3,
+          "rect": [
+            384,
+            192,
+            128,
+            192
+          ],
+          "source": {
+            "source": "05_npc_merchant_walk_8dir.png",
+            "rect": [
+              728,
+              262,
+              86,
+              171
+            ]
+          }
+        },
+        {
+          "direction": "W",
+          "phase": 0,
+          "rect": [
+            0,
+            384,
+            128,
+            192
+          ],
+          "source": {
+            "source": "05_npc_merchant_walk_8dir.png",
+            "rect": [
+              77,
+              479,
+              82,
+              172
+            ]
+          }
+        },
+        {
+          "direction": "W",
+          "phase": 1,
+          "rect": [
+            128,
+            384,
+            128,
+            192
+          ],
+          "source": {
+            "source": "05_npc_merchant_walk_8dir.png",
+            "rect": [
+              292,
+              479,
+              81,
+              172
+            ]
+          }
+        },
+        {
+          "direction": "W",
+          "phase": 2,
+          "rect": [
+            256,
+            384,
+            128,
+            192
+          ],
+          "source": {
+            "source": "05_npc_merchant_walk_8dir.png",
+            "rect": [
+              510,
+              479,
+              85,
+              172
+            ]
+          }
+        },
+        {
+          "direction": "W",
+          "phase": 3,
+          "rect": [
+            384,
+            384,
+            128,
+            192
+          ],
+          "source": {
+            "source": "05_npc_merchant_walk_8dir.png",
+            "rect": [
+              728,
+              479,
+              80,
+              172
+            ]
+          }
+        },
+        {
+          "direction": "NW",
+          "phase": 0,
+          "rect": [
+            0,
+            576,
+            128,
+            192
+          ],
+          "source": {
+            "source": "05_npc_merchant_walk_8dir.png",
+            "rect": [
+              74,
+              695,
+              100,
+              179
+            ]
+          }
+        },
+        {
+          "direction": "NW",
+          "phase": 1,
+          "rect": [
+            128,
+            576,
+            128,
+            192
+          ],
+          "source": {
+            "source": "05_npc_merchant_walk_8dir.png",
+            "rect": [
+              292,
+              696,
+              89,
+              178
+            ]
+          }
+        },
+        {
+          "direction": "NW",
+          "phase": 2,
+          "rect": [
+            256,
+            576,
+            128,
+            192
+          ],
+          "source": {
+            "source": "05_npc_merchant_walk_8dir.png",
+            "rect": [
+              505,
+              695,
+              99,
+              179
+            ]
+          }
+        },
+        {
+          "direction": "NW",
+          "phase": 3,
+          "rect": [
+            384,
+            576,
+            128,
+            192
+          ],
+          "source": {
+            "source": "05_npc_merchant_walk_8dir.png",
+            "rect": [
+              724,
+              697,
+              91,
+              177
+            ]
+          }
+        },
+        {
+          "direction": "N",
+          "phase": 0,
+          "rect": [
+            0,
+            768,
+            128,
+            192
+          ],
+          "source": {
+            "source": "05_npc_merchant_walk_8dir.png",
+            "rect": [
+              71,
+              922,
+              99,
+              175
+            ]
+          }
+        },
+        {
+          "direction": "N",
+          "phase": 1,
+          "rect": [
+            128,
+            768,
+            128,
+            192
+          ],
+          "source": {
+            "source": "05_npc_merchant_walk_8dir.png",
+            "rect": [
+              283,
+              923,
+              98,
+              174
+            ]
+          }
+        },
+        {
+          "direction": "N",
+          "phase": 2,
+          "rect": [
+            256,
+            768,
+            128,
+            192
+          ],
+          "source": {
+            "source": "05_npc_merchant_walk_8dir.png",
+            "rect": [
+              502,
+              923,
+              100,
+              174
+            ]
+          }
+        },
+        {
+          "direction": "N",
+          "phase": 3,
+          "rect": [
+            384,
+            768,
+            128,
+            192
+          ],
+          "source": {
+            "source": "05_npc_merchant_walk_8dir.png",
+            "rect": [
+              715,
+              920,
+              98,
+              177
+            ]
+          }
+        },
+        {
+          "direction": "NE",
+          "phase": 0,
+          "rect": [
+            0,
+            960,
+            128,
+            192
+          ],
+          "source": {
+            "source": "05_npc_merchant_walk_8dir.png",
+            "rect": [
+              68,
+              1133,
+              95,
+              177
+            ]
+          }
+        },
+        {
+          "direction": "NE",
+          "phase": 1,
+          "rect": [
+            128,
+            960,
+            128,
+            192
+          ],
+          "source": {
+            "source": "05_npc_merchant_walk_8dir.png",
+            "rect": [
+              291,
+              1133,
+              86,
+              178
+            ]
+          }
+        },
+        {
+          "direction": "NE",
+          "phase": 2,
+          "rect": [
+            256,
+            960,
+            128,
+            192
+          ],
+          "source": {
+            "source": "05_npc_merchant_walk_8dir.png",
+            "rect": [
+              502,
+              1133,
+              95,
+              177
+            ]
+          }
+        },
+        {
+          "direction": "NE",
+          "phase": 3,
+          "rect": [
+            384,
+            960,
+            128,
+            192
+          ],
+          "source": {
+            "source": "05_npc_merchant_walk_8dir.png",
+            "rect": [
+              730,
+              1134,
+              84,
+              176
+            ]
+          }
+        },
+        {
+          "direction": "E",
+          "phase": 0,
+          "rect": [
+            0,
+            1152,
+            128,
+            192
+          ],
+          "source": {
+            "source": "05_npc_merchant_walk_8dir.png",
+            "rect": [
+              73,
+              1347,
+              86,
+              173
+            ]
+          }
+        },
+        {
+          "direction": "E",
+          "phase": 1,
+          "rect": [
+            128,
+            1152,
+            128,
+            192
+          ],
+          "source": {
+            "source": "05_npc_merchant_walk_8dir.png",
+            "rect": [
+              291,
+              1347,
+              83,
+              173
+            ]
+          }
+        },
+        {
+          "direction": "E",
+          "phase": 2,
+          "rect": [
+            256,
+            1152,
+            128,
+            192
+          ],
+          "source": {
+            "source": "05_npc_merchant_walk_8dir.png",
+            "rect": [
+              508,
+              1347,
+              85,
+              173
+            ]
+          }
+        },
+        {
+          "direction": "E",
+          "phase": 3,
+          "rect": [
+            384,
+            1152,
+            128,
+            192
+          ],
+          "source": {
+            "source": "05_npc_merchant_walk_8dir.png",
+            "rect": [
+              727,
+              1347,
+              84,
+              173
+            ]
+          }
+        },
+        {
+          "direction": "SE",
+          "phase": 0,
+          "rect": [
+            0,
+            1344,
+            128,
+            192
+          ],
+          "source": {
+            "source": "05_npc_merchant_walk_8dir.png",
+            "rect": [
+              69,
+              1555,
+              94,
+              176
+            ]
+          }
+        },
+        {
+          "direction": "SE",
+          "phase": 1,
+          "rect": [
+            128,
+            1344,
+            128,
+            192
+          ],
+          "source": {
+            "source": "05_npc_merchant_walk_8dir.png",
+            "rect": [
+              287,
+              1559,
+              91,
+              172
+            ]
+          }
+        },
+        {
+          "direction": "SE",
+          "phase": 2,
+          "rect": [
+            256,
+            1344,
+            128,
+            192
+          ],
+          "source": {
+            "source": "05_npc_merchant_walk_8dir.png",
+            "rect": [
+              502,
+              1559,
+              94,
+              172
+            ]
+          }
+        },
+        {
+          "direction": "SE",
+          "phase": 3,
+          "rect": [
+            384,
+            1344,
+            128,
+            192
+          ],
+          "source": {
+            "source": "05_npc_merchant_walk_8dir.png",
+            "rect": [
+              717,
+              1559,
+              89,
+              173
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

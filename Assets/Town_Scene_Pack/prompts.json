@@ -1,0 +1,108 @@
+{
+  "method": "Built-in image_gen; reference-derived reconstruction",
+  "jobs": [
+    {
+      "id": "scene_clean",
+      "transparent": false,
+      "prompt": "Use case: precise-object-edit. Reconstruct the reference town viewport ONLY as a clean 2D game background plate. Tropical 16th century Jakarta harbor marketplace, warm sandy central street, raised horizontal wooden boardwalk at bottom and steps descending center, harbor blue sea and distant hazy jungle hills, open pale sky. Keep same straight-on elevated 3/4 camera, composition and painterly pixel-art HD2D style of reference. REMOVE ALL UI borders, menus, logos, writing, ALL people, birds, sailing ships, ALL near and middle foreground palms, ALL near left/right thatched houses, wheeled carts and merchandise stalls so these can be separate sprites. Retain small far-distance huts and vegetation, distant dock, ground, stairs and boardwalk. Fill removed areas plausibly; no new objects. 1536x1024 landscape plate. No typography. This is inferred clean background reconstruction."
+    },
+    {
+      "id": "ui_frame",
+      "transparent": true,
+      "prompt": "Use case: background-extraction. Reconstruct ONLY the ornate thin bronze/black rectangular outer border enclosing the town viewport in image. Entire inner area genuine transparent alpha. All outside transparent. Full rectangular four edges with corner ornaments, weathered bronze interwoven marine scrollwork, thin bevels, subtly uneven hand-painted game pixels. Landscape rectangle about 1.55:1 aspect, frame is only 10-16 pixels thick at 1000px width. No logo, text, menu, background scenery, side data panel or instruments. Preserve reference delicate dark metallic frame."
+    },
+    {
+      "id": "ui_sidebar",
+      "transparent": true,
+      "prompt": "Use case: background-extraction. One transparent UI COMPONENT ATLAS based closely on right hand dark bronze data panel in reference, with isolated pieces and wide transparent gutters, neatly aligned in TWO columns. Left column: one tall EMPTY dark brown-black sidebar background with thin weathered bronze borders, ratio 1:3.2, no text or internal widgets. Right column vertically: 1 short capsule bronze outlined label bar dark brown center; 2 short oval numeric data well DEEP BLACK interior bronze trim; 3 pale cream rectangular product option row with ornate bronze ends; 4 empty dark horizontal progress track bronze rim; 5 green progress fill strip; 6 dark gray bottom function button with subtle bronze edges. All pieces isolated, no touching. No text, letters, numbers, logos, icons. Faithful restrained HD2D Renaissance nautical UI. Real alpha transparency."
+    },
+    {
+      "id": "ui_trade",
+      "transparent": true,
+      "prompt": "Use case: background-extraction. Single transparent component atlas reconstructing central transaction dialog in reference. Top half: ONE blank beige parchment dialog rectangle, 3:2 ratio, dark brown ornate bronze beveled frame, narrow dark title bar at top, completely EMPTY paper content. No text/no buttons embedded. Bottom half separate isolated components each with wide transparent gutters: two dark rectangular confirm/cancel button plates side by side (blank, subtly bronze trim), one depressed tan numeric input field, one little red square X close button, one tiny gold coin. Actual transparent exterior, solid parchment and button interiors. Match small classic nautical PC RPG ornate understated UI; no writing except X close glyph."
+    },
+    {
+      "id": "menu_buttons",
+      "transparent": true,
+      "prompt": "Use case: background-extraction. Input is the user's ORIGINAL game screenshot with all NINE hanging menu signs clearly visible. Produce ONE faithful transparent sprite atlas: 3 columns x 3 rows, nine isolated COMPLETE original hanging signs, generous empty gutters, identical style and proportions, no text labels. Reproduce these EXACT screenshot silhouettes, ornaments, colors and pictograms as closely as possible, do NOT invent generic new icons. Row1 = screenshot LEFT column top three: 1 blue-gold ornate hanging tavern sign and top bracket, 2 crimson trading shield with ornate silver scrollwork and tiny balance pictogram, 3 round dark guild medallion with suited person and long gold double rod hanger. Row2 = screenshot LEFT bottom pink fabric/bed illuminated vertical inn plaque including its top hanging bracket; screenshot RIGHT top greenish round civic medallion with horizontal metal support; screenshot RIGHT second shipyard shaped wooden ship sign with ornate hooked bracket and hanging anchor. Row3 = screenshot RIGHT third round sailing-ship medallion with bracket; screenshot RIGHT bottom large elaborate pointed silver framed dark portrait/gate ornament topped with red-blue-green triangular crest; screenshot TOP CENTER ornate round gold brown palace crest with gold dangling pointed legs. Nine separate complete source-matched buttons including their own mounting brackets, preserve source pixel-art hand drawn rendering, no upscale smoothing, true transparency. Remove ALL underlying scene pixels from between rods and around all silhouettes. No UI sidebar, no external rectangle frame, no city background, no added letters. Match source artwork; unknown icon function does not justify replacement.",
+      "reference": "reference/original_nine_menus.png"
+    },
+    {
+      "id": "ship_far",
+      "transparent": true,
+      "prompt": "Use case: background-extraction. Extract and reconstruct the large distant European sailing ship visible in UPPER RIGHT harbor of reference, isolated entire wooden hull and all three masts, soft ivory square sails and rigging. Mild left-facing side/three-quarter view, camera matches town. Painterly HD2D game sprite, atmospheric warm muted colors, low contrast from distant haze. Complete occluded hull plausibly, no water rectangle, no land, no buildings, no people, no shadow blob. Entire surrounding background transparent. One ship."
+    },
+    {
+      "id": "hut_right",
+      "transparent": true,
+      "prompt": "Use case: background-extraction. Reconstruct ONLY the large right middle-ground tropical thatched timber stilt house from reference, complete standalone building with low broad golden-brown thatch roof, dark bamboo walls, diagonal supporting beams, small raised porch and wooden stairway at front left. Same perspective as reference, roof seen slightly above, facade visible and left end wall, warm hand-painted HD2D pixel-like texture, no extra sharp modern 3D. Fill parts obscured by UI and palms plausibly. No palms, people, UI, ground rectangle, sky, merchandise or ships. One whole building on true transparency, generous transparent margin, no cast ground shadow."
+    },
+    {
+      "id": "hut_left",
+      "transparent": true,
+      "prompt": "Use case: background-extraction. Isolate/reconstruct the close lower-left thatched hut from town reference. One compact low hut, huge sloping weathered brown palm-thatch roof seen from above, very dark timber supports/walls, same elevated 3/4 view, roof ridge and woven straw edges, complete object plausibly outside frame. Muted tropical nautical HD2D painterly pixel art matching reference. No palms, foliage, people, carts, banners, UI, scenery or ground rectangle. Full isolated building true transparent background generous margin, no ground shadow."
+    },
+    {
+      "id": "market_cart",
+      "transparent": true,
+      "prompt": "Use case: background-extraction. One isolated merchant pushcart matching cart on front wooden boardwalk in town reference. Dark brown rough wooden cart with two large wood spoked wheels, crates and several modest sacks/baskets, two long pulling handles toward left. Side view with top visible, elevated 3/4 town perspective. Reconstruct complete object. Small warm hand-painted HD2D pixel game sprite. NO attached person, no background, no ground rectangle, no UI, no palm, no cast shadow. True transparent background, full cart including handles and wheels."
+    },
+    {
+      "id": "market_stall",
+      "transparent": true,
+      "prompt": "Use case: background-extraction. One isolated market stall matching right-center street stand in reference: small ochre cream cloth awning stretched over timber poles, many baskets, jars, sacks, bundled tropical goods and rolled cloth on wooden table and ground. Elevated front-left 3/4 view, warm muted golden brown HD2D painterly pixel art. Complete standalone group, no people, no house, no palms, no scenery, no lettering. Real transparent alpha around all goods and awning; no rectangular ground. Generous margins."
+    },
+    {
+      "id": "palm_mid",
+      "transparent": true,
+      "prompt": "Use case: background-extraction. One complete tropical coconut palm matching dominant LEFT CENTER palm in reference, tall gently bowed brown segmented trunk, long arching rich green pinnate fronds stretching to both sides, small coconut cluster, visible entire trunk base. Same slightly elevated camera and painterly HD2D game style, detailed leaf silhouette. Reference subject only, no hut, people, sky, ground patch, UI or scenery. True transparent alpha, wide margins, no clipped leaves."
+    },
+    {
+      "id": "palm_foreground",
+      "transparent": true,
+      "prompt": "Use case: background-extraction. Isolate the CLOSE FOREGROUND palm frond cluster occupying LOWER RIGHT of reference, large graceful long curved pinnate dark green fronds sweeping toward center left, soft shallow depth-of-field edges, full leaf silhouettes completed plausibly. Tropical harbor hand-painted HD2D game style, olive highlights and very dark green shadows. Floating foliage cluster only with short supporting stem on right, no pot, no tree trunk needed. No background, people, buildings, lettering or UI, true transparent alpha."
+    },
+    {
+      "id": "seagull_flight",
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. One true-transparent 4 columns x 2 rows sprite sheet, EIGHT successive coherent wing-flap frames of the SAME near-camera white seagull matching reference birds. White gray body, charcoal wing tips, small yellow beak, facing LEFT in side/three-quarter view, body stays same scale and centered same local coordinates each equal cell. Read row-major as 8 frame loop: wings raised high, raised diagonal, spread horizontal, lowered diagonal, downstroke lowest, rising low, horizontal, rising high. Each sprite whole body and BOTH complete wings, no cutoffs/overlap, very generous transparent gutters. HD2D hand-painted game sprite with feather detail, subdued gray shadow. No scenery, text or grid. Alpha transparency."
+    },
+    {
+      "id": "npc_green_cart_vendor",
+      "transparent": true,
+      "prompt": "Use case: identity-preserve. Make ONE eight-direction WALK animation sprite sheet for the bare-armed male cart vendor in front center of reference: tan skin, white/beige headwrap, sleeveless cream tunic, bright olive green knee-length wrapped lower garment, brown sandals. NO CART or cargo, arms naturally swinging, retain green garment. Reference town video image supplies small period NPC style. Reconstruct plausible character details; do NOT include other townsfolk. EXACTLY 4 columns x 8 rows = 32 full-body sprites on real transparent background. Row order SOUTH front, SOUTHWEST front-left, WEST left profile, NORTHWEST rear-left, NORTH full back NO FACE, NORTHEAST rear-right, EAST right profile, SOUTHEAST front-right. Each row must distinctly show that direction. Four columns: left leg forward/right arm forward, passing, right leg forward/left arm forward, opposite passing. Natural slow walking. All equal grid cells, same character scale, feet aligned to same baseline in every cell, large empty gutters, no touching/clipped sprites. Flat classic detailed hand-pixelled RPG sprite with limited warm muted palette and dark outlines, not big 3D cartoon character. No text, grid, ground, shadow, props, border or background. All 32 sprites same outfit and body identity. Sides of body and arm/leg alternation must be clear; back view never shows face."
+    },
+    {
+      "id": "npc_blue_worker",
+      "transparent": true,
+      "prompt": "Use case: identity-preserve. Make ONE eight-direction WALK animation sprite sheet for a male townsman from left marketplace crowd: tan skin, cream headwrap, muted blue sleeveless vest over light shirt, loose dark gray-blue trousers, brown shoes; unarmed, no cargo. Reference town video image supplies small period NPC style. Reconstruct plausible character details; do NOT include other townsfolk. EXACTLY 4 columns x 8 rows = 32 full-body sprites on real transparent background. Row order SOUTH front, SOUTHWEST front-left, WEST left profile, NORTHWEST rear-left, NORTH full back NO FACE, NORTHEAST rear-right, EAST right profile, SOUTHEAST front-right. Each row must distinctly show that direction. Four columns: left leg forward/right arm forward, passing, right leg forward/left arm forward, opposite passing. Natural slow walking. All equal grid cells, same character scale, feet aligned to same baseline in every cell, large empty gutters, no touching/clipped sprites. Flat classic detailed hand-pixelled RPG sprite with limited warm muted palette and dark outlines, not big 3D cartoon character. No text, grid, ground, shadow, props, border or background. All 32 sprites same outfit and body identity. Sides of body and arm/leg alternation must be clear; back view never shows face."
+    },
+    {
+      "id": "npc_purple_townsfolk",
+      "transparent": true,
+      "prompt": "Use case: identity-preserve. Make ONE eight-direction WALK animation sprite sheet for a female townsfolk from marketplace crowd: tan skin, cream wrapped headscarf, light beige blouse, muted plum-purple long skirt and brown sandals; modest tropical period clothing, no modern details. Reference town video image supplies small period NPC style. Reconstruct plausible character details; do NOT include other townsfolk. EXACTLY 4 columns x 8 rows = 32 full-body sprites on real transparent background. Row order SOUTH front, SOUTHWEST front-left, WEST left profile, NORTHWEST rear-left, NORTH full back NO FACE, NORTHEAST rear-right, EAST right profile, SOUTHEAST front-right. Each row must distinctly show that direction. Four columns: left leg forward/right arm forward, passing, right leg forward/left arm forward, opposite passing. Natural slow walking. All equal grid cells, same character scale, feet aligned to same baseline in every cell, large empty gutters, no touching/clipped sprites. Flat classic detailed hand-pixelled RPG sprite with limited warm muted palette and dark outlines, not big 3D cartoon character. No text, grid, ground, shadow, props, border or background. All 32 sprites same outfit and body identity. Sides of body and arm/leg alternation must be clear; back view never shows face."
+    },
+    {
+      "id": "npc_beige_laborer",
+      "transparent": true,
+      "prompt": "Use case: identity-preserve. Make ONE eight-direction WALK animation sprite sheet for a male worker from central marketplace: tan skin, short dark hair, beige short-sleeved loose linen tunic, brown knee-length trousers, simple sandals; unarmed no cargo. Reference town video image supplies small period NPC style. Reconstruct plausible character details; do NOT include other townsfolk. EXACTLY 4 columns x 8 rows = 32 full-body sprites on real transparent background. Row order SOUTH front, SOUTHWEST front-left, WEST left profile, NORTHWEST rear-left, NORTH full back NO FACE, NORTHEAST rear-right, EAST right profile, SOUTHEAST front-right. Each row must distinctly show that direction. Four columns: left leg forward/right arm forward, passing, right leg forward/left arm forward, opposite passing. Natural slow walking. All equal grid cells, same character scale, feet aligned to same baseline in every cell, large empty gutters, no touching/clipped sprites. Flat classic detailed hand-pixelled RPG sprite with limited warm muted palette and dark outlines, not big 3D cartoon character. No text, grid, ground, shadow, props, border or background. All 32 sprites same outfit and body identity. Sides of body and arm/leg alternation must be clear; back view never shows face."
+    },
+    {
+      "id": "npc_brown_townsfolk",
+      "transparent": true,
+      "prompt": "Use case: identity-preserve. Make ONE eight-direction WALK animation sprite sheet for a female townsfolk near foreground steps: tan skin, cream head scarf framing dark hair, brown bodice over off-white long sleeves, long muted brown skirt, small pale apron, simple shoes; unarmed no cargo. Reference town video image supplies small period NPC style. Reconstruct plausible character details; do NOT include other townsfolk. EXACTLY 4 columns x 8 rows = 32 full-body sprites on real transparent background. Row order SOUTH front, SOUTHWEST front-left, WEST left profile, NORTHWEST rear-left, NORTH full back NO FACE, NORTHEAST rear-right, EAST right profile, SOUTHEAST front-right. Each row must distinctly show that direction. Four columns: left leg forward/right arm forward, passing, right leg forward/left arm forward, opposite passing. Natural slow walking. All equal grid cells, same character scale, feet aligned to same baseline in every cell, large empty gutters, no touching/clipped sprites. Flat classic detailed hand-pixelled RPG sprite with limited warm muted palette and dark outlines, not big 3D cartoon character. No text, grid, ground, shadow, props, border or background. All 32 sprites same outfit and body identity. Sides of body and arm/leg alternation must be clear; back view never shows face."
+    },
+    {
+      "id": "npc_purple_nw_fix",
+      "prompt": "Use case: identity-preserve. Fix ONLY the NORTHWEST-facing walking row for this SAME female purple-skirt townsfolk. One row of FOUR animation frames in a 4x1 transparent sprite strip. Every frame: torso BACK toward camera, head facing toward UPPER LEFT of image, left shoulder/left edge of cheek may show, no front face, headscarf knot trailing at back. Movement away from viewer diagonally LEFT. Cream headscarf, beige blouse, plum purple long skirt and brown shoes exactly as input. Four distinct sequential WALK phases alternating legs/arms. Same scale, same foot baseline, separate equal cells with large transparent gutters. Flat detailed classic pixel RPG style. No text, no ground, no glow or background. This is northwest, NOT northeast (do not face right). True transparent alpha.",
+      "reference": "generated/npc_purple_townsfolk.png",
+      "transparent": true
+    },
+    {
+      "id": "ui_trade_v2",
+      "prompt": "Use case: background-extraction. Image is actual game screenshot. Reconstruct ONLY central small trading dialog (rectangle at x236 y137 w174 h116 of 716x402 screenshot) as reusable UI COMPONENT ATLAS, faithfully match its SIMPLE plain dark bronze rectangular bezel with stepped corner flourishes, narrow dark title strip and flat tan parchment content. Do not add large compass rosettes or filigree crests: original is restrained utilitarian. Top: blank dialog shell in EXACT 3:2 width/height ratio, border and title bar intact, blank tan content, remove all words, buttons and input fields from shell. Bottom separate on TRANSPARENT background with generous gaps: two blank short dark gray rectangular push buttons with fine bronze rim, one short inset numeric input rectangle with muted taupe interior, a tiny red square close X. All components complete. Pixel-art 1990s game interface rendered cleanly at higher size, no photo textures, no scenery, no logos. Real alpha transparency outside components, opaque interiors. This replaces ornate earlier prototype with source-faithful simpler geometry.",
+      "reference": "reference/trade.png",
+      "transparent": true
+    }
+  ]
+}
