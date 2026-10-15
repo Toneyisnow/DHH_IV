@@ -1,0 +1,10 @@
+﻿航海世家 / Maritime Legend
+
+双击 Builds\Windows\MaritimeLegend.exe。
+保持exe与MaritimeLegend_Data、UnityPlayer.dll、MonoBleedingEdge等文件在一起。
+
+新游戏：按任意键 → 新游戏 → 空白档案 → 模板 → 定制 → 家园与模式 → 开始。
+操作说明：Documentation\操作说明.md
+测试结果：Documentation\测试结果说明.md
+未完成验收项：Documentation\验收边界.md
+后台重建：Tools\Build-Windows.ps1 -RunChecks

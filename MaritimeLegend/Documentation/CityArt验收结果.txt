@@ -1,0 +1,32 @@
+CityScene 两城美术首轮验收 — 2026-10-14
+
+启动：Unity 6000.3.10f1 打开本 MaritimeLegend 项目。
+菜单 Maritime Legend > City Art > Preview Lisbon / Preview Venice。
+预览使用隔离临时存档。点击道路行走；地点标签自动寻路后打开交互；右侧切换城市与天气。
+正常游戏入口：Maritime Legend > Play Game。选择里斯本或威尼斯出生，或航行到对应港口，即使用新显示。
+Windows 构建：Builds/Windows/MaritimeLegend.exe。
+
+通过：
+- Windows 构建成功；58 项确定性核心检查通过（包含 30 游戏日模拟）。
+- CITY_ART_PLAYMODE_PASS：里斯本真实台阶登高、威尼斯真实桥面跨河、两城全部 12 个交互目标路径可达、雾/雨切换、后台 workflow 继续运行。
+- SCENE_WORKFLOW_PLAYMODE_PASS：八主 Scene 切换、八城市内容动态加载、单音频/UI/输入宿主、自动生产与舰队持续、存读档与离线恢复、重复领取保护。
+- CITY_ART_EDITOR_PASS：在独立构建副本的 Unity Editor Play Mode 中，通过正式菜单入口先预览里斯本，再切换威尼斯，分别检查角色、场景和目标可达性，正常退出。
+- 主项目资源 GUID 审计：恰好八个 .unity Scene，城市/场景/Prefab 引用无缺失，GUID 无重复。
+
+视觉核对：
+实际运行输出在 CityArtEvidence/，参考图在 CityArtReferences/，并排对照入口 CityArtComparison.html。
+已经查看两城 UI 运行截图与深度图。景深使用真实深度；人物与中心交互区域清楚。光照、阴影、近远景、波纹倒影及天气实际渲染。
+截图由相机 RenderTexture 和实际 UI 相机输出，没有将概念图伪装为运行画面。
+原始场景颜色从线性 HDR 转为 sRGB 后写 PNG；深度调试图仅用于距离层次检查。
+
+发现并修复：
+首轮构建出现被裁剪的内建 Shader 引用导致材质空引用，改为配置直接引用专用 Shader。
+建筑切片按真实边界重新测量，修复按四等分切片产生的邻格边线。
+修复石阶纹理尺度不一致、远景悬浮、空旷水面与过远镜头。
+
+保留情况与限制：
+编辑器启动日志出现 UnityEditor.Search.SearchDatabase 的 ArgumentOutOfRangeException（搜索索引），不在游戏调用栈；之后两城预览均通过并退出。完整日志 city-art-editor.log 保留，没有将它报告为无异常日志。
+本轮交付里斯本、威尼斯两个可行走精修区；杭州和其余五城仍为原版画面。
+各城四种主要建筑及共享环境道具，远景存在建筑重复；石材细节和街道的自然变化仍有进一步精修空间，不宣称与方向图精细程度完全一致。
+角色共用生成的八方向三帧图集，服装颜色与外观参数关联；完整模板独立脸型、发型动画未齐备。
+没有在本轮宣称已完成全游戏人工通关或实际聆听音频；本轮验证范围为城市美术、行走、场景与工作流回归。

@@ -1,0 +1,1 @@
+PASS: exactly eight scenes, eight build entries, eight stable cityIds, eight city configurations and root prefabs, 48 unified city interactions.

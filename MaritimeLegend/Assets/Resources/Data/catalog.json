@@ -1,0 +1,2530 @@
+{
+  "version": 1,
+  "industries": [
+    "农业",
+    "畜牧",
+    "纺织",
+    "林业",
+    "矿业",
+    "工业",
+    "奢侈品",
+    "化学/药剂"
+  ],
+  "products": [
+    {
+      "id": "p0",
+      "name": "小麦",
+      "industry": 0,
+      "category": "R",
+      "basePrice": 12,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "农业"
+      ],
+      "allowedCities": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": "p1",
+      "name": "甘蔗",
+      "industry": 0,
+      "category": "R",
+      "basePrice": 18,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "农业"
+      ],
+      "allowedCities": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "p2",
+      "name": "蓝莓",
+      "industry": 0,
+      "category": "R",
+      "basePrice": 25,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "农业"
+      ],
+      "allowedCities": [
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p3",
+      "name": "面粉",
+      "industry": 0,
+      "category": "M",
+      "basePrice": 32,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "农业"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p4",
+      "name": "糖",
+      "industry": 0,
+      "category": "M",
+      "basePrice": 43,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "农业"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p5",
+      "name": "面包",
+      "industry": 0,
+      "category": "C",
+      "basePrice": 78,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "农业"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p6",
+      "name": "蓝莓果酱",
+      "industry": 0,
+      "category": "C",
+      "basePrice": 125,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "农业"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p7",
+      "name": "牛",
+      "industry": 1,
+      "category": "R",
+      "basePrice": 45,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "畜牧"
+      ],
+      "allowedCities": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "p8",
+      "name": "羊毛",
+      "industry": 1,
+      "category": "R",
+      "basePrice": 24,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "畜牧"
+      ],
+      "allowedCities": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": "p9",
+      "name": "肉",
+      "industry": 1,
+      "category": "M",
+      "basePrice": 65,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "畜牧"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p10",
+      "name": "皮革",
+      "industry": 1,
+      "category": "M",
+      "basePrice": 80,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "畜牧"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p11",
+      "name": "腌肉",
+      "industry": 1,
+      "category": "C",
+      "basePrice": 115,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "畜牧"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p12",
+      "name": "皮靴",
+      "industry": 1,
+      "category": "C",
+      "basePrice": 165,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "畜牧"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p13",
+      "name": "亚麻",
+      "industry": 2,
+      "category": "R",
+      "basePrice": 20,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "纺织"
+      ],
+      "allowedCities": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "p14",
+      "name": "棉花",
+      "industry": 2,
+      "category": "R",
+      "basePrice": 18,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "纺织"
+      ],
+      "allowedCities": [
+        2,
+        5
+      ]
+    },
+    {
+      "id": "p15",
+      "name": "纱线",
+      "industry": 2,
+      "category": "M",
+      "basePrice": 45,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "纺织"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p16",
+      "name": "布匹",
+      "industry": 2,
+      "category": "M",
+      "basePrice": 72,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "纺织"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p17",
+      "name": "船帆",
+      "industry": 2,
+      "category": "C",
+      "basePrice": 175,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "纺织"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p18",
+      "name": "礼服",
+      "industry": 2,
+      "category": "C",
+      "basePrice": 210,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "纺织"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p19",
+      "name": "原木",
+      "industry": 3,
+      "category": "R",
+      "basePrice": 28,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "林业"
+      ],
+      "allowedCities": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "p20",
+      "name": "树脂",
+      "industry": 3,
+      "category": "R",
+      "basePrice": 22,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "林业"
+      ],
+      "allowedCities": [
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p21",
+      "name": "木板",
+      "industry": 3,
+      "category": "M",
+      "basePrice": 65,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "林业"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p22",
+      "name": "涂层木材",
+      "industry": 3,
+      "category": "M",
+      "basePrice": 95,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "林业"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p23",
+      "name": "家具",
+      "industry": 3,
+      "category": "C",
+      "basePrice": 180,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "林业"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p24",
+      "name": "船体组件",
+      "industry": 3,
+      "category": "C",
+      "basePrice": 265,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "林业"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p25",
+      "name": "铁矿",
+      "industry": 4,
+      "category": "R",
+      "basePrice": 26,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "矿业"
+      ],
+      "allowedCities": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": "p26",
+      "name": "铜矿",
+      "industry": 4,
+      "category": "R",
+      "basePrice": 35,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "矿业"
+      ],
+      "allowedCities": [
+        2,
+        7
+      ]
+    },
+    {
+      "id": "p27",
+      "name": "铁锭",
+      "industry": 4,
+      "category": "M",
+      "basePrice": 72,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "矿业"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p28",
+      "name": "铜锭",
+      "industry": 4,
+      "category": "M",
+      "basePrice": 95,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "矿业"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p29",
+      "name": "工具组",
+      "industry": 4,
+      "category": "C",
+      "basePrice": 180,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "矿业"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p30",
+      "name": "金属船件",
+      "industry": 4,
+      "category": "C",
+      "basePrice": 235,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "矿业"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p31",
+      "name": "煤",
+      "industry": 5,
+      "category": "R",
+      "basePrice": 24,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "工业"
+      ],
+      "allowedCities": [
+        4,
+        7
+      ]
+    },
+    {
+      "id": "p32",
+      "name": "砂",
+      "industry": 5,
+      "category": "R",
+      "basePrice": 12,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "工业"
+      ],
+      "allowedCities": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "p33",
+      "name": "钢材",
+      "industry": 5,
+      "category": "M",
+      "basePrice": 135,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "工业"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p34",
+      "name": "玻璃",
+      "industry": 5,
+      "category": "M",
+      "basePrice": 65,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "工业"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p35",
+      "name": "齿轮机械",
+      "industry": 5,
+      "category": "C",
+      "basePrice": 330,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "工业"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p36",
+      "name": "罗盘",
+      "industry": 5,
+      "category": "C",
+      "basePrice": 220,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "工业"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p37",
+      "name": "香料",
+      "industry": 6,
+      "category": "R",
+      "basePrice": 48,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "奢侈品"
+      ],
+      "allowedCities": [
+        3,
+        5
+      ]
+    },
+    {
+      "id": "p38",
+      "name": "宝石原石",
+      "industry": 6,
+      "category": "R",
+      "basePrice": 120,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "奢侈品"
+      ],
+      "allowedCities": [
+        2,
+        5
+      ]
+    },
+    {
+      "id": "p39",
+      "name": "香料精油",
+      "industry": 6,
+      "category": "M",
+      "basePrice": 135,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "奢侈品"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p40",
+      "name": "切割宝石",
+      "industry": 6,
+      "category": "M",
+      "basePrice": 320,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "奢侈品"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p41",
+      "name": "香水",
+      "industry": 6,
+      "category": "C",
+      "basePrice": 290,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "奢侈品"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p42",
+      "name": "珠宝",
+      "industry": 6,
+      "category": "C",
+      "basePrice": 720,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "奢侈品"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p43",
+      "name": "药草",
+      "industry": 7,
+      "category": "R",
+      "basePrice": 32,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "化学/药剂"
+      ],
+      "allowedCities": [
+        0,
+        5
+      ]
+    },
+    {
+      "id": "p44",
+      "name": "硫磺",
+      "industry": 7,
+      "category": "R",
+      "basePrice": 33,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "化学/药剂"
+      ],
+      "allowedCities": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "p45",
+      "name": "药膏",
+      "industry": 7,
+      "category": "M",
+      "basePrice": 80,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "化学/药剂"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p46",
+      "name": "颜料",
+      "industry": 7,
+      "category": "M",
+      "basePrice": 100,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "化学/药剂"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p47",
+      "name": "医疗包",
+      "industry": 7,
+      "category": "C",
+      "basePrice": 190,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "化学/药剂"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p48",
+      "name": "高级染料",
+      "industry": 7,
+      "category": "C",
+      "basePrice": 245,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "化学/药剂"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "flagship",
+      "name": "旗舰航海仪",
+      "industry": 5,
+      "category": "C",
+      "basePrice": 900,
+      "weight": 3,
+      "stackSize": 10,
+      "quality": 3,
+      "demandTags": [
+        "远洋"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "id": "rp3",
+      "output": "p3",
+      "quantity": 1,
+      "industry": 0,
+      "inputs": [
+        {
+          "product": "p0",
+          "quantity": 2
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 1,
+      "fee": 3,
+      "foregroundSeconds": 10,
+      "awayCityMinutes": 5,
+      "offlineHours": 2,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp4",
+      "output": "p4",
+      "quantity": 1,
+      "industry": 0,
+      "inputs": [
+        {
+          "product": "p1",
+          "quantity": 2
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 1,
+      "fee": 3,
+      "foregroundSeconds": 10,
+      "awayCityMinutes": 5,
+      "offlineHours": 2,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp5",
+      "output": "p5",
+      "quantity": 2,
+      "industry": 0,
+      "inputs": [
+        {
+          "product": "p3",
+          "quantity": 2
+        },
+        {
+          "product": "p4",
+          "quantity": 1
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 2,
+      "fee": 8,
+      "foregroundSeconds": 25,
+      "awayCityMinutes": 15,
+      "offlineHours": 5,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp6",
+      "output": "p6",
+      "quantity": 1,
+      "industry": 0,
+      "inputs": [
+        {
+          "product": "p2",
+          "quantity": 2
+        },
+        {
+          "product": "p4",
+          "quantity": 1
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 2,
+      "fee": 8,
+      "foregroundSeconds": 25,
+      "awayCityMinutes": 15,
+      "offlineHours": 5,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp9",
+      "output": "p9",
+      "quantity": 1,
+      "industry": 1,
+      "inputs": [
+        {
+          "product": "p7",
+          "quantity": 1
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 1,
+      "fee": 3,
+      "foregroundSeconds": 10,
+      "awayCityMinutes": 5,
+      "offlineHours": 2,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp10",
+      "output": "p10",
+      "quantity": 1,
+      "industry": 1,
+      "inputs": [
+        {
+          "product": "p7",
+          "quantity": 1
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 1,
+      "fee": 3,
+      "foregroundSeconds": 10,
+      "awayCityMinutes": 5,
+      "offlineHours": 2,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp11",
+      "output": "p11",
+      "quantity": 1,
+      "industry": 1,
+      "inputs": [
+        {
+          "product": "p9",
+          "quantity": 1
+        },
+        {
+          "product": "p4",
+          "quantity": 1
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 2,
+      "fee": 8,
+      "foregroundSeconds": 25,
+      "awayCityMinutes": 15,
+      "offlineHours": 5,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp12",
+      "output": "p12",
+      "quantity": 1,
+      "industry": 1,
+      "inputs": [
+        {
+          "product": "p10",
+          "quantity": 1
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 2,
+      "fee": 8,
+      "foregroundSeconds": 25,
+      "awayCityMinutes": 15,
+      "offlineHours": 5,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp15",
+      "output": "p15",
+      "quantity": 1,
+      "industry": 2,
+      "inputs": [
+        {
+          "product": "p13",
+          "quantity": 1
+        },
+        {
+          "product": "p14",
+          "quantity": 1
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 1,
+      "fee": 3,
+      "foregroundSeconds": 10,
+      "awayCityMinutes": 5,
+      "offlineHours": 2,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp16",
+      "output": "p16",
+      "quantity": 1,
+      "industry": 2,
+      "inputs": [
+        {
+          "product": "p15",
+          "quantity": 1
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 1,
+      "fee": 3,
+      "foregroundSeconds": 10,
+      "awayCityMinutes": 5,
+      "offlineHours": 2,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp17",
+      "output": "p17",
+      "quantity": 1,
+      "industry": 2,
+      "inputs": [
+        {
+          "product": "p16",
+          "quantity": 2
+        },
+        {
+          "product": "p20",
+          "quantity": 1
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 2,
+      "fee": 8,
+      "foregroundSeconds": 25,
+      "awayCityMinutes": 15,
+      "offlineHours": 5,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp18",
+      "output": "p18",
+      "quantity": 1,
+      "industry": 2,
+      "inputs": [
+        {
+          "product": "p16",
+          "quantity": 2
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 2,
+      "fee": 8,
+      "foregroundSeconds": 25,
+      "awayCityMinutes": 15,
+      "offlineHours": 5,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp21",
+      "output": "p21",
+      "quantity": 1,
+      "industry": 3,
+      "inputs": [
+        {
+          "product": "p19",
+          "quantity": 2
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 1,
+      "fee": 3,
+      "foregroundSeconds": 10,
+      "awayCityMinutes": 5,
+      "offlineHours": 2,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp22",
+      "output": "p22",
+      "quantity": 1,
+      "industry": 3,
+      "inputs": [
+        {
+          "product": "p21",
+          "quantity": 1
+        },
+        {
+          "product": "p20",
+          "quantity": 1
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 1,
+      "fee": 3,
+      "foregroundSeconds": 10,
+      "awayCityMinutes": 5,
+      "offlineHours": 2,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp23",
+      "output": "p23",
+      "quantity": 1,
+      "industry": 3,
+      "inputs": [
+        {
+          "product": "p21",
+          "quantity": 2
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 2,
+      "fee": 8,
+      "foregroundSeconds": 25,
+      "awayCityMinutes": 15,
+      "offlineHours": 5,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp24",
+      "output": "p24",
+      "quantity": 1,
+      "industry": 3,
+      "inputs": [
+        {
+          "product": "p22",
+          "quantity": 2
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 2,
+      "fee": 8,
+      "foregroundSeconds": 25,
+      "awayCityMinutes": 15,
+      "offlineHours": 5,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp27",
+      "output": "p27",
+      "quantity": 2,
+      "industry": 4,
+      "inputs": [
+        {
+          "product": "p25",
+          "quantity": 3
+        },
+        {
+          "product": "p31",
+          "quantity": 1
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 1,
+      "fee": 3,
+      "foregroundSeconds": 10,
+      "awayCityMinutes": 5,
+      "offlineHours": 2,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp28",
+      "output": "p28",
+      "quantity": 1,
+      "industry": 4,
+      "inputs": [
+        {
+          "product": "p26",
+          "quantity": 2
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 1,
+      "fee": 3,
+      "foregroundSeconds": 10,
+      "awayCityMinutes": 5,
+      "offlineHours": 2,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp29",
+      "output": "p29",
+      "quantity": 1,
+      "industry": 4,
+      "inputs": [
+        {
+          "product": "p27",
+          "quantity": 2
+        },
+        {
+          "product": "p21",
+          "quantity": 1
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 2,
+      "fee": 8,
+      "foregroundSeconds": 25,
+      "awayCityMinutes": 15,
+      "offlineHours": 5,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp30",
+      "output": "p30",
+      "quantity": 1,
+      "industry": 4,
+      "inputs": [
+        {
+          "product": "p27",
+          "quantity": 2
+        },
+        {
+          "product": "p28",
+          "quantity": 1
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 2,
+      "fee": 8,
+      "foregroundSeconds": 25,
+      "awayCityMinutes": 15,
+      "offlineHours": 5,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp33",
+      "output": "p33",
+      "quantity": 1,
+      "industry": 5,
+      "inputs": [
+        {
+          "product": "p27",
+          "quantity": 1
+        },
+        {
+          "product": "p31",
+          "quantity": 2
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 1,
+      "fee": 3,
+      "foregroundSeconds": 10,
+      "awayCityMinutes": 5,
+      "offlineHours": 2,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp34",
+      "output": "p34",
+      "quantity": 1,
+      "industry": 5,
+      "inputs": [
+        {
+          "product": "p32",
+          "quantity": 2
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 1,
+      "fee": 3,
+      "foregroundSeconds": 10,
+      "awayCityMinutes": 5,
+      "offlineHours": 2,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp35",
+      "output": "p35",
+      "quantity": 1,
+      "industry": 5,
+      "inputs": [
+        {
+          "product": "p33",
+          "quantity": 1
+        },
+        {
+          "product": "p29",
+          "quantity": 1
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 2,
+      "fee": 8,
+      "foregroundSeconds": 25,
+      "awayCityMinutes": 15,
+      "offlineHours": 5,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp36",
+      "output": "p36",
+      "quantity": 1,
+      "industry": 5,
+      "inputs": [
+        {
+          "product": "p28",
+          "quantity": 1
+        },
+        {
+          "product": "p34",
+          "quantity": 1
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 2,
+      "fee": 8,
+      "foregroundSeconds": 25,
+      "awayCityMinutes": 15,
+      "offlineHours": 5,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp39",
+      "output": "p39",
+      "quantity": 1,
+      "industry": 6,
+      "inputs": [
+        {
+          "product": "p37",
+          "quantity": 2
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 1,
+      "fee": 3,
+      "foregroundSeconds": 10,
+      "awayCityMinutes": 5,
+      "offlineHours": 2,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp40",
+      "output": "p40",
+      "quantity": 1,
+      "industry": 6,
+      "inputs": [
+        {
+          "product": "p38",
+          "quantity": 2
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 1,
+      "fee": 3,
+      "foregroundSeconds": 10,
+      "awayCityMinutes": 5,
+      "offlineHours": 2,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp41",
+      "output": "p41",
+      "quantity": 1,
+      "industry": 6,
+      "inputs": [
+        {
+          "product": "p39",
+          "quantity": 1
+        },
+        {
+          "product": "p34",
+          "quantity": 1
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 2,
+      "fee": 8,
+      "foregroundSeconds": 25,
+      "awayCityMinutes": 15,
+      "offlineHours": 5,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp42",
+      "output": "p42",
+      "quantity": 1,
+      "industry": 6,
+      "inputs": [
+        {
+          "product": "p40",
+          "quantity": 1
+        },
+        {
+          "product": "p28",
+          "quantity": 1
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 2,
+      "fee": 8,
+      "foregroundSeconds": 25,
+      "awayCityMinutes": 15,
+      "offlineHours": 5,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp45",
+      "output": "p45",
+      "quantity": 1,
+      "industry": 7,
+      "inputs": [
+        {
+          "product": "p43",
+          "quantity": 2
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 1,
+      "fee": 3,
+      "foregroundSeconds": 10,
+      "awayCityMinutes": 5,
+      "offlineHours": 2,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp46",
+      "output": "p46",
+      "quantity": 1,
+      "industry": 7,
+      "inputs": [
+        {
+          "product": "p44",
+          "quantity": 1
+        },
+        {
+          "product": "p2",
+          "quantity": 1
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 1,
+      "fee": 3,
+      "foregroundSeconds": 10,
+      "awayCityMinutes": 5,
+      "offlineHours": 2,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp47",
+      "output": "p47",
+      "quantity": 1,
+      "industry": 7,
+      "inputs": [
+        {
+          "product": "p45",
+          "quantity": 1
+        },
+        {
+          "product": "p16",
+          "quantity": 1
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 2,
+      "fee": 8,
+      "foregroundSeconds": 25,
+      "awayCityMinutes": 15,
+      "offlineHours": 5,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp48",
+      "output": "p48",
+      "quantity": 1,
+      "industry": 7,
+      "inputs": [
+        {
+          "product": "p46",
+          "quantity": 2
+        },
+        {
+          "product": "p20",
+          "quantity": 1
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 2,
+      "fee": 8,
+      "foregroundSeconds": 25,
+      "awayCityMinutes": 15,
+      "offlineHours": 5,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rflagship",
+      "output": "flagship",
+      "quantity": 1,
+      "industry": 5,
+      "inputs": [
+        {
+          "product": "p36",
+          "quantity": 1
+        },
+        {
+          "product": "p35",
+          "quantity": 1
+        },
+        {
+          "product": "p48",
+          "quantity": 1
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 2,
+      "fee": 8,
+      "foregroundSeconds": 25,
+      "awayCityMinutes": 15,
+      "offlineHours": 5,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    }
+  ],
+  "ports": [
+    {
+      "id": 0,
+      "name": "里斯本",
+      "x": 0.15,
+      "y": 0.31,
+      "raw": [
+        "p19",
+        "p13",
+        "p43",
+        "p8",
+        "p25"
+      ],
+      "trait": "船帆与船材生产加速10%",
+      "region": 0,
+      "cityKey": "LisbonCity"
+    },
+    {
+      "id": 1,
+      "name": "塞维利亚",
+      "x": 0.24,
+      "y": 0.42,
+      "raw": [
+        "p0",
+        "p7",
+        "p1",
+        "p13",
+        "p32"
+      ],
+      "trait": "食品生产加速10%",
+      "region": 0,
+      "cityKey": "SevilleCity"
+    },
+    {
+      "id": 2,
+      "name": "威尼斯",
+      "x": 0.38,
+      "y": 0.25,
+      "raw": [
+        "p14",
+        "p32",
+        "p38",
+        "p26"
+      ],
+      "trait": "奢侈品品质权重提升",
+      "region": 1,
+      "cityKey": "VeniceCity"
+    },
+    {
+      "id": 3,
+      "name": "亚历山大",
+      "x": 0.46,
+      "y": 0.48,
+      "raw": [
+        "p1",
+        "p37",
+        "p44",
+        "p7"
+      ],
+      "trait": "药剂及香料加工费用降低8%",
+      "region": 1,
+      "cityKey": "AlexandriaCity"
+    },
+    {
+      "id": 4,
+      "name": "伊斯坦布尔",
+      "x": 0.52,
+      "y": 0.28,
+      "raw": [
+        "p0",
+        "p8",
+        "p25",
+        "p31",
+        "p44"
+      ],
+      "trait": "纺织及锻造生产加速10%",
+      "region": 2,
+      "cityKey": "IstanbulCity"
+    },
+    {
+      "id": 5,
+      "name": "果阿",
+      "x": 0.65,
+      "y": 0.63,
+      "raw": [
+        "p14",
+        "p37",
+        "p43",
+        "p38"
+      ],
+      "trait": "纺织加工费用降低8%",
+      "region": 2,
+      "cityKey": "GoaCity"
+    },
+    {
+      "id": 6,
+      "name": "马六甲",
+      "x": 0.8,
+      "y": 0.72,
+      "raw": [
+        "p2",
+        "p20",
+        "p19"
+      ],
+      "trait": "船材生产加速10%",
+      "region": 3,
+      "cityKey": "MalaccaCity"
+    },
+    {
+      "id": 7,
+      "name": "杭州",
+      "x": 0.88,
+      "y": 0.35,
+      "raw": [
+        "p2",
+        "p26",
+        "p31",
+        "p20"
+      ],
+      "trait": "精工品质权重提升",
+      "region": 3,
+      "cityKey": "HangzhouCity"
+    }
+  ],
+  "partners": [
+    {
+      "id": 0,
+      "name": "阿尔瓦罗·科斯塔",
+      "port": 0,
+      "role": "导航探索",
+      "fee": 180,
+      "specialty": "逆风损失减少10%",
+      "skill1": "导航",
+      "skill2": "视野",
+      "bio": "我的家族曾在这条航线上失去一艘船。我想亲眼看见它的尽头。"
+    },
+    {
+      "id": 1,
+      "name": "纳西尔·伊本·哈迪",
+      "port": 3,
+      "role": "导航探索",
+      "fee": 195,
+      "specialty": "探索半径增加15%",
+      "skill1": "视野",
+      "skill2": "情报",
+      "bio": "海图之外的空白，不是世界的终点。"
+    },
+    {
+      "id": 2,
+      "name": "沈若澜",
+      "port": 7,
+      "role": "导航探索",
+      "fee": 210,
+      "specialty": "探索半径增加20%",
+      "skill1": "导航",
+      "skill2": "情报",
+      "bio": "把亲眼见过的风浪留在纸上，后来的人就能少走弯路。"
+    },
+    {
+      "id": 3,
+      "name": "伊莎贝拉·孔蒂",
+      "port": 2,
+      "role": "贸易情报",
+      "fee": 225,
+      "specialty": "委托报酬增加8%",
+      "skill1": "议价",
+      "skill2": "声望",
+      "bio": "我的家族曾在这条航线上失去一艘船。我想亲眼看见它的尽头。"
+    },
+    {
+      "id": 4,
+      "name": "马特奥·费雷蒂",
+      "port": 2,
+      "role": "制造工艺",
+      "fee": 240,
+      "specialty": "生产速度增加8%",
+      "skill1": "工艺",
+      "skill2": "品质",
+      "bio": "海图之外的空白，不是世界的终点。"
+    },
+    {
+      "id": 5,
+      "name": "梅芙·奥罗克",
+      "port": 0,
+      "role": "战斗护卫",
+      "fee": 255,
+      "specialty": "战斗伤害降低10%",
+      "skill1": "防御",
+      "skill2": "近战",
+      "bio": "把亲眼见过的风浪留在纸上，后来的人就能少走弯路。"
+    },
+    {
+      "id": 6,
+      "name": "莱拉·法鲁克",
+      "port": 3,
+      "role": "制造工艺",
+      "fee": 270,
+      "specialty": "药剂生产费降低5%",
+      "skill1": "品质",
+      "skill2": "工艺",
+      "bio": "我的家族曾在这条航线上失去一艘船。我想亲眼看见它的尽头。"
+    },
+    {
+      "id": 7,
+      "name": "萨米尔·汗",
+      "port": 5,
+      "role": "船务后勤",
+      "fee": 285,
+      "specialty": "补给消耗降低8%",
+      "skill1": "补给",
+      "skill2": "导航",
+      "bio": "海图之外的空白，不是世界的终点。"
+    },
+    {
+      "id": 8,
+      "name": "陈远舟",
+      "port": 7,
+      "role": "船务后勤",
+      "fee": 300,
+      "specialty": "维修费降低10%",
+      "skill1": "防御",
+      "skill2": "工艺",
+      "bio": "把亲眼见过的风浪留在纸上，后来的人就能少走弯路。"
+    },
+    {
+      "id": 9,
+      "name": "露西亚·瓦尔加斯",
+      "port": 1,
+      "role": "外交管理",
+      "fee": 315,
+      "specialty": "许可证费用降低10%",
+      "skill1": "声望",
+      "skill2": "议价",
+      "bio": "我的家族曾在这条航线上失去一艘船。我想亲眼看见它的尽头。"
+    },
+    {
+      "id": 10,
+      "name": "哈桑·巴希尔",
+      "port": 4,
+      "role": "贸易情报",
+      "fee": 330,
+      "specialty": "显示市场压力",
+      "skill1": "情报",
+      "skill2": "议价",
+      "bio": "海图之外的空白，不是世界的终点。"
+    },
+    {
+      "id": 11,
+      "name": "艾米莉亚·里德",
+      "port": 6,
+      "role": "战斗护卫",
+      "fee": 345,
+      "specialty": "装填时间缩短8%",
+      "skill1": "炮术",
+      "skill2": "防御",
+      "bio": "把亲眼见过的风浪留在纸上，后来的人就能少走弯路。"
+    }
+  ],
+  "ships": [
+    {
+      "id": 0,
+      "name": "小型帆船",
+      "price": 1000,
+      "capacity": 80,
+      "speed": 1.1,
+      "guns": 1,
+      "slots": 2
+    },
+    {
+      "id": 1,
+      "name": "贸易双桅船",
+      "price": 4000,
+      "capacity": 220,
+      "speed": 1,
+      "guns": 2,
+      "slots": 3
+    },
+    {
+      "id": 2,
+      "name": "快速探险船",
+      "price": 6000,
+      "capacity": 130,
+      "speed": 1.35,
+      "guns": 2,
+      "slots": 4
+    },
+    {
+      "id": 3,
+      "name": "大型盖伦船",
+      "price": 12000,
+      "capacity": 320,
+      "speed": 0.85,
+      "guns": 6,
+      "slots": 5
+    }
+  ],
+  "skills": [
+    {
+      "id": "导航",
+      "category": 0,
+      "maxLevel": 20
+    },
+    {
+      "id": "视野",
+      "category": 0,
+      "maxLevel": 20
+    },
+    {
+      "id": "补给",
+      "category": 0,
+      "maxLevel": 20
+    },
+    {
+      "id": "议价",
+      "category": 1,
+      "maxLevel": 20
+    },
+    {
+      "id": "情报",
+      "category": 1,
+      "maxLevel": 20
+    },
+    {
+      "id": "声望",
+      "category": 1,
+      "maxLevel": 20
+    },
+    {
+      "id": "配方",
+      "category": 2,
+      "maxLevel": 20
+    },
+    {
+      "id": "工艺",
+      "category": 2,
+      "maxLevel": 20
+    },
+    {
+      "id": "品质",
+      "category": 2,
+      "maxLevel": 20
+    },
+    {
+      "id": "炮术",
+      "category": 3,
+      "maxLevel": 20
+    },
+    {
+      "id": "近战",
+      "category": 3,
+      "maxLevel": 20
+    },
+    {
+      "id": "防御",
+      "category": 3,
+      "maxLevel": 20
+    }
+  ],
+  "events": [
+    {
+      "id": "e0",
+      "trigger": "home",
+      "priority": 12,
+      "oneShotOrRepeat": "oneShot",
+      "cooldown": 0,
+      "prerequisites": [],
+      "dialogue": "旧海图背面只有一句话：港口之间，承诺比黄金更重。先去市场购买原料，再到产业园加工。",
+      "title": "父亲的旧海图",
+      "choices": [
+        "记入航海日志"
+      ],
+      "conditions": [],
+      "effects": [
+        {
+          "type": "gold",
+          "value": 0
+        }
+      ],
+      "nextEvent": ""
+    },
+    {
+      "id": "e1",
+      "trigger": "trade",
+      "priority": 11,
+      "oneShotOrRepeat": "oneShot",
+      "cooldown": 0,
+      "prerequisites": [],
+      "dialogue": "账本终于有了第一行。别忘了，大量买入会推高本城价格，大量卖出则会压低收购价。",
+      "title": "第一笔交易",
+      "choices": [
+        "记入航海日志"
+      ],
+      "conditions": [],
+      "effects": [
+        {
+          "type": "gold",
+          "value": 60
+        }
+      ],
+      "nextEvent": ""
+    },
+    {
+      "id": "e2",
+      "trigger": "license",
+      "priority": 10,
+      "oneShotOrRepeat": "oneShot",
+      "cooldown": 0,
+      "prerequisites": [],
+      "dialogue": "市政官收下你的签名：产业园属于你的家族，也承载着这座港口的期待。",
+      "title": "诸港的约定",
+      "choices": [
+        "记入航海日志"
+      ],
+      "conditions": [],
+      "effects": [
+        {
+          "type": "gold",
+          "value": 100
+        }
+      ],
+      "nextEvent": ""
+    },
+    {
+      "id": "e3",
+      "trigger": "production",
+      "priority": 9,
+      "oneShotOrRepeat": "oneShot",
+      "cooldown": 0,
+      "prerequisites": [],
+      "dialogue": "第一批成品完成了。品质由最差原料划定下限，工艺决定向上突破的机会。",
+      "title": "炉火初燃",
+      "choices": [
+        "记入航海日志"
+      ],
+      "conditions": [],
+      "effects": [
+        {
+          "type": "gold",
+          "value": 100
+        }
+      ],
+      "nextEvent": ""
+    },
+    {
+      "id": "e4",
+      "trigger": "partner",
+      "priority": 8,
+      "oneShotOrRepeat": "oneShot",
+      "cooldown": 0,
+      "prerequisites": [],
+      "dialogue": "一个人的航程变成了两个人的约定。伙伴需要编入当班名单才会生效。",
+      "title": "同舟之人",
+      "choices": [
+        "记入航海日志"
+      ],
+      "conditions": [],
+      "effects": [
+        {
+          "type": "gold",
+          "value": 60
+        }
+      ],
+      "nextEvent": ""
+    },
+    {
+      "id": "e5",
+      "trigger": "repair",
+      "priority": 7,
+      "oneShotOrRepeat": "oneShot",
+      "cooldown": 0,
+      "prerequisites": [],
+      "dialogue": "船匠敲了敲新补的木板：真正的航海家知道何时返港。",
+      "title": "重整船帆",
+      "choices": [
+        "记入航海日志"
+      ],
+      "conditions": [],
+      "effects": [
+        {
+          "type": "gold",
+          "value": 20
+        }
+      ],
+      "nextEvent": ""
+    },
+    {
+      "id": "e6",
+      "trigger": "headwind",
+      "priority": 6,
+      "oneShotOrRepeat": "oneShot",
+      "cooldown": 0,
+      "prerequisites": [],
+      "dialogue": "直迎逆风无法全速航行。试着斜向迎风，再交替转舵。",
+      "title": "学会迎风",
+      "choices": [
+        "记入航海日志"
+      ],
+      "conditions": [],
+      "effects": [
+        {
+          "type": "gold",
+          "value": 40
+        }
+      ],
+      "nextEvent": ""
+    },
+    {
+      "id": "e7",
+      "trigger": "shortage",
+      "priority": 5,
+      "oneShotOrRepeat": "oneShot",
+      "cooldown": 0,
+      "prerequisites": [],
+      "dialogue": "商人递来一张补货单。城市库存与每小时补货独立变化；跨港补货仍是经营的根本。",
+      "title": "城市缺货",
+      "choices": [
+        "记入航海日志"
+      ],
+      "conditions": [],
+      "effects": [
+        {
+          "type": "gold",
+          "value": 30
+        }
+      ],
+      "nextEvent": ""
+    },
+    {
+      "id": "e8",
+      "trigger": "contract",
+      "priority": 4,
+      "oneShotOrRepeat": "oneShot",
+      "cooldown": 0,
+      "prerequisites": [],
+      "dialogue": "你兑现了一份及时送达的承诺。商会愿意为下一次远航担保。",
+      "title": "商会急单",
+      "choices": [
+        "记入航海日志"
+      ],
+      "conditions": [],
+      "effects": [
+        {
+          "type": "gold",
+          "value": 80
+        }
+      ],
+      "nextEvent": ""
+    },
+    {
+      "id": "e9",
+      "trigger": "battle",
+      "priority": 3,
+      "oneShotOrRepeat": "oneShot",
+      "cooldown": 0,
+      "prerequisites": [],
+      "dialogue": "风浪中的胜利并非偶然。船体、距离和侧舷角度，缺一不可。",
+      "title": "海盗旗落",
+      "choices": [
+        "记入航海日志"
+      ],
+      "conditions": [],
+      "effects": [
+        {
+          "type": "gold",
+          "value": 120
+        }
+      ],
+      "nextEvent": ""
+    },
+    {
+      "id": "e10",
+      "trigger": "route",
+      "priority": 2,
+      "oneShotOrRepeat": "oneShot",
+      "cooldown": 0,
+      "prerequisites": [],
+      "dialogue": "新航线与旧海图重合了。集齐三条航路记录，就能拼出世界之环的起点。",
+      "title": "古地图的线索",
+      "choices": [
+        "记入航海日志"
+      ],
+      "conditions": [],
+      "effects": [
+        {
+          "type": "gold",
+          "value": 100
+        }
+      ],
+      "nextEvent": ""
+    },
+    {
+      "id": "e11",
+      "trigger": "final",
+      "priority": 1,
+      "oneShotOrRepeat": "oneShot",
+      "cooldown": 0,
+      "prerequisites": [],
+      "dialogue": "诸港的货物、炉火与同伴，终于在同一面帆下相遇。向最后的目的港出发。",
+      "title": "世界之环",
+      "choices": [
+        "记入航海日志"
+      ],
+      "conditions": [],
+      "effects": [
+        {
+          "type": "gold",
+          "value": 0
+        }
+      ],
+      "nextEvent": ""
+    }
+  ],
+  "quests": [
+    {
+      "id": 1,
+      "title": "一张旧海图",
+      "description": "完成一次买卖、一次生产，并亲自发现一条航线。"
+    },
+    {
+      "id": 2,
+      "title": "诸港的契约",
+      "description": "拥有三城产业园、招募并编入一位伙伴，累计完成三张工单。"
+    },
+    {
+      "id": 3,
+      "title": "世界之环",
+      "description": "发现三条航线；提交来自两港的品质2以上木板与布匹各1；制造品质2以上旗舰航海仪及船帆；装备升级船并抵达杭州。"
+    }
+  ],
+  "market": {
+    "spread": 0.12,
+    "referenceStock": 80,
+    "maxStock": 240,
+    "pressureStep": 0.2,
+    "pressureMin": -0.45,
+    "pressureMax": 0.6,
+    "dailyReversion": 0.15,
+    "qualityFactors": [
+      2.2,
+      1.7,
+      1.3,
+      1,
+      0.82,
+      0.65
+    ]
+  },
+  "factories": [
+    {
+      "industry": 0,
+      "name": "农业工坊",
+      "price": 160,
+      "maxLevel": 5
+    },
+    {
+      "industry": 1,
+      "name": "畜牧工坊",
+      "price": 160,
+      "maxLevel": 5
+    },
+    {
+      "industry": 2,
+      "name": "纺织工坊",
+      "price": 160,
+      "maxLevel": 5
+    },
+    {
+      "industry": 3,
+      "name": "林业工坊",
+      "price": 160,
+      "maxLevel": 5
+    },
+    {
+      "industry": 4,
+      "name": "矿业工坊",
+      "price": 160,
+      "maxLevel": 5
+    },
+    {
+      "industry": 5,
+      "name": "工业工坊",
+      "price": 160,
+      "maxLevel": 5
+    },
+    {
+      "industry": 6,
+      "name": "奢侈品工坊",
+      "price": 160,
+      "maxLevel": 5
+    },
+    {
+      "industry": 7,
+      "name": "化学/药剂工坊",
+      "price": 160,
+      "maxLevel": 5
+    }
+  ]
+}

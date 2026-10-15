@@ -1,0 +1,15 @@
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Ll]ogs/
+/[Uu]serSettings/
+/.BuildWorkspace/
+/Builds/
+*.csproj
+*.sln
+*.slnx
+*.log
+
+/Documentation/StructureBackup-*/
+/Documentation/EditorRecovery-*/
+/SceneEvidence/

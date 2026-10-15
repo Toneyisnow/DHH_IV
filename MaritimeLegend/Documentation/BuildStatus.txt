@@ -1,0 +1,2 @@
+SUCCESS: Windows x64 build; 58 domain checks; runtime UI/combat/ending-save/postgame checks passed.
+See 验收边界.md for incomplete requirements.

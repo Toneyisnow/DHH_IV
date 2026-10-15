@@ -1,0 +1,64 @@
+PASS 50 products including flagship instrument; 49 entries in requested table
+PASS 8 ports / 12 partners / 33 closed recipes
+PASS dual supply 小麦
+PASS dual supply 甘蔗
+PASS dual supply 蓝莓
+PASS dual supply 牛
+PASS dual supply 羊毛
+PASS dual supply 亚麻
+PASS dual supply 棉花
+PASS dual supply 原木
+PASS dual supply 树脂
+PASS dual supply 铁矿
+PASS dual supply 铜矿
+PASS dual supply 煤
+PASS dual supply 砂
+PASS dual supply 香料
+PASS dual supply 宝石原石
+PASS dual supply 药草
+PASS dual supply 硫磺
+PASS large buy raises price
+PASS large sell lowers price
+PASS same-city round trip after spread has no profit
+PASS failed transaction atomically unchanged
+PASS 30 game days / 720 NPC hourly replenishment cycles; stocks bounded
+PASS cross-port raw trade has positive gross margin
+PASS all six input grades preserve quality boundary
+PASS 400000 quality samples: higher skill improves quality and S remains bounded
+Quality improvements: level1=20073, level20=67874; S level1=198, level20=5547
+PASS production consumes and locks materials
+PASS city switch accumulates progress without reset and uses slow tier
+PASS offline tier progresses same order
+PASS order quality survives serialization unchanged
+PASS offline order completes
+PASS claim idempotent
+PASS backwards clock logged and clamped
+PASS automatic transport requires discovered directed route
+PASS manual sailing simulation discovers directed route
+PASS automatic transport moves real inventory and realizes profit
+PASS event support choice consumes money and grants reputation
+PASS one-shot event deduplication
+PASS 休闲 campaign chapter1 reached using production/trade/sailing
+休闲 campaign earned gold through adaptive raw trading: 9177
+PASS 休闲 campaign chapter2 reached with three licensed cities and partner
+PASS 休闲 campaign can afford trade brig
+PASS 休闲 distinct-port quality materials accepted
+PASS 休闲 campaign terminal manufactured goods reachable
+PASS 休闲 final gate satisfied
+PASS 休闲 final voyage arrives with supplies
+PASS casual ending state and postgame unlocked
+PASS ending reward cannot be claimed twice
+PASS 经典 campaign chapter1 reached using production/trade/sailing
+经典 campaign earned gold through adaptive raw trading: 9177
+PASS 经典 campaign chapter2 reached with three licensed cities and partner
+PASS 经典 campaign can afford trade brig
+PASS 经典 distinct-port quality materials accepted
+PASS 经典 campaign terminal manufactured goods reachable
+PASS 经典 final gate satisfied
+PASS 经典 final voyage arrives with supplies
+CLASSIC: final battle UI still requires runtime combat acceptance; campaign gates tested only.
+PASS disk save hash and state roundtrip
+PASS corrupt save rejected without reset
+PASS backup recovery preserves state
+TOTAL 58 checks passed
+These are deterministic rule simulations, not manual full UI acceptance or audio listening.

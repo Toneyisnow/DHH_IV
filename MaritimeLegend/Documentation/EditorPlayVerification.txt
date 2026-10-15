@@ -1,0 +1,2 @@
+PASS: Unity Editor Play Mode entered twice, with domain reload disabled; game bootstrap, Canvas, title and new-game buttons verified.
+2026-10-15T01:03:24.9605428Z

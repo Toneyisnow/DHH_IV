@@ -1,0 +1,7 @@
+本次 Editor 修复：
+- 备份恢复场景及旧布局后，仅重启 MaritimeLegend 原 PID90328。
+- WindingTale2 PID21588 保持运行，未关闭、未修改。
+- 增加菜单 Maritime Legend / Open Game Scene 与 Play Game，并指定 Play 默认入口场景。
+- 修复关闭 Domain Reload 时再次 Play 使用失效 uGUI 对象的问题。
+- 使用 Unity Editor API 实际进入两次 Play Mode，标题和新游戏按钮验证通过。
+- 验证副本日志出现一次 UnityEditor.Search.SearchDatabase 索引异常；游戏按钮测试仍通过，此异常不是游戏脚本抛出。没有将此项记为零异常测试。

@@ -1,0 +1,13 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+namespace MaritimeLegend.Domain {
+public partial class GameService : IMarketService,IProductionService {
+        public readonly GameWorkflow Workflow; public readonly Catalog C; public readonly GameState S; public readonly InventoryService Inventory; public readonly SkillResolver Skills=new SkillResolver(); readonly QualityRoller quality=new QualityRoller();
+        public GameService(Catalog c,GameState s){C=c;S=s;Inventory=new InventoryService(c);Workflow=new GameWorkflow(this);}
+        public static GameState New(Catalog c,int slot,int home,string mode,Appearance look,string name,uint seed){var s=new GameState{slot=slot,home=home,city=home,mode=mode,appearance=look,name=name,seed=seed==0?71527:seed,ownerId=Guid.NewGuid().ToString("N")};foreach(var p in c.ports){var city=new CityState{id=p.id,license=p.id==home};foreach(var product in c.products)city.market.Add(new MarketEntry{product=product.id,stock=product.category=="R"?(p.raw.Contains(product.id)?100:0):product.id=="flagship"?0:15});s.cities.Add(city);}while(s.startingIndustries.Count<3){int i=(int)(QualityRoller.Random(ref s.seed)*8)%8;if(!s.startingIndustries.Contains(i))s.startingIndustries.Add(i);}s.skillLevels[6]=s.skillLevels[7]=s.skillLevels[8]=1;s.cities[home].factories[s.startingIndustries[0]]=1;s.ships.Add(new Ship{id=Guid.NewGuid().ToString("N"),ownerId=s.ownerId});s.visited.Add(home);s.discovered.Add(home);var g=new GameService(c,s);foreach(var r in c.recipes.Where(x=>x.industry==s.startingIndustries[0]&&x.minLevel==1).Take(1))foreach(var input in r.inputs)g.Inventory.Add(s.cities[home].warehouse,input.product,3,input.quantity*4,home);g.Emit("home");return s;}
+        public void Tick(double real,bool paused){Workflow.Advance(real,paused);}
+        internal void AdvanceWorld(double real){S.playSeconds+=real;S.worldHours+=real/30;while(S.npcHours+1<=S.worldHours){S.npcHours++;MarketHour();}if(S.atSea){double vision=.07*(1+S.skillLevels[1]*.02+(HasPartner(1)?.15:0)+(HasPartner(2)?.2:0));foreach(var port in C.ports){if(!S.discovered.Contains(port.id)&&Math.Sqrt(Math.Pow(port.x-S.seaX,2)+Math.Pow(port.y-S.seaY,2))<vision){S.discovered.Add(port.id);Gain(1,10);Log("探明港口："+port.name);}}var ship=S.ships[0];ship.food=Math.Max(0,ship.food-real*.025*(HasPartner(7)?.92:1));ship.hull=Math.Max(1,ship.hull-real*(ship.food>0?.003:.12));S.windTimer-=real;if(S.windTimer<=0){S.windTimer=60+QualityRoller.Random(ref S.seed)*120;S.wind=QualityRoller.Random(ref S.seed)*Math.PI*2;}}}
+        public static string QualityName(int q){return q==0?"S":q.ToString();}
+        public static double Clamp(double v,double min,double max){return Math.Max(min,Math.Min(max,v));}
+}}

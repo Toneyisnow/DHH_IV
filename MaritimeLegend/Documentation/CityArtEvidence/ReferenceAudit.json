@@ -1,0 +1,15 @@
+{
+  "sceneCount": 8,
+  "scenes": [
+    "AutoSailingScene.unity",
+    "CharacterCreationScene.unity",
+    "CityScene.unity",
+    "IndustryScene.unity",
+    "MainMenuScene.unity",
+    "SailingScene.unity",
+    "SaveLoadScene.unity",
+    "WorldMapScene.unity"
+  ],
+  "duplicateGuids": [],
+  "missingReferences": []
+}

@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a16ae95bdf198b04a911055f041fd967, type: 3}
+  m_Name: VeniceCity
+  m_EditorClassIdentifier: Assembly-CSharp::MaritimeLegend.CityDefinition
+  cityId: 2
+  cityKey: VeniceCity
+  displayName: "\u5A01\u5C3C\u65AF"
+  background: {fileID: 2800000, guid: 27b03962567637b4a9854f9518763b02, type: 3}
+  contentRoot: {fileID: 368137311053733848, guid: 8ca77f4583cbe344ca38a00460cc5977, type: 3}
+  weather: "\u8FD1\u6D77\u5FAE\u98CE"
+  musicTheme: "\u57CE\u5E02"
+  eventIds:
+  - e0
+  - e1
+  - e2
+  - e3
+  - e4
+  - e5
+  - e6
+  - e7
+  - e8
+  - e9
+  - e10
+  - e11
+  buildingAtlas: {fileID: 2800000, guid: 2ad2390c8ad7ee746b4b072f3ed5770a, type: 3}
+  walkerAtlas: {fileID: 2800000, guid: 8b8cc2e43da2eae4f8d917960d2901e6, type: 3}
+  buildingRects: {fileID: 4900000, guid: ab89a957ec3805f4399491f40c213a06, type: 3}
+  walkerRects: {fileID: 4900000, guid: fe971816f78ab894099e7f6bad46f7fa, type: 3}
+  spriteShader: {fileID: 4800000, guid: df7f3067c65329140bdc9ec1e96d9e3d, type: 3}
+  depthShader: {fileID: 4800000, guid: 3e2ea5d5f1e3fa841a7aca9d124033e6, type: 3}
+  waterShader: {fileID: 4800000, guid: 2302847e212e33744a3acdc4c93e8cfa, type: 3}
+  surfaceShader: {fileID: 4800000, guid: f3cf9cf4735ea01408e3119effd9f951, type: 3}
+  atmosphereShader: {fileID: 4800000, guid: 34f9b595202802b4ca5a22c6c1a590c1, type: 3}
+  refined: 1
+  palette: {r: 0.8, g: 0.7, b: 0.5, a: 1}

@@ -1,0 +1,55 @@
+航海世家：八场景与常驻工作流
+
+启动：Unity 6000.3.10f1，菜单 Maritime Legend > Play Game。
+默认入口 Assets/Scenes/MainMenuScene.unity。编辑模式场景只保存控制器，UI 在运行时创建。
+
+八个且仅八个主场景：
+MainMenuScene：标题、继续当前航程、新建、读档、设置。
+SaveLoadScene：七个槽位、摘要、覆盖确认、返回来源。
+CharacterCreationScene：模板、定制、家园选择，两个步骤同场景。
+CityScene：按稳定整数 cityId 实例化 Cities/<CityName>City/<CityName>City.prefab。
+IndustryScene：显示当前 cityId 的真实工厂、订单、仓库。
+SailingScene：手动航行及海战控制模式，没有第九个战斗 Scene。
+AutoSailingScene：市场快照、运输任务创建、自动舰队位置、暂停/继续/解除。
+WorldMapScene：全局港口、探索与航线、手动出航入口。
+
+切换使用 SceneManager.LoadScene 的 Single 模式；不是仅切换页面字符串。
+城市子面板和共享弹窗不产生额外 Scene。世界地图与自动航线各有独立 MonoBehaviour 控制器和地图交互状态；仅共用 MapSurface 地图绘制组件。
+
+城市身份：旧存档中的 cityId=0..7 保持稳定，不采用 Scene 名作主键。
+0 LisbonCity / 1 SevilleCity / 2 VeniceCity / 3 AlexandriaCity /
+4 IstanbulCity / 5 GoaCity / 6 MalaccaCity / 7 HangzhouCity。
+城市配置、背景与六个交互点由 CityDefinition 和根 Prefab 提供。
+码头/船坞/市场/市政厅/产业园/伙伴地点统一实现 ICityInteraction。
+离开 CityScene 时城市显示根对象销毁，Core 中全部城市状态保留。
+
+运行层级：
+GameWorkflow（纯 C#，Assets/Core/Simulation）
+  Production：每次推进订单；世界暂停时继续，显式暂停生产时冻结。
+  WorldSimulation：NPC 小时补货、世界时间、探索与航行风险。
+  AutoFleet：真实货物/金币及船只占用的运输任务。
+WorldSession（Unity 时钟适配器）在应用启动时创建并 DontDestroyOnLoad，向工作流提供单调时间增量。它不订阅 Scene 的创建/卸载事件。
+MaritimeGame 与唯一 Canvas/Camera/EventSystem/GameAudio 常驻，仅承担交互及展示。
+
+这里的“线程”是串行逻辑任务，不额外创建操作 Unity 对象的 OS 后台线程。
+GameWorkflow 不依赖 UnityEngine，不持有 Scene、GameObject、Transform。
+Enqueue 支持线程安全入队，命令由权威逻辑线程依次执行；每帧最多处理128项。
+生产、市场、自动舰队共用同一个 GameState 与库存服务，避免竞争写入和存档复制。
+游戏界面已有同步操作仍在同一主线程调用领域服务；队列提供后续异步请求的入口。
+返回标题保留当前工作流，可继续当前航程；新建/读取另一档案才停止旧工作流并绑定新状态。退出应用停止工作流。
+所有订单进度、品质、路线状态和资金在 GameState 中；读档重建执行器但不重抽订单品质。
+离线恢复沿用原生产规则；自动舰队仍只在游戏运行期间推进，不虚构无限离线收益。
+
+目录：
+Core/Data、Economy、Production、Inventory、Fleet、Navigation、Skills、Events、SaveSystem、Simulation。
+Shared/UI、Shared/Audio：共用界面及音频。
+Scenes/Controllers/<功能Scene>：各类场景显示代码。
+Cities/<CityName>City：配置、根 Prefab 与独立背景。
+Sailing：航行显示及专属资源分类位置。
+Resources/Data/catalog.json：既有数据表；Resources/Sprites：共享按需加载图片。
+Tests/EditMode/Editor：原58项经济/生产/存档/主线服务回归。
+Tests/Simulations/WorkflowSimulation.cs：不加载场景的固定种子30日工作流模拟。
+Tests/PlayMode/SceneFlowChecks.cs：真实八场景切换和常驻服务验证，仅命令行 -sceneStructureSmoke 启用，使用隔离测试存档。
+
+现有存档格式和所有权字段未变；初始金币保留用户指定的99999999。
+本次重构不新增多人联网，不代表此前文档中列出的美术和内容限制已经补全。

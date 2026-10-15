@@ -1,0 +1,89 @@
+58项领域规则通过；30日无场景工作流模拟通过；八场景实际切换通过。
+SCENE CHECK PASS bootstrap
+SCENE CHECK PASS main menu scene
+SCENE CHECK PASS title button
+SCENE CHECK PASS new game button
+SCENE CHECK PASS save scene
+SCENE CHECK PASS empty slot
+SCENE CHECK PASS character scene
+SCENE CHECK PASS template
+SCENE CHECK PASS customization
+SCENE CHECK PASS home selection
+SCENE CHECK PASS city scene
+SCENE CHECK PASS requested initial gold
+SCENE CHECK PASS automatic workflow task created
+SCENE CHECK PASS real scene for 城市
+SCENE CHECK PASS workflow identity preserved 城市
+SCENE CHECK PASS single audio host
+SCENE CHECK PASS single event system
+SCENE CHECK PASS single canvas
+SCENE CHECK PASS real scene for 产业园
+SCENE CHECK PASS workflow identity preserved 产业园
+SCENE CHECK PASS single audio host
+SCENE CHECK PASS single event system
+SCENE CHECK PASS single canvas
+SCENE CHECK PASS real scene for 海图
+SCENE CHECK PASS workflow identity preserved 海图
+SCENE CHECK PASS single audio host
+SCENE CHECK PASS single event system
+SCENE CHECK PASS single canvas
+SCENE CHECK PASS real scene for 自动航线
+SCENE CHECK PASS workflow identity preserved 自动航线
+SCENE CHECK PASS single audio host
+SCENE CHECK PASS single event system
+SCENE CHECK PASS single canvas
+SCENE CHECK PASS real scene for 航线配置
+SCENE CHECK PASS workflow identity preserved 航线配置
+SCENE CHECK PASS single audio host
+SCENE CHECK PASS single event system
+SCENE CHECK PASS single canvas
+SCENE CHECK PASS real scene for 标题
+SCENE CHECK PASS workflow identity preserved 标题
+SCENE CHECK PASS single audio host
+SCENE CHECK PASS single event system
+SCENE CHECK PASS single canvas
+SCENE CHECK PASS real scene for 存档
+SCENE CHECK PASS workflow identity preserved 存档
+SCENE CHECK PASS single audio host
+SCENE CHECK PASS single event system
+SCENE CHECK PASS single canvas
+SCENE CHECK PASS real scene for 航海
+SCENE CHECK PASS workflow identity preserved 航海
+SCENE CHECK PASS single audio host
+SCENE CHECK PASS single event system
+SCENE CHECK PASS single canvas
+SCENE CHECK PASS real scene for 战斗
+SCENE CHECK PASS workflow identity preserved 战斗
+SCENE CHECK PASS single audio host
+SCENE CHECK PASS single event system
+SCENE CHECK PASS single canvas
+SCENE CHECK PASS real scene for 城市
+SCENE CHECK PASS workflow identity preserved 城市
+SCENE CHECK PASS single audio host
+SCENE CHECK PASS single event system
+SCENE CHECK PASS single canvas
+SCENE CHECK PASS dynamic city content 0
+SCENE CHECK PASS unified interactions 0
+SCENE CHECK PASS dynamic city content 1
+SCENE CHECK PASS unified interactions 1
+SCENE CHECK PASS dynamic city content 2
+SCENE CHECK PASS unified interactions 2
+SCENE CHECK PASS dynamic city content 3
+SCENE CHECK PASS unified interactions 3
+SCENE CHECK PASS dynamic city content 4
+SCENE CHECK PASS unified interactions 4
+SCENE CHECK PASS dynamic city content 5
+SCENE CHECK PASS unified interactions 5
+SCENE CHECK PASS dynamic city content 6
+SCENE CHECK PASS unified interactions 6
+SCENE CHECK PASS dynamic city content 7
+SCENE CHECK PASS unified interactions 7
+SCENE CHECK PASS order progress and seeded quality survive scene unload
+SCENE CHECK PASS automatic fleet continues across scenes
+SCENE CHECK PASS workflow continuously ticks
+SCENE CHECK PASS save survives scene changes
+SCENE CHECK PASS old workflow stopped only on session replacement
+SCENE CHECK PASS offline workflow recovery
+SCENE CHECK PASS repeated claim idempotence
+SCENE_WORKFLOW_PLAYMODE_PASS
+Editor连续两次Play通过；Unity Search索引器出现一次非游戏脚本异常，详见原始Editor测试日志。
