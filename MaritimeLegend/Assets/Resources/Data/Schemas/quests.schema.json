@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "quests"
+  ],
+  "properties": {
+    "quests": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "instrumentQuality",
+        "chapterTwoReward",
+        "chapterThreeReward",
+        "licensedCitiesRequired",
+        "productionOrdersRequired",
+        "materialQuality",
+        "finalRoutesRequired",
+        "finalPartnerTrust",
+        "finalPort",
+        "completedStage",
+        "endingReward",
+        "firstChapter",
+        "secondChapter",
+        "finalChapter",
+        "startingShipType",
+        "materialQuantity"
+      ],
+      "properties": {
+        "instrumentQuality": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "chapterTwoReward": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "chapterThreeReward": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "licensedCitiesRequired": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "productionOrdersRequired": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "materialQuality": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "finalRoutesRequired": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "finalPartnerTrust": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "finalPort": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "completedStage": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "endingReward": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "firstChapter": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "secondChapter": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "finalChapter": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "startingShipType": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "materialQuantity": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        }
+      }
+    }
+  }
+}

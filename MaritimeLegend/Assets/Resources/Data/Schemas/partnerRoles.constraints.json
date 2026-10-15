@@ -1,0 +1,71 @@
+{
+  "group": "partnerRoles",
+  "fields": [
+    {
+      "name": "merchant",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "carpenter",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "headwind",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "diplomat",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "craftsman",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "chemist",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "scout",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "navigator",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "cook",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "gunner",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "guard",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    }
+  ]
+}

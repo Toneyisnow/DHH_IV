@@ -1,0 +1,25 @@
+{
+  "events": [
+    {
+      "id": "e0",
+      "trigger": "home",
+      "priority": 12,
+      "oneShotOrRepeat": "oneShot",
+      "cooldown": 0,
+      "prerequisites": [],
+      "dialogue": "旧海图背面只有一句话：港口之间，承诺比黄金更重。先去市场购买原料，再到产业园加工。",
+      "title": "父亲的旧海图",
+      "choices": [
+        "记入航海日志"
+      ],
+      "conditions": [],
+      "effects": [
+        {
+          "type": "gold",
+          "value": 0
+        }
+      ],
+      "nextEvent": ""
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "events": [
+    {
+      "id": "e2",
+      "trigger": "license",
+      "priority": 10,
+      "oneShotOrRepeat": "oneShot",
+      "cooldown": 0,
+      "prerequisites": [],
+      "dialogue": "市政官收下你的签名：产业园属于你的家族，也承载着这座港口的期待。",
+      "title": "诸港的约定",
+      "choices": [
+        "记入航海日志"
+      ],
+      "conditions": [],
+      "effects": [
+        {
+          "type": "gold",
+          "value": 100
+        }
+      ],
+      "nextEvent": ""
+    }
+  ]
+}

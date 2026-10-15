@@ -1,0 +1,1 @@
+PASS: opening release latch; subsequent held pointer remains enabled; raycast + pointer down/up/click; new/load mode transfer; repeated main/save/character scene round trips; persistent game/world/camera/canvas/event system.

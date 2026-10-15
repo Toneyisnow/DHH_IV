@@ -1,0 +1,130 @@
+{
+  "products": [
+    {
+      "id": "p37",
+      "name": "香料",
+      "industry": 6,
+      "category": "R",
+      "basePrice": 48,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "奢侈品"
+      ],
+      "allowedCities": [
+        3,
+        5
+      ]
+    },
+    {
+      "id": "p38",
+      "name": "宝石原石",
+      "industry": 6,
+      "category": "R",
+      "basePrice": 120,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "奢侈品"
+      ],
+      "allowedCities": [
+        2,
+        5
+      ]
+    },
+    {
+      "id": "p39",
+      "name": "香料精油",
+      "industry": 6,
+      "category": "M",
+      "basePrice": 135,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "奢侈品"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p40",
+      "name": "切割宝石",
+      "industry": 6,
+      "category": "M",
+      "basePrice": 320,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "奢侈品"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p41",
+      "name": "香水",
+      "industry": 6,
+      "category": "C",
+      "basePrice": 290,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "奢侈品"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p42",
+      "name": "珠宝",
+      "industry": 6,
+      "category": "C",
+      "basePrice": 720,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "奢侈品"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ]
+}

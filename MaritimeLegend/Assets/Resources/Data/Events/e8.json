@@ -1,0 +1,25 @@
+{
+  "events": [
+    {
+      "id": "e8",
+      "trigger": "contract",
+      "priority": 4,
+      "oneShotOrRepeat": "oneShot",
+      "cooldown": 0,
+      "prerequisites": [],
+      "dialogue": "你兑现了一份及时送达的承诺。商会愿意为下一次远航担保。",
+      "title": "商会急单",
+      "choices": [
+        "记入航海日志"
+      ],
+      "conditions": [],
+      "effects": [
+        {
+          "type": "gold",
+          "value": 80
+        }
+      ],
+      "nextEvent": ""
+    }
+  ]
+}

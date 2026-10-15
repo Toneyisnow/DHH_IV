@@ -1,0 +1,189 @@
+{
+  "values": [
+    {
+      "id": "expectedProducts",
+      "value": 50,
+      "usage": "Load();c.Validate();Check(c.products.Length==50,\"50 products including flagship instrument; "
+    },
+    {
+      "id": "expectedPorts",
+      "value": 8,
+      "usage": "s in requested table\");Check(c.ports.Length==8&&c.partners.Length==12&&c.recipes.Length==33"
+    },
+    {
+      "id": "expectedSkillsAndPartners",
+      "value": 12,
+      "usage": ";Check(c.ports.Length==8&&c.partners.Length==12&&c.recipes.Length==33,\"8 ports / 12 partners"
+    },
+    {
+      "id": "expectedRecipes",
+      "value": 33,
+      "usage": "=8&&c.partners.Length==12&&c.recipes.Length==33,\"8 ports / 12 partners / 33 closed recipes\")"
+    },
+    {
+      "id": "highQuality",
+      "value": 2,
+      "usage": "heck(c.ports.Count(x=>x.raw.Contains(p.id))>=2,\"dual supply \"+p.name); var s=GameService.Ne"
+    },
+    {
+      "id": "initialSeed",
+      "value": 71527,
+      "usage": "rvice.New(c,0,0,\"休闲\",new Appearance(),\"Test\",71527);s.gold=1500;var g=new GameService(c,s);stri"
+    },
+    {
+      "id": "startingGold",
+      "value": 1500,
+      "usage": "0,\"休闲\",new Appearance(),\"Test\",71527);s.gold=1500;var g=new GameService(c,s);string timber=c.N"
+    },
+    {
+      "id": "lowQuality",
+      "value": 5,
+      "usage": "int before=s.gold;int quote=g.Quote(0,timber,5,true);g.Trade(0,timber,5,40,true,s.cargo);Ch"
+    },
+    {
+      "id": "tradeQuantity",
+      "value": 40,
+      "usage": "=g.Quote(0,timber,5,true);g.Trade(0,timber,5,40,true,s.cargo);Check(g.Quote(0,timber,5,true)"
+    },
+    {
+      "id": "oversizedTrade",
+      "value": 999,
+      "usage": "son=JsonUtility.ToJson(s);g.Trade(0,timber,5,999,true,s.cargo);Check(json==JsonUtility.ToJson"
+    },
+    {
+      "id": "simulationDays",
+      "value": 30,
+      "usage": "action atomically unchanged\"); for(int h=0;h<30*24;h++){g.MarketHour();foreach(var cs in s.c"
+    },
+    {
+      "id": "hoursPerDay",
+      "value": 24,
+      "usage": "ion atomically unchanged\"); for(int h=0;h<30*24;h++){g.MarketHour();foreach(var cs in s.citi"
+    },
+    {
+      "id": "standardQuality",
+      "value": 3,
+      "usage": "ded\");Check(g.Quote(0,timber,5,true)<g.Quote(3,timber,5,false),\"cross-port raw trade has po"
+    },
+    {
+      "id": "qualitySeed",
+      "value": 778899,
+      "usage": "trade has positive gross margin\"); uint seed=778899;var roller=new QualityRoller(c);for(int wors"
+    },
+    {
+      "id": "boundarySamples",
+      "value": 1000,
+      "usage": "t=0;worst<=5;worst++)for(int sample=0;sample<1000;sample++){int q=roller.Roll(worst,20,0,ref s"
+    },
+    {
+      "id": "parameter16",
+      "value": 20,
+      "usage": "ample<1000;sample++){int q=roller.Roll(worst,20,0,ref seed);if(q<0||q>worst)throw new Except"
+    },
+    {
+      "id": "qualitySampleCount",
+      "value": 200000,
+      "usage": "y\");int low=0,high=0,sl=0,sh=0;for(int i=0;i<200000;i++){int a=roller.Roll(3,1,0,ref seed),b=rol"
+    },
+    {
+      "id": "parameter18",
+      "value": 10,
+      "usage": ");double first=o.progress;s.city=1;g.Advance(10,false);Check(o.progress>first&&o.progress<.8"
+    },
+    {
+      "id": "parameter19",
+      "value": 0.8,
+      "usage": "10,false);Check(o.progress>first&&o.progress<.8,\"city switch accumulates progress without re"
+    },
+    {
+      "id": "parameter20",
+      "value": 3600,
+      "usage": "slow tier\");double away=o.progress;g.Advance(3600,true);Check(o.progress>away,\"offline tier pr"
+    },
+    {
+      "id": "maxSteps",
+      "value": 10000,
+      "usage": "survives serialization unchanged\");g.Advance(10000,true);Check(o.completed,\"offline order compl"
+    },
+    {
+      "id": "routeSeed",
+      "value": 912,
+      "usage": "New(c,0,0,\"经典\",new Appearance(),\"Route test\",912);var service=new GameService(c,fresh);string"
+    },
+    {
+      "id": "routeFunds",
+      "value": 20000,
+      "usage": "lation discovers directed route\");fresh.gold=20000;service.BuyShip(1);fresh.city=0;service.AddA"
+    },
+    {
+      "id": "arrivalSeconds",
+      "value": 65,
+      "usage": ",5,999,1);service.Tick(1,false);service.Tick(65,false);Check(fresh.autoRoutes.Count==1&&fres"
+    },
+    {
+      "id": "eventSeed",
+      "value": 123,
+      "usage": "ice.New(c,3,0,\"休闲\",new Appearance(),\"Events\",123);eventState.gold=1500;var eventService=new G"
+    },
+    {
+      "id": "parameter26",
+      "value": 1480,
+      "usage": "ice.ChooseEvent(true);Check(eventState.gold==1480&&eventState.cities[0].reputation==5,\"event s"
+    },
+    {
+      "id": "parameter27",
+      "value": 0.025,
+      "usage": "on(msg);int steps=0;while(g.DistanceToPort()>.025&&steps++<10000){var p=g.C.ports[to];g.S.head"
+    },
+    {
+      "id": "parameter28",
+      "value": 0.1,
+      "usage": "Math.Atan2(p.y-g.S.seaY,p.x-g.S.seaX);g.Sail(.1,1);g.Tick(.1,false);}if(steps>=10000)throw n"
+    },
+    {
+      "id": "campaignSeed",
+      "value": 37812,
+      "usage": "e.New(c,5,0,mode,new Appearance(),\"Campaign\",37812);s.gold=1500;var g=new GameService(c,s);stri"
+    },
+    {
+      "id": "productionAdvanceSeconds",
+      "value": 60,
+      "usage": "0);g.Start(\"r\"+c.Named(\"木板\").id,0);g.Advance(60,false);g.Claim(s.orders.Last().id);Sail(g,1)"
+    },
+    {
+      "id": "parameter31",
+      "value": 6,
+      "usage": "on/trade/sailing\");g.License();for(int i=0;i<6;i++){g.Trade(1,c.Named(\"小麦\").id,5,1,true,s.c"
+    },
+    {
+      "id": "repeatCount",
+      "value": 100,
+      "usage": "ers, no money injection. for(int loop=0;loop<100&&s.gold<24000;loop++){int n=Math.Min(30,Math"
+    },
+    {
+      "id": "fundingTarget",
+      "value": 24000,
+      "usage": "y injection. for(int loop=0;loop<100&&s.gold<24000;loop++){int n=Math.Min(30,Math.Max(1,(s.gold"
+    },
+    {
+      "id": "parameter34",
+      "value": 80,
+      "usage": "+){int n=Math.Min(30,Math.Max(1,(s.gold-100)/80));var export=c.ports[0].raw.OrderByDescendin"
+    },
+    {
+      "id": "parameter35",
+      "value": 48,
+      "usage": "=g.Preview(0,export,5,n,true)){for(int h=0;h<48;h++)g.MarketHour();continue;}int previousGol"
+    },
+    {
+      "id": "parameter36",
+      "value": 550,
+      "usage": "lse,s.cargo);if(!s.cities[3].license&&s.gold>550)g.License();Sail(g,0);g.Supply();for(int h=0"
+    },
+    {
+      "id": "parameter37",
+      "value": 7,
+      "usage": "eToPort()>.025&&steps++<10000){var p=c.ports[7];s.heading=Math.Atan2(p.y-s.seaY,p.x-s.seaX)"
+    }
+  ]
+}

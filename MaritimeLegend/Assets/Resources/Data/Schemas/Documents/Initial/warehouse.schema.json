@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "warehouse"
+  ],
+  "properties": {
+    "warehouse": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "capacity"
+      ],
+      "properties": {
+        "capacity": {
+          "type": "integer"
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

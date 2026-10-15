@@ -1,0 +1,92 @@
+{
+  "recipes": [
+    {
+      "id": "rp21",
+      "output": "p21",
+      "quantity": 1,
+      "industry": 3,
+      "inputs": [
+        {
+          "product": "p19",
+          "quantity": 2
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 1,
+      "fee": 3,
+      "foregroundSeconds": 10,
+      "awayCityMinutes": 5,
+      "offlineHours": 2,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp22",
+      "output": "p22",
+      "quantity": 1,
+      "industry": 3,
+      "inputs": [
+        {
+          "product": "p21",
+          "quantity": 1
+        },
+        {
+          "product": "p20",
+          "quantity": 1
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 1,
+      "fee": 3,
+      "foregroundSeconds": 10,
+      "awayCityMinutes": 5,
+      "offlineHours": 2,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp23",
+      "output": "p23",
+      "quantity": 1,
+      "industry": 3,
+      "inputs": [
+        {
+          "product": "p21",
+          "quantity": 2
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 2,
+      "fee": 8,
+      "foregroundSeconds": 25,
+      "awayCityMinutes": 15,
+      "offlineHours": 5,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp24",
+      "output": "p24",
+      "quantity": 1,
+      "industry": 3,
+      "inputs": [
+        {
+          "product": "p22",
+          "quantity": 2
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 2,
+      "fee": 8,
+      "foregroundSeconds": 25,
+      "awayCityMinutes": 15,
+      "offlineHours": 5,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    }
+  ]
+}

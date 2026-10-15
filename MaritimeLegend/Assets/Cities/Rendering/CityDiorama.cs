@@ -24,7 +24,7 @@ public sealed class CityDiorama : MonoBehaviour {
   var sunObject=new GameObject("Late afternoon sun");sunObject.transform.SetParent(transform);sun=sunObject.AddComponent<Light>();sun.type=LightType.Directional;sun.color=new Color(1,.91f,.76f);sun.intensity=1.0f;sun.shadows=LightShadows.Soft;sun.shadowStrength=.72f;sun.shadowBias=.03f;sun.cullingMask=View.cullingMask;sun.transform.rotation=Quaternion.Euler(48,-38,0);QualitySettings.shadows=ShadowQuality.All;QualitySettings.shadowResolution=ShadowResolution.High;QualitySettings.shadowDistance=65;RenderSettings.ambientMode=UnityEngine.Rendering.AmbientMode.Flat;RenderSettings.ambientLight=new Color(.34f,.38f,.42f);
   stone=Surface(new Color(.68f,.62f,.50f),true);wall=Surface(new Color(.50f,.47f,.38f),true);wood=Surface(new Color(.24f,.15f,.085f));metal=Surface(new Color(.13f,.14f,.13f));water=Own(new Material(city.waterShader));water.SetColor("_Color",venice?new Color(.055f,.23f,.21f):new Color(.045f,.22f,.27f));
   Box("Sea",new Vector3(0,-.62f,3),new Vector3(65,.15f,65),water,false);
-  propAtlas=Resources.Load<Texture2D>("Sprites/CityProps-v1");props=JsonUtility.FromJson<SpriteRectCatalog>(Resources.Load<TextAsset>("Sprites/CityProps-v1").text);
+  propAtlas=Resources.Load<Texture2D>("Sprites/CityProps-v1");props=JsonUtility.FromJson<SpriteRectCatalog>(Resources.Load<TextAsset>("Data/Presentation/Atlases/CityProps-v1").text);
   if(venice)BuildVenice();else BuildLisbon();
   Box("Continuous rear city foundation",new Vector3(0,.2f,20),new Vector3(48,2.2f,18),wall,false);
   Box("Western loading pier",new Vector3(-11,-.4f,-5.8f),new Vector3(6,.8f,4.5f),wood,false);

@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "partnerRoles"
+  ],
+  "properties": {
+    "partnerRoles": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "merchant",
+        "carpenter",
+        "headwind",
+        "diplomat",
+        "craftsman",
+        "chemist",
+        "scout",
+        "navigator",
+        "cook",
+        "gunner",
+        "guard"
+      ],
+      "properties": {
+        "merchant": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "carpenter": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "headwind": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "diplomat": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "craftsman": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "chemist": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "scout": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "navigator": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "cook": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "gunner": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "guard": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        }
+      }
+    }
+  }
+}

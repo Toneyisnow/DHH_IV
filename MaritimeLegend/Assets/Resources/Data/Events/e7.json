@@ -1,0 +1,25 @@
+{
+  "events": [
+    {
+      "id": "e7",
+      "trigger": "shortage",
+      "priority": 5,
+      "oneShotOrRepeat": "oneShot",
+      "cooldown": 0,
+      "prerequisites": [],
+      "dialogue": "商人递来一张补货单。城市库存与每小时补货独立变化；跨港补货仍是经营的根本。",
+      "title": "城市缺货",
+      "choices": [
+        "记入航海日志"
+      ],
+      "conditions": [],
+      "effects": [
+        {
+          "type": "gold",
+          "value": 30
+        }
+      ],
+      "nextEvent": ""
+    }
+  ]
+}

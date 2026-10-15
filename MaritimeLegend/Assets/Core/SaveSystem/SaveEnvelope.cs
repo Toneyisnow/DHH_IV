@@ -5,5 +5,5 @@ using System.Text;
 using UnityEngine;
 using MaritimeLegend.Domain;
 namespace MaritimeLegend {
-[Serializable] public class SaveEnvelope { public int version=1; public string hash,payload; }
+[Serializable] public class SaveEnvelope { public int version=SaveContract.Version; public string hash,payload; }
 }

@@ -13,7 +13,7 @@ public sealed class GameWorkflow {
  public GameWorkflow(GameService service){this.service=service;}
  public void Enqueue(Action<GameService> command){if(command==null)throw new ArgumentNullException(nameof(command));lock(gate){if(!Active)throw new InvalidOperationException("Workflow stopped");commands.Enqueue(command);}}
  public void Advance(double seconds,bool worldPaused){if(!Active)return;if(double.IsNaN(seconds)||double.IsInfinity(seconds)||seconds<0)throw new ArgumentOutOfRangeException(nameof(seconds));
-  lock(gate){int count=Math.Min(128,commands.Count);while(count-->0)commands.Dequeue()(service);}
+  lock(gate){int count=Math.Min(service.C.balance.world.maxCommandsPerTick,commands.Count);while(count-->0)commands.Dequeue()(service);}
   // Production continues during a world pause; its explicit production pause setting is honored by Advance.
   service.Advance(seconds,false);
   if(!worldPaused){service.AdvanceWorld(seconds);service.AdvanceAutoFleet(seconds);}

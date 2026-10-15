@@ -1,0 +1,53 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "creation"
+  ],
+  "properties": {
+    "creation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "startingIndustryCount",
+        "startingSkillIndices",
+        "startingSkillLevel",
+        "startingFactoryLevel",
+        "starterRecipeLevel",
+        "starterRecipeCount",
+        "starterMaterialBatches",
+        "starterMaterialQuality"
+      ],
+      "properties": {
+        "startingIndustryCount": {
+          "type": "integer"
+        },
+        "startingSkillIndices": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "startingSkillLevel": {
+          "type": "integer"
+        },
+        "startingFactoryLevel": {
+          "type": "integer"
+        },
+        "starterRecipeLevel": {
+          "type": "integer"
+        },
+        "starterRecipeCount": {
+          "type": "integer"
+        },
+        "starterMaterialBatches": {
+          "type": "integer"
+        },
+        "starterMaterialQuality": {
+          "type": "integer"
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

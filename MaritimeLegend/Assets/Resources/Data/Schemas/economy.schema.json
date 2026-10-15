@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "economy"
+  ],
+  "properties": {
+    "economy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "localPriceFactor",
+        "foreignPriceFactor",
+        "specialtyBands",
+        "specialtyBandStep",
+        "maxTradeQuantity",
+        "unitsPerReputation",
+        "maxTradeExperience",
+        "shortageThreshold",
+        "rawHourlySupply",
+        "foreignRawHourlyConsumption",
+        "processedStockTarget",
+        "processedSupplyQuality",
+        "processedHourlySupply",
+        "contractProductStep",
+        "contractHours",
+        "contractPriceFactor",
+        "contractPartnerFactor",
+        "contractReputation",
+        "initialSecondaryQuality",
+        "minimumRawSupplyPorts"
+      ],
+      "properties": {
+        "localPriceFactor": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "foreignPriceFactor": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "specialtyBands": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2147483647
+        },
+        "specialtyBandStep": {
+          "type": "number",
+          "minimum": 1e-06,
+          "maximum": 1000000000.0
+        },
+        "maxTradeQuantity": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2147483647
+        },
+        "unitsPerReputation": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "maxTradeExperience": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "shortageThreshold": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "rawHourlySupply": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "foreignRawHourlyConsumption": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "processedStockTarget": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "processedSupplyQuality": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "processedHourlySupply": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "contractProductStep": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "contractHours": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "contractPriceFactor": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "contractPartnerFactor": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "contractReputation": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "initialSecondaryQuality": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "minimumRawSupplyPorts": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "group": "events",
+  "fields": [
+    {
+      "name": "journalLimit",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "supportPrice",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "supportReputation",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "supportExperience",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "production"
+  ],
+  "properties": {
+    "production": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "partnerFeeFactor",
+        "offlineMinimumSeconds",
+        "localMinimumSeconds",
+        "awayMinimumSeconds",
+        "speedPerLevel",
+        "partnerDurationFactor",
+        "completionExperience",
+        "cancelRefundFactor",
+        "offlineMaxSeconds",
+        "maxEffectiveLevel",
+        "partnerTrustDivisor",
+        "chemistIndustry",
+        "minimumEffectiveLevel"
+      ],
+      "properties": {
+        "partnerFeeFactor": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "offlineMinimumSeconds": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2147483647
+        },
+        "localMinimumSeconds": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2147483647
+        },
+        "awayMinimumSeconds": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2147483647
+        },
+        "speedPerLevel": {
+          "type": "number",
+          "minimum": 1e-06,
+          "maximum": 1000000000.0
+        },
+        "partnerDurationFactor": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "completionExperience": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "cancelRefundFactor": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "offlineMaxSeconds": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2147483647
+        },
+        "maxEffectiveLevel": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "partnerTrustDivisor": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2147483647
+        },
+        "chemistIndustry": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "minimumEffectiveLevel": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        }
+      }
+    }
+  }
+}

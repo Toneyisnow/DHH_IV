@@ -1,0 +1,47 @@
+{
+  "group": "fleet",
+  "fields": [
+    {
+      "name": "hullRepairPrice",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "repairPartnerFactor",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "autoMinimumHull",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "autoMinimumFood",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "autoSupplyFee",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "autoLegSeconds",
+      "integer": true,
+      "minimum": 1,
+      "maximum": 2147483647
+    },
+    {
+      "name": "autoFoodPerSecond",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 1000000000.0
+    }
+  ]
+}

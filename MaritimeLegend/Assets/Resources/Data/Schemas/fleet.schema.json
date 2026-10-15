@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "fleet"
+  ],
+  "properties": {
+    "fleet": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "hullRepairPrice",
+        "repairPartnerFactor",
+        "autoMinimumHull",
+        "autoMinimumFood",
+        "autoSupplyFee",
+        "autoLegSeconds",
+        "autoFoodPerSecond"
+      ],
+      "properties": {
+        "hullRepairPrice": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "repairPartnerFactor": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "autoMinimumHull": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "autoMinimumFood": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "autoSupplyFee": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "autoLegSeconds": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2147483647
+        },
+        "autoFoodPerSecond": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        }
+      }
+    }
+  }
+}

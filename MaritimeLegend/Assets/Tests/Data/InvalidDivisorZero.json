@@ -1,0 +1,17 @@
+{
+  "production": {
+    "partnerFeeFactor": 0.95,
+    "offlineMinimumSeconds": 7200,
+    "localMinimumSeconds": 5,
+    "awayMinimumSeconds": 300,
+    "speedPerLevel": 0.02,
+    "partnerDurationFactor": 0.92,
+    "completionExperience": 12,
+    "cancelRefundFactor": 0.5,
+    "offlineMaxSeconds": 86400,
+    "maxEffectiveLevel": 20,
+    "partnerTrustDivisor": 0,
+    "chemistIndustry": 7,
+    "minimumEffectiveLevel": 1
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "ships"
+  ],
+  "properties": {
+    "ships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "capacity",
+          "guns",
+          "id",
+          "name",
+          "price",
+          "slots",
+          "speed"
+        ],
+        "properties": {
+          "capacity": {
+            "type": "integer"
+          },
+          "slots": {
+            "type": "integer"
+          },
+          "guns": {
+            "type": "integer"
+          },
+          "speed": {
+            "type": "number"
+          },
+          "price": {
+            "type": "integer"
+          },
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

@@ -1,0 +1,25 @@
+{
+  "events": [
+    {
+      "id": "e1",
+      "trigger": "trade",
+      "priority": 11,
+      "oneShotOrRepeat": "oneShot",
+      "cooldown": 0,
+      "prerequisites": [],
+      "dialogue": "账本终于有了第一行。别忘了，大量买入会推高本城价格，大量卖出则会压低收购价。",
+      "title": "第一笔交易",
+      "choices": [
+        "记入航海日志"
+      ],
+      "conditions": [],
+      "effects": [
+        {
+          "type": "gold",
+          "value": 60
+        }
+      ],
+      "nextEvent": ""
+    }
+  ]
+}

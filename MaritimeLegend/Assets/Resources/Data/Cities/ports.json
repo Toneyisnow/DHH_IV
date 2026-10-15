@@ -1,0 +1,302 @@
+{
+  "ports": [
+    {
+      "id": 0,
+      "name": "里斯本",
+      "x": 0.15,
+      "y": 0.31,
+      "raw": [
+        "p19",
+        "p13",
+        "p43",
+        "p8",
+        "p25"
+      ],
+      "trait": "船帆与船材生产加速10%",
+      "region": 0,
+      "cityKey": "LisbonCity",
+      "qualityBonus": 0,
+      "productionLevelBonus": 0,
+      "productionFeeFactors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "productionDurationFactors": [
+        1,
+        1,
+        0.9,
+        0.9,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 1,
+      "name": "塞维利亚",
+      "x": 0.24,
+      "y": 0.42,
+      "raw": [
+        "p0",
+        "p7",
+        "p1",
+        "p13",
+        "p32"
+      ],
+      "trait": "食品生产加速10%",
+      "region": 0,
+      "cityKey": "SevilleCity",
+      "qualityBonus": 0,
+      "productionLevelBonus": 0,
+      "productionFeeFactors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "productionDurationFactors": [
+        0.9,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 2,
+      "name": "威尼斯",
+      "x": 0.38,
+      "y": 0.25,
+      "raw": [
+        "p14",
+        "p32",
+        "p38",
+        "p26"
+      ],
+      "trait": "奢侈品品质权重提升",
+      "region": 1,
+      "cityKey": "VeniceCity",
+      "qualityBonus": 0.08,
+      "productionLevelBonus": 0,
+      "productionFeeFactors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "productionDurationFactors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 3,
+      "name": "亚历山大",
+      "x": 0.46,
+      "y": 0.48,
+      "raw": [
+        "p1",
+        "p37",
+        "p44",
+        "p7"
+      ],
+      "trait": "药剂及香料加工费用降低8%",
+      "region": 1,
+      "cityKey": "AlexandriaCity",
+      "qualityBonus": 0,
+      "productionLevelBonus": 0,
+      "productionFeeFactors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0.92,
+        0.92
+      ],
+      "productionDurationFactors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 4,
+      "name": "伊斯坦布尔",
+      "x": 0.52,
+      "y": 0.28,
+      "raw": [
+        "p0",
+        "p8",
+        "p25",
+        "p31",
+        "p44"
+      ],
+      "trait": "纺织及锻造生产加速10%",
+      "region": 2,
+      "cityKey": "IstanbulCity",
+      "qualityBonus": 0,
+      "productionLevelBonus": 0,
+      "productionFeeFactors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "productionDurationFactors": [
+        1,
+        1,
+        0.9,
+        1,
+        0.9,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 5,
+      "name": "果阿",
+      "x": 0.65,
+      "y": 0.63,
+      "raw": [
+        "p14",
+        "p37",
+        "p43",
+        "p38"
+      ],
+      "trait": "纺织加工费用降低8%",
+      "region": 2,
+      "cityKey": "GoaCity",
+      "qualityBonus": 0,
+      "productionLevelBonus": 0,
+      "productionFeeFactors": [
+        1,
+        1,
+        0.92,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "productionDurationFactors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 6,
+      "name": "马六甲",
+      "x": 0.8,
+      "y": 0.72,
+      "raw": [
+        "p2",
+        "p20",
+        "p19"
+      ],
+      "trait": "船材生产加速10%",
+      "region": 3,
+      "cityKey": "MalaccaCity",
+      "qualityBonus": 0,
+      "productionLevelBonus": 0,
+      "productionFeeFactors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "productionDurationFactors": [
+        1,
+        1,
+        1,
+        0.9,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 7,
+      "name": "杭州",
+      "x": 0.88,
+      "y": 0.35,
+      "raw": [
+        "p2",
+        "p26",
+        "p31",
+        "p20"
+      ],
+      "trait": "精工品质权重提升",
+      "region": 3,
+      "cityKey": "HangzhouCity",
+      "qualityBonus": 0.08,
+      "productionLevelBonus": 1,
+      "productionFeeFactors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "productionDurationFactors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  ]
+}

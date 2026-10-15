@@ -1,0 +1,67 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "products"
+  ],
+  "properties": {
+    "products": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "industry",
+          "category",
+          "basePrice",
+          "weight",
+          "stackSize",
+          "quality",
+          "demandTags",
+          "allowedCities"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "industry": {
+            "type": "integer"
+          },
+          "category": {
+            "type": "string"
+          },
+          "basePrice": {
+            "type": "integer"
+          },
+          "weight": {
+            "type": "integer"
+          },
+          "stackSize": {
+            "type": "integer"
+          },
+          "quality": {
+            "type": "integer"
+          },
+          "demandTags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "allowedCities": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

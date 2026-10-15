@@ -1,0 +1,29 @@
+{
+  "group": "quality",
+  "fields": [
+    {
+      "name": "minimumLambda",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "baseLambda",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "lambdaPerLevel",
+      "integer": false,
+      "minimum": 1e-06,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "levelOrigin",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    }
+  ]
+}

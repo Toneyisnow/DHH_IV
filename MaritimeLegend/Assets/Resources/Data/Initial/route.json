@@ -1,0 +1,12 @@
+{
+  "route": {
+    "quality": 5,
+    "quantity": 5,
+    "maxBuy": 999,
+    "minSell": 1,
+    "loops": 1,
+    "budget": 2000,
+    "status": "装货中",
+    "reason": ""
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "partners"
+  ],
+  "properties": {
+    "partners": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "port",
+          "role",
+          "fee",
+          "specialty",
+          "skill1",
+          "skill2",
+          "bio"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          },
+          "port": {
+            "type": "integer"
+          },
+          "role": {
+            "type": "string"
+          },
+          "fee": {
+            "type": "integer"
+          },
+          "specialty": {
+            "type": "string"
+          },
+          "skill1": {
+            "type": "string"
+          },
+          "skill2": {
+            "type": "string"
+          },
+          "bio": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

@@ -1,0 +1,64 @@
+{
+  "skills": [
+    {
+      "id": "导航",
+      "category": 0,
+      "maxLevel": 20
+    },
+    {
+      "id": "视野",
+      "category": 0,
+      "maxLevel": 20
+    },
+    {
+      "id": "补给",
+      "category": 0,
+      "maxLevel": 20
+    },
+    {
+      "id": "议价",
+      "category": 1,
+      "maxLevel": 20
+    },
+    {
+      "id": "情报",
+      "category": 1,
+      "maxLevel": 20
+    },
+    {
+      "id": "声望",
+      "category": 1,
+      "maxLevel": 20
+    },
+    {
+      "id": "配方",
+      "category": 2,
+      "maxLevel": 20
+    },
+    {
+      "id": "工艺",
+      "category": 2,
+      "maxLevel": 20
+    },
+    {
+      "id": "品质",
+      "category": 2,
+      "maxLevel": 20
+    },
+    {
+      "id": "炮术",
+      "category": 3,
+      "maxLevel": 20
+    },
+    {
+      "id": "近战",
+      "category": 3,
+      "maxLevel": 20
+    },
+    {
+      "id": "防御",
+      "category": 3,
+      "maxLevel": 20
+    }
+  ]
+}

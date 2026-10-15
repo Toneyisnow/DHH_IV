@@ -1,0 +1,143 @@
+{
+  "group": "navigation",
+  "fields": [
+    {
+      "name": "minimumDepartureHull",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "minimumDepartureFood",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "minimumWindFactor",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "baseWindFactor",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "windDotWeight",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "trimPenalty",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "name": "optimalTrim",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "headwindThreshold",
+      "integer": false,
+      "minimum": -1,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "navigatorHeadwindFactor",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "baseSpeed",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "minimumHullSpeedFactor",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "hullSpeedWeight",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "cargoSpeedPenalty",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "name": "mapMinX",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "mapMaxX",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "mapMinY",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "mapMaxY",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "arrivalRadius",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "routeExperience",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "partnerArrivalExperience",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "rescueFee",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "rescueHull",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "rescueFood",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "world"
+  ],
+  "properties": {
+    "world": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "secondsPerHour",
+        "visionRadius",
+        "visionPerLevel",
+        "scoutVisionBonus",
+        "navigatorVisionBonus",
+        "foodPerSecond",
+        "cookFoodFactor",
+        "fedHullDecay",
+        "starvingHullDecay",
+        "windIntervalMin",
+        "windIntervalRange",
+        "hoursPerDay",
+        "maxCommandsPerTick",
+        "discoveryExperience"
+      ],
+      "properties": {
+        "secondsPerHour": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2147483647
+        },
+        "visionRadius": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "visionPerLevel": {
+          "type": "number",
+          "minimum": 1e-06,
+          "maximum": 1000000000.0
+        },
+        "scoutVisionBonus": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "navigatorVisionBonus": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "foodPerSecond": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "cookFoodFactor": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "fedHullDecay": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "starvingHullDecay": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "windIntervalMin": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2147483647
+        },
+        "windIntervalRange": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "hoursPerDay": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2147483647
+        },
+        "maxCommandsPerTick": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "discoveryExperience": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        }
+      }
+    }
+  }
+}

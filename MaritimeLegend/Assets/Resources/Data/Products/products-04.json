@@ -1,0 +1,130 @@
+{
+  "products": [
+    {
+      "id": "p25",
+      "name": "铁矿",
+      "industry": 4,
+      "category": "R",
+      "basePrice": 26,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "矿业"
+      ],
+      "allowedCities": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": "p26",
+      "name": "铜矿",
+      "industry": 4,
+      "category": "R",
+      "basePrice": 35,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "矿业"
+      ],
+      "allowedCities": [
+        2,
+        7
+      ]
+    },
+    {
+      "id": "p27",
+      "name": "铁锭",
+      "industry": 4,
+      "category": "M",
+      "basePrice": 72,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "矿业"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p28",
+      "name": "铜锭",
+      "industry": 4,
+      "category": "M",
+      "basePrice": 95,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "矿业"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p29",
+      "name": "工具组",
+      "industry": 4,
+      "category": "C",
+      "basePrice": 180,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "矿业"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p30",
+      "name": "金属船件",
+      "industry": 4,
+      "category": "C",
+      "basePrice": 235,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "矿业"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ]
+}

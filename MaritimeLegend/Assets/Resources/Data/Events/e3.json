@@ -1,0 +1,25 @@
+{
+  "events": [
+    {
+      "id": "e3",
+      "trigger": "production",
+      "priority": 9,
+      "oneShotOrRepeat": "oneShot",
+      "cooldown": 0,
+      "prerequisites": [],
+      "dialogue": "第一批成品完成了。品质由最差原料划定下限，工艺决定向上突破的机会。",
+      "title": "炉火初燃",
+      "choices": [
+        "记入航海日志"
+      ],
+      "conditions": [],
+      "effects": [
+        {
+          "type": "gold",
+          "value": 100
+        }
+      ],
+      "nextEvent": ""
+    }
+  ]
+}

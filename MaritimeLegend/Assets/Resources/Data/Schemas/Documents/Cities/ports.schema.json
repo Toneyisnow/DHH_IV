@@ -1,0 +1,78 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "ports"
+  ],
+  "properties": {
+    "ports": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "cityKey",
+          "id",
+          "name",
+          "productionDurationFactors",
+          "productionFeeFactors",
+          "productionLevelBonus",
+          "qualityBonus",
+          "raw",
+          "region",
+          "trait",
+          "x",
+          "y"
+        ],
+        "properties": {
+          "qualityBonus": {
+            "type": "number"
+          },
+          "raw": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "y": {
+            "type": "number"
+          },
+          "productionFeeFactors": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
+          },
+          "name": {
+            "type": "string"
+          },
+          "x": {
+            "type": "number"
+          },
+          "region": {
+            "type": "integer"
+          },
+          "productionDurationFactors": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
+          },
+          "id": {
+            "type": "integer"
+          },
+          "productionLevelBonus": {
+            "type": "integer"
+          },
+          "trait": {
+            "type": "string"
+          },
+          "cityKey": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

@@ -1,0 +1,40 @@
+{
+  "ships": [
+    {
+      "id": 0,
+      "name": "小型帆船",
+      "price": 1000,
+      "capacity": 80,
+      "speed": 1.1,
+      "guns": 1,
+      "slots": 2
+    },
+    {
+      "id": 1,
+      "name": "贸易双桅船",
+      "price": 4000,
+      "capacity": 220,
+      "speed": 1,
+      "guns": 2,
+      "slots": 3
+    },
+    {
+      "id": 2,
+      "name": "快速探险船",
+      "price": 6000,
+      "capacity": 130,
+      "speed": 1.35,
+      "guns": 2,
+      "slots": 4
+    },
+    {
+      "id": 3,
+      "name": "大型盖伦船",
+      "price": 12000,
+      "capacity": 320,
+      "speed": 0.85,
+      "guns": 6,
+      "slots": 5
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "quests": {
+    "instrumentQuality": 2,
+    "chapterTwoReward": 900,
+    "chapterThreeReward": 3000,
+    "licensedCitiesRequired": 3,
+    "productionOrdersRequired": 3,
+    "materialQuality": 2,
+    "finalRoutesRequired": 3,
+    "finalPartnerTrust": 2,
+    "finalPort": 7,
+    "completedStage": 4,
+    "endingReward": 5000,
+    "firstChapter": 1,
+    "secondChapter": 2,
+    "finalChapter": 3,
+    "startingShipType": 0,
+    "materialQuantity": 1
+  }
+}

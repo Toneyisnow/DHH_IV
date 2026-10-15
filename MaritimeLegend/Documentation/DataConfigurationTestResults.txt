@@ -1,0 +1,1 @@
+PASS: split loader; unknown/missing fields; zero divisors; integer types; broken product references; independent defaults; configured upgrade cost; quality bounds; isolated user data; settings backup recovery; atomic save roundtrip.

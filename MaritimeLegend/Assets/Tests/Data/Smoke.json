@@ -1,0 +1,9 @@
+{
+  "values": [
+    {
+      "id": "seed",
+      "value": 71527,
+      "usage": "UI smoke initial seed"
+    }
+  ]
+}

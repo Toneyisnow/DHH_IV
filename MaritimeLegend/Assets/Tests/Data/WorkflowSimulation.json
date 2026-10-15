@@ -1,0 +1,54 @@
+{
+  "values": [
+    {
+      "id": "parameter01",
+      "value": 6,
+      "usage": "g catalog){var state=GameService.New(catalog,6,0,\"休闲\",new Appearance(),\"WorkflowTest\",41);v"
+    },
+    {
+      "id": "workflowSeed",
+      "value": 41,
+      "usage": "log,6,0,\"休闲\",new Appearance(),\"WorkflowTest\",41);var service=new GameService(catalog,state);"
+    },
+    {
+      "id": "standardQuality",
+      "value": 3,
+      "usage": "ervice.Workflow;   state.cities[0].factories[3]=1;var recipe=catalog.recipes.First(x=>x.out"
+    },
+    {
+      "id": "highQuality",
+      "value": 2,
+      "usage": "es[0].warehouse,item.product,3,item.quantity*2,0);service.Start(recipe.id,0);if(state.order"
+    },
+    {
+      "id": "parameter05",
+      "value": 500,
+      "usage": ";service.UpgradeShip(0);if(state.gold!=funds-500||state.cities[0].warehouse.capacity!=capacit"
+    },
+    {
+      "id": "repeatCount",
+      "value": 100,
+      "usage": "state.cities[0].warehouse.capacity!=capacity+100||state.ships[0].level!=2)throw new Exception"
+    },
+    {
+      "id": "lowQuality",
+      "value": 5,
+      "usage": "order.progress;state.city=1;workflow.Advance(5,false);if(order.progress<=p)throw new Except"
+    },
+    {
+      "id": "simulationHours",
+      "value": 720,
+      "usage": "ommand queue exactly once\");   for(int h=0;h<720;h++)workflow.Advance(30,false);foreach(var c"
+    },
+    {
+      "id": "simulationDays",
+      "value": 30,
+      "usage": "\");   for(int h=0;h<720;h++)workflow.Advance(30,false);foreach(var city in state.cities)fore"
+    },
+    {
+      "id": "oversizedTrade",
+      "value": 999,
+      "usage": "top();time=state.worldHours;workflow.Advance(999,false);if(time!=state.worldHours)throw new E"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+Data refactor verification — 2026-10-15
+
+PASS: 140 JSON files under Assets/Resources/Data; 61 indexed documents validated against schemas; largest JSON 5067 bytes; configured limit 16384 bytes.
+PASS: original catalog records/IDs/values retained; explicit product and recipe order tables preserve positional save references.
+PASS: all Assets C# sources compiled against locally installed Unity 6000.3.10f1 managed assemblies (external .NET compiler). Existing mapPan never-assigned warning remains; no compile errors.
+PASS: initial stock tests (100 seeds, eight cities, quality-specific trading, legacy stock handling, save roundtrip, 720-hour NPC bounds and workflow simulation).
+PASS: configuration validation (unknown/missing fields, zero divisor, fractional integer, broken product reference, stable catalog ordering, independent defaults, configured upgrade cost, quality bounds).
+PASS: isolated user settings persistence and backup recovery; save roundtrip; user-written files remain outside Resources.
+PASS: git diff --check.
+
+FAIL / deferred: full legacy DomainChecks campaign simulation fails while crafting flagship instrument: warehouse lacks compass, gold=18. No test funds injected and no balance changes made to hide the failure. Full BuildGame validation still includes this check, so a full build is not declared passed.
+NOT VERIFIED: running this refactor inside Unity, native JsonUtility behavior, PlayMode UI, iOS/IL2CPP device persistence/background interruption, Steam Cloud deployment and cross-device conflicts. External compile is not a Unity player build.
+Headless runtime checks use System.Text.Json field serialization as a test adapter; their save tests do not establish native Unity serializer compatibility.
+DEFERRED: Unity serialized art/scene/prefab numeric properties and presentation pixel geometry remain in Unity assets/presentation code; explicit follow-up plan is in the design document.
+
+Reproduce from MaritimeLegend/:
+  python Tools/validate_game_data.py
+  dotnet run --project Tools/HeadlessChecks/HeadlessChecks.csproj
+  dotnet run --project Tools/HeadlessChecks/HeadlessChecks.csproj -- --campaign

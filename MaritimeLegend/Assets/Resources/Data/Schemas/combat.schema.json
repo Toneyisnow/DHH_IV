@@ -1,0 +1,174 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "combat"
+  ],
+  "properties": {
+    "combat": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "finalReward",
+        "practiceReward",
+        "victoryExperience",
+        "enemyFinalHull",
+        "enemyPracticeHull",
+        "enemyInitialSails",
+        "enemyInitialCooldown",
+        "turnSpeed",
+        "playerSpeed",
+        "brakeFactor",
+        "enemyTurnRange",
+        "enemyTurnSpeed",
+        "enemyDamagedSailsThreshold",
+        "enemySpeed",
+        "enemyDamagedSpeed",
+        "enemyRange",
+        "guardDamage",
+        "enemyDamage",
+        "enemyCooldown",
+        "broadsideDotLimit",
+        "playerRange",
+        "gunnerCooldown",
+        "playerCooldown",
+        "baseDamage",
+        "damagePerGun",
+        "damagePerShipLevel"
+      ],
+      "properties": {
+        "finalReward": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "practiceReward": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "victoryExperience": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "enemyFinalHull": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "enemyPracticeHull": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "enemyInitialSails": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "enemyInitialCooldown": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "turnSpeed": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "playerSpeed": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "brakeFactor": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "enemyTurnRange": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "enemyTurnSpeed": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "enemyDamagedSailsThreshold": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "enemySpeed": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "enemyDamagedSpeed": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "enemyRange": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "guardDamage": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "enemyDamage": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "enemyCooldown": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "broadsideDotLimit": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "playerRange": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "gunnerCooldown": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "playerCooldown": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "baseDamage": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "damagePerGun": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "damagePerShipLevel": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        }
+      }
+    }
+  }
+}

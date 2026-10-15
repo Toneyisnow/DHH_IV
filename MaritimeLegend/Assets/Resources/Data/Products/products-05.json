@@ -1,0 +1,153 @@
+{
+  "products": [
+    {
+      "id": "p31",
+      "name": "煤",
+      "industry": 5,
+      "category": "R",
+      "basePrice": 24,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "工业"
+      ],
+      "allowedCities": [
+        4,
+        7
+      ]
+    },
+    {
+      "id": "p32",
+      "name": "砂",
+      "industry": 5,
+      "category": "R",
+      "basePrice": 12,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "工业"
+      ],
+      "allowedCities": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "p33",
+      "name": "钢材",
+      "industry": 5,
+      "category": "M",
+      "basePrice": 135,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "工业"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p34",
+      "name": "玻璃",
+      "industry": 5,
+      "category": "M",
+      "basePrice": 65,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "工业"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p35",
+      "name": "齿轮机械",
+      "industry": 5,
+      "category": "C",
+      "basePrice": 330,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "工业"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p36",
+      "name": "罗盘",
+      "industry": 5,
+      "category": "C",
+      "basePrice": 220,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "工业"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "flagship",
+      "name": "旗舰航海仪",
+      "industry": 5,
+      "category": "C",
+      "basePrice": 900,
+      "weight": 3,
+      "stackSize": 10,
+      "quality": 3,
+      "demandTags": [
+        "远洋"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ]
+}

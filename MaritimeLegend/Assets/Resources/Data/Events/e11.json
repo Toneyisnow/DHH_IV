@@ -1,0 +1,25 @@
+{
+  "events": [
+    {
+      "id": "e11",
+      "trigger": "final",
+      "priority": 1,
+      "oneShotOrRepeat": "oneShot",
+      "cooldown": 0,
+      "prerequisites": [],
+      "dialogue": "诸港的货物、炉火与同伴，终于在同一面帆下相遇。向最后的目的港出发。",
+      "title": "世界之环",
+      "choices": [
+        "记入航海日志"
+      ],
+      "conditions": [],
+      "effects": [
+        {
+          "type": "gold",
+          "value": 0
+        }
+      ],
+      "nextEvent": ""
+    }
+  ]
+}

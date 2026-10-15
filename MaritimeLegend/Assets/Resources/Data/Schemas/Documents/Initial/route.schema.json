@@ -1,0 +1,50 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "route"
+  ],
+  "properties": {
+    "route": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "quality",
+        "quantity",
+        "maxBuy",
+        "minSell",
+        "loops",
+        "budget",
+        "status",
+        "reason"
+      ],
+      "properties": {
+        "quality": {
+          "type": "integer"
+        },
+        "quantity": {
+          "type": "integer"
+        },
+        "maxBuy": {
+          "type": "integer"
+        },
+        "minSell": {
+          "type": "integer"
+        },
+        "loops": {
+          "type": "integer"
+        },
+        "budget": {
+          "type": "integer"
+        },
+        "status": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

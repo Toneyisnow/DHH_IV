@@ -1,0 +1,8 @@
+{
+  "quality": {
+    "minimumLambda": 0.55,
+    "baseLambda": 2.3,
+    "lambdaPerLevel": 0.065,
+    "levelOrigin": 1
+  }
+}

@@ -1,0 +1,1 @@
+PASS: shaders, six timeline frames, start input guard, menu, new-game navigation and return lifecycle.

@@ -1,0 +1,130 @@
+{
+  "products": [
+    {
+      "id": "p19",
+      "name": "原木",
+      "industry": 3,
+      "category": "R",
+      "basePrice": 28,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "林业"
+      ],
+      "allowedCities": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "p20",
+      "name": "树脂",
+      "industry": 3,
+      "category": "R",
+      "basePrice": 22,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "林业"
+      ],
+      "allowedCities": [
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p21",
+      "name": "木板",
+      "industry": 3,
+      "category": "M",
+      "basePrice": 65,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "林业"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p22",
+      "name": "涂层木材",
+      "industry": 3,
+      "category": "M",
+      "basePrice": 95,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "林业"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p23",
+      "name": "家具",
+      "industry": 3,
+      "category": "C",
+      "basePrice": 180,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "林业"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p24",
+      "name": "船体组件",
+      "industry": 3,
+      "category": "C",
+      "basePrice": 265,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "林业"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ]
+}

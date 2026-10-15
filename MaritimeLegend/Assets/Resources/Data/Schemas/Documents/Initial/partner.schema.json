@@ -1,0 +1,26 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "partner"
+  ],
+  "properties": {
+    "partner": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "trust",
+        "active"
+      ],
+      "properties": {
+        "trust": {
+          "type": "integer"
+        },
+        "active": {
+          "type": "boolean"
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

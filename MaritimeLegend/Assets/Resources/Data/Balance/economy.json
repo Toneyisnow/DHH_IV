@@ -1,0 +1,24 @@
+{
+  "economy": {
+    "localPriceFactor": 0.78,
+    "foreignPriceFactor": 1.08,
+    "specialtyBands": 3,
+    "specialtyBandStep": 0.06,
+    "maxTradeQuantity": 999,
+    "unitsPerReputation": 5,
+    "maxTradeExperience": 20,
+    "shortageThreshold": 5,
+    "rawHourlySupply": 5,
+    "foreignRawHourlyConsumption": 3,
+    "processedStockTarget": 15,
+    "processedSupplyQuality": 3,
+    "processedHourlySupply": 1,
+    "contractProductStep": 7,
+    "contractHours": 24,
+    "contractPriceFactor": 1.6,
+    "contractPartnerFactor": 1.08,
+    "contractReputation": 8,
+    "initialSecondaryQuality": 4,
+    "minimumRawSupplyPorts": 2
+  }
+}

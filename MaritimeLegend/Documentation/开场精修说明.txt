@@ -1,0 +1,43 @@
+MainMenuScene 开场精修
+
+参考：Screenshots/Opening.mp4、Opening_素材/使用说明.txt、Opening_素材/场景拆解.txt。
+直接查看视频前 3 秒、每隔 0.25 秒的连续帧：标题与地球逐步缩小，亮光由左侧越过标题，参考视频右侧回卷并拖出消散星点；本版按最新要求改为平滑向右出屏。原视频约 2.8 秒后进入选人转场。现有游戏保留“开始 → 主菜单 → 新游戏 / 存档 / 角色创建”的功能流程，不自动跳转。
+
+素材来源
+Assets/Resources/Opening 下的 PNG 均复制自 Opening_素材/01_开场。
+02_world_map_texture：球面地图。
+03_title_maritime_legend：新“航海世家 / Maritime Legend”透明标题。
+06_light_ribbon：运动光头的低强度纹理晕光。
+07_sparkle：头部闪光、稀疏星点和拖尾。
+01_globe 是静态成图，不把它绕屏幕中心旋转。SVG 提示改为 Unity 独立文字，柔光与暗角由运行时生成。
+
+球面原理
+OpeningGlobe.shader 将画面坐标投影到单位球的前半球，z = sqrt(1-x²-y²)。通过 atan2(x,z) 求经度、asin(y) 求纬度，采样世界地图；经度偏移随时间增加，使地表向左移动，呈东向西自转。法线与固定暖色光向量计算明暗，保留球体轮廓和边缘压暗。对固定机位菜单无需额外 Blender 模型；这是实时球面投影，而非静态图片旋转。
+原素材并非经过测绘验证的标准经纬展开图，球面地理形状以视觉效果为准。对原图未经验证的左右接边做窄带过渡。
+
+动效
+自转：每秒 1 度，标题与罗盘不随地球转动。
+拉远：3.4 秒，三次缓出，标题从 1.17 倍收至 1 倍；背景球面半径同步减少。
+光带：2.8 秒，多段贝塞尔曲线，有限长度柔光与亮核；左侧保留原弧线，右侧以连续切线自然滑出屏幕，不再回卷。
+重播：11.8 秒一个周期，中间留出约 9 秒安静时间。
+粒子：22 个低亮度环境光点、最多 86 个按寿命消退的拖尾星点，使用加法混合；不修改游戏随机数状态。
+提示：“Press Any Key to Start”1.8 秒呼吸周期。
+菜单：0.7 秒收拢标题并显现菜单，转场结束和鼠标释放前禁止选择菜单，避免开始输入误触新游戏。
+
+实现位置
+Assets/Scenes/Controllers/MainMenuScene/MainMenuScene.cs：场景挂载与生命周期。
+Assets/Scenes/Controllers/MainMenuScene/OpeningPresentation.cs：素材、球面渲染、光带、粒子。
+Assets/Scenes/Controllers/MainMenuScene/MaritimeGame.MainMenuScene.cs：标题排版与菜单交互。
+Assets/Resources/Opening/OpeningGlobe.shader：球面纹理映射与暗角。
+Assets/Resources/Opening/OpeningAdditive.shader：光效加法混合。
+Assets/Editor/OpeningImport.cs：原尺寸 / 透明通道 / 地图横向重复导入设置。
+Assets/Editor/OpeningVerification.cs：隔离编辑器验证入口。
+LiveGui.DrawTexture 增加可选 Material 参数；普通图片每次重置材质，防止光效材质污染其他界面。
+
+验证方式
+在单独的项目副本中运行 Unity -batchmode -executeMethod MaritimeLegend.Editor.OpeningVerification.Run -openingSmoke。
+Evidence/Opening 保存时间线截图及菜单、新游戏导航和返回场景验证结果。
+
+验证结果：隔离 Unity 6000.3.10f1 运行完成，退出码 0，OPENING_VERIFICATION_PASS。六个时间点画面、输入锁定、菜单、新游戏进入存档场景和返回标题通过。已人工查看实际渲染截图。日志有 UnityEditor.Search.SearchDatabase 的启动索引异常，堆栈不涉及游戏代码，未阻断渲染或交互验证。
+
+光带二次精修：右段从 (1410,400) 沿前段切线接出，终点 (2380,500)，完全离开 1920 宽画幅；接点位置和速度连续。柔光宽度 64→88、亮核 14→18；拖尾横纵散布 160/110 像素系数、寿命 1.3 秒，星点尺寸 48/20，扩大可见范围。

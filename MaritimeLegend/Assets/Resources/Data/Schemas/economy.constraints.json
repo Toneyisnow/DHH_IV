@@ -1,0 +1,125 @@
+{
+  "group": "economy",
+  "fields": [
+    {
+      "name": "localPriceFactor",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "foreignPriceFactor",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "specialtyBands",
+      "integer": true,
+      "minimum": 1,
+      "maximum": 2147483647
+    },
+    {
+      "name": "specialtyBandStep",
+      "integer": false,
+      "minimum": 1e-06,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "maxTradeQuantity",
+      "integer": true,
+      "minimum": 1,
+      "maximum": 2147483647
+    },
+    {
+      "name": "unitsPerReputation",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "maxTradeExperience",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "shortageThreshold",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "rawHourlySupply",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "foreignRawHourlyConsumption",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "processedStockTarget",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "processedSupplyQuality",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "processedHourlySupply",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "contractProductStep",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "contractHours",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "contractPriceFactor",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "contractPartnerFactor",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "contractReputation",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "initialSecondaryQuality",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    {
+      "name": "minimumRawSupplyPorts",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 2147483647
+    }
+  ]
+}

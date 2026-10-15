@@ -1,0 +1,9 @@
+{
+  "ship": {
+    "level": 1,
+    "hull": 100,
+    "sails": 100,
+    "food": 100,
+    "ammo": 40
+  }
+}

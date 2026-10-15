@@ -1,0 +1,25 @@
+{
+  "events": [
+    {
+      "id": "e4",
+      "trigger": "partner",
+      "priority": 8,
+      "oneShotOrRepeat": "oneShot",
+      "cooldown": 0,
+      "prerequisites": [],
+      "dialogue": "一个人的航程变成了两个人的约定。伙伴需要编入当班名单才会生效。",
+      "title": "同舟之人",
+      "choices": [
+        "记入航海日志"
+      ],
+      "conditions": [],
+      "effects": [
+        {
+          "type": "gold",
+          "value": 60
+        }
+      ],
+      "nextEvent": ""
+    }
+  ]
+}

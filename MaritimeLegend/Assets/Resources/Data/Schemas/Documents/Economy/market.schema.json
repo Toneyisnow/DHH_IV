@@ -1,0 +1,70 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "market"
+  ],
+  "properties": {
+    "market": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "spread",
+        "referenceStock",
+        "initialRawLevel5Stock",
+        "initialRawLevel4MinPercent",
+        "initialRawLevel4MaxPercent",
+        "maxStock",
+        "pressureStep",
+        "pressureMin",
+        "pressureMax",
+        "dailyReversion",
+        "qualityFactors"
+      ],
+      "properties": {
+        "spread": {
+          "type": "number"
+        },
+        "referenceStock": {
+          "type": "integer"
+        },
+        "initialRawLevel5Stock": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "initialRawLevel4MinPercent": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20
+        },
+        "initialRawLevel4MaxPercent": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20
+        },
+        "maxStock": {
+          "type": "integer"
+        },
+        "pressureStep": {
+          "type": "number"
+        },
+        "pressureMin": {
+          "type": "number"
+        },
+        "pressureMax": {
+          "type": "number"
+        },
+        "dailyReversion": {
+          "type": "number"
+        },
+        "qualityFactors": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

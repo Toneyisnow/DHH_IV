@@ -1,0 +1,13 @@
+{
+  "upgrades": {
+    "warehousePrice": 200,
+    "warehouseCapacityStep": 100,
+    "shipMaxLevel": 5,
+    "shipPrice": 300,
+    "licenseBasePrice": 300,
+    "licensePricePerCity": 200,
+    "diplomatLicenseFactor": 0.9,
+    "licenseMaxReputation": 20,
+    "licenseReputationPerCity": 5
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "events": [
+    {
+      "id": "e6",
+      "trigger": "headwind",
+      "priority": 6,
+      "oneShotOrRepeat": "oneShot",
+      "cooldown": 0,
+      "prerequisites": [],
+      "dialogue": "直迎逆风无法全速航行。试着斜向迎风，再交替转舵。",
+      "title": "学会迎风",
+      "choices": [
+        "记入航海日志"
+      ],
+      "conditions": [],
+      "effects": [
+        {
+          "type": "gold",
+          "value": 40
+        }
+      ],
+      "nextEvent": ""
+    }
+  ]
+}

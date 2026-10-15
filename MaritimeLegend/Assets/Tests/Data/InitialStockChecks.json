@@ -1,0 +1,59 @@
+{
+  "values": [
+    {
+      "id": "repeatCount",
+      "value": 100,
+      "usage": "r.Load();c.Validate(); for(uint seed=1;seed<=100;seed++){ var s=GameService.New(c,0,0,\"休闲\",ne"
+    },
+    {
+      "id": "parameter02",
+      "value": 4,
+      "usage": "(),\"total stock\"); Check(m.qualityStock.Take(4).All(n=>n==0),\"initial grades 0-3 empty\"); C"
+    },
+    {
+      "id": "lowQuality",
+      "value": 5,
+      "usage": "l grades 0-3 empty\"); Check(supplied?m.Stock(5)==100&&m.Stock(4)>=1&&m.Stock(4)<=20:m.stock"
+    },
+    {
+      "id": "parameter04",
+      "value": 20,
+      "usage": "?m.Stock(5)==100&&m.Stock(4)>=1&&m.Stock(4)<=20:m.stock==0,\"raw supply and ratio\"); Check(m."
+    },
+    {
+      "id": "stockSeed",
+      "value": 42,
+      "usage": "vice.New(c,0,0,\"休闲\",new Appearance(),\"Trade\",42);var g=new GameService(c,state);var id=c.por"
+    },
+    {
+      "id": "standardQuality",
+      "value": 3,
+      "usage": "efore=JsonUtility.ToJson(state);g.Trade(0,id,3,1,true,state.cargo);Check(before==JsonUtilit"
+    },
+    {
+      "id": "parameter07",
+      "value": 37,
+      "usage": "old\\\",\\\"stock\\\":37}\");Check(legacy.Stock(3)==37&&legacy.Stock(5)==0,\"legacy read\");legacy.Ch"
+    },
+    {
+      "id": "highQuality",
+      "value": 2,
+      "usage": "ck(5)==0,\"legacy read\");legacy.ChangeStock(5,2);Check(legacy.stock==39&&legacy.Stock(3)==37"
+    },
+    {
+      "id": "parameter09",
+      "value": 39,
+      "usage": ";legacy.ChangeStock(5,2);Check(legacy.stock==39&&legacy.Stock(3)==37&&legacy.Stock(5)==2,\"le"
+    },
+    {
+      "id": "oversizedTrade",
+      "value": 999,
+      "usage": "tes.Add(\"0>3\");g.BuyShip(1);g.AddAuto(3,id,1,999,1);Check(state.autoRoutes.Last().quality==5,"
+    },
+    {
+      "id": "simulationHours",
+      "value": 720,
+      "usage": "ality==5,\"new route quality\"); for(int h=0;h<720;h++){g.MarketHour();foreach(var city in stat"
+    }
+  ]
+}

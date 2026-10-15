@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "quality"
+  ],
+  "properties": {
+    "quality": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "minimumLambda",
+        "baseLambda",
+        "lambdaPerLevel",
+        "levelOrigin"
+      ],
+      "properties": {
+        "minimumLambda": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "baseLambda": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "lambdaPerLevel": {
+          "type": "number",
+          "minimum": 1e-06,
+          "maximum": 1000000000.0
+        },
+        "levelOrigin": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        }
+      }
+    }
+  }
+}

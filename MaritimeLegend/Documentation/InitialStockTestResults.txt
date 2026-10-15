@@ -1,0 +1,1 @@
+PASS: 100 seeds x 8 cities; raw-only initial grades 4/5 and 1-20% ratio; seed repeatability; starter materials; grade-specific transactions; rejected purchase atomicity; legacy migration; disk save/load; automatic route quality; 720 NPC hours; workflow simulation.

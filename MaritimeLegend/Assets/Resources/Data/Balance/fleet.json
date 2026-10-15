@@ -1,0 +1,11 @@
+{
+  "fleet": {
+    "hullRepairPrice": 1.5,
+    "repairPartnerFactor": 0.9,
+    "autoMinimumHull": 20,
+    "autoMinimumFood": 5,
+    "autoSupplyFee": 5,
+    "autoLegSeconds": 60,
+    "autoFoodPerSecond": 0.02
+  }
+}

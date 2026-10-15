@@ -1,0 +1,25 @@
+{
+  "events": [
+    {
+      "id": "e9",
+      "trigger": "battle",
+      "priority": 3,
+      "oneShotOrRepeat": "oneShot",
+      "cooldown": 0,
+      "prerequisites": [],
+      "dialogue": "风浪中的胜利并非偶然。船体、距离和侧舷角度，缺一不可。",
+      "title": "海盗旗落",
+      "choices": [
+        "记入航海日志"
+      ],
+      "conditions": [],
+      "effects": [
+        {
+          "type": "gold",
+          "value": 120
+        }
+      ],
+      "nextEvent": ""
+    }
+  ]
+}

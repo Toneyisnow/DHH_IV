@@ -1,0 +1,130 @@
+{
+  "products": [
+    {
+      "id": "p43",
+      "name": "药草",
+      "industry": 7,
+      "category": "R",
+      "basePrice": 32,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "化学/药剂"
+      ],
+      "allowedCities": [
+        0,
+        5
+      ]
+    },
+    {
+      "id": "p44",
+      "name": "硫磺",
+      "industry": 7,
+      "category": "R",
+      "basePrice": 33,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "化学/药剂"
+      ],
+      "allowedCities": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "p45",
+      "name": "药膏",
+      "industry": 7,
+      "category": "M",
+      "basePrice": 80,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "化学/药剂"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p46",
+      "name": "颜料",
+      "industry": 7,
+      "category": "M",
+      "basePrice": 100,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "化学/药剂"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p47",
+      "name": "医疗包",
+      "industry": 7,
+      "category": "C",
+      "basePrice": 190,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "化学/药剂"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p48",
+      "name": "高级染料",
+      "industry": 7,
+      "category": "C",
+      "basePrice": 245,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "化学/药剂"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ]
+}

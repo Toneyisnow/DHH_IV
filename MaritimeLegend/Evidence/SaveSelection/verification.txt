@@ -1,0 +1,1 @@
+PASS: seven card hits, outside rejection, hover enter/exit, persistent selection, new slot navigation, scene cleanup.

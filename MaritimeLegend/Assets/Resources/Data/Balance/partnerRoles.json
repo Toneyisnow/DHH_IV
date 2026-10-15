@@ -1,0 +1,15 @@
+{
+  "partnerRoles": {
+    "merchant": 3,
+    "carpenter": 8,
+    "headwind": 0,
+    "diplomat": 9,
+    "craftsman": 4,
+    "chemist": 6,
+    "scout": 1,
+    "navigator": 2,
+    "cook": 7,
+    "gunner": 11,
+    "guard": 5
+  }
+}

@@ -5,7 +5,7 @@ using UnityEditor;
 namespace MaritimeLegend.Editor {
 public static class PixelPorts {
 static Texture2D canvas; static Color outline=new Color32(37,43,44,255);static System.Random rng;
-static string CityArtPath(int id){var c=JsonUtility.FromJson<MaritimeLegend.Domain.Catalog>(Resources.Load<TextAsset>("Data/catalog").text);string folder="Assets/Cities/"+c.ports[id].cityKey+"/Art";Directory.CreateDirectory(folder);return folder+"/"+c.ports[id].cityKey+".png";}
+static string CityArtPath(int id){var c=MaritimeLegend.Domain.CatalogLoader.Load();string folder="Assets/Cities/"+c.ports[id].cityKey+"/Art";Directory.CreateDirectory(folder);return folder+"/"+c.ports[id].cityKey+".png";}
 static void Rect(int x,int y,int w,int h,Color c){for(int j=Math.Max(0,y);j<Math.Min(360,y+h);j++)for(int i=Math.Max(0,x);i<Math.Min(640,x+w);i++)canvas.SetPixel(i,359-j,c);}
 static Color C(int r,int g,int b){return new Color32((byte)r,(byte)g,(byte)b,255);}
 [MenuItem("Maritime Legend/Generate pixel ports")]

@@ -1,0 +1,75 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "game"
+  ],
+  "properties": {
+    "game": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "version",
+        "gold",
+        "chapter",
+        "name",
+        "mode",
+        "screen",
+        "seed",
+        "trim",
+        "windTimer",
+        "contractQuantity",
+        "contractDeadline",
+        "cargo"
+      ],
+      "properties": {
+        "version": {
+          "type": "integer"
+        },
+        "gold": {
+          "type": "integer"
+        },
+        "chapter": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "mode": {
+          "type": "string"
+        },
+        "screen": {
+          "type": "string"
+        },
+        "seed": {
+          "type": "integer"
+        },
+        "trim": {
+          "type": "number"
+        },
+        "windTimer": {
+          "type": "integer"
+        },
+        "contractQuantity": {
+          "type": "integer"
+        },
+        "contractDeadline": {
+          "type": "integer"
+        },
+        "cargo": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "capacity"
+          ],
+          "properties": {
+            "capacity": {
+              "type": "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

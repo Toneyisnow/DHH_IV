@@ -1,0 +1,130 @@
+{
+  "products": [
+    {
+      "id": "p13",
+      "name": "亚麻",
+      "industry": 2,
+      "category": "R",
+      "basePrice": 20,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "纺织"
+      ],
+      "allowedCities": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "p14",
+      "name": "棉花",
+      "industry": 2,
+      "category": "R",
+      "basePrice": 18,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "纺织"
+      ],
+      "allowedCities": [
+        2,
+        5
+      ]
+    },
+    {
+      "id": "p15",
+      "name": "纱线",
+      "industry": 2,
+      "category": "M",
+      "basePrice": 45,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "纺织"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p16",
+      "name": "布匹",
+      "industry": 2,
+      "category": "M",
+      "basePrice": 72,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "纺织"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p17",
+      "name": "船帆",
+      "industry": 2,
+      "category": "C",
+      "basePrice": 175,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "纺织"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p18",
+      "name": "礼服",
+      "industry": 2,
+      "category": "C",
+      "basePrice": 210,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "纺织"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "upgrades"
+  ],
+  "properties": {
+    "upgrades": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "warehousePrice",
+        "warehouseCapacityStep",
+        "shipMaxLevel",
+        "shipPrice",
+        "licenseBasePrice",
+        "licensePricePerCity",
+        "diplomatLicenseFactor",
+        "licenseMaxReputation",
+        "licenseReputationPerCity"
+      ],
+      "properties": {
+        "warehousePrice": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "warehouseCapacityStep": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "shipMaxLevel": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "shipPrice": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "licenseBasePrice": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "licensePricePerCity": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "diplomatLicenseFactor": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "licenseMaxReputation": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "licenseReputationPerCity": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        }
+      }
+    }
+  }
+}

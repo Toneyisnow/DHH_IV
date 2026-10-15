@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "objectives"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "objectives": {
+      "type": "object",
+      "required": [
+        "materialOne",
+        "materialTwo",
+        "instrument",
+        "sails"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "materialOne": {
+          "type": "string"
+        },
+        "materialTwo": {
+          "type": "string"
+        },
+        "instrument": {
+          "type": "string"
+        },
+        "sails": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

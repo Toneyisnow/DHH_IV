@@ -1,0 +1,18 @@
+{
+  "game": {
+    "version": 1,
+    "gold": 99999999,
+    "chapter": 1,
+    "name": "海岚",
+    "mode": "休闲",
+    "screen": "城市",
+    "seed": 71527,
+    "trim": 0.5,
+    "windTimer": 90,
+    "contractQuantity": 3,
+    "contractDeadline": 24,
+    "cargo": {
+      "capacity": 80
+    }
+  }
+}

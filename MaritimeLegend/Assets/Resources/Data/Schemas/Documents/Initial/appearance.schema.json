@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "appearance"
+  ],
+  "properties": {
+    "appearance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "accessoryIds"
+      ],
+      "properties": {
+        "accessoryIds": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

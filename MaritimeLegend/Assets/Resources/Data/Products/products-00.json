@@ -1,0 +1,147 @@
+{
+  "products": [
+    {
+      "id": "p0",
+      "name": "小麦",
+      "industry": 0,
+      "category": "R",
+      "basePrice": 12,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "农业"
+      ],
+      "allowedCities": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": "p1",
+      "name": "甘蔗",
+      "industry": 0,
+      "category": "R",
+      "basePrice": 18,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "农业"
+      ],
+      "allowedCities": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "p2",
+      "name": "蓝莓",
+      "industry": 0,
+      "category": "R",
+      "basePrice": 25,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "农业"
+      ],
+      "allowedCities": [
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p3",
+      "name": "面粉",
+      "industry": 0,
+      "category": "M",
+      "basePrice": 32,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "农业"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p4",
+      "name": "糖",
+      "industry": 0,
+      "category": "M",
+      "basePrice": 43,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "农业"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p5",
+      "name": "面包",
+      "industry": 0,
+      "category": "C",
+      "basePrice": 78,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "农业"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "p6",
+      "name": "蓝莓果酱",
+      "industry": 0,
+      "category": "C",
+      "basePrice": 125,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "农业"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ]
+}

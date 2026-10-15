@@ -1,0 +1,25 @@
+{
+  "events": [
+    {
+      "id": "e10",
+      "trigger": "route",
+      "priority": 2,
+      "oneShotOrRepeat": "oneShot",
+      "cooldown": 0,
+      "prerequisites": [],
+      "dialogue": "新航线与旧海图重合了。集齐三条航路记录，就能拼出世界之环的起点。",
+      "title": "古地图的线索",
+      "choices": [
+        "记入航海日志"
+      ],
+      "conditions": [],
+      "effects": [
+        {
+          "type": "gold",
+          "value": 100
+        }
+      ],
+      "nextEvent": ""
+    }
+  ]
+}

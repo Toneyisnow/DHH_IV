@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "skills"
+  ],
+  "properties": {
+    "skills": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "productionSkill",
+        "gunnerySkill",
+        "experiencePerLevel",
+        "maxTrust",
+        "legendaryPreviousTrust",
+        "legendaryChapter",
+        "trainingPricePerTrust",
+        "navigationSkill",
+        "reputationSkill",
+        "visionSkill",
+        "tradeSkill"
+      ],
+      "properties": {
+        "productionSkill": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "gunnerySkill": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "experiencePerLevel": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2147483647
+        },
+        "maxTrust": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "legendaryPreviousTrust": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "legendaryChapter": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "trainingPricePerTrust": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "navigationSkill": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "reputationSkill": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "visionSkill": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "tradeSkill": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "group": "ui",
+  "fields": [
+    {
+      "name": "autosaveSeconds",
+      "integer": false,
+      "minimum": 1e-06,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "characterSpeed",
+      "integer": false,
+      "minimum": 1e-06,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "walkArrivalDistance",
+      "integer": false,
+      "minimum": 1e-06,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "steeringRate",
+      "integer": false,
+      "minimum": 1e-06,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "minimumThrottle",
+      "integer": false,
+      "minimum": 1e-06,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "trimRate",
+      "integer": false,
+      "minimum": 1e-06,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "maximumFrameStep",
+      "integer": false,
+      "minimum": 1e-06,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "notificationSeconds",
+      "integer": false,
+      "minimum": 1e-06,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "dialogueCharactersPerSecond",
+      "integer": false,
+      "minimum": 1e-06,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "brightnessMinimum",
+      "integer": false,
+      "minimum": 1e-06,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "textSpeedMinimum",
+      "integer": false,
+      "minimum": 1e-06,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "textSpeedMaximum",
+      "integer": false,
+      "minimum": 1e-06,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "movementMinimum",
+      "integer": false,
+      "minimum": 1e-06,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "movementMaximum",
+      "integer": false,
+      "minimum": 1e-06,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "battleMinimum",
+      "integer": false,
+      "minimum": 1e-06,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "battleMaximum",
+      "integer": false,
+      "minimum": 1e-06,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "marketQuantityLimit",
+      "integer": true,
+      "minimum": 1e-06,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "nameLength",
+      "integer": true,
+      "minimum": 1e-06,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "autoBudgetStep",
+      "integer": true,
+      "minimum": 1e-06,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "autoBudgetLimit",
+      "integer": true,
+      "minimum": 1e-06,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "autoLoopLimit",
+      "integer": true,
+      "minimum": 1e-06,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "autoPriceLimit",
+      "integer": true,
+      "minimum": 1e-06,
+      "maximum": 1000000000.0
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "recipes": [
+    {
+      "id": "rp33",
+      "output": "p33",
+      "quantity": 1,
+      "industry": 5,
+      "inputs": [
+        {
+          "product": "p27",
+          "quantity": 1
+        },
+        {
+          "product": "p31",
+          "quantity": 2
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 1,
+      "fee": 3,
+      "foregroundSeconds": 10,
+      "awayCityMinutes": 5,
+      "offlineHours": 2,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp34",
+      "output": "p34",
+      "quantity": 1,
+      "industry": 5,
+      "inputs": [
+        {
+          "product": "p32",
+          "quantity": 2
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 1,
+      "fee": 3,
+      "foregroundSeconds": 10,
+      "awayCityMinutes": 5,
+      "offlineHours": 2,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp35",
+      "output": "p35",
+      "quantity": 1,
+      "industry": 5,
+      "inputs": [
+        {
+          "product": "p33",
+          "quantity": 1
+        },
+        {
+          "product": "p29",
+          "quantity": 1
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 2,
+      "fee": 8,
+      "foregroundSeconds": 25,
+      "awayCityMinutes": 15,
+      "offlineHours": 5,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rp36",
+      "output": "p36",
+      "quantity": 1,
+      "industry": 5,
+      "inputs": [
+        {
+          "product": "p28",
+          "quantity": 1
+        },
+        {
+          "product": "p34",
+          "quantity": 1
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 2,
+      "fee": 8,
+      "foregroundSeconds": 25,
+      "awayCityMinutes": 15,
+      "offlineHours": 5,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    },
+    {
+      "id": "rflagship",
+      "output": "flagship",
+      "quantity": 1,
+      "industry": 5,
+      "inputs": [
+        {
+          "product": "p36",
+          "quantity": 1
+        },
+        {
+          "product": "p35",
+          "quantity": 1
+        },
+        {
+          "product": "p48",
+          "quantity": 1
+        }
+      ],
+      "skill": "工艺",
+      "minLevel": 2,
+      "fee": 8,
+      "foregroundSeconds": 25,
+      "awayCityMinutes": 15,
+      "offlineHours": 5,
+      "difficulty": 0.0,
+      "unlock": "chapter1",
+      "consumesTools": true
+    }
+  ]
+}

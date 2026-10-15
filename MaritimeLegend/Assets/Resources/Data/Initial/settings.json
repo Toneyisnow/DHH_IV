@@ -1,0 +1,12 @@
+{
+  "settings": {
+    "master": 0.6,
+    "music": 0.5,
+    "sfx": 0.6,
+    "brightness": 1,
+    "textSpeed": 1,
+    "moveSpeed": 1,
+    "battleSpeed": 1,
+    "animations": true
+  }
+}

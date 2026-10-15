@@ -1,0 +1,8 @@
+{
+  "events": {
+    "journalLimit": 120,
+    "supportPrice": 20,
+    "supportReputation": 5,
+    "supportExperience": 5
+  }
+}

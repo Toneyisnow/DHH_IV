@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "ship"
+  ],
+  "properties": {
+    "ship": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "level",
+        "hull",
+        "sails",
+        "food",
+        "ammo"
+      ],
+      "properties": {
+        "level": {
+          "type": "integer"
+        },
+        "hull": {
+          "type": "integer"
+        },
+        "sails": {
+          "type": "integer"
+        },
+        "food": {
+          "type": "integer"
+        },
+        "ammo": {
+          "type": "integer"
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

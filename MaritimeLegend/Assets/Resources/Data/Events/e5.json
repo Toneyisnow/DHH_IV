@@ -1,0 +1,25 @@
+{
+  "events": [
+    {
+      "id": "e5",
+      "trigger": "repair",
+      "priority": 7,
+      "oneShotOrRepeat": "oneShot",
+      "cooldown": 0,
+      "prerequisites": [],
+      "dialogue": "船匠敲了敲新补的木板：真正的航海家知道何时返港。",
+      "title": "重整船帆",
+      "choices": [
+        "记入航海日志"
+      ],
+      "conditions": [],
+      "effects": [
+        {
+          "type": "gold",
+          "value": 20
+        }
+      ],
+      "nextEvent": ""
+    }
+  ]
+}

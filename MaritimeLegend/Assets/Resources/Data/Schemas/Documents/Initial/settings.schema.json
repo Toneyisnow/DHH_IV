@@ -1,0 +1,50 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "settings"
+  ],
+  "properties": {
+    "settings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "master",
+        "music",
+        "sfx",
+        "brightness",
+        "textSpeed",
+        "moveSpeed",
+        "battleSpeed",
+        "animations"
+      ],
+      "properties": {
+        "master": {
+          "type": "number"
+        },
+        "music": {
+          "type": "number"
+        },
+        "sfx": {
+          "type": "number"
+        },
+        "brightness": {
+          "type": "integer"
+        },
+        "textSpeed": {
+          "type": "integer"
+        },
+        "moveSpeed": {
+          "type": "integer"
+        },
+        "battleSpeed": {
+          "type": "integer"
+        },
+        "animations": {
+          "type": "boolean"
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

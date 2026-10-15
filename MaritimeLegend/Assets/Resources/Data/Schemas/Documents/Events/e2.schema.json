@@ -1,0 +1,90 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "events"
+  ],
+  "properties": {
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "trigger",
+          "priority",
+          "oneShotOrRepeat",
+          "cooldown",
+          "prerequisites",
+          "dialogue",
+          "title",
+          "choices",
+          "conditions",
+          "effects",
+          "nextEvent"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "trigger": {
+            "type": "string"
+          },
+          "priority": {
+            "type": "integer"
+          },
+          "oneShotOrRepeat": {
+            "type": "string"
+          },
+          "cooldown": {
+            "type": "integer"
+          },
+          "prerequisites": {
+            "type": "array",
+            "items": {}
+          },
+          "dialogue": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "choices": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "conditions": {
+            "type": "array",
+            "items": {}
+          },
+          "effects": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "type",
+                "value"
+              ],
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "integer"
+                }
+              }
+            }
+          },
+          "nextEvent": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

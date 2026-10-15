@@ -1,0 +1,15 @@
+{
+  "skills": {
+    "productionSkill": 7,
+    "gunnerySkill": 9,
+    "experiencePerLevel": 30,
+    "maxTrust": 3,
+    "legendaryPreviousTrust": 2,
+    "legendaryChapter": 3,
+    "trainingPricePerTrust": 150,
+    "navigationSkill": 0,
+    "reputationSkill": 5,
+    "visionSkill": 1,
+    "tradeSkill": 3
+  }
+}

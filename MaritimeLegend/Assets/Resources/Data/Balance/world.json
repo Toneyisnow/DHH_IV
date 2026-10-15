@@ -1,0 +1,18 @@
+{
+  "world": {
+    "secondsPerHour": 30,
+    "visionRadius": 0.07,
+    "visionPerLevel": 0.02,
+    "scoutVisionBonus": 0.15,
+    "navigatorVisionBonus": 0.2,
+    "foodPerSecond": 0.025,
+    "cookFoodFactor": 0.92,
+    "fedHullDecay": 0.003,
+    "starvingHullDecay": 0.12,
+    "windIntervalMin": 60,
+    "windIntervalRange": 120,
+    "hoursPerDay": 24,
+    "maxCommandsPerTick": 128,
+    "discoveryExperience": 10
+  }
+}

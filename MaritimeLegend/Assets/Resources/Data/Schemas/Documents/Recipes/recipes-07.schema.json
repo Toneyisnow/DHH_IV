@@ -1,0 +1,93 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "recipes"
+  ],
+  "properties": {
+    "recipes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "output",
+          "quantity",
+          "industry",
+          "inputs",
+          "skill",
+          "minLevel",
+          "fee",
+          "foregroundSeconds",
+          "awayCityMinutes",
+          "offlineHours",
+          "difficulty",
+          "unlock",
+          "consumesTools"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "output": {
+            "type": "string"
+          },
+          "quantity": {
+            "type": "integer"
+          },
+          "industry": {
+            "type": "integer"
+          },
+          "inputs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "product",
+                "quantity"
+              ],
+              "properties": {
+                "product": {
+                  "type": "string"
+                },
+                "quantity": {
+                  "type": "integer"
+                }
+              }
+            }
+          },
+          "skill": {
+            "type": "string"
+          },
+          "minLevel": {
+            "type": "integer"
+          },
+          "fee": {
+            "type": "integer"
+          },
+          "foregroundSeconds": {
+            "type": "integer"
+          },
+          "awayCityMinutes": {
+            "type": "integer"
+          },
+          "offlineHours": {
+            "type": "integer"
+          },
+          "difficulty": {
+            "type": "number"
+          },
+          "unlock": {
+            "type": "string"
+          },
+          "consumesTools": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

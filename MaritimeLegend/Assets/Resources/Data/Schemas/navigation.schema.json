@@ -1,0 +1,156 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "navigation"
+  ],
+  "properties": {
+    "navigation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "minimumDepartureHull",
+        "minimumDepartureFood",
+        "minimumWindFactor",
+        "baseWindFactor",
+        "windDotWeight",
+        "trimPenalty",
+        "optimalTrim",
+        "headwindThreshold",
+        "navigatorHeadwindFactor",
+        "baseSpeed",
+        "minimumHullSpeedFactor",
+        "hullSpeedWeight",
+        "cargoSpeedPenalty",
+        "mapMinX",
+        "mapMaxX",
+        "mapMinY",
+        "mapMaxY",
+        "arrivalRadius",
+        "routeExperience",
+        "partnerArrivalExperience",
+        "rescueFee",
+        "rescueHull",
+        "rescueFood"
+      ],
+      "properties": {
+        "minimumDepartureHull": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "minimumDepartureFood": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "minimumWindFactor": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "baseWindFactor": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "windDotWeight": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "trimPenalty": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "optimalTrim": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "headwindThreshold": {
+          "type": "number",
+          "minimum": -1,
+          "maximum": 1000000000.0
+        },
+        "navigatorHeadwindFactor": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "baseSpeed": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "minimumHullSpeedFactor": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "hullSpeedWeight": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "cargoSpeedPenalty": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "mapMinX": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "mapMaxX": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "mapMinY": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "mapMaxY": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "arrivalRadius": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "routeExperience": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "partnerArrivalExperience": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "rescueFee": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "rescueHull": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "rescueFood": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        }
+      }
+    }
+  }
+}

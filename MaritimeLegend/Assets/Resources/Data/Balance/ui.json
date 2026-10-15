@@ -1,0 +1,26 @@
+{
+  "ui": {
+    "autosaveSeconds": 30,
+    "characterSpeed": 240,
+    "walkArrivalDistance": 5,
+    "steeringRate": 1.7,
+    "minimumThrottle": 0.15,
+    "trimRate": 0.5,
+    "maximumFrameStep": 0.2,
+    "notificationSeconds": 5,
+    "dialogueCharactersPerSecond": 40,
+    "brightnessMinimum": 0.4,
+    "textSpeedMinimum": 0.2,
+    "textSpeedMaximum": 2,
+    "movementMinimum": 0.5,
+    "movementMaximum": 2,
+    "battleMinimum": 0.5,
+    "battleMaximum": 2,
+    "marketQuantityLimit": 80,
+    "nameLength": 16,
+    "autoBudgetStep": 500,
+    "autoBudgetLimit": 10000,
+    "autoLoopLimit": 10,
+    "autoPriceLimit": 900
+  }
+}

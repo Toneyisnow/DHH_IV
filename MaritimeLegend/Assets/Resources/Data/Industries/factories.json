@@ -1,0 +1,52 @@
+{
+  "factories": [
+    {
+      "industry": 0,
+      "name": "农业工坊",
+      "price": 160,
+      "maxLevel": 5
+    },
+    {
+      "industry": 1,
+      "name": "畜牧工坊",
+      "price": 160,
+      "maxLevel": 5
+    },
+    {
+      "industry": 2,
+      "name": "纺织工坊",
+      "price": 160,
+      "maxLevel": 5
+    },
+    {
+      "industry": 3,
+      "name": "林业工坊",
+      "price": 160,
+      "maxLevel": 5
+    },
+    {
+      "industry": 4,
+      "name": "矿业工坊",
+      "price": 160,
+      "maxLevel": 5
+    },
+    {
+      "industry": 5,
+      "name": "工业工坊",
+      "price": 160,
+      "maxLevel": 5
+    },
+    {
+      "industry": 6,
+      "name": "奢侈品工坊",
+      "price": 160,
+      "maxLevel": 5
+    },
+    {
+      "industry": 7,
+      "name": "化学/药剂工坊",
+      "price": 160,
+      "maxLevel": 5
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "navigation": {
+    "minimumDepartureHull": 10,
+    "minimumDepartureFood": 5,
+    "minimumWindFactor": 0.18,
+    "baseWindFactor": 0.6,
+    "windDotWeight": 0.4,
+    "trimPenalty": 0.2,
+    "optimalTrim": 0.5,
+    "headwindThreshold": -0.7,
+    "navigatorHeadwindFactor": 1.1,
+    "baseSpeed": 0.028,
+    "minimumHullSpeedFactor": 0.7,
+    "hullSpeedWeight": 0.3,
+    "cargoSpeedPenalty": 0.25,
+    "mapMinX": 0.04,
+    "mapMaxX": 0.96,
+    "mapMinY": 0.12,
+    "mapMaxY": 0.89,
+    "arrivalRadius": 0.035,
+    "routeExperience": 25,
+    "partnerArrivalExperience": 5,
+    "rescueFee": 100,
+    "rescueHull": 40,
+    "rescueFood": 30
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "creation": {
+    "startingIndustryCount": 3,
+    "startingSkillIndices": [
+      6,
+      7,
+      8
+    ],
+    "startingSkillLevel": 1,
+    "startingFactoryLevel": 1,
+    "starterRecipeLevel": 1,
+    "starterRecipeCount": 1,
+    "starterMaterialBatches": 4,
+    "starterMaterialQuality": 5
+  }
+}
