@@ -32,4 +32,14 @@ MonoBehaviour:
   - e9
   - e10
   - e11
+  buildingAtlas: {fileID: 0}
+  walkerAtlas: {fileID: 0}
+  buildingRects: {fileID: 0}
+  walkerRects: {fileID: 0}
+  spriteShader: {fileID: 4800000, guid: df7f3067c65329140bdc9ec1e96d9e3d, type: 3}
+  depthShader: {fileID: 4800000, guid: 3e2ea5d5f1e3fa841a7aca9d124033e6, type: 3}
+  waterShader: {fileID: 4800000, guid: 2302847e212e33744a3acdc4c93e8cfa, type: 3}
+  surfaceShader: {fileID: 4800000, guid: f3cf9cf4735ea01408e3119effd9f951, type: 3}
+  atmosphereShader: {fileID: 4800000, guid: 34f9b595202802b4ca5a22c6c1a590c1, type: 3}
+  refined: 1
   palette: {r: 0.8, g: 0.7, b: 0.5, a: 1}

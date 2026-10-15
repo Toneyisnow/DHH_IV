@@ -1,0 +1,71 @@
+City daylight redesign — 2026-10-15
+
+Reference: Screenshots/city_sample.mp4, sampled throughout its 51-second duration.
+The reference informed perspective, camera following, layered depth, water edges,
+and sprite characters. The new art is original Blender geometry, set in daylight.
+
+Assets
+- ArtSource/CityDaylight/DaylightKit.blend: reusable collections. Enable one collection
+  at a time to inspect it at the origin; collections are hidden for sprite rendering.
+- Tools/build_city_daylight.py: deterministic Blender 3.5 generator. Builds models first,
+  saves the .blend, then renders eight directions and eight gait frames per direction.
+- Tools/pack_city_walker.py: packs registered RGBA frames into a 1024 x 1280 atlas.
+- Assets/Resources/CityDaylight: runtime mesh JSON and the character atlas.
+- Market A/B, town hall, shipyard, tavern, house, olive tree, stone bridge share a
+  plaster/timber/slate palette. Runtime model parts are batched by material.
+
+Scene
+- 108 x 72 world-unit city footprint, plus shipyard deck and surrounding water.
+- Perspective camera: 32-degree pitch, 42-degree vertical FOV, smooth following;
+  moving deeper into town shortens the camera distance from 31 toward 26 units.
+  The city spans approximately three view-widths across and two view-widths deep; perspective varies
+  ground coverage with depth.
+- WASD / arrow keys and click-to-walk. Expanded half-unit walk grid samples real
+  bridge/stair surfaces. Building footprints and canal gaps block navigation.
+- Two markets lead to the existing market interface. Tavern leads to companions.
+  Town hall, shipyard, industry and harbor retain their existing workflows.
+- All eight city definitions use the new kit. Venice has a longitudinal canal;
+  the other ports use the terraced market and transverse waterfront canal layout.
+- Sun and local lanterns cast real shadows. Cutout sprite shaders cast and receive
+  shadows. Depth-aware disk blur keeps the player in focus and softens near/far scenery.
+
+Regeneration (from MaritimeLegend)
+  blender -b -t 4 --python Tools/build_city_daylight.py
+  python Tools/pack_city_walker.py
+  powershell -ExecutionPolicy Bypass -File Tools/Build-Windows.ps1 -CityArtPreview -RunChecks
+
+Interactive preview after building
+  Builds/CityPreview/MaritimeLegend.exe -cityDaylightPreview
+This creates an isolated temporary preview save, not a replacement for a user save.
+Editor menu: Maritime Legend > City Art > Preview Lisbon / Preview Venice.
+
+Validation scope
+The art preview is intentionally separate from the standard game build. The existing
+full DomainChecks campaign test currently fails crafting 旗舰航海仪 because the
+warehouse lacks 罗盘 (gold=18). This is not suppressed in the normal build.
+See build-isolated.log for that full-build failure; daylight-preview-build.log and
+daylight-runtime.log record the art-specific build and gameplay checks.
+
+Latest verification: art preview build PASS; 97 runtime checks PASS across all eight
+cities. Evidence: Documentation/CityDaylightEvidence/Checks.txt and captured PNGs.
+
+Reference-layout revision
+- Read Assets/Town_Scene_Pack/使用说明.txt and asset_manifest.json before integration.
+- Original, unchanged town_frame/sidebar_background/label_bar/data_bar_black/
+  data_bar_black_alt/product_row/product_row_alt/function_button artwork is copied to
+  Assets/Resources/TownUI with transparent, uncompressed, bilinear imports.
+- A 1580 x 1015 ornate frame surrounds the live 1516 x 932 city viewport. The right
+  340-pixel column holds city/player labels, real statistics and five local products.
+  The slim bottom strip holds navigation and game day/chapter information.
+- Fields use existing reputation, factory levels, average hull/sails, ship count,
+  cargo load/capacity, gold and local product data. No placeholder prosperity or
+  military statistics are fabricated. Existing movement and camera behavior remain.
+- Secondary destinations, weather and pause remain accessible through 功能.
+- Map depth reduced to 72; rear buildings, gardens, bridges and navigation bounds
+  trimmed consistently. Width remains 108.
+- Reflection textures clamp at their edges, projection samples outside the image
+  are rejected/faded, and distant houses/trees use a non-reflecting scenery layer.
+  Shoreline geometry and characters still reflect, at a lower Fresnel-weighted strength.
+
+Reference-layout verification: preview build PASS, 97 runtime checks PASS.
+Screenshot: Documentation/CityDaylightEvidence/Town-layout-UI.png

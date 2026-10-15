@@ -1,0 +1,103 @@
+City reference-layout preview build PASS. Runtime checks: 97 passed.
+
+CITY ART PASS Lisbon live diorama loaded
+CITY ART PASS Lisbon stair path exists
+CITY ART PASS Lisbon landmark reachable: 市场A
+CITY ART PASS Lisbon landmark reachable: 市场B
+CITY ART PASS Lisbon landmark reachable: 市政厅
+CITY ART PASS Lisbon landmark reachable: 酒馆
+CITY ART PASS Lisbon landmark reachable: 船坞
+CITY ART PASS Lisbon landmark reachable: 产业园
+CITY ART PASS Lisbon landmark reachable: 码头
+CITY ART PASS perspective camera
+CITY ART PASS three-wide two-deep district dimensions
+CITY ART PASS far district reachable
+CITY ART PASS eight-direction eight-frame walker
+CITY ART PASS required building destinations
+CITY ART PASS local shadow-casting lights
+CITY ART PASS reflection cannot tile beyond its projection
+CITY ART PASS inland houses visible but excluded from waterfront reflections
+CITY ART PASS town artwork loaded: town_frame
+CITY ART PASS town artwork loaded: sidebar_background
+CITY ART PASS town artwork loaded: label_bar
+CITY ART PASS town artwork loaded: data_bar_black
+CITY ART PASS town artwork loaded: product_row
+CITY ART PASS town artwork loaded: function_button
+CITY ART PASS scene fits inside ornate frame and sidebar
+CITY ART PASS player climbed real terrace geometry
+CITY ART PASS camera follows walker
+CITY ART PASS depth motion dollies inward
+CITY ART PASS fog weather control
+CITY ART PASS Venice live diorama loaded
+CITY ART PASS bridge path exists
+CITY ART PASS Venice landmark reachable: 市场A
+CITY ART PASS Venice landmark reachable: 市场B
+CITY ART PASS Venice landmark reachable: 市政厅
+CITY ART PASS Venice landmark reachable: 酒馆
+CITY ART PASS Venice landmark reachable: 船坞
+CITY ART PASS Venice landmark reachable: 产业园
+CITY ART PASS Venice landmark reachable: 码头
+CITY ART PASS player crossed real bridge without walking on water
+CITY ART PASS rain weather control
+CITY ART PASS workflow continues during city art runtime
+CITY ART PASS daylight city loaded: 1
+CITY ART PASS city 1 reachable: 市场A
+CITY ART PASS city 1 reachable: 市场B
+CITY ART PASS city 1 reachable: 市政厅
+CITY ART PASS city 1 reachable: 酒馆
+CITY ART PASS city 1 reachable: 船坞
+CITY ART PASS city 1 reachable: 产业园
+CITY ART PASS city 1 reachable: 码头
+CITY ART PASS daylight city loaded: 3
+CITY ART PASS city 3 reachable: 市场A
+CITY ART PASS city 3 reachable: 市场B
+CITY ART PASS city 3 reachable: 市政厅
+CITY ART PASS city 3 reachable: 酒馆
+CITY ART PASS city 3 reachable: 船坞
+CITY ART PASS city 3 reachable: 产业园
+CITY ART PASS city 3 reachable: 码头
+CITY ART PASS daylight city loaded: 4
+CITY ART PASS city 4 reachable: 市场A
+CITY ART PASS city 4 reachable: 市场B
+CITY ART PASS city 4 reachable: 市政厅
+CITY ART PASS city 4 reachable: 酒馆
+CITY ART PASS city 4 reachable: 船坞
+CITY ART PASS city 4 reachable: 产业园
+CITY ART PASS city 4 reachable: 码头
+CITY ART PASS daylight city loaded: 5
+CITY ART PASS city 5 reachable: 市场A
+CITY ART PASS city 5 reachable: 市场B
+CITY ART PASS city 5 reachable: 市政厅
+CITY ART PASS city 5 reachable: 酒馆
+CITY ART PASS city 5 reachable: 船坞
+CITY ART PASS city 5 reachable: 产业园
+CITY ART PASS city 5 reachable: 码头
+CITY ART PASS daylight city loaded: 6
+CITY ART PASS city 6 reachable: 市场A
+CITY ART PASS city 6 reachable: 市场B
+CITY ART PASS city 6 reachable: 市政厅
+CITY ART PASS city 6 reachable: 酒馆
+CITY ART PASS city 6 reachable: 船坞
+CITY ART PASS city 6 reachable: 产业园
+CITY ART PASS city 6 reachable: 码头
+CITY ART PASS daylight city loaded: 7
+CITY ART PASS city 7 reachable: 市场A
+CITY ART PASS city 7 reachable: 市场B
+CITY ART PASS city 7 reachable: 市政厅
+CITY ART PASS city 7 reachable: 酒馆
+CITY ART PASS city 7 reachable: 船坞
+CITY ART PASS city 7 reachable: 产业园
+CITY ART PASS city 7 reachable: 码头
+CITY ART PASS town function button clickable
+CITY ART PASS weather reachable in function menu
+CITY ART PASS skinned weather button updates scene
+CITY ART PASS function menu reopens
+CITY ART PASS warehouse remains reachable
+CITY ART PASS warehouse navigation works
+CITY ART PASS skinned market button clickable
+CITY ART PASS market navigation works
+CITY ART PASS return to live city works
+CITY_ART_PLAYMODE_PASS
+
+Scope: art preview, movement, reflection projection, all eight cities and reskinned navigation.
+The unrelated full-campaign crafting failure recorded in build-isolated.log has not been changed.

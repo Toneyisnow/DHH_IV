@@ -2,7 +2,7 @@ Shader "Maritime/CitySprite" {
 Properties {_MainTex("Sprite",2D)="white"{} _Cutoff("Alpha cutoff",Range(0,1))=.4 _Tint("Tint",Color)=(1,1,1,1) _Cloth("Clothing",Color)=(.7,.15,.12,1) _Recolor("Recolor",Float)=0}
 SubShader {Tags {"Queue"="AlphaTest" "RenderType"="TransparentCutout"} Cull Off
 CGPROGRAM
-#pragma surface surf Lambert alphatest:_Cutoff addshadow
+#pragma surface surf Lambert alphatest:_Cutoff addshadow fullforwardshadows
 #pragma target 3.0
 sampler2D _MainTex;float4 _Tint,_Cloth;float _Recolor;
 struct Input {float2 uv_MainTex;};

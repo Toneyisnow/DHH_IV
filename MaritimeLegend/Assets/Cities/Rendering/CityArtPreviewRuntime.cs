@@ -3,7 +3,7 @@ namespace MaritimeLegend {
 public sealed class CityArtPreviewRuntime : MonoBehaviour {
  public static bool Active;int city;
  [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]static void Reset(){Active=false;}
- [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]static void Bootstrap(){int chosen=-1;if(Environment.GetCommandLineArgs().Contains("-cityArtSmoke"))chosen=0;
+ [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]static void Bootstrap(){int chosen=-1;if(Environment.GetCommandLineArgs().Contains("-cityArtSmoke")||Environment.GetCommandLineArgs().Contains("-cityDaylightPreview"))chosen=0;
 #if UNITY_EDITOR
  int editorChoice=UnityEditor.SessionState.GetInt("MaritimeLegend.CityArtPreview",-1);if(editorChoice>=0){chosen=editorChoice;UnityEditor.SessionState.SetInt("MaritimeLegend.CityArtPreview",-1);}
 #endif
