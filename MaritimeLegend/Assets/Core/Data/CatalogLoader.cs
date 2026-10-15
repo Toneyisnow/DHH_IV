@@ -22,7 +22,8 @@ public static class CatalogLoader {
         if(asset==null)throw new InvalidOperationException("Missing game data: Data/"+path);
         return asset.text;
     }); }
-    public static Catalog Load(Func<string,string> read) {
+    public static Catalog Load(Func<string,string> read,Func<Type,string,object> deserialize=null) {
+        if(deserialize==null)deserialize=(type,json)=>JsonUtility.FromJson(json,type);
         var manifest=JsonUtility.FromJson<DataManifest>(read("manifest"));
         if(manifest==null||manifest.version<=0||manifest.maxFileBytes<=0||manifest.content==null||manifest.balance==null||manifest.defaults==null||manifest.schemas==null)
             throw new InvalidOperationException("Invalid data manifest");
@@ -35,10 +36,10 @@ public static class CatalogLoader {
             return text;
         };
         var c=new Catalog {version=manifest.version,balance=new BalanceConfig(),initial=new InitialData()};
-        foreach(var path in manifest.content)Merge(c,JsonUtility.FromJson<Catalog>(checkedRead(path)),true,path);
+        foreach(var path in manifest.content){var text=checkedRead(path);Merge(c,deserialize(typeof(Catalog),text),text,true,path);}
         var rawBalance=new Dictionary<string,string>();
-        foreach(var path in manifest.balance){var text=checkedRead(path);Merge(c.balance,JsonUtility.FromJson<BalanceConfig>(text),false,path);rawBalance.Add(path.Substring(path.LastIndexOf('/')+1),text);}
-        foreach(var path in manifest.defaults)Merge(c.initial,JsonUtility.FromJson<InitialData>(checkedRead(path)),false,path);
+        foreach(var path in manifest.balance){var text=checkedRead(path);Merge(c.balance,deserialize(typeof(BalanceConfig),text),text,false,path);rawBalance.Add(path.Substring(path.LastIndexOf('/')+1),text);}
+        foreach(var path in manifest.defaults){var text=checkedRead(path);Merge(c.initial,deserialize(typeof(InitialData),text),text,false,path);}
         RequireReferences(c.balance);RequireReferences(c.initial);
         var checkedGroups=new HashSet<string>();
         foreach(var path in manifest.schemas){
@@ -69,18 +70,44 @@ public static class CatalogLoader {
         c.Validate();return c;
     }
     static void RequireReferences(object value){foreach(var f in value.GetType().GetFields())if(f.GetValue(value)==null)throw new InvalidOperationException("Missing configuration "+f.Name);}
-    static void Merge(object target,object part,bool append,string path){
+    static void Merge(object target,object part,string json,bool append,string path){
         if(part==null)throw new InvalidOperationException("Invalid JSON "+path);
-        int found=0;
-        foreach(var field in target.GetType().GetFields(BindingFlags.Instance|BindingFlags.Public)){
-            if(field.FieldType.IsValueType)continue;
-            var value=field.GetValue(part);if(value==null)continue;found++;
-            var current=field.GetValue(target);
-            if(current==null){field.SetValue(target,value);continue;}
-            if(!append||!field.FieldType.IsArray)throw new InvalidOperationException("Duplicate configuration "+field.Name+" in "+path);
-            var a=(Array)current;var b=(Array)value;var merged=Array.CreateInstance(field.FieldType.GetElementType(),a.Length+b.Length);Array.Copy(a,merged,a.Length);Array.Copy(b,0,merged,a.Length,b.Length);field.SetValue(target,merged);
+        // Unity may materialize absent inline classes/arrays. Presence comes from
+        // the JSON document, never from the deserialized object's non-null fields.
+        string name=SingleRootField(json,path);
+        var field=target.GetType().GetField(name,BindingFlags.Instance|BindingFlags.Public);
+        if(field==null||field.FieldType.IsValueType||(target is Catalog&&(name==nameof(Catalog.balance)||name==nameof(Catalog.initial))))
+            throw new InvalidOperationException("Unknown configuration category "+name+" in "+path);
+        var value=field.GetValue(part);
+        if(value==null)throw new InvalidOperationException("Null configuration "+name+" in "+path);
+        var current=field.GetValue(target);
+        if(current==null){field.SetValue(target,value);return;}
+        if(!append||!field.FieldType.IsArray)throw new InvalidOperationException("Duplicate configuration "+name+" in "+path);
+        var a=(Array)current;var b=(Array)value;
+        var merged=Array.CreateInstance(field.FieldType.GetElementType(),a.Length+b.Length);
+        Array.Copy(a,merged,a.Length);Array.Copy(b,0,merged,a.Length,b.Length);field.SetValue(target,merged);
+    }
+    static string SingleRootField(string json,string path){
+        // Category names are schema identifiers. Scan their value with balanced
+        // delimiters, honoring escaped quotes, so nested keys cannot look like roots.
+        var root=Regex.Match(json,@"^\s*\{\s*""([A-Za-z_][A-Za-z_0-9]*)""\s*:\s*");
+        if(!root.Success)throw new InvalidOperationException("Expected one category in "+path);
+        int i=root.Length,start=i;bool quoted=false,escaped=false;var nesting=new Stack<char>();
+        for(;i<json.Length;i++){
+            char ch=json[i];
+            if(quoted){if(escaped)escaped=false;else if(ch=='\\')escaped=true;else if(ch=='"')quoted=false;continue;}
+            if(ch=='"'){quoted=true;continue;}
+            if(ch=='{'||ch=='['){nesting.Push(ch);continue;}
+            if(ch=='}'||ch==']'){
+                if(nesting.Count==0)break;
+                char open=nesting.Pop();
+                if((open=='{'&&ch!='}')||(open=='['&&ch!=']'))throw new InvalidOperationException("Unbalanced JSON in "+path);
+            }else if(ch==','&&nesting.Count==0)break;
         }
-        if(found!=1)throw new InvalidOperationException("Each data file must contain exactly one category: "+path);
+        string value=json.Substring(start,i-start).Trim();
+        if(quoted||nesting.Count!=0||value.Length==0||value=="null"||i>=json.Length||json[i]!='}'||json.Substring(i+1).Trim().Length!=0)
+            throw new InvalidOperationException("Each data file must contain exactly one non-null category: "+path);
+        return root.Groups[1].Value;
     }
 }
 }

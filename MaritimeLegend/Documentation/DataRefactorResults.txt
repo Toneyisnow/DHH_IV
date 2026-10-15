@@ -17,3 +17,11 @@ Reproduce from MaritimeLegend/:
   python Tools/validate_game_data.py
   dotnet run --project Tools/HeadlessChecks/HeadlessChecks.csproj
   dotnet run --project Tools/HeadlessChecks/HeadlessChecks.csproj -- --campaign
+
+
+Loader startup correction — 2026-10-15
+Root cause: Unity JsonUtility can materialize absent inline reference objects. The former Merge implementation treated non-null deserialized fields as present JSON fields, so Industries/industries falsely collided with the initialized balance object.
+Fix: select and validate the single explicitly declared top-level JSON category before merging. Reject unknown, duplicate, multiple or null root categories; ignore materialized absent fields. Stop UI initialization when WorldSession.Catalog failed to load, preventing the secondary Settings NullReferenceException.
+PASS: regression with an injected deserializer that materializes absent objects/arrays, plus initial stock and data configuration suites.
+PASS: all Assets C# compiled against Unity 6000.3.10f1 managed assemblies; zero errors (existing mapPan warning).
+Unity native batch verification was attempted but the Editor exited with code 1 before executing the test method. Log: Temp/loader-fix-unity.log. Native PlayMode startup remains unverified here.

@@ -3,7 +3,7 @@ using System;
 using System.IO;
 using System.Text.Json;
 namespace UnityEngine {
- public static class JsonUtility {static JsonSerializerOptions options=new JsonSerializerOptions{IncludeFields=true};public static T FromJson<T>(string value)=>JsonSerializer.Deserialize<T>(value,options);public static string ToJson(object value)=>JsonSerializer.Serialize(value,options);}
+ public static class JsonUtility {static JsonSerializerOptions options=new JsonSerializerOptions{IncludeFields=true};public static T FromJson<T>(string value)=>JsonSerializer.Deserialize<T>(value,options);public static object FromJson(string value,Type type)=>JsonSerializer.Deserialize(value,type,options);public static string ToJson(object value)=>JsonSerializer.Serialize(value,options);}
  public class TextAsset {public string text;}
  public static class Resources {public static T Load<T>(string path) where T:class =>new TextAsset{text=File.ReadAllText("Assets/Resources/"+path+".json")} as T;}
  public static class Application {public static string dataPath=>Path.GetFullPath("Assets");public static string persistentDataPath=>"Temp/StockHarness";}
