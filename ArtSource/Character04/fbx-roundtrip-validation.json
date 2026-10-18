@@ -1,0 +1,16 @@
+[
+  {
+    "file": "04_short_red_bob.fbx",
+    "bones": 42,
+    "meshes": 100,
+    "actions": 12,
+    "skinning_valid": true
+  },
+  {
+    "file": "04_long_navy_longhair.fbx",
+    "bones": 42,
+    "meshes": 100,
+    "actions": 12,
+    "skinning_valid": true
+  }
+]

@@ -1,0 +1,155 @@
+{
+  "group": "sailing",
+  "fields": [
+    {
+      "name": "realSecondsPerGameDay",
+      "integer": false,
+      "minimum": 0.01,
+      "maximum": 10000
+    },
+    {
+      "name": "foodPerCrewDay",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 10000
+    },
+    {
+      "name": "waterPerCrewDay",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 10000
+    },
+    {
+      "name": "logisticsFactor",
+      "integer": false,
+      "minimum": 0.01,
+      "maximum": 10000
+    },
+    {
+      "name": "supplyReductionPerLevel",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "name": "minimumSupplyFactor",
+      "integer": false,
+      "minimum": 0.01,
+      "maximum": 1
+    },
+    {
+      "name": "energyPerDay",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 10000
+    },
+    {
+      "name": "minimumEnergyPerDay",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 10000
+    },
+    {
+      "name": "navigationEnergyReduction",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 10000
+    },
+    {
+      "name": "supplyEnergyReduction",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 10000
+    },
+    {
+      "name": "initialWater",
+      "integer": false,
+      "minimum": 0.01,
+      "maximum": 10000
+    },
+    {
+      "name": "maximumEnergy",
+      "integer": false,
+      "minimum": 0.01,
+      "maximum": 10000
+    },
+    {
+      "name": "baseDailyXp",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 10000
+    },
+    {
+      "name": "xpPerNavigationLevel",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 10000
+    },
+    {
+      "name": "xpPerVisionLevel",
+      "integer": true,
+      "minimum": 0,
+      "maximum": 10000
+    },
+    {
+      "name": "minimumDailyDistance",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 10000
+    },
+    {
+      "name": "shortageSpeedFactor",
+      "integer": false,
+      "minimum": 0.01,
+      "maximum": 1
+    },
+    {
+      "name": "turnDegreesPerSecond",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 10000
+    },
+    {
+      "name": "sailDegreesPerSecond",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 10000
+    },
+    {
+      "name": "defaultSailDegrees",
+      "integer": false,
+      "minimum": -90,
+      "maximum": 90
+    },
+    {
+      "name": "declineSeconds",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 10000
+    },
+    {
+      "name": "iconLifetimeSeconds",
+      "integer": false,
+      "minimum": 0.01,
+      "maximum": 10000
+    },
+    {
+      "name": "contactRadius",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "name": "waterUnitPrice",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 10000
+    },
+    {
+      "name": "energyUnitPrice",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 10000
+    }
+  ]
+}

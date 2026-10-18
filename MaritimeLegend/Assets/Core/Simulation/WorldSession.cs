@@ -8,10 +8,10 @@ public sealed class WorldSession : MonoBehaviour {
  GameService service;
  public GameService Service {get=>service;set{if(ReferenceEquals(service,value))return;if(service!=null)service.Workflow.Stop();service=value;}}
  public GameWorkflow Workflow=>service==null?null:service.Workflow;
- public bool Paused;
+ public bool Paused; public bool InterfaceBlocked;
  double last;
  void Awake(){DontDestroyOnLoad(gameObject);Catalog=CatalogLoader.Load();Catalog.Validate();last=Time.realtimeSinceStartupAsDouble;}
- void Update(){double now=Time.realtimeSinceStartupAsDouble;double elapsed=System.Math.Max(0,now-last);last=now;if(Workflow!=null)Workflow.Advance(elapsed,Paused);}
+ void Update(){double now=Time.realtimeSinceStartupAsDouble;double elapsed=System.Math.Max(0,now-last);last=now;if(Workflow!=null)Workflow.Advance(elapsed,Paused||InterfaceBlocked);}
  void OnApplicationQuit(){if(Workflow!=null)Workflow.Stop();}
 }
 }

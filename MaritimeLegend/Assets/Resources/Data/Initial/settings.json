@@ -7,6 +7,7 @@
     "textSpeed": 1,
     "moveSpeed": 1,
     "battleSpeed": 1,
-    "animations": true
+    "animations": true,
+    "locale": "zh-CN"
   }
 }

@@ -4,6 +4,7 @@
 /[Ll]ogs/
 /[Uu]serSettings/
 /.BuildWorkspace/
+/.Character04UnityTest/
 /Builds/
 *.csproj
 *.sln
@@ -15,4 +16,3 @@
 /SceneEvidence/
 
 /CityArtEvidence/
-/ArtSource/CityDaylight/*.blend1

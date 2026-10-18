@@ -1,0 +1,228 @@
+{
+  "seaRegions": [
+    {
+      "id": "north_sea",
+      "nameKey": "sea.north_sea.name",
+      "mapAssetKey": "Sailing/SeaMaps/north_sea",
+      "mock": true,
+      "eventsPerGameDay": 0.35,
+      "maxIcons": 4,
+      "quantityMin": 1,
+      "quantityMax": 6,
+      "weights": [
+        {
+          "encounterId": "bottle",
+          "weight": 45
+        },
+        {
+          "encounterId": "crate",
+          "weight": 30
+        },
+        {
+          "encounterId": "mermaid",
+          "weight": 5
+        },
+        {
+          "encounterId": "wreck",
+          "weight": 20
+        }
+      ],
+      "rewardProducts": [
+        "p19",
+        "p8"
+      ]
+    },
+    {
+      "id": "mediterranean_sea",
+      "nameKey": "sea.mediterranean_sea.name",
+      "mapAssetKey": "Sailing/SeaMaps/mediterranean_sea",
+      "mock": true,
+      "eventsPerGameDay": 0.4,
+      "maxIcons": 4,
+      "quantityMin": 2,
+      "quantityMax": 8,
+      "weights": [
+        {
+          "encounterId": "bottle",
+          "weight": 35
+        },
+        {
+          "encounterId": "crate",
+          "weight": 40
+        },
+        {
+          "encounterId": "mermaid",
+          "weight": 5
+        },
+        {
+          "encounterId": "wreck",
+          "weight": 20
+        }
+      ],
+      "rewardProducts": [
+        "p19",
+        "p13"
+      ]
+    },
+    {
+      "id": "africa",
+      "nameKey": "sea.africa.name",
+      "mapAssetKey": "Sailing/SeaMaps/africa",
+      "mock": true,
+      "eventsPerGameDay": 0.3,
+      "maxIcons": 4,
+      "quantityMin": 2,
+      "quantityMax": 10,
+      "weights": [
+        {
+          "encounterId": "bottle",
+          "weight": 20
+        },
+        {
+          "encounterId": "crate",
+          "weight": 40
+        },
+        {
+          "encounterId": "mermaid",
+          "weight": 10
+        },
+        {
+          "encounterId": "wreck",
+          "weight": 30
+        }
+      ],
+      "rewardProducts": [
+        "p19",
+        "p43"
+      ]
+    },
+    {
+      "id": "indian_ocean",
+      "nameKey": "sea.indian_ocean.name",
+      "mapAssetKey": "Sailing/SeaMaps/indian_ocean",
+      "mock": true,
+      "eventsPerGameDay": 0.45,
+      "maxIcons": 4,
+      "quantityMin": 2,
+      "quantityMax": 12,
+      "weights": [
+        {
+          "encounterId": "bottle",
+          "weight": 20
+        },
+        {
+          "encounterId": "crate",
+          "weight": 35
+        },
+        {
+          "encounterId": "mermaid",
+          "weight": 20
+        },
+        {
+          "encounterId": "wreck",
+          "weight": 25
+        }
+      ],
+      "rewardProducts": [
+        "p19",
+        "p14"
+      ]
+    },
+    {
+      "id": "southeast_asia",
+      "nameKey": "sea.southeast_asia.name",
+      "mapAssetKey": "Sailing/SeaMaps/southeast_asia",
+      "mock": true,
+      "eventsPerGameDay": 0.55,
+      "maxIcons": 4,
+      "quantityMin": 3,
+      "quantityMax": 12,
+      "weights": [
+        {
+          "encounterId": "bottle",
+          "weight": 20
+        },
+        {
+          "encounterId": "crate",
+          "weight": 45
+        },
+        {
+          "encounterId": "mermaid",
+          "weight": 20
+        },
+        {
+          "encounterId": "wreck",
+          "weight": 15
+        }
+      ],
+      "rewardProducts": [
+        "p19",
+        "p20"
+      ]
+    },
+    {
+      "id": "east_asia",
+      "nameKey": "sea.east_asia.name",
+      "mapAssetKey": "Sailing/SeaMaps/east_asia",
+      "mock": true,
+      "eventsPerGameDay": 0.35,
+      "maxIcons": 4,
+      "quantityMin": 1,
+      "quantityMax": 7,
+      "weights": [
+        {
+          "encounterId": "bottle",
+          "weight": 40
+        },
+        {
+          "encounterId": "crate",
+          "weight": 25
+        },
+        {
+          "encounterId": "mermaid",
+          "weight": 20
+        },
+        {
+          "encounterId": "wreck",
+          "weight": 15
+        }
+      ],
+      "rewardProducts": [
+        "p19",
+        "p13"
+      ]
+    },
+    {
+      "id": "new_world",
+      "nameKey": "sea.new_world.name",
+      "mapAssetKey": "Sailing/SeaMaps/new_world",
+      "mock": true,
+      "eventsPerGameDay": 0.5,
+      "maxIcons": 4,
+      "quantityMin": 2,
+      "quantityMax": 12,
+      "weights": [
+        {
+          "encounterId": "bottle",
+          "weight": 25
+        },
+        {
+          "encounterId": "crate",
+          "weight": 35
+        },
+        {
+          "encounterId": "mermaid",
+          "weight": 10
+        },
+        {
+          "encounterId": "wreck",
+          "weight": 30
+        }
+      ],
+      "rewardProducts": [
+        "p19",
+        "p43"
+      ]
+    }
+  ]
+}

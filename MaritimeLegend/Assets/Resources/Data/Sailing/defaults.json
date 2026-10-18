@@ -1,0 +1,22 @@
+{
+  "sailingDefaults": {
+    "mock": true,
+    "supplySkillId": "补给",
+    "crewByShipType": [
+      8,
+      12,
+      20,
+      30
+    ],
+    "portRegions": [
+      "mediterranean_sea",
+      "mediterranean_sea",
+      "mediterranean_sea",
+      "mediterranean_sea",
+      "mediterranean_sea",
+      "indian_ocean",
+      "indian_ocean",
+      "east_asia"
+    ]
+  }
+}

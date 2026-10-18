@@ -1,0 +1,39 @@
+B 风格动态立绘：本地 Wan 2.2 测试
+
+环境与模型位置：H:\DHH_IV\ComfyUI
+临时文件与缓存：H:\DHH_IV\Temp、H:\DHH_IV\Cache
+原始参考：B-original-board.png
+动画输入：B-animation-source.png（基于 B 参考整理的单人版本，存在重绘差异，并非原图逐像素抠图）
+
+启动：在 PowerShell 执行项目 Tools\start_character04_comfy.ps1。
+界面：http://127.0.0.1:8188
+将本目录的 *-workflow.json 拖入 ComfyUI，然后上传 B-animation-source.png 到 Load Image 节点。
+点击 Run 生成。工作流只使用本地模型，没有付费视频 API 节点。
+
+也可在项目根目录执行：
+python MaritimeLegend\Tools\generate_character04_video.py idle --submit
+python MaritimeLegend\Tools\generate_character04_video.py nod --submit
+python MaritimeLegend\Tools\generate_character04_video.py smile --submit
+
+首轮参数：384×576，49 帧，24 fps，20 steps，CFG 5，uni_pc/simple，shift 8。
+默认以 FP8 e4m3fn 存储主模型权重，运行时转换为 FP16 计算，以减轻 8GB 显卡的内存压力。
+可加入 --weight-dtype default 使用模型原始精度；本机首轮原始精度测试较慢，已中断，不能将其视为完成结果。
+提高分辨率的例子：在上述命令中加入 --width 512 --height 768 --frames 81。
+更高分辨率或更多帧可能显著增加时间和显存需求；先检查初轮结果。
+输出目录：H:\DHH_IV\ComfyUI\output\Character04B
+
+动作目标：呼吸眨眼、轻微点头、闭嘴浅笑。文字提示不等于精确动作曲线，必须逐条检查实际结果。
+验收重点：脸型和五官、黑金服装与罗盘的稳定性、手脚不移动、固定镜头、没有多余肢体。
+当前工作流输出带纯色背景的 MP4，不会自动得到透明视频，也不能保证首尾无缝循环。
+本路线用于验证动态立绘，不会生成可换装的 3D 模型或可独立控制的发型/衣服图层。
+
+Unity 预览：将通过验收的 MP4 复制到 Assets；用 VideoPlayer 播放到 RenderTexture，再用 RawImage 显示。
+不要用这一步替代正式的透明背景处理、循环修整和动态立绘状态切换。
+
+官方来源：
+https://docs.comfy.org/tutorials/video/wan/wan2_2
+https://github.com/Comfy-Org/ComfyUI
+https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged
+https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_wan2_2_5B_ti2v.json
+
+本文件描述工作流使用方法，不代表动画已生成或质量已通过验收。实际运行结果见测试记录。

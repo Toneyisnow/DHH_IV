@@ -1,0 +1,13 @@
+{
+  "frame_count": 48,
+  "fps": 24,
+  "face_difference_vs_original_01": 0,
+  "compass_disk_difference_vs_original_01": 0,
+  "hand_difference_vs_original_01": 0,
+  "cape_clasp_difference_vs_original_01": 0,
+  "far_left_background_difference_vs_original_01": 0,
+  "cape_change_max": 248,
+  "pendant_change_max": 253,
+  "first_last_max_difference": 0,
+  "method": "authored local 2D cape deformation and pendant pivot rotation; no full-body generation or 3D cloth simulation"
+}

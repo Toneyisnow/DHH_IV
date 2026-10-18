@@ -1,0 +1,90 @@
+{
+  "locale": "ja-JP",
+  "complete": false,
+  "entries": [
+    {
+      "key": "ui.sailing.accept",
+      "text": "挑戦する"
+    },
+    {
+      "key": "ui.sailing.decline",
+      "text": "航海を続ける"
+    },
+    {
+      "key": "sailing.event.unavailable",
+      "text": "この遭遇は終了しました。"
+    },
+    {
+      "key": "sailing.event.declined",
+      "text": "航海を続けます。"
+    },
+    {
+      "key": "sailing.event.energy_low",
+      "text": "気力が足りません。消費はありません。"
+    },
+    {
+      "key": "sailing.event.cargo_full",
+      "text": "積載量が足りません。消費はありません。"
+    },
+    {
+      "key": "sailing.event.bottle.prompt",
+      "text": "封をした小瓶が漂ってきました。拾いますか？"
+    },
+    {
+      "key": "sailing.event.crate.prompt",
+      "text": "波間に木箱が漂っています。回収しますか？"
+    },
+    {
+      "key": "sailing.event.mermaid.prompt",
+      "text": "波の向こうから不思議な歌声が。追いますか？"
+    },
+    {
+      "key": "sailing.event.wreck.prompt",
+      "text": "霧の中に壊れたマストが見えます。残骸を探しますか？"
+    },
+    {
+      "key": "sailing.event.bottle.result",
+      "text": "航海の手掛かりを発見。気力を{2}消費。"
+    },
+    {
+      "key": "sailing.event.mermaid.result",
+      "text": "歌声の手掛かりを記録。気力を{2}消費。"
+    },
+    {
+      "key": "sailing.event.crate.result",
+      "text": "{0}を{1}個獲得。気力を{2}消費。"
+    },
+    {
+      "key": "sailing.event.wreck.result",
+      "text": "残骸から{0}を{1}個発見。気力を{2}消費。"
+    },
+    {
+      "key": "sea.north_sea.name",
+      "text": "北海"
+    },
+    {
+      "key": "sea.mediterranean_sea.name",
+      "text": "地中海"
+    },
+    {
+      "key": "sea.africa.name",
+      "text": "アフリカ"
+    },
+    {
+      "key": "sea.indian_ocean.name",
+      "text": "インド洋"
+    },
+    {
+      "key": "sea.southeast_asia.name",
+      "text": "東南アジア"
+    },
+    {
+      "key": "sea.east_asia.name",
+      "text": "東アジア"
+    },
+    {
+      "key": "sea.new_world.name",
+      "text": "新大陸"
+    }
+  ]
+}

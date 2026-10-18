@@ -1,0 +1,16 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>04 号角色 · 建模与动作测试</title><style>
+body{background:#111923;color:#e9e8df;font:16px/1.7 system-ui;margin:0;padding:28px;max-width:1280px;margin:auto}h1{font-size:30px;margin:0}p{color:#acbbc9}button,select{background:#243447;color:#fff;border:1px solid #5e7389;border-radius:6px;padding:10px;margin:4px}button{cursor:pointer}img{width:100%;max-width:1200px;border-radius:8px}#stage{display:flex;justify-content:center;background:#1a232e}#stage img{width:32%;max-width:400px;border-radius:0}input{width:95%;accent-color:#ca9d63}.tag{color:#e5bb7d}a{color:#b6d7fb}label{display:inline-block;margin:8px}
+</style><h1>04 号角色 · 真实 3D 原型测试</h1><p class="tag">Blender 3.5 · 模块化外衣 / 发型 · 骨骼动画 · 弹簧摆动烘焙</p>
+<p>这是程序化建模的结构与动作原型，尚未达到上一轮概念图的美术精度。下方每帧都由实际模型渲染，非 AI 生成动画。角色长短款、颜色和发型可在 Blender 中独立切换。</p>
+<label>测试 <select id="test"><option value="wardrobe">转身：短款亚麻 / 长款丝质 / 长款硬皮革</option><option value="material">同款外衣：亚麻 / 丝质 / 硬皮革</option><option value="hair">转头：短发 / 长发</option><option value="gesture">抬手示意</option><option value="walk">行走</option><option value="nod">点头</option></select></label>
+<button id="play">暂停</button><span id="frame"></span><div id="labels"></div><div id="stage"></div><input id="scrub" type="range" min="0" max="23" value="0">
+<p>衣料变化改变回摆强度与收敛速度；当前为预烘焙动作，尚未接入游戏实时转向。无完整碰撞解算，长发 / 衣摆与身体的穿插仍需进一步处理。颜色只改变外衣，不改变身体与配饰。</p>
+<p>对比中的长短款、发型、颜色、衣料同时变化，用于展示组合效果，不是单变量材质实验。Blender 面板可在同一款型上切换三种衣料动作。</p>
+<p><a href="../../../ArtSource/Character04/Character04_WardrobeMotion.blend">Blender 源文件</a> · <a href="../../../ArtSource/Character04/wardrobe_panel.py">换装控制面板</a> · <a href="../../../ArtSource/Character04/使用说明.txt">使用说明与验证边界</a></p>
+<script>
+const sets={wardrobe:['short_turn','long_turn','leather_turn'],material:['material_linen','long_turn','material_leather'],hair:['bob_head','long_head'],gesture:['gesture'],walk:['walk'],nod:['nod']};let i=0,playing=true;
+const stage=document.querySelector('#stage'),test=document.querySelector('#test'),scrub=document.querySelector('#scrub');
+function draw(){const names=sets[test.value];stage.innerHTML=names.map(n=>`<img alt="${n}" src="${n}/${String(i*4+1).padStart(3,'0')}.png">`).join('');document.querySelector('#labels').textContent=names.join('　 /　 ');document.querySelector('#frame').textContent=`帧 ${i*4+1} / 96`;scrub.value=i}
+test.onchange=()=>{i=0;draw()};scrub.oninput=()=>{i=+scrub.value;playing=false;document.querySelector('#play').textContent='播放';draw()};document.querySelector('#play').onclick=e=>{playing=!playing;e.target.textContent=playing?'暂停':'播放'};setInterval(()=>{if(playing){i=(i+1)%24;draw()}},1000/6);draw();
+</script></html>

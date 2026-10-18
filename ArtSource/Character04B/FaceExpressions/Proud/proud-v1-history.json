@@ -1,0 +1,894 @@
+{
+  "prompt": [
+    3,
+    "df82ada6-6d4f-4699-8624-793e3130e6ba",
+    {
+      "37": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "wan2.2_ti2v_5B_fp16.safetensors",
+          "weight_dtype": "fp8_e4m3fn"
+        }
+      },
+      "38": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+          "type": "wan",
+          "device": "default"
+        }
+      },
+      "39": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "wan2.2_vae.safetensors"
+        }
+      },
+      "56": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "B-animation-source.png"
+        }
+      },
+      "55": {
+        "class_type": "Wan22ImageToVideoLatent",
+        "inputs": {
+          "vae": [
+            "39",
+            0
+          ],
+          "width": 448,
+          "height": 480,
+          "length": 65,
+          "batch_size": 1,
+          "start_image": [
+            "60",
+            0
+          ]
+        }
+      },
+      "6": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "clip": [
+            "38",
+            0
+          ],
+          "text": "One continuous medium shot, locked stationary camera. The same illustrated female ship captain performs a clear proud hands-on-hips gesture. At first her hands are in the reference pose. She lifts and moves both forearms, places both hands firmly on the sides of her waist, fingers resting on her hips, and opens both elbows outward. Her right hand visibly rises from the lower edge to her right hip. Her left hand slides from the front belt to her left hip. Both hands finish planted on her hips in an akimbo pose. She straightens her upper body and raises her chin slightly with a confident warm closed-mouth smile, corners of lips lifting. The loose ivory sleeves fold and flutter naturally as her arms move. The red cape gently swings in response to the gesture and settles. Hold the completed proud pose at the end. Preserve short black bob haircut, adult female facial identity, red cape, gold trim, ivory sleeves, black waistcoat, belt and hanging compass. Japanese tactical RPG cel-painted illustration, crisp hand-painted linework, flat warm gray background, fixed framing."
+        }
+      },
+      "7": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "clip": [
+            "38",
+            0
+          ],
+          "text": "camera motion, zoom, pan, camera shake, scene cut, walking, turning around, waving, crossed arms, clenched fists, extra arms, extra hands, missing fingers, fused fingers, deformed hands, duplicate person, distorted anatomy, changing outfit, disappearing compass, flickering, melting clothes, blurry face, photo, 3d render, speech, open mouth, text, watermark"
+        }
+      },
+      "48": {
+        "class_type": "ModelSamplingSD3",
+        "inputs": {
+          "model": [
+            "37",
+            0
+          ],
+          "shift": 8.0
+        }
+      },
+      "3": {
+        "class_type": "KSampler",
+        "inputs": {
+          "model": [
+            "48",
+            0
+          ],
+          "positive": [
+            "6",
+            0
+          ],
+          "negative": [
+            "7",
+            0
+          ],
+          "latent_image": [
+            "55",
+            0
+          ],
+          "seed": 4200501,
+          "steps": 24,
+          "cfg": 5.5,
+          "sampler_name": "uni_pc",
+          "scheduler": "simple",
+          "denoise": 1.0
+        }
+      },
+      "8": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "3",
+            0
+          ],
+          "vae": [
+            "39",
+            0
+          ]
+        }
+      },
+      "57": {
+        "class_type": "CreateVideo",
+        "inputs": {
+          "images": [
+            "8",
+            0
+          ],
+          "fps": 16.0
+        }
+      },
+      "58": {
+        "class_type": "SaveVideo",
+        "inputs": {
+          "video": [
+            "57",
+            0
+          ],
+          "filename_prefix": "Character04B-Face/proud-v1",
+          "format": "mp4",
+          "codec": {
+            "codec": "h264"
+          }
+        }
+      },
+      "60": {
+        "class_type": "ImageCrop",
+        "inputs": {
+          "image": [
+            "56",
+            0
+          ],
+          "width": 704,
+          "height": 768,
+          "x": 160,
+          "y": 0
+        }
+      },
+      "61": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "8",
+            0
+          ],
+          "filename_prefix": "Character04B-Face/proud-frames/proud-v1"
+        }
+      }
+    },
+    {
+      "create_time": 1792267866500
+    },
+    [
+      "58",
+      "61"
+    ]
+  ],
+  "outputs": {
+    "61": {
+      "images": [
+        {
+          "filename": "proud-v1_00001_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00002_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00003_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00004_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00005_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00006_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00007_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00008_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00009_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00010_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00011_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00012_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00013_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00014_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00015_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00016_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00017_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00018_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00019_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00020_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00021_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00022_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00023_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00024_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00025_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00026_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00027_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00028_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00029_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00030_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00031_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00032_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00033_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00034_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00035_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00036_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00037_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00038_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00039_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00040_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00041_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00042_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00043_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00044_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00045_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00046_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00047_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00048_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00049_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00050_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00051_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00052_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00053_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00054_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00055_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00056_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00057_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00058_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00059_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00060_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00061_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00062_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00063_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00064_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        },
+        {
+          "filename": "proud-v1_00065_.png",
+          "subfolder": "Character04B-Face\\proud-frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 448,
+            "height": 480
+          }
+        }
+      ]
+    },
+    "58": {
+      "images": [
+        {
+          "filename": "proud-v1_00001_.mp4",
+          "subfolder": "Character04B-Face",
+          "type": "output",
+          "metadata": {
+            "kind": "video",
+            "width": 448,
+            "height": 480,
+            "duration": 4.06201171875,
+            "fps": 16.0,
+            "frame_count": 65
+          }
+        }
+      ],
+      "animated": [
+        true
+      ]
+    }
+  },
+  "status": {
+    "status_str": "success",
+    "completed": true,
+    "messages": [
+      [
+        "execution_start",
+        {
+          "prompt_id": "df82ada6-6d4f-4699-8624-793e3130e6ba",
+          "timestamp": 1792267866524
+        }
+      ],
+      [
+        "execution_cached",
+        {
+          "nodes": [],
+          "prompt_id": "df82ada6-6d4f-4699-8624-793e3130e6ba",
+          "timestamp": 1792267866902
+        }
+      ],
+      [
+        "execution_success",
+        {
+          "prompt_id": "df82ada6-6d4f-4699-8624-793e3130e6ba",
+          "timestamp": 1792268816663
+        }
+      ]
+    ]
+  },
+  "meta": {
+    "61": {
+      "node_id": "61",
+      "display_node": "61",
+      "parent_node": null,
+      "real_node_id": "61"
+    },
+    "58": {
+      "node_id": "58",
+      "display_node": "58",
+      "parent_node": null,
+      "real_node_id": "58"
+    }
+  }
+}

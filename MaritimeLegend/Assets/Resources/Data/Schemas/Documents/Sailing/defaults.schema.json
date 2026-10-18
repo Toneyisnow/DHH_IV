@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "required": [
+    "sailingDefaults"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "sailingDefaults": {
+      "type": "object",
+      "required": [
+        "mock",
+        "supplySkillId",
+        "crewByShipType",
+        "portRegions"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "mock": {
+          "type": "boolean"
+        },
+        "supplySkillId": {
+          "type": "string"
+        },
+        "crewByShipType": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "portRegions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

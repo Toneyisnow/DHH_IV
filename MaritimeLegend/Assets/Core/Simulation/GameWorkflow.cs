@@ -16,7 +16,7 @@ public sealed class GameWorkflow {
   lock(gate){int count=Math.Min(service.C.balance.world.maxCommandsPerTick,commands.Count);while(count-->0)commands.Dequeue()(service);}
   // Production continues during a world pause; its explicit production pause setting is honored by Advance.
   service.Advance(seconds,false);
-  if(!worldPaused){service.AdvanceWorld(seconds);service.AdvanceAutoFleet(seconds);}
+  if(!worldPaused&&!service.DialogueOpen){service.AdvanceWorld(seconds);service.AdvanceAutoFleet(seconds);}
   ExecutedSteps++;
  }
  public void RestoreOffline(DateTime utcNow){if(!Active)throw new InvalidOperationException("Workflow stopped");service.RecoverOffline(utcNow);}

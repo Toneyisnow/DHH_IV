@@ -1,0 +1,11 @@
+{
+  "frames": 48,
+  "fps": 24,
+  "shoulders_max_difference": 0,
+  "hand_max_difference": 0,
+  "compass_max_difference": 0,
+  "left_cuff_change": 179,
+  "right_cuff_change": 250,
+  "first_last_difference": 0,
+  "method": "Local 2D white sleeve cuff deformation; shoulders fixed; lower cape and pendant retained."
+}

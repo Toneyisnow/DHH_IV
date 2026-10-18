@@ -1,0 +1,12 @@
+{
+  "short_turn": 24,
+  "long_turn": 24,
+  "bob_head": 24,
+  "long_head": 24,
+  "gesture": 24,
+  "walk": 24,
+  "nod": 24,
+  "leather_turn": 24,
+  "material_linen": 24,
+  "material_leather": 24
+}

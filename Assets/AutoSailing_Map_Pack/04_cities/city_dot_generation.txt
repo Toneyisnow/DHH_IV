@@ -1,0 +1,6 @@
+Created with built-in image_gen, then exported at two sizes with transparent padding.
+city_dot_large.png: 64x64 RGBA, visible dot approximately 48px.
+city_dot_small.png: 32x32 RGBA, visible dot approximately 24px.
+Anchor: center (0.5, 0.5). Both sprites use the same artwork.
+Prompt: Extract/recreate one golden circular city marker matching the map reference. Simple domed gold dot, thin warm brown outline, pale upper-left highlight, amber lower-right shading, painterly texture. Transparent background. No text, map, surroundings, symbols or exterior shadow.
+Map cleanup prompt: Remove every gold city dot and all city text/shadows/leader lines; inpaint with surrounding terrain or water, preserving geography, framing and painterly style. Indian Ocean received a second pass removing residual dots at Basra, Hormuz and Calicut.

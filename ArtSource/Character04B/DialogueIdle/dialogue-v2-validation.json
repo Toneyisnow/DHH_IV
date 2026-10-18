@@ -1,0 +1,18 @@
+{
+  "width": 704,
+  "height": 768,
+  "frames": 120,
+  "fps": 24,
+  "duration_seconds": 5,
+  "face_stage_body_max_difference": 0,
+  "first_last_max_difference": 0,
+  "far_left_background_max_difference": 0,
+  "body_vertical_max_px": 2.6,
+  "body_horizontal_max_px": 0.45,
+  "blinks_seconds": [
+    0.75,
+    3.92
+  ],
+  "audio": "none; speech-like mouth motion, not audio-aligned lip sync",
+  "method": "fixed source + explicit face controls + low-amplitude body displacement; no video diffusion"
+}

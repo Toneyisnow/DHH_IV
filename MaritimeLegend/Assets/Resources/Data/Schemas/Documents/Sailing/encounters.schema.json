@@ -1,0 +1,67 @@
+{
+  "type": "object",
+  "required": [
+    "seaEncounters"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "seaEncounters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "promptKey",
+          "resultKey",
+          "rewardKind",
+          "exclusiveGroup",
+          "followupId",
+          "mock",
+          "energyCost",
+          "quality",
+          "saveVersion",
+          "prerequisiteFlags"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "promptKey": {
+            "type": "string"
+          },
+          "resultKey": {
+            "type": "string"
+          },
+          "rewardKind": {
+            "type": "string"
+          },
+          "exclusiveGroup": {
+            "type": "string"
+          },
+          "followupId": {
+            "type": "string"
+          },
+          "mock": {
+            "type": "boolean"
+          },
+          "energyCost": {
+            "type": "integer"
+          },
+          "quality": {
+            "type": "integer"
+          },
+          "saveVersion": {
+            "type": "integer"
+          },
+          "prerequisiteFlags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

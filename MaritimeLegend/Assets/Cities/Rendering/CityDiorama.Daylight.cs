@@ -52,7 +52,7 @@ public sealed partial class CityDiorama {
   for(int i=0;i<7;i++){Crates(new Vector3(-22+i*1.1f,0,-18));Barrel(new Vector3(9+i*.5f,0,-6),.25f);}
   foreach(var p in new[]{new Vector3(-4,1.83f,6.8f),new Vector3(9,0,-5.2f),new Vector3(-12,0,23.3f)})Lantern(p);
   var grass=Surface(new Color(.32f,.40f,.19f));
-  var gardenStone=Surface(new Color(.64f,.63f,.51f));
+  var gardenStone=Surface(new Color(.64f,.63f,.51f));CityPixelMaterials.Apply(gardenStone,"stone");
   foreach(float z in new[]{18f,38f})foreach(float x in new[]{-36f,36f}) {
    Box("Courtyard garden",new Vector3(x,.025f,z),new Vector3(5,.05f,10),grass,false);
    foreach(int side in new[]{-1,1})Box("Garden border",new Vector3(x+side*2.5f,.11f,z),new Vector3(.18f,.22f,10),gardenStone,false);

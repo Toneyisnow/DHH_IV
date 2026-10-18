@@ -60,6 +60,12 @@
     "Balance/ui": "Schemas/ui.schema",
     "Quests/objectives": "Schemas/Documents/Quests/objectives.schema",
     "Products/order": "Schemas/Documents/Products/order.schema",
-    "Recipes/order": "Schemas/Documents/Recipes/order.schema"
+    "Recipes/order": "Schemas/Documents/Recipes/order.schema",
+    "Balance/sailing": "Schemas/sailing.schema",
+    "Sailing/regions": "Schemas/Documents/Sailing/regions.schema",
+    "Sailing/encounters": "Schemas/Documents/Sailing/encounters.schema",
+    "Sailing/defaults": "Schemas/Documents/Sailing/defaults.schema",
+    "Characters/backgrounds": "Schemas/Documents/Characters/backgrounds.schema",
+    "Presentation/localization-plan": "Schemas/Documents/Presentation/localization-plan.schema"
   }
 }

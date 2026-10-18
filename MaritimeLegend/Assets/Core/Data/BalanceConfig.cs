@@ -1,6 +1,7 @@
 using System;
 namespace MaritimeLegend.Domain {
 [Serializable] public class BalanceConfig { public InterfaceParameters ui;
+public SailingParameters sailing;
 public WorldParameters world;
 public EconomyParameters economy;
 public ProductionParameters production;

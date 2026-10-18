@@ -1,0 +1,56 @@
+{
+  "seaEncounters": [
+    {
+      "id": "bottle",
+      "promptKey": "sailing.event.bottle.prompt",
+      "resultKey": "sailing.event.bottle.result",
+      "rewardKind": "clue",
+      "exclusiveGroup": "",
+      "followupId": "",
+      "mock": true,
+      "energyCost": 4,
+      "quality": 5,
+      "saveVersion": 1,
+      "prerequisiteFlags": []
+    },
+    {
+      "id": "crate",
+      "promptKey": "sailing.event.crate.prompt",
+      "resultKey": "sailing.event.crate.result",
+      "rewardKind": "goods",
+      "exclusiveGroup": "",
+      "followupId": "",
+      "mock": true,
+      "energyCost": 8,
+      "quality": 5,
+      "saveVersion": 1,
+      "prerequisiteFlags": []
+    },
+    {
+      "id": "mermaid",
+      "promptKey": "sailing.event.mermaid.prompt",
+      "resultKey": "sailing.event.mermaid.result",
+      "rewardKind": "clue",
+      "exclusiveGroup": "",
+      "followupId": "",
+      "mock": true,
+      "energyCost": 10,
+      "quality": 5,
+      "saveVersion": 1,
+      "prerequisiteFlags": []
+    },
+    {
+      "id": "wreck",
+      "promptKey": "sailing.event.wreck.prompt",
+      "resultKey": "sailing.event.wreck.result",
+      "rewardKind": "goods",
+      "exclusiveGroup": "",
+      "followupId": "",
+      "mock": true,
+      "energyCost": 12,
+      "quality": 5,
+      "saveVersion": 1,
+      "prerequisiteFlags": []
+    }
+  ]
+}

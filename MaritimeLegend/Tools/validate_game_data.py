@@ -72,6 +72,20 @@ def main():
             assert rule['minimum'] == field['minimum'] and rule['maximum'] == field['maximum']
             assert rule['integer'] == (field['type'] == 'integer')
     assert not (DATA / 'catalog.json').exists(), 'obsolete monolithic catalog remains'
+    plan = read(DATA / 'Presentation/localization-plan.json')['localizationPlan']
+    locale_keys = None
+    for locale in plan['locales']:
+        path = ROOT / 'Assets/Resources/Localization' / (locale + '.json')
+        assert path.stat().st_size <= manifest['maxFileBytes'], f'oversized locale: {locale}'
+        table = read(path)
+        keys = [entry['key'] for entry in table['entries']]
+        assert table['locale'] == locale and len(keys) == len(set(keys)), f'invalid locale table: {locale}'
+        assert all(entry['text'] for entry in table['entries']), f'empty translation: {locale}'
+        if locale_keys is None:
+            locale_keys = set(keys)
+        assert set(keys) == locale_keys, f'locale key mismatch: {locale}'
+    for entry in read(DATA / 'Sailing/encounters.json')['seaEncounters']:
+        assert entry['promptKey'] in locale_keys and entry['resultKey'] in locale_keys, 'missing encounter text'
     print(f'PASS: {len(files)} JSON files; {len(index)} schema-validated documents; '
           f'max {max(p.stat().st_size for p in files)} bytes; constraints synchronized.')
 

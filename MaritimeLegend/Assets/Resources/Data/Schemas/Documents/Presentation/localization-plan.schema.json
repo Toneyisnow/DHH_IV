@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "required": [
+    "localizationPlan"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "localizationPlan": {
+      "type": "object",
+      "required": [
+        "sourceLocale",
+        "fallbackLocale",
+        "locales",
+        "translationsComplete"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "sourceLocale": {
+          "type": "string"
+        },
+        "fallbackLocale": {
+          "type": "string"
+        },
+        "locales": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "translationsComplete": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

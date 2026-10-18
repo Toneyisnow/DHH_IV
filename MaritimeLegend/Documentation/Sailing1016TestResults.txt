@@ -1,0 +1,1 @@
+PASS: calendar, fractional/multiple days, no duplicate settlement on load, idle/shortage XP, rescue, independent controls, modes, guarded geometry, stable rewards, per-instance cooldown, dialogue pause, atomic failure/success, additive migration, production time separation, five-locale event text, 10000 weighted draws.

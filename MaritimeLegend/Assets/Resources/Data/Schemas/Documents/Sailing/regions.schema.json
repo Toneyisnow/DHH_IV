@@ -1,0 +1,79 @@
+{
+  "type": "object",
+  "required": [
+    "seaRegions"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "seaRegions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "nameKey",
+          "mapAssetKey",
+          "mock",
+          "eventsPerGameDay",
+          "maxIcons",
+          "quantityMin",
+          "quantityMax",
+          "weights",
+          "rewardProducts"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "nameKey": {
+            "type": "string"
+          },
+          "mapAssetKey": {
+            "type": "string"
+          },
+          "mock": {
+            "type": "boolean"
+          },
+          "eventsPerGameDay": {
+            "type": "number"
+          },
+          "maxIcons": {
+            "type": "integer"
+          },
+          "quantityMin": {
+            "type": "integer"
+          },
+          "quantityMax": {
+            "type": "integer"
+          },
+          "weights": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "encounterId",
+                "weight"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "encounterId": {
+                  "type": "string"
+                },
+                "weight": {
+                  "type": "integer"
+                }
+              }
+            }
+          },
+          "rewardProducts": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

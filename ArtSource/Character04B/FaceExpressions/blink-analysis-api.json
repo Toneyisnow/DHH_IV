@@ -1,0 +1,105 @@
+{
+  "1": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "B-animation-source.png"
+    }
+  },
+  "2": {
+    "class_type": "ImageCrop",
+    "inputs": {
+      "image": [
+        "1",
+        0
+      ],
+      "width": 704,
+      "height": 768,
+      "x": 160,
+      "y": 0
+    }
+  },
+  "3": {
+    "class_type": "Character04FaceAnalysis",
+    "inputs": {
+      "image": [
+        "2",
+        0
+      ],
+      "crop_factor": 1.7
+    }
+  },
+  "4": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "2",
+        0
+      ],
+      "filename_prefix": "Character04B-Face/half-body-source"
+    }
+  },
+  "5": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "3",
+        1
+      ],
+      "filename_prefix": "Character04B-Face/face-detected"
+    }
+  },
+  "6": {
+    "class_type": "MaskToImage",
+    "inputs": {
+      "mask": [
+        "3",
+        2
+      ]
+    }
+  },
+  "7": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "6",
+        0
+      ],
+      "filename_prefix": "Character04B-Face/face-edit-mask"
+    }
+  },
+  "10": {
+    "class_type": "ExpressionEditor",
+    "inputs": {
+      "rotate_pitch": 0.0,
+      "rotate_yaw": 0.0,
+      "rotate_roll": 0.0,
+      "blink": -15.0,
+      "eyebrow": 0.0,
+      "wink": 0.0,
+      "pupil_x": 0.0,
+      "pupil_y": 0.0,
+      "aaa": 0.0,
+      "eee": 0.0,
+      "woo": 0.0,
+      "smile": 0.0,
+      "src_ratio": 1.0,
+      "sample_ratio": 1.0,
+      "sample_parts": "OnlyExpression",
+      "crop_factor": 1.7,
+      "motion_link": [
+        "3",
+        0
+      ]
+    }
+  },
+  "11": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "10",
+        0
+      ],
+      "filename_prefix": "Character04B-Face/blink-target"
+    }
+  }
+}

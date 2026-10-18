@@ -1,0 +1,12 @@
+{
+  "fps": 24,
+  "frames": 72,
+  "width": 1202,
+  "height": 1310,
+  "face_max_difference": 0,
+  "central_torso_max_difference": 0,
+  "compass_max_difference": 0,
+  "method": "2D shoulder/elbow/wrist skinning with rigid hand texture; generated clean plate only; no generated intermediate frames",
+  "scope": "raised-hands approach to hips; smile held from key art; not a full original-pose transition",
+  "rendered_full_video": true
+}

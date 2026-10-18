@@ -1,0 +1,23 @@
+人物对话待机 v1
+
+参考：用户提供 portrait_sample.mp4。抽查其人物对话段，参考嘴型开合、轻微头动与眨眼；未复制菜单、片尾或原音频。
+角色：原 B 半身像 half-body-source.png；未沿用叉腰动作或重新生成手部。
+输出：dialogue-idle-v1.mp4，704×768，24fps，120帧，5秒循环，H.264。
+
+制作流程：
+AdvancedLivePortrait ExpressionEditor 逐帧参数控制嘴型、眼睛与头部；嘴型使用 aaa/eee/woo 的渐变组合。
+对 mouth 引起的内部俯仰耦合进行补偿，避免每次张嘴都产生点头。
+身体上下浮动最多2.6像素、左右最多0.45像素，靠近底边逐渐固定；背景角落不参与位移。
+约0.75秒、3.92秒眨眼；说话段约0.25–3.7秒，随后停顿并回到起点。
+没有使用 Wan 或其他视频扩散模型，没有新增模型与运行环境。
+临时推理帧在 H:/DHH_IV/ComfyUI/output/Character04B-Dialogue/face-frames/。
+
+验证：编码前首尾帧差异0；面部处理阶段 y>=320 身体区域与原图差异0；最终最左50列背景帧间差异0。详情见 validation.json。
+嘴型用于无配音对话演示，不是逐音素语音同步。仍可能存在面部重建带来的局部柔化。
+
+Unity 副本：MaritimeLegend/Assets/Resources/Videos/Characters/Character04/Character04_06_DialogueIdle.mp4。
+使用 VideoPlayer 播放时可开启 Loop；这是视频资源，不是可换装角色骨骼动画。尚未在 Unity 场景中测试。
+源工作流：dialogue-v1-api.json；参数：motion-timeline.json。
+脚本：MaritimeLegend/Tools/character04_dialogue_workflow.py、render_character04_dialogue.py。
+
+当前版本 v2：dialogue-idle-v2.mp4。嘴型 aaa/eee/woo 控制幅度提高至初版的1.7倍，动作时序、头部微动、眨眼和身体浮动保持不变。预览与 Unity 副本已更新；初版保留。对应新版工作流、时间轴和验证记录均以 dialogue-v2 命名。

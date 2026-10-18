@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>B · 动态立绘测试</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#202324;color:#f4eee3;font:16px/1.6 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1280px;margin:auto;padding:28px}h1{font-size:27px;margin:0}p{color:#c4bfb7;margin:8px 0 20px}.controls{display:flex;gap:12px;margin:18px 0}button,select{font:inherit;padding:7px 14px;border:1px solid #74685d;border-radius:5px;background:#353330;color:inherit}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}article{background:#2b2d2d;border:1px solid #454846;border-radius:8px;overflow:hidden}video{display:block;width:100%;aspect-ratio:2/3;background:#d8d5cf}h2{font-size:18px;margin:12px 16px 4px}article p{font-size:13px;margin:0 16px 16px}footer{margin-top:22px;color:#bbb4a8;font-size:13px}a{color:#e4c398}@media(max-width:750px){.grid{grid-template-columns:1fr}main{padding:18px}}
+</style>
+<main><h1>B · CEL + PAINT 动态立绘</h1>
+<p>本地 Wan 2.2 / 首轮低分辨率预览 · 384 × 576 · 24 fps · 每段约 2 秒</p>
+<div class="controls"><button id="play">全部播放</button><button id="pause">全部暂停</button><label>播放速度 <select id="speed"><option value="1">正常</option><option value="0.5">0.5 倍检查</option></select></label></div>
+<div class="grid">
+<article><video controls muted loop playsinline preload="metadata" src="idle-preview.mp4"></video><h2>01 · 待机</h2><p>动作目标：轻呼吸、自然眨眼、发梢与披风轻动。</p></article>
+<article><video controls muted loop playsinline preload="metadata" src="nod-preview.mp4"></video><h2>02 · 点头</h2><p>动作目标：小幅点头并回到原姿势。</p></article>
+<article><video controls muted loop playsinline preload="metadata" src="smile-preview.mp4"></video><h2>03 · 浅笑</h2><p>动作目标：闭嘴浅笑，表情轻微变化。</p></article>
+</div><footer>动作标题描述生成目标，不代表精确绑定控制。循环播放用于检查，首尾尚未做无缝处理；视频保留纯色背景。<br><a href="B-animation-source.png">查看输入立绘</a> · <a href="使用说明.txt">工作流与 Unity 预览说明</a></footer></main>
+<script>
+const clips=[...document.querySelectorAll('video')];
+document.getElementById('play').onclick=()=>clips.forEach(v=>{v.currentTime=0;v.play().catch(()=>{});});
+document.getElementById('pause').onclick=()=>clips.forEach(v=>v.pause());
+document.getElementById('speed').onchange=e=>clips.forEach(v=>v.playbackRate=Number(e.target.value));
+</script></html>

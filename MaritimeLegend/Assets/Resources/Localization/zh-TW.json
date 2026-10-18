@@ -1,0 +1,90 @@
+{
+  "locale": "zh-TW",
+  "complete": false,
+  "entries": [
+    {
+      "key": "ui.sailing.accept",
+      "text": "冒險一試"
+    },
+    {
+      "key": "ui.sailing.decline",
+      "text": "繼續航行"
+    },
+    {
+      "key": "sailing.event.unavailable",
+      "text": "此奇遇已結束。"
+    },
+    {
+      "key": "sailing.event.declined",
+      "text": "繼續航行。"
+    },
+    {
+      "key": "sailing.event.energy_low",
+      "text": "精力不足，未扣資源。"
+    },
+    {
+      "key": "sailing.event.cargo_full",
+      "text": "貨艙不足，未扣資源。"
+    },
+    {
+      "key": "sailing.event.bottle.prompt",
+      "text": "海面漂來一只封蠟的小瓶，要撈起來看看嗎？"
+    },
+    {
+      "key": "sailing.event.crate.prompt",
+      "text": "浪間漂來一只木箱，要派人打撈嗎？"
+    },
+    {
+      "key": "sailing.event.mermaid.prompt",
+      "text": "浪尖傳來神秘的歌聲，要追尋它嗎？"
+    },
+    {
+      "key": "sailing.event.wreck.prompt",
+      "text": "薄霧裡浮出破損的船桅，要搜尋殘骸嗎？"
+    },
+    {
+      "key": "sailing.event.bottle.result",
+      "text": "獲得一條航海線索，消耗{2}點精力。"
+    },
+    {
+      "key": "sailing.event.mermaid.result",
+      "text": "記下神秘歌聲的線索，消耗{2}點精力。"
+    },
+    {
+      "key": "sailing.event.crate.result",
+      "text": "獲得{1}份{0}，消耗{2}點精力。"
+    },
+    {
+      "key": "sailing.event.wreck.result",
+      "text": "從殘骸中找到{1}份{0}，消耗{2}點精力。"
+    },
+    {
+      "key": "sea.north_sea.name",
+      "text": "北海"
+    },
+    {
+      "key": "sea.mediterranean_sea.name",
+      "text": "地中海"
+    },
+    {
+      "key": "sea.africa.name",
+      "text": "非洲"
+    },
+    {
+      "key": "sea.indian_ocean.name",
+      "text": "印度洋"
+    },
+    {
+      "key": "sea.southeast_asia.name",
+      "text": "東南亞"
+    },
+    {
+      "key": "sea.east_asia.name",
+      "text": "東亞"
+    },
+    {
+      "key": "sea.new_world.name",
+      "text": "新大陸"
+    }
+  ]
+}

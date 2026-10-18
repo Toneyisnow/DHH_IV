@@ -40,7 +40,12 @@
     "Economy/market",
     "Quests/objectives",
     "Products/order",
-    "Recipes/order"
+    "Recipes/order",
+    "Sailing/regions",
+    "Sailing/encounters",
+    "Sailing/defaults",
+    "Characters/backgrounds",
+    "Presentation/localization-plan"
   ],
   "balance": [
     "Balance/world",
@@ -55,7 +60,8 @@
     "Balance/navigation",
     "Balance/events",
     "Balance/partnerRoles",
-    "Balance/ui"
+    "Balance/ui",
+    "Balance/sailing"
   ],
   "defaults": [
     "Initial/game",
@@ -80,6 +86,7 @@
     "Schemas/navigation.constraints",
     "Schemas/events.constraints",
     "Schemas/partnerRoles.constraints",
-    "Schemas/ui.constraints"
+    "Schemas/ui.constraints",
+    "Schemas/sailing.constraints"
   ]
 }

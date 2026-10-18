@@ -10,6 +10,7 @@ public static class CityArtSetup {
  static void ConfigureTexture(string path){var importer=AssetImporter.GetAtPath(path) as TextureImporter;if(importer==null)throw new Exception("Texture missing: "+path);importer.textureType=TextureImporterType.Default;importer.alphaIsTransparency=true;importer.mipmapEnabled=false;importer.npotScale=TextureImporterNPOTScale.None;importer.filterMode=FilterMode.Point;importer.wrapMode=TextureWrapMode.Clamp;importer.textureCompression=TextureImporterCompression.Uncompressed;importer.maxTextureSize=2048;importer.SaveAndReimport();}
  public static void ConfigureDaylight(){
  ConfigureTexture("Assets/Resources/CityDaylight/Walker.png");
+ ConfigureTexture("Assets/Resources/CityDaylight/Textures/PixelMaterials.png");
  foreach(var file in Directory.GetFiles("Assets/Resources/TownUI","*.png")){
   string path=file.Replace('\\','/');ConfigureTexture(path);var importer=(TextureImporter)AssetImporter.GetAtPath(path);importer.filterMode=FilterMode.Bilinear;importer.SaveAndReimport();
  }

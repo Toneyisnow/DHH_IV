@@ -1,0 +1,3404 @@
+{
+  "c29a6f1a-137b-4380-9d77-f48f0b7a7cfa": {
+    "prompt": [
+      0,
+      "c29a6f1a-137b-4380-9d77-f48f0b7a7cfa",
+      {
+        "1": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "B-animation-source.png"
+          }
+        },
+        "2": {
+          "class_type": "ImageCrop",
+          "inputs": {
+            "image": [
+              "1",
+              0
+            ],
+            "width": 704,
+            "height": 768,
+            "x": 160,
+            "y": 0
+          }
+        },
+        "3": {
+          "class_type": "Character04FaceAnalysis",
+          "inputs": {
+            "image": [
+              "2",
+              0
+            ],
+            "crop_factor": 1.7
+          }
+        },
+        "4": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "2",
+              0
+            ],
+            "filename_prefix": "Character04B-Face/half-body-source"
+          }
+        },
+        "5": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "3",
+              1
+            ],
+            "filename_prefix": "Character04B-Face/face-detected"
+          }
+        },
+        "6": {
+          "class_type": "MaskToImage",
+          "inputs": {
+            "mask": [
+              "3",
+              2
+            ]
+          }
+        },
+        "7": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "6",
+              0
+            ],
+            "filename_prefix": "Character04B-Face/face-edit-mask"
+          }
+        }
+      },
+      {
+        "create_time": 1792254700264
+      },
+      [
+        "4",
+        "7",
+        "3",
+        "5"
+      ]
+    ],
+    "outputs": {
+      "4": {
+        "images": [
+          {
+            "filename": "half-body-source_00001_.png",
+            "subfolder": "Character04B-Face",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          }
+        ]
+      },
+      "5": {
+        "images": [
+          {
+            "filename": "face-detected_00001_.png",
+            "subfolder": "Character04B-Face",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          }
+        ]
+      },
+      "7": {
+        "images": [
+          {
+            "filename": "face-edit-mask_00001_.png",
+            "subfolder": "Character04B-Face",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "c29a6f1a-137b-4380-9d77-f48f0b7a7cfa",
+            "timestamp": 1792254700268
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [],
+            "prompt_id": "c29a6f1a-137b-4380-9d77-f48f0b7a7cfa",
+            "timestamp": 1792254700305
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "c29a6f1a-137b-4380-9d77-f48f0b7a7cfa",
+            "timestamp": 1792254719596
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "4": {
+        "node_id": "4",
+        "display_node": "4",
+        "parent_node": null,
+        "real_node_id": "4"
+      },
+      "5": {
+        "node_id": "5",
+        "display_node": "5",
+        "parent_node": null,
+        "real_node_id": "5"
+      },
+      "7": {
+        "node_id": "7",
+        "display_node": "7",
+        "parent_node": null,
+        "real_node_id": "7"
+      }
+    }
+  },
+  "debe3227-e0c2-4368-a226-88209fe800c9": {
+    "prompt": [
+      1,
+      "debe3227-e0c2-4368-a226-88209fe800c9",
+      {
+        "1": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "B-animation-source.png"
+          }
+        },
+        "2": {
+          "class_type": "ImageCrop",
+          "inputs": {
+            "image": [
+              "1",
+              0
+            ],
+            "width": 704,
+            "height": 768,
+            "x": 160,
+            "y": 0
+          }
+        },
+        "3": {
+          "class_type": "Character04FaceAnalysis",
+          "inputs": {
+            "image": [
+              "2",
+              0
+            ],
+            "crop_factor": 1.7
+          }
+        },
+        "4": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "2",
+              0
+            ],
+            "filename_prefix": "Character04B-Face/half-body-source"
+          }
+        },
+        "5": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "3",
+              1
+            ],
+            "filename_prefix": "Character04B-Face/face-detected"
+          }
+        },
+        "6": {
+          "class_type": "MaskToImage",
+          "inputs": {
+            "mask": [
+              "3",
+              2
+            ]
+          }
+        },
+        "7": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "6",
+              0
+            ],
+            "filename_prefix": "Character04B-Face/face-edit-mask"
+          }
+        },
+        "10": {
+          "class_type": "ExpressionEditor",
+          "inputs": {
+            "rotate_pitch": 0.0,
+            "rotate_yaw": 0.0,
+            "rotate_roll": 0.0,
+            "blink": -15.0,
+            "eyebrow": 0.0,
+            "wink": 0.0,
+            "pupil_x": 0.0,
+            "pupil_y": 0.0,
+            "aaa": 0.0,
+            "eee": 0.0,
+            "woo": 0.0,
+            "smile": 0.0,
+            "src_ratio": 1.0,
+            "sample_ratio": 1.0,
+            "sample_parts": "OnlyExpression",
+            "crop_factor": 1.7,
+            "motion_link": [
+              "3",
+              0
+            ]
+          }
+        },
+        "11": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "10",
+              0
+            ],
+            "filename_prefix": "Character04B-Face/blink-target"
+          }
+        }
+      },
+      {
+        "create_time": 1792254750199
+      },
+      [
+        "4",
+        "7",
+        "3",
+        "10",
+        "5",
+        "11"
+      ]
+    ],
+    "outputs": {
+      "4": {
+        "images": [
+          {
+            "filename": "half-body-source_00002_.png",
+            "subfolder": "Character04B-Face",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          }
+        ]
+      },
+      "10": {
+        "images": [
+          {
+            "filename": "expression_edit_preview1.png",
+            "type": "temp",
+            "metadata": {
+              "kind": "image",
+              "width": 512,
+              "height": 512
+            }
+          }
+        ]
+      },
+      "5": {
+        "images": [
+          {
+            "filename": "face-detected_00002_.png",
+            "subfolder": "Character04B-Face",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          }
+        ]
+      },
+      "11": {
+        "images": [
+          {
+            "filename": "blink-target_00001_.png",
+            "subfolder": "Character04B-Face",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          }
+        ]
+      },
+      "7": {
+        "images": [
+          {
+            "filename": "face-edit-mask_00002_.png",
+            "subfolder": "Character04B-Face",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "debe3227-e0c2-4368-a226-88209fe800c9",
+            "timestamp": 1792254750201
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [],
+            "prompt_id": "debe3227-e0c2-4368-a226-88209fe800c9",
+            "timestamp": 1792254750229
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "debe3227-e0c2-4368-a226-88209fe800c9",
+            "timestamp": 1792254752418
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "4": {
+        "node_id": "4",
+        "display_node": "4",
+        "parent_node": null,
+        "real_node_id": "4"
+      },
+      "10": {
+        "node_id": "10",
+        "display_node": "10",
+        "parent_node": null,
+        "real_node_id": "10"
+      },
+      "5": {
+        "node_id": "5",
+        "display_node": "5",
+        "parent_node": null,
+        "real_node_id": "5"
+      },
+      "11": {
+        "node_id": "11",
+        "display_node": "11",
+        "parent_node": null,
+        "real_node_id": "11"
+      },
+      "7": {
+        "node_id": "7",
+        "display_node": "7",
+        "parent_node": null,
+        "real_node_id": "7"
+      }
+    }
+  },
+  "d311de62-7b07-4815-9e6f-2ef8500c3e8d": {
+    "prompt": [
+      2,
+      "d311de62-7b07-4815-9e6f-2ef8500c3e8d",
+      {
+        "1": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "B-animation-source.png"
+          }
+        },
+        "2": {
+          "class_type": "ImageCrop",
+          "inputs": {
+            "image": [
+              "1",
+              0
+            ],
+            "width": 704,
+            "height": 768,
+            "x": 160,
+            "y": 0
+          }
+        },
+        "3": {
+          "class_type": "Character04FaceAnalysis",
+          "inputs": {
+            "image": [
+              "2",
+              0
+            ],
+            "crop_factor": 1.7
+          }
+        },
+        "4": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "2",
+              0
+            ],
+            "filename_prefix": "Character04B-Face/half-body-source"
+          }
+        },
+        "5": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "3",
+              1
+            ],
+            "filename_prefix": "Character04B-Face/face-detected"
+          }
+        },
+        "6": {
+          "class_type": "MaskToImage",
+          "inputs": {
+            "mask": [
+              "3",
+              2
+            ]
+          }
+        },
+        "7": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "6",
+              0
+            ],
+            "filename_prefix": "Character04B-Face/face-edit-mask"
+          }
+        },
+        "10": {
+          "class_type": "ExpressionEditor",
+          "inputs": {
+            "rotate_pitch": 0.0,
+            "rotate_yaw": 0.0,
+            "rotate_roll": 0.0,
+            "blink": 0.0,
+            "eyebrow": 0.0,
+            "wink": 0.0,
+            "pupil_x": 0.0,
+            "pupil_y": 0.0,
+            "aaa": 0.0,
+            "eee": 0.0,
+            "woo": 0.0,
+            "smile": 0.7,
+            "src_ratio": 1.0,
+            "sample_ratio": 1.0,
+            "sample_parts": "OnlyExpression",
+            "crop_factor": 1.7,
+            "motion_link": [
+              "3",
+              0
+            ]
+          }
+        },
+        "11": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "10",
+              0
+            ],
+            "filename_prefix": "Character04B-Face/smile-target"
+          }
+        }
+      },
+      {
+        "create_time": 1792254750431
+      },
+      [
+        "4",
+        "7",
+        "3",
+        "10",
+        "5",
+        "11"
+      ]
+    ],
+    "outputs": {
+      "4": {
+        "images": [
+          {
+            "filename": "half-body-source_00003_.png",
+            "subfolder": "Character04B-Face",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          }
+        ]
+      },
+      "10": {
+        "images": [
+          {
+            "filename": "expression_edit_preview2.png",
+            "type": "temp",
+            "metadata": {
+              "kind": "image",
+              "width": 512,
+              "height": 512
+            }
+          }
+        ]
+      },
+      "5": {
+        "images": [
+          {
+            "filename": "face-detected_00003_.png",
+            "subfolder": "Character04B-Face",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          }
+        ]
+      },
+      "11": {
+        "images": [
+          {
+            "filename": "smile-target_00001_.png",
+            "subfolder": "Character04B-Face",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          }
+        ]
+      },
+      "7": {
+        "images": [
+          {
+            "filename": "face-edit-mask_00003_.png",
+            "subfolder": "Character04B-Face",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "d311de62-7b07-4815-9e6f-2ef8500c3e8d",
+            "timestamp": 1792254752602
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [],
+            "prompt_id": "d311de62-7b07-4815-9e6f-2ef8500c3e8d",
+            "timestamp": 1792254752606
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "d311de62-7b07-4815-9e6f-2ef8500c3e8d",
+            "timestamp": 1792254753216
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "4": {
+        "node_id": "4",
+        "display_node": "4",
+        "parent_node": null,
+        "real_node_id": "4"
+      },
+      "10": {
+        "node_id": "10",
+        "display_node": "10",
+        "parent_node": null,
+        "real_node_id": "10"
+      },
+      "5": {
+        "node_id": "5",
+        "display_node": "5",
+        "parent_node": null,
+        "real_node_id": "5"
+      },
+      "11": {
+        "node_id": "11",
+        "display_node": "11",
+        "parent_node": null,
+        "real_node_id": "11"
+      },
+      "7": {
+        "node_id": "7",
+        "display_node": "7",
+        "parent_node": null,
+        "real_node_id": "7"
+      }
+    }
+  },
+  "0d08f449-2b9a-488c-a2dd-147cb3afde16": {
+    "prompt": [
+      3,
+      "0d08f449-2b9a-488c-a2dd-147cb3afde16",
+      {
+        "1": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "B-animation-source.png"
+          }
+        },
+        "2": {
+          "class_type": "ImageCrop",
+          "inputs": {
+            "image": [
+              "1",
+              0
+            ],
+            "width": 704,
+            "height": 768,
+            "x": 160,
+            "y": 0
+          }
+        },
+        "3": {
+          "class_type": "Character04FaceAnalysis",
+          "inputs": {
+            "image": [
+              "2",
+              0
+            ],
+            "crop_factor": 1.7
+          }
+        },
+        "4": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "2",
+              0
+            ],
+            "filename_prefix": "Character04B-Face/half-body-source"
+          }
+        },
+        "5": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "3",
+              1
+            ],
+            "filename_prefix": "Character04B-Face/face-detected"
+          }
+        },
+        "6": {
+          "class_type": "MaskToImage",
+          "inputs": {
+            "mask": [
+              "3",
+              2
+            ]
+          }
+        },
+        "7": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "6",
+              0
+            ],
+            "filename_prefix": "Character04B-Face/face-edit-mask"
+          }
+        },
+        "10": {
+          "class_type": "ExpressionEditor",
+          "inputs": {
+            "rotate_pitch": 6.0,
+            "rotate_yaw": 0.0,
+            "rotate_roll": 0.0,
+            "blink": 0.0,
+            "eyebrow": 0.0,
+            "wink": 0.0,
+            "pupil_x": 0.0,
+            "pupil_y": 0.0,
+            "aaa": 0.0,
+            "eee": 0.0,
+            "woo": 0.0,
+            "smile": 0.0,
+            "src_ratio": 1.0,
+            "sample_ratio": 1.0,
+            "sample_parts": "OnlyExpression",
+            "crop_factor": 1.7,
+            "motion_link": [
+              "3",
+              0
+            ]
+          }
+        },
+        "11": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "10",
+              0
+            ],
+            "filename_prefix": "Character04B-Face/nod-target"
+          }
+        }
+      },
+      {
+        "create_time": 1792254750677
+      },
+      [
+        "4",
+        "7",
+        "3",
+        "10",
+        "5",
+        "11"
+      ]
+    ],
+    "outputs": {
+      "4": {
+        "images": [
+          {
+            "filename": "half-body-source_00004_.png",
+            "subfolder": "Character04B-Face",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          }
+        ]
+      },
+      "10": {
+        "images": [
+          {
+            "filename": "expression_edit_preview3.png",
+            "type": "temp",
+            "metadata": {
+              "kind": "image",
+              "width": 512,
+              "height": 512
+            }
+          }
+        ]
+      },
+      "5": {
+        "images": [
+          {
+            "filename": "face-detected_00004_.png",
+            "subfolder": "Character04B-Face",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          }
+        ]
+      },
+      "11": {
+        "images": [
+          {
+            "filename": "nod-target_00001_.png",
+            "subfolder": "Character04B-Face",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          }
+        ]
+      },
+      "7": {
+        "images": [
+          {
+            "filename": "face-edit-mask_00004_.png",
+            "subfolder": "Character04B-Face",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "0d08f449-2b9a-488c-a2dd-147cb3afde16",
+            "timestamp": 1792254753219
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [],
+            "prompt_id": "0d08f449-2b9a-488c-a2dd-147cb3afde16",
+            "timestamp": 1792254753223
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "0d08f449-2b9a-488c-a2dd-147cb3afde16",
+            "timestamp": 1792254753822
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "4": {
+        "node_id": "4",
+        "display_node": "4",
+        "parent_node": null,
+        "real_node_id": "4"
+      },
+      "10": {
+        "node_id": "10",
+        "display_node": "10",
+        "parent_node": null,
+        "real_node_id": "10"
+      },
+      "5": {
+        "node_id": "5",
+        "display_node": "5",
+        "parent_node": null,
+        "real_node_id": "5"
+      },
+      "11": {
+        "node_id": "11",
+        "display_node": "11",
+        "parent_node": null,
+        "real_node_id": "11"
+      },
+      "7": {
+        "node_id": "7",
+        "display_node": "7",
+        "parent_node": null,
+        "real_node_id": "7"
+      }
+    }
+  },
+  "4a946f4d-8c0e-429b-a18f-7cebb800d528": {
+    "prompt": [
+      4,
+      "4a946f4d-8c0e-429b-a18f-7cebb800d528",
+      {
+        "1": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "B-animation-source.png"
+          }
+        },
+        "2": {
+          "class_type": "ImageCrop",
+          "inputs": {
+            "image": [
+              "1",
+              0
+            ],
+            "width": 704,
+            "height": 768,
+            "x": 160,
+            "y": 0
+          }
+        },
+        "3": {
+          "class_type": "Character04FaceAnalysis",
+          "inputs": {
+            "image": [
+              "2",
+              0
+            ],
+            "crop_factor": 1.7
+          }
+        },
+        "4": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "2",
+              0
+            ],
+            "filename_prefix": "Character04B-Face/half-body-source"
+          }
+        },
+        "5": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "3",
+              1
+            ],
+            "filename_prefix": "Character04B-Face/face-detected"
+          }
+        },
+        "6": {
+          "class_type": "MaskToImage",
+          "inputs": {
+            "mask": [
+              "3",
+              2
+            ]
+          }
+        },
+        "7": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "6",
+              0
+            ],
+            "filename_prefix": "Character04B-Face/face-edit-mask"
+          }
+        },
+        "10": {
+          "class_type": "ExpressionEditor",
+          "inputs": {
+            "rotate_pitch": 0.0,
+            "rotate_yaw": 0.0,
+            "rotate_roll": 0.0,
+            "blink": -15.0,
+            "eyebrow": 0.0,
+            "wink": 0.0,
+            "pupil_x": 0.0,
+            "pupil_y": 0.0,
+            "aaa": 0.0,
+            "eee": 0.0,
+            "woo": 0.0,
+            "smile": 0.0,
+            "src_ratio": 1.0,
+            "sample_ratio": 1.0,
+            "sample_parts": "OnlyExpression",
+            "crop_factor": 1.7,
+            "motion_link": [
+              "3",
+              0
+            ]
+          }
+        },
+        "11": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "10",
+              0
+            ],
+            "filename_prefix": "Character04B-Face/blink-target"
+          }
+        },
+        "12": {
+          "class_type": "AdvancedLivePortrait",
+          "inputs": {
+            "retargeting_eyes": 0.0,
+            "retargeting_mouth": 0.0,
+            "crop_factor": 1.7,
+            "turn_on": true,
+            "tracking_src_vid": false,
+            "animate_without_vid": true,
+            "command": "0=1:12\n1=4:2\n0=6:23",
+            "motion_link": [
+              "10",
+              1
+            ]
+          }
+        },
+        "13": {
+          "class_type": "CreateVideo",
+          "inputs": {
+            "images": [
+              "12",
+              0
+            ],
+            "fps": 24.0
+          }
+        },
+        "14": {
+          "class_type": "SaveVideo",
+          "inputs": {
+            "video": [
+              "13",
+              0
+            ],
+            "filename_prefix": "Character04B-Face/blink-controlled",
+            "format": "mp4",
+            "codec": {
+              "codec": "h264"
+            }
+          }
+        },
+        "15": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "12",
+              0
+            ],
+            "filename_prefix": "Character04B-Face/frames/blink"
+          }
+        }
+      },
+      {
+        "create_time": 1792254780070
+      },
+      [
+        "4",
+        "7",
+        "3",
+        "14",
+        "10",
+        "12",
+        "5",
+        "11",
+        "15"
+      ]
+    ],
+    "outputs": {
+      "4": {
+        "images": [
+          {
+            "filename": "half-body-source_00005_.png",
+            "subfolder": "Character04B-Face",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          }
+        ]
+      },
+      "10": {
+        "images": [
+          {
+            "filename": "expression_edit_preview4.png",
+            "type": "temp",
+            "metadata": {
+              "kind": "image",
+              "width": 512,
+              "height": 512
+            }
+          }
+        ]
+      },
+      "5": {
+        "images": [
+          {
+            "filename": "face-detected_00005_.png",
+            "subfolder": "Character04B-Face",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          }
+        ]
+      },
+      "11": {
+        "images": [
+          {
+            "filename": "blink-target_00002_.png",
+            "subfolder": "Character04B-Face",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          }
+        ]
+      },
+      "15": {
+        "images": [
+          {
+            "filename": "blink_00001_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00002_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00003_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00004_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00005_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00006_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00007_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00008_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00009_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00010_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00011_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00012_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00013_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00014_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00015_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00016_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00017_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00018_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00019_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00020_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00021_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00022_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00023_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00024_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00025_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00026_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00027_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00028_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00029_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00030_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00031_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00032_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00033_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00034_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00035_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00036_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00037_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00038_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00039_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00040_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00041_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00042_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00043_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00044_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00045_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00046_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00047_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "blink_00048_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          }
+        ]
+      },
+      "7": {
+        "images": [
+          {
+            "filename": "face-edit-mask_00005_.png",
+            "subfolder": "Character04B-Face",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          }
+        ]
+      },
+      "14": {
+        "images": [
+          {
+            "filename": "blink-controlled_00001_.mp4",
+            "subfolder": "Character04B-Face",
+            "type": "output",
+            "metadata": {
+              "kind": "video",
+              "width": 704,
+              "height": 768,
+              "duration": 2.0,
+              "fps": 24.0,
+              "frame_count": 48
+            }
+          }
+        ],
+        "animated": [
+          true
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "4a946f4d-8c0e-429b-a18f-7cebb800d528",
+            "timestamp": 1792254780073
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [],
+            "prompt_id": "4a946f4d-8c0e-429b-a18f-7cebb800d528",
+            "timestamp": 1792254780079
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "4a946f4d-8c0e-429b-a18f-7cebb800d528",
+            "timestamp": 1792254794047
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "4": {
+        "node_id": "4",
+        "display_node": "4",
+        "parent_node": null,
+        "real_node_id": "4"
+      },
+      "10": {
+        "node_id": "10",
+        "display_node": "10",
+        "parent_node": null,
+        "real_node_id": "10"
+      },
+      "5": {
+        "node_id": "5",
+        "display_node": "5",
+        "parent_node": null,
+        "real_node_id": "5"
+      },
+      "11": {
+        "node_id": "11",
+        "display_node": "11",
+        "parent_node": null,
+        "real_node_id": "11"
+      },
+      "15": {
+        "node_id": "15",
+        "display_node": "15",
+        "parent_node": null,
+        "real_node_id": "15"
+      },
+      "7": {
+        "node_id": "7",
+        "display_node": "7",
+        "parent_node": null,
+        "real_node_id": "7"
+      },
+      "14": {
+        "node_id": "14",
+        "display_node": "14",
+        "parent_node": null,
+        "real_node_id": "14"
+      }
+    }
+  },
+  "e72cd024-1d20-4fe0-92f1-739a4a2c590e": {
+    "prompt": [
+      5,
+      "e72cd024-1d20-4fe0-92f1-739a4a2c590e",
+      {
+        "1": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "B-animation-source.png"
+          }
+        },
+        "2": {
+          "class_type": "ImageCrop",
+          "inputs": {
+            "image": [
+              "1",
+              0
+            ],
+            "width": 704,
+            "height": 768,
+            "x": 160,
+            "y": 0
+          }
+        },
+        "3": {
+          "class_type": "Character04FaceAnalysis",
+          "inputs": {
+            "image": [
+              "2",
+              0
+            ],
+            "crop_factor": 1.7
+          }
+        },
+        "4": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "2",
+              0
+            ],
+            "filename_prefix": "Character04B-Face/half-body-source"
+          }
+        },
+        "5": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "3",
+              1
+            ],
+            "filename_prefix": "Character04B-Face/face-detected"
+          }
+        },
+        "6": {
+          "class_type": "MaskToImage",
+          "inputs": {
+            "mask": [
+              "3",
+              2
+            ]
+          }
+        },
+        "7": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "6",
+              0
+            ],
+            "filename_prefix": "Character04B-Face/face-edit-mask"
+          }
+        },
+        "10": {
+          "class_type": "ExpressionEditor",
+          "inputs": {
+            "rotate_pitch": 0.0,
+            "rotate_yaw": 0.0,
+            "rotate_roll": 0.0,
+            "blink": 0.0,
+            "eyebrow": 0.0,
+            "wink": 0.0,
+            "pupil_x": 0.0,
+            "pupil_y": 0.0,
+            "aaa": 0.0,
+            "eee": 0.0,
+            "woo": 0.0,
+            "smile": 0.7,
+            "src_ratio": 1.0,
+            "sample_ratio": 1.0,
+            "sample_parts": "OnlyExpression",
+            "crop_factor": 1.7,
+            "motion_link": [
+              "3",
+              0
+            ]
+          }
+        },
+        "11": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "10",
+              0
+            ],
+            "filename_prefix": "Character04B-Face/smile-target"
+          }
+        },
+        "12": {
+          "class_type": "AdvancedLivePortrait",
+          "inputs": {
+            "retargeting_eyes": 0.0,
+            "retargeting_mouth": 0.0,
+            "crop_factor": 1.7,
+            "turn_on": true,
+            "tracking_src_vid": false,
+            "animate_without_vid": true,
+            "command": "0=1:8\n1=12:12\n0=12:3",
+            "motion_link": [
+              "10",
+              1
+            ]
+          }
+        },
+        "13": {
+          "class_type": "CreateVideo",
+          "inputs": {
+            "images": [
+              "12",
+              0
+            ],
+            "fps": 24.0
+          }
+        },
+        "14": {
+          "class_type": "SaveVideo",
+          "inputs": {
+            "video": [
+              "13",
+              0
+            ],
+            "filename_prefix": "Character04B-Face/smile-controlled",
+            "format": "mp4",
+            "codec": {
+              "codec": "h264"
+            }
+          }
+        },
+        "15": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "12",
+              0
+            ],
+            "filename_prefix": "Character04B-Face/frames/smile"
+          }
+        }
+      },
+      {
+        "create_time": 1792254780275
+      },
+      [
+        "4",
+        "7",
+        "3",
+        "14",
+        "10",
+        "12",
+        "5",
+        "11",
+        "15"
+      ]
+    ],
+    "outputs": {
+      "4": {
+        "images": [
+          {
+            "filename": "half-body-source_00006_.png",
+            "subfolder": "Character04B-Face",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          }
+        ]
+      },
+      "10": {
+        "images": [
+          {
+            "filename": "expression_edit_preview5.png",
+            "type": "temp",
+            "metadata": {
+              "kind": "image",
+              "width": 512,
+              "height": 512
+            }
+          }
+        ]
+      },
+      "5": {
+        "images": [
+          {
+            "filename": "face-detected_00006_.png",
+            "subfolder": "Character04B-Face",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          }
+        ]
+      },
+      "11": {
+        "images": [
+          {
+            "filename": "smile-target_00002_.png",
+            "subfolder": "Character04B-Face",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          }
+        ]
+      },
+      "15": {
+        "images": [
+          {
+            "filename": "smile_00001_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00002_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00003_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00004_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00005_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00006_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00007_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00008_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00009_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00010_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00011_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00012_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00013_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00014_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00015_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00016_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00017_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00018_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00019_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00020_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00021_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00022_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00023_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00024_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00025_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00026_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00027_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00028_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00029_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00030_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00031_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00032_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00033_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00034_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00035_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00036_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00037_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00038_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00039_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00040_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00041_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00042_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00043_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00044_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00045_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00046_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00047_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "smile_00048_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          }
+        ]
+      },
+      "7": {
+        "images": [
+          {
+            "filename": "face-edit-mask_00006_.png",
+            "subfolder": "Character04B-Face",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          }
+        ]
+      },
+      "14": {
+        "images": [
+          {
+            "filename": "smile-controlled_00001_.mp4",
+            "subfolder": "Character04B-Face",
+            "type": "output",
+            "metadata": {
+              "kind": "video",
+              "width": 704,
+              "height": 768,
+              "duration": 2.0,
+              "fps": 24.0,
+              "frame_count": 48
+            }
+          }
+        ],
+        "animated": [
+          true
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "e72cd024-1d20-4fe0-92f1-739a4a2c590e",
+            "timestamp": 1792254794224
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [],
+            "prompt_id": "e72cd024-1d20-4fe0-92f1-739a4a2c590e",
+            "timestamp": 1792254794247
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "e72cd024-1d20-4fe0-92f1-739a4a2c590e",
+            "timestamp": 1792254807127
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "4": {
+        "node_id": "4",
+        "display_node": "4",
+        "parent_node": null,
+        "real_node_id": "4"
+      },
+      "10": {
+        "node_id": "10",
+        "display_node": "10",
+        "parent_node": null,
+        "real_node_id": "10"
+      },
+      "5": {
+        "node_id": "5",
+        "display_node": "5",
+        "parent_node": null,
+        "real_node_id": "5"
+      },
+      "11": {
+        "node_id": "11",
+        "display_node": "11",
+        "parent_node": null,
+        "real_node_id": "11"
+      },
+      "15": {
+        "node_id": "15",
+        "display_node": "15",
+        "parent_node": null,
+        "real_node_id": "15"
+      },
+      "7": {
+        "node_id": "7",
+        "display_node": "7",
+        "parent_node": null,
+        "real_node_id": "7"
+      },
+      "14": {
+        "node_id": "14",
+        "display_node": "14",
+        "parent_node": null,
+        "real_node_id": "14"
+      }
+    }
+  },
+  "c35d6b3f-31be-464b-82ea-8414b146e10f": {
+    "prompt": [
+      6,
+      "c35d6b3f-31be-464b-82ea-8414b146e10f",
+      {
+        "1": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "B-animation-source.png"
+          }
+        },
+        "2": {
+          "class_type": "ImageCrop",
+          "inputs": {
+            "image": [
+              "1",
+              0
+            ],
+            "width": 704,
+            "height": 768,
+            "x": 160,
+            "y": 0
+          }
+        },
+        "3": {
+          "class_type": "Character04FaceAnalysis",
+          "inputs": {
+            "image": [
+              "2",
+              0
+            ],
+            "crop_factor": 1.7
+          }
+        },
+        "4": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "2",
+              0
+            ],
+            "filename_prefix": "Character04B-Face/half-body-source"
+          }
+        },
+        "5": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "3",
+              1
+            ],
+            "filename_prefix": "Character04B-Face/face-detected"
+          }
+        },
+        "6": {
+          "class_type": "MaskToImage",
+          "inputs": {
+            "mask": [
+              "3",
+              2
+            ]
+          }
+        },
+        "7": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "6",
+              0
+            ],
+            "filename_prefix": "Character04B-Face/face-edit-mask"
+          }
+        },
+        "10": {
+          "class_type": "ExpressionEditor",
+          "inputs": {
+            "rotate_pitch": 6.0,
+            "rotate_yaw": 0.0,
+            "rotate_roll": 0.0,
+            "blink": 0.0,
+            "eyebrow": 0.0,
+            "wink": 0.0,
+            "pupil_x": 0.0,
+            "pupil_y": 0.0,
+            "aaa": 0.0,
+            "eee": 0.0,
+            "woo": 0.0,
+            "smile": 0.0,
+            "src_ratio": 1.0,
+            "sample_ratio": 1.0,
+            "sample_parts": "OnlyExpression",
+            "crop_factor": 1.7,
+            "motion_link": [
+              "3",
+              0
+            ]
+          }
+        },
+        "11": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "10",
+              0
+            ],
+            "filename_prefix": "Character04B-Face/nod-target"
+          }
+        },
+        "12": {
+          "class_type": "AdvancedLivePortrait",
+          "inputs": {
+            "retargeting_eyes": 0.0,
+            "retargeting_mouth": 0.0,
+            "crop_factor": 1.7,
+            "turn_on": true,
+            "tracking_src_vid": false,
+            "animate_without_vid": true,
+            "command": "0=1:8\n1=12:12\n0=12:3",
+            "motion_link": [
+              "10",
+              1
+            ]
+          }
+        },
+        "13": {
+          "class_type": "CreateVideo",
+          "inputs": {
+            "images": [
+              "12",
+              0
+            ],
+            "fps": 24.0
+          }
+        },
+        "14": {
+          "class_type": "SaveVideo",
+          "inputs": {
+            "video": [
+              "13",
+              0
+            ],
+            "filename_prefix": "Character04B-Face/nod-controlled",
+            "format": "mp4",
+            "codec": {
+              "codec": "h264"
+            }
+          }
+        },
+        "15": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "12",
+              0
+            ],
+            "filename_prefix": "Character04B-Face/frames/nod"
+          }
+        }
+      },
+      {
+        "create_time": 1792254780487
+      },
+      [
+        "4",
+        "7",
+        "3",
+        "14",
+        "10",
+        "12",
+        "5",
+        "11",
+        "15"
+      ]
+    ],
+    "outputs": {
+      "4": {
+        "images": [
+          {
+            "filename": "half-body-source_00007_.png",
+            "subfolder": "Character04B-Face",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          }
+        ]
+      },
+      "10": {
+        "images": [
+          {
+            "filename": "expression_edit_preview6.png",
+            "type": "temp",
+            "metadata": {
+              "kind": "image",
+              "width": 512,
+              "height": 512
+            }
+          }
+        ]
+      },
+      "5": {
+        "images": [
+          {
+            "filename": "face-detected_00007_.png",
+            "subfolder": "Character04B-Face",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          }
+        ]
+      },
+      "11": {
+        "images": [
+          {
+            "filename": "nod-target_00002_.png",
+            "subfolder": "Character04B-Face",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          }
+        ]
+      },
+      "15": {
+        "images": [
+          {
+            "filename": "nod_00001_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00002_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00003_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00004_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00005_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00006_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00007_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00008_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00009_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00010_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00011_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00012_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00013_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00014_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00015_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00016_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00017_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00018_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00019_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00020_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00021_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00022_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00023_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00024_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00025_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00026_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00027_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00028_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00029_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00030_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00031_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00032_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00033_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00034_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00035_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00036_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00037_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00038_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00039_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00040_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00041_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00042_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00043_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00044_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00045_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00046_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00047_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          },
+          {
+            "filename": "nod_00048_.png",
+            "subfolder": "Character04B-Face\\frames",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          }
+        ]
+      },
+      "7": {
+        "images": [
+          {
+            "filename": "face-edit-mask_00007_.png",
+            "subfolder": "Character04B-Face",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 704,
+              "height": 768
+            }
+          }
+        ]
+      },
+      "14": {
+        "images": [
+          {
+            "filename": "nod-controlled_00001_.mp4",
+            "subfolder": "Character04B-Face",
+            "type": "output",
+            "metadata": {
+              "kind": "video",
+              "width": 704,
+              "height": 768,
+              "duration": 2.0,
+              "fps": 24.0,
+              "frame_count": 48
+            }
+          }
+        ],
+        "animated": [
+          true
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "c35d6b3f-31be-464b-82ea-8414b146e10f",
+            "timestamp": 1792254807308
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [],
+            "prompt_id": "c35d6b3f-31be-464b-82ea-8414b146e10f",
+            "timestamp": 1792254807312
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "c35d6b3f-31be-464b-82ea-8414b146e10f",
+            "timestamp": 1792254820028
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "4": {
+        "node_id": "4",
+        "display_node": "4",
+        "parent_node": null,
+        "real_node_id": "4"
+      },
+      "10": {
+        "node_id": "10",
+        "display_node": "10",
+        "parent_node": null,
+        "real_node_id": "10"
+      },
+      "5": {
+        "node_id": "5",
+        "display_node": "5",
+        "parent_node": null,
+        "real_node_id": "5"
+      },
+      "11": {
+        "node_id": "11",
+        "display_node": "11",
+        "parent_node": null,
+        "real_node_id": "11"
+      },
+      "15": {
+        "node_id": "15",
+        "display_node": "15",
+        "parent_node": null,
+        "real_node_id": "15"
+      },
+      "7": {
+        "node_id": "7",
+        "display_node": "7",
+        "parent_node": null,
+        "real_node_id": "7"
+      },
+      "14": {
+        "node_id": "14",
+        "display_node": "14",
+        "parent_node": null,
+        "real_node_id": "14"
+      }
+    }
+  }
+}

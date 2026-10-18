@@ -1,0 +1,76 @@
+04 号角色：可换装、可替换发型的真实 3D 结构与动作原型
+
+交付定位
+这是实际 Blender 网格、骨骼、权重和关键帧，不是 AI 生成的动画视频。
+本轮验证资产结构与动作可行性；程序化模型的脸、头发、服装褶皱和装饰尚未达到概念图美术精度。
+未替换当前游戏角色，也未声称已接入 Unity 创建角色界面。
+
+直接看效果
+Documentation/Character04Evidence/preview.html：离线动画查看器，支持暂停、切换测试、拖动逐帧查看。
+wardrobe-motion.gif：短款红衣短发 / 长款蓝衣长发 / 长款青衣长发组合对比。
+material-motion.gif：相同蓝色长衣和长发，亚麻 / 丝质 / 硬皮革的单变量响应对比。
+hair-motion.gif：转头时短发 / 长发对比。
+gesture.gif、nod.gif、walk.gif：抬手、点头与行走测试。
+所有图像由同一真实模型渲染。4 秒动作源动画为 24 fps；预览每隔 4 帧采样，即 6 fps。
+6 fps 用于控制评审文件体积，并非最终游戏动画帧率。
+
+Blender 中使用
+1. 打开 Character04_WardrobeMotion.blend。
+2. 在 Scripting / Text Editor 打开内嵌 wardrobe_panel.py，点击 Run Script。
+3. 回到 3D View，按 N，选择 ML04 标签。
+4. 独立切换 Outerwear、Hair、Color、Fabric response、Action。
+5. 空格播放 / 暂停。时间轴范围 1-96。
+6. 使用相机视图和 Rendered 视口检查最终卡通材质；Material Preview 的灯光可能不同。
+脚本不会自动执行，不需要打开 Blender 的全局自动运行权限。
+
+模型结构
+42 根骨骼：基础人体骨骼 + 8 组、每组 3 节的衣摆/披风/发束附加骨骼。
+body：共用身体、内搭、腰带、罗盘、靴子等。
+coat_short / coat_long：二选一；共用骨骼规范，实际网格长度不同。
+hair_bob / hair_long：二选一；共用头部与发束骨骼。
+外衣材质颜色：red / navy / teal。颜色变化独立于款型、头发和配饰。
+长短款的金色衣摆饰边是独立几何，随衣摆骨骼移动。
+2 外衣 × 2 发型 × 3 颜色 × 3 衣料响应 = 36 种面板组合。
+面板控制收藏夹中对象可见性，而不是破坏性地删除模型。
+
+动作与摆动
+Idle、Gesture、Nod、Walk。
+Turn_Linen / Turn_Silk / Turn_Leather：短发转身。
+Turn_Linen_Long / Turn_Silk_Long / Turn_Leather_Long：长发转身。
+HeadTurn_Bob / HeadTurn_Long：转头。
+根部/头部转动的角速度驱动阻尼弹簧，逐帧烘焙到附加骨骼。
+亚麻适度滞后；丝质回摆更明显；硬皮革摆幅更小、回正更快。
+头发参数按发型选择，不随外衣材质改变。
+Fabric response 当前选择预烘焙的 Turn 动作，不是修改一项参数就自动重新模拟所有动作。
+这些材质参数是视觉测试用值，不是物理测量值。
+
+仍需完成
+没有实时布料/头发碰撞解算。长发贴肩、衣摆近腿、抬手靠近披风处仍可能发生穿插。
+本轮没有动态碰撞验收，不能把绑定校验通过当成无穿插证明。
+当前摆动主要响应转向；点头、走路垂直惯性和抬手碰撞尚未完整建模。
+脸部尚未制作眨眼、口型和表情 shape keys；本轮只测试骨骼动作。
+衣物跨极端体型的适配、身体遮挡遮罩、发型与帽子的适配未在本轮实现。
+仍需改善衣袖/关节连续性、发束衔接、长发根部与肩部间距和材质细节。
+
+下一步制作建议
+先认可动作结构，再按 04 号概念图精修头脸、发束与服装拓扑。
+Unity 侧沿用相同骨骼命名，换衣和换发使用 SkinnedMeshRenderer 与共用骨骼映射。
+把本次弹簧烘焙参数迁移为实时响应前，需要加入头部/胸肩/腿部碰撞体、限幅和重置逻辑。
+视角切换、读档、换衣、换发时应重置弹簧状态，避免第一帧甩动。
+更换衣物时同时更新外衣网格、材质、附加骨骼配置和身体遮挡区域。
+
+导出与验证
+两个 FBX 包含网格、骨骼和动作；Blender Shader to RGB 材质不能完整移植到 Unity。
+FBX 是结构与动画交换文件，Unity 中需要重建卡通材质，并配置通用骨骼动画。
+validation.json：顶点权重和骨骼引用检查、动作列表、摆幅统计。
+wardrobe-validation.json：36 种组合可见性与动作切换检查。
+independence-validation.json：更换衣料不改变发束动画的检查。
+fbx-roundtrip-validation.json：FBX 回导骨骼、动画和蒙皮检查。
+这些是 Blender / 文件级验证，不是 Unity 实机验收。
+
+复现
+Blender --background --factory-startup -t 4 --python-exit-code 1 --python Tools/build_character04.py
+Blender --background ../ArtSource/Character04/Character04_WardrobeMotion.blend -t 4 --python-exit-code 1 --python Tools/finalize_character04.py
+Blender --background ../ArtSource/Character04/Character04_WardrobeMotion.blend -t 4 --python-exit-code 1 --python Tools/render_character04.py
+Python Tools/package_character04.py
+上述路径相对 MaritimeLegend。需 Blender 3.5 与 Python Pillow。

@@ -1,0 +1,55 @@
+04 号角色：Unity 测试与材质说明
+
+1. 在 Unity Hub 打开 D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend。
+   使用 Unity 6000.3.10f1，等待导入与脚本编译结束。
+2. 从顶部菜单选择 Maritime Legend > Character 04 > Play Test Scene。
+   使用这个入口，不要只打开场景后直接按默认 Play：项目原有 EditorEntry 会将默认启动场景指向主菜单。
+3. 在 Game 标签查看人物。左侧提供长短外衣、短长发、颜色、衣料响应与动作切换。
+   Pause 暂停；进度滑条逐帧/逐时刻检查；View rotation 旋转观察；Face close-up 查看脸部。
+4. 如只想编辑，选择 Open Test Scene。
+   场景：Assets/Character04/Character04Preview.unity。
+   模型：Assets/Character04/Models。
+   材质：Assets/Character04/Materials。
+5. 不启动编辑器也可运行 Builds/Character04/Character04Preview.exe。
+   请保留同目录的 Data、MonoBleedingEdge 与 DLL 等文件，不要只移动 exe。
+
+为什么之前只看到骨骼/简化模型
+之前的 FBX 位于 ArtSource，尚未作为 Unity Assets 中的角色测试场景配置。
+Blender 的 Shader to RGB 卡通节点不会随 FBX 自动变成 Unity Shader。
+人物衣物、发束是实际独立网格，骨骼只负责驱动网格。
+Unity 里应查看带 SkinnedMeshRenderer 的网格节点，材质分配在 Renderer 的 Materials 中，而不是在骨骼 Transform 上。
+Scene 若显示大量骨骼线，可关闭 Gizmos 并使用 Shaded 显示；最终效果查看 Game。
+
+本次自动配置了什么
+导入两套 FBX；设置 Legacy 动画用于独立测试；创建 15 个 Unity .mat 材质。
+使用 Maritime/Character04Toon 三段明暗 Shader，重建 Blender 原型的基础配色。
+按每个网格的材料名称分配皮肤、头发、黑色内搭、白袖、外衣、皮革和金属颜色。
+测试器同步采样两套同规格骨骼，仅启用所选衣服/头发和一套身体，可交叉搭配长短衣与长短发。
+双骨骼实例用于本轮评审便利，生产实现应把可替换部件绑定到一套共享骨骼。
+身体、外衣、发型无需你逐个拖拽贴图才能在此测试场景中显示。
+当前项目虽然安装 URP 包，GraphicsSettings 实际没有启用 Render Pipeline Asset；本轮按 Built-in 验证。
+
+已有材质，不等于已经有概念图级贴图
+本轮没有制作完整的角色 UV、脸部手绘贴图、衣服刺绣贴图、法线与布料粗糙度贴图。
+当前 Shader 使用颜色和法线方向计算卡通明暗，没有概念图贴图输入。
+不能把八人概念图直接拖到整个模型上得到正确的正面、侧面和背面外观。
+部分程序化网格尚无生产可用 UV；随意挂一张图会产生拉伸和错位。
+
+达到概念图效果所需的下一阶段
+精修 04 号头脸、发束、衣服剪裁和饰品网格；为身体、头发、每件可换外衣分别展开 UV。
+制作匹配 UV 的 BaseColor（皮肤/五官/布料/刺绣）与换色 Mask，必要时增加 Normal 等贴图。
+在支持相应贴图和遮罩的 Unity 卡通 Shader 中接入这些纹理。
+衣服主色/辅色使用 Mask 分区，避免改衣服颜色时连金属扣、刺绣和皮带一起改色。
+衣物款型替换换的是蒙皮网格；同款颜色变化通常只修改材质参数。
+
+动作边界
+头发与衣摆响应仍为 Blender 预烘焙骨骼动画；Fabric response 对 Turn 动作生效。
+转动 View rotation 只是查看角度，不会触发实时物理摆动。
+没有实时布料/头发碰撞解算；无表情口型；当前模型仍是结构原型。
+这份测试场景独立于正式游戏场景，不改当前游戏的角色创建流程。
+
+本轮验证结果
+隔离 Unity 项目已构建 Windows 测试程序，并以 D3D11 实际运行。
+36 种组合完成切换与动画采样；两套模型均找到 12 个动作，材质 Shader 支持检查通过。
+已检查摄像机直接渲染的 unity-short.png / unity-long.png，并修正默认朝向和薄片网格背面显示。
+测试场景、材质、模型导入配置已复制回主项目 Assets/Character04；主项目其他游戏流程未在本轮回归测试。

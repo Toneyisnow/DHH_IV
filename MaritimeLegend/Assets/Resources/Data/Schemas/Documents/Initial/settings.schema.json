@@ -16,7 +16,8 @@
         "textSpeed",
         "moveSpeed",
         "battleSpeed",
-        "animations"
+        "animations",
+        "locale"
       ],
       "properties": {
         "master": {
@@ -42,6 +43,9 @@
         },
         "animations": {
           "type": "boolean"
+        },
+        "locale": {
+          "type": "string"
         }
       }
     }

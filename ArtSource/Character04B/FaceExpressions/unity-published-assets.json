@@ -1,0 +1,27 @@
+[
+  {
+    "source": "ArtSource\\Character04B\\FaceExpressions\\blink-sleeves-v3.mp4",
+    "unity_resource": "Videos/Characters/Character04/Character04_01_Idle.mp4",
+    "sha256": "83d98812431e4593c960951733461b432f097765de5d2cc3da265b5e8014d70c"
+  },
+  {
+    "source": "ArtSource\\Character04B\\FaceExpressions\\smile.mp4",
+    "unity_resource": "Videos/Characters/Character04/Character04_02_Smile.mp4",
+    "sha256": "10fe5cedcaf39c9fc2560ad8f0dbbfe4400538186ecd64cc824b8c08fe79436b"
+  },
+  {
+    "source": "ArtSource\\Character04B\\FaceExpressions\\half-body-source.png",
+    "unity_resource": "Textures/Characters/Character04/Portrait.png",
+    "sha256": "28c245d63be365294c17ce7a1059d13072de021e509da12d3275d626a0bc9adf"
+  },
+  {
+    "source": "ArtSource\\Character04B\\FaceExpressions\\nod-single-v2.mp4",
+    "unity_resource": "Videos/Characters/Character04/Character04_03_Nod.mp4",
+    "sha256": "406789e6d36273302c8666da108ddb6a2550245e7493c7a9528bc00ebd1b755a"
+  },
+  {
+    "source": "ArtSource\\Character04B\\FaceExpressions\\nod-double-v1.mp4",
+    "unity_resource": "Videos/Characters/Character04/Character04_04_DoubleNod.mp4",
+    "sha256": "1c82ad80d3245191bb2103e516924815f9cb4db4d410a2f798f34b0d564a75b5"
+  }
+]

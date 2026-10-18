@@ -1,0 +1,90 @@
+{
+  "locale": "ko-KR",
+  "complete": false,
+  "entries": [
+    {
+      "key": "ui.sailing.accept",
+      "text": "도전하기"
+    },
+    {
+      "key": "ui.sailing.decline",
+      "text": "계속 항해"
+    },
+    {
+      "key": "sailing.event.unavailable",
+      "text": "이 이벤트는 종료되었습니다."
+    },
+    {
+      "key": "sailing.event.declined",
+      "text": "항해를 계속합니다."
+    },
+    {
+      "key": "sailing.event.energy_low",
+      "text": "기력이 부족합니다. 자원은 소모되지 않았습니다."
+    },
+    {
+      "key": "sailing.event.cargo_full",
+      "text": "적재 공간이 부족합니다. 자원은 소모되지 않았습니다."
+    },
+    {
+      "key": "sailing.event.bottle.prompt",
+      "text": "밀봉된 작은 병이 떠옵니다. 건져 볼까요?"
+    },
+    {
+      "key": "sailing.event.crate.prompt",
+      "text": "파도 사이로 나무 상자가 떠옵니다. 건질까요?"
+    },
+    {
+      "key": "sailing.event.mermaid.prompt",
+      "text": "파도 너머에서 신비한 노랫소리가 들립니다. 따라갈까요?"
+    },
+    {
+      "key": "sailing.event.wreck.prompt",
+      "text": "안개 속에 부서진 돛대가 보입니다. 잔해를 수색할까요?"
+    },
+    {
+      "key": "sailing.event.bottle.result",
+      "text": "항해 단서를 얻었습니다. 기력 {2} 소모."
+    },
+    {
+      "key": "sailing.event.mermaid.result",
+      "text": "노랫소리의 단서를 기록했습니다. 기력 {2} 소모."
+    },
+    {
+      "key": "sailing.event.crate.result",
+      "text": "{0} {1}개 획득. 기력 {2} 소모."
+    },
+    {
+      "key": "sailing.event.wreck.result",
+      "text": "잔해에서 {0} {1}개 발견. 기력 {2} 소모."
+    },
+    {
+      "key": "sea.north_sea.name",
+      "text": "북해"
+    },
+    {
+      "key": "sea.mediterranean_sea.name",
+      "text": "지중해"
+    },
+    {
+      "key": "sea.africa.name",
+      "text": "아프리카"
+    },
+    {
+      "key": "sea.indian_ocean.name",
+      "text": "인도양"
+    },
+    {
+      "key": "sea.southeast_asia.name",
+      "text": "동남아시아"
+    },
+    {
+      "key": "sea.east_asia.name",
+      "text": "동아시아"
+    },
+    {
+      "key": "sea.new_world.name",
+      "text": "신대륙"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+旧版 proud-v1 / proud-smile-v2 已被用户否定：模糊、抖动、帧间不连贯、手指结构错误。仅保留历史记录，禁止作为游戏正式资源发布。Unity 副本及其 meta 已移入 RejectedUnityCopy。下一版采用高清目标姿势与可控关键帧方案。

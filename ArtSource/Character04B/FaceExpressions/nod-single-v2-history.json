@@ -1,0 +1,822 @@
+{
+  "prompt": [
+    1,
+    "a98a51a0-2b26-4c01-819c-4a28d580bf34",
+    {
+      "1": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "B-animation-source.png"
+        }
+      },
+      "2": {
+        "class_type": "ImageCrop",
+        "inputs": {
+          "image": [
+            "1",
+            0
+          ],
+          "width": 704,
+          "height": 768,
+          "x": 160,
+          "y": 0
+        }
+      },
+      "3": {
+        "class_type": "Character04FaceAnalysis",
+        "inputs": {
+          "image": [
+            "2",
+            0
+          ],
+          "crop_factor": 1.7
+        }
+      },
+      "4": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "2",
+            0
+          ],
+          "filename_prefix": "Character04B-Face/half-body-source"
+        }
+      },
+      "5": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "3",
+            1
+          ],
+          "filename_prefix": "Character04B-Face/face-detected"
+        }
+      },
+      "6": {
+        "class_type": "MaskToImage",
+        "inputs": {
+          "mask": [
+            "3",
+            2
+          ]
+        }
+      },
+      "7": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "6",
+            0
+          ],
+          "filename_prefix": "Character04B-Face/face-edit-mask"
+        }
+      },
+      "10": {
+        "class_type": "ExpressionEditor",
+        "inputs": {
+          "rotate_pitch": 6.0,
+          "rotate_yaw": 0.0,
+          "rotate_roll": 0.0,
+          "blink": 0.0,
+          "eyebrow": 0.0,
+          "wink": 0.0,
+          "pupil_x": 0.0,
+          "pupil_y": 0.0,
+          "aaa": 0.0,
+          "eee": 0.0,
+          "woo": 0.0,
+          "smile": 0.0,
+          "src_ratio": 1.0,
+          "sample_ratio": 1.0,
+          "sample_parts": "OnlyExpression",
+          "crop_factor": 1.7,
+          "motion_link": [
+            "3",
+            0
+          ]
+        }
+      },
+      "11": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "10",
+            0
+          ],
+          "filename_prefix": "Character04B-Face/nod-target"
+        }
+      },
+      "12": {
+        "class_type": "AdvancedLivePortrait",
+        "inputs": {
+          "retargeting_eyes": 0.0,
+          "retargeting_mouth": 0.0,
+          "crop_factor": 1.7,
+          "turn_on": true,
+          "tracking_src_vid": false,
+          "animate_without_vid": true,
+          "command": "0=1:5\n1=10:0\n0=12:20",
+          "motion_link": [
+            "10",
+            1
+          ]
+        }
+      },
+      "13": {
+        "class_type": "CreateVideo",
+        "inputs": {
+          "images": [
+            "12",
+            0
+          ],
+          "fps": 24.0
+        }
+      },
+      "14": {
+        "class_type": "SaveVideo",
+        "inputs": {
+          "video": [
+            "13",
+            0
+          ],
+          "filename_prefix": "Character04B-Face/nod-single-v2",
+          "format": "mp4",
+          "codec": {
+            "codec": "h264"
+          }
+        }
+      },
+      "15": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "12",
+            0
+          ],
+          "filename_prefix": "Character04B-Face/frames/nod-single-v2"
+        }
+      }
+    },
+    {
+      "create_time": 1792263439672
+    },
+    [
+      "5",
+      "4",
+      "11",
+      "7",
+      "12",
+      "15",
+      "10",
+      "3",
+      "14"
+    ]
+  ],
+  "outputs": {
+    "5": {
+      "images": [
+        {
+          "filename": "face-detected_00008_.png",
+          "subfolder": "Character04B-Face",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        }
+      ]
+    },
+    "4": {
+      "images": [
+        {
+          "filename": "half-body-source_00008_.png",
+          "subfolder": "Character04B-Face",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        }
+      ]
+    },
+    "10": {
+      "images": [
+        {
+          "filename": "expression_edit_preview1.png",
+          "type": "temp",
+          "metadata": {
+            "kind": "image",
+            "width": 512,
+            "height": 512
+          }
+        }
+      ]
+    },
+    "11": {
+      "images": [
+        {
+          "filename": "nod-target_00003_.png",
+          "subfolder": "Character04B-Face",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        }
+      ]
+    },
+    "15": {
+      "images": [
+        {
+          "filename": "nod-single-v2_00001_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00002_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00003_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00004_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00005_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00006_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00007_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00008_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00009_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00010_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00011_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00012_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00013_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00014_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00015_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00016_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00017_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00018_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00019_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00020_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00021_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00022_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00023_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00024_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00025_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00026_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00027_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00028_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00029_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00030_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00031_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00032_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00033_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00034_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00035_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00036_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00037_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00038_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00039_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00040_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00041_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00042_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00043_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00044_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00045_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00046_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00047_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        },
+        {
+          "filename": "nod-single-v2_00048_.png",
+          "subfolder": "Character04B-Face\\frames",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        }
+      ]
+    },
+    "7": {
+      "images": [
+        {
+          "filename": "face-edit-mask_00008_.png",
+          "subfolder": "Character04B-Face",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 704,
+            "height": 768
+          }
+        }
+      ]
+    },
+    "14": {
+      "images": [
+        {
+          "filename": "nod-single-v2_00001_.mp4",
+          "subfolder": "Character04B-Face",
+          "type": "output",
+          "metadata": {
+            "kind": "video",
+            "width": 704,
+            "height": 768,
+            "duration": 2.0,
+            "fps": 24.0,
+            "frame_count": 48
+          }
+        }
+      ],
+      "animated": [
+        true
+      ]
+    }
+  },
+  "status": {
+    "status_str": "success",
+    "completed": true,
+    "messages": [
+      [
+        "execution_start",
+        {
+          "prompt_id": "a98a51a0-2b26-4c01-819c-4a28d580bf34",
+          "timestamp": 1792263439677
+        }
+      ],
+      [
+        "execution_cached",
+        {
+          "nodes": [],
+          "prompt_id": "a98a51a0-2b26-4c01-819c-4a28d580bf34",
+          "timestamp": 1792263439769
+        }
+      ],
+      [
+        "execution_success",
+        {
+          "prompt_id": "a98a51a0-2b26-4c01-819c-4a28d580bf34",
+          "timestamp": 1792263479132
+        }
+      ]
+    ]
+  },
+  "meta": {
+    "5": {
+      "node_id": "5",
+      "display_node": "5",
+      "parent_node": null,
+      "real_node_id": "5"
+    },
+    "4": {
+      "node_id": "4",
+      "display_node": "4",
+      "parent_node": null,
+      "real_node_id": "4"
+    },
+    "10": {
+      "node_id": "10",
+      "display_node": "10",
+      "parent_node": null,
+      "real_node_id": "10"
+    },
+    "11": {
+      "node_id": "11",
+      "display_node": "11",
+      "parent_node": null,
+      "real_node_id": "11"
+    },
+    "15": {
+      "node_id": "15",
+      "display_node": "15",
+      "parent_node": null,
+      "real_node_id": "15"
+    },
+    "7": {
+      "node_id": "7",
+      "display_node": "7",
+      "parent_node": null,
+      "real_node_id": "7"
+    },
+    "14": {
+      "node_id": "14",
+      "display_node": "14",
+      "parent_node": null,
+      "real_node_id": "14"
+    }
+  }
+}

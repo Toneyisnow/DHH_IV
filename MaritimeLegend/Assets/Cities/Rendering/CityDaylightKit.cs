@@ -6,7 +6,7 @@ using UnityEngine.Rendering;
 namespace MaritimeLegend {
 // Blender-baked, material-batched meshes. Kept in Resources for player builds.
 public sealed class CityDaylightKit : IDisposable {
- [Serializable] public class Part { public Vector3[] vertices; public int[] triangles; public Color color; }
+ [Serializable] public class Part { public string material; public Vector3[] vertices; public int[] triangles; public Color color; }
  [Serializable] public class Model { public Part[] parts; }
  readonly Dictionary<string, GameObject> templates = new Dictionary<string, GameObject>();
  readonly List<UnityEngine.Object> owned = new List<UnityEngine.Object>();
@@ -20,7 +20,7 @@ public sealed class CityDaylightKit : IDisposable {
    template=new GameObject(model+" template");template.transform.SetParent(parent,false);template.SetActive(false);
    foreach(var part in data.parts) {
     var mesh=new Mesh {name=model,indexFormat=IndexFormat.UInt32,vertices=part.vertices,triangles=part.triangles};mesh.RecalculateNormals();mesh.RecalculateBounds();owned.Add(mesh);
-    var mat=new Material(shader) {color=part.color};owned.Add(mat);
+    var mat=new Material(shader) {color=part.color};owned.Add(mat);CityPixelMaterials.Apply(mat,model=="Bridge"&&part.material=="cream"?"stone":part.material);
     var child=new GameObject("Baked mesh",typeof(MeshFilter),typeof(MeshRenderer));child.transform.SetParent(template.transform,false);child.layer=20;
     child.GetComponent<MeshFilter>().sharedMesh=mesh;var renderer=child.GetComponent<MeshRenderer>();renderer.sharedMaterial=mat;renderer.shadowCastingMode=ShadowCastingMode.On;renderer.receiveShadows=true;
    }

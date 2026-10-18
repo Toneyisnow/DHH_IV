@@ -10,4 +10,4 @@ namespace UnityEngine {
  public static class Debug {public static void Log(object text)=>Console.WriteLine(text);}
 }
 namespace UnityEditor {public class MenuItem:Attribute {public MenuItem(string value){}}}
-class Program {static void Main(string[] args){MaritimeLegend.Editor.InitialStockChecks.Run();MaritimeLegend.Editor.DataConfigurationChecks.Run();if(Array.IndexOf(args,"--campaign")>=0)MaritimeLegend.Editor.DomainChecks.Run();}}
+class Program {static void Main(string[] args){MaritimeLegend.Editor.InitialStockChecks.Run();MaritimeLegend.Editor.DataConfigurationChecks.Run();MaritimeLegend.Editor.SailingArchitectureChecks.Run();if(Array.IndexOf(args,"--campaign")>=0)MaritimeLegend.Editor.DomainChecks.Run();}}

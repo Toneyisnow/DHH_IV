@@ -1,0 +1,48 @@
+{
+  "backgrounds": [
+    {
+      "id": "merchant",
+      "nameKey": "background.merchant.name",
+      "prologueKey": "background.merchant.prologue",
+      "materialProductId": "",
+      "mock": true,
+      "goldMultiplier": 1.2,
+      "supplyMultiplier": 1.0,
+      "hullMultiplier": 1.0,
+      "materialQuantity": 0
+    },
+    {
+      "id": "explorer",
+      "nameKey": "background.explorer.name",
+      "prologueKey": "background.explorer.prologue",
+      "materialProductId": "",
+      "mock": true,
+      "goldMultiplier": 0.9,
+      "supplyMultiplier": 1.2,
+      "hullMultiplier": 1.0,
+      "materialQuantity": 0
+    },
+    {
+      "id": "artisan",
+      "nameKey": "background.artisan.name",
+      "prologueKey": "background.artisan.prologue",
+      "materialProductId": "p19",
+      "mock": true,
+      "goldMultiplier": 1.0,
+      "supplyMultiplier": 1.0,
+      "hullMultiplier": 1.0,
+      "materialQuantity": 8
+    },
+    {
+      "id": "escort",
+      "nameKey": "background.escort.name",
+      "prologueKey": "background.escort.prologue",
+      "materialProductId": "",
+      "mock": true,
+      "goldMultiplier": 1.0,
+      "supplyMultiplier": 1.0,
+      "hullMultiplier": 1.1,
+      "materialQuantity": 0
+    }
+  ]
+}

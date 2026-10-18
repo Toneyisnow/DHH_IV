@@ -1,0 +1,76 @@
+B 半身像：先分析、再表情驱动（2026-10-17）
+
+打开 preview.html 对比三段动画，并查看检测框、实际编辑遮罩与验证数据。
+blink.mp4：闭眼并睁眼；smile.mp4：嘴角上扬并恢复；nod.mp4：低头并恢复。
+全部为 704×768、24fps、48 帧、2 秒。
+
+本次安装：H:\DHH_IV\ComfyUI\custom_nodes\ComfyUI-AdvancedLivePortrait
+插件来源：https://github.com/PowerHouseMan/ComfyUI-AdvancedLivePortrait
+模型：H:\DHH_IV\ComfyUI\models\liveportrait
+人脸检测模型：H:\DHH_IV\ComfyUI\models\ultralytics\face_yolov8n.pt
+原始输出和无损序列帧：H:\DHH_IV\ComfyUI\output\Character04B-Face
+额外诊断节点：Character04FaceAnalysis，源码保存在项目 Tools\character04_expression_analysis.py。
+
+实际流程：
+1. ComfyUI ImageCrop 从现有 B 图裁出 704×768 半身像，不重新生成角色。
+2. YOLO 检测唯一人脸（阈值 0.7）。未检测到唯一人脸时诊断节点会停止，不使用全图回退。
+3. LivePortrait 提取姿态、21 个隐式 3D 关键点、表情分量与外观特征体；保存 face-analysis.json。
+4. 先检查 ExpressionEditor 的闭眼/微笑/低头目标图，再使用 AdvancedLivePortrait 插值。
+5. 使用插件原有面部遮罩融合回半身像，保存视频及 PNG 无损帧。
+
+参数：blink=-15；smile=0.7；rotate_pitch=6；其余控制量均为 0。
+眨眼命令：0=1:12 / 1=4:2 / 0=6:23（每个斜杠表示换行）。
+微笑与点头命令：0=1:8 / 1=12:12 / 0=12:3。
+命令格式：表情索引=过渡帧数:保持帧数，0 是原始姿态。
+
+原版表情验证（不包含新增风动）：三段的全部 48 张无损帧中，下部 y>=320 区域相对第一帧最大像素差均为 0；首尾帧最大像素差也均为 0。
+该区域包含衣服、袖子、手、腰带和罗盘。MP4 有压缩误差，因此这些指标不用于声称压缩后每个像素都不变。
+静态目标帧目视确认：眼睛闭合、嘴角上扬、头部俯仰可以区分。仍有局部脸部柔化与重建细节变化。
+生成耗时：眨眼 13.98 秒；微笑 12.91 秒；低头 12.72 秒（含保存无损序列帧，本机实测）。
+
+复现：运行项目 Tools\start_character04_comfy.ps1，打开 http://127.0.0.1:8188。
+在项目根目录依次执行：
+python -B MaritimeLegend\Tools\character04_face_workflow.py analysis
+python -B MaritimeLegend\Tools\character04_face_workflow.py blink --animate
+python -B MaritimeLegend\Tools\character04_face_workflow.py smile --animate
+python -B MaritimeLegend\Tools\character04_face_workflow.py nod --animate
+可用 --amount 修改单个动作参数，例如 blink --amount -12 --animate。
+对应 *-api.json 是可复用的 ComfyUI API 工作流。
+
+边界：这是面部动作解析与驱动，不是全身骨骼绑定；21 个隐式点不等于解剖学面部关键点。
+原版三段衣物保持不动；新版 01 的局部风动见下文。
+
+新版 01：眨眼 + 斗篷风动 + 挂坠轻摆
+当前预览使用 blink-wind-v2.mp4，blink.mp4 保留作原版对照。
+这是手工指定区域的二维局部形变，不是三维骨骼或布料物理模拟。
+斗篷扣固定；肩侧和下部布料使用不同相位的轻微风动，挂坠绕连接点约 ±7° 摆动。
+脸部沿用原版眨眼逐帧结果。无损帧检查：脸、手、罗盘盘面、斗篷扣与原版差异均为 0，首尾帧相同。
+视频为 704×768、24fps、48 帧、2 秒；MP4 压缩会引入像素误差。
+工作流：blink-wind-v2-api.json；检查结果：wind-validation.json。
+脚本：MaritimeLegend/Tools/character04_wind_workflow.py。
+验证与发布：MaritimeLegend/Tools/publish_character04_portraits.py。
+
+目录约定：
+源文件及预览：DHH_IV/ArtSource/Character04B/FaceExpressions/
+Unity 最终视频副本：DHH_IV/MaritimeLegend/Assets/Resources/Videos/Characters/Character04/
+  Character04_01_Idle.mp4（新版风动）
+  Character04_02_Smile.mp4
+  Character04_03_Nod.mp4
+Unity 最终贴图副本：DHH_IV/MaritimeLegend/Assets/Resources/Textures/Characters/Character04/Portrait.png
+发布校验清单：unity-published-assets.json。文件已复制并校验，尚未进行 Unity 场景内播放测试。
+第三版 01（当前版本）：blink-sleeves-v3.mp4
+取消肩部斗篷晃动，替换为两个白色袖口的细微摆动；保留眨眼、斗篷下摆与挂坠动作。
+袖口主要位移约 1.5–2 像素，左右略有相位差，手部与肩部保持固定。
+验证：sleeves-validation.json；工作流：blink-sleeves-v3-api.json。
+可从仓库根目录使用 H 盘环境执行：
+H:/DHH_IV/ComfyUI/.venv/Scripts/python.exe -B MaritimeLegend/Tools/render_character04_sleeves.py
+节点源码已更新至 H 盘 ComfyUI 插件；通过 ComfyUI 导入新工作流前需重启已有服务以加载新节点。
+preview.html 和 Unity 的 Character04_01_Idle.mp4 已更新为此版；前两版保留供对照。
+03 / 04 点头更新：
+03 当前版 nod-single-v2.mp4：初始姿态 6 帧，10 帧低头到 6°，无停顿直接用 12 帧回正，最后 20 帧原姿态循环间隔。
+04 新增 nod-double-v1.mp4：初始姿态 6 帧，10 帧低头到 6°，4 帧抬回到 4°（恢复三分之一），4 帧再低头到 6°，12 帧回正，最后 12 帧循环间隔。
+两段均 48 帧、24fps、2 秒。低头最低点保持帧数均为 0。
+原 nod.mp4 保留作旧版对照。01、02 未修改。
+对应 *-api.json 可通过 ComfyUI API 复现；生成发布脚本 MaritimeLegend/Tools/character04_nod_variants.py。
+验证文件 nod-variants-validation.json：衣物区域逐帧不变，首尾一致，最低点后下一帧已恢复运动。
+Unity Resources/Videos/Characters/Character04/ 中 Character04_03_Nod.mp4 已替换，新增 Character04_04_DoubleNod.mp4。

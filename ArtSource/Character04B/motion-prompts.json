@@ -1,0 +1,10 @@
+{
+  "style": "Locked camera, full body portrait of the same adult female ship captain from the reference image. Beautiful cel shaded hand-painted Japanese strategy RPG illustration. Preserve her exact facial identity, short black bob, red cape, ivory blouse, black and gold waistcoat, belts, compass, trousers and boots. The warm gray background stays uniform and completely still. Her feet and hands remain in their original positions. Subtle restrained motion, stable silhouette and costume details.",
+  "negative": "camera movement, zoom, pan, cut, scene change, walking, stepping, dancing, large body movement, turning around, waving, moving hands, talking, open mouth, exaggerated expression, changing face, changing costume, changing accessories, melting embroidery, distorted compass, extra limbs, extra fingers, duplicate person, flickering, blurry face, photorealistic skin, 3d render, text, watermark, moving background",
+  "motions": {
+    "idle": "She breathes slowly and gently, with barely perceptible movement at the shoulders. She blinks naturally once. Only the ends of her hair and the bottom edge of the cape move a tiny amount, then settle. Her gaze and confident expression remain steady.",
+    "nod": "She gives one very small, slow acknowledging nod, lowering her chin only slightly and returning to her original pose. The ends of her short hair follow the movement with a tiny delayed sway. Her torso, hands and feet stay still. Her mouth remains closed.",
+    "smile": "She very gently softens her expression into a restrained closed-mouth smile, then relaxes back to her initial expression. One natural blink, almost imperceptible breathing, otherwise still. Her head angle, hands and feet remain unchanged."
+  },
+  "notes": "Prompt targets, not guaranteed motion controls. Review actual output for identity drift, facial/costume artifacts and camera motion. This single-image video route does not produce a reusable 3D rig or independent garment layers."
+}

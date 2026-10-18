@@ -1,0 +1,14 @@
+{
+  "localizationPlan": {
+    "sourceLocale": "zh-CN",
+    "fallbackLocale": "zh-CN",
+    "locales": [
+      "zh-CN",
+      "en-US",
+      "zh-TW",
+      "ja-JP",
+      "ko-KR"
+    ],
+    "translationsComplete": false
+  }
+}

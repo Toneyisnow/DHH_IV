@@ -5,7 +5,7 @@ The reference informed perspective, camera following, layered depth, water edges
 and sprite characters. The new art is original Blender geometry, set in daylight.
 
 Assets
-- ArtSource/CityDaylight/DaylightKit.blend: reusable collections. Enable one collection
+- ../ArtSource/CityDaylight/DaylightKit.blend: reusable collections. Enable one collection
   at a time to inspect it at the origin; collections are hidden for sprite rendering.
 - Tools/build_city_daylight.py: deterministic Blender 3.5 generator. Builds models first,
   saves the .blend, then renders eight directions and eight gait frames per direction.
@@ -69,3 +69,18 @@ Reference-layout revision
 
 Reference-layout verification: preview build PASS, 97 runtime checks PASS.
 Screenshot: Documentation/CityDaylightEvidence/Town-layout-UI.png
+
+Pixel-painted material revision
+- Original AI-generated diffuse atlas: Assets/Resources/CityDaylight/Textures/PixelMaterials.png.
+  Six cells: cobblestone, aged plaster, slate, walnut timber, olive leaves, cut masonry.
+  Reference screenshots informed palette/pixel painting; no screenshot pixels were extracted.
+- CitySurface projects the atlas in world space with point filtering, fixed pixel grids,
+  inset cell samples and dominant-axis blending. Leaf saturation is restrained; canvas
+  uses discrete woven/fold shading. The scene retains real directional and local shadows.
+- Cooler, darker ambient light and stronger sun shadows increase daylight contrast.
+- Added material identifiers to mesh JSON and the Blender exporter. Vertices and triangle
+  indices in all eight models remain byte-equivalent after JSON normalization versus HEAD.
+  GeometryHashes.json records the normalized geometry fingerprints.
+- Map, camera-follow movement, player atlas and UI layout retained.
+- Preview build and 99 runtime checks passed. See PixelChecks.txt, Pixel-town-UI.png
+  and Pixel-Venice.png in Documentation/CityDaylightEvidence.

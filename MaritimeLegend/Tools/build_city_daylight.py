@@ -8,7 +8,7 @@ from mathutils import Vector
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'Assets/Resources/CityDaylight'
-SOURCE = ROOT / 'ArtSource/CityDaylight'
+SOURCE = ROOT.parent / 'ArtSource/CityDaylight'
 OUT.mkdir(parents=True, exist_ok=True)
 SOURCE.mkdir(parents=True, exist_ok=True)
 random.seed(17)
@@ -107,7 +107,7 @@ def export(name,objects):
     for o in objects:
         if o.type!='MESH':continue
         mesh=o.data;mesh.calc_loop_triangles(); key=o.data.materials[0].name
-        group=groups.setdefault(key,{'vertices':[],'triangles':[],'color':dict(zip('rgba',(*palette[key],1)))})
+        group=groups.setdefault(key,{'material':key,'vertices':[],'triangles':[],'color':dict(zip('rgba',(*palette[key],1)))})
         offset=len(group['vertices'])
         for v in mesh.vertices:
             p=o.matrix_world@v.co;group['vertices'].append({'x':round(p.x,5),'y':round(p.z,5),'z':round(p.y,5)})

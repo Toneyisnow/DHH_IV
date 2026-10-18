@@ -1,0 +1,29 @@
+{
+  "sailing": {
+    "realSecondsPerGameDay": 180.0,
+    "foodPerCrewDay": 0.2,
+    "waterPerCrewDay": 0.3,
+    "logisticsFactor": 1.0,
+    "supplyReductionPerLevel": 0.01,
+    "minimumSupplyFactor": 0.5,
+    "energyPerDay": 6.0,
+    "minimumEnergyPerDay": 1.0,
+    "navigationEnergyReduction": 0.1,
+    "supplyEnergyReduction": 0.1,
+    "initialWater": 100.0,
+    "maximumEnergy": 100.0,
+    "baseDailyXp": 5,
+    "xpPerNavigationLevel": 0,
+    "xpPerVisionLevel": 0,
+    "minimumDailyDistance": 0.01,
+    "shortageSpeedFactor": 0.25,
+    "turnDegreesPerSecond": 90.0,
+    "sailDegreesPerSecond": 45.0,
+    "defaultSailDegrees": 0.0,
+    "declineSeconds": 10.0,
+    "iconLifetimeSeconds": 360.0,
+    "contactRadius": 0.025,
+    "waterUnitPrice": 1.0,
+    "energyUnitPrice": 0.1
+  }
+}

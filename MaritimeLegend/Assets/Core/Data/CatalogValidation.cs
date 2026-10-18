@@ -4,6 +4,7 @@ namespace MaritimeLegend.Domain {
 public partial class Catalog {
     void Require(bool ok,string message){if(!ok)throw new InvalidOperationException("Game data: "+message);}
     void ValidateData(){
+        ValidateSailing();
         Require(products!=null&&recipes!=null&&ports!=null&&partners!=null&&ships!=null&&skills!=null&&events!=null&&quests!=null&&factories!=null&&industries!=null&&market!=null&&balance!=null&&initial!=null,"missing category");
         Require(industries.Length>0&&skills.Length>0&&ports.Length>0&&ships.Length>0,"empty category");
         Require(market.qualityFactors!=null&&market.qualityFactors.Length==SaveContract.QualityCount&&market.qualityFactors.All(x=>x>0&&!double.IsInfinity(x)&&!double.IsNaN(x)),"quality factors");

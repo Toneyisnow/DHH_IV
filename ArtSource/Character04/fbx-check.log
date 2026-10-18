@@ -1,0 +1,6 @@
+FBX version: 7400
+FBX version: 7400
+FBX_ROUNDTRIP_PASSED [{"file": "04_short_red_bob.fbx", "bones": 42, "meshes": 100, "actions": 12, "skinning_valid": true}, {"file": "04_long_navy_longhair.fbx", "bones": 42, "meshes": 100, "actions": 12, "skinning_valid": true}]
+Blender 3.5.1 (hash e1ccd9d4a1d3 built 2023-04-24 23:56:35)
+
+Blender quit

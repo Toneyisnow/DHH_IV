@@ -1,0 +1,11 @@
+05 自豪：动作样片
+当前文件：proud-smile-v2.mp4，448×480，16fps，65帧，4.0625秒。
+流程：半身原图 → 本地 Wan 2.2 TI2V 5B 生成双手叉腰和衣物运动 → AdvancedLivePortrait 逐帧跟踪面部，渐进添加 smile=0.85。
+实际观察：双手从原手位移向腰侧，双肘外展；衣袖和斗篷随动作变化；嘴角上扬并略微露齿。
+剩余问题：部分手指形状不稳定，腰带、罗盘、装饰和身体轮廓有生成漂移；人物仍有小幅姿态摆动。未达到精修资源标准。
+结尾保留叉腰笑容；不是无缝循环，播放时应关闭 Loop。
+本地模型和临时输出仍在 H:/DHH_IV，未添加模型环境。
+Wan 本次生成耗时约15分50秒。对应 API 工作流、提交记录、运行历史和关键帧在此文件夹。
+Unity 测试副本：MaritimeLegend/Assets/Resources/Videos/Characters/Character04/Character04_05_Proud.mp4。
+视频已解码检查、复制并校验哈希；未在 Unity 场景中测试。
+复现脚本：MaritimeLegend/Tools/character04_proud_workflow.py、character04_proud_smile.py、review_character04_proud.py。

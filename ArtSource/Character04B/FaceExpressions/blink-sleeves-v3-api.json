@@ -1,0 +1,70 @@
+{
+  "1": {
+    "class_type": "Character04OriginalBlink",
+    "inputs": {}
+  },
+  "2": {
+    "class_type": "Character04SleeveWind",
+    "inputs": {
+      "images": [
+        "1",
+        0
+      ],
+      "wind_strength": 1.0,
+      "pendant_degrees": 7.0
+    }
+  },
+  "3": {
+    "class_type": "CreateVideo",
+    "inputs": {
+      "images": [
+        "2",
+        0
+      ],
+      "fps": 24.0
+    }
+  },
+  "4": {
+    "class_type": "SaveVideo",
+    "inputs": {
+      "video": [
+        "3",
+        0
+      ],
+      "filename_prefix": "Character04B-Face/blink-sleeves-v3",
+      "format": "mp4",
+      "codec": {
+        "codec": "h264"
+      }
+    }
+  },
+  "5": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "2",
+        0
+      ],
+      "filename_prefix": "Character04B-Face/wind-frames/blink-sleeves-v3"
+    }
+  },
+  "6": {
+    "class_type": "MaskToImage",
+    "inputs": {
+      "mask": [
+        "2",
+        1
+      ]
+    }
+  },
+  "7": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "6",
+        0
+      ],
+      "filename_prefix": "Character04B-Face/sleeves-motion-mask"
+    }
+  }
+}

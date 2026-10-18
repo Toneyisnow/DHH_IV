@@ -9,7 +9,7 @@ atlas = Image.new('RGBA', (1024, 1280))
 rects = []
 for frame in range(8):
     for direction in range(8):
-        source = root / f'ArtSource/CityDaylight/walker_frames/{frame}_{direction}.png'
+        source = root.parent / f'ArtSource/CityDaylight/walker_frames/{frame}_{direction}.png'
         with Image.open(source) as image:
             assert image.size == (128, 160), source
             atlas.paste(image, (direction * 128, frame * 160))

@@ -1,0 +1,167 @@
+{
+  "type": "object",
+  "required": [
+    "sailing"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "sailing": {
+      "type": "object",
+      "required": [
+        "realSecondsPerGameDay",
+        "foodPerCrewDay",
+        "waterPerCrewDay",
+        "logisticsFactor",
+        "supplyReductionPerLevel",
+        "minimumSupplyFactor",
+        "energyPerDay",
+        "minimumEnergyPerDay",
+        "navigationEnergyReduction",
+        "supplyEnergyReduction",
+        "initialWater",
+        "maximumEnergy",
+        "baseDailyXp",
+        "xpPerNavigationLevel",
+        "xpPerVisionLevel",
+        "minimumDailyDistance",
+        "shortageSpeedFactor",
+        "turnDegreesPerSecond",
+        "sailDegreesPerSecond",
+        "defaultSailDegrees",
+        "declineSeconds",
+        "iconLifetimeSeconds",
+        "contactRadius",
+        "waterUnitPrice",
+        "energyUnitPrice"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "realSecondsPerGameDay": {
+          "type": "number",
+          "minimum": 0.01,
+          "maximum": 10000
+        },
+        "foodPerCrewDay": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10000
+        },
+        "waterPerCrewDay": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10000
+        },
+        "logisticsFactor": {
+          "type": "number",
+          "minimum": 0.01,
+          "maximum": 10000
+        },
+        "supplyReductionPerLevel": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "minimumSupplyFactor": {
+          "type": "number",
+          "minimum": 0.01,
+          "maximum": 1
+        },
+        "energyPerDay": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10000
+        },
+        "minimumEnergyPerDay": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10000
+        },
+        "navigationEnergyReduction": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10000
+        },
+        "supplyEnergyReduction": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10000
+        },
+        "initialWater": {
+          "type": "number",
+          "minimum": 0.01,
+          "maximum": 10000
+        },
+        "maximumEnergy": {
+          "type": "number",
+          "minimum": 0.01,
+          "maximum": 10000
+        },
+        "baseDailyXp": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10000
+        },
+        "xpPerNavigationLevel": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10000
+        },
+        "xpPerVisionLevel": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10000
+        },
+        "minimumDailyDistance": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10000
+        },
+        "shortageSpeedFactor": {
+          "type": "number",
+          "minimum": 0.01,
+          "maximum": 1
+        },
+        "turnDegreesPerSecond": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10000
+        },
+        "sailDegreesPerSecond": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10000
+        },
+        "defaultSailDegrees": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "declineSeconds": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10000
+        },
+        "iconLifetimeSeconds": {
+          "type": "number",
+          "minimum": 0.01,
+          "maximum": 10000
+        },
+        "contactRadius": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "waterUnitPrice": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10000
+        },
+        "energyUnitPrice": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10000
+        }
+      }
+    }
+  }
+}

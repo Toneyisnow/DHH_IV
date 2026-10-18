@@ -1,0 +1,56 @@
+{
+  "type": "object",
+  "required": [
+    "backgrounds"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "backgrounds": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "nameKey",
+          "prologueKey",
+          "materialProductId",
+          "mock",
+          "goldMultiplier",
+          "supplyMultiplier",
+          "hullMultiplier",
+          "materialQuantity"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "nameKey": {
+            "type": "string"
+          },
+          "prologueKey": {
+            "type": "string"
+          },
+          "materialProductId": {
+            "type": "string"
+          },
+          "mock": {
+            "type": "boolean"
+          },
+          "goldMultiplier": {
+            "type": "number"
+          },
+          "supplyMultiplier": {
+            "type": "number"
+          },
+          "hullMultiplier": {
+            "type": "number"
+          },
+          "materialQuantity": {
+            "type": "integer"
+          }
+        }
+      }
+    }
+  }
+}

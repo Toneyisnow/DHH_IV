@@ -1,0 +1,90 @@
+{
+  "locale": "en-US",
+  "complete": false,
+  "entries": [
+    {
+      "key": "ui.sailing.accept",
+      "text": "Take a chance"
+    },
+    {
+      "key": "ui.sailing.decline",
+      "text": "Keep sailing"
+    },
+    {
+      "key": "sailing.event.unavailable",
+      "text": "This encounter is no longer available."
+    },
+    {
+      "key": "sailing.event.declined",
+      "text": "You sail on."
+    },
+    {
+      "key": "sailing.event.energy_low",
+      "text": "Not enough energy. No resources spent."
+    },
+    {
+      "key": "sailing.event.cargo_full",
+      "text": "Cargo hold full. No resources spent."
+    },
+    {
+      "key": "sailing.event.bottle.prompt",
+      "text": "A sealed bottle drifts by. Retrieve it?"
+    },
+    {
+      "key": "sailing.event.crate.prompt",
+      "text": "A wooden crate floats nearby. Send someone to retrieve it?"
+    },
+    {
+      "key": "sailing.event.mermaid.prompt",
+      "text": "A mysterious song crosses the waves. Follow it?"
+    },
+    {
+      "key": "sailing.event.wreck.prompt",
+      "text": "A broken mast emerges from the mist. Search the wreck?"
+    },
+    {
+      "key": "sailing.event.bottle.result",
+      "text": "Found a sailing clue. Spent {2} energy."
+    },
+    {
+      "key": "sailing.event.mermaid.result",
+      "text": "Recorded a clue about the song. Spent {2} energy."
+    },
+    {
+      "key": "sailing.event.crate.result",
+      "text": "Received {1} × {0}. Spent {2} energy."
+    },
+    {
+      "key": "sailing.event.wreck.result",
+      "text": "Found {1} × {0} in the wreck. Spent {2} energy."
+    },
+    {
+      "key": "sea.north_sea.name",
+      "text": "North Sea"
+    },
+    {
+      "key": "sea.mediterranean_sea.name",
+      "text": "Mediterranean"
+    },
+    {
+      "key": "sea.africa.name",
+      "text": "Africa"
+    },
+    {
+      "key": "sea.indian_ocean.name",
+      "text": "Indian Ocean"
+    },
+    {
+      "key": "sea.southeast_asia.name",
+      "text": "Southeast Asia"
+    },
+    {
+      "key": "sea.east_asia.name",
+      "text": "East Asia"
+    },
+    {
+      "key": "sea.new_world.name",
+      "text": "New World"
+    }
+  ]
+}

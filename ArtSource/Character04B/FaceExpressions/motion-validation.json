@@ -1,0 +1,38 @@
+{
+  "blink": {
+    "width": 704,
+    "height": 768,
+    "frames": 48,
+    "fps": 24.0,
+    "lossless_frames": 48,
+    "max_body_pixel_difference_vs_first_frame": 0,
+    "body_test_region": "all rows y >= 320, includes shoulders/cape, torso, sleeves, belt, hands, compass and background",
+    "max_face_mean_absolute_difference_vs_first_frame": 2.4856897144822843,
+    "first_last_max_difference": 0,
+    "peak_face_change_frame": 16
+  },
+  "smile": {
+    "width": 704,
+    "height": 768,
+    "frames": 48,
+    "fps": 24.0,
+    "lossless_frames": 48,
+    "max_body_pixel_difference_vs_first_frame": 0,
+    "body_test_region": "all rows y >= 320, includes shoulders/cape, torso, sleeves, belt, hands, compass and background",
+    "max_face_mean_absolute_difference_vs_first_frame": 1.4637656232083476,
+    "first_last_max_difference": 0,
+    "peak_face_change_frame": 20
+  },
+  "nod": {
+    "width": 704,
+    "height": 768,
+    "frames": 48,
+    "fps": 24.0,
+    "lossless_frames": 48,
+    "max_body_pixel_difference_vs_first_frame": 0,
+    "body_test_region": "all rows y >= 320, includes shoulders/cape, torso, sleeves, belt, hands, compass and background",
+    "max_face_mean_absolute_difference_vs_first_frame": 21.816672399954133,
+    "first_last_max_difference": 0,
+    "peak_face_change_frame": 20
+  }
+}

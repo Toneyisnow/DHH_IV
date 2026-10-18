@@ -1,0 +1,30 @@
+{
+  "nod-single-v2": {
+    "frames": 48,
+    "fps": 24,
+    "command": "0=1:5\n1=10:0\n0=12:20",
+    "pitch_targets_degrees": [
+      0,
+      6,
+      0
+    ],
+    "peak_hold_frames": 0,
+    "lower_body_max_difference": 0,
+    "first_last_max_difference": 0
+  },
+  "nod-double-v1": {
+    "frames": 48,
+    "fps": 24,
+    "command": "0=1:5\n1=10:0\n2=4:0\n1=4:0\n0=12:12",
+    "pitch_targets_degrees": [
+      0,
+      6,
+      4,
+      6,
+      0
+    ],
+    "peak_hold_frames": 0,
+    "lower_body_max_difference": 0,
+    "first_last_max_difference": 0
+  }
+}
