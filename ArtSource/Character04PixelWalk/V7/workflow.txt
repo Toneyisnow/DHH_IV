@@ -1,0 +1,9 @@
+V7: preserve V6 alternating arms; redraw legs/shoes for unambiguous lead-leg identity.
+Each facing: two outfit rows x five poses; near shin light charcoal, far shin dark
+charcoal; correct near/far overlap; opposite leading leg in contact poses 1 and 3.
+Source directions SW/W/E start right-leg + left-arm forward. The other five
+source directions start opposite, so import rotates their four walk frames by two.
+Final atlas columns: right leg / left arm; left leg follows; left leg / right arm;
+right leg follows; independent planted idle. No change to head-anchor correction.
+Generation: built-in imagegen, editing V6 direction strips, natural depth shading
+and distinct shoe overlap instead of color-coded labels. Source originals retained.

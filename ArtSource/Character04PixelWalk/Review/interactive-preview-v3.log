@@ -1,0 +1,53 @@
+Mono path[0] = 'D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/Builds/Character04PixelWalkV3/Character04PixelWalk_Data/Managed'
+Mono config path = 'D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/Builds/Character04PixelWalkV3/MonoBleedingEdge/etc'
+Found 3 interfaces on host : 0) 172.31.112.1 1) 10.0.0.99 2) 10.0.0.24
+Player connection [71920]  Target information:
+
+Player connection [71920]  * "[IP] 172.31.112.1 [Port] 55000 [Flags] 2 [Guid] 2124707749 [EditorId] 255102310 [Version] 1048832 [Id] WindowsPlayer(2,toneyalien12) [Debug] 0 [PackageName] WindowsPlayer [ProjectName] 航海世家" 
+
+Player connection [71920]  * "[IP] 10.0.0.99 [Port] 55000 [Flags] 2 [Guid] 2124707749 [EditorId] 255102310 [Version] 1048832 [Id] WindowsPlayer(2,toneyalien12) [Debug] 0 [PackageName] WindowsPlayer [ProjectName] 航海世家" 
+
+Player connection [71920]  * "[IP] 10.0.0.24 [Port] 55000 [Flags] 2 [Guid] 2124707749 [EditorId] 255102310 [Version] 1048832 [Id] WindowsPlayer(2,toneyalien12) [Debug] 0 [PackageName] WindowsPlayer [ProjectName] 航海世家" 
+
+Player connection [71920] Started UDP target info broadcast (1) on [225.0.0.222:54997].
+
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Initialize engine version: 6000.3.10f1 (e35f0c77bd8e)
+[Subsystems] Discovering subsystems at path D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/Builds/Character04PixelWalkV3/Character04PixelWalk_Data/UnitySubsystems
+[D3D12 Device Filter] Vendor Name: NVIDIA
+[D3D12 Device Filter] Device Name: NVIDIA GeForce RTX 3060 Ti
+[D3D12 Device Filter] Driver Version: 32.0.16.1060
+[D3D12 Device Filter] Feature Level: 12.2
+[D3D12 Device Filter] Graphics Memory: 8024 MB
+[D3D12 Device Filter] Processor Count: 16
+[D3D12 Device Filter] Device Type: Discrete
+GfxDevice: creating device client; kGfxThreadingModeSplitJobs
+d3d12: failed to query info queue interface (0x80004002).
+Direct3D:
+    Version:         Direct3D 12 [level 12.2]
+    Renderer:        NVIDIA GeForce RTX 3060 Ti (ID=0x2489)
+    Vendor:          NVIDIA
+    VRAM:            8024 MB
+    App VRAM Budget: 7256 MB
+    Driver:          32.0.16.1060
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.157 seconds
+- Finished resetting the current domain, in  0.005 seconds
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+<RI> Initializing input.
+Using Windows.Gaming.Input
+<RI> Input initialized.
+UnloadTime: 0.803300 ms
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input System polling thread exited.
+Input System module state changed to: Shutdown.
+Couldn't register input device. The Input System is not in an initialized state (Shutdown). A call to GetIInput()->InitInput() or equivalently InitializeNewInputSystem() is required before using the Input System. Associated device descriptor: {"interface":"HID","type":"","product":"","manufacturer":"","serial":"","version":"774","capabilities":"{\"vendorId\":6940,\"productId\":6958,\"usage\":4,\"usagePage\":65474,\"inputReportSize\":65,\"outputReportSize\":65,\"featureReportSize\":65}"}Couldn't register input device. The Input System is not in an initialized state (Shutdown). A call to GetIInput()->InitInput() or equivalently InitializeNewInputSystem() is required before using the Input System. Associated device descriptor: {"interface":"HID","type":"","product":"USB DEVICE","manufacturer":"SONiX","serial":"","version":"263","capabilities":"{\"vendorId\":3141,\"productId\":20484,\"usage\":128,\"usagePage\":1,\"inputReportSize\":2,\"outputReportSize\":0,\"featureReportSize\":0}"}Couldn't register input device. The Input System is not in an initialized state (Shutdown). A call to GetIInput()->InitInput() or equivalently InitializeNewInputSystem() is required before using the Input System. Associated device descriptor: {"interface":"HID","type":"","product":"USB DEVICE","manufacturer":"SONiX","serial":"","version":"263","capabilities":"{\"vendorId\":3141,\"productId\":20484,\"usage\":1,\"usagePage\":12,\"inputReportSize\":3,\"outputReportSize\":0,\"featureReportSize\":0}"}Couldn't register input device. The Input System is not in an initialized state (Shutdown). A call to GetIInput()->InitInput() or equivalently InitializeNewInputSystem() is required before using the Input System. Associated device descriptor: {"interface":"HID","type":"","product":"AW-ELC","manufacturer":"Alienware","serial":"00.01","version":"512","capabilities":"{\"vendorId\":6268,\"productId\":1360,\"usage\":1,\"usagePage\":65280,\"inputReportSize\":34,\"outputReportSize\":34,\"featureReportSize\":0}"}Couldn't register input device. The Input System is not in an initialized state (Shutdown). A call to GetIInput()->InitInput() or equivalently InitializeNewInputSystem() is required before using the Input System. Associated device descriptor: {"interface":"HID","type":"","product":"USB DEVICE","manufacturer":"SONiX","serial":"","version":"263","capabilities":"{\"vendorId\":3141,\"productId\":20484,\"usage\":146,\"usagePage\":65308,\"inputReportSize\":64,\"outputReportSize\":64,\"featureReportSize\":0}"}Couldn't register input device. The Input System is not in an initialized state (Shutdown). A call to GetIInput()->InitInput() or equivalently InitializeNewInputSystem() is required before using the Input System. Associated device descriptor: {"interface":"HID","type":"","product":"","manufacturer":"","serial":"","version":"774","capabilities":"{\"vendorId\":6940,\"productId\":6958,\"usage\":2,\"usagePage\":65473,\"inputReportSize\":64,\"outputReportSize\":0,\"featureReportSize\":0}"}PlayerConnection::Cleanup##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1792307695293,"processId":83336,"allocatedMemory":15477065,"memoryLabels":[{"Default":136},{"NewDelete":760},{"Thread":8128},{"Manager":15190},{"GfxDevice":2112},{"GfxThread":1536},{"Audio":752},{"FontEngine":15402764},{"Serialization":520},{"JobScheduler":32768},{"String":564},{"HashMap":5120},{"PoolAlloc":192},{"CloudService":144},{"WebRequest":3516},{"VR":1872},{"Video":144},{"NativeArray":372},{"Subsystems":96},{"Accessibility":80},{"Gui":283},{"CoreBusinessMetrics":120}]}

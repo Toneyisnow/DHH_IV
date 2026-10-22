@@ -21,7 +21,15 @@ namespace MaritimeLegend.Editor {
    if(!EditorApplication.isPlaying||EditorApplication.timeSinceStartup<next)return;next=EditorApplication.timeSinceStartup+.6;
    try{
     var game=UnityEngine.Object.FindAnyObjectByType<MaritimeGame>();var art=UnityEngine.Object.FindAnyObjectByType<SaveSelectionPresentation>();
-    if(stage==0){SaveStore.TestDirectory=Path.GetFullPath("Evidence/SaveSelection/TestSaves");typeof(MaritimeGame).GetMethod("OpenSlots",BindingFlags.Instance|BindingFlags.NonPublic).Invoke(game,new object[]{"new"});}
+    if(stage==0){SaveStore.TestDirectory=Path.GetFullPath("Evidence/SaveSelection/TestSaves/"+Guid.NewGuid().ToString("N"));
+     var catalog=UnityEngine.Object.FindAnyObjectByType<WorldSession>().Catalog;
+     string[] portraits={"04-C6","02-C4","01-H4","05-M3","06-H2"};
+     for(int i=0;i<portraits.Length;i++){
+      var appearance=MaritimeLegend.Domain.StateFactory.Appearance(catalog);appearance.portraitV2=portraits[i];
+      var saved=MaritimeLegend.Domain.GameService.New(catalog,i,i,"休闲",appearance,"人物"+(i+1),(uint)(i+1));
+      saved.sailing.calendar.elapsedGameDays=i*31;SaveStore.Save(saved);
+     }
+     typeof(MaritimeGame).GetMethod("OpenSlots",BindingFlags.Instance|BindingFlags.NonPublic).Invoke(game,new object[]{"new"});}
     else if(stage==1){if(art==null)throw new Exception("Missing selection presentation");art.PreviewHover=-1;}
     else if(stage==2){
      LiveGui.Capture("Evidence/SaveSelection/rest.png");
@@ -30,8 +38,8 @@ namespace MaritimeLegend.Editor {
     }
     else if(stage==3){if(art.HoverAmount(0)<.99f)throw new Exception("Hover did not rise");LiveGui.Capture("Evidence/SaveSelection/hover.png");art.Select(0);art.PreviewHover=-1;}
     else if(stage==4){if(art.HoverAmount(0)>.01f||art.Selected!=0)throw new Exception("Hover exit or selected persistence failed");LiveGui.Capture("Evidence/SaveSelection/selected.png");originalTarget=LiveGui.Camera.targetTexture;aspectTarget=new RenderTexture(1280,1024,24);aspectTarget.Create();LiveGui.Camera.targetTexture=aspectTarget;}
-    else if(stage==5){LiveGui.Capture("Evidence/SaveSelection/aspect-5x4.png");LiveGui.Camera.targetTexture=originalTarget;aspectTarget.Release();UnityEngine.Object.Destroy(aspectTarget);}
-    else if(stage==6){if(!LiveGui.ClickText("建立档案"))throw new Exception("Missing create action");}
+    else if(stage==5){LiveGui.Capture("Evidence/SaveSelection/aspect-5x4.png");LiveGui.Camera.targetTexture=originalTarget;aspectTarget.Release();UnityEngine.Object.Destroy(aspectTarget);art.Select(5);}
+    else if(stage==6){if(!LiveGui.ClickText("新游戏"))throw new Exception("Missing create action");}
     else if(stage==8){if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name!="CharacterCreationScene")throw new Exception("New slot navigation failed");game.Change("标题");}
     else if(stage==10){if(art!=null)throw new Exception("Scene resources leaked");File.WriteAllText("Evidence/SaveSelection/verification.txt","PASS: seven card hits, outside rejection, hover enter/exit, persistent selection, new slot navigation, scene cleanup.\n");Finish(null);return;}
     stage++;

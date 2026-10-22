@@ -1,0 +1,8 @@
+V4: restrained swing, slight forward elbow flexion, straight trailing arm.
+Built-in imagegen edits the V2 source sheets rather than exaggerated V3.
+Prompt: preserve identity, clothing, all facings, feet, five-column eight-row
+layout and idle column. Walking forward arm bends only 20-30 degrees from
+straight (interior angle 150-160 degrees); hand at belt/lower abdomen, not chest.
+Trailing arm is naturally straight, hand behind hip; no bent rear elbow,
+no wide elbows or raised fists. Keep overall excursion close to V2.
+Transparent output; originals retained; new source filenames use v4 suffix.

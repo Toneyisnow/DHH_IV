@@ -1,0 +1,13 @@
+V9 corrects NE using runtime SpriteRenderer.flipX of the user-approved V8 NW gait.
+No accepted V8 source images were modified. The attempted imagegen NE reflection
+was rejected because its arm connections still did not match the approved gait.
+For NE walk frame f, render NW frame (f+2)%4 reflected horizontally; idle uses
+NW frame 4 reflected. The half-cycle offset preserves anatomical gait phase.
+Runtime smoke checks exact sprite identity, flip state, idle and reset when
+switching to other directions, in both outfits, then renders actual Unity views.
+The atlas NE row remains historical source art; the actor intentionally bypasses
+it. Equipment is baked in this prototype: reflection also mirrors asymmetric
+costume details. Future independently layered sidearms need separate handedness.
+
+Rejected built-in imagegen prompt:
+Transform this approved northwest walking sprite sheet into northeast facing. Precisely HORIZONTALLY MIRROR EACH INDIVIDUAL CHARACTER IN ITS OWN CELL. Keep the order of the 5 columns unchanged and keep the two outfit rows unchanged. Do NOT mirror the whole sheet because that would reverse the animation frame order. Output exactly 2 rows x 5 columns with same transparent background, exact same character designs and poses reflected left-to-right within each cell. Every figure now faces upper RIGHT. The approved original first column has near arm trailing and far arm leading; after mirroring preserve this exact occlusion: first column near RIGHT arm trails diagonally DOWN-LEFT across visible torso, while far LEFT fist leads upper RIGHT beyond chest. Third column near RIGHT arm leads RIGHT and far LEFT arm trails LEFT. All silhouettes, sleeve lengths, hand positions, legs, shoes, face and clothing are faithfully mirrored, with NO redesign or additional arms. Fifth column remains idle, mirrored. This mechanical per-character reflection is essential to match approved left-up animation.

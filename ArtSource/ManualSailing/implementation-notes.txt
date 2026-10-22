@@ -1,0 +1,21 @@
+Manual sailing implementation / 2026-10-20
+
+Art originals: Assets/AutoSailing_Map_Pack/01_map, 04_cities, 05_ships.
+Runtime copies: MaritimeLegend/Assets/Resources/Sprites/ManualSailing.
+Projection: SeaProjection.cs and Resources/Shaders/ManualSea.shader.
+Original image 1672 x 941; 10x = 16720 x 9410 reference units. Local slope 0.70710678.
+Horizon y=162 in 1920x1080 coordinates. Nonlinear depth exponent .75 curves the distant surface.
+One inverse is used for shader UV sampling and click picking; CPU forward projection places scenery/targets.
+Fleet anchor dead zone x=910..1010, y=550..570; four sprite offsets keep complete ships inside the central 20%.
+
+Original domain sea coordinates, ship ownership, arrival, supplies, sail trim, calendar and encounters remain authoritative.
+The SEA art is presentation-only, aligned to the departure coordinate; it is NOT a geographic migration.
+A persistent click target drives GameService.SteerToward until within .0005 units, then throttle becomes zero.
+UI controls, sky, pending events, modal dialogs and pause do not issue sailing targets.
+
+Build: Unity batch -executeMethod MaritimeLegend.Editor.ManualSeaBuild.Build
+Run: MaritimeLegend.exe -manualSeaDemo
+Verify: MaritimeLegend.exe -batchmode -force-d3d11 -manualSeaSmoke
+Demo writes into its own ManualSeaUserData directory, never the normal save directory.
+
+Limitations and decisions are in Builds/ManualSailing/说明.txt.

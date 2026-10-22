@@ -1,0 +1,99 @@
+{
+  "id": "05",
+  "board": "05-Africa-Male.png",
+  "reference": "../03-Africa-v2-slim.png",
+  "colors": [
+    {
+      "id": "C1",
+      "description": "米白/沙色/茜红"
+    },
+    {
+      "id": "C2",
+      "description": "靛蓝/深蓝/沙金"
+    },
+    {
+      "id": "C3",
+      "description": "沙褐/米白/墨蓝"
+    },
+    {
+      "id": "C4",
+      "description": "灰绿/茶褐/本白"
+    },
+    {
+      "id": "C5",
+      "description": "栗红/深褐/亚麻白"
+    },
+    {
+      "id": "C6",
+      "description": "灰白/炭灰/靛蓝"
+    },
+    {
+      "id": "C7",
+      "description": "赭黄/深褐/米白"
+    },
+    {
+      "id": "C8",
+      "description": "烟蓝/石板灰/锈红"
+    }
+  ],
+  "heads": [
+    {
+      "id": "H1",
+      "description": "白棉缠头巾"
+    },
+    {
+      "id": "H2",
+      "description": "条纹缠头巾"
+    },
+    {
+      "id": "H3",
+      "description": "素棉软帽"
+    },
+    {
+      "id": "H4",
+      "description": "低矮包头"
+    },
+    {
+      "id": "H5",
+      "description": "棕榈旅行帽"
+    },
+    {
+      "id": "H6",
+      "description": "后束发辫"
+    },
+    {
+      "id": "H7",
+      "description": "高束发辫"
+    },
+    {
+      "id": "H8",
+      "description": "短发与细布带"
+    }
+  ],
+  "mantles": [
+    {
+      "id": "M1",
+      "description": "短棉肩布"
+    },
+    {
+      "id": "M2",
+      "description": "长矩形棉披"
+    },
+    {
+      "id": "M3",
+      "description": "条纹单肩披"
+    },
+    {
+      "id": "M4",
+      "description": "印度贸易绸披"
+    },
+    {
+      "id": "M5",
+      "description": "粗织夜航披"
+    },
+    {
+      "id": "M6",
+      "description": "窄幅交叉披"
+    }
+  ]
+}

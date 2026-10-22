@@ -34,8 +34,8 @@ namespace MaritimeLegend.Editor {
      if(stage%2==0)art.previewTime=times[stage/2];
      else LiveGui.Capture("Evidence/Opening/frame-"+times[stage/2].ToString("0.0",System.Globalization.CultureInfo.InvariantCulture)+".png");
     }else if(stage==12){if(!LiveGui.ClickText("Press any key"))throw new Exception("Missing start control");next=EditorApplication.timeSinceStartup+.1;}
-    else if(stage==13){if(LiveGui.ClickText("新游戏"))throw new Exception("Start input guard expired too early");next=EditorApplication.timeSinceStartup+.85;}
-    else if(stage==14){LiveGui.Capture("Evidence/Opening/menu.png");if(!LiveGui.ClickText("新游戏"))throw new Exception("New game unavailable after transition");}
+    else if(stage==13){if(LiveGui.ClickText("开始游戏"))throw new Exception("Start input guard expired too early");next=EditorApplication.timeSinceStartup+.85;}
+    else if(stage==14){LiveGui.Capture("Evidence/Opening/menu.png");if(!LiveGui.ClickText("开始游戏"))throw new Exception("New game unavailable after transition");}
     else if(stage==16){
      if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name!="SaveLoadScene")throw new Exception("New game navigation failed");
      UnityEngine.Object.FindAnyObjectByType<MaritimeGame>().Change("标题");

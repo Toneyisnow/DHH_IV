@@ -1,0 +1,805 @@
+{
+  "type": "concept-art-not-layered-assets",
+  "tool": "built-in image_gen",
+  "counts": {
+    "characters": 8,
+    "colorways": 64,
+    "headOptions": 64,
+    "mantles": 48,
+    "total": 176
+  },
+  "characters": [
+    {
+      "id": "01",
+      "board": "01-Europe-Male.png",
+      "reference": "../01-Europe-v2-slim.png",
+      "colors": [
+        {
+          "id": "C1",
+          "description": "靛蓝/墨蓝/米白"
+        },
+        {
+          "id": "C2",
+          "description": "酒红/深酒红/亚麻白"
+        },
+        {
+          "id": "C3",
+          "description": "森林绿/深褐/燕麦白"
+        },
+        {
+          "id": "C4",
+          "description": "炭黑/石板灰/米白"
+        },
+        {
+          "id": "C5",
+          "description": "烟蓝/海军蓝/银灰"
+        },
+        {
+          "id": "C6",
+          "description": "赭黄/咖啡褐/奶油白"
+        },
+        {
+          "id": "C7",
+          "description": "李紫/墨灰/灰米白"
+        },
+        {
+          "id": "C8",
+          "description": "沙褐/橄榄绿/本白"
+        }
+      ],
+      "heads": [
+        {
+          "id": "H1",
+          "description": "软扁帽"
+        },
+        {
+          "id": "H2",
+          "description": "高冠毡帽"
+        },
+        {
+          "id": "H3",
+          "description": "低冠窄檐毡帽"
+        },
+        {
+          "id": "H4",
+          "description": "贴头亚麻便帽"
+        },
+        {
+          "id": "H5",
+          "description": "圆顶旅行草帽"
+        },
+        {
+          "id": "H6",
+          "description": "半束长发"
+        },
+        {
+          "id": "H7",
+          "description": "低束发"
+        },
+        {
+          "id": "H8",
+          "description": "短卷发"
+        }
+      ],
+      "mantles": [
+        {
+          "id": "M1",
+          "description": "羊毛短肩披"
+        },
+        {
+          "id": "M2",
+          "description": "单肩中长披风"
+        },
+        {
+          "id": "M3",
+          "description": "及膝半圆披风"
+        },
+        {
+          "id": "M4",
+          "description": "带帽长旅行斗篷"
+        },
+        {
+          "id": "M5",
+          "description": "窄毛边绒披风"
+        },
+        {
+          "id": "M6",
+          "description": "绸里短圆披"
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "board": "02-Europe-Female.png",
+      "reference": "../01-Europe-v2-slim.png",
+      "colors": [
+        {
+          "id": "C1",
+          "description": "酒红/深酒红/米白"
+        },
+        {
+          "id": "C2",
+          "description": "墨绿/深绿/奶油白"
+        },
+        {
+          "id": "C3",
+          "description": "靛蓝/海军蓝/本白"
+        },
+        {
+          "id": "C4",
+          "description": "梅紫/深紫/灰米白"
+        },
+        {
+          "id": "C5",
+          "description": "赭黄/深褐/亚麻白"
+        },
+        {
+          "id": "C6",
+          "description": "烟蓝/石板蓝/银灰"
+        },
+        {
+          "id": "C7",
+          "description": "炭黑/墨灰/象牙白"
+        },
+        {
+          "id": "C8",
+          "description": "陶红/棕红/燕麦白"
+        }
+      ],
+      "heads": [
+        {
+          "id": "H1",
+          "description": "法式罩帽"
+        },
+        {
+          "id": "H2",
+          "description": "亚麻便帽"
+        },
+        {
+          "id": "H3",
+          "description": "草帽加头巾"
+        },
+        {
+          "id": "H4",
+          "description": "软绒扁帽"
+        },
+        {
+          "id": "H5",
+          "description": "细网发罩"
+        },
+        {
+          "id": "H6",
+          "description": "编发盘髻"
+        },
+        {
+          "id": "H7",
+          "description": "低发髻与发带"
+        },
+        {
+          "id": "H8",
+          "description": "侧编长辫"
+        }
+      ],
+      "mantles": [
+        {
+          "id": "M1",
+          "description": "短绒肩披"
+        },
+        {
+          "id": "M2",
+          "description": "带帽羊毛长披风"
+        },
+        {
+          "id": "M3",
+          "description": "亚麻罩头长披巾"
+        },
+        {
+          "id": "M4",
+          "description": "及肘绸披肩"
+        },
+        {
+          "id": "M5",
+          "description": "及膝开襟长披"
+        },
+        {
+          "id": "M6",
+          "description": "窄毛边冬披"
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "board": "03-Asia-Male.png",
+      "reference": "../02-Asia-Ming-v2.png",
+      "colors": [
+        {
+          "id": "C1",
+          "description": "靛蓝/青绿/米白"
+        },
+        {
+          "id": "C2",
+          "description": "墨灰/黛蓝/本白"
+        },
+        {
+          "id": "C3",
+          "description": "竹青/深绿/米白"
+        },
+        {
+          "id": "C4",
+          "description": "栗褐/赭黄/亚麻白"
+        },
+        {
+          "id": "C5",
+          "description": "月白/石青/灰白"
+        },
+        {
+          "id": "C6",
+          "description": "黛紫/墨灰/米白"
+        },
+        {
+          "id": "C7",
+          "description": "灰绿/茶褐/本白"
+        },
+        {
+          "id": "C8",
+          "description": "深蓝/暗红/象牙白"
+        }
+      ],
+      "heads": [
+        {
+          "id": "H1",
+          "description": "六合帽"
+        },
+        {
+          "id": "H2",
+          "description": "方巾"
+        },
+        {
+          "id": "H3",
+          "description": "低软巾帽"
+        },
+        {
+          "id": "H4",
+          "description": "竹斗笠"
+        },
+        {
+          "id": "H5",
+          "description": "网巾束髻"
+        },
+        {
+          "id": "H6",
+          "description": "素簪高髻"
+        },
+        {
+          "id": "H7",
+          "description": "低髻布带"
+        },
+        {
+          "id": "H8",
+          "description": "半束长发"
+        }
+      ],
+      "mantles": [
+        {
+          "id": "M1",
+          "description": "素棉短披"
+        },
+        {
+          "id": "M2",
+          "description": "长羊毛斗篷"
+        },
+        {
+          "id": "M3",
+          "description": "粗织短防风披"
+        },
+        {
+          "id": "M4",
+          "description": "绸里中长披"
+        },
+        {
+          "id": "M5",
+          "description": "芦草蓑披"
+        },
+        {
+          "id": "M6",
+          "description": "保暖窄毛边长披"
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "board": "04-Asia-Female-slim-waist.png",
+      "reference": "../02-Asia-Ming-v2.png",
+      "colors": [
+        {
+          "id": "C1",
+          "description": "茜红/墨黑/米白"
+        },
+        {
+          "id": "C2",
+          "description": "青绿/黛蓝/象牙白"
+        },
+        {
+          "id": "C3",
+          "description": "藕粉/深紫/灰白"
+        },
+        {
+          "id": "C4",
+          "description": "鹅黄/茶褐/米白"
+        },
+        {
+          "id": "C5",
+          "description": "月白/石青/本白"
+        },
+        {
+          "id": "C6",
+          "description": "靛蓝/墨灰/米白"
+        },
+        {
+          "id": "C7",
+          "description": "灰绿/深绿/燕麦白"
+        },
+        {
+          "id": "C8",
+          "description": "梅紫/深酒红/奶油白"
+        }
+      ],
+      "heads": [
+        {
+          "id": "H1",
+          "description": "素风帽"
+        },
+        {
+          "id": "H2",
+          "description": "竹斗笠"
+        },
+        {
+          "id": "H3",
+          "description": "素布包头"
+        },
+        {
+          "id": "H4",
+          "description": "低髻单簪"
+        },
+        {
+          "id": "H5",
+          "description": "双股编盘髻"
+        },
+        {
+          "id": "H6",
+          "description": "发带半束短发"
+        },
+        {
+          "id": "H7",
+          "description": "侧簪短发"
+        },
+        {
+          "id": "H8",
+          "description": "原始短发"
+        }
+      ],
+      "mantles": [
+        {
+          "id": "M1",
+          "description": "素绸短肩披"
+        },
+        {
+          "id": "M2",
+          "description": "绸面及膝披风"
+        },
+        {
+          "id": "M3",
+          "description": "带帽棉长披"
+        },
+        {
+          "id": "M4",
+          "description": "轻薄长披帛"
+        },
+        {
+          "id": "M5",
+          "description": "麻布防风披"
+        },
+        {
+          "id": "M6",
+          "description": "窄毛边冬披"
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "board": "05-Africa-Male.png",
+      "reference": "../03-Africa-v2-slim.png",
+      "colors": [
+        {
+          "id": "C1",
+          "description": "米白/沙色/茜红"
+        },
+        {
+          "id": "C2",
+          "description": "靛蓝/深蓝/沙金"
+        },
+        {
+          "id": "C3",
+          "description": "沙褐/米白/墨蓝"
+        },
+        {
+          "id": "C4",
+          "description": "灰绿/茶褐/本白"
+        },
+        {
+          "id": "C5",
+          "description": "栗红/深褐/亚麻白"
+        },
+        {
+          "id": "C6",
+          "description": "灰白/炭灰/靛蓝"
+        },
+        {
+          "id": "C7",
+          "description": "赭黄/深褐/米白"
+        },
+        {
+          "id": "C8",
+          "description": "烟蓝/石板灰/锈红"
+        }
+      ],
+      "heads": [
+        {
+          "id": "H1",
+          "description": "白棉缠头巾"
+        },
+        {
+          "id": "H2",
+          "description": "条纹缠头巾"
+        },
+        {
+          "id": "H3",
+          "description": "素棉软帽"
+        },
+        {
+          "id": "H4",
+          "description": "低矮包头"
+        },
+        {
+          "id": "H5",
+          "description": "棕榈旅行帽"
+        },
+        {
+          "id": "H6",
+          "description": "后束发辫"
+        },
+        {
+          "id": "H7",
+          "description": "高束发辫"
+        },
+        {
+          "id": "H8",
+          "description": "短发与细布带"
+        }
+      ],
+      "mantles": [
+        {
+          "id": "M1",
+          "description": "短棉肩布"
+        },
+        {
+          "id": "M2",
+          "description": "长矩形棉披"
+        },
+        {
+          "id": "M3",
+          "description": "条纹单肩披"
+        },
+        {
+          "id": "M4",
+          "description": "印度贸易绸披"
+        },
+        {
+          "id": "M5",
+          "description": "粗织夜航披"
+        },
+        {
+          "id": "M6",
+          "description": "窄幅交叉披"
+        }
+      ]
+    },
+    {
+      "id": "06",
+      "board": "06-Africa-Female.png",
+      "reference": "../03-Africa-v2-slim.png",
+      "colors": [
+        {
+          "id": "C1",
+          "description": "赭黄/靛蓝/锈红"
+        },
+        {
+          "id": "C2",
+          "description": "米白/深褐/陶红"
+        },
+        {
+          "id": "C3",
+          "description": "靛蓝/墨蓝/暗金"
+        },
+        {
+          "id": "C4",
+          "description": "陶红/炭灰/米白"
+        },
+        {
+          "id": "C5",
+          "description": "灰绿/深绿/沙色"
+        },
+        {
+          "id": "C6",
+          "description": "沙金/栗褐/靛蓝"
+        },
+        {
+          "id": "C7",
+          "description": "烟蓝/深褐/本白"
+        },
+        {
+          "id": "C8",
+          "description": "暗梅紫/墨灰/赭黄"
+        }
+      ],
+      "heads": [
+        {
+          "id": "H1",
+          "description": "低包头巾"
+        },
+        {
+          "id": "H2",
+          "description": "后结头巾"
+        },
+        {
+          "id": "H3",
+          "description": "额带式包头"
+        },
+        {
+          "id": "H4",
+          "description": "棕榈遮阳帽"
+        },
+        {
+          "id": "H5",
+          "description": "原编发盘髻"
+        },
+        {
+          "id": "H6",
+          "description": "细辫高髻"
+        },
+        {
+          "id": "H7",
+          "description": "后束编辫"
+        },
+        {
+          "id": "H8",
+          "description": "侧盘辫与素珠"
+        }
+      ],
+      "mantles": [
+        {
+          "id": "M1",
+          "description": "窄幅肩巾"
+        },
+        {
+          "id": "M2",
+          "description": "长条纹单肩披"
+        },
+        {
+          "id": "M3",
+          "description": "宽棉裹肩"
+        },
+        {
+          "id": "M4",
+          "description": "双层短披布"
+        },
+        {
+          "id": "M5",
+          "description": "流苏中长披"
+        },
+        {
+          "id": "M6",
+          "description": "细织长披布"
+        }
+      ]
+    },
+    {
+      "id": "07",
+      "board": "07-LatinAmerica-Male.png",
+      "reference": "../04-LatinAmerica-v2-slim.png",
+      "colors": [
+        {
+          "id": "C1",
+          "description": "靛蓝/陶红/沙色"
+        },
+        {
+          "id": "C2",
+          "description": "栗红/墨褐/本白"
+        },
+        {
+          "id": "C3",
+          "description": "深褐/赭黄/米白"
+        },
+        {
+          "id": "C4",
+          "description": "灰绿/墨蓝/土红"
+        },
+        {
+          "id": "C5",
+          "description": "沙色/靛蓝/棕红"
+        },
+        {
+          "id": "C6",
+          "description": "墨灰/暗红/燕麦白"
+        },
+        {
+          "id": "C7",
+          "description": "烟蓝/咖啡褐/米白"
+        },
+        {
+          "id": "C8",
+          "description": "赭黄/深绿/栗红"
+        }
+      ],
+      "heads": [
+        {
+          "id": "H1",
+          "description": "平顶织帽"
+        },
+        {
+          "id": "H2",
+          "description": "低圆织帽"
+        },
+        {
+          "id": "H3",
+          "description": "芦苇遮阳帽"
+        },
+        {
+          "id": "H4",
+          "description": "素织额带"
+        },
+        {
+          "id": "H5",
+          "description": "后束发"
+        },
+        {
+          "id": "H6",
+          "description": "半束发"
+        },
+        {
+          "id": "H7",
+          "description": "短蓬松发"
+        },
+        {
+          "id": "H8",
+          "description": "小辫束发"
+        }
+      ],
+      "mantles": [
+        {
+          "id": "M1",
+          "description": "短矩形肩披"
+        },
+        {
+          "id": "M2",
+          "description": "厚驼毛长披"
+        },
+        {
+          "id": "M3",
+          "description": "斜扣单肩披"
+        },
+        {
+          "id": "M4",
+          "description": "轻棉短披"
+        },
+        {
+          "id": "M5",
+          "description": "窄条纹中披"
+        },
+        {
+          "id": "M6",
+          "description": "细织宽幅披"
+        }
+      ]
+    },
+    {
+      "id": "08",
+      "board": "08-LatinAmerica-Female.png",
+      "reference": "../04-LatinAmerica-v2-slim.png",
+      "colors": [
+        {
+          "id": "C1",
+          "description": "青绿/锈红/米白"
+        },
+        {
+          "id": "C2",
+          "description": "酒红/墨蓝/本白"
+        },
+        {
+          "id": "C3",
+          "description": "橄榄绿/深褐/亚麻白"
+        },
+        {
+          "id": "C4",
+          "description": "烟蓝/石板灰/象牙白"
+        },
+        {
+          "id": "C5",
+          "description": "赭黄/栗红/奶油白"
+        },
+        {
+          "id": "C6",
+          "description": "梅紫/深褐/灰米白"
+        },
+        {
+          "id": "C7",
+          "description": "炭灰/深绿/米白"
+        },
+        {
+          "id": "C8",
+          "description": "陶红/靛蓝/燕麦白"
+        }
+      ],
+      "heads": [
+        {
+          "id": "H1",
+          "description": "亚麻便帽"
+        },
+        {
+          "id": "H2",
+          "description": "草帽加头巾"
+        },
+        {
+          "id": "H3",
+          "description": "素布垂巾"
+        },
+        {
+          "id": "H4",
+          "description": "小软绒帽"
+        },
+        {
+          "id": "H5",
+          "description": "卷发低髻"
+        },
+        {
+          "id": "H6",
+          "description": "编辫盘髻"
+        },
+        {
+          "id": "H7",
+          "description": "发带半束卷发"
+        },
+        {
+          "id": "H8",
+          "description": "原卷发高髻"
+        }
+      ],
+      "mantles": [
+        {
+          "id": "M1",
+          "description": "亚麻短披肩"
+        },
+        {
+          "id": "M2",
+          "description": "贸易棉长披巾"
+        },
+        {
+          "id": "M3",
+          "description": "短绒圆披"
+        },
+        {
+          "id": "M4",
+          "description": "带帽羊毛长披"
+        },
+        {
+          "id": "M5",
+          "description": "单肩条纹披"
+        },
+        {
+          "id": "M6",
+          "description": "细绸及腰披"
+        }
+      ]
+    }
+  ]
+}

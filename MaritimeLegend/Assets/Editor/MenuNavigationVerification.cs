@@ -64,21 +64,21 @@ namespace MaritimeLegend.Editor {
       Check(!(bool)gate.Invoke(game,new object[]{.5f,false}),"Opening transition must be blocked");
       Check((bool)gate.Invoke(game,new object[]{1f,false}),"Released opening did not enable menu");
       Check((bool)gate.Invoke(game,new object[]{1f,true}),"Subsequent mouse hold disabled menu");break;
-     case 3:Press("新游戏");break;
+     case 3:Press("开始游戏");break;
      case 4:Release();break;
-     case 5:Scene("SaveLoadScene","new");LiveGui.Capture("Evidence/MenuNavigation/new.png");Press("返回");break;
+     case 5:Scene("SaveLoadScene","load");LiveGui.Capture("Evidence/MenuNavigation/new.png");Press("返回");break;
      case 6:Release();break;
-     case 7:Scene("MainMenuScene");Press("读取航海日志");break;
+     case 7:Scene("MainMenuScene");Press("开始游戏");break;
      case 8:Release();break;
      case 9:Scene("SaveLoadScene","load");LiveGui.Capture("Evidence/MenuNavigation/load.png");Press("返回");break;
      case 10:Release();break;
-     case 11:Scene("MainMenuScene");Press("新游戏");break;
+     case 11:Scene("MainMenuScene");Press("开始游戏");break;
      case 12:Release();break;
-     case 13:Scene("SaveLoadScene","new");Press("建立档案");break;
+     case 13:Scene("SaveLoadScene","load");Press("新游戏");break;
      case 14:Release();break;
      case 15:Scene("CharacterCreationScene");Press("返回选档");break;
      case 16:Release();break;
-     case 17:Scene("SaveLoadScene","new");Press("返回");break;
+     case 17:Scene("SaveLoadScene","load");Press("返回");break;
      case 18:Release();break;
      case 19:Scene("MainMenuScene");File.WriteAllText("Evidence/MenuNavigation/verification.txt","PASS: opening release latch; subsequent held pointer remains enabled; raycast + pointer down/up/click; new/load mode transfer; repeated main/save/character scene round trips; persistent game/world/camera/canvas/event system.\n");Finish(null);return;
     }

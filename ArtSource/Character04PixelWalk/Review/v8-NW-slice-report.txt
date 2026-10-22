@@ -1,0 +1,13 @@
+Source: 1774x887
+Frames: 10
+Uniform scale: 0.1764706
+(x:90, y:460, width:229, height:404)
+(x:446, y:456, width:219, height:408)
+(x:779, y:459, width:248, height:405)
+(x:1156, y:456, width:207, height:408)
+(x:1490, y:456, width:207, height:408)
+(x:89, y:25, width:230, height:406)
+(x:447, y:23, width:218, height:407)
+(x:782, y:25, width:244, height:405)
+(x:1158, y:23, width:206, height:407)
+(x:1491, y:23, width:207, height:407)

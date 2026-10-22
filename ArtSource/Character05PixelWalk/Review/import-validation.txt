@@ -1,0 +1,1 @@
+PASS: 8 body palettes, 6 cape front/back pairs, 3 hats, 6 accessories, 1 foreground-hand layer; 320x768 RGBA, point-filtered, 40 frames per atlas.

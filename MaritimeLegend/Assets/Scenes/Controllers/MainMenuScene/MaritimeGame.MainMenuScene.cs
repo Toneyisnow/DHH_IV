@@ -47,8 +47,7 @@ namespace MaritimeLegend {
     GUI.enabled=enabled&&TitleInputReady(menu,Input.GetMouseButton(0));
     float y=575;
     if(s!=null){if(OpeningMenuButton(y,"继续当前航程"))Change(s.atSea?"航海":"城市");y+=62;}
-    if(OpeningMenuButton(y,"新游戏"))OpenSlots("new");y+=62;
-    if(OpeningMenuButton(y,"读取航海日志"))OpenSlots("load");y+=62;
+    if(OpeningMenuButton(y,"开始游戏"))OpenSlots("load");y+=62;
     if(OpeningMenuButton(y,"设置"))settingsOpen=true;y+=62;
     if(OpeningMenuButton(y,"制作人员与素材"))Notify("代码、组件美术及音乐：本项目原创；参考重建图：用户提供。完整记录见 Documentation。");y+=62;
     if(OpeningMenuButton(y,"退出"))Application.Quit();

@@ -1,0 +1,2 @@
+PASS: 16 outfit/palette combinations; 512 sprite selections; 8 normalized movement directions; idle; 16 rendered views.
+2026-10-18T06:45:32.9870385Z

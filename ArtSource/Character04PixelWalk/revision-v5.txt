@@ -1,0 +1,8 @@
+V5: side-facing head registration correction (runtime Sprite pivots).
+V4 source artwork is retained without regeneration. Its whole-body bounding-box
+centering introduced 2-3 pixel horizontal head drift as stride/cape width changed.
+For W/E only, align the hair/face alpha centroid in y=61..78 to the idle anchor
+using integer-pixel pivot offsets. Idle pivot stays (32,8). Vertical foot pivot
+and animation sequence remain unchanged. All other directions are unchanged.
+Runtime verification measures the rendered Sprite's head-relative-to-pivot
+positions, requires <=1 pixel peak-to-peak residual and unchanged idle anchor.

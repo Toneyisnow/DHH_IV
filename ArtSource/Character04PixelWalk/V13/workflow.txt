@@ -1,0 +1,6 @@
+V13: align downward idle eyes to walking eyes, preserving mouth/hair/pose.
+NW gaze source edited with built-in imagegen; only normalized eye region is
+composited into the approved V8 NW strip. NE is derived from corrected NW,
+retaining the existing reflected half-cycle mapping. No limb redraw imported.
+Prompt:
+Precise local edit of EYES ONLY in all ten figures of this transparent two-row five-column animation sheet. This woman is walking NORTHWEST, away and to screen LEFT. She currently glances backward toward the viewer. Change visible iris/pupil placement and eyelid shape so she looks FORWARD toward screen LEFT, along her nose and direction of travel, NOT back at the camera. Put pupil at the forward/left edge of visible eye, leave small sclera behind it on right, slightly narrower side-looking eyelid. Preserve natural open eyes, no squint, no angry expression. Same forward gaze in every frame including idle, both red and navy outfits. Do not rotate or reposition head, do not change hair, face outline, mouth, arms, hands, feet, clothes, animation phases, size or layout. All limb poses are approved and must be untouched. Exactly same transparent background. Edit only eye pixels.

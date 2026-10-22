@@ -1,0 +1,8 @@
+V3: Larger forearm swing and clear elbow flexion for running.
+Built-in imagegen edits both V2 outfit sheets, saved as sibling V3 sources.
+Brief: preserve eight facings, all feet/legs and fifth idle column. Edit walking
+arms/sleeves only: obvious upper-arm/forearm bend around 70-100 degrees; raised
+forward fist near chest, opposite elbow behind torso; reverse arm phases in
+columns 1 and 3, with distinct intermediate swings in 2 and 4. Keep cape behind
+forearms. No extra hands, floating pixels, text or backgrounds.
+Unity preview retains four movement frames plus independent grounded idle.

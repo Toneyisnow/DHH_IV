@@ -1,0 +1,17 @@
+V2 correction scope
+1. Replace fixed-height source row slicing with whole connected-character extraction.
+   Prior row shoe fragments were present in SW and one W cell's upper bounds.
+2. 5 atlas columns: left contact, right passing, right contact, left passing, independent idle.
+3. Movement loops columns 0-3; releasing input selects column 4 retaining facing.
+4. Preview exposes frame freeze and adjustable animation speed for visual inspection.
+5. Sources generated/edited using the built-in imagegen tool, not CLI.
+6. V1 source originals are retained; V2 sources use -v2-generated suffix.
+
+Generation brief: preserve Asian female identity, narrow waist/skirt and two original
+outfits; 5 columns x 8 facings S SW W NW N NE E SE; four different alternating
+left/right contact/passing poses; fifth column both feet grounded, arms relaxed;
+transparent background, no floating marks above heads. Follow-up correction:
+make passing stances narrow and explicitly reverse arm/leg swing for columns 3/4.
+
+Automated pixel-difference checks only establish distinct images. Final assessment
+of anatomical gait readability requires viewing the animation at gameplay scale.

@@ -1,0 +1,14 @@
+V6 alternating-arm correction
+Built-in imagegen used to redraw one facing at a time: eight source sheets,
+each two outfit rows x five pose columns. Full-sheet V4 repetition is rejected.
+Rows: red/no-cape, navy/cape. Columns: contact A, passing A, contact B,
+passing B, idle. Near arm must visibly cross from ahead of shoulder to behind
+shoulder in contact A/B. Forward elbow only slightly bent, rear arm straight.
+Sources reference base-v4-generated.png and voyage-v4-generated.png.
+Targeted edits correct repeating diagonal arms and W passing pose.
+Unity normalizes each strip, combines eight directions into each outfit atlas,
+and rotates W/E walk phase by two frames to align the arm cycle.
+Idle remains independent. Side head anchoring from V5 remains enabled.
+Runtime preview adds Loop this direction in place for movement-free inspection.
+Automation verifies asset completeness/movement/idle; anatomical arm direction
+is assessed visually, not inferred from unequal pixel hashes.

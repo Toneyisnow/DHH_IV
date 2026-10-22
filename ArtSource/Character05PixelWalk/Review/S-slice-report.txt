@@ -1,0 +1,8 @@
+Source: 2172x724
+Frames: 5
+Uniform scale: 0.1252174
+(x:83, y:64, width:275, height:571)
+(x:516, y:60, width:263, height:575)
+(x:955, y:64, width:263, height:571)
+(x:1388, y:60, width:263, height:575)
+(x:1814, y:83, width:263, height:553)

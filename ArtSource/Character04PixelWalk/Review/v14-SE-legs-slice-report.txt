@@ -1,0 +1,13 @@
+Source: 1983x793
+Frames: 10
+Uniform scale: 0.1899736
+(x:133, y:410, width:184, height:378)
+(x:516, y:410, width:179, height:377)
+(x:890, y:410, width:204, height:378)
+(x:1296, y:411, width:187, height:377)
+(x:1659, y:412, width:207, height:376)
+(x:115, y:19, width:204, height:379)
+(x:501, y:19, width:198, height:379)
+(x:890, y:19, width:201, height:379)
+(x:1291, y:20, width:191, height:377)
+(x:1655, y:19, width:213, height:379)

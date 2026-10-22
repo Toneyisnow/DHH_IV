@@ -1,0 +1,5 @@
+Built-in imagegen edited SW/SE legs for both outfits. Only normalized rows
+y=0..21 of the four walk frames are composited into approved source strips.
+Idle and upper-body pixels are retained. Existing phase mapping is unchanged.
+Prompt for each direction:
+Local edit ONLY legs and shoes below the skirt hem in columns1-4 of this two-row five-column walking sheet. Bring legs closer together horizontally: reduce distance between the two ankle/foot centers by about 30%, moving both legs inward toward pelvis. Natural narrow diagonal walking stance, not wide straddle. Keep shoe size and leg thickness unchanged. Keep leg lengths, foot lift heights, alternating left/right leg identity (near leg lighter, far leg darker), toe orientations and arm-leg opposite phases. Distinct first/third contact and second/fourth passing poses. Fifth column idle must be unchanged. Both red and navy outfits. Preserve every pixel above skirt hem, character position/size, skirt silhouette, head/face/hair/eyes/mouth and arms. Transparent background, exact same 2x5 layout. Do not compress entire character; reposition legs only.

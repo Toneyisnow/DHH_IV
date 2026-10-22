@@ -1,0 +1,4 @@
+interface:
+  display_name: "航海角色像素行走图"
+  short_description: "制作与验证八方向像素行走、独立待机及可组合换装图层"
+  default_prompt: "使用 $maritime-pixel-walker 制作角色的八方向像素行走图并在 Unity 中验证换装。"

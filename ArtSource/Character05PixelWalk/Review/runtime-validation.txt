@@ -1,0 +1,3 @@
+PASS: 5376 combinations, 129024 direction/pose layer selections, normalized movement, planted idle index, equipment removal, palette/head isolation, front eye/nose/mouth master pixel equality across all five frames and eight palettes. 217 rendered views including isolated hat fit and rear cape contact poses.
+Automated checks do not establish anatomical correctness or absence of every clipping combination.
+2026-10-18T23:07:56.4660133Z

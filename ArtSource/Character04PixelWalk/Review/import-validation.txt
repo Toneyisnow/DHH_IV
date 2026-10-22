@@ -1,0 +1,2 @@
+PASS: 2 transparent atlases, 8 directions x (4 walk + 1 idle) frames, 64x96 cells, 320x768 sheets, point filtering, readable RGBA.
+Prefab: Assets/Resources/Prefabs/Characters/Character04/PixelWalker.prefab

@@ -1,0 +1,4 @@
+base direction 1 upper-hair changed pixels across walk cycle: 495
+base direction 7 upper-hair changed pixels across walk cycle: 513
+voyage direction 1 upper-hair changed pixels across walk cycle: 674
+voyage direction 7 upper-hair changed pixels across walk cycle: 547

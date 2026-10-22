@@ -1,0 +1,25 @@
+Side-view horizontal head center, measured relative to actual sprite pivot (pixels).
+Outfit 0 W frame 0: 0.694
+Outfit 0 W frame 1: 0.413
+Outfit 0 W frame 2: 0.183
+Outfit 0 W frame 3: 0.578
+Outfit 0 W frame 4: 0.313
+Range: 0.511
+Outfit 0 E frame 0: -1.767
+Outfit 0 E frame 1: -1.697
+Outfit 0 E frame 2: -1.168
+Outfit 0 E frame 3: -0.824
+Outfit 0 E frame 4: -1.273
+Range: 0.943
+Outfit 1 W frame 0: -3.378
+Outfit 1 W frame 1: -3.660
+Outfit 1 W frame 2: -3.721
+Outfit 1 W frame 3: -3.677
+Outfit 1 W frame 4: -3.742
+Range: 0.364
+Outfit 1 E frame 0: 1.020
+Outfit 1 E frame 1: 1.329
+Outfit 1 E frame 2: 0.754
+Outfit 1 E frame 3: 0.733
+Outfit 1 E frame 4: 1.080
+Range: 0.596

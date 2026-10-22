@@ -1,0 +1,8 @@
+base direction=1 frame=0 lower-leg span 33 -> 20 pixels
+base direction=1 frame=2 lower-leg span 37 -> 24 pixels
+base direction=7 frame=0 lower-leg span 35 -> 28 pixels
+base direction=7 frame=2 lower-leg span 32 -> 22 pixels
+voyage direction=1 frame=0 lower-leg span 34 -> 19 pixels
+voyage direction=1 frame=2 lower-leg span 37 -> 23 pixels
+voyage direction=7 frame=0 lower-leg span 36 -> 28 pixels
+voyage direction=7 frame=2 lower-leg span 32 -> 22 pixels

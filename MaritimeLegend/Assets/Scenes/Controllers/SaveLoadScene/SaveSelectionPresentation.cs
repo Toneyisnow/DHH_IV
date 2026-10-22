@@ -1,7 +1,10 @@
 using UnityEngine;
+using MaritimeLegend.Domain;
 namespace MaritimeLegend {
  public sealed class SaveSelectionPresentation : MonoBehaviour {
   readonly Texture2D[] cards=new Texture2D[7];
+  readonly GameState[] renderedPreviews=new GameState[7];
+  Texture2D placeholder,originalCard;
   readonly float[] hover=new float[7];
   const float CardGroupOffsetY=-110f;
   readonly Vector2[] centers={new Vector2(610,355),new Vector2(960,355),new Vector2(1310,355),new Vector2(410,790),new Vector2(770,790),new Vector2(1130,790),new Vector2(1490,790)};
@@ -15,7 +18,9 @@ namespace MaritimeLegend {
   public float HoverAmount(int index)=>hover[index];
   static Texture2D Load(string name)=>Resources.Load<Texture2D>("SaveSelection/"+name);
   void Awake(){
-   for(int i=0;i<7;i++)cards[i]=Load("card"+(i+1));
+   originalCard=Load("card1");
+   var emptyPhoto=CreatePlaceholder();placeholder=FramePhoto(emptyPhoto);Destroy(emptyPhoto);
+   for(int i=0;i<7;i++)cards[i]=placeholder;
    table=Load("01_clean_table_background");glow=Load("frame_glow");candle=Load("03_candle_holder");flame=Load("flame");instrument=Load("06_foreground_instrument");logo=Resources.Load<Texture2D>("Opening/03_title_maritime_legend");
    entered=Time.unscaledTime;lastMouse=LiveGui.Mouse;
    shade=new Texture2D(128,72,TextureFormat.RGBA32,false);var pixels=new Color[128*72];
@@ -29,6 +34,43 @@ namespace MaritimeLegend {
     lightPixels[y*128+x]=new Color(1,1,1,Mathf.Pow(Mathf.Clamp01(1-radius),2.5f));
    }
    candleSoftLight.SetPixels(lightPixels);candleSoftLight.Apply(false,true);
+  }
+  // Preserve the original ornate frame pixels and original padded silhouette.
+  // Every portrait and empty card fills this same original photo opening.
+  Texture2D FramePhoto(Texture2D photo){
+   const int w=530,h=600;var pixels=new Color[w*h];
+   for(int y=0;y<h;y++)for(int x=0;x<w;x++){
+    Color color=originalCard.GetPixelBilinear((x+.5f)/w,1-(y+.5f)/h);
+    if(x>=76&&x<452&&y>=120&&y<468)
+     color=photo.GetPixelBilinear((x-76+.5f)/376f,1-(y-120+.5f)/348f);
+    pixels[(h-1-y)*w+x]=color;
+   }
+   var texture=new Texture2D(w,h,TextureFormat.RGBA32,false){name="Original ornate save card",wrapMode=TextureWrapMode.Clamp};
+   texture.SetPixels(pixels);texture.Apply(false,false);return texture;
+  }
+  public void SetPreviews(GameState[] previews,System.Func<GameState,Texture2D> portrait){
+   for(int i=0;i<7;i++){
+    if(ReferenceEquals(renderedPreviews[i],previews[i]))continue;
+    if(cards[i]!=null&&cards[i]!=placeholder)Destroy(cards[i]);
+    renderedPreviews[i]=previews[i];
+    var photo=previews[i]==null?null:portrait(previews[i]);
+    cards[i]=photo==null?placeholder:FramePhoto(photo);
+    if(photo!=null)Destroy(photo);
+   }
+  }
+  // Vector-like gray/white globe and compass, generated once per scene.
+  static Texture2D CreatePlaceholder(){
+   const int w=340,h=430;var pixels=new Color[w*h];
+   var paper=new Color(.84f,.85f,.84f);var line=new Color(.48f,.51f,.52f);
+   for(int y=0;y<h;y++)for(int x=0;x<w;x++){
+    float dx=x-170,dy=y-242,r=Mathf.Sqrt(dx*dx+dy*dy);
+    bool globe=Mathf.Abs(r-100)<2||(r<100&&(Mathf.Abs(dy)<1.5f||Mathf.Abs(dy-45)<1.5f||Mathf.Abs(dy+45)<1.5f||Mathf.Abs(dx)<1.5f||Mathf.Abs(dx*dx/(48*48f)+dy*dy/10000f-1)<.045f));
+    float cx=x-170,cy=y-108,cr=Mathf.Sqrt(cx*cx+cy*cy);
+    bool compass=Mathf.Abs(cr-48)<2||(Mathf.Abs(cx)/12+Mathf.Abs(cy)/61<1)||(Mathf.Abs(cx)/61+Mathf.Abs(cy)/12<1);
+    pixels[y*w+x]=globe||compass?line:paper;
+   }
+   var texture=new Texture2D(w,h,TextureFormat.RGBA32,false){name="Empty voyage compass and globe",wrapMode=TextureWrapMode.Clamp};
+   texture.SetPixels(pixels);texture.Apply(false,false);return texture;
   }
   void CandleLight(Vector2 center,float width,float height,Color tint){
    LiveGui.color=tint;
@@ -45,7 +87,7 @@ namespace MaritimeLegend {
    return q;
   }
   public int Hit(Vector2 mouse){
-   for(int i=6;i>=0;i--){var q=Corners(i);bool inside=true;for(int j=0;j<4;j++){var a=q[j];var b=q[(j+1)%4];if((b.x-a.x)*(mouse.y-a.y)-(b.y-a.y)*(mouse.x-a.x)<0){inside=false;break;}}if(inside)return i;}return -1;
+   for(int i=6;i>=0;i--){var q=Corners(i,Mathf.SmoothStep(0,17,hover[i]),1+.018f*hover[i]);bool inside=true;for(int j=0;j<4;j++){var a=q[j];var b=q[(j+1)%4];if((b.x-a.x)*(mouse.y-a.y)-(b.y-a.y)*(mouse.x-a.x)<0){inside=false;break;}}if(inside)return i;}return -1;
   }
   public void Select(int index){Selected=index;Focus=index;}
   public int Draw(bool interactive){
@@ -73,7 +115,8 @@ namespace MaritimeLegend {
     float lift=Mathf.SmoothStep(0,17,hover[i]);float size=1+.018f*hover[i];
     var shadow=Corners(i,-12-lift*.3f,size);for(int j=0;j<4;j++)shadow[j].x+=8+lift*.2f;
     LiveGui.DrawTableQuad(shadow,cards[i],new Color(0,0,0,.55f));
-    LiveGui.DrawTableQuad(Corners(i,lift,size),cards[i],Color.white);
+    var cardCorners=Corners(i,lift,size);
+    LiveGui.DrawTableQuad(cardCorners,cards[i],Color.white);
     float light=Mathf.Max(hover[i],i==Selected?.5f:0);
     if(light>0)LiveGui.DrawTableQuad(Corners(i,lift,size*1.113f),glow,new Color(1,1,1,light));
    }
@@ -94,6 +137,6 @@ namespace MaritimeLegend {
    if(keyboard&&(Input.GetKeyDown(KeyCode.Return)||Input.GetKeyDown(KeyCode.Space))){Select(Focus);return Focus;}
    return -1;
   }
-  void OnDestroy(){if(shade!=null)Destroy(shade);if(candleSoftLight!=null)Destroy(candleSoftLight);if(candleLightMaterial!=null)Destroy(candleLightMaterial);}
+  void OnDestroy(){foreach(var card in cards)if(card!=null&&card!=placeholder)Destroy(card);if(placeholder!=null)Destroy(placeholder);if(shade!=null)Destroy(shade);if(candleSoftLight!=null)Destroy(candleSoftLight);if(candleLightMaterial!=null)Destroy(candleLightMaterial);}
  }
 }
