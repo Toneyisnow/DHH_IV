@@ -1,0 +1,18 @@
+{
+  "sourceSize": [
+    1672,
+    941
+  ],
+  "grid": [
+    837,
+    471
+  ],
+  "landFraction": 0.30162798915945066,
+  "maximumHeight": 9.44270184432241,
+  "shoreHeight": 0,
+  "maximumDepth": 4388.45068359375,
+  "depthSource": "inferred distance + painted water tone, not surveyed",
+  "clearancePixels": 14,
+  "elevation": "stylized inferred relief, not geographic DEM",
+  "collision": "full-resolution signed Euclidean distance field, positive in water"
+}

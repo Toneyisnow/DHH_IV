@@ -85,6 +85,94 @@
     {
       "key": "sea.new_world.name",
       "text": "New World"
+    },
+    {
+      "key": "ui.menu.continue",
+      "text": "Continue voyage"
+    },
+    {
+      "key": "ui.menu.start",
+      "text": "Start game"
+    },
+    {
+      "key": "ui.menu.settings",
+      "text": "Settings"
+    },
+    {
+      "key": "ui.menu.credits",
+      "text": "Credits"
+    },
+    {
+      "key": "ui.menu.quit",
+      "text": "Quit"
+    },
+    {
+      "key": "ui.settings.master",
+      "text": "Master volume"
+    },
+    {
+      "key": "ui.settings.music",
+      "text": "Music volume"
+    },
+    {
+      "key": "ui.settings.sfx",
+      "text": "Sound effects"
+    },
+    {
+      "key": "ui.settings.brightness",
+      "text": "Brightness"
+    },
+    {
+      "key": "ui.settings.text_speed",
+      "text": "Text speed"
+    },
+    {
+      "key": "ui.settings.move_speed",
+      "text": "Movement speed"
+    },
+    {
+      "key": "ui.settings.battle_speed",
+      "text": "Battle speed"
+    },
+    {
+      "key": "ui.settings.windowed",
+      "text": "Windowed mode"
+    },
+    {
+      "key": "ui.settings.fullscreen",
+      "text": "Fullscreen mode"
+    },
+    {
+      "key": "ui.settings.animations_full",
+      "text": "Battle effects: full"
+    },
+    {
+      "key": "ui.settings.animations_short",
+      "text": "Battle effects: simple"
+    },
+    {
+      "key": "ui.settings.production_paused",
+      "text": "Production: paused"
+    },
+    {
+      "key": "ui.settings.production_running",
+      "text": "Production: real time"
+    },
+    {
+      "key": "ui.common.back",
+      "text": "Back"
+    },
+    {
+      "key": "ui.settings.language",
+      "text": "Language"
+    },
+    {
+      "key": "ui.settings.production_hint",
+      "text": "Production continues while the world is paused. Pausing production stops future progress."
+    },
+    {
+      "key": "ui.settings.save_failed",
+      "text": "Could not save settings: {0}"
     }
   ]
 }

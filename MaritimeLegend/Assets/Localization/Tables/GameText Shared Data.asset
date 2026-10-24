@@ -1,0 +1,200 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: GameText Shared Data
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
+  m_TableCollectionName: GameText
+  m_TableCollectionNameGuidString: 00d81ef979d819d42b3892bf3dd7ad47
+  m_Entries:
+  - m_Id: 1636229120
+    m_Key: ui.sailing.accept
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1707532288
+    m_Key: ui.sailing.decline
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726592
+    m_Key: sailing.event.unavailable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726593
+    m_Key: sailing.event.declined
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726594
+    m_Key: sailing.event.energy_low
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726595
+    m_Key: sailing.event.cargo_full
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726596
+    m_Key: sailing.event.bottle.prompt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726597
+    m_Key: sailing.event.crate.prompt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726598
+    m_Key: sailing.event.mermaid.prompt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726599
+    m_Key: sailing.event.wreck.prompt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726600
+    m_Key: sailing.event.bottle.result
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726601
+    m_Key: sailing.event.mermaid.result
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726602
+    m_Key: sailing.event.crate.result
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726603
+    m_Key: sailing.event.wreck.result
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726604
+    m_Key: sea.north_sea.name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726605
+    m_Key: sea.mediterranean_sea.name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726606
+    m_Key: sea.africa.name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726607
+    m_Key: sea.indian_ocean.name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726608
+    m_Key: sea.southeast_asia.name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726609
+    m_Key: sea.east_asia.name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726610
+    m_Key: sea.new_world.name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726611
+    m_Key: ui.menu.continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726612
+    m_Key: ui.menu.start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726613
+    m_Key: ui.menu.settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726614
+    m_Key: ui.menu.credits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726615
+    m_Key: ui.menu.quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726616
+    m_Key: ui.settings.master
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726617
+    m_Key: ui.settings.music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726618
+    m_Key: ui.settings.sfx
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726619
+    m_Key: ui.settings.brightness
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726620
+    m_Key: ui.settings.text_speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726621
+    m_Key: ui.settings.move_speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726622
+    m_Key: ui.settings.battle_speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726623
+    m_Key: ui.settings.windowed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726624
+    m_Key: ui.settings.fullscreen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726625
+    m_Key: ui.settings.animations_full
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726626
+    m_Key: ui.settings.animations_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726627
+    m_Key: ui.settings.production_paused
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726628
+    m_Key: ui.settings.production_running
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726629
+    m_Key: ui.common.back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726630
+    m_Key: ui.settings.language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726631
+    m_Key: ui.settings.production_hint
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711726632
+    m_Key: ui.settings.save_failed
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 3445843597575585816
+  references:
+    version: 2
+    RefIds:
+    - rid: 3445843597575585816
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1792803140997

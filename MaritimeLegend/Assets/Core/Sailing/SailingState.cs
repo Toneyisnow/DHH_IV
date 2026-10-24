@@ -3,6 +3,9 @@ using System.Collections.Generic;
 namespace MaritimeLegend.Domain {
     [Serializable] public class SailingState {
         public int version; public string regionId,mode="normal",backgroundId="";
+        // Additive regional presentation state; old saves start at a new safe Indian anchorage.
+        public string manualMapId="",manualSpawnPort="";
+        public float manualSpawnX,manualSpawnY,manualYaw,manualZoom=70;
         public double energy,foregroundSeconds,speed,lastDayDistance,spawnCountdown;
         public int nextEncounterId; public uint encounterSeed;
         public List<FleetDayState> fleets=new List<FleetDayState>();

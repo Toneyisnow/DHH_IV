@@ -5,6 +5,7 @@
 /[Uu]serSettings/
 /.BuildWorkspace/
 /.Character04UnityTest/
+/.LocalizationCheck/
 /Builds/
 *.csproj
 *.sln

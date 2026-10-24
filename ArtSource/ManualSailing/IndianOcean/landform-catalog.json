@@ -1,0 +1,79 @@
+{
+  "Angular_Small": {
+    "kind": "Angular",
+    "footX": 4.800000000000001,
+    "footY": 2.8440000000000003,
+    "height": 4.8,
+    "vertices": 2795
+  },
+  "Angular_Medium": {
+    "kind": "Angular",
+    "footX": 8.0,
+    "footY": 4.345000000000001,
+    "height": 9.5,
+    "vertices": 2795
+  },
+  "Angular_Large": {
+    "kind": "Angular",
+    "footX": 12.0,
+    "footY": 5.925000000000001,
+    "height": 16,
+    "vertices": 2795
+  },
+  "Rolling_Small": {
+    "kind": "Rolling",
+    "footX": 4.800000000000001,
+    "footY": 2.8440000000000003,
+    "height": 2.112,
+    "vertices": 2795
+  },
+  "Rolling_Medium": {
+    "kind": "Rolling",
+    "footX": 8.0,
+    "footY": 4.345000000000001,
+    "height": 4.18,
+    "vertices": 2795
+  },
+  "Rolling_Large": {
+    "kind": "Rolling",
+    "footX": 12.0,
+    "footY": 5.925000000000001,
+    "height": 7.04,
+    "vertices": 2795
+  },
+  "Snow_Small": {
+    "kind": "Snow",
+    "footX": 4.800000000000001,
+    "footY": 2.8440000000000003,
+    "height": 4.8,
+    "vertices": 2795
+  },
+  "Snow_Medium": {
+    "kind": "Snow",
+    "footX": 8.0,
+    "footY": 4.345000000000001,
+    "height": 9.5,
+    "vertices": 2795
+  },
+  "Snow_Large": {
+    "kind": "Snow",
+    "footX": 12.0,
+    "footY": 5.925000000000001,
+    "height": 16,
+    "vertices": 2795
+  },
+  "Dune_Small": {
+    "kind": "Dune",
+    "footX": 3.3600000000000003,
+    "footY": 2.0540000000000003,
+    "height": 1.65,
+    "vertices": 925
+  },
+  "Cliff_Large": {
+    "kind": "Cliff",
+    "footX": 10.4,
+    "footY": 7.11,
+    "height": 24,
+    "vertices": 2795
+  }
+}

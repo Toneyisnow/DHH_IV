@@ -1,0 +1,32 @@
+{
+  "sourceSize": [
+    1672,
+    941
+  ],
+  "biomeCounts": {
+    "0": 809875,
+    "1": 116175,
+    "2": 256361,
+    "3": 155253,
+    "4": 186936,
+    "5": 48752
+  },
+  "mountains": 114,
+  "dunes": 664,
+  "landformTypes": {
+    "Angular_Small": 16,
+    "Angular_Medium": 33,
+    "Angular_Large": 17,
+    "Rolling_Small": 1,
+    "Rolling_Medium": 6,
+    "Rolling_Large": 4,
+    "Snow_Small": 6,
+    "Snow_Medium": 20,
+    "Snow_Large": 6,
+    "Dune_Small": 664,
+    "Cliff_Large": 5
+  },
+  "trees": 10200,
+  "minimumMountainTreeSectorCoverage": 0.7,
+  "source": "painted-map classification and authored ranges; not surveyed elevation/bathymetry"
+}

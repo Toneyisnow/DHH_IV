@@ -1,0 +1,20 @@
+{
+  "source_size": [
+    1672,
+    941
+  ],
+  "output_size": [
+    6688,
+    3764
+  ],
+  "scale": 4,
+  "grid": [
+    7,
+    4
+  ],
+  "tile_size": 1088,
+  "gutter": 32,
+  "model": "H:\\DHH_IV\\ComfyUI\\models\\upscale_models\\RealESRGAN_x4plus.pth",
+  "model_sha256": "4fa0d38905f75ac06eb49a7951b426670021be3018265fd191d2125df9d682f1",
+  "model_source": "https://github.com/xinntao/Real-ESRGAN/releases/tag/v0.1.0"
+}

@@ -1,0 +1,54 @@
+{
+  "BayGround": {
+    "vertices": 205857,
+    "faces": 204800
+  },
+  "EarthHill_A": {
+    "vertices": 1645,
+    "faces": 3128
+  },
+  "RockPeak_A": {
+    "vertices": 1645,
+    "faces": 3128
+  },
+  "RockPeak_B": {
+    "vertices": 1645,
+    "faces": 3128
+  },
+  "Pine_Green_Small": {
+    "vertices": 343,
+    "faces": 271
+  },
+  "Pine_Green_Medium": {
+    "vertices": 343,
+    "faces": 271
+  },
+  "Pine_Green_Large": {
+    "vertices": 343,
+    "faces": 271
+  },
+  "Pine_Teal_Small": {
+    "vertices": 343,
+    "faces": 271
+  },
+  "Pine_Teal_Medium": {
+    "vertices": 343,
+    "faces": 271
+  },
+  "Pine_Teal_Large": {
+    "vertices": 343,
+    "faces": 271
+  },
+  "Pine_Yellow_Small": {
+    "vertices": 343,
+    "faces": 271
+  },
+  "Pine_Yellow_Medium": {
+    "vertices": 343,
+    "faces": 271
+  },
+  "Pine_Yellow_Large": {
+    "vertices": 343,
+    "faces": 271
+  }
+}

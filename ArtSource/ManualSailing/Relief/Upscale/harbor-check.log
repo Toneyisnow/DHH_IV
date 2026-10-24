@@ -1,0 +1,101 @@
+Mono path[0] = 'D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Builds/ManualSailing/MaritimeLegend_Data/Managed'
+Mono config path = 'D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Builds/ManualSailing/MonoBleedingEdge/etc'
+Found 3 interfaces on host : 0) 172.31.112.1 1) 10.0.0.99 2) 10.0.0.24
+Player connection [86872]  Target information:
+
+Player connection [86872]  * "[IP] 172.31.112.1 [Port] 55001 [Flags] 2 [Guid] 1495233668 [EditorId] 2325601668 [Version] 1048832 [Id] WindowsPlayer(2,toneyalien12) [Debug] 0 [PackageName] WindowsPlayer [ProjectName] 航海世家" 
+
+Player connection [86872]  * "[IP] 10.0.0.99 [Port] 55001 [Flags] 2 [Guid] 1495233668 [EditorId] 2325601668 [Version] 1048832 [Id] WindowsPlayer(2,toneyalien12) [Debug] 0 [PackageName] WindowsPlayer [ProjectName] 航海世家" 
+
+Player connection [86872]  * "[IP] 10.0.0.24 [Port] 55001 [Flags] 2 [Guid] 1495233668 [EditorId] 2325601668 [Version] 1048832 [Id] WindowsPlayer(2,toneyalien12) [Debug] 0 [PackageName] WindowsPlayer [ProjectName] 航海世家" 
+
+Player connection [86872] Started UDP target info broadcast (1) on [225.0.0.222:54997].
+
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Initialize engine version: 6000.3.10f1 (e35f0c77bd8e)
+[Subsystems] Discovering subsystems at path D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Builds/ManualSailing/MaritimeLegend_Data/UnitySubsystems
+Forcing GfxDevice: Direct3D 11
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Ti (ID=0x2489)
+    Vendor:   NVIDIA
+    VRAM:     8024 MB
+    Driver:   32.0.16.1060
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.182 seconds
+- Finished resetting the current domain, in  0.003 seconds
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+UnloadTime: 1.204700 ms
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Releasing render texture that is set to be RenderTexture.active!
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.RenderTexture:Release ()
+MaritimeLegend.OpeningPresentation:OnDestroy () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Scenes/Controllers/MainMenuScene/OpeningPresentation.cs:101)
+
+[D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Scenes/Controllers/MainMenuScene/OpeningPresentation.cs line 101]
+
+UnloadTime: 4.381200 ms
+Unloading 87 unused Assets / (19.9 KB). Loaded Objects now: 2649.
+Memory consumption went from 57.0 MB to 57.0 MB.
+Total: 2.318500 ms (FindLiveObjects: 0.119600 ms CreateObjectMapping: 0.056000 ms MarkObjects: 1.859300 ms  DeleteObjects: 0.276000 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.931000 ms
+Unloading 16 unused Assets / (80.4 KB). Loaded Objects now: 3103.
+Memory consumption went from 59.1 MB to 59.1 MB.
+Total: 1.725900 ms (FindLiveObjects: 0.196900 ms CreateObjectMapping: 0.119500 ms MarkObjects: 1.303700 ms  DeleteObjects: 0.105200 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.154900 ms
+Unloading 3 unused Assets / (312 B). Loaded Objects now: 2955.
+Memory consumption went from 58.2 MB to 58.2 MB.
+Total: 1.169600 ms (FindLiveObjects: 0.109200 ms CreateObjectMapping: 0.066100 ms MarkObjects: 0.941700 ms  DeleteObjects: 0.052400 ms)
+
+SEA_TILES_PASS: 28 RGBA32 tiles at 1088, effective map 6688 x 3764
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.SeaMapTiles:Load () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Sailing/SeaMapTiles.cs:15)
+MaritimeLegend.SeaReliefRenderer:.ctor (UnityEngine.Transform,UnityEngine.Texture2D) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Sailing/SeaReliefRenderer.cs:13)
+MaritimeLegend.MaritimeGame:EnsureManualSea () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Sailing/ManualSeaPresentation.cs:16)
+MaritimeLegend.MaritimeGame:OrdinarySailingInput (double) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Sailing/SailingInput.cs:7)
+MaritimeLegend.MaritimeGame:Update () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Shared/UI/MaritimeGame.cs:15)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.536600 ms
+Unloading 13 unused Assets / (0 B). Loaded Objects now: 3174.
+Memory consumption went from 93.8 MB to 93.8 MB.
+Total: 1.197800 ms (FindLiveObjects: 0.133500 ms CreateObjectMapping: 0.077800 ms MarkObjects: 0.964100 ms  DeleteObjects: 0.021400 ms)
+
+HARBOR_FLOW_PASS: port destination, return, automatic route, supply rejection, manual sailing scene, preserved state
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.Tests.HarborFlowChecks/<Guard>d__2:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/HarborFlowChecks.cs:12)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input System polling thread exited.
+Input System module state changed to: Shutdown.
+PlayerConnection::Cleanup##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1792723898989,"processId":69508,"allocatedMemory":56552,"memoryLabels":[{"Default":136},{"NewDelete":104},{"Manager":9427},{"VertexData":432},{"GfxDevice":360},{"Audio":752},{"Serialization":520},{"JobScheduler":32768},{"String":569},{"DynamicArray":1792},{"HashMap":3584},{"PoolAlloc":192},{"CloudService":144},{"WebRequest":3564},{"VR":1872},{"Video":144},{"Subsystems":96},{"Accessibility":80},{"CoreBusinessMetrics":120}]}

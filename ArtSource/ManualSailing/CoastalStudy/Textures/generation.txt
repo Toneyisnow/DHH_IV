@@ -1,0 +1,6 @@
+Tool: built-in image_gen (imagegen skill), 2026-10-22.
+Actual generated source dimensions: 1254 x 1254 pixels (the prompt requested 2048).
+Original: GrassPainted.png. Runtime copy: MaritimeLegend/Assets/Resources/Textures/Environment/CoastalStudy/GrassPainted.png.
+Consumed as world-space terrain detail. No texture applied to tree or mountain models.
+Full generation prompt:
+Use case: stylized-concept. Asset type: seamless square grass albedo texture for a miniature historical maritime strategy game terrain, not a scene illustration. Generate a 2048x2048 tileable top-down hand-painted short grass turf texture. Fill the entire image edge to edge with fine crisp small irregular grass strokes and little tufts, some subtle exposed ochre earth specks. High saturation warm meadow green, moss and olive greens, ochre green highlights, dark green crevices. Dense fine-scale pattern with no large clumps, no flowers, no trees, no stones, no objects, no border, no text. Clear detailed strokes rather than photographic grass or blurry noise. Uniform overall illumination, no directional cast shadows, no vignette, no perspective, no shiny specular highlights. Seamless repeat on all four edges. Fine texture suitable for a tile spanning 8 meters of terrain; preserve visible grass detail at an oblique camera angle.

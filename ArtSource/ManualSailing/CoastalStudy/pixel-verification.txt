@@ -1,0 +1,1 @@
+PIXEL_GRID_PASS: all 2x2 screenshot blocks identical. Pixel vs smooth mean RGB difference = 10.9496. Gradient and coast checks passed in runtime.log.

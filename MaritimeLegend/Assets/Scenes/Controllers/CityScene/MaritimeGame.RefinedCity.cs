@@ -38,7 +38,7 @@ public partial class MaritimeGame {
   foreach(var marker in view.Landmarks){
    if(Vector3.Distance(view.Player.position,marker.Value)>20)continue;
    var p=view.Project(marker.Value+Vector3.up*.15f);
-   string destination=marker.Key=="码头"?"海图":marker.Key.StartsWith("市场")?"市场":marker.Key=="酒馆"?"伙伴":marker.Key;
+   string destination=marker.Key=="码头"?"港口":marker.Key.StartsWith("市场")?"市场":marker.Key=="酒馆"?"伙伴":marker.Key;
    if(p.x>100&&p.x<1480&&p.y>185&&p.y<920&&TownButton(new Rect(p.x-58,p.y-20,116,40),marker.Key,"label_bar",21))view.GoTo(marker.Value,destination);
   }
   TownLabel(38,c.ports[s.city].name);
@@ -60,8 +60,8 @@ public partial class MaritimeGame {
    string item=i<local.Length?local[i]:"—";var product=c.products.FirstOrDefault(x=>x.id==item||x.name==item);
    Label(1628,y+3,240,34,product==null?item:product.name,townPaper);
   }
-  string[] labels={"航海图","市场","市政厅","伙伴","产业园","船坞","功能"};
-  string[] destinations={"海图","市场","市政厅","伙伴","产业园","船坞"};
+  string[] labels={"港口","市场","市政厅","伙伴","产业园","船坞","功能"};
+  string[] destinations={"港口","市场","市政厅","伙伴","产业园","船坞"};
   for(int i=0;i<labels.Length;i++)if(TownButton(new Rect(28+i*220,1018,213,52),labels[i])){
    if(i==6)townFunctions=!townFunctions;else{townFunctions=false;Change(destinations[i]);}
   }

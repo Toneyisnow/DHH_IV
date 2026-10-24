@@ -1,21 +1,42 @@
-Manual sailing implementation / 2026-10-20
+Manual sea relief revision / 2026-10-22
 
-Art originals: Assets/AutoSailing_Map_Pack/01_map, 04_cities, 05_ships.
-Runtime copies: MaritimeLegend/Assets/Resources/Sprites/ManualSailing.
-Projection: SeaProjection.cs and Resources/Shaders/ManualSea.shader.
-Original image 1672 x 941; 10x = 16720 x 9410 reference units. Local slope 0.70710678.
-Horizon y=162 in 1920x1080 coordinates. Nonlinear depth exponent .75 curves the distant surface.
-One inverse is used for shader UV sampling and click picking; CPU forward projection places scenery/targets.
-Fleet anchor dead zone x=910..1010, y=550..570; four sprite offsets keep complete ships inside the central 20%.
+Runtime: SeaReliefRenderer renders a real 837 x 471 height mesh with original map UVs.
+Orthographic camera: 45 degrees, ortho size 54 / 1.3, target 1920 x 1080; 1 original source pixel = 13 screen reference pixels before foreshortening.
+SeaProjection forward/inverse is affine and exactly matches this camera at sea level.
+The terrain is no longer stretched by a horizon-dependent UV mapping. Sky and distant fog are composed separately.
+Terrain shading retains registered source paint and mild matte diffuse shading.
 
-Original domain sea coordinates, ship ownership, arrival, supplies, sail trim, calendar and encounters remain authoritative.
-The SEA art is presentation-only, aligned to the departure coordinate; it is NOT a geographic migration.
-A persistent click target drives GameService.SteerToward until within .0005 units, then throttle becomes zero.
-UI controls, sky, pending events, modal dialogs and pause do not issue sailing targets.
+CoastNavigation consumes a full-resolution signed Euclidean distance field derived from the same art as the height field.
+Clearance 14 source pixels; sweep steps <= 0.75 pixels; contact binary search then 22% tangential sliding.
+GameService.Sail applies its optional ISeaNavigationPolicy before recording speed or distance. Automatic trade routes do not use this policy.
+Legacy starts inside the new exclusion mask may move only toward greater clearance, avoiding a forced teleport or corrupting save progress.
+A reached waypoint releases steering, never throttle. Explicit stop still works.
+Bobbing: 5 seconds/cycle, peak-to-peak 20% of sprite height, phase per ship; animation advances only during unblocked simulation ticks.
 
-Build: Unity batch -executeMethod MaritimeLegend.Editor.ManualSeaBuild.Build
-Run: MaritimeLegend.exe -manualSeaDemo
-Verify: MaritimeLegend.exe -batchmode -force-d3d11 -manualSeaSmoke
-Demo writes into its own ManualSeaUserData directory, never the normal save directory.
+Blender source stores the exact same dense grid and packed source texture as the runtime height data. It is an editable source, not a real DEM.
+Regenerate: python ArtSource/ManualSailing/Relief/build_relief.py
+Blender: blender -b --python ArtSource/ManualSailing/Relief/build_blender.py
+Build: Unity -executeMethod MaritimeLegend.Editor.ManualSeaBuild.Build
+Runtime verification: MaritimeLegend.exe -batchmode -force-d3d11 -manualSeaSmoke
+Harbor regression: MaritimeLegend.exe -batchmode -force-d3d11 -harborSmoke
 
-Limitations and decisions are in Builds/ManualSailing/说明.txt.
+Matte coast revision:
+Sea-level apron and shader SDF clipping preserve a continuous shore without an elevated slab.
+The first four inland source pixels have exactly zero height. Relief rises gradually inland and has a capped slope; peak 9.443 versus 39.852 previously.
+Ground shader preserves painted albedo/shadow with 4x super-resolved albedo and only restrained diffuse shaping; no glossy or procedural rock overlay.
+Bathymetry is a separate float field, inferred from offshore distance and original water darkness. Ocean color uses depth bands and original wave brushwork.
+Ocean palette is authored in sRGB and converted explicitly in linear rendering projects.
+Image NPOT scaling is disabled to retain source dimensions; anisotropic texture filtering is enabled.
+The East Asia attachment is a style reference; the sailing region remains Southeast Asia.
+
+Tiled super-resolution revision / 2026-10-22:
+upscale_map.py uses the existing ComfyUI Python environment and official RealESRGAN_x4plus weights on H:.
+Source 1672 x 941 -> 6688 x 3764. Inference cores 256 source pixels, 32-pixel feathered context.
+The merged result is exported into 7 x 4 tiles, each 1088 square including 32 output-pixel gutters.
+verify_tiles.py checks all 45 shared borders exactly, and reconstructs the full SR image without pixel differences.
+Unity imports tiles as sRGB RGBA32, NPOT untouched, no compression, full mip chain. SeaMapTiles copies them into one GPU texture array and unloads individual imports (about 169 MiB GPU array).
+SeaMapTiles.cginc computes LOD before tile wrapping and caps it to the shared gutter's supported range. Both ground and water use the registered high-resolution sample.
+Coast UV displacement was removed because it stretched tiny islands. SDF clipping, sea-level shore geometry, collision masks and inferred depth data remain geographically registered to the original.
+Camera zoom is 1.3x versus the last version, showing 76.9% of the old width/height and 59.2% of its area. SeaProjection shares the same camera constant.
+SR reconstructs plausible edges; it cannot recover authoritative details absent from the original image. Original map and editable Blender source are retained. Runtime uses the new tile array; the Blender file still packs the original reference texture.
+Model source and SHA256: Relief/Upscale/manifest.json. Review: Relief/Upscale/comparison.png (left old bilinear, right SR at identical scale).

@@ -85,6 +85,94 @@
     {
       "key": "sea.new_world.name",
       "text": "新大陸"
+    },
+    {
+      "key": "ui.menu.continue",
+      "text": "航海を続ける"
+    },
+    {
+      "key": "ui.menu.start",
+      "text": "ゲーム開始"
+    },
+    {
+      "key": "ui.menu.settings",
+      "text": "設定"
+    },
+    {
+      "key": "ui.menu.credits",
+      "text": "クレジット"
+    },
+    {
+      "key": "ui.menu.quit",
+      "text": "終了"
+    },
+    {
+      "key": "ui.settings.master",
+      "text": "全体音量"
+    },
+    {
+      "key": "ui.settings.music",
+      "text": "音楽音量"
+    },
+    {
+      "key": "ui.settings.sfx",
+      "text": "効果音量"
+    },
+    {
+      "key": "ui.settings.brightness",
+      "text": "明るさ"
+    },
+    {
+      "key": "ui.settings.text_speed",
+      "text": "文字表示速度"
+    },
+    {
+      "key": "ui.settings.move_speed",
+      "text": "移動速度"
+    },
+    {
+      "key": "ui.settings.battle_speed",
+      "text": "戦闘速度"
+    },
+    {
+      "key": "ui.settings.windowed",
+      "text": "ウィンドウ表示"
+    },
+    {
+      "key": "ui.settings.fullscreen",
+      "text": "全画面表示"
+    },
+    {
+      "key": "ui.settings.animations_full",
+      "text": "戦闘演出：詳細"
+    },
+    {
+      "key": "ui.settings.animations_short",
+      "text": "戦闘演出：簡略"
+    },
+    {
+      "key": "ui.settings.production_paused",
+      "text": "生産：一時停止"
+    },
+    {
+      "key": "ui.settings.production_running",
+      "text": "生産：実時間で進行"
+    },
+    {
+      "key": "ui.common.back",
+      "text": "戻る"
+    },
+    {
+      "key": "ui.settings.language",
+      "text": "言語"
+    },
+    {
+      "key": "ui.settings.production_hint",
+      "text": "世界が一時停止中でも生産は進みます。生産の一時停止は以後の進行のみを止めます。"
+    },
+    {
+      "key": "ui.settings.save_failed",
+      "text": "設定を保存できませんでした：{0}"
     }
   ]
 }

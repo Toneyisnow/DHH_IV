@@ -46,11 +46,11 @@ namespace MaritimeLegend {
     // Require release + completion of the transition; the wake-up click cannot select a menu item.
     GUI.enabled=enabled&&TitleInputReady(menu,Input.GetMouseButton(0));
     float y=575;
-    if(s!=null){if(OpeningMenuButton(y,"继续当前航程"))Change(s.atSea?"航海":"城市");y+=62;}
-    if(OpeningMenuButton(y,"开始游戏"))OpenSlots("load");y+=62;
-    if(OpeningMenuButton(y,"设置"))settingsOpen=true;y+=62;
-    if(OpeningMenuButton(y,"制作人员与素材"))Notify("代码、组件美术及音乐：本项目原创；参考重建图：用户提供。完整记录见 Documentation。");y+=62;
-    if(OpeningMenuButton(y,"退出"))Application.Quit();
+    if(s!=null){if(OpeningMenuButton(y,L("ui.menu.continue")))Change(s.atSea?"航海":"城市");y+=62;}
+    if(OpeningMenuButton(y,L("ui.menu.start")))OpenSlots("load");y+=62;
+    if(OpeningMenuButton(y,L("ui.menu.settings")))settingsOpen=true;y+=62;
+    if(OpeningMenuButton(y,L("ui.menu.credits")))Notify("代码、组件美术及音乐：本项目原创；参考重建图：用户提供。完整记录见 Documentation。");y+=62;
+    if(OpeningMenuButton(y,L("ui.menu.quit")))Application.Quit();
     GUI.enabled=enabled;
    }
    art.DrawEffects(Mathf.Lerp(1,.28f,menu));

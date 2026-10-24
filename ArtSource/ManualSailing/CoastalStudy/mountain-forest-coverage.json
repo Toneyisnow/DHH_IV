@@ -1,0 +1,40 @@
+{
+  "method": "96 equal-arc foot samples; crown radius plus 0.65-unit contact band",
+  "mountains": [
+    {
+      "asset": "RockPeak_A",
+      "x": -26,
+      "z": 13,
+      "coverage": 0.7188,
+      "addedTrees": 8
+    },
+    {
+      "asset": "RockPeak_B",
+      "x": -33,
+      "z": 19,
+      "coverage": 0.6458,
+      "addedTrees": 6
+    },
+    {
+      "asset": "RockPeak_B",
+      "x": -18,
+      "z": 18,
+      "coverage": 0.7917,
+      "addedTrees": 5
+    },
+    {
+      "asset": "EarthHill_A",
+      "x": 23,
+      "z": 12,
+      "coverage": 0.6667,
+      "addedTrees": 9
+    },
+    {
+      "asset": "EarthHill_A",
+      "x": 31,
+      "z": 19,
+      "coverage": 0.6354,
+      "addedTrees": 3
+    }
+  ]
+}

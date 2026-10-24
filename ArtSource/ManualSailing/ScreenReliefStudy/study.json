@@ -1,0 +1,73 @@
+{
+  "source": "Assets/AutoSailing_Map_Pack/01_map/southeast_asia.png",
+  "crop_original_pixels": [
+    300,
+    185,
+    476,
+    325
+  ],
+  "texture_source": "Existing registered 4x Real-ESRGAN map",
+  "texture_size": [
+    704,
+    560
+  ],
+  "size_world": [
+    176,
+    140
+  ],
+  "ridge_controls": [
+    [
+      301,
+      103,
+      5
+    ],
+    [
+      368,
+      44,
+      10
+    ],
+    [
+      398,
+      7,
+      13
+    ],
+    [
+      453,
+      82,
+      8
+    ],
+    [
+      508,
+      27,
+      16
+    ],
+    [
+      548,
+      144,
+      10
+    ],
+    [
+      626,
+      116,
+      15
+    ],
+    [
+      592,
+      226,
+      10
+    ],
+    [
+      638,
+      289,
+      13
+    ],
+    [
+      661,
+      352,
+      4
+    ]
+  ],
+  "crown_count": 175,
+  "peak_height": 16.63804817199707,
+  "note": "Authored stylized relief; not surveyed elevation. Forest crowns are relief geometry, not separate tree assets."
+}

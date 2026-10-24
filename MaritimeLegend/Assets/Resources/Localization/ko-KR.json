@@ -85,6 +85,94 @@
     {
       "key": "sea.new_world.name",
       "text": "신대륙"
+    },
+    {
+      "key": "ui.menu.continue",
+      "text": "항해 계속"
+    },
+    {
+      "key": "ui.menu.start",
+      "text": "게임 시작"
+    },
+    {
+      "key": "ui.menu.settings",
+      "text": "설정"
+    },
+    {
+      "key": "ui.menu.credits",
+      "text": "제작진"
+    },
+    {
+      "key": "ui.menu.quit",
+      "text": "종료"
+    },
+    {
+      "key": "ui.settings.master",
+      "text": "전체 음량"
+    },
+    {
+      "key": "ui.settings.music",
+      "text": "음악 음량"
+    },
+    {
+      "key": "ui.settings.sfx",
+      "text": "효과음 음량"
+    },
+    {
+      "key": "ui.settings.brightness",
+      "text": "밝기"
+    },
+    {
+      "key": "ui.settings.text_speed",
+      "text": "텍스트 속도"
+    },
+    {
+      "key": "ui.settings.move_speed",
+      "text": "이동 속도"
+    },
+    {
+      "key": "ui.settings.battle_speed",
+      "text": "전투 속도"
+    },
+    {
+      "key": "ui.settings.windowed",
+      "text": "창 모드"
+    },
+    {
+      "key": "ui.settings.fullscreen",
+      "text": "전체 화면"
+    },
+    {
+      "key": "ui.settings.animations_full",
+      "text": "전투 연출: 전체"
+    },
+    {
+      "key": "ui.settings.animations_short",
+      "text": "전투 연출: 간략"
+    },
+    {
+      "key": "ui.settings.production_paused",
+      "text": "생산: 일시 정지"
+    },
+    {
+      "key": "ui.settings.production_running",
+      "text": "생산: 실제 시간으로 진행"
+    },
+    {
+      "key": "ui.common.back",
+      "text": "돌아가기"
+    },
+    {
+      "key": "ui.settings.language",
+      "text": "언어"
+    },
+    {
+      "key": "ui.settings.production_hint",
+      "text": "세계가 일시 정지되어도 생산은 계속됩니다. 생산 일시 정지는 이후 진행만 멈춥니다."
+    },
+    {
+      "key": "ui.settings.save_failed",
+      "text": "설정을 저장하지 못했습니다: {0}"
     }
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "sailSilhouetteAreas": [
+    15206,
+    46998,
+    84199,
+    130858
+  ],
+  "canvas": [
+    512,
+    512
+  ],
+  "source": "editable vector paths; supersampled raster export"
+}

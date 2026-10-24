@@ -85,6 +85,94 @@
     {
       "key": "sea.new_world.name",
       "text": "新大陆"
+    },
+    {
+      "key": "ui.menu.continue",
+      "text": "继续当前航程"
+    },
+    {
+      "key": "ui.menu.start",
+      "text": "开始游戏"
+    },
+    {
+      "key": "ui.menu.settings",
+      "text": "设置"
+    },
+    {
+      "key": "ui.menu.credits",
+      "text": "制作人员与素材"
+    },
+    {
+      "key": "ui.menu.quit",
+      "text": "退出"
+    },
+    {
+      "key": "ui.settings.master",
+      "text": "总音量"
+    },
+    {
+      "key": "ui.settings.music",
+      "text": "音乐音量"
+    },
+    {
+      "key": "ui.settings.sfx",
+      "text": "音效音量"
+    },
+    {
+      "key": "ui.settings.brightness",
+      "text": "画面亮度"
+    },
+    {
+      "key": "ui.settings.text_speed",
+      "text": "文字速度"
+    },
+    {
+      "key": "ui.settings.move_speed",
+      "text": "移动速度"
+    },
+    {
+      "key": "ui.settings.battle_speed",
+      "text": "战斗速度"
+    },
+    {
+      "key": "ui.settings.windowed",
+      "text": "切换窗口模式"
+    },
+    {
+      "key": "ui.settings.fullscreen",
+      "text": "切换全屏模式"
+    },
+    {
+      "key": "ui.settings.animations_full",
+      "text": "战斗演出：完整"
+    },
+    {
+      "key": "ui.settings.animations_short",
+      "text": "战斗演出：简略"
+    },
+    {
+      "key": "ui.settings.production_paused",
+      "text": "生产：暂停中"
+    },
+    {
+      "key": "ui.settings.production_running",
+      "text": "生产：真实时间继续"
+    },
+    {
+      "key": "ui.common.back",
+      "text": "返回"
+    },
+    {
+      "key": "ui.settings.language",
+      "text": "语言"
+    },
+    {
+      "key": "ui.settings.production_hint",
+      "text": "世界暂停时生产继续；暂停生产只冻结后续进度。"
+    },
+    {
+      "key": "ui.settings.save_failed",
+      "text": "设置保存失败：{0}"
     }
   ]
 }

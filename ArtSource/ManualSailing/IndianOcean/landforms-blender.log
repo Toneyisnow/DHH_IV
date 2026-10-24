@@ -1,0 +1,40 @@
+Blender 3.5.1 (hash e1ccd9d4a1d3 built 2023-04-24 23:56:35)
+Read prefs: C:\Users\charl\AppData\Roaming\Blender Foundation\Blender\3.5\config\userpref.blend
+Info: Total files 0 | Changed 0 | Failed 0
+
+FBX export starting... 'D:\\SourceCode\\Git\\toneyisnow\\DHH_IV\\MaritimeLegend\\Assets\\Resources\\Models\\Environment\\IndianOcean\\Angular_Small.fbx'
+export finished in 0.0625 sec.
+
+FBX export starting... 'D:\\SourceCode\\Git\\toneyisnow\\DHH_IV\\MaritimeLegend\\Assets\\Resources\\Models\\Environment\\IndianOcean\\Angular_Medium.fbx'
+export finished in 0.0312 sec.
+
+FBX export starting... 'D:\\SourceCode\\Git\\toneyisnow\\DHH_IV\\MaritimeLegend\\Assets\\Resources\\Models\\Environment\\IndianOcean\\Angular_Large.fbx'
+export finished in 0.0312 sec.
+
+FBX export starting... 'D:\\SourceCode\\Git\\toneyisnow\\DHH_IV\\MaritimeLegend\\Assets\\Resources\\Models\\Environment\\IndianOcean\\Rolling_Small.fbx'
+export finished in 0.0312 sec.
+
+FBX export starting... 'D:\\SourceCode\\Git\\toneyisnow\\DHH_IV\\MaritimeLegend\\Assets\\Resources\\Models\\Environment\\IndianOcean\\Rolling_Medium.fbx'
+export finished in 0.0312 sec.
+
+FBX export starting... 'D:\\SourceCode\\Git\\toneyisnow\\DHH_IV\\MaritimeLegend\\Assets\\Resources\\Models\\Environment\\IndianOcean\\Rolling_Large.fbx'
+export finished in 0.0469 sec.
+
+FBX export starting... 'D:\\SourceCode\\Git\\toneyisnow\\DHH_IV\\MaritimeLegend\\Assets\\Resources\\Models\\Environment\\IndianOcean\\Snow_Small.fbx'
+export finished in 0.0312 sec.
+
+FBX export starting... 'D:\\SourceCode\\Git\\toneyisnow\\DHH_IV\\MaritimeLegend\\Assets\\Resources\\Models\\Environment\\IndianOcean\\Snow_Medium.fbx'
+export finished in 0.0625 sec.
+
+FBX export starting... 'D:\\SourceCode\\Git\\toneyisnow\\DHH_IV\\MaritimeLegend\\Assets\\Resources\\Models\\Environment\\IndianOcean\\Snow_Large.fbx'
+export finished in 0.0469 sec.
+
+FBX export starting... 'D:\\SourceCode\\Git\\toneyisnow\\DHH_IV\\MaritimeLegend\\Assets\\Resources\\Models\\Environment\\IndianOcean\\Dune_Small.fbx'
+export finished in 0.0156 sec.
+
+FBX export starting... 'D:\\SourceCode\\Git\\toneyisnow\\DHH_IV\\MaritimeLegend\\Assets\\Resources\\Models\\Environment\\IndianOcean\\Cliff_Large.fbx'
+export finished in 0.0625 sec.
+Info: Saved "IndianOcean_Landforms.blend"
+INDIAN_LANDFORMS_PASS 11
+
+Blender quit

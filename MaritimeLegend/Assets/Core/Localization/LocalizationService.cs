@@ -12,6 +12,9 @@ namespace MaritimeLegend.Domain {
         readonly Func<string,string> read;
         public LocalizationService(LocalizationPlan plan,Func<string,string> read=null) {
             this.plan=plan;this.read=read??(locale=>Resources.Load<TextAsset>("Localization/"+locale).text);
+#if UNITY_5_3_OR_NEWER
+            nativeTables = read == null;
+#endif
         }
         LocaleTable Table(string locale) {
             if(!tables.ContainsKey(locale)) {
@@ -23,8 +26,25 @@ namespace MaritimeLegend.Domain {
         }
         public string Text(string locale,string key,params object[] args) {
             if(!plan.locales.Contains(locale))locale=plan.fallbackLocale;
+#if UNITY_5_3_OR_NEWER
+            if (nativeTables) {
+                var value = NativeValue(locale, key) ?? NativeValue(plan.fallbackLocale, key);
+                return value == null ? "["+key+"]" : string.Format(CultureInfo.GetCultureInfo(locale), value, args);
+            }
+#endif
             var entry=Table(locale).entries.FirstOrDefault(e=>e.key==key)??Table(plan.fallbackLocale).entries.FirstOrDefault(e=>e.key==key);
             return entry==null?"["+key+"]":string.Format(CultureInfo.GetCultureInfo(locale),entry.text,args);
         }
+#if UNITY_5_3_OR_NEWER
+        bool nativeTables;
+        static string NativeValue(string code, string key) {
+            UnityEngine.Localization.Settings.LocalizationSettings.InitializationOperation.WaitForCompletion();
+            var locale = UnityEngine.Localization.Settings.LocalizationSettings.AvailableLocales.GetLocale(code);
+            if (locale == null) return null;
+            var table = UnityEngine.Localization.Settings.LocalizationSettings.StringDatabase.GetTable("GameText", locale);
+            var value = table == null ? null : table.GetEntry(key)?.LocalizedValue;
+            return string.IsNullOrEmpty(value) ? null : value;
+        }
+#endif
     }
 }

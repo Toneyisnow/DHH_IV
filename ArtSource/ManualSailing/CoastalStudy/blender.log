@@ -1,0 +1,51 @@
+Blender 3.5.1 (hash e1ccd9d4a1d3 built 2023-04-24 23:56:35)
+Read prefs: C:\Users\charl\AppData\Roaming\Blender Foundation\Blender\3.5\config\userpref.blend
+Info: Total files 0 | Changed 0 | Failed 0
+MOUNTAIN_FOREST_COVERAGE [{'asset': 'RockPeak_A', 'x': -26, 'z': 13, 'coverage': 0.7188, 'addedTrees': 8}, {'asset': 'RockPeak_B', 'x': -33, 'z': 19, 'coverage': 0.6458, 'addedTrees': 6}, {'asset': 'RockPeak_B', 'x': -18, 'z': 18, 'coverage': 0.7917, 'addedTrees': 5}, {'asset': 'EarthHill_A', 'x': 23, 'z': 12, 'coverage': 0.6667, 'addedTrees': 9}, {'asset': 'EarthHill_A', 'x': 31, 'z': 19, 'coverage': 0.6354, 'addedTrees': 3}]
+FOREST_FLOOR_PAINT 8581 dense vertices, tree-driven coverage
+
+FBX export starting... 'D:\\SourceCode\\Git\\toneyisnow\\DHH_IV\\MaritimeLegend\\Assets\\Resources\\Models\\Environment\\CoastalStudy\\BayGround.fbx'
+export finished in 3.0625 sec.
+
+FBX export starting... 'D:\\SourceCode\\Git\\toneyisnow\\DHH_IV\\MaritimeLegend\\Assets\\Resources\\Models\\Environment\\CoastalStudy\\EarthHill_A.fbx'
+export finished in 0.0312 sec.
+
+FBX export starting... 'D:\\SourceCode\\Git\\toneyisnow\\DHH_IV\\MaritimeLegend\\Assets\\Resources\\Models\\Environment\\CoastalStudy\\RockPeak_A.fbx'
+export finished in 0.0156 sec.
+
+FBX export starting... 'D:\\SourceCode\\Git\\toneyisnow\\DHH_IV\\MaritimeLegend\\Assets\\Resources\\Models\\Environment\\CoastalStudy\\RockPeak_B.fbx'
+export finished in 0.0156 sec.
+
+FBX export starting... 'D:\\SourceCode\\Git\\toneyisnow\\DHH_IV\\MaritimeLegend\\Assets\\Resources\\Models\\Environment\\CoastalStudy\\Pine_Green_Small.fbx'
+export finished in 0.0156 sec.
+
+FBX export starting... 'D:\\SourceCode\\Git\\toneyisnow\\DHH_IV\\MaritimeLegend\\Assets\\Resources\\Models\\Environment\\CoastalStudy\\Pine_Green_Medium.fbx'
+export finished in 0.0156 sec.
+
+FBX export starting... 'D:\\SourceCode\\Git\\toneyisnow\\DHH_IV\\MaritimeLegend\\Assets\\Resources\\Models\\Environment\\CoastalStudy\\Pine_Green_Large.fbx'
+export finished in 0.0000 sec.
+
+FBX export starting... 'D:\\SourceCode\\Git\\toneyisnow\\DHH_IV\\MaritimeLegend\\Assets\\Resources\\Models\\Environment\\CoastalStudy\\Pine_Teal_Small.fbx'
+export finished in 0.0000 sec.
+
+FBX export starting... 'D:\\SourceCode\\Git\\toneyisnow\\DHH_IV\\MaritimeLegend\\Assets\\Resources\\Models\\Environment\\CoastalStudy\\Pine_Teal_Medium.fbx'
+export finished in 0.0000 sec.
+
+FBX export starting... 'D:\\SourceCode\\Git\\toneyisnow\\DHH_IV\\MaritimeLegend\\Assets\\Resources\\Models\\Environment\\CoastalStudy\\Pine_Teal_Large.fbx'
+export finished in 0.0000 sec.
+
+FBX export starting... 'D:\\SourceCode\\Git\\toneyisnow\\DHH_IV\\MaritimeLegend\\Assets\\Resources\\Models\\Environment\\CoastalStudy\\Pine_Yellow_Small.fbx'
+export finished in 0.0156 sec.
+
+FBX export starting... 'D:\\SourceCode\\Git\\toneyisnow\\DHH_IV\\MaritimeLegend\\Assets\\Resources\\Models\\Environment\\CoastalStudy\\Pine_Yellow_Medium.fbx'
+export finished in 0.0000 sec.
+
+FBX export starting... 'D:\\SourceCode\\Git\\toneyisnow\\DHH_IV\\MaritimeLegend\\Assets\\Resources\\Models\\Environment\\CoastalStudy\\Pine_Yellow_Large.fbx'
+export finished in 0.0156 sec.
+Info: Saved "CoastalStudy.blend"
+
+FBX export starting... 'D:\\SourceCode\\Git\\toneyisnow\\DHH_IV\\ArtSource\\ManualSailing\\CoastalStudy\\CoastalStudy_Landscape.fbx'
+export finished in 3.1094 sec.
+COASTAL_ASSETS_PASS 118 placements 13 assets
+
+Blender quit

@@ -85,6 +85,94 @@
     {
       "key": "sea.new_world.name",
       "text": "新大陸"
+    },
+    {
+      "key": "ui.menu.continue",
+      "text": "繼續目前航程"
+    },
+    {
+      "key": "ui.menu.start",
+      "text": "開始遊戲"
+    },
+    {
+      "key": "ui.menu.settings",
+      "text": "設定"
+    },
+    {
+      "key": "ui.menu.credits",
+      "text": "製作人員與素材"
+    },
+    {
+      "key": "ui.menu.quit",
+      "text": "離開"
+    },
+    {
+      "key": "ui.settings.master",
+      "text": "總音量"
+    },
+    {
+      "key": "ui.settings.music",
+      "text": "音樂音量"
+    },
+    {
+      "key": "ui.settings.sfx",
+      "text": "音效音量"
+    },
+    {
+      "key": "ui.settings.brightness",
+      "text": "畫面亮度"
+    },
+    {
+      "key": "ui.settings.text_speed",
+      "text": "文字速度"
+    },
+    {
+      "key": "ui.settings.move_speed",
+      "text": "移動速度"
+    },
+    {
+      "key": "ui.settings.battle_speed",
+      "text": "戰鬥速度"
+    },
+    {
+      "key": "ui.settings.windowed",
+      "text": "切換視窗模式"
+    },
+    {
+      "key": "ui.settings.fullscreen",
+      "text": "切換全螢幕模式"
+    },
+    {
+      "key": "ui.settings.animations_full",
+      "text": "戰鬥演出：完整"
+    },
+    {
+      "key": "ui.settings.animations_short",
+      "text": "戰鬥演出：簡略"
+    },
+    {
+      "key": "ui.settings.production_paused",
+      "text": "生產：暫停中"
+    },
+    {
+      "key": "ui.settings.production_running",
+      "text": "生產：依真實時間繼續"
+    },
+    {
+      "key": "ui.common.back",
+      "text": "返回"
+    },
+    {
+      "key": "ui.settings.language",
+      "text": "語言"
+    },
+    {
+      "key": "ui.settings.production_hint",
+      "text": "世界暫停時生產繼續；暫停生產只凍結後續進度。"
+    },
+    {
+      "key": "ui.settings.save_failed",
+      "text": "設定儲存失敗：{0}"
     }
   ]
 }

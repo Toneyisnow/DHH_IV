@@ -1,0 +1,2 @@
+PASS: 5 locales; 43 keys per locale; placeholders, runtime reads, native edits, unknown locale/key fallback.
+Full-game translation and font coverage remain incomplete.
