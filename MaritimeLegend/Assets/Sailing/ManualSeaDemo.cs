@@ -19,9 +19,9 @@ public sealed class ManualSeaDemo : MonoBehaviour {
   try{
    if(stage==0){
     Check(game.s.sailing.manualMapId=="indian_ocean","Regional initialization");
-    var nav=new CoastNavigation(Resources.Load<TextAsset>("Environment/IndianOcean/coast-distance").bytes,20);
+    var nav=new CoastNavigation(Resources.Load<TextAsset>("Environment/IndianOcean/coast-distance").bytes);
     var layout=JsonUtility.FromJson<IndianOceanRenderer.Layout>(Resources.Load<TextAsset>("Environment/IndianOcean/layout").text);
-    Check(layout.ports.Length==4,"Indian ports");foreach(var port in layout.ports){var p=nav.Pixels(new Vector2(port.x,port.y));Check(nav.Distance(p)>25,"Port spawn safe");for(int i=0;i<16;i++){float a=i*Mathf.PI/8;var end=nav.MovePixels(p,new Vector2(Mathf.Cos(a),Mathf.Sin(a))*200);Check(nav.Distance(end)>=19.9f,"Swept coast clearance");}}
+    Check(layout.ports.Length==4,"Indian ports");foreach(var port in layout.ports){var p=nav.Pixels(new Vector2(port.x,port.y));Check(nav.Distance(p)>25,"Port spawn safe");for(int i=0;i<16;i++){float a=i*Mathf.PI/8;var end=nav.MovePixels(p,new Vector2(Mathf.Cos(a),Mathf.Sin(a))*200);Check(nav.Distance(end)>=-.001f,"Swept coast clearance");}}
     var settings=SailingScene.Active;Check(settings!=null,"Scene camera settings exist");
     float oldMin=settings.minimumZoom,oldMax=settings.maximumZoom,oldPitch=settings.pitch;
     settings.minimumZoom=90;settings.maximumZoom=130;settings.pitch=55;game.EnsureManualSea();

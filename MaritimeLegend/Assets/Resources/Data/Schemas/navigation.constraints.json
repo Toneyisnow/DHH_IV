@@ -138,6 +138,24 @@
       "integer": true,
       "minimum": 0,
       "maximum": 2147483647
+    },
+    {
+      "name": "minSailSpeed",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "maxSailSpeed",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 1000000000.0
+    },
+    {
+      "name": "windSpeed",
+      "integer": false,
+      "minimum": 0,
+      "maximum": 1000000000.0
     }
   ]
 }

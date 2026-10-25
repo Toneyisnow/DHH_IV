@@ -62,3 +62,18 @@ dotnet run --project Tools/HeadlessChecks/HeadlessChecks.csproj
 新增 `SailingArchitectureChecks` 同时提供 Unity 菜单 `Maritime Legend → Run sailing architecture checks`。测试包括日期进位、多日/分段结算、读档不重扣、停止/缺补给经验门槛、控制分离、模式限制、几何保护、固定奖励、10秒单实例冷却、失败不扣资源、接受幂等、旧档扩展迁移、生产时钟隔离、五语事件Key和10000次权重抽样。结果见 `Sailing1016TestResults.txt`。
 
 本次无界面检查通过；使用安装的Unity程序集编译全部运行时代码通过（0错误，已有mapPan未赋值警告）。Unity批处理启动在执行测试前退出，日志 `sailing1016-editor.log`，因此尚未完成Editor/Play Mode交互验收。
+
+
+## Manual sailing revision — 2026-10-24
+
+The primary ship is drawn at the authoritative sea position. Each of the two visual escort ships now has a persisted world position and pixel-space heading (`manualFollowers`); missing legacy escort state starts gathered at the primary without changing save progress. Simulation advances in steps no larger than 1/60 second. Each escort turns toward its predecessor at the configured turn rate, moves continuously, and resolves its own coast collisions. The following distance grows from zero at rest to 2.25 map pixels underway. Rendering never repositions ships to match the primary heading. Escorts use a separate navigation instance so their contact flags cannot overwrite the primary HUD status.
+
+Continuous skill effects can use `SkillResolver.Linear(points, maxSkillPoint, minValue, maxValue)`. The current skill definition's `maxLevel` is the existing stored name for maxSkillPoint; no skill/save IDs are reinterpreted. Sailing base speed now uses this interpolation from `navigation.minSailSpeed` (0.0014) to `navigation.maxSailSpeed` (0.0028). Commanded sailing speed is exactly `navigation.windSpeed * sailOpening * baseSailSpeed`, where configured wind magnitude defaults to 1 and W/S controls opening continuously from 0 to 4. Existing wind direction and A/D sail-angle visualization remain separate from this scalar formula. Previous hull, cargo, ship-type, settings and shortage speed multipliers no longer enter this formula. Coastal contact can reduce actual displacement speed.
+
+Coast clearance defaults to zero. Distance interpolation follows the same two triangles per grid cell used to clip rendered Indian Ocean land, so shallow water is no longer excluded by the former 20-pixel margin.
+
+Validation: from the MaritimeLegend directory run `dotnet run --project Tools/ManualSailingChecks/ManualSailingChecks.csproj`; alternatively use Unity's `Maritime Legend/Run manual sailing checks`. The standalone harness compiles the real domain, coast and follower sources with test-only resource/serialization/vector adapters. It covers skill endpoints/midpoint, formula values, actual terrain/coast agreement, shallow movement, swept land collisions, bounded turns/displacements, stop/restart/bend behavior, save roundtrip and the existing sailing architecture suite. Also run `python Tools/validate_game_data.py`.
+
+Both standalone checks passed on 2026-10-24. Unity batch startup exited with code 1 before loading the project; full Unity compilation and rendered play-mode verification were not completed in this session.
+
+Follow-up tuning: maximum following gap reduced from 9 to 2.25 pixels (one quarter); both sailing speed endpoints reduced to one fifth. Escort minimum catch-up speed and full-gap speed threshold reduced from 12 to 2.4 pixels/second to preserve low-speed behavior.

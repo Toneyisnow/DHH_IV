@@ -13,8 +13,8 @@ public partial class MaritimeGame {
   if(Btn(1680,32,208,54,"暂停 / ESC"))paused=true;
   if(Btn(1430,100,458,50,"返回出发水域 · "+voyage.manualSpawnPort)){seaTarget=origin;seaHasTarget=true;seaStopped=false;}
   Fill(new Rect(30,958,1860,94),new Color(.025f,.09f,.13f,.88f));
-  Label(52,971,970,34,(seaStopped?"已停船":seaCoast.Contact?(seaCoast.Sliding?"沿岸慢行":"海岸阻挡"):"航行中")+"  ·  航速 "+voyage.speed.ToString("0.000")+"  ·  船体 "+sh.hull.ToString("0")+"  ·  粮 "+sh.food.ToString("0.0")+"  ·  水 "+sh.water.ToString("0.0"),small);
-  Label(52,1011,1000,32,"左键航行 · 右键水平环绕 · 滚轮缩放 · 空格停船 · W/S 调速 · A/D 调帆",small);
+  Label(52,971,970,34,(seaStopped?"已停船":seaCoast.Contact?(seaCoast.Sliding?"沿岸慢行":"海岸阻挡"):"航行中")+"  ·  航速 "+voyage.speed.ToString("0.000")+"  ·  帆张开度 "+(throttle*4).ToString("0.0")+"/4  ·  船体 "+sh.hull.ToString("0")+"  ·  粮 "+sh.food.ToString("0.0")+"  ·  水 "+sh.water.ToString("0.0"),small);
+  Label(52,1011,1000,32,"左键航行 · 右键水平环绕 · 滚轮缩放 · 空格停船 · W/S 收放帆 · A/D 调帆",small);
   if(Btn(1080,976,190,56,seaStopped?"继续航行":"停船"))seaStopped=!seaStopped;
   if(Btn(1290,976,280,56,"结束试航 / 返回城市",distance<.025f)){
    s.atSea=false;s.city=s.seaFrom;voyage.speed=0;voyage.manualMapId="";g.SetSeaRegion(c.sailingDefaults.portRegions[s.city]);seaOwner=null;Change("城市");

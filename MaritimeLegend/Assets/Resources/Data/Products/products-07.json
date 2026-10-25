@@ -125,6 +125,52 @@
         6,
         7
       ]
+    },
+    {
+      "id": "trade_olive_oil",
+      "name": "橄榄油",
+      "industry": 0,
+      "category": "C",
+      "basePrice": 45,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "贸易商品"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "trade_pottery",
+      "name": "陶器",
+      "industry": 5,
+      "category": "C",
+      "basePrice": 60,
+      "weight": 1,
+      "stackSize": 999,
+      "quality": 3,
+      "demandTags": [
+        "贸易商品"
+      ],
+      "allowedCities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
     }
   ]
 }

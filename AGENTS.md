@@ -16,3 +16,7 @@
 - User approved the existing slot 1 legacy West Asian female to use the V2 Asian female portrait preview; preserve her save progress. Other unmapped legacy identities must not silently be reassigned.
 
 - Costume variants and save portraits must retain the approved V2 figure's identity, face silhouette, head-to-body ratio, neck length, shoulder width, limb proportions, waist position, pose, and painterly style. Only clothing, cloak, headwear, and accessories may vary. Never use a head-only portrait to regenerate the torso; use the approved full figure as the edit base. The user's African female proportional reference is preserved at `ArtSource/CharacterArt_V2/SaveSelection/WaistPortraits/06-user-approved-proportions.png`. Earlier enlarged-head/fashion-portrait waist renders are rejected references, not anatomy masters.
+
+# Trading UI terminology
+
+- Ship and warehouse cargo slots are uniformly called “货仓” in player-facing Chinese text. Use “空货仓” for empty slots; avoid “货舱”, “船舱”, and “仓位” for these slots.

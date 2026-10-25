@@ -30,6 +30,7 @@ public partial class Catalog {
         Require(start.starterMaterialQuality>=0&&start.starterMaterialQuality<market.qualityFactors.Length&&balance.economy.initialSecondaryQuality>=0&&balance.economy.initialSecondaryQuality<market.qualityFactors.Length,"initial quality indices");
         Require(initial.appearance.accessoryIds.Length>0&&initial.route.quality>=0&&initial.route.quality<market.qualityFactors.Length&&initial.route.loops>0,"initial appearance/route");
         Require(balance.navigation.mapMinX<balance.navigation.mapMaxX&&balance.navigation.mapMinY<balance.navigation.mapMaxY,"map bounds");
+        Require(balance.navigation.minSailSpeed<=balance.navigation.maxSailSpeed,"sailing speed range");
         Require(balance.production.minimumEffectiveLevel<=balance.production.maxEffectiveLevel&&balance.production.partnerTrustDivisor>0,"production level range");
         foreach(var field in typeof(PartnerRolesParameters).GetFields())Require((int)field.GetValue(balance.partnerRoles)<partners.Length,"partner role "+field.Name);
         foreach(var field in typeof(SkillsParameters).GetFields().Where(f=>f.Name.EndsWith("Skill")))Require((int)field.GetValue(balance.skills)<skills.Length,"skill role "+field.Name);

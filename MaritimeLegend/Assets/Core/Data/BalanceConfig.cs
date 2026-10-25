@@ -166,6 +166,7 @@ public double optimalTrim;
 public double headwindThreshold;
 public double navigatorHeadwindFactor;
 public double baseSpeed;
+public double minSailSpeed,maxSailSpeed,windSpeed;
 public double minimumHullSpeedFactor;
 public double hullSpeedWeight;
 public double cargoSpeedPenalty;

@@ -32,7 +32,10 @@
         "partnerArrivalExperience",
         "rescueFee",
         "rescueHull",
-        "rescueFood"
+        "rescueFood",
+        "minSailSpeed",
+        "maxSailSpeed",
+        "windSpeed"
       ],
       "properties": {
         "minimumDepartureHull": {
@@ -149,6 +152,21 @@
           "type": "integer",
           "minimum": 0,
           "maximum": 2147483647
+        },
+        "minSailSpeed": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "maxSailSpeed": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
+        },
+        "windSpeed": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000000000.0
         }
       }
     }

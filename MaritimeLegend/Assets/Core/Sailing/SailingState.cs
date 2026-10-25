@@ -6,6 +6,7 @@ namespace MaritimeLegend.Domain {
         // Additive regional presentation state; old saves start at a new safe Indian anchorage.
         public string manualMapId="",manualSpawnPort="";
         public float manualSpawnX,manualSpawnY,manualYaw,manualZoom=70;
+        public ManualFollowerState[] manualFollowers;
         public double energy,foregroundSeconds,speed,lastDayDistance,spawnCountdown;
         public int nextEncounterId; public uint encounterSeed;
         public List<FleetDayState> fleets=new List<FleetDayState>();
@@ -13,6 +14,7 @@ namespace MaritimeLegend.Domain {
         public List<string> storyFlags=new List<string>(),seenChoices=new List<string>();
         public GameCalendarState calendar=new GameCalendarState();
     }
+    [Serializable] public class ManualFollowerState { public double x,y,heading; }
     [Serializable] public class FleetDayState {
         public string fleetId; public long lastSettledDay; public int experience;
         public bool shortage; public double foodSpent,waterSpent,energySpent;

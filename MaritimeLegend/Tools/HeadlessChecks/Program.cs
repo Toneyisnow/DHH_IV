@@ -10,4 +10,4 @@ namespace UnityEngine {
  public static class Debug {public static void Log(object text)=>Console.WriteLine(text);}
 }
 namespace UnityEditor {public class MenuItem:Attribute {public MenuItem(string value){}}}
-class Program {static void Main(string[] args){if(args.Length>0&&args[0]=="--v2-portraits"){V2PortraitChecks.Run();return;}if(args.Length>0&&args[0]=="--generate-saves"){RandomSaveGenerator.Run(args);return;}MaritimeLegend.Editor.InitialStockChecks.Run();MaritimeLegend.Editor.DataConfigurationChecks.Run();MaritimeLegend.Editor.SailingArchitectureChecks.Run();if(Array.IndexOf(args,"--campaign")>=0)MaritimeLegend.Editor.DomainChecks.Run();}}
+class Program {static void Main(string[] args){if(args.Length>0&&args[0]=="--v2-portraits"){V2PortraitChecks.Run();return;}if(args.Length>0&&args[0]=="--generate-saves"){RandomSaveGenerator.Run(args);return;}MaritimeLegend.Editor.TradeSessionChecks.Run();MaritimeLegend.Editor.InitialStockChecks.Run();MaritimeLegend.Editor.DataConfigurationChecks.Run();MaritimeLegend.Editor.SailingArchitectureChecks.Run();if(Array.IndexOf(args,"--campaign")>=0)MaritimeLegend.Editor.DomainChecks.Run();}}

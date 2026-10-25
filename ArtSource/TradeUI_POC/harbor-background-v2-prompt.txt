@@ -1,0 +1,5 @@
+Tool: built-in image_gen, edit mode.
+Input: harbor-background.png
+Output: harbor-background-v2.png
+
+Edit this grayscale historical harbor background for a 16:9 maritime game trading dialog. Preserve the painterly grayscale, quiet mist, restrained low contrast and 17th century Portuguese setting. Recompose the SINGLE large sailing ship toward the CENTER of the frame and rotate its view to a nearly full BROADSIDE SIDE VIEW: a long clearly visible side hull spanning much more horizontal screen width (about 55-65% of the image), with the full masts visible, moored parallel to the quays. Show MORE of the PORT: a broad panorama of waterfront stone buildings, warehouses, quays and harbor architecture extending across the background from left to right. Reduce the large empty water and sky areas. Ship centered slightly right of the exact midpoint, hull across the central and lower middle. Keep a coherent believable perspective. No second ship, no text, no UI, no logo. Opaque image. Subdued detail and no bright highlights so this remains a subtle dialog background.
