@@ -1,0 +1,714 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.3/staging' branch; Version is '6000.3.10f1 (e35f0c77bd8e) revision 14901004'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-charl" at "2026-10-25T15:50:19.4574014Z"
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'en' Physical Memory: 32443 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-10-25T15:50:19Z
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+D:/SourceCode/Git/toneyisnow/DHH_IV
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+50861
+-licensingIpc
+LicenseClient-charl
+-job-worker-count
+7
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: D:/SourceCode/Git/toneyisnow/DHH_IV
+D:/SourceCode/Git/toneyisnow/DHH_IV
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+Player connection [14388]  Target information:
+
+Player connection [14388]  * "[IP] 192.168.240.1 [Port] 0 [Flags] 2 [Guid] 1129331547 [EditorId] 1129331547 [Version] 1048832 [Id] WindowsEditor(7,toneyalien12) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [14388]  * "[IP] 10.0.0.99 [Port] 0 [Flags] 2 [Guid] 1129331547 [EditorId] 1129331547 [Version] 1048832 [Id] WindowsEditor(7,toneyalien12) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [14388]  * "[IP] 10.0.0.24 [Port] 0 [Flags] 2 [Guid] 1129331547 [EditorId] 1129331547 [Version] 1048832 [Id] WindowsEditor(7,toneyalien12) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [14388] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [14388] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 7
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.10f1 (e35f0c77bd8e)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/SourceCode/Git/toneyisnow/DHH_IV/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Ti (ID=0x2489)
+    Vendor:   NVIDIA
+    VRAM:     8024 MB
+    Driver:   32.0.16.1060
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56976
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.008417 seconds.
+- Loaded All Assemblies, in  1.126 seconds
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.040 seconds
+Domain Reload Profiling: 2156ms
+	BeginReloadAssembly (384ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (120ms)
+	RebuildNativeTypeToScriptingClass (33ms)
+	initialDomainReloadingComplete (134ms)
+	LoadAllAssembliesAndSetupDomain (444ms)
+		LoadAssemblies (375ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (434ms)
+			TypeCache.Refresh (431ms)
+				TypeCache.ScanAssembly (403ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1041ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (965ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (200ms)
+			SetLoadedEditorAssemblies (12ms)
+			BeforeProcessingInitializeOnLoad (271ms)
+			ProcessInitializeOnLoadAttributes (363ms)
+			ProcessInitializeOnLoadMethodAttributes (119ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              07d02e8ce01441098420b7fe0b174a86
+  Correlation Id:          11312304058ac9691f0cc0f5ef25232a
+  External correlation Id: 2085259874992567026
+  Machine Id:              ahkCBMpFGkS5dEjRWzhYlmGmQRw=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-charl" (connect: 0.00s, validation: 0.01s, handshake: 5.02s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-charl-notifications" at "2026-10-25T15:50:24.4804448Z"
+[Licensing::Module] Licensing Background thread has ended after 5.02s
+[Licensing::Module] Licensing is initialized (took 0.81s).
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 6614505-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+- Loaded All Assemblies, in  1.245 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.707 seconds
+Domain Reload Profiling: 1947ms
+	BeginReloadAssembly (1109ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (59ms)
+	RebuildCommonClasses (55ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (18ms)
+		LoadAssemblies (156ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (13ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (2ms)
+			BuildScriptInfoCaches (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (708ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (558ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (213ms)
+			ProcessInitializeOnLoadAttributes (239ms)
+			ProcessInitializeOnLoadMethodAttributes (67ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 64 unused Assets / (28.8 KB). Loaded Objects now: 673.
+Memory consumption went from 67.7 MB to 67.6 MB.
+Total: 6.140500 ms (FindLiveObjects: 0.071900 ms CreateObjectMapping: 0.015100 ms MarkObjects: 5.883700 ms  DeleteObjects: 0.168100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 24163.775359 seconds.
+  path: Assets/Town_Scene_Pack/verify_pack.py
+  artifactKey: Guid(7db6f0aab4cd7c64ba4d8d89e7d20386) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Town_Scene_Pack/verify_pack.py using Guid(7db6f0aab4cd7c64ba4d8d89e7d20386) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e5eddf67d93e5924786e3bea9a471118') in 0.1364278 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/AutoSailing_Map_Pack/01_map/generation_prompts.txt
+  artifactKey: Guid(c63c44e613391cb42aec82ab7ec88995) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AutoSailing_Map_Pack/01_map/generation_prompts.txt using Guid(c63c44e613391cb42aec82ab7ec88995) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '007688088c945a498e89b2a471376b39') in 0.0088544 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/AutoSailing_Map_Pack/01_map/africa.png
+  artifactKey: Guid(9c22e6acef355e243a998a36a4e16fa4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AutoSailing_Map_Pack/01_map/africa.png using Guid(9c22e6acef355e243a998a36a4e16fa4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7a28650356553aeeab7b7b692191badb') in 0.168166 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000939 seconds.
+  path: Assets/Screenshot_Reconstruction/generated/12_timber_texture.png
+  artifactKey: Guid(d1c280f01ed45274f9fe76662c7ba101) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Screenshot_Reconstruction/generated/12_timber_texture.png using Guid(d1c280f01ed45274f9fe76662c7ba101) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'df9e566cd84a27873563bbbbde9e7b14') in 0.0242484 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Screenshot_Reconstruction/build_catalog.py
+  artifactKey: Guid(85816a6837ed5e744be922ee4523be6f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Screenshot_Reconstruction/build_catalog.py using Guid(85816a6837ed5e744be922ee4523be6f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2a5393c5f53820e1e06348f4be0edd4f') in 0.0091115 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000115 seconds.
+  path: Assets/Screenshot_Reconstruction/generated/08_building.png
+  artifactKey: Guid(fc632351f4a0b234f8206d6c889d103f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Screenshot_Reconstruction/generated/08_building.png using Guid(fc632351f4a0b234f8206d6c889d103f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '01694e11d57878f3151292e9111a6c41') in 0.0254616 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/AutoSailing_Map_Pack/01_map/indian_ocean.png
+  artifactKey: Guid(02c8e04f140503e43ac7f2e66b16a4a2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AutoSailing_Map_Pack/01_map/indian_ocean.png using Guid(02c8e04f140503e43ac7f2e66b16a4a2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4571bc11c93ab4350b024b3b6ca723cf') in 0.0207952 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/AutoSailing_Map_Pack/04_cities_small_v2/preview.png
+  artifactKey: Guid(70080df541b52834c8924a24505a10b8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AutoSailing_Map_Pack/04_cities_small_v2/preview.png using Guid(70080df541b52834c8924a24505a10b8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9f02b4c89cd19cbf5b7b3afd2caf96d2') in 0.018913 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/AutoSailing_Map_Pack/03_ui/functions.png
+  artifactKey: Guid(a50ff197e05945c43a9ea9fdd9ebf240) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AutoSailing_Map_Pack/03_ui/functions.png using Guid(a50ff197e05945c43a9ea9fdd9ebf240) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '65143bba950e15b8fc9a3dbb7dc64dcd') in 0.0201362 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/Town_Scene_Pack/使用说明.txt
+  artifactKey: Guid(96d734e9b4feefc488d85789bbd78bdc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Town_Scene_Pack/使用说明.txt using Guid(96d734e9b4feefc488d85789bbd78bdc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '42b34901cab98165c4a6483bbc282763') in 0.0104074 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/AutoSailing_Map_Pack/06_routes/network_normal.svg
+  artifactKey: Guid(0b279479981109c40bf5d5e54040ac55) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AutoSailing_Map_Pack/06_routes/network_normal.svg using Guid(0b279479981109c40bf5d5e54040ac55) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '50aa91945aeb3cb5e4db34b7c2a08de2') in 0.0515036 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000132 seconds.
+  path: Assets/Screenshot_Reconstruction_v2/preview.html
+  artifactKey: Guid(53d16265c3337394e81ce63843a78255) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Screenshot_Reconstruction_v2/preview.html using Guid(53d16265c3337394e81ce63843a78255) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9e718e1efcaa0f384131a85fce99a2ba') in 0.0070165 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/AutoSailing_Map_Pack/04_cities_small_v2/korean_port.png
+  artifactKey: Guid(05ea87c669fad3b469865f4aebc89ab4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AutoSailing_Map_Pack/04_cities_small_v2/korean_port.png using Guid(05ea87c669fad3b469865f4aebc89ab4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4bd069d7e7b5b40a4c4b4ffa05187ba7') in 0.0205484 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000108 seconds.
+  path: Assets/Screenshot_Reconstruction/generated/04_portrait.png
+  artifactKey: Guid(9783510285a0666408d60e83ca1459bc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Screenshot_Reconstruction/generated/04_portrait.png using Guid(9783510285a0666408d60e83ca1459bc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3a7a47be92aeaf774d6c43c6daf2d8ec') in 0.0210181 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Screenshot_Reconstruction/generated/13_next_indicator.png
+  artifactKey: Guid(2edc07f71fe2220479778f60dfba71cd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Screenshot_Reconstruction/generated/13_next_indicator.png using Guid(2edc07f71fe2220479778f60dfba71cd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0bcb2071d8d79ea0a5007af65a45debb') in 0.0188284 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/AutoSailing_Map_Pack/04_cities/chinese_walled_port.png
+  artifactKey: Guid(5718c35578be59b4697c9d00721f646e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AutoSailing_Map_Pack/04_cities/chinese_walled_port.png using Guid(5718c35578be59b4697c9d00721f646e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2d5aa5fc5b2442c9bf399d747b1cbd9b') in 0.018264 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000337 seconds.
+  path: Assets/AutoSailing_Map_Pack/04_cities/city_dot_large.png
+  artifactKey: Guid(ba590bb6bf887914db9942caeddd3e22) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AutoSailing_Map_Pack/04_cities/city_dot_large.png using Guid(ba590bb6bf887914db9942caeddd3e22) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bcb0d2a16adeac5fb51d8471af086eb6') in 0.0194883 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/AutoSailing_Map_Pack/04_cities/city_dot_small.png
+  artifactKey: Guid(c1529df6081f7d14ab2f99c498b62362) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AutoSailing_Map_Pack/04_cities/city_dot_small.png using Guid(c1529df6081f7d14ab2f99c498b62362) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '968ffa5ce392a2608c68d061e689952b') in 0.019538 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/AutoSailing_Map_Pack/07_currents/current_sheet.png
+  artifactKey: Guid(3e5781d918730e847a6516ee64f17f4b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AutoSailing_Map_Pack/07_currents/current_sheet.png using Guid(3e5781d918730e847a6516ee64f17f4b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4a29ab36c5c7c9c7792b2ce815ab1767') in 0.0224369 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Screenshot_Reconstruction/generated/05_dialogue_panel.png
+  artifactKey: Guid(a30f34c9cc5ed7647b21689ba0f4bf4d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Screenshot_Reconstruction/generated/05_dialogue_panel.png using Guid(a30f34c9cc5ed7647b21689ba0f4bf4d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '80e428c9520560cf591e132c14757db7') in 0.0285539 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000445 seconds.
+  path: Assets/AutoSailing_Map_Pack/04_cities_small_v2/atlas.png
+  artifactKey: Guid(853c62be68a159145a88443499958971) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AutoSailing_Map_Pack/04_cities_small_v2/atlas.png using Guid(853c62be68a159145a88443499958971) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '27c11b9a8c1d0f6c8acf56909d5e8ad0') in 0.0195097 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/AutoSailing_Map_Pack/03_ui/plaque_blank.png
+  artifactKey: Guid(ae1bfb51f1ca5cd4a9aa7232c983461c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AutoSailing_Map_Pack/03_ui/plaque_blank.png using Guid(ae1bfb51f1ca5cd4a9aa7232c983461c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '84ca5a44fa7de2e0db375f36f2a5dbee') in 0.023599 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/Screenshot_Reconstruction/prompts.json
+  artifactKey: Guid(1feabd76f6fa6fe44964a9e10686ea99) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Screenshot_Reconstruction/prompts.json using Guid(1feabd76f6fa6fe44964a9e10686ea99) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '63c36c65260e920d376ab146c51174a4') in 0.0094806 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/AutoSailing_Map_Pack/06_routes/route_selected.svg
+  artifactKey: Guid(47356536d1966df489674f35a4d3e38a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AutoSailing_Map_Pack/06_routes/route_selected.svg using Guid(47356536d1966df489674f35a4d3e38a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e78b32f660ed576e46c60764c41edb22') in 0.015872 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/Screenshot_Reconstruction_v2/animation_manifest.json
+  artifactKey: Guid(bd8b7003a97859041867252449fa4ebb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Screenshot_Reconstruction_v2/animation_manifest.json using Guid(bd8b7003a97859041867252449fa4ebb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2df887a55054e4da19c787fcaa5e75db') in 0.0101035 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.049667 seconds.
+  path: Assets/Screenshot_Reconstruction_v2/generated/06_foreground_junk_shadow.png
+  artifactKey: Guid(a6151e9ea4478e7478107a891e5b8907) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Screenshot_Reconstruction_v2/generated/06_foreground_junk_shadow.png using Guid(a6151e9ea4478e7478107a891e5b8907) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e38d781e57b399b591585d6cb992a7a7') in 0.0165162 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/AutoSailing_Map_Pack/05_ships/lateen/SE.png
+  artifactKey: Guid(23226ba82e53a3f419498b3d52cfcf3c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AutoSailing_Map_Pack/05_ships/lateen/SE.png using Guid(23226ba82e53a3f419498b3d52cfcf3c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bb0b92f977b4898a52983f16fb2bc7dd') in 0.0205186 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Town_Scene_Pack/generated/scene_clean.png
+  artifactKey: Guid(693c41f48649e3e499aa84e58a16c73f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Town_Scene_Pack/generated/scene_clean.png using Guid(693c41f48649e3e499aa84e58a16c73f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b82ca30e29644e750ad58efb73df2241') in 0.0207195 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/Town_Scene_Pack/menus/palace.png
+  artifactKey: Guid(39bfdc3f05acd34478cd353cac7bd1c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Town_Scene_Pack/menus/palace.png using Guid(39bfdc3f05acd34478cd353cac7bd1c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '68e5b56068f9a835cbc83a2f6875b5b1') in 0.0225987 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/AutoSailing_Map_Pack/05_ships/square/NE.png
+  artifactKey: Guid(0255c1c706d53654e9006812fc22e8cc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AutoSailing_Map_Pack/05_ships/square/NE.png using Guid(0255c1c706d53654e9006812fc22e8cc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c172b7e853aaa31a74d3deaf5a6b7907') in 0.0209492 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/Town_Scene_Pack/ui/confirm_button.png
+  artifactKey: Guid(2b28c023a8204a444b5657314ef22faa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Town_Scene_Pack/ui/confirm_button.png using Guid(2b28c023a8204a444b5657314ef22faa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '12f34bbb0a298f683aa1386c88192397') in 0.0204823 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Town_Scene_Pack/menus/dock.png
+  artifactKey: Guid(496ea90caa88ec14b96f01512f3ecfe3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Town_Scene_Pack/menus/dock.png using Guid(496ea90caa88ec14b96f01512f3ecfe3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9ed598a78c47b9df6122f3962081c048') in 0.0231297 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000355 seconds.
+  path: Assets/AutoSailing_Map_Pack/05_ships/square/SE.png
+  artifactKey: Guid(2d4aad0d467a7ab459ff835e33beef7a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AutoSailing_Map_Pack/05_ships/square/SE.png using Guid(2d4aad0d467a7ab459ff835e33beef7a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'aae3929ea38f3d4b74ef9e69aa3f9ee3') in 0.0238671 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Town_Scene_Pack/reference/seconds3to5.jpg
+  artifactKey: Guid(d61afb937ce19d14a87cee08d9dcaaef) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Town_Scene_Pack/reference/seconds3to5.jpg using Guid(d61afb937ce19d14a87cee08d9dcaaef) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2d318a900ee419a8bb68e21260ca2c22') in 0.0193459 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000104 seconds.
+  path: Assets/Town_Scene_Pack/ui/dialog_shell.png
+  artifactKey: Guid(d272ebabf5b41e94a977dd7edf02d3fc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Town_Scene_Pack/ui/dialog_shell.png using Guid(d272ebabf5b41e94a977dd7edf02d3fc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c9b8ca9b14f3aca9f492f7ff2177fe24') in 0.0215541 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/Town_Scene_Pack/ui/town_frame.png
+  artifactKey: Guid(aae340674f687104d8bb0c02331c7a1b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Town_Scene_Pack/ui/town_frame.png using Guid(aae340674f687104d8bb0c02331c7a1b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0d8821961e6f0cc8f5a53e3e2e116d46') in 0.0215162 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/AutoSailing_Map_Pack/05_ships/junk/N.png
+  artifactKey: Guid(d64bfec4b2f59314b97fa7e938418084) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AutoSailing_Map_Pack/05_ships/junk/N.png using Guid(d64bfec4b2f59314b97fa7e938418084) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '31f01e7ce30c267d2b51c5862668de34') in 0.0226648 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Town_Scene_Pack/generated/npc_brown_townsfolk.png
+  artifactKey: Guid(b209a255733c12747a388126a90576b7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Town_Scene_Pack/generated/npc_brown_townsfolk.png using Guid(b209a255733c12747a388126a90576b7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ad2d32aeaa6e3b249fbbeddf58707085') in 0.0189854 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Town_Scene_Pack/menus/guild.png
+  artifactKey: Guid(7e4b53e7c4fae0742b51a65b76e20228) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Town_Scene_Pack/menus/guild.png using Guid(7e4b53e7c4fae0742b51a65b76e20228) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '47c77a39d7cc9fa458960f968424c118') in 0.0207324 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/AutoSailing_Map_Pack/05_ships/square/E.png
+  artifactKey: Guid(fc835abe4b629574594874f83c53f8e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AutoSailing_Map_Pack/05_ships/square/E.png using Guid(fc835abe4b629574594874f83c53f8e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1307b4afa4790a7c50eb4783a9136a2c') in 0.0220285 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/AutoSailing_Map_Pack/05_ships/junk/E.png
+  artifactKey: Guid(9854f6aa4320f1f4fa5916f594486c8a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AutoSailing_Map_Pack/05_ships/junk/E.png using Guid(9854f6aa4320f1f4fa5916f594486c8a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '04ff3715566929834b3df5c8de24abf0') in 0.021501 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Town_Scene_Pack/generated/market_cart.png
+  artifactKey: Guid(7efa9e7fa830df24aa5d937d254f4eba) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Town_Scene_Pack/generated/market_cart.png using Guid(7efa9e7fa830df24aa5d937d254f4eba) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '79aa41ee8824190879310b64a16bff07') in 0.0243231 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Town_Scene_Pack/generated/palm_mid.png
+  artifactKey: Guid(4d1570a360515c14e9d2be955a1b7272) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Town_Scene_Pack/generated/palm_mid.png using Guid(4d1570a360515c14e9d2be955a1b7272) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd4fb161ef6eaf82fcaaacad241c31e6d') in 0.0251807 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000112 seconds.
+  path: Assets/Town_Scene_Pack/npc/npc_green_cart_vendor.png
+  artifactKey: Guid(d4a6be52d04686946bdb14754b7a1307) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Town_Scene_Pack/npc/npc_green_cart_vendor.png using Guid(d4a6be52d04686946bdb14754b7a1307) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ae930ceb67663fd88705626914406002') in 0.0307226 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000112 seconds.
+  path: Assets/Town_Scene_Pack/menus/tavern.png
+  artifactKey: Guid(d5e662f1b2d3da84487d191de05caa0d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Town_Scene_Pack/menus/tavern.png using Guid(d5e662f1b2d3da84487d191de05caa0d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4d85a1eacd467db1f721937b5df8e548') in 0.0248507 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Town_Scene_Pack/generated/npc_blue_worker.png
+  artifactKey: Guid(f4d7e67779658f047a1be46fff1f47a7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Town_Scene_Pack/generated/npc_blue_worker.png using Guid(f4d7e67779658f047a1be46fff1f47a7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '21956640a2496f54bc00f12791c3d70d') in 0.023005 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000099 seconds.
+  path: Assets/Town_Scene_Pack/reference/timeline.jpg
+  artifactKey: Guid(6b5fea89c2175c5418f41a06eb16ec21) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Town_Scene_Pack/reference/timeline.jpg using Guid(6b5fea89c2175c5418f41a06eb16ec21) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4f81b3139938915601ac8f7b99a3ee44') in 0.0198373 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Town_Scene_Pack/generated/hut_left.png
+  artifactKey: Guid(c3e3b27656783e640baa2c9a78d54741) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Town_Scene_Pack/generated/hut_left.png using Guid(c3e3b27656783e640baa2c9a78d54741) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1d1c5cb8d5efcc94c1dc162652a08ff7') in 0.0233378 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/AutoSailing_Map_Pack/05_ships/lateen/E.png
+  artifactKey: Guid(70c7724126cd5ab44ae247f096ea1b1b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AutoSailing_Map_Pack/05_ships/lateen/E.png using Guid(70c7724126cd5ab44ae247f096ea1b1b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd468349452f21acdcca19d83303f067b') in 0.0201256 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/AutoSailing_Map_Pack/07_currents/frames/current_27.png
+  artifactKey: Guid(a829a7a6452da0e4aa28488b6c01dc69) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AutoSailing_Map_Pack/07_currents/frames/current_27.png using Guid(a829a7a6452da0e4aa28488b6c01dc69) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '18757063684ca3405c3860569598dc68') in 0.0234848 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/Town_Scene_Pack/reference/crops/original_palace.png
+  artifactKey: Guid(56c43a0512e41614eae7c1817c4ad827) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Town_Scene_Pack/reference/crops/original_palace.png using Guid(56c43a0512e41614eae7c1817c4ad827) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bde80915239461837fe8a849dd51e226') in 0.0194608 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000110 seconds.
+  path: Assets/AutoSailing_Map_Pack/07_currents/frames/current_15.png
+  artifactKey: Guid(34f2031618073274aa92a4b884063050) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AutoSailing_Map_Pack/07_currents/frames/current_15.png using Guid(34f2031618073274aa92a4b884063050) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a20a38228b7846d3bdbdc40b0dca018e') in 0.0226982 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/Town_Scene_Pack/reference/crops/trade_cancel.png
+  artifactKey: Guid(a8d4c28d1960c98468ed8d7f7bba0bfa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Town_Scene_Pack/reference/crops/trade_cancel.png using Guid(a8d4c28d1960c98468ed8d7f7bba0bfa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f1ac5a49ffc627ba2aed2300e1df39c6') in 0.0198218 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/AutoSailing_Map_Pack/07_currents/frames/current_14.png
+  artifactKey: Guid(875fe81ed1e48d1448a9376c959cbceb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AutoSailing_Map_Pack/07_currents/frames/current_14.png using Guid(875fe81ed1e48d1448a9376c959cbceb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd23827ce5834d83ef381d4d006639f20') in 0.01821 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/AutoSailing_Map_Pack/07_currents/frames/current_30.png
+  artifactKey: Guid(60c6c9b2009f95b4e86de7957bf8365c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AutoSailing_Map_Pack/07_currents/frames/current_30.png using Guid(60c6c9b2009f95b4e86de7957bf8365c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b28a093ad6992e8ce97d06fb59eb787e') in 0.0214365 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/AutoSailing_Map_Pack/07_currents/frames/current_26.png
+  artifactKey: Guid(960277b1f10101a4d9298a6c0f5391ac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AutoSailing_Map_Pack/07_currents/frames/current_26.png using Guid(960277b1f10101a4d9298a6c0f5391ac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cf982e8a477406543901f38a85a46158') in 0.022497 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Town_Scene_Pack/reference/crops/original_inn.png
+  artifactKey: Guid(3516ed37f782aaf468e81be765823a2b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Town_Scene_Pack/reference/crops/original_inn.png using Guid(3516ed37f782aaf468e81be765823a2b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'be08ba4a4b4ed6f1fa248518a045d72a') in 0.0204109 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/AutoSailing_Map_Pack/07_currents/frames/current_23.png
+  artifactKey: Guid(8813210571d88e343a0da4e0951a5177) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AutoSailing_Map_Pack/07_currents/frames/current_23.png using Guid(8813210571d88e343a0da4e0951a5177) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1c6fcf042e4dd0357f55470c33a172f0') in 0.0206583 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000112 seconds.
+  path: Assets/AutoSailing_Map_Pack/07_currents/frames/current_24.png
+  artifactKey: Guid(f0d39694e89b84c42b2a955e428447dd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AutoSailing_Map_Pack/07_currents/frames/current_24.png using Guid(f0d39694e89b84c42b2a955e428447dd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '138b487e6afd46b4185828bef3926056') in 0.0210468 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/Town_Scene_Pack/reference/crops/town_frame.png
+  artifactKey: Guid(29e19e34acc5fd3478c7bd3995bf6528) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Town_Scene_Pack/reference/crops/town_frame.png using Guid(29e19e34acc5fd3478c7bd3995bf6528) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fca32d9f0bad292ea6ae918b08704a13') in 0.0221905 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/AutoSailing_Map_Pack/07_currents/frames/current_00.png
+  artifactKey: Guid(39591fa0fd8f9e842bc17c12af2cb5ac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AutoSailing_Map_Pack/07_currents/frames/current_00.png using Guid(39591fa0fd8f9e842bc17c12af2cb5ac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b56142068e3083e1b199eedd4116ff24') in 0.0245135 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

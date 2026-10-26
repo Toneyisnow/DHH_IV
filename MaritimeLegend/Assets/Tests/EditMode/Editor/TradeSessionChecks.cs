@@ -7,7 +7,7 @@ public static class TradeSessionChecks {
  static void Check(bool condition,string message){if(!condition)throw new Exception("TRADE_CHECK_FAILED "+message);}
  [UnityEditor.MenuItem("Maritime Legend/Validate Trade UI Domain")]
  public static void Run(){
-  var c=CatalogLoader.Load();var s=GameService.New(c,0,0,"休闲",new Appearance(),"Trade test",123);var g=new GameService(c,s);s.gold=100000;
+  var c=CatalogLoader.Load();var s=GameService.New(c,0,0,"休闲",new Appearance(),"Trade test",123);var g=new GameService(c,s);s.gold=100000;s.ships[0].cargoSlotCount=6;s.cities[0].warehouse.batches.Clear();
   Check(g.SeedTradeTestCargo(),"seed applied");string seeded=JsonUtility.ToJson(s);Check(!g.SeedTradeTestCargo()&&seeded==JsonUtility.ToJson(s),"seed once");
   foreach(var id in new[]{"p0","trade_olive_oil","p8","trade_pottery"})Check(g.Inventory.Count(s.cargo,id)>0,"requested test cargo "+id);
   var cart=new TradeSession(g);int wheat=cart.holds[0].cells.FindIndex(x=>x!=null&&x.product=="p0");var original=cart.holds[0].cells[wheat];Check(cart.Select(0,wheat),"sell staging");Check(cart.holds[0].cells[wheat]==null,"sale frees exact slot");
@@ -22,6 +22,11 @@ public static class TradeSessionChecks {
   var second=new TradeSession(fleetGame);second.lastHold=1;Check(second.Buy(idLocal,4,out _),"second ship purchase");Check(second.Commit(out var fleetNext),"second ship commit");
   Check(new InventoryService(c).Count(fleetNext.ships[1].cargo,idLocal,4)==1,"second ship owns cargo");Check(new InventoryService(c).Count(fleetNext.cargo,idLocal,4)==fleetGame.Inventory.Count(fleet.cargo,idLocal,4),"flagship unchanged");
   var switched=new GameService(c,fleetNext);switched.Flagship(1);Check(switched.Inventory.Count(fleetNext.cargo,idLocal,4)==1&&switched.Inventory.Count(fleetNext.ships[1].cargo,"p0",4)>0,"flagship switch preserves both holds");
+  var limited=GameService.New(c,0,0,"休闲",new Appearance(),"Slot limits",123);limited.cargo.batches.Clear();limited.cities[0].warehouse.batches.Clear();limited.gold=100000;
+  var limits=new TradeSession(new GameService(c,limited));Check(limits.holds[0].cells.Count==3&&limits.holds[0].slotLimit==3,"three default ship slots");Check(limits.holds.Last().cells.Count==12,"twelve warehouse slots");
+  for(int i=0;i<3;i++)Check(limits.Buy(idLocal,4,out _),"fill default ship");Check(!limits.Buy(idLocal,4,out _),"fourth ship slot not available");
+  limited.ships[0].cargoSlotCount=99;Check(new TradeSession(new GameService(c,limited)).holds[0].slotLimit==6,"six maximum ship slots");
+  limited.ships[0].cargoSlotCount=3;new InventoryService(c).Add(limited.cargo,idLocal,4,8,0);var overflow=new TradeSession(new GameService(c,limited));Check(overflow.holds[0].cells.Count==8,"legacy overflow retained");overflow.Select(0,7);Check(!overflow.Buy(idLocal,4,out _),"overflow cannot receive purchase");Check(overflow.Return(overflow.sales[0],out _),"legacy overflow can undo sale");
   Debug.Log("TRADE_SESSION_CHECKS_PASS");
  }
 }
