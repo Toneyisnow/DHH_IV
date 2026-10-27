@@ -1,0 +1,2 @@
+World 960x540; chunks 180; near terrain triangles 159506; far terrain triangles 43344; shared props 7338; instance cells 531
+Land and bathymetry derive from southeast_asia.png, east_asia.png is style reference only.

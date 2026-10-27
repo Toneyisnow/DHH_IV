@@ -1,0 +1,16 @@
+{
+  "source": "Assets/AutoSailing_Map_Pack/01_map/southeast_asia.png",
+  "style_reference": "Assets/AutoSailing_Map_Pack/01_map/east_asia.png",
+  "grid": [
+    1254,
+    706
+  ],
+  "world": [
+    960,
+    540
+  ],
+  "land_fraction": 0.3017460274430604,
+  "height_max": 29.843286514282227,
+  "deep_summit_rule": "height > 15 AND inland distance > 18; smooth transitions",
+  "elevation": "authored illustration-derived relief, not surveyed geography"
+}

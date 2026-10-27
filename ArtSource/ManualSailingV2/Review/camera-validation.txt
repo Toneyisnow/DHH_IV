@@ -1,0 +1,1 @@
+PASS: 24 combinations of pitch, yaw and aspect; horizon at viewport Y=0.85; pivot stable; saved defaults 35 degrees / 15% sky.

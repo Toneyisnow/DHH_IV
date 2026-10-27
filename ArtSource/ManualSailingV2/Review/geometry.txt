@@ -1,0 +1,7 @@
+Map: 640 x 480 (16x previous area)
+Islands: 24
+Shared island meshes: 6 shapes/colors x 2 LODs
+Props: 11272
+Prop cells: 377
+Shared prop meshes: 3 x 2 LODs
+Ocean: 2 triangles

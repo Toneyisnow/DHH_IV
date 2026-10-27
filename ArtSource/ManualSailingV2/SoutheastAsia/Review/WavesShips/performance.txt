@@ -1,0 +1,15 @@
+Manual Sailing V2 standalone development-player benchmark
+Device: NVIDIA GeForce RTX 3060 Ti; CPU: 11th Gen Intel(R) Core(TM) i7-11700F @ 2.50GHz
+API: Direct3D11; Resolution: 1904x714; Instancing: True; VSync: 0
+300 frames per sample after 90 warmup frames; camera path moves during measurement. Frame time is wall-clock player time, not isolated GPU time.
+Forced 1920x1080 offscreen Camera.Render; a 1-pixel GPU readback every frame prevents skipped rendering in hidden windows. Results include GPU synchronization/readback overhead; they are not interactive-window FPS.
+Sunny / near-35: avg=6.84ms (146.1 FPS), median=6.60ms, p95=9.09ms; avg draws=706; triangles=891723; visible props=3199
+Sunny / far-north-35: avg=12.18ms (82.1 FPS), median=11.80ms, p95=15.69ms; avg draws=1538; triangles=1092701; visible props=7268
+Sunny / horizon-35: avg=3.85ms (259.7 FPS), median=3.71ms, p95=4.72ms; avg draws=378; triangles=253787; visible props=818
+Sunset / near-35: avg=7.52ms (132.9 FPS), median=7.38ms, p95=9.36ms; avg draws=753; triangles=929443; visible props=3199
+Sunset / far-north-35: avg=12.17ms (82.2 FPS), median=11.79ms, p95=15.58ms; avg draws=1624; triangles=1192217; visible props=7268
+Sunset / horizon-35: avg=3.58ms (279.4 FPS), median=3.40ms, p95=4.73ms; avg draws=363; triangles=232566; visible props=818
+Night / near-35: avg=7.87ms (127.1 FPS), median=7.53ms, p95=10.28ms; avg draws=756; triangles=932477; visible props=3199
+Night / far-north-35: avg=11.28ms (88.7 FPS), median=10.90ms, p95=13.89ms; avg draws=1630; triangles=1197858; visible props=7268
+Night / horizon-35: avg=3.54ms (282.2 FPS), median=3.40ms, p95=4.53ms; avg draws=365; triangles=233996; visible props=818
+Unity allocated memory: 50 MiB
