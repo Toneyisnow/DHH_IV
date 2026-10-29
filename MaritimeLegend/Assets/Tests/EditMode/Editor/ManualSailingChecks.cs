@@ -19,10 +19,19 @@ namespace MaritimeLegend.Editor {
    state.pendingEvents.Clear();var game=new GameService(catalog,state);game.Depart(1);
    var nav=catalog.balance.navigation;int skill=catalog.balance.skills.navigationSkill;
    foreach(int points in new[]{0,10,20})foreach(double opening in new[]{0.0,1.0,2.0,4.0}){
-    state.skillLevels[skill]=points;state.seaX=.5;state.seaY=.5;
-    double expected=nav.windSpeed*opening*SkillResolver.Linear(points,catalog.skills[skill].maxLevel,nav.minSailSpeed,nav.maxSailSpeed);
+    state.skillLevels[skill]=points;state.seaX=.5;state.seaY=.5;state.heading=0;state.trim=.5;state.wind=0;
+    double expected=nav.windSpeed*opening*2*SkillResolver.Linear(points,catalog.skills[skill].maxLevel,nav.minSailSpeed,nav.maxSailSpeed);
     Near(game.Sail(.01,opening/4),expected,"sailing formula");
    }
+   // Compare actual movement, not just the displayed sail state or multiplier.
+   state.heading=0;state.skillLevels[skill]=0;state.trim=.5;state.wind=0;
+   Func<double,double> travel=opening=>{state.seaX=.5;state.seaY=.5;double x=state.seaX;game.Sail(.1,opening);return state.seaX-x;};
+   double full=travel(1);Near(full/.1,nav.windSpeed*4*nav.minSailSpeed*2,"maximum wind is twice previous cruise speed");
+   Near(travel(.5),full*.5,"half-open sails halve actual displacement");Near(travel(0),0,"furled sails stop");
+   state.trim=0;double weak=travel(1);Near(weak,full*.01,"edge-on sail nearly stationary");
+   state.trim=.5;state.wind=Math.PI;Near(travel(1),weak,"adverse wind nearly stationary");
+   double previous=0;state.wind=0;
+   foreach(double trim in new[]{0.0,.1,.2,.3,.4,.5}){state.trim=trim;double movement=travel(1);Check(movement>=previous-1e-10,"more wind fill increases actual movement");previous=movement;}
    var coast=new CoastNavigation(Resources.Load<TextAsset>("Environment/IndianOcean/coast-distance").bytes);
    int shallow=0;bool testedBoundary=false;
    using(var reader=new BinaryReader(new MemoryStream(Resources.Load<TextAsset>("Environment/IndianOcean/terrain").bytes))){

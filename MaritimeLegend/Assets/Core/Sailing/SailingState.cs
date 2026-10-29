@@ -7,6 +7,9 @@ namespace MaritimeLegend.Domain {
         public string manualMapId="",manualSpawnPort="";
         public float manualSpawnX,manualSpawnY,manualYaw,manualZoom=70;
         public ManualFollowerState[] manualFollowers;
+        public SeaExploration southeastAsiaExploration;
+        public int cloudSeed; public double cloudOffsetX,cloudOffsetZ;
+        public string previousManualMapId; public double previousManualX,previousManualY;
         public double energy,foregroundSeconds,speed,lastDayDistance,spawnCountdown;
         public int nextEncounterId; public uint encounterSeed;
         public List<FleetDayState> fleets=new List<FleetDayState>();

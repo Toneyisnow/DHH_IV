@@ -7,11 +7,11 @@ namespace MaritimeLegend {
    new ManualFollowerState{x=position.x,y=position.y,heading=heading},
    new ManualFollowerState{x=position.x,y=position.y,heading=heading}
   };
-  public static void Step(ManualFollowerState[] followers,Vector2 primary,float primaryPixelsPerSecond,double seconds,double turnRate,CoastNavigation coast) {
+  public static void Step(ManualFollowerState[] followers,Vector2 primary,float primaryPixelsPerSecond,double seconds,double turnRate,CoastNavigation coast,float minimumGap=0,float maximumGap=2.25f) {
    if(seconds<=0)return;
    var leader=coast.Pixels(primary);
    // Slack at low speed lets the fleet gather; under way the line stretches to 2.25 pixels.
-   float gap=2.25f*Mathf.Clamp01(primaryPixelsPerSecond/2.4f);
+   float gap=Mathf.Lerp(minimumGap,maximumGap,Mathf.Clamp01(primaryPixelsPerSecond/2.4f));
    foreach(var ship in followers) {
     var position=coast.Pixels(new Vector2((float)ship.x,(float)ship.y));
     var offset=leader-position;float distance=offset.magnitude;

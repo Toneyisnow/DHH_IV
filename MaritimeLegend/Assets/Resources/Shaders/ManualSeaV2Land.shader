@@ -6,6 +6,7 @@ Shader "Maritime/ManualSeaV2/Land"
  CGPROGRAM
  #pragma surface surf Lambert fullforwardshadows vertex:vert
  #pragma target 3.0
+ #include "ManualSeaV2Clouds.cginc"
  float _Grain;
  struct Input {float4 color:COLOR;float3 worldPos;};
  void vert(inout appdata_full v,out Input o) {UNITY_INITIALIZE_OUTPUT(Input,o);o.color=v.color;}
@@ -14,6 +15,7 @@ Shader "Maritime/ManualSeaV2/Land"
   float grain=hash(floor(i.worldPos.xz*22));
   float strokes=hash(floor(i.worldPos.xz*4));
   o.Albedo=i.color.rgb*(1+((grain-.5)*.3+(strokes-.5)*.22)*_Grain);
+  o.Albedo*=1-.52*seaCloudShadow(i.worldPos);
   o.Alpha=1;
  }
  ENDCG

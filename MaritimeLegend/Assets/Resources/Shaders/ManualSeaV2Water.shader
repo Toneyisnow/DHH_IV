@@ -14,6 +14,7 @@ Shader "Maritime/ManualSeaV2/Water" {
  #pragma fragment frag
  #pragma target 3.0
  #include "UnityCG.cginc"
+ #include "ManualSeaV2Clouds.cginc"
  sampler2D _DepthMap;float4 _MapBounds,_DeepColor,_ShallowColor,_SkyTint,_SunColor,_SunDirection,_ViewForward;
  float _WaveSpeed,_WaveLength,_WaveStrength,_FoamStrength,_PreviewTime,_Evening,_Night;
  struct v2f{float4 pos:SV_POSITION;float3 world:TEXCOORD0;};
@@ -60,9 +61,8 @@ Shader "Maritime/ManualSeaV2/Water" {
   float foam=pow(saturate(.5+.5*sin(coastPhase)),10)*exp(-depth*.8)*smoothstep(.2,.65,noise(p*2+t*.15));
   col=lerp(col,lerp(float3(.89,.99,.95),float3(.28,.43,.59),_Night),saturate((foam*1.5+exp(-depth*12)*.55)*_FoamStrength));
   // No world-grid grain: continuous wave shading stays clean at close range.
-  #ifndef UNITY_COLORSPACE_GAMMA
-  col=GammaToLinearSpace(col);
-  #endif
+  // Color properties are already converted by Unity in linear projects.
+  col*=1-.48*seaCloudShadow(i.world);
   return float4(col,1);
  }
  ENDCG}} Fallback Off

@@ -9,11 +9,11 @@ public sealed class ManualSeaV2Camera : MonoBehaviour {
  [Range(.05f,.3f)] public float skyHeightFraction=.15f;
  public float yaw=0;
  public Vector3 focus=new Vector3(0,0,-40);
- [Range(25,600)] public float distance=115;
+ [Range(24,120)] public float distance=115;
  public Vector4 focusBounds=new Vector4(-310,-230,310,230);
  public Vector3 homeFocus=new Vector3(0,0,-40);
  public float homeDistance=115;
- public float maximumDistance=260;
+ public float maximumDistance=120;
  [Range(.05f,1)] public float dragSensitivity=.22f;
  Camera view;
  public float Pitch {get=>pitch;set{pitch=Mathf.Clamp(value,10,60);ApplyPose();}}
@@ -31,7 +31,7 @@ public sealed class ManualSeaV2Camera : MonoBehaviour {
   x=(Input.GetKey(KeyCode.D)?1:0)-(Input.GetKey(KeyCode.A)?1:0);z=(Input.GetKey(KeyCode.W)?1:0)-(Input.GetKey(KeyCode.S)?1:0);
   scroll=Input.mouseScrollDelta.y;if(Input.GetMouseButton(1))drag=Input.GetAxisRaw("Mouse X")*10;reset=Input.GetKeyDown(KeyCode.R);fleet=Input.GetKeyDown(KeyCode.F);
 #endif
-  yaw+=drag*dragSensitivity;distance=Mathf.Clamp(distance-scroll*8,25,maximumDistance);
+  yaw+=drag*dragSensitivity;distance=Mathf.Clamp(distance*Mathf.Exp(-scroll*.12f),24,maximumDistance);
   var heading=Quaternion.Euler(0,yaw,0);focus+=heading*new Vector3(x,0,z)*(distance*.5f*Time.unscaledDeltaTime);
   focus.x=Mathf.Clamp(focus.x,focusBounds.x,focusBounds.z);focus.z=Mathf.Clamp(focus.z,focusBounds.y,focusBounds.w);
   if(reset){pitch=35;yaw=0;distance=homeDistance;focus=homeFocus;}

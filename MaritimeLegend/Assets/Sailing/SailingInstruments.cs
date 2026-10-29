@@ -6,7 +6,7 @@ namespace MaritimeLegend {
  public static class SeaInstrumentMath {
   public static Vector2 WorldDirection(double heading)=>new Vector2(Mathf.Cos((float)heading)*CoastNavigation.Width,Mathf.Sin((float)heading)*CoastNavigation.Height).normalized;
   public static Vector2 SailNormal(double heading,double trim){var forward=WorldDirection(heading);float a=(float)SailingFormulas.SailDegrees(trim)*Mathf.Deg2Rad;return new Vector2(forward.x*Mathf.Cos(a)-forward.y*Mathf.Sin(a),forward.x*Mathf.Sin(a)+forward.y*Mathf.Cos(a));}
-  public static float WindFill(double heading,double trim,double wind)=>Mathf.Clamp01(Vector2.Dot(SailNormal(heading,trim),WorldDirection(wind)));
+  public static float WindFill(double heading,double trim,double wind)=>(float)SailingFormulas.WindFill(heading,trim,wind);
   public static int FillState(float fill)=>fill<.15f?0:fill<.45f?1:fill<.78f?2:3;
   public static float WheelStep(float angle,double axis,double seconds)=>Mathf.Repeat(angle+(float)(axis*seconds)*600,360);
  }
@@ -15,7 +15,7 @@ namespace MaritimeLegend {
   static readonly string[] SailStateNames={"没风","小顺风","中顺风","大顺风"};
   Texture2D instrumentFrame,instrumentShip,instrumentHelm;readonly Texture2D[] instrumentSails=new Texture2D[4];
   GUIStyle instrumentCaption;float instrumentWheelAngle;
-  internal int InstrumentSailState=>SeaInstrumentMath.FillState(SeaInstrumentMath.WindFill(s.heading,s.trim,s.wind));
+  internal int InstrumentSailState=>SeaInstrumentMath.FillState(throttle*SeaInstrumentMath.WindFill(s.heading,s.trim,s.wind));
   internal float InstrumentWheelAngle=>instrumentWheelAngle;
   internal bool OverSailingInstruments(Vector2 pointer)=>InstrumentPanelRect.Contains(pointer);
   internal void ApplyManualSailInput(double axis,double seconds,bool reset){

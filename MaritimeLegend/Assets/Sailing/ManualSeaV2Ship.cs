@@ -9,6 +9,7 @@ public sealed class ManualSeaV2Ship : MonoBehaviour {
  public Renderer art;
  public Vector3 heading=new Vector3(1,0,-1);
  public float phase;
+ public float sailTrim,sailOpening=1,windFill=1;
  MaterialPropertyBlock properties;
  void LateUpdate(){Refresh();}
  public void Refresh(){
@@ -20,7 +21,7 @@ public sealed class ManualSeaV2Ship : MonoBehaviour {
   billboard.localPosition=Vector3.up*(.08f+Mathf.Sin(t*.9f+phase)*.10f);
   if(properties==null)properties=new MaterialPropertyBlock();properties.SetTexture("_MainTex",directions[index]);
   var mode=environment?environment.mode:ManualSeaV2Environment.SkyMode.Sunny;
-  properties.SetColor("_Tint",mode==ManualSeaV2Environment.SkyMode.Sunny?Color.white:mode==ManualSeaV2Environment.SkyMode.Sunset?new Color(1,.73f,.48f):new Color(.36f,.48f,.68f));art.SetPropertyBlock(properties);
+  properties.SetColor("_Tint",mode==ManualSeaV2Environment.SkyMode.Sunny?Color.white:mode==ManualSeaV2Environment.SkyMode.Sunset?new Color(1,.73f,.48f):new Color(.36f,.48f,.68f));properties.SetFloat("_SailTrim",sailTrim*Mathf.Deg2Rad);properties.SetFloat("_SailOpening",sailOpening);properties.SetFloat("_WindFill",windFill);art.SetPropertyBlock(properties);
  }
 }
 }

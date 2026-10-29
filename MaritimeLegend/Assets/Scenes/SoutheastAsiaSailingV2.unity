@@ -127090,11 +127090,11 @@ MonoBehaviour:
   skyHeightFraction: 0.15
   yaw: 0
   focus: {x: -95, y: 0, z: 70}
-  distance: 140
+  distance: 120
   focusBounds: {x: -472, y: -262, z: 472, w: 262}
   homeFocus: {x: -95, y: 0, z: 70}
-  homeDistance: 140
-  maximumDistance: 560
+  homeDistance: 120
+  maximumDistance: 120
   dragSensitivity: 0.22
 --- !u!81 &309909159
 AudioListener:

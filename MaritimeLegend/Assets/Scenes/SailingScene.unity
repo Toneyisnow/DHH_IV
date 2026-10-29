@@ -148,9 +148,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7497abd756c4ce643a15e8541db2ccea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MaritimeLegend.SailingScene
-  minimumZoom: 8
-  maximumZoom: 90
-  pitch: 25
+  minimumZoom: 24
+  maximumZoom: 120
+  pitch: 35
 --- !u!4 &568130277
 Transform:
   m_ObjectHideFlags: 0

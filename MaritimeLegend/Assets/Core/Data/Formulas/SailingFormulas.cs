@@ -2,6 +2,14 @@ using System;
 namespace MaritimeLegend.Domain {
     public struct DailySailingCost { public double food,water,energy; public int experience; }
     public static class SailingFormulas {
+        // Match the existing sail instrument's direction in regional map space.
+        public static double WindFill(double heading,double trim,double wind) {
+            double forward=Math.Atan2(Math.Sin(heading)*941,Math.Cos(heading)*1672);
+            double windDirection=Math.Atan2(Math.Sin(wind)*941,Math.Cos(wind)*1672);
+            return Math.Max(0,Math.Min(1,Math.Cos(windDirection-forward-SailDegrees(trim)*Math.PI/180)));
+        }
+        public static double SailPower(double opening,double heading,double trim,double wind) =>
+            Math.Max(0,Math.Min(1,opening))*(.02+1.98*WindFill(heading,trim,wind));
         public static DailySailingCost Daily(SailingParameters p,int crew,int navigation,int supply,int vision,double weatherRisk=0,double exploration=0) {
             if(crew<0||navigation<0||supply<0||vision<0)throw new ArgumentOutOfRangeException("skills/crew");
             double factor=p.logisticsFactor*Math.Max(p.minimumSupplyFactor,1-supply*p.supplyReductionPerLevel);
