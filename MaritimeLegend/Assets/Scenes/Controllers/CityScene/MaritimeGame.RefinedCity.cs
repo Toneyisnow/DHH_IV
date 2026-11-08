@@ -36,6 +36,12 @@ public partial class MaritimeGame {
   Label(62,58,400,60,"航海世家",townBrand);
   Label(66,116,400,36,"港湾 · "+c.ports[s.city].name,townCaption);
   if(TownButton(new Rect(1178,58,330,58),"切换角色 · "+view.PixelWalker.CharacterName))view.CyclePlayerCharacter();
+  if(view.PixelWalker.HasModularWardrobe){
+   string[] slots={"头饰","披风","饰品"};for(int n=0;n<3;n++){
+    int bit=1<<n;string caption=((view.PixelWalker.EquipmentMask&bit)!=0?"✓ ":"○ ")+slots[n];
+    if(TownButton(new Rect(1178+n*112,124,106,42),caption,"function_button",20))view.PixelWalker.ToggleEquipment(bit);
+   }
+  }
   foreach(var marker in view.Landmarks){
    if(Vector3.Distance(view.Player.position,marker.Value)>20)continue;
    var p=view.Project(marker.Value+Vector3.up*.15f);

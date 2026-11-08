@@ -1,0 +1,842 @@
+[
+  {
+    "direction": "N",
+    "frame": 0,
+    "head": [
+      84,
+      34
+    ],
+    "neck": [
+      84,
+      69
+    ],
+    "waist": [
+      66,
+      103
+    ],
+    "capeCollarLocal": [
+      32.5,
+      0
+    ],
+    "hatHairCut": 26
+  },
+  {
+    "direction": "N",
+    "frame": 1,
+    "head": [
+      84,
+      36
+    ],
+    "neck": [
+      84,
+      71
+    ],
+    "waist": [
+      66,
+      105
+    ],
+    "capeCollarLocal": [
+      32.5,
+      0
+    ],
+    "hatHairCut": 28
+  },
+  {
+    "direction": "N",
+    "frame": 2,
+    "head": [
+      84,
+      34
+    ],
+    "neck": [
+      84,
+      69
+    ],
+    "waist": [
+      66,
+      103
+    ],
+    "capeCollarLocal": [
+      32.5,
+      0
+    ],
+    "hatHairCut": 26
+  },
+  {
+    "direction": "N",
+    "frame": 3,
+    "head": [
+      84,
+      36
+    ],
+    "neck": [
+      84,
+      71
+    ],
+    "waist": [
+      66,
+      105
+    ],
+    "capeCollarLocal": [
+      32.5,
+      0
+    ],
+    "hatHairCut": 28
+  },
+  {
+    "direction": "N",
+    "frame": 4,
+    "head": [
+      84,
+      34
+    ],
+    "neck": [
+      84,
+      69
+    ],
+    "waist": [
+      66,
+      103
+    ],
+    "capeCollarLocal": [
+      32.5,
+      0
+    ],
+    "hatHairCut": 26
+  },
+  {
+    "direction": "NE",
+    "frame": 0,
+    "head": [
+      84,
+      34
+    ],
+    "neck": [
+      89,
+      69
+    ],
+    "waist": [
+      66,
+      103
+    ],
+    "capeCollarLocal": [
+      28,
+      0
+    ],
+    "hatHairCut": 26
+  },
+  {
+    "direction": "NE",
+    "frame": 1,
+    "head": [
+      84,
+      36
+    ],
+    "neck": [
+      89,
+      71
+    ],
+    "waist": [
+      66,
+      105
+    ],
+    "capeCollarLocal": [
+      28,
+      0
+    ],
+    "hatHairCut": 28
+  },
+  {
+    "direction": "NE",
+    "frame": 2,
+    "head": [
+      84,
+      34
+    ],
+    "neck": [
+      89,
+      69
+    ],
+    "waist": [
+      66,
+      103
+    ],
+    "capeCollarLocal": [
+      28,
+      0
+    ],
+    "hatHairCut": 26
+  },
+  {
+    "direction": "NE",
+    "frame": 3,
+    "head": [
+      84,
+      36
+    ],
+    "neck": [
+      89,
+      71
+    ],
+    "waist": [
+      66,
+      105
+    ],
+    "capeCollarLocal": [
+      28,
+      0
+    ],
+    "hatHairCut": 28
+  },
+  {
+    "direction": "NE",
+    "frame": 4,
+    "head": [
+      84,
+      34
+    ],
+    "neck": [
+      89,
+      69
+    ],
+    "waist": [
+      66,
+      103
+    ],
+    "capeCollarLocal": [
+      28,
+      0
+    ],
+    "hatHairCut": 26
+  },
+  {
+    "direction": "E",
+    "frame": 0,
+    "head": [
+      84,
+      34
+    ],
+    "neck": [
+      89,
+      69
+    ],
+    "waist": [
+      68,
+      103
+    ],
+    "capeCollarLocal": [
+      27,
+      0
+    ],
+    "hatHairCut": 26
+  },
+  {
+    "direction": "E",
+    "frame": 1,
+    "head": [
+      84,
+      36
+    ],
+    "neck": [
+      89,
+      71
+    ],
+    "waist": [
+      68,
+      105
+    ],
+    "capeCollarLocal": [
+      27,
+      0
+    ],
+    "hatHairCut": 28
+  },
+  {
+    "direction": "E",
+    "frame": 2,
+    "head": [
+      84,
+      34
+    ],
+    "neck": [
+      89,
+      69
+    ],
+    "waist": [
+      68,
+      103
+    ],
+    "capeCollarLocal": [
+      27,
+      0
+    ],
+    "hatHairCut": 26
+  },
+  {
+    "direction": "E",
+    "frame": 3,
+    "head": [
+      84,
+      36
+    ],
+    "neck": [
+      89,
+      71
+    ],
+    "waist": [
+      68,
+      105
+    ],
+    "capeCollarLocal": [
+      27,
+      0
+    ],
+    "hatHairCut": 28
+  },
+  {
+    "direction": "E",
+    "frame": 4,
+    "head": [
+      84,
+      34
+    ],
+    "neck": [
+      89,
+      69
+    ],
+    "waist": [
+      68,
+      103
+    ],
+    "capeCollarLocal": [
+      27,
+      0
+    ],
+    "hatHairCut": 26
+  },
+  {
+    "direction": "SE",
+    "frame": 0,
+    "head": [
+      84,
+      34
+    ],
+    "neck": [
+      87,
+      69
+    ],
+    "waist": [
+      97,
+      103
+    ],
+    "capeCollarLocal": [
+      31.5,
+      0
+    ],
+    "hatHairCut": 26
+  },
+  {
+    "direction": "SE",
+    "frame": 1,
+    "head": [
+      84,
+      36
+    ],
+    "neck": [
+      87,
+      71
+    ],
+    "waist": [
+      97,
+      105
+    ],
+    "capeCollarLocal": [
+      31.5,
+      0
+    ],
+    "hatHairCut": 28
+  },
+  {
+    "direction": "SE",
+    "frame": 2,
+    "head": [
+      84,
+      34
+    ],
+    "neck": [
+      87,
+      69
+    ],
+    "waist": [
+      97,
+      103
+    ],
+    "capeCollarLocal": [
+      31.5,
+      0
+    ],
+    "hatHairCut": 26
+  },
+  {
+    "direction": "SE",
+    "frame": 3,
+    "head": [
+      84,
+      36
+    ],
+    "neck": [
+      87,
+      71
+    ],
+    "waist": [
+      97,
+      105
+    ],
+    "capeCollarLocal": [
+      31.5,
+      0
+    ],
+    "hatHairCut": 28
+  },
+  {
+    "direction": "SE",
+    "frame": 4,
+    "head": [
+      84,
+      34
+    ],
+    "neck": [
+      87,
+      69
+    ],
+    "waist": [
+      97,
+      103
+    ],
+    "capeCollarLocal": [
+      31.5,
+      0
+    ],
+    "hatHairCut": 26
+  },
+  {
+    "direction": "S",
+    "frame": 0,
+    "head": [
+      84,
+      34
+    ],
+    "neck": [
+      84,
+      69
+    ],
+    "waist": [
+      103,
+      103
+    ],
+    "capeCollarLocal": [
+      33,
+      0
+    ],
+    "hatHairCut": 26
+  },
+  {
+    "direction": "S",
+    "frame": 1,
+    "head": [
+      84,
+      36
+    ],
+    "neck": [
+      84,
+      71
+    ],
+    "waist": [
+      103,
+      105
+    ],
+    "capeCollarLocal": [
+      33,
+      0
+    ],
+    "hatHairCut": 28
+  },
+  {
+    "direction": "S",
+    "frame": 2,
+    "head": [
+      84,
+      34
+    ],
+    "neck": [
+      84,
+      69
+    ],
+    "waist": [
+      103,
+      103
+    ],
+    "capeCollarLocal": [
+      33,
+      0
+    ],
+    "hatHairCut": 26
+  },
+  {
+    "direction": "S",
+    "frame": 3,
+    "head": [
+      84,
+      36
+    ],
+    "neck": [
+      84,
+      71
+    ],
+    "waist": [
+      103,
+      105
+    ],
+    "capeCollarLocal": [
+      33,
+      0
+    ],
+    "hatHairCut": 28
+  },
+  {
+    "direction": "S",
+    "frame": 4,
+    "head": [
+      84,
+      34
+    ],
+    "neck": [
+      84,
+      69
+    ],
+    "waist": [
+      103,
+      103
+    ],
+    "capeCollarLocal": [
+      33,
+      0
+    ],
+    "hatHairCut": 26
+  },
+  {
+    "direction": "SW",
+    "frame": 0,
+    "head": [
+      84,
+      34
+    ],
+    "neck": [
+      81,
+      69
+    ],
+    "waist": [
+      104,
+      103
+    ],
+    "capeCollarLocal": [
+      31,
+      0
+    ],
+    "hatHairCut": 26
+  },
+  {
+    "direction": "SW",
+    "frame": 1,
+    "head": [
+      84,
+      36
+    ],
+    "neck": [
+      81,
+      71
+    ],
+    "waist": [
+      104,
+      105
+    ],
+    "capeCollarLocal": [
+      31,
+      0
+    ],
+    "hatHairCut": 28
+  },
+  {
+    "direction": "SW",
+    "frame": 2,
+    "head": [
+      84,
+      34
+    ],
+    "neck": [
+      81,
+      69
+    ],
+    "waist": [
+      104,
+      103
+    ],
+    "capeCollarLocal": [
+      31,
+      0
+    ],
+    "hatHairCut": 26
+  },
+  {
+    "direction": "SW",
+    "frame": 3,
+    "head": [
+      84,
+      36
+    ],
+    "neck": [
+      81,
+      71
+    ],
+    "waist": [
+      104,
+      105
+    ],
+    "capeCollarLocal": [
+      31,
+      0
+    ],
+    "hatHairCut": 28
+  },
+  {
+    "direction": "SW",
+    "frame": 4,
+    "head": [
+      84,
+      34
+    ],
+    "neck": [
+      81,
+      69
+    ],
+    "waist": [
+      104,
+      103
+    ],
+    "capeCollarLocal": [
+      31,
+      0
+    ],
+    "hatHairCut": 26
+  },
+  {
+    "direction": "W",
+    "frame": 0,
+    "head": [
+      84,
+      34
+    ],
+    "neck": [
+      79,
+      69
+    ],
+    "waist": [
+      99,
+      103
+    ],
+    "capeCollarLocal": [
+      19,
+      0
+    ],
+    "hatHairCut": 26
+  },
+  {
+    "direction": "W",
+    "frame": 1,
+    "head": [
+      84,
+      36
+    ],
+    "neck": [
+      79,
+      71
+    ],
+    "waist": [
+      99,
+      105
+    ],
+    "capeCollarLocal": [
+      19,
+      0
+    ],
+    "hatHairCut": 28
+  },
+  {
+    "direction": "W",
+    "frame": 2,
+    "head": [
+      84,
+      34
+    ],
+    "neck": [
+      79,
+      69
+    ],
+    "waist": [
+      99,
+      103
+    ],
+    "capeCollarLocal": [
+      19,
+      0
+    ],
+    "hatHairCut": 26
+  },
+  {
+    "direction": "W",
+    "frame": 3,
+    "head": [
+      84,
+      36
+    ],
+    "neck": [
+      79,
+      71
+    ],
+    "waist": [
+      99,
+      105
+    ],
+    "capeCollarLocal": [
+      19,
+      0
+    ],
+    "hatHairCut": 28
+  },
+  {
+    "direction": "W",
+    "frame": 4,
+    "head": [
+      84,
+      34
+    ],
+    "neck": [
+      79,
+      69
+    ],
+    "waist": [
+      99,
+      103
+    ],
+    "capeCollarLocal": [
+      19,
+      0
+    ],
+    "hatHairCut": 26
+  },
+  {
+    "direction": "NW",
+    "frame": 0,
+    "head": [
+      84,
+      34
+    ],
+    "neck": [
+      79,
+      69
+    ],
+    "waist": [
+      71,
+      103
+    ],
+    "capeCollarLocal": [
+      29.5,
+      0
+    ],
+    "hatHairCut": 26
+  },
+  {
+    "direction": "NW",
+    "frame": 1,
+    "head": [
+      84,
+      36
+    ],
+    "neck": [
+      79,
+      71
+    ],
+    "waist": [
+      71,
+      105
+    ],
+    "capeCollarLocal": [
+      29.5,
+      0
+    ],
+    "hatHairCut": 28
+  },
+  {
+    "direction": "NW",
+    "frame": 2,
+    "head": [
+      84,
+      34
+    ],
+    "neck": [
+      79,
+      69
+    ],
+    "waist": [
+      71,
+      103
+    ],
+    "capeCollarLocal": [
+      29.5,
+      0
+    ],
+    "hatHairCut": 26
+  },
+  {
+    "direction": "NW",
+    "frame": 3,
+    "head": [
+      84,
+      36
+    ],
+    "neck": [
+      79,
+      71
+    ],
+    "waist": [
+      71,
+      105
+    ],
+    "capeCollarLocal": [
+      29.5,
+      0
+    ],
+    "hatHairCut": 28
+  },
+  {
+    "direction": "NW",
+    "frame": 4,
+    "head": [
+      84,
+      34
+    ],
+    "neck": [
+      79,
+      69
+    ],
+    "waist": [
+      71,
+      103
+    ],
+    "capeCollarLocal": [
+      29.5,
+      0
+    ],
+    "hatHairCut": 26
+  }
+]

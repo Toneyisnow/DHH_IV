@@ -1,0 +1,242 @@
+[
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character01\\Review168\\walk-sheet.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character01\\CartoonWalk\\walk-sheet.png",
+    "sha256": "635fb8943a26ea7a5e76db33e88b8a7d9c85906143862ff34a5a7e489d1d7bab",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character01\\Wardrobe\\Layers\\accessory-back.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character01\\ModularWalk\\accessory-back.png",
+    "sha256": "41e02202d88dd2237b0a506d3a90d3ac1786c9067c818c0bdce89fe66b90bf3e",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character01\\Wardrobe\\Layers\\accessory-front.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character01\\ModularWalk\\accessory-front.png",
+    "sha256": "e5902843102220d7c4b00bcc04755c15a17be4c8c7f8b2a1dc7ad3566e5310a5",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character01\\Wardrobe\\Layers\\body-hat.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character01\\ModularWalk\\body-hat.png",
+    "sha256": "53c6dcb7728b5571a121be2d7f84f0dd4829e10a6f87df0ccc89a422a17e753e",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character01\\Wardrobe\\Layers\\cape-back.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character01\\ModularWalk\\cape-back.png",
+    "sha256": "feeb37a0ed39ca5e18c0d2b29250950a96dd93a9cab5183ed3b4b6ff010a6794",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character01\\Wardrobe\\Layers\\cape-front.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character01\\ModularWalk\\cape-front.png",
+    "sha256": "acfca38ecef8ac71bedff6db58d01a8d319668d2945cd72312bc2ea2dcd5f500",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character01\\Wardrobe\\Layers\\hat-back.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character01\\ModularWalk\\hat-back.png",
+    "sha256": "6b25266b7e7a0e3d3b364aad541ab010d2a59eb1fd697619473abd367d3bcdbb",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character01\\Wardrobe\\Layers\\hat-front.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character01\\ModularWalk\\hat-front.png",
+    "sha256": "61eee66ac491c9d79ebc56b9bdf0196f593ac67cc264f14704c0c5be42da1af1",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character02\\Review168\\walk-sheet.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character02\\CartoonWalk\\walk-sheet.png",
+    "sha256": "a15ab8a5fa2743e2008c28d1929a532d907fddf0b92c0d0e4f6fac2804205118",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character02\\Wardrobe\\Layers\\accessory-back.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character02\\ModularWalk\\accessory-back.png",
+    "sha256": "c33c5f1c27e02003545120d0db83a4258fa58d94d578b03d50dc03bfb5b8c615",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character02\\Wardrobe\\Layers\\accessory-front.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character02\\ModularWalk\\accessory-front.png",
+    "sha256": "e76497ee604fc693583ebfaa37048710010dfd901a87e76d94d3d5a8c7d16705",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character02\\Wardrobe\\Layers\\body-hat.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character02\\ModularWalk\\body-hat.png",
+    "sha256": "c031c50f6fc28c99d9501a9bdc43f12c2b240cf51e2624f4e678615e99b2c809",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character02\\Wardrobe\\Layers\\cape-back.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character02\\ModularWalk\\cape-back.png",
+    "sha256": "c85562c7035727cbb9cf2b474df06de48a72010383fd5270c5e2c5ed3a2b3af8",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character02\\Wardrobe\\Layers\\cape-front.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character02\\ModularWalk\\cape-front.png",
+    "sha256": "2d4486fb3a7478d4e4e8cc876e9127a3eea0e63c1d4ec080cc3e8e5e35ee90f8",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character02\\Wardrobe\\Layers\\hat-back.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character02\\ModularWalk\\hat-back.png",
+    "sha256": "6b25266b7e7a0e3d3b364aad541ab010d2a59eb1fd697619473abd367d3bcdbb",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character02\\Wardrobe\\Layers\\hat-front.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character02\\ModularWalk\\hat-front.png",
+    "sha256": "59debe23d7f9a6294d8443ad5b721d20b8937d8806ec0ac284fe3cd2dc691e90",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character03\\Review168\\walk-sheet.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character03\\CartoonWalk\\walk-sheet.png",
+    "sha256": "d0745fdcd2d196f581d3da3091a70b8f21c6eabb2938a9ef4b82ae2d1421fcc7",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character03\\Wardrobe\\Layers\\accessory-back.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character03\\ModularWalk\\accessory-back.png",
+    "sha256": "9ff932b807538f354384bee9eadd3b21c85be63d31c796a85d68288ab0ab7a62",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character03\\Wardrobe\\Layers\\accessory-front.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character03\\ModularWalk\\accessory-front.png",
+    "sha256": "ff7d1a781f0bd75a0b2cd3122f645ae8022f40fbc06a0432e858ed238d792b2f",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character03\\Wardrobe\\Layers\\body-hat.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character03\\ModularWalk\\body-hat.png",
+    "sha256": "7a9b40e003ffcfe328adf77a6abce5ef6ec16a4c61b03d884de5925cea5dd3cb",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character03\\Wardrobe\\Layers\\cape-back.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character03\\ModularWalk\\cape-back.png",
+    "sha256": "efd76da95cdb633bf39412ebc5b4d2d45fa6d6464298f0b78581e9ab8ebd68c8",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character03\\Wardrobe\\Layers\\cape-front.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character03\\ModularWalk\\cape-front.png",
+    "sha256": "d8dd0ae13ea2a2709ad02c07efa8db0bc93dc49eb8b75a403591cb2dadaa19c7",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character03\\Wardrobe\\Layers\\hat-back.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character03\\ModularWalk\\hat-back.png",
+    "sha256": "6b25266b7e7a0e3d3b364aad541ab010d2a59eb1fd697619473abd367d3bcdbb",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character03\\Wardrobe\\Layers\\hat-front.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character03\\ModularWalk\\hat-front.png",
+    "sha256": "01ce67bdc6e5a8cbce0374a1c9480a05be6e1bd6161e44287f556e906cda1a8c",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character07\\Review168\\walk-sheet.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character07\\CartoonWalk\\walk-sheet.png",
+    "sha256": "c0f8985ab679c3c921444c72b146243eb2b4b063f24196832fc755fd286c5a44",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character07\\Wardrobe\\Layers\\accessory-back.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character07\\ModularWalk\\accessory-back.png",
+    "sha256": "15fedae2c84ed909bf0c99ed67573790abeff060a61a41a63ca1bdedba83432c",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character07\\Wardrobe\\Layers\\accessory-front.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character07\\ModularWalk\\accessory-front.png",
+    "sha256": "ad246c758d3afb4c608854c46e766251af8ec9776d1fb02cf25fe9ffe8f82118",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character07\\Wardrobe\\Layers\\body-hat.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character07\\ModularWalk\\body-hat.png",
+    "sha256": "0a8b8f1ebb7ebd6fdba98efd741af2b3dde0819d5e702e988b294b2954745276",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character07\\Wardrobe\\Layers\\cape-back.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character07\\ModularWalk\\cape-back.png",
+    "sha256": "16f5fcfe46375ed9205c06305c6f323cac0089d798a3e062c452b03042293d68",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character07\\Wardrobe\\Layers\\cape-front.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character07\\ModularWalk\\cape-front.png",
+    "sha256": "0842fbe59f6af7eed00a7fc81fdb1a7771f94d59482a2bb8a77608016bac3bb4",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character07\\Wardrobe\\Layers\\hat-back.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character07\\ModularWalk\\hat-back.png",
+    "sha256": "6b25266b7e7a0e3d3b364aad541ab010d2a59eb1fd697619473abd367d3bcdbb",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character07\\Wardrobe\\Layers\\hat-front.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character07\\ModularWalk\\hat-front.png",
+    "sha256": "3b1d5c54484dcdcc6720d0fca05d27e41e4e9f270405cbd994f7906d68dbd904",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character08\\Review168\\walk-sheet.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character08\\CartoonWalk\\walk-sheet.png",
+    "sha256": "4a49ba270cadecebbce732b58708dd389471787bb27ebfe6475861110592be5a",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character08\\Wardrobe\\Layers\\accessory-back.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character08\\ModularWalk\\accessory-back.png",
+    "sha256": "1133ad4e08e3db95d05bf08c699109707ccadd80bbbfbbba3b9ad0203b7a0c09",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character08\\Wardrobe\\Layers\\accessory-front.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character08\\ModularWalk\\accessory-front.png",
+    "sha256": "4606a56e78a9a06cd0097f4da4c52af0d88fb6abb423177e06e0354763a45006",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character08\\Wardrobe\\Layers\\body-hat.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character08\\ModularWalk\\body-hat.png",
+    "sha256": "de93de1593b62f55404526c0b6177c294add12fa76616bb8c7763e2d53d33a39",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character08\\Wardrobe\\Layers\\cape-back.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character08\\ModularWalk\\cape-back.png",
+    "sha256": "3252c298493215ac53e84b825119e5bd4875333298a4944ebd226f0fc4386262",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character08\\Wardrobe\\Layers\\cape-front.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character08\\ModularWalk\\cape-front.png",
+    "sha256": "03155a8d190c9a124c452bb189ca3d78c17a24ce64a99b80aa5545763679b020",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character08\\Wardrobe\\Layers\\hat-back.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character08\\ModularWalk\\hat-back.png",
+    "sha256": "9a6e23a1f42d300501f4a8f8265a108339f1d94af43dd7df3032eb95db71bdaa",
+    "match": true
+  },
+  {
+    "source": "ArtSource\\CharacterWalkRework_2026-11-07\\Character08\\Wardrobe\\Layers\\hat-front.png",
+    "runtime": "MaritimeLegend\\Assets\\Resources\\Sprites\\Characters\\Character08\\ModularWalk\\hat-front.png",
+    "sha256": "daf886bebc2c8d678d3e3ffd2da5297a747cdbb9ed1482db185213a4dfe1249c",
+    "match": true
+  }
+]

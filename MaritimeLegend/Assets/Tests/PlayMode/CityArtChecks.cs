@@ -82,6 +82,25 @@ public sealed class CityArtChecks:MonoBehaviour {
   }
   view.View.transform.position=cameraPositionBefore;view.PixelWalker.gameObject.SetActive(true);Destroy(actor.gameObject);yield return null;
  }
+ // New five: real layered rendering, independent slot masks, shared walking/idle frames.
+ foreach(int character in new[]{1,2,3,7,8}){
+  var actor=CityPixelWalker.CreateCartoon(view.Player,Shader.Find("Maritime/CitySprite"),character);
+  actor.transform.rotation=view.View.transform.rotation;view.PixelWalker.gameObject.SetActive(false);
+  var cameraBeforeNew=view.View.transform.position;view.View.transform.position=view.Player.position+Vector3.up*1.8f-view.View.transform.forward*8;
+  Check(actor.HasModularWardrobe,"new character has independent equipment slots "+character);
+  foreach(int mask in new[]{0,1,2,4,7}){
+   actor.SetEquipmentMask(mask);
+   Check(actor.EquipmentMask==mask,"independent equipment mask "+character+"/"+mask);
+   for(int d=0;d<8;d++)for(int f=0;f<5;f++){
+    actor.Pose(d,f);
+    foreach(var r in actor.GetComponentsInChildren<SpriteRenderer>())if(r.enabled)Check(r.sprite!=null&&r.sprite.rect==new Rect(f*168,(7-(d+4)%8)*168,168,168)&&r.sprite.pivot==new Vector2(84,10)&&r.sprite.texture.filterMode==FilterMode.Point,"new layered synchronized pose");
+    if(f==0&&(mask==0||mask==7))Capture(view,"NewFive-"+character+"-mask"+mask+"-direction"+d);
+    if(f==4&&d==0&&(mask==1||mask==2||mask==4))Capture(view,"NewFive-"+character+"-single"+mask);
+   }
+  }
+  actor.Animate(6,true,.2f);Check(actor.Frame<4,"new walker animates "+character);actor.Animate(6,false,.2f);Check(actor.Frame==4,"new walker stops "+character);
+  actor.SetEquipmentMask(0);view.View.transform.position=cameraBeforeNew;view.PixelWalker.gameObject.SetActive(true);Destroy(actor.gameObject);yield return null;
+ }
  Check(view.Landmarks.ContainsKey("市场A")&&view.Landmarks.ContainsKey("市场B")&&view.Landmarks.ContainsKey("酒馆"),"required building destinations");
  Check(view.GetComponentsInChildren<Light>().Any(l=>l.type==LightType.Point&&l.shadows!=LightShadows.None),"local shadow-casting lights");
  Vector3 cameraBefore=view.View.transform.position;float distanceBefore=view.CameraDistance;Capture(view,"Lisbon-before");
@@ -97,7 +116,7 @@ public sealed class CityArtChecks:MonoBehaviour {
  Capture(view,"Town-layout");
  var playerBeforeSwitch=view.Player;var positionBeforeSwitch=view.Player.position;
  view.PixelWalker.SetAppearance(1);
- foreach(int expectedCharacter in new[]{4,5,6}){
+ foreach(int expectedCharacter in new[]{4,1,2,3,7,8,5,6}){
   Check(LiveGui.ClickText("切换角色 · "+view.PixelWalker.CharacterName),"top character button clickable");yield return null;yield return null;
   Check(view.PixelWalker.CharacterId==expectedCharacter,"button selects current cartoon "+expectedCharacter);
   Check(view.Player==playerBeforeSwitch&&view.Player.position==positionBeforeSwitch,"switch preserves controlled player position");
@@ -115,7 +134,7 @@ public sealed class CityArtChecks:MonoBehaviour {
  view=FindAnyObjectByType<CityScene>().Diorama;
  Check(view.PixelWalker.CharacterId==4,"selection retained across city changes");
  world.State.city=0;yield return new WaitForSecondsRealtime(.7f);
- view=FindAnyObjectByType<CityScene>().Diorama;view.CyclePlayerCharacter();view.CyclePlayerCharacter();
+ view=FindAnyObjectByType<CityScene>().Diorama;while(view.PixelWalker.CharacterId!=6)view.CyclePlayerCharacter();
  Check(world.State.appearance.baseId==2&&string.IsNullOrEmpty(world.State.appearance.portraitV2),"character switching preserves saved identity");
  yield return null;yield return null;
  Check(LiveGui.ClickText("功能"),"wardrobe function menu opens");yield return null;yield return null;

@@ -1,0 +1,86 @@
+{
+  "seed": 202611078,
+  "note": "Random selection within compatible physical headwear, symmetric unhooded mantles, waist equipment; no shoulder pets under brimmed hats.",
+  "variants": [
+    {
+      "character": "01",
+      "H": {
+        "id": "H1",
+        "description": "软扁帽"
+      },
+      "M": {
+        "id": "M1",
+        "description": "羊毛短肩披"
+      },
+      "A": {
+        "id": "A6",
+        "description": "船务套件：绳圈、皮水袋、木框沙漏"
+      },
+      "recipe": "01-C1-H1-M1-A6"
+    },
+    {
+      "character": "02",
+      "H": {
+        "id": "H4",
+        "description": "软绒扁帽"
+      },
+      "M": {
+        "id": "M4",
+        "description": "及肘绸披肩"
+      },
+      "A": {
+        "id": "A5",
+        "description": "贸易套件：斜挎袋、账册、珠样品袋"
+      },
+      "recipe": "02-C1-H4-M4-A5"
+    },
+    {
+      "character": "03",
+      "H": {
+        "id": "H2",
+        "description": "方巾"
+      },
+      "M": {
+        "id": "M1",
+        "description": "素棉短披"
+      },
+      "A": {
+        "id": "A1",
+        "description": "带鞘工具腰刀"
+      },
+      "recipe": "03-C1-H2-M1-A1"
+    },
+    {
+      "character": "07",
+      "H": {
+        "id": "H3",
+        "description": "芦苇遮阳帽"
+      },
+      "M": {
+        "id": "M5",
+        "description": "窄条纹中披"
+      },
+      "A": {
+        "id": "A1",
+        "description": "带鞘工具腰刀"
+      },
+      "recipe": "07-C1-H3-M5-A1"
+    },
+    {
+      "character": "08",
+      "H": {
+        "id": "H2",
+        "description": "草帽加头巾"
+      },
+      "M": {
+        "id": "M1",
+        "description": "亚麻短披肩"
+      },
+      "A": {
+        "id": "A6",
+        "description": "船务套件：绳圈、皮水袋、木框沙漏"
+      },
+      "recipe": "08-C1-H2-M1-A6"
+    }
+  ]
+}

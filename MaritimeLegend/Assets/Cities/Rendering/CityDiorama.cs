@@ -17,7 +17,8 @@ public sealed partial class CityDiorama : MonoBehaviour {
  public CityPixelWalker PixelWalker {get;private set;}
  public void CyclePlayerCharacter(){
   var previous=PixelWalker;
-  int next=previous.CharacterId==5?6:previous.CharacterId==6?4:5;
+  int[] order={5,6,4,1,2,3,7,8};
+  int next=order[(Array.IndexOf(order,previous.CharacterId)+1)%order.Length];
   var replacement=CityPixelWalker.CreateCartoon(Player,definition.spriteShader,next);
   replacement.transform.rotation=previous.transform.rotation;
   replacement.CopyMotionFrom(previous);

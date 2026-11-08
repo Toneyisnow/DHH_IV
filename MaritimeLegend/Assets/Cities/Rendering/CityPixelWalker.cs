@@ -11,10 +11,15 @@ namespace MaritimeLegend {
   SpriteRenderer cartoonView;
   Sprite[] cartoonFrames;
   CityCartoonWardrobe wardrobe;
-  public int AppearanceIndex=>wardrobe!=null?wardrobe.AppearanceIndex:0;
-  public string AppearanceName=>wardrobe!=null?wardrobe.AppearanceName:"原搭配";
-  public void SetAppearance(int index){if(wardrobe!=null)wardrobe.SetAppearance(index);}
-  public void CycleAppearance(){SetAppearance((AppearanceIndex+1)%3);}
+  CityModularWardrobe modular;
+  public bool HasModularWardrobe=>modular!=null;
+  public int EquipmentMask=>modular!=null?modular.Mask:0;
+  public void SetEquipmentMask(int mask){if(modular!=null)modular.SetMask(mask);}
+  public void ToggleEquipment(int bit){SetEquipmentMask(EquipmentMask^bit);}
+  public int AppearanceIndex=>wardrobe!=null?wardrobe.AppearanceIndex:modular!=null&&modular.Mask!=0?1:0;
+  public string AppearanceName=>wardrobe!=null?wardrobe.AppearanceName:modular!=null&&modular.Mask!=0?"分层变种":"原搭配";
+  public void SetAppearance(int index){if(wardrobe!=null)wardrobe.SetAppearance(index);else if(modular!=null)modular.SetMask(index==0?0:7);}
+  public void CycleAppearance(){SetAppearance((AppearanceIndex+1)%(modular!=null?2:3));}
   int cartoonFrame=4,cartoonFacing;
   float phase;
   public int CharacterId { get; private set; }
@@ -35,9 +40,9 @@ namespace MaritimeLegend {
   static int selectedPlayer;
   [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
   static void ResetPlayerSelection(){selectedPlayer=0;}
-  public string CharacterName=>CharacterId==5?"非裔男":CharacterId==6?"非裔女":"亚裔女";
+  public string CharacterName=>new[]{"","欧洲男","欧洲女","亚裔男","亚裔女","非裔男","非裔女","拉美男","拉美女"}[CharacterId];
   public static void SelectPlayerVisual(int character){
-   if(character<4||character>6)throw new System.ArgumentOutOfRangeException(nameof(character));
+   if(character<1||character>8)throw new System.ArgumentOutOfRangeException(nameof(character));
    selectedPlayer=character;
   }
   public void CopyMotionFrom(CityPixelWalker other){phase=other.phase;Pose(other.Facing,other.Frame);}
@@ -73,7 +78,7 @@ namespace MaritimeLegend {
    actor.Pose(0,4);return actor;
   }
   public static CityPixelWalker CreateCartoon(Transform parent,Shader shader,int character=6) {
-   if(character<4||character>6)throw new System.ArgumentOutOfRangeException(nameof(character));
+   if(character<1||character>8)throw new System.ArgumentOutOfRangeException(nameof(character));
    string identity="Character"+character.ToString("00");
    string folder=character==6?"PixelWalk":"CartoonWalk";
    var atlas=Resources.Load<Texture2D>("Sprites/Characters/"+identity+"/"+folder+"/walk-sheet");
@@ -90,10 +95,11 @@ namespace MaritimeLegend {
    actor.material=new Material(shader);actor.material.SetColor("_Tint",Color.white);
    actor.cartoonView.sharedMaterial=actor.material;actor.cartoonView.shadowCastingMode=UnityEngine.Rendering.ShadowCastingMode.TwoSided;actor.cartoonView.receiveShadows=true;
    if(character==6){actor.wardrobe=go.AddComponent<CityCartoonWardrobe>();actor.wardrobe.Initialize(actor.cartoonView,actor.cartoonFrames,actor.material);}
+   if(character==1||character==2||character==3||character==7||character==8){actor.modular=go.AddComponent<CityModularWardrobe>();actor.modular.Initialize(actor.cartoonView,actor.cartoonFrames,actor.material,character);}
    actor.Pose(0,4);return actor;
   }
   public void Pose(int direction,int frame) {
-   if(cartoonView!=null){cartoonFacing=(direction%8+8)%8;cartoonFrame=Mathf.Clamp(frame,0,4);if(wardrobe!=null)wardrobe.Apply(cartoonFacing,cartoonFrame);else cartoonView.sprite=cartoonFrames[cartoonFacing*5+cartoonFrame];return;}
+   if(cartoonView!=null){cartoonFacing=(direction%8+8)%8;cartoonFrame=Mathf.Clamp(frame,0,4);if(wardrobe!=null)wardrobe.Apply(cartoonFacing,cartoonFrame);else if(modular!=null)modular.Apply(cartoonFacing,cartoonFrame);else cartoonView.sprite=cartoonFrames[cartoonFacing*5+cartoonFrame];return;}
    if(baked!=null)baked.SetFacing(direction,frame);else layered.SetFacing(direction,frame);
    // Alpha-tested layers write depth. Offset toward the camera in authored sort order.
    if(layered!=null)foreach(var renderer in GetComponentsInChildren<SpriteRenderer>())
