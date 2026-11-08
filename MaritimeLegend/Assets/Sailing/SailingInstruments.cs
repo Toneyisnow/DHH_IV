@@ -17,7 +17,7 @@ namespace MaritimeLegend {
   GUIStyle instrumentCaption;float instrumentWheelAngle;
   internal int InstrumentSailState=>SeaInstrumentMath.FillState(throttle*SeaInstrumentMath.WindFill(s.heading,s.trim,s.wind));
   internal float InstrumentWheelAngle=>instrumentWheelAngle;
-  internal bool OverSailingInstruments(Vector2 pointer)=>InstrumentPanelRect.Contains(pointer);
+  internal bool OverSailingInstruments(Vector2 pointer)=>InstrumentPanelRect.Contains(pointer)||CompassRect.Contains(pointer);
   internal void ApplyManualSailInput(double axis,double seconds,bool reset){
    g.AdjustSail(axis,seconds,reset);
    instrumentWheelAngle=reset?0:SeaInstrumentMath.WheelStep(instrumentWheelAngle,axis,seconds);

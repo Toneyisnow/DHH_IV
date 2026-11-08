@@ -35,6 +35,7 @@ public partial class MaritimeGame {
   TownArt("sidebar_background",new Rect(1580,0,340,1015));
   Label(62,58,400,60,"航海世家",townBrand);
   Label(66,116,400,36,"港湾 · "+c.ports[s.city].name,townCaption);
+  if(TownButton(new Rect(1178,58,330,58),"切换角色 · "+view.PixelWalker.CharacterName))view.CyclePlayerCharacter();
   foreach(var marker in view.Landmarks){
    if(Vector3.Distance(view.Player.position,marker.Value)>20)continue;
    var p=view.Project(marker.Value+Vector3.up*.15f);
@@ -69,9 +70,9 @@ public partial class MaritimeGame {
   if(townFunctions){
    var old=LiveGui.backgroundColor;LiveGui.backgroundColor=Color.clear;LiveGui.Button(new Rect(1200,470,350,510),"",button);LiveGui.backgroundColor=old;
    TownArt("sidebar_background",new Rect(1200,470,350,510));
-   string[] extra={"仓库","自动航线","任务","详情","切换天气","暂停 / ESC"};
+   string[] extra={"仓库","自动航线","任务","详情","切换天气","搭配 · "+view.PixelWalker.AppearanceName,"暂停 / ESC"};
    for(int i=0;i<extra.Length;i++)if(TownButton(new Rect(1226,500+i*66,298,54),extra[i])){
-    townFunctions=false;if(i==4)view.CycleWeather();else if(i==5)paused=true;else Change(extra[i]);
+    townFunctions=false;if(i==4)view.CycleWeather();else if(i==5)view.PixelWalker.CycleAppearance();else if(i==6)paused=true;else Change(extra[i]);
    }
   }
  }

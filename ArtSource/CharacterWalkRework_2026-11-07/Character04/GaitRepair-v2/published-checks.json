@@ -1,0 +1,50 @@
+[
+  {
+    "direction": "N",
+    "changedWalkFrames": 4,
+    "headPixelsUnchanged": true,
+    "idleUnchanged": true
+  },
+  {
+    "direction": "NE",
+    "changedWalkFrames": 4,
+    "headPixelsUnchanged": true,
+    "idleUnchanged": true
+  },
+  {
+    "direction": "E",
+    "changedWalkFrames": 4,
+    "headPixelsUnchanged": true,
+    "idleUnchanged": true
+  },
+  {
+    "direction": "SE",
+    "changedWalkFrames": 4,
+    "headPixelsUnchanged": true,
+    "idleUnchanged": true
+  },
+  {
+    "direction": "S",
+    "changedWalkFrames": 4,
+    "headPixelsUnchanged": true,
+    "idleUnchanged": true
+  },
+  {
+    "direction": "SW",
+    "changedWalkFrames": 4,
+    "headPixelsUnchanged": true,
+    "idleUnchanged": true
+  },
+  {
+    "direction": "W",
+    "changedWalkFrames": 4,
+    "headPixelsUnchanged": true,
+    "idleUnchanged": false
+  },
+  {
+    "direction": "NW",
+    "changedWalkFrames": 4,
+    "headPixelsUnchanged": true,
+    "idleUnchanged": true
+  }
+]

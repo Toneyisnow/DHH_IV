@@ -6,8 +6,8 @@ namespace MaritimeLegend.Editor {
 public static class SailingV2Integration {
  [MenuItem("Maritime Legend/Manual Sailing V2/Build integrated V2 game")]
  public static void Build(){
-  SceneStructure.Validate();DataConfigurationChecks.Run();ManualSailingChecks.Run();SailingArchitectureChecks.Run();
-  foreach(string shader in new[]{"Maritime/ManualSeaV2/Sky","Maritime/ManualSeaV2/Clouds","Maritime/ManualSeaV2/Water","Maritime/ManualSeaV2/Exploration","Maritime/ManualSeaV2/Land","Maritime/ManualSeaV2/Ship"})
+  CoastalCityModelExport.PrepareCityDefinitions();SceneStructure.Validate();DataConfigurationChecks.Run();ManualSailingChecks.Run();SailingArchitectureChecks.Run();CoastalPortChecks.Run();CoastalCityModelExport.Run();
+  foreach(string shader in new[]{"Maritime/ManualSeaV2/Sky","Maritime/ManualSeaV2/Clouds","Maritime/ManualSeaV2/Water","Maritime/ManualSeaV2/Exploration","Maritime/ManualSeaV2/Land","Maritime/ManualSeaV2/Ship","Maritime/ManualSeaV2/CoastalCity3D"})
    if(!Shader.Find(shader)||ShaderUtil.ShaderHasError(Shader.Find(shader)))throw new System.Exception("Shader compile failed: "+shader);
   PlayerSettings.defaultScreenWidth=1920;PlayerSettings.defaultScreenHeight=1080;PlayerSettings.fullScreenMode=FullScreenMode.Windowed;PlayerSettings.runInBackground=true;
   UnityEngine.Rendering.GraphicsSettings.defaultRenderPipeline=null;QualitySettings.renderPipeline=null;

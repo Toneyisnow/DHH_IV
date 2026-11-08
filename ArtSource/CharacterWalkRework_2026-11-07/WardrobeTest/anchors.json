@@ -1,0 +1,362 @@
+[
+  {
+    "direction": "N",
+    "frame": 0,
+    "headOffset": [
+      0,
+      0
+    ],
+    "neckY": 65
+  },
+  {
+    "direction": "N",
+    "frame": 1,
+    "headOffset": [
+      0,
+      1
+    ],
+    "neckY": 66
+  },
+  {
+    "direction": "N",
+    "frame": 2,
+    "headOffset": [
+      0,
+      -1
+    ],
+    "neckY": 64
+  },
+  {
+    "direction": "N",
+    "frame": 3,
+    "headOffset": [
+      0,
+      0
+    ],
+    "neckY": 65
+  },
+  {
+    "direction": "N",
+    "frame": 4,
+    "headOffset": [
+      0,
+      0
+    ],
+    "neckY": 65
+  },
+  {
+    "direction": "NE",
+    "frame": 0,
+    "headOffset": [
+      0,
+      -2
+    ],
+    "neckY": 72
+  },
+  {
+    "direction": "NE",
+    "frame": 1,
+    "headOffset": [
+      1,
+      -1
+    ],
+    "neckY": 73
+  },
+  {
+    "direction": "NE",
+    "frame": 2,
+    "headOffset": [
+      0,
+      -1
+    ],
+    "neckY": 73
+  },
+  {
+    "direction": "NE",
+    "frame": 3,
+    "headOffset": [
+      1,
+      1
+    ],
+    "neckY": 75
+  },
+  {
+    "direction": "NE",
+    "frame": 4,
+    "headOffset": [
+      0,
+      0
+    ],
+    "neckY": 74
+  },
+  {
+    "direction": "E",
+    "frame": 0,
+    "headOffset": [
+      0,
+      -2
+    ],
+    "neckY": 71
+  },
+  {
+    "direction": "E",
+    "frame": 1,
+    "headOffset": [
+      0,
+      0
+    ],
+    "neckY": 73
+  },
+  {
+    "direction": "E",
+    "frame": 2,
+    "headOffset": [
+      1,
+      -1
+    ],
+    "neckY": 72
+  },
+  {
+    "direction": "E",
+    "frame": 3,
+    "headOffset": [
+      0,
+      1
+    ],
+    "neckY": 74
+  },
+  {
+    "direction": "E",
+    "frame": 4,
+    "headOffset": [
+      0,
+      0
+    ],
+    "neckY": 73
+  },
+  {
+    "direction": "SE",
+    "frame": 0,
+    "headOffset": [
+      0,
+      -1
+    ],
+    "neckY": 68
+  },
+  {
+    "direction": "SE",
+    "frame": 1,
+    "headOffset": [
+      0,
+      1
+    ],
+    "neckY": 70
+  },
+  {
+    "direction": "SE",
+    "frame": 2,
+    "headOffset": [
+      1,
+      -2
+    ],
+    "neckY": 67
+  },
+  {
+    "direction": "SE",
+    "frame": 3,
+    "headOffset": [
+      1,
+      0
+    ],
+    "neckY": 69
+  },
+  {
+    "direction": "SE",
+    "frame": 4,
+    "headOffset": [
+      0,
+      0
+    ],
+    "neckY": 69
+  },
+  {
+    "direction": "S",
+    "frame": 0,
+    "headOffset": [
+      0,
+      -2
+    ],
+    "neckY": 62
+  },
+  {
+    "direction": "S",
+    "frame": 1,
+    "headOffset": [
+      0,
+      -1
+    ],
+    "neckY": 63
+  },
+  {
+    "direction": "S",
+    "frame": 2,
+    "headOffset": [
+      0,
+      -2
+    ],
+    "neckY": 62
+  },
+  {
+    "direction": "S",
+    "frame": 3,
+    "headOffset": [
+      0,
+      -2
+    ],
+    "neckY": 62
+  },
+  {
+    "direction": "S",
+    "frame": 4,
+    "headOffset": [
+      0,
+      0
+    ],
+    "neckY": 64
+  },
+  {
+    "direction": "SW",
+    "frame": 0,
+    "headOffset": [
+      0,
+      -2
+    ],
+    "neckY": 71
+  },
+  {
+    "direction": "SW",
+    "frame": 1,
+    "headOffset": [
+      1,
+      1
+    ],
+    "neckY": 74
+  },
+  {
+    "direction": "SW",
+    "frame": 2,
+    "headOffset": [
+      0,
+      -1
+    ],
+    "neckY": 72
+  },
+  {
+    "direction": "SW",
+    "frame": 3,
+    "headOffset": [
+      0,
+      2
+    ],
+    "neckY": 75
+  },
+  {
+    "direction": "SW",
+    "frame": 4,
+    "headOffset": [
+      0,
+      0
+    ],
+    "neckY": 73
+  },
+  {
+    "direction": "W",
+    "frame": 0,
+    "headOffset": [
+      0,
+      -1
+    ],
+    "neckY": 73
+  },
+  {
+    "direction": "W",
+    "frame": 1,
+    "headOffset": [
+      0,
+      -1
+    ],
+    "neckY": 73
+  },
+  {
+    "direction": "W",
+    "frame": 2,
+    "headOffset": [
+      0,
+      0
+    ],
+    "neckY": 74
+  },
+  {
+    "direction": "W",
+    "frame": 3,
+    "headOffset": [
+      0,
+      0
+    ],
+    "neckY": 74
+  },
+  {
+    "direction": "W",
+    "frame": 4,
+    "headOffset": [
+      0,
+      0
+    ],
+    "neckY": 74
+  },
+  {
+    "direction": "NW",
+    "frame": 0,
+    "headOffset": [
+      0,
+      0
+    ],
+    "neckY": 69
+  },
+  {
+    "direction": "NW",
+    "frame": 1,
+    "headOffset": [
+      0,
+      0
+    ],
+    "neckY": 69
+  },
+  {
+    "direction": "NW",
+    "frame": 2,
+    "headOffset": [
+      0,
+      1
+    ],
+    "neckY": 70
+  },
+  {
+    "direction": "NW",
+    "frame": 3,
+    "headOffset": [
+      0,
+      0
+    ],
+    "neckY": 69
+  },
+  {
+    "direction": "NW",
+    "frame": 4,
+    "headOffset": [
+      0,
+      0
+    ],
+    "neckY": 69
+  }
+]

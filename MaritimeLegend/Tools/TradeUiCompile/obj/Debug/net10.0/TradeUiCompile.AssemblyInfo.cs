@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TradeUiCompile")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+38cf6b1928bc3f33a490a3d87e106fff4ef40327")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2678cc8c89d970acac1a5f4c1b6fb2f81fc092da")]
 [assembly: System.Reflection.AssemblyProductAttribute("TradeUiCompile")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TradeUiCompile")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

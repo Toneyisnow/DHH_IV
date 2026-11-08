@@ -4,8 +4,9 @@ Unity 项目位于 `MaritimeLegend/`。
 
 ## 项目文档
 
-- [游戏主设计文档（最新版，2026-10-23整合）](MaritimeLegend/Documentation/航海世家_游戏设计文档_最新版.md)：唯一现行设计入口；已合并1015、1016、1023和最新品质/角色美术确认。
+- [游戏主设计文档（最新版，2026-11-04整合）](MaritimeLegend/Documentation/航海世家_游戏设计文档_最新版.md)：唯一现行设计入口；已合并1015、1016、1023、1104海域分级补充和最新品质/角色美术确认。
 - [1015历史来源](MaritimeLegend/Documentation/航海世家_游戏设计文档_1015.md)、[1016历史补充](MaritimeLegend/Documentation/航海世家_1016版补充设计_纯设计架构版.md)、[1023历史补充](MaritimeLegend/Documentation/航海世家_1023补充设计文档.md)：保留追溯，不与主文档并列生效。
+- [下次任务 TODO](MaritimeLegend/Documentation/TODO_1104_海域设计与城镇像素角色.md)：海域设计待定问题、角色资源覆盖与换装映射边界。
 - [规则与公式](MaritimeLegend/Documentation/规则与公式.md)：当前实现公式、初始化规则与游戏数据位置。
 - [1016航海架构实现](MaritimeLegend/Documentation/Sailing1016Architecture.md)：新增数据、mock参数、日历与奇遇存档、公式入口、已接入功能和后续扩展边界。
 - [操作说明](MaritimeLegend/Documentation/操作说明.md)：当前游戏操作说明。

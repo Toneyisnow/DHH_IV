@@ -1,0 +1,38 @@
+{
+  "status": "side-step-v3",
+  "character": "V2-04",
+  "cellSize": 168,
+  "columns": 5,
+  "rows": [
+    "N",
+    "NE",
+    "E",
+    "SE",
+    "S",
+    "SW",
+    "W",
+    "NW"
+  ],
+  "walkFrames": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "idleFrame": 4,
+  "fps": 8,
+  "pivotPixels": [
+    84,
+    10
+  ],
+  "pivotOrigin": "bottom-left",
+  "filter": "Point",
+  "layered": true,
+  "unityVerified": true,
+  "layers": [
+    "../Layers/body.png",
+    "../Layers/clothing.png",
+    "../Layers/head.png"
+  ],
+  "note": "Head includes face and current hair; clothing mask covers selected main-color pixels only. Not an arbitrary wardrobe."
+}

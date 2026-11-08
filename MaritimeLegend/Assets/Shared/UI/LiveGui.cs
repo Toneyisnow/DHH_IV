@@ -33,6 +33,7 @@ public static class LiveGui {
   var effect=n.go.GetComponent<TableQuad>();if(effect==null)effect=n.go.AddComponent<TableQuad>();
   var local=new Vector2[4];for(int i=0;i<4;i++)local[i]=points[i]-new Vector2(left,top);effect.Set(local);
  }
+ public static void DrawTextureRegion(Rect rect,Texture texture,Rect uv){if(!texture)return;var n=Get("image");Place(n,rect);n.image.texture=texture;n.image.material=null;n.image.color=color;n.image.uvRect=uv;}
  public static void Label(Rect rect,string value,GUIStyle style){var n=Get("label");Place(n,rect);n.label.text=value;TextStyle(n.label,style);}
  public static bool Button(Rect rect,string value,GUIStyle style){var n=Get("button");Place(n,rect);TextStyle(n.label,style);n.label.text=value;n.button.interactable=enabled;n.go.GetComponent<Image>().color=enabled?backgroundColor:new Color(.12f,.15f,.16f);n.label.color=enabled?new Color(.95f,.94f,.85f):new Color(.45f,.5f,.48f);n.key+="|"+value;return enabled&&clicks.Remove(n.key);}
  public static string TextField(Rect rect,string value,int limit,GUIStyle style){var n=Get("input");Place(n,rect);TextStyle(n.label,style);n.label.color=Color.white;n.input.interactable=enabled;n.input.characterLimit=limit;if(!n.input.isFocused)n.input.SetTextWithoutNotify(value);return n.input.text;}

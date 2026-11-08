@@ -4,6 +4,7 @@ using System.Linq;
 namespace MaritimeLegend.Domain {
     [Serializable] public class GameState {
         public SailingState sailing;
+        public int southeastAsiaStartVersion;
         public ProgressMetrics metrics; // Optional, uninstrumented until telemetry is implemented.
         public List<EventChainProgress> eventChains; // Optional future branching-event storage.
         public int version,slot,city,home,gold,chapter,produced,trades,contracts,finalStage; public string ownerId="",name="",mode="",screen="",lastUtc=""; public uint seed;

@@ -1,0 +1,3 @@
+const sharp=require('C:/Users/charl/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/sharp');
+const path=require('node:path');
+async function main(){let svg='<svg width="672" height="672">';for(let i=0;i<168;i+=10)svg+=`<path d="M ${i*4} 0 V 672 M 0 ${i*4} H 672" stroke="#ffffff" opacity=".25"/><text x="${i*4+2}" y="14" fill="white" font-size="12">${i}</text><text x="0" y="${i*4+12}" fill="white" font-size="12">${i}</text>`;svg+='</svg>';for(const d of ['S','N','E','SE','SW','W','NW','NE'])await sharp(path.join(__dirname,'../Character06/Review168',d+'-idle.png')).resize(672,672,{kernel:'nearest'}).flatten({background:'#333333'}).composite([{input:Buffer.from(svg)}]).png().toFile(path.join(__dirname,'coords-'+d+'.png'));}main();

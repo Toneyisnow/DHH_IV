@@ -8,6 +8,6 @@ public sealed class CityArtPreviewRuntime : MonoBehaviour {
  int editorChoice=UnityEditor.SessionState.GetInt("MaritimeLegend.CityArtPreview",-1);if(editorChoice>=0){chosen=editorChoice;UnityEditor.SessionState.SetInt("MaritimeLegend.CityArtPreview",-1);}
 #endif
  if(chosen<0)return;Active=true;var go=new GameObject("CityArtPreviewSession");DontDestroyOnLoad(go);var run=go.AddComponent<CityArtPreviewRuntime>();run.city=chosen;}
- IEnumerator Start(){yield return null;var world=FindAnyObjectByType<WorldSession>();var game=FindAnyObjectByType<MaritimeGame>();SaveStore.TestDirectory=Path.Combine(Application.temporaryCachePath,"CityArtPreview",Guid.NewGuid().ToString("N"));world.State=GameService.New(world.Catalog,6,city,"休闲",new Appearance{baseId=1},"海岚",71527);world.State.pendingEvents.Clear();world.Service=new GameService(world.Catalog,world.State);game.Change("城市");}
+ IEnumerator Start(){yield return null;var world=FindAnyObjectByType<WorldSession>();var game=FindAnyObjectByType<MaritimeGame>();SaveStore.TestDirectory=Path.Combine(Application.temporaryCachePath,"CityArtPreview",Guid.NewGuid().ToString("N"));var look=StateFactory.Appearance(world.Catalog);look.portraitV2="";look.baseId=2;world.State=GameService.New(world.Catalog,6,city,"休闲",look,"海岚",71527);world.State.pendingEvents.Clear();world.Service=new GameService(world.Catalog,world.State);game.Change("城市");}
 }
 }

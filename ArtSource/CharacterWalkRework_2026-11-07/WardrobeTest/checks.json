@@ -1,0 +1,18 @@
+{
+  "unchangedBodyPixels": true,
+  "protectedFacesUnchanged": true,
+  "feetUnchanged": true,
+  "frames": 40,
+  "variants": 3,
+  "maskPixelCounts": {
+    "top": 4572,
+    "skirt": 31302,
+    "cape": 0,
+    "beads": 92
+  },
+  "notes": [
+    "H1/H7 are rigid head modules with per-frame translation, not independent hair physics.",
+    "C2/C5 change top/skirt colors, not garment cut; original cape retained.",
+    "Accessory prototype changes existing bead colors and C2 hoop earrings to silver; no new A catalog identity assigned."
+  ]
+}

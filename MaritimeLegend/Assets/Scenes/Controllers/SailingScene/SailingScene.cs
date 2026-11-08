@@ -4,7 +4,7 @@ namespace MaritimeLegend {
   public static SailingScene Active {get;private set;}
   [Header("手动航海镜头（运行时可调整）")]
   [Min(1),Tooltip("最近距离：透视镜头距离，数值越小越近。")]
-  public float minimumZoom=24;
+  public float minimumZoom=8;
   [Min(1),Tooltip("最远距离：透视镜头距离，必须不小于最近距离。")]
   public float maximumZoom=120;
   [Range(20,55),Tooltip("相对水平面的俯角。右键旋转只改变方位，不改变此角度。")]

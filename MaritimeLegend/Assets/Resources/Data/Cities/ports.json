@@ -228,8 +228,8 @@
     {
       "id": 6,
       "name": "马六甲",
-      "x": 0.8,
-      "y": 0.72,
+      "x": 0.23145933014354067,
+      "y": 0.4569606801275239,
       "raw": [
         "p2",
         "p20",
@@ -277,6 +277,402 @@
       "cityKey": "HangzhouCity",
       "qualityBonus": 0.08,
       "productionLevelBonus": 1,
+      "productionFeeFactors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "productionDurationFactors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 8,
+      "name": "马尼拉",
+      "x": 0.6584928229665071,
+      "y": 0.14984059511158343,
+      "raw": [
+        "p2",
+        "p20",
+        "p19"
+      ],
+      "trait": "东南亚港口",
+      "region": 3,
+      "cityKey": "manilaCity",
+      "qualityBonus": 0,
+      "productionLevelBonus": 0,
+      "productionFeeFactors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "productionDurationFactors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 9,
+      "name": "巴达维亚",
+      "x": 0.29246411483253587,
+      "y": 0.7438894792773645,
+      "raw": [
+        "p2",
+        "p20",
+        "p19"
+      ],
+      "trait": "东南亚港口",
+      "region": 3,
+      "cityKey": "bataviaCity",
+      "qualityBonus": 0,
+      "productionLevelBonus": 0,
+      "productionFeeFactors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "productionDurationFactors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 10,
+      "name": "巨港",
+      "x": 0.27811004784689,
+      "y": 0.6078639744952179,
+      "raw": [
+        "p2",
+        "p20",
+        "p19"
+      ],
+      "trait": "东南亚港口",
+      "region": 3,
+      "cityKey": "palembangCity",
+      "qualityBonus": 0,
+      "productionLevelBonus": 0,
+      "productionFeeFactors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "productionDurationFactors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 11,
+      "name": "泗水",
+      "x": 0.42045454545454547,
+      "y": 0.7821466524973433,
+      "raw": [
+        "p2",
+        "p20",
+        "p19"
+      ],
+      "trait": "东南亚港口",
+      "region": 3,
+      "cityKey": "surabayaCity",
+      "qualityBonus": 0,
+      "productionLevelBonus": 0,
+      "productionFeeFactors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "productionDurationFactors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 12,
+      "name": "文莱",
+      "x": 0.4437799043062201,
+      "y": 0.44739638682252925,
+      "raw": [
+        "p2",
+        "p20",
+        "p19"
+      ],
+      "trait": "东南亚港口",
+      "region": 3,
+      "cityKey": "bruneiCity",
+      "qualityBonus": 0,
+      "productionLevelBonus": 0,
+      "productionFeeFactors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "productionDurationFactors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 13,
+      "name": "望加锡",
+      "x": 0.5550239234449761,
+      "y": 0.7311370882040382,
+      "raw": [
+        "p2",
+        "p20",
+        "p19"
+      ],
+      "trait": "东南亚港口",
+      "region": 3,
+      "cityKey": "makassarCity",
+      "qualityBonus": 0,
+      "productionLevelBonus": 0,
+      "productionFeeFactors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "productionDurationFactors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 14,
+      "name": "万鸦老",
+      "x": 0.7488038277511961,
+      "y": 0.563230605738576,
+      "raw": [
+        "p2",
+        "p20",
+        "p19"
+      ],
+      "trait": "东南亚港口",
+      "region": 3,
+      "cityKey": "manadoCity",
+      "qualityBonus": 0,
+      "productionLevelBonus": 0,
+      "productionFeeFactors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "productionDurationFactors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 15,
+      "name": "德尔纳特",
+      "x": 0.7864832535885168,
+      "y": 0.6004250797024442,
+      "raw": [
+        "p2",
+        "p20",
+        "p19"
+      ],
+      "trait": "东南亚港口",
+      "region": 3,
+      "cityKey": "ternateCity",
+      "qualityBonus": 0,
+      "productionLevelBonus": 0,
+      "productionFeeFactors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "productionDurationFactors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 16,
+      "name": "安汶",
+      "x": 0.8002392344497608,
+      "y": 0.6737513283740701,
+      "raw": [
+        "p2",
+        "p20",
+        "p19"
+      ],
+      "trait": "东南亚港口",
+      "region": 3,
+      "cityKey": "ambonCity",
+      "qualityBonus": 0,
+      "productionLevelBonus": 0,
+      "productionFeeFactors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "productionDurationFactors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 17,
+      "name": "嘉定",
+      "x": 0.298444976076555,
+      "y": 0.4038257173219979,
+      "raw": [
+        "p2",
+        "p20",
+        "p19"
+      ],
+      "trait": "东南亚港口",
+      "region": 3,
+      "cityKey": "giadinhCity",
+      "qualityBonus": 0,
+      "productionLevelBonus": 0,
+      "productionFeeFactors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "productionDurationFactors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 18,
+      "name": "大城",
+      "x": 0.16566985645933013,
+      "y": 0.28374070138150903,
+      "raw": [
+        "p2",
+        "p20",
+        "p19"
+      ],
+      "trait": "东南亚港口",
+      "region": 3,
+      "cityKey": "ayutthayaCity",
+      "qualityBonus": 0,
+      "productionLevelBonus": 0,
       "productionFeeFactors": [
         1,
         1,

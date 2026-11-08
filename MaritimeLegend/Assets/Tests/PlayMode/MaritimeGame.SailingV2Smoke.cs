@@ -70,7 +70,7 @@ namespace MaritimeLegend {public partial class MaritimeGame {
     }
     indianOcean.Capture(Path.Combine(output,"zoom-"+zoom+".png"));
    }
-   indianOcean.SetView(0,1);V2Assert(ManualSeaZoom==24,"near zoom clamp");indianOcean.SetView(0,900);V2Assert(ManualSeaZoom==120,"far zoom clamp");
+   indianOcean.SetView(0,1);V2Assert(ManualSeaZoom==8,"near zoom clamp");indianOcean.SetView(0,900);V2Assert(ManualSeaZoom==120,"far zoom clamp");
    // Compare the same world pixel with and without the veil in the same animation frame.
    Vector2 sample=Vector2.zero;bool found=false;var data=s.sailing.southeastAsiaExploration;
    for(int r=SeaExploration.MinR;r<SeaExploration.MinR+SeaExploration.Height&&!found;r++)for(int q=SeaExploration.MinQ;q<SeaExploration.MinQ+SeaExploration.Width;q++){

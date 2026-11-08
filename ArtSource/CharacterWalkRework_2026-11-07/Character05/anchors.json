@@ -1,0 +1,440 @@
+{
+  "face": {
+    "cx": 94,
+    "cy": 50,
+    "rx": 18,
+    "ry": 14
+  },
+  "faceOffsets": [
+    [
+      0,
+      -2
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "anchors": [
+    {
+      "direction": "N",
+      "frame": 0,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "N",
+      "frame": 1,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "N",
+      "frame": 2,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "N",
+      "frame": 3,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "N",
+      "frame": 4,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "NE",
+      "frame": 0,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "NE",
+      "frame": 1,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "NE",
+      "frame": 2,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "NE",
+      "frame": 3,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "NE",
+      "frame": 4,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "E",
+      "frame": 0,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "E",
+      "frame": 1,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "E",
+      "frame": 2,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "E",
+      "frame": 3,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "E",
+      "frame": 4,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "SE",
+      "frame": 0,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "SE",
+      "frame": 1,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "SE",
+      "frame": 2,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "SE",
+      "frame": 3,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "SE",
+      "frame": 4,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "S",
+      "frame": 0,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": [
+        0,
+        -2
+      ]
+    },
+    {
+      "direction": "S",
+      "frame": 1,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "direction": "S",
+      "frame": 2,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": [
+        1,
+        0
+      ]
+    },
+    {
+      "direction": "S",
+      "frame": 3,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "direction": "S",
+      "frame": 4,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "SW",
+      "frame": 0,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "SW",
+      "frame": 1,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "SW",
+      "frame": 2,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "SW",
+      "frame": 3,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "SW",
+      "frame": 4,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "W",
+      "frame": 0,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "W",
+      "frame": 1,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "W",
+      "frame": 2,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "W",
+      "frame": 3,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "W",
+      "frame": 4,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "NW",
+      "frame": 0,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "NW",
+      "frame": 1,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "NW",
+      "frame": 2,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "NW",
+      "frame": 3,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    },
+    {
+      "direction": "NW",
+      "frame": 4,
+      "feet": [
+        84,
+        158
+      ],
+      "headRegionBottom": 74,
+      "faceOffset": null
+    }
+  ]
+}

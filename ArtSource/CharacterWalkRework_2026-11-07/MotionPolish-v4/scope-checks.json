@@ -1,0 +1,26 @@
+{
+  "04": {
+    "changed": [
+      "E-01.png",
+      "E-02.png",
+      "E-03.png",
+      "E-04.png"
+    ],
+    "otherFramesUnchanged": true
+  },
+  "05": {
+    "changed": [
+      "N-01.png",
+      "N-02.png",
+      "N-03.png",
+      "N-04.png",
+      "N-idle.png",
+      "NW-01.png",
+      "NW-02.png",
+      "NW-03.png",
+      "NW-04.png",
+      "NW-idle.png"
+    ],
+    "otherFramesUnchanged": true
+  }
+}

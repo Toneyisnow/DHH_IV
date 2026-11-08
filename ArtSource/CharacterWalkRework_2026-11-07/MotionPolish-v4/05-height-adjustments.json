@@ -1,0 +1,72 @@
+[
+  {
+    "name": "N-01.png",
+    "uniformScale": 1.045,
+    "oldHeight": 141,
+    "newHeight": 147,
+    "bottom": 157
+  },
+  {
+    "name": "N-02.png",
+    "uniformScale": 1.045,
+    "oldHeight": 138,
+    "newHeight": 144,
+    "bottom": 156
+  },
+  {
+    "name": "N-03.png",
+    "uniformScale": 1.045,
+    "oldHeight": 139,
+    "newHeight": 145,
+    "bottom": 156
+  },
+  {
+    "name": "N-04.png",
+    "uniformScale": 1.045,
+    "oldHeight": 138,
+    "newHeight": 144,
+    "bottom": 156
+  },
+  {
+    "name": "N-idle.png",
+    "uniformScale": 1.045,
+    "oldHeight": 139,
+    "newHeight": 145,
+    "bottom": 157
+  },
+  {
+    "name": "NW-01.png",
+    "uniformScale": 1.04,
+    "oldHeight": 143,
+    "newHeight": 149,
+    "bottom": 157
+  },
+  {
+    "name": "NW-02.png",
+    "uniformScale": 1.04,
+    "oldHeight": 140,
+    "newHeight": 146,
+    "bottom": 157
+  },
+  {
+    "name": "NW-03.png",
+    "uniformScale": 1.04,
+    "oldHeight": 139,
+    "newHeight": 145,
+    "bottom": 157
+  },
+  {
+    "name": "NW-04.png",
+    "uniformScale": 1.04,
+    "oldHeight": 139,
+    "newHeight": 145,
+    "bottom": 157
+  },
+  {
+    "name": "NW-idle.png",
+    "uniformScale": 1.04,
+    "oldHeight": 138,
+    "newHeight": 144,
+    "bottom": 156
+  }
+]

@@ -1,0 +1,522 @@
+[
+  {
+    "file": "cartoon-walk-A-v1.png",
+    "direction": "N",
+    "frame": 0,
+    "sourceRect": {
+      "x": 140,
+      "y": 288,
+      "w": 100,
+      "h": 262
+    },
+    "visiblePixels": 17249,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-A-v1.png",
+    "direction": "N",
+    "frame": 1,
+    "sourceRect": {
+      "x": 399,
+      "y": 288,
+      "w": 100,
+      "h": 261
+    },
+    "visiblePixels": 17270,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-A-v1.png",
+    "direction": "N",
+    "frame": 2,
+    "sourceRect": {
+      "x": 653,
+      "y": 288,
+      "w": 99,
+      "h": 262
+    },
+    "visiblePixels": 17053,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-A-v1.png",
+    "direction": "N",
+    "frame": 3,
+    "sourceRect": {
+      "x": 907,
+      "y": 288,
+      "w": 99,
+      "h": 261
+    },
+    "visiblePixels": 17149,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-A-v1.png",
+    "direction": "N",
+    "frame": 4,
+    "sourceRect": {
+      "x": 1164,
+      "y": 288,
+      "w": 97,
+      "h": 261
+    },
+    "visiblePixels": 17879,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-A-v1.png",
+    "direction": "SE",
+    "frame": 0,
+    "sourceRect": {
+      "x": 136,
+      "y": 567,
+      "w": 114,
+      "h": 261
+    },
+    "visiblePixels": 18213,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-A-v1.png",
+    "direction": "SE",
+    "frame": 1,
+    "sourceRect": {
+      "x": 394,
+      "y": 567,
+      "w": 100,
+      "h": 257
+    },
+    "visiblePixels": 16615,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-A-v1.png",
+    "direction": "SE",
+    "frame": 2,
+    "sourceRect": {
+      "x": 646,
+      "y": 567,
+      "w": 104,
+      "h": 261
+    },
+    "visiblePixels": 17610,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-A-v1.png",
+    "direction": "SE",
+    "frame": 3,
+    "sourceRect": {
+      "x": 902,
+      "y": 568,
+      "w": 108,
+      "h": 258
+    },
+    "visiblePixels": 17549,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-A-v1.png",
+    "direction": "SE",
+    "frame": 4,
+    "sourceRect": {
+      "x": 1157,
+      "y": 568,
+      "w": 107,
+      "h": 258
+    },
+    "visiblePixels": 18379,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-A-v1.png",
+    "direction": "NW",
+    "frame": 0,
+    "sourceRect": {
+      "x": 124,
+      "y": 847,
+      "w": 116,
+      "h": 261
+    },
+    "visiblePixels": 17877,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-A-v1.png",
+    "direction": "NW",
+    "frame": 1,
+    "sourceRect": {
+      "x": 391,
+      "y": 847,
+      "w": 111,
+      "h": 260
+    },
+    "visiblePixels": 16751,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-A-v1.png",
+    "direction": "NW",
+    "frame": 2,
+    "sourceRect": {
+      "x": 641,
+      "y": 847,
+      "w": 114,
+      "h": 261
+    },
+    "visiblePixels": 17154,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-A-v1.png",
+    "direction": "NW",
+    "frame": 3,
+    "sourceRect": {
+      "x": 901,
+      "y": 847,
+      "w": 109,
+      "h": 260
+    },
+    "visiblePixels": 17052,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-A-v1.png",
+    "direction": "NW",
+    "frame": 4,
+    "sourceRect": {
+      "x": 1159,
+      "y": 847,
+      "w": 108,
+      "h": 261
+    },
+    "visiblePixels": 18642,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-B-repair-v2.png",
+    "direction": "E",
+    "frame": 0,
+    "sourceRect": {
+      "x": 135,
+      "y": 4,
+      "w": 132,
+      "h": 273
+    },
+    "visiblePixels": 20949,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-B-repair-v2.png",
+    "direction": "E",
+    "frame": 1,
+    "sourceRect": {
+      "x": 397,
+      "y": 4,
+      "w": 118,
+      "h": 271
+    },
+    "visiblePixels": 18665,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-B-repair-v2.png",
+    "direction": "E",
+    "frame": 2,
+    "sourceRect": {
+      "x": 655,
+      "y": 4,
+      "w": 135,
+      "h": 273
+    },
+    "visiblePixels": 20868,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-B-repair-v2.png",
+    "direction": "E",
+    "frame": 3,
+    "sourceRect": {
+      "x": 914,
+      "y": 5,
+      "w": 117,
+      "h": 270
+    },
+    "visiblePixels": 17820,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-B-repair-v2.png",
+    "direction": "E",
+    "frame": 4,
+    "sourceRect": {
+      "x": 1164,
+      "y": 4,
+      "w": 115,
+      "h": 272
+    },
+    "visiblePixels": 17518,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-B-repair-v2.png",
+    "direction": "W",
+    "frame": 0,
+    "sourceRect": {
+      "x": 117,
+      "y": 287,
+      "w": 140,
+      "h": 271
+    },
+    "visiblePixels": 21643,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-B-repair-v2.png",
+    "direction": "W",
+    "frame": 1,
+    "sourceRect": {
+      "x": 401,
+      "y": 286,
+      "w": 116,
+      "h": 271
+    },
+    "visiblePixels": 18574,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-B-repair-v2.png",
+    "direction": "W",
+    "frame": 2,
+    "sourceRect": {
+      "x": 643,
+      "y": 287,
+      "w": 148,
+      "h": 271
+    },
+    "visiblePixels": 21222,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-B-repair-v2.png",
+    "direction": "W",
+    "frame": 3,
+    "sourceRect": {
+      "x": 919,
+      "y": 287,
+      "w": 116,
+      "h": 270
+    },
+    "visiblePixels": 18074,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-B-repair-v2.png",
+    "direction": "W",
+    "frame": 4,
+    "sourceRect": {
+      "x": 1172,
+      "y": 287,
+      "w": 112,
+      "h": 270
+    },
+    "visiblePixels": 17922,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-B-repair-v2.png",
+    "direction": "SW",
+    "frame": 0,
+    "sourceRect": {
+      "x": 122,
+      "y": 564,
+      "w": 126,
+      "h": 273
+    },
+    "visiblePixels": 20879,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-B-repair-v2.png",
+    "direction": "SW",
+    "frame": 1,
+    "sourceRect": {
+      "x": 400,
+      "y": 566,
+      "w": 107,
+      "h": 266
+    },
+    "visiblePixels": 18926,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-B-repair-v2.png",
+    "direction": "SW",
+    "frame": 2,
+    "sourceRect": {
+      "x": 637,
+      "y": 565,
+      "w": 124,
+      "h": 272
+    },
+    "visiblePixels": 19908,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-B-repair-v2.png",
+    "direction": "SW",
+    "frame": 3,
+    "sourceRect": {
+      "x": 907,
+      "y": 566,
+      "w": 113,
+      "h": 266
+    },
+    "visiblePixels": 18715,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-B-repair-v2.png",
+    "direction": "SW",
+    "frame": 4,
+    "sourceRect": {
+      "x": 1176,
+      "y": 564,
+      "w": 104,
+      "h": 269
+    },
+    "visiblePixels": 20054,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-B-repair-v2.png",
+    "direction": "NE",
+    "frame": 0,
+    "sourceRect": {
+      "x": 135,
+      "y": 845,
+      "w": 135,
+      "h": 264
+    },
+    "visiblePixels": 21176,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-B-repair-v2.png",
+    "direction": "NE",
+    "frame": 1,
+    "sourceRect": {
+      "x": 395,
+      "y": 845,
+      "w": 121,
+      "h": 261
+    },
+    "visiblePixels": 19195,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-B-repair-v2.png",
+    "direction": "NE",
+    "frame": 2,
+    "sourceRect": {
+      "x": 653,
+      "y": 847,
+      "w": 131,
+      "h": 262
+    },
+    "visiblePixels": 21299,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-B-repair-v2.png",
+    "direction": "NE",
+    "frame": 3,
+    "sourceRect": {
+      "x": 906,
+      "y": 847,
+      "w": 124,
+      "h": 259
+    },
+    "visiblePixels": 18783,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-walk-B-repair-v2.png",
+    "direction": "NE",
+    "frame": 4,
+    "sourceRect": {
+      "x": 1163,
+      "y": 846,
+      "w": 115,
+      "h": 260
+    },
+    "visiblePixels": 20028,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-S-repair-v2.png",
+    "direction": "S",
+    "frame": 0,
+    "sourceRect": {
+      "x": 144,
+      "y": 14,
+      "w": 239,
+      "h": 698
+    },
+    "visiblePixels": 110240,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-S-repair-v2.png",
+    "direction": "S",
+    "frame": 1,
+    "sourceRect": {
+      "x": 548,
+      "y": 15,
+      "w": 232,
+      "h": 694
+    },
+    "visiblePixels": 107514,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-S-repair-v2.png",
+    "direction": "S",
+    "frame": 2,
+    "sourceRect": {
+      "x": 950,
+      "y": 14,
+      "w": 242,
+      "h": 698
+    },
+    "visiblePixels": 112941,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-S-repair-v2.png",
+    "direction": "S",
+    "frame": 3,
+    "sourceRect": {
+      "x": 1364,
+      "y": 14,
+      "w": 232,
+      "h": 698
+    },
+    "visiblePixels": 108149,
+    "touchesCellEdge": false
+  },
+  {
+    "file": "cartoon-S-repair-v2.png",
+    "direction": "S",
+    "frame": 4,
+    "sourceRect": {
+      "x": 1775,
+      "y": 14,
+      "w": 232,
+      "h": 695
+    },
+    "visiblePixels": 115257,
+    "touchesCellEdge": false
+  }
+]

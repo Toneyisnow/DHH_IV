@@ -1,0 +1,9 @@
+Ship water contact correction
+- Measured all 24 source textures at alpha >= 46/255 (ship shader cutoff .18).
+- Anchor x: center of opaque pixels in the lowest 10% of image height.
+- Anchor y: four source pixels above the lowest opaque pixel.
+- Correct billboard in its own plane so the measured keel coincides with the world sea anchor; retain the existing small bob.
+- Keep a continuous inner ripple at radius .70; expanding ripples span .72 to .92.
+- C# compile passed (0 errors; existing mapPan warning).
+- Unity batch rendering exited with code 1 before project import; no rendered visual validation obtained.
+- ShipContactReview.cs is an optional editor capture utility: copy into Assets/Editor to run MaritimeLegend.Editor.ShipContactReview.Capture, then remove from Assets after review.

@@ -1,0 +1,10 @@
+{
+  "frames": 40,
+  "directions": 8,
+  "walkFrames": 4,
+  "idleFrame": 4,
+  "cell": 168,
+  "losslessLayerPartition": true,
+  "faceSharedMaster": true,
+  "unityVerified": false
+}

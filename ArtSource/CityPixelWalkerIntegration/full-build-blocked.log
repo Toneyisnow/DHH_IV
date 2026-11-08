@@ -1,0 +1,712 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.3/staging' branch; Version is '6000.3.10f1 (e35f0c77bd8e) revision 14901004'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-charl" at "2026-11-05T06:51:37.890627Z"
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'en' Physical Memory: 32443 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-11-05T06:51:37Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 19672, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              5a540f346ef243e08d3ed13acf0e42fd
+  Correlation Id:          5eeb90a643a89f0556e16ef970d49a99
+  External correlation Id: 8760462627060744572
+  Machine Id:              ahkCBMpFGkS5dEjRWzhYlmGmQRw=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-charl" (connect: 0.00s, validation: 0.30s, handshake: 0.28s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-charl-notifications" at "2026-11-05T06:51:38.4716599Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 6614505-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Unity.exe
+-batchmode
+-nographics
+-quit
+-projectPath
+D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace
+-executeMethod
+MaritimeLegend.Editor.BuildGame.Build
+-logFile
+D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\build-isolated.log
+Successfully changed project path to: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace
+D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+Player connection [36204]  Target information:
+
+Player connection [36204]  * "[IP] 192.168.240.1 [Port] 55506 [Flags] 2 [Guid] 3244414928 [EditorId] 3244414928 [Version] 1048832 [Id] WindowsEditor(7,toneyalien12) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [36204]  * "[IP] 10.0.0.99 [Port] 55506 [Flags] 2 [Guid] 3244414928 [EditorId] 3244414928 [Version] 1048832 [Id] WindowsEditor(7,toneyalien12) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [36204]  * "[IP] 10.0.0.24 [Port] 55506 [Flags] 2 [Guid] 3244414928 [EditorId] 3244414928 [Version] 1048832 [Id] WindowsEditor(7,toneyalien12) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [36204] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [36204] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.65
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 1.28s
+[Package Manager] Connected to IPC stream "Upm-21148" after 0.6 seconds.
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.10f1 (e35f0c77bd8e)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets
+Forcing GfxDevice: Null
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56148
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.003730 seconds.
+- Loaded All Assemblies, in  0.600 seconds
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Licensing::Client] Successfully resolved entitlement details
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.560 seconds
+Domain Reload Profiling: 3154ms
+	BeginReloadAssembly (202ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (17ms)
+	RebuildCommonClasses (59ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (66ms)
+	LoadAllAssembliesAndSetupDomain (250ms)
+		LoadAssemblies (179ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (246ms)
+			TypeCache.Refresh (243ms)
+				TypeCache.ScanAssembly (224ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (2560ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2499ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (140ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (162ms)
+			ProcessInitializeOnLoadAttributes (279ms)
+			ProcessInitializeOnLoadMethodAttributes (1911ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Package Manager] Registered 62 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.ai.navigation@2.0.10 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.ai.navigation@c33a115e9883)
+    com.unity.collab-proxy@2.11.3 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.collab-proxy@e566cd3e7623)
+    com.unity.ide.rider@3.0.39 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.ide.rider@4504839d03f7)
+    com.unity.ide.visualstudio@2.0.26 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.ide.visualstudio@a99d56dec63f)
+    com.unity.inputsystem@1.18.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.inputsystem@57d0e36f6123)
+    com.unity.localization@1.5.13 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.localization@ef5a0677859d)
+    com.unity.timeline@1.8.10 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.timeline@7f8b2fb101b6)
+    com.unity.visualscripting@1.9.9 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.visualscripting@191c0d7e3b69)
+    com.unity.addressables@2.9.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.addressables@de8760a788ae)
+    com.unity.nuget.newtonsoft-json@3.2.2 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.nuget.newtonsoft-json@4dfd81071c64)
+    com.unity.searcher@4.9.4 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.searcher@d45a78918735)
+    com.unity.burst@1.8.28 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.burst@07790c2d06d9)
+    com.unity.mathematics@1.3.3 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.mathematics@19a9377c4ffa)
+    com.unity.collections@2.6.2 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.collections@aea9d3bd5e19)
+    com.unity.profiling.core@1.0.3 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.profiling.core@8a49f7027d06)
+    com.unity.scriptablebuildpipeline@2.6.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.scriptablebuildpipeline@a633a2d168ec)
+    com.unity.nuget.mono-cecil@1.11.6 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff)
+    com.unity.test-framework.performance@3.2.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.test-framework.performance@0840f58e4562)
+  Built-in packages:
+    com.unity.multiplayer.center@1.0.1 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.multiplayer.center@f01f4ba8d00a)
+    com.unity.render-pipelines.universal@17.3.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.render-pipelines.universal@37e0d4fc2503)
+    com.unity.test-framework@1.6.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.test-framework@0b7a23ab2e1d)
+    com.unity.ugui@2.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.ugui@bb329a87fcdc)
+    com.unity.modules.accessibility@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.screencapture@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.terrainphysics)
+    com.unity.modules.tilemap@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.tilemap)
+    com.unity.modules.ui@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.video)
+    com.unity.modules.vr@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.vr)
+    com.unity.modules.wind@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.hierarchycore)
+    com.unity.ext.nunit@2.0.5 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.ext.nunit@d8c07649098d)
+    com.unity.render-pipelines.core@17.3.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.render-pipelines.core@04ab0eefa0c3)
+    com.unity.shadergraph@17.3.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.shadergraph@c8830f61858d)
+    com.unity.render-pipelines.universal-config@17.0.3 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.render-pipelines.universal-config@8dc1aab4af1d)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.00 seconds
+[ScriptCompilation] Requested script compilation because: Assetdatabase observed changes in script compilation related files
+Starting: C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aEDbg.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace
+DisplayProgressbar: Compiling Scripts
+ExitCode: 4 Duration: 0s548ms
+[534/991    0s] WriteResponseFile Library/Bee/artifacts/rsp/4747638433968585886.rsp
+[547/991    0s] CopyFiles Library/ScriptAssemblies/UnityEngine.TestRunner.pdb
+[548/991    0s] CopyFiles Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+Rebuilding DAG because FileSignature timestamp changed: Library/Bee/1900b0aEDbg-inputdata.json
+*** Tundra requires additional run (0.42 seconds), 3 items updated, 548 evaluated
+Starting: C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Data\netcorerun\netcorerun.exe "C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Data\Tools\BuildPipeline\ScriptCompilationBuildProgram.exe" "Library/Bee/1900b0aEDbg.dag.json" "Library/Bee/1900b0aEDbg-inputdata.json" "Library\Bee\buildprogram0.traceevents"
+WorkingDir: D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace
+ExitCode: 0 Duration: 2s325ms
+Starting: C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aEDbg.dag" --continue-on-failure --dagfilejson="Library\Bee\1900b0aEDbg.dag.json" --profile="Library/Bee/backend2.traceevents" ScriptAssemblies
+WorkingDir: D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace
+ExitCode: 0 Duration: 4s949ms
+Finished compiling graph: 995 nodes, 18572 flattened edges (15400 ToBuild, 156 ToUse), maximum node priority 1030
+[541/991    0s] WriteText Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp.rsp
+[552/991    0s] CopyFiles Library/ScriptAssemblies/UnityEditor.TestRunner.pdb
+[553/991    0s] CopyFiles Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+[621/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Rider.Editor.pdb
+[624/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Rider.Editor.dll
+[627/991    0s] CopyFiles Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
+[628/991    0s] CopyFiles Library/ScriptAssemblies/Unity.VisualStudio.Editor.pdb
+[646/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Burst.CodeGen.pdb
+[647/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Burst.CodeGen.dll
+[670/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Collections.CodeGen.pdb
+[671/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Collections.CodeGen.dll
+[737/991    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[843/991    0s] CopyFiles Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.004.dll
+[844/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Addressables.dll
+[845/991    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Runtime.dll
+[846/991    0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll
+[847/991    0s] CopyFiles Library/ScriptAssemblies/Unity.InputSystem.ForUI.dll
+[848/991    0s] CopyFiles Library/ScriptAssemblies/Unity.ResourceManager.dll
+[849/991    0s] CopyFiles Library/ScriptAssemblies/Unity.TextMeshPro.dll
+[850/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Collections.dll
+[851/991    0s] CopyFiles Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.dll
+[852/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Burst.dll
+[853/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Profiling.Core.dll
+[854/991    0s] CopyFiles Library/ScriptAssemblies/Unity.UnifiedRayTracing.Runtime.dll
+[855/991    0s] CopyFiles Library/ScriptAssemblies/UnityEngine.UI.dll
+[856/991    0s] CopyFiles Library/ScriptAssemblies/Unity.InputSystem.TestFramework.dll
+[857/991    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Universal.2D.Runtime.dll
+[858/991    0s] CopyFiles Library/ScriptAssemblies/Unity.PerformanceTesting.dll
+[859/991    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll
+[860/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Multiplayer.Center.Common.dll
+[861/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Localization.dll
+[862/991    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Shared.dll
+[863/991    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
+[864/991    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll
+[865/991    0s] CopyFiles Library/ScriptAssemblies/Unity.AI.Navigation.dll
+[866/991    0s] CopyFiles Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.013.dll
+[867/991    0s] CopyFiles Library/ScriptAssemblies/Unity.InputSystem.dll
+[868/991    0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.State.dll
+[869/991    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll
+[870/991    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll
+[871/991    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.GPUDriven.Runtime.dll
+[872/991    0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.DocCodeExamples.dll
+[873/991    0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.Core.dll
+[874/991    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll
+[875/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Mathematics.dll
+[876/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Timeline.dll
+[877/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Localization.Editor.pdb
+[878/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.pdb
+[879/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.dll
+[880/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Localization.Editor.dll
+[881/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Mathematics.Editor.pdb
+[882/991    0s] CopyFiles Library/ScriptAssemblies/Unity.ShaderGraph.Editor.pdb
+[883/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Mathematics.Editor.dll
+[884/991    0s] CopyFiles Library/ScriptAssemblies/Unity.ShaderGraph.Utilities.dll
+[885/991    0s] CopyFiles Library/ScriptAssemblies/Unity.ShaderGraph.Utilities.pdb
+[886/991    0s] CopyFiles Library/ScriptAssemblies/Unity.InputSystem.DocCodeSamples.dll
+[887/991    0s] CopyFiles Library/ScriptAssemblies/Unity.InputSystem.DocCodeSamples.pdb
+[888/991    0s] CopyFiles Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.013.pdb
+[889/991    0s] CopyFiles Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.013.dll
+[890/991    0s] CopyFiles Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll
+[891/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Addressables.DocExampleCode.Editor.Tests.dll
+[892/991    0s] CopyFiles Library/ScriptAssemblies/PPv2URPConverters.dll
+[893/991    0s] CopyFiles Library/ScriptAssemblies/Unity.CollabProxy.Editor.pdb
+[894/991    0s] CopyFiles Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+[895/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Addressables.DocExampleCode.Editor.Tests.pdb
+[896/991    0s] CopyFiles Library/ScriptAssemblies/PPv2URPConverters.pdb
+[897/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Searcher.Editor.pdb
+[898/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Searcher.Editor.dll
+[899/991    0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll
+[900/991    0s] CopyFiles Library/ScriptAssemblies/UnityEditor.UI.Analytics.dll
+[901/991    0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.pdb
+[902/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Addressables.Editor.pdb
+[903/991    0s] CopyFiles Library/ScriptAssemblies/UnityEditor.UI.Analytics.pdb
+[904/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Addressables.Editor.dll
+[905/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Rendering.LightTransport.Editor.pdb
+[906/991    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Universal.2D.Editor.Overrides.dll
+[907/991    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.pdb
+[908/991    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Universal.2D.Editor.Overrides.pdb
+[909/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Rendering.LightTransport.Editor.dll
+[910/991    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.pdb
+[911/991    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll
+[912/991    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll
+[913/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Collections.Editor.pdb
+[914/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Collections.Editor.dll
+[915/991    0s] CopyFiles Library/ScriptAssemblies/Unity.PerformanceTesting.Editor.pdb
+[916/991    0s] CopyFiles Library/ScriptAssemblies/Unity.PerformanceTesting.Editor.dll
+[917/991    0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.pdb
+[918/991    0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll
+[919/991    0s] CopyFiles Library/ScriptAssemblies/Unity.AutoGroupGenerator.Editor.pdb
+[920/991    0s] CopyFiles Library/ScriptAssemblies/Unity.AutoGroupGenerator.Editor.dll
+[921/991    0s] CopyFiles Library/ScriptAssemblies/Unity.AI.Navigation.Editor.ConversionSystem.dll
+[922/991    0s] CopyFiles Library/ScriptAssemblies/Unity.AI.Navigation.Editor.ConversionSystem.pdb
+[923/991    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Shared.dll
+[924/991    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Shared.pdb
+[925/991    0s] CopyFiles Library/ScriptAssemblies/Unity.AI.Navigation.Updater.pdb
+[926/991    0s] CopyFiles Library/ScriptAssemblies/Unity.AI.Navigation.Updater.dll
+[927/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Timeline.Editor.pdb
+[928/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Burst.Editor.pdb
+[929/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+[930/991    0s] CopyFiles Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+[931/991    0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll
+[932/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Burst.Editor.dll
+[933/991    0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.pdb
+[934/991    0s] CopyFiles Library/ScriptAssemblies/Unity.TextMeshPro.Editor.pdb
+[935/991    0s] CopyFiles Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.Editor.pdb
+[936/991    0s] CopyFiles Library/ScriptAssemblies/Unity.PlasticSCM.Editor.Entities.dll
+[937/991    0s] CopyFiles Library/ScriptAssemblies/Unity.PlasticSCM.Editor.Entities.pdb
+[938/991    0s] CopyFiles Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.Editor.dll
+[939/991    0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.pdb
+[940/991    0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll
+[941/991    0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.pdb
+[942/991    0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll
+[943/991    0s] CopyFiles Library/ScriptAssemblies/Unity.AI.Navigation.Editor.dll
+[944/991    0s] CopyFiles Library/ScriptAssemblies/Unity.AI.Navigation.Editor.pdb
+[945/991    0s] CopyFiles Library/ScriptAssemblies/Unity.InputSystem.ForUI.pdb
+[946/991    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.GPUDriven.Runtime.pdb
+[947/991    0s] CopyFiles Library/ScriptAssemblies/UnityEditor.UI.pdb
+[948/991    0s] CopyFiles Library/ScriptAssemblies/UnityEditor.UI.dll
+[949/991    0s] CopyFiles Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll
+[950/991    0s] CopyFiles Library/ScriptAssemblies/Unity.PlasticSCM.Editor.pdb
+[951/991    0s] CopyFiles Library/ScriptAssemblies/Unity.AI.Navigation.pdb
+[952/991    0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.State.pdb
+[953/991    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Universal.2D.Runtime.pdb
+[954/991    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.pdb
+[955/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Timeline.pdb
+[956/991    0s] CopyFiles Library/ScriptAssemblies/Unity.TextMeshPro.pdb
+[957/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Multiplayer.Center.Common.pdb
+[958/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Localization.pdb
+[959/991    0s] CopyFiles Library/ScriptAssemblies/Unity.PerformanceTesting.pdb
+[960/991    0s] CopyFiles Library/ScriptAssemblies/Unity.InputSystem.pdb
+[961/991    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.pdb
+[962/991    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.pdb
+[963/991    0s] CopyFiles Library/ScriptAssemblies/Unity.ResourceManager.pdb
+[964/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Collections.pdb
+[965/991    0s] CopyFiles Library/ScriptAssemblies/UnityEngine.UI.pdb
+[966/991    0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.Core.pdb
+[967/991    0s] CopyFiles Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.pdb
+[968/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Mathematics.pdb
+[969/991    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Runtime.pdb
+[970/991    0s] CopyFiles Library/ScriptAssemblies/Unity.UnifiedRayTracing.Runtime.pdb
+[971/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Profiling.Core.pdb
+[972/991    0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.Flow.pdb
+[973/991    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.pdb
+[974/991    0s] CopyFiles Library/ScriptAssemblies/Unity.InputSystem.TestFramework.pdb
+[975/991    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Shared.pdb
+[976/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Burst.pdb
+[977/991    0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.DocCodeExamples.pdb
+[978/991    0s] CopyFiles Library/ScriptAssemblies/Unity.Addressables.pdb
+[979/991    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.pdb
+[980/991    0s] CopyFiles Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.013.pdb
+[981/991    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.pdb
+[982/991    0s] CopyFiles Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.004.pdb
+[983/991    2s] Csc Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp.dll (+2 others)
+[984/991    0s] Csc Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp-Editor.dll (+2 others)
+[985/991    0s] ILPostProcess Library/Bee/artifacts/1900b0aEDbg.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp-Editor.dll, with 136 defines and 344 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[986/991    1s] ILPostProcess Library/Bee/artifacts/1900b0aEDbg.dag/post-processed/Assembly-CSharp.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp.dll, with 138 defines and 324 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[987/991    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+[988/991    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+[989/991    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb
+[990/991    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll
+*** Tundra build success (4.86 seconds), 160 items updated, 991 evaluated
+AssetDatabase: script compilation time: 9.290273s
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.557 seconds
+Refreshing native plugins compatible for Editor in 3.72 ms, found 3 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  6.489 seconds
+Domain Reload Profiling: 8033ms
+	BeginReloadAssembly (421ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (192ms)
+	RebuildCommonClasses (54ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (48ms)
+	LoadAllAssembliesAndSetupDomain (998ms)
+		LoadAssemblies (684ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (466ms)
+			TypeCache.Refresh (312ms)
+				TypeCache.ScanAssembly (291ms)
+			BuildScriptInfoCaches (131ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (6489ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (6200ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (51ms)
+			SetLoadedEditorAssemblies (10ms)
+			BeforeProcessingInitializeOnLoad (469ms)
+			ProcessInitializeOnLoadAttributes (5438ms)
+			ProcessInitializeOnLoadMethodAttributes (210ms)
+			AfterProcessingInitializeOnLoad (22ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (23ms)
+Start importing Assets/AddressableAssetsData/Windows/addressables_content_state.bin using Guid(bce5c6d042e73e2408e84b0cd64c39bc) (DefaultImporter) -> (artifact id: 'b09f9e761801708820d05902dba2bca6') in 0.0597364 seconds
+Start importing Packages/com.unity.render-pipelines.core/Tests/Editor/UnifiedRayTracing/TraceRays.urtshader using Guid(1142bbad8b9e8c44c83a9775ff120d37) (ScriptedImporter)Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+
+Compiling Ray Tracing Shader "TraceRays.urtshader", keywords = <no keywords>
+    finished in 0.02 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
+ -> (artifact id: 'a8ea6742f6b880d9739bf23df9eb18bb') in 0.1689884 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/RendererFeatures/SurfaceCacheGI/SurfaceCacheCore/RisEstimation.urtshader using Guid(713f6141bd66a134383b787f2eaa7c11) (ScriptedImporter)
+Compiling Ray Tracing Shader "RisEstimation.urtshader", keywords = <no keywords>
+    finished in 0.00 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
+ -> (artifact id: '85483653542df2a9584e21311af209c0') in 0.0488244 seconds
+Start importing Packages/com.unity.render-pipelines.core/Editor/Lighting/ProbeVolume/RenderingLayerMask/TraceRenderingLayerMask.urtshader using Guid(94a070d33e408384bafc1dea4a565df9) (ScriptedImporter)
+Compiling Ray Tracing Shader "TraceRenderingLayerMask.urtshader", keywords = <no keywords>
+    finished in 0.00 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
+ -> (artifact id: 'f6bb3bec601b57d177013f54cb992ef1') in 0.0385393 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/RendererFeatures/SurfaceCacheGI/SurfaceCacheCore/UniformEstimation.urtshader using Guid(94a39d12848d8d64ca962a72b74e7c50) (ScriptedImporter)
+Compiling Ray Tracing Shader "UniformEstimation.urtshader", keywords = <no keywords>
+    finished in 0.00 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
+ -> (artifact id: '1f0c4babd42b95190a91ecdc2fab132e') in 0.0230844 seconds
+Start importing Packages/com.unity.render-pipelines.core/Tests/Editor/UnifiedRayTracing/TraceTransparentRays.urtshader using Guid(6513c3b892e933c4f8d00c19d5c47532) (ScriptedImporter)
+Compiling Ray Tracing Shader "TraceTransparentRays.urtshader", keywords = <no keywords>
+    finished in 0.00 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
+ -> (artifact id: 'd432cdd77f7a99d2ab5546ea5c7fd3a4') in 0.0138808 seconds
+Start importing Packages/com.unity.render-pipelines.core/Editor/Lighting/ProbeVolume/DynamicGI/DynamicGISkyOcclusion.urtshader using Guid(5a2a534753fbdb44e96c3c78b5a6999d) (ScriptedImporter)
+Compiling Ray Tracing Shader "DynamicGISkyOcclusion.urtshader", keywords = <no keywords>
+    finished in 0.00 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
+ -> (artifact id: 'fb586125401295b3b365bc0e7e9a3f46') in 0.0173399 seconds
+Start importing Packages/com.unity.render-pipelines.core/Tests/Editor/UnifiedRayTracing/TraceRaysAndFetchAttributes.urtshader using Guid(fbc59f55df2416344b008dc23753cae2) (ScriptedImporter)
+Compiling Ray Tracing Shader "TraceRaysAndFetchAttributes.urtshader", keywords = <no keywords>
+    finished in 0.00 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
+ -> (artifact id: '5e518210d64afcf414624668b000722c') in 0.0139744 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/RendererFeatures/SurfaceCacheGI/SurfaceCacheCore/RestirCandidateTemporal.urtshader using Guid(ad3a9f9982f8c4f4a839a78955e78458) (ScriptedImporter)
+Compiling Ray Tracing Shader "RestirCandidateTemporal.urtshader", keywords = <no keywords>
+    finished in 0.00 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
+ -> (artifact id: 'bb4b7d12fb6ed0039744ade1ce8b423b') in 0.0199092 seconds
+Start importing Packages/com.unity.render-pipelines.core/Editor/Lighting/ProbeVolume/VirtualOffset/TraceVirtualOffset.urtshader using Guid(ff2cbab5da58bf04d82c5f34037ed123) (ScriptedImporter)
+Compiling Ray Tracing Shader "TraceVirtualOffset.urtshader", keywords = <no keywords>
+    finished in 0.00 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
+ -> (artifact id: '6c6b9fa987ce9ca680d4a29ff6a084fa') in 0.0232365 seconds
+Refreshing native plugins compatible for Editor in 2.17 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=6fcaec125c57f56419d5a4de8dbac9eb): Total: 21.676 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=10 (actual=10, local cache=0, cache server=0)
+		Asset DB Process Time: managed=4 ms, native=8437 ms
+		Asset DB Callback time: managed=1876 ms, native=339 ms
+		Scripting: domain reloads=1, domain reload time=1557 ms, compile time=9294 ms, other=165 ms
+		Project Asset Count: scripts=1644, non-scripts=3578
+		Asset File Changes: new=1, changed=5, moved=0, deleted=1
+		Scan Filter Count: 0
+	InvokeCustomDependenciesCallbacks: 0.001ms
+	InvokePackagesCallback: 10.752ms
+	ApplyChangesToAssetFolders: 0.939ms
+	Scan: 802.600ms
+	OnSourceAssetsModified: 1.069ms
+	CategorizeAssetsWithTransientArtifact: 97.068ms
+	ProcessAssetsWithTransientArtifactChanges: 116.971ms
+	UnregisterDeletedAssets: 0.002ms
+	CategorizeAssets: 129.638ms
+	ImportOutOfDateAssets: 6941.509ms (-2790.241ms without children)
+		ImportManagerImport: 435.738ms (3.014ms without children)
+			ImportInProcess: 431.938ms
+			UpdateCategorizedAssets: 0.785ms
+		CompileScripts: 9293.795ms
+		ReloadNativeAssets: 0.058ms
+		UnloadImportedAssets: 0.262ms
+		ReloadImportedAssets: 0.002ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 1.176ms
+		InitializingProgressBar: 0.009ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.001ms
+		OnDemandSchedulerStart: 0.709ms
+	PostProcessAllAssets: 2199.452ms
+	Hotreload: 7.438ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.003ms
+	UnloadStreamsBegin: 1.906ms
+	PersistCurrentRevisions: 0.360ms
+	UnloadStreamsEnd: 0.001ms
+	GenerateScriptTypeHashes: 5.572ms
+	Untracked: 11366.004ms
+
+Application.AssetDatabase Initial Refresh End
+Scanning for USB devices : 7.347ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-航海世家
+Unloading 200 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7507 unused Assets / (11.0 MB). Loaded Objects now: 8285.
+Memory consumption went from 249.9 MB to 238.8 MB.
+Total: 26.047400 ms (FindLiveObjects: 1.068900 ms CreateObjectMapping: 1.607700 ms MarkObjects: 12.266300 ms  DeleteObjects: 11.102300 ms)
+
+Start importing Assets/Resources/CityDaylight/Walker.png using Guid(65339bd38697aa047b65fb593b9faf6f) (TextureImporter) -> (artifact id: '2b288551dc75c8af9472712a3685028e') in 0.065766 seconds
+Refreshing native plugins compatible for Editor in 1.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=ccc6df3639f972648a36f629d43e03fa): Total: 0.235 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/CityDaylight/Textures/PixelMaterials.png using Guid(86131b67f12f93647bfd245b87dfab56) (TextureImporter) -> (artifact id: '51c7a79fa5f95cb4fa45e6dbe014dfe5') in 0.0739057 seconds
+Refreshing native plugins compatible for Editor in 2.01 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=4629d95265da25445834d8f7318bee32): Total: 0.104 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/TownUI/data_bar_black.png using Guid(7d85f20bcb0adf042a90afbce6ddecda) (TextureImporter) -> (artifact id: 'bd956e4875a521beaad08811b069eb8c') in 0.0096508 seconds
+Refreshing native plugins compatible for Editor in 2.09 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=10b9d0d9a5e144041a6a36ef21d9c2df): Total: 0.101 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/TownUI/data_bar_black.png using Guid(7d85f20bcb0adf042a90afbce6ddecda) (TextureImporter) -> (artifact id: '288c928550203a3cf15ae8d44a1b90c2') in 0.0062719 seconds
+Refreshing native plugins compatible for Editor in 1.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=815a30f32e671154a94bcfd68da36071): Total: 0.069 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/TownUI/data_bar_black_alt.png using Guid(3d0f1fc4153ba6d4fa9a5ef2d58dfe0e) (TextureImporter) -> (artifact id: '22f391d1bcc2d67eb9f5a385a788aab9') in 0.0122023 seconds
+Refreshing native plugins compatible for Editor in 1.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=cf0f55fd7199b1e498572f12079907c0): Total: 0.081 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/TownUI/data_bar_black_alt.png using Guid(3d0f1fc4153ba6d4fa9a5ef2d58dfe0e) (TextureImporter) -> (artifact id: 'a1bc515f00320b4a2e3de2ec459ab4ff') in 0.0076786 seconds
+Refreshing native plugins compatible for Editor in 1.36 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=fd0ad3f74993b7345b4ff7cdbe8614f7): Total: 0.073 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/TownUI/function_button.png using Guid(32fe545e3fc194341b393e122908baea) (TextureImporter) -> (artifact id: '211da711fd668bc46259baefe2feba0b') in 0.0116228 seconds
+Refreshing native plugins compatible for Editor in 1.35 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=7b11d875bc826bc489e75edd5df86e2c): Total: 0.071 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/TownUI/function_button.png using Guid(32fe545e3fc194341b393e122908baea) (TextureImporter) -> (artifact id: 'cc990088e7a12130589bae9b917b2e10') in 0.009895 seconds
+Refreshing native plugins compatible for Editor in 1.90 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=8917343116b6f4e4ca80a4ef3b861435): Total: 0.078 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/TownUI/label_bar.png using Guid(1571b3d6080d1c84896658411c404c7a) (TextureImporter) -> (artifact id: '8577fe13d6107f8bd3a7de05f1c3d808') in 0.0132935 seconds
+Refreshing native plugins compatible for Editor in 2.09 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=4063f3a5c331a9141ab059b5922ba8a1): Total: 0.088 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/TownUI/label_bar.png using Guid(1571b3d6080d1c84896658411c404c7a) (TextureImporter) -> (artifact id: '13037ad755517e63831ce029cd4a664b') in 0.0085192 seconds
+Refreshing native plugins compatible for Editor in 1.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=d03576b019d2f9c4b96d9ecad9fe3d4f): Total: 0.079 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/TownUI/product_row.png using Guid(ea97da5781cf8d04ab5d080b3a8ff360) (TextureImporter) -> (artifact id: '8c535ac1438bc73a307b60d21c0c86b4') in 0.0117656 seconds
+Refreshing native plugins compatible for Editor in 1.90 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=be579c76a6983f24f9a10d6947adb2a8): Total: 0.084 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/TownUI/product_row.png using Guid(ea97da5781cf8d04ab5d080b3a8ff360) (TextureImporter) -> (artifact id: '02fb5ec0b4fd745da75164538c20ce56') in 0.0108762 seconds
+Refreshing native plugins compatible for Editor in 2.15 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=b164e6e36e38c4c40a31fec923ce19b4): Total: 0.086 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/TownUI/product_row_alt.png using Guid(c261d70862fd6fd4b856c0aac648086d) (TextureImporter) -> (artifact id: 'dcd1f6111c070e7dfeccb4c04165425b') in 0.0120412 seconds
+Refreshing native plugins compatible for Editor in 2.08 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=f56dee57f1608f24682391308055952f): Total: 0.092 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/TownUI/product_row_alt.png using Guid(c261d70862fd6fd4b856c0aac648086d) (TextureImporter) -> (artifact id: '29a37c8ea674879bce4ad7519ec4166f') in 0.0147828 seconds
+Refreshing native plugins compatible for Editor in 1.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=80ad0da485af2284c891a34907cc3cab): Total: 0.095 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/TownUI/sidebar_background.png using Guid(db83804ed35423f409532af6e2778a54) (TextureImporter) -> (artifact id: '6202ed22dd3df35ee0140035f78824fe') in 0.0242215 seconds
+Refreshing native plugins compatible for Editor in 1.36 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=a61aa5bc778c3dd45b3606a4785d89f4): Total: 0.101 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/TownUI/sidebar_background.png using Guid(db83804ed35423f409532af6e2778a54) (TextureImporter) -> (artifact id: '76af36413a21b2d4b34c4e339901de30') in 0.02276 seconds
+Refreshing native plugins compatible for Editor in 1.34 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=56aa1ca6cb71fe140abb283b8a2bbbac): Total: 0.084 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/TownUI/town_frame.png using Guid(dd309a638ef4f7641bc17861a2371d91) (TextureImporter) -> (artifact id: '373581f5056511f6e73dd0ba8bb56f96') in 0.0261635 seconds
+Refreshing native plugins compatible for Editor in 1.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=250579cbe762aa74da198a1d5565e058): Total: 0.090 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/TownUI/town_frame.png using Guid(dd309a638ef4f7641bc17861a2371d91) (TextureImporter) -> (artifact id: '436b23f2920d2b2a62d0cea9196253a4') in 0.0263928 seconds
+Refreshing native plugins compatible for Editor in 1.42 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=badec2d10333af64b99425d53eed0293): Total: 0.089 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing ProjectSettings/ProjectSettings.asset using Guid(00000000000000004000000000000000) (LibraryAssetImporter) -> (artifact id: '081725ed46a81b786869bdebeeb93419') in 0.0074101 seconds
+Start importing ProjectSettings/GraphicsSettings.asset using Guid(00000000000000006100000000000000) (LibraryAssetImporter) -> (artifact id: '926777163586fc04fde6dd4968a9e93c') in 0.0056807 seconds
+Start importing Assets/Cities/MalaccaCity/MalaccaCity.asset using Guid(f36deb0032d5a3c468f28f1dabb7d744) (NativeFormatImporter) -> (artifact id: '7f52ed6ca655c222fe7955102deafe46') in 0.0075749 seconds
+Start importing Assets/Cities/AlexandriaCity/AlexandriaCity.asset using Guid(c4993a62c2f5fe449b120d358bf19184) (NativeFormatImporter) -> (artifact id: '46cd6e10441fbb02073b1da2779b82a7') in 0.0058614 seconds
+Start importing Assets/Cities/IstanbulCity/IstanbulCity.asset using Guid(d4c57dd601718ff45be4709eb09dfd7f) (NativeFormatImporter) -> (artifact id: '1fd1b50d98e0d1c44c1fe005057e7102') in 0.0053162 seconds
+Start importing Assets/Cities/VeniceCity/VeniceCity.asset using Guid(f4b4d2d9c7854774cadf73d2f252a351) (NativeFormatImporter) -> (artifact id: '1bec5c5a318a7585579b4314381a1a1e') in 0.0050141 seconds
+Start importing Assets/Cities/LisbonCity/LisbonCity.asset using Guid(d50fa90e8cfb3304ba284297798b0340) (NativeFormatImporter) -> (artifact id: '0a8d361eaa0ce832ffec71c883fea093') in 0.0050478 seconds
+Start importing Assets/Cities/HangzhouCity/HangzhouCity.asset using Guid(8a0333f93d0eb4b4da61524efd186df4) (NativeFormatImporter) -> (artifact id: '17844cdf7d82ee79eec51fbcbc59fa51') in 0.00556 seconds
+Start importing Assets/Cities/GoaCity/GoaCity.asset using Guid(9ba021c6557fabb4b97d0895a117bd9c) (NativeFormatImporter) -> (artifact id: '2a7e0fcc87c982476e50ca8d28661ee7') in 0.0051523 seconds
+Start importing Assets/Cities/SevilleCity/SevilleCity.asset using Guid(6fe291782a41d5948bcfd8a6294ef516) (NativeFormatImporter) -> (artifact id: '7059c64e20561e453cc1845c8d549c21') in 0.0043098 seconds
+Refreshing native plugins compatible for Editor in 1.70 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=591a5d408047c5549aa74028d91bac94): Total: 0.235 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+CITY_DAYLIGHT_CONFIGURED
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MaritimeLegend.Editor.CityArtSetup:ConfigureDaylight () (at Assets/Editor/CityArtSetup.cs:21)
+MaritimeLegend.Editor.BuildGame:Build () (at Assets/Editor/BuildGame.cs:14)
+
+(Filename: Assets/Editor/CityArtSetup.cs Line: 21)
+
+SCENE_STRUCTURE_VALIDATED
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MaritimeLegend.Editor.SceneStructure:Validate () (at Assets/Editor/SceneStructure.cs:27)
+MaritimeLegend.Editor.BuildGame:Build () (at Assets/Editor/BuildGame.cs:14)
+
+(Filename: Assets/Editor/SceneStructure.cs Line: 27)
+
+Settings backup recovery: JSON parse error: Invalid value.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MaritimeLegend.SettingsStore:Load (MaritimeLegend.Domain.Catalog,MaritimeLegend.Domain.Settings) (at Assets/Core/SaveSystem/SettingsStore.cs:12)
+MaritimeLegend.Editor.DataConfigurationChecks:Run () (at Assets/Tests/EditMode/Editor/DataConfigurationChecks.cs:57)
+MaritimeLegend.Editor.BuildGame:Build () (at Assets/Editor/BuildGame.cs:15)
+
+(Filename: Assets/Core/SaveSystem/SettingsStore.cs Line: 12)
+
+DATA_CONFIGURATION_CHECKS_PASS
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MaritimeLegend.Editor.DataConfigurationChecks:Run () (at Assets/Tests/EditMode/Editor/DataConfigurationChecks.cs:63)
+MaritimeLegend.Editor.BuildGame:Build () (at Assets/Editor/BuildGame.cs:15)
+
+(Filename: Assets/Tests/EditMode/Editor/DataConfigurationChecks.cs Line: 63)
+
+INITIAL_STOCK_CHECKS_PASS
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MaritimeLegend.Editor.InitialStockChecks:Run () (at Assets/Tests/EditMode/Editor/InitialStockChecks.cs:36)
+MaritimeLegend.Editor.BuildGame:Build () (at Assets/Editor/BuildGame.cs:15)
+
+(Filename: Assets/Tests/EditMode/Editor/InitialStockChecks.cs Line: 36)
+
+Exception: TEST FAILED: 50 products including flagship instrument; 49 entries in requested table
+  at MaritimeLegend.Editor.DomainChecks.Check (System.Boolean ok, System.String name) [0x00009] in D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Assets\Tests\EditMode\Editor\DomainChecks.cs:11 
+  at MaritimeLegend.Editor.DomainChecks.Run () [0x0002e] in D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Assets\Tests\EditMode\Editor\DomainChecks.cs:13 
+  at MaritimeLegend.Editor.BuildGame.Build () [0x000aa] in D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Assets\Editor\BuildGame.cs:15 
+
+(Filename: Assets/Tests/EditMode/Editor/DomainChecks.cs Line: 11)
+
+executeMethod method MaritimeLegend.Editor.BuildGame.Build threw exception.
+Exiting without the bug reporter. Application will terminate with return code 1

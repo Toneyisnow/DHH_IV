@@ -11,12 +11,23 @@ public sealed partial class CityDiorama : MonoBehaviour {
  public int WeatherIndex {get;private set;}public string WeatherName=>new[]{"晴日浮尘","港湾海雾","微雨潮汐"}[WeatherIndex];
  public readonly Dictionary<string,Vector3> Landmarks=new Dictionary<string,Vector3>();
  public int Facing {get;private set;}public int PathLength=>path.Count;public float WalkedDistance {get;private set;}
- CityDefinition definition;CityLens lens;Light sun;Material stone,wall,wood,metal,water,walker;SpriteRectCatalog walks;
+ CityDefinition definition;CityLens lens;Light sun;Material stone,wall,wood,metal,water;
  readonly List<UnityEngine.Object> owned=new List<UnityEngine.Object>();readonly List<Rect> obstacles=new List<Rect>();readonly List<Transform> flags=new List<Transform>();readonly List<ParticleSystem> atmosphere=new List<ParticleSystem>();
- CityWalkGrid grid;List<Vector3> path=new List<Vector3>();string arrival="";bool venice;float animationTime;Transform shadow;MaritimeGame game;WorldSession world;
+ CityWalkGrid grid;List<Vector3> path=new List<Vector3>();string arrival="";bool venice;Transform shadow;MaritimeGame game;WorldSession world;
+ public CityPixelWalker PixelWalker {get;private set;}
+ public void CyclePlayerCharacter(){
+  var previous=PixelWalker;
+  int next=previous.CharacterId==5?6:previous.CharacterId==6?4:5;
+  var replacement=CityPixelWalker.CreateCartoon(Player,definition.spriteShader,next);
+  replacement.transform.rotation=previous.transform.rotation;
+  replacement.CopyMotionFrom(previous);
+  PixelWalker=replacement;walkerQuad=replacement.transform;
+  CityPixelWalker.SelectPlayerVisual(next);
+  previous.gameObject.SetActive(false);Destroy(previous.gameObject);
+ }
  const int ArtLayer=20,FloorLayer=21;
  T Own<T>(T o)where T:UnityEngine.Object {owned.Add(o);return o;}
- public void Initialize(CityDefinition city){definition=city;venice=city.cityId==2;game=FindAnyObjectByType<MaritimeGame>();world=FindAnyObjectByType<WorldSession>();walks=JsonUtility.FromJson<SpriteRectCatalog>(Resources.Load<TextAsset>("CityDaylight/Walker").text);
+ public void Initialize(CityDefinition city){definition=city;venice=city.cityId==2;game=FindAnyObjectByType<MaritimeGame>();world=FindAnyObjectByType<WorldSession>();
   var cameraObject=new GameObject("CityCamera");cameraObject.transform.SetParent(transform);View=cameraObject.AddComponent<Camera>();View.orthographic=false;View.fieldOfView=42;View.nearClipPlane=.3f;View.farClipPlane=180;View.transform.rotation=Quaternion.Euler(32,0,0);View.renderingPath=RenderingPath.Forward;View.clearFlags=CameraClearFlags.SolidColor;View.backgroundColor=new Color(.61f,.76f,.80f);View.cullingMask=(1<<ArtLayer)|(1<<FloorLayer)|(1<<22);View.allowHDR=true;View.allowMSAA=false;View.depthTextureMode=DepthTextureMode.Depth;
   Image=Own(new RenderTexture(1516,932,24,RenderTextureFormat.ARGBHalf));Image.Create();View.targetTexture=Image;
   lens=cameraObject.AddComponent<CityLens>();lens.shader=city.depthShader;lens.sharpBand=6;lens.blur=7;
@@ -28,9 +39,13 @@ public sealed partial class CityDiorama : MonoBehaviour {
   BuildDaylightTown();
   Physics.SyncTransforms();grid=new CityWalkGrid(obstacles);
   var actor=new GameObject("Player eight-direction sprite");actor.transform.SetParent(transform);Player=actor.transform;Player.position=grid.Snap(venice?new Vector3(-4,0,-2):new Vector3(0,0,-2));
-  walker=SpriteMaterial(Resources.Load<Texture2D>("CityDaylight/Walker"),walks.rects[0],Color.white);walker.SetFloat("_Recolor",1);Color[] colors={new Color(.7f,.18f,.15f),new Color(.15f,.37f,.5f),new Color(.21f,.42f,.31f),new Color(.59f,.4f,.19f),new Color(.38f,.25f,.48f),new Color(.85f,.77f,.55f),new Color(.18f,.21f,.26f),new Color(.81f,.82f,.74f)};walker.SetColor("_Cloth",colors[world.State.appearance.primaryColor%colors.Length]);var sprite=Quad("Walker",actor.transform,walker,1.55f,2.42f);sprite.transform.rotation=View.transform.rotation;walkerQuad=sprite.transform;sprite.transform.localPosition=-View.transform.up*.28f;
+  int character=CityPixelWalker.ResolvePlayerVisual(world.State);
+  string preset=CityPixelWalker.ResolveCharacter(world.State)!=0?world.State.appearance.portraitV2:"04-C1";
+  PixelWalker=CityPixelWalker.CreateCartoon(actor.transform,definition.spriteShader,character);
+  walkerQuad=PixelWalker.transform;walkerQuad.rotation=View.transform.rotation;
   shadow=Blob(Player.position,.55f,.36f);var focus=new GameObject("Focus plane");focus.transform.SetParent(transform);focus.transform.position=new Vector3(0,.6f,2);lens.focus=Player;FollowCamera(.016f,true);
-  for(int i=0;i<5;i++){Vector3 p=grid.Snap(new Vector3((i-2)*3,0,i%2==0?0:6));var mat=SpriteMaterial(Resources.Load<Texture2D>("CityDaylight/Walker"),walks.rects[(i*2)%8],new Color(.66f,.73f,.76f));var npc=Quad("Harbor resident",transform,mat,1.1f,1.75f);npc.transform.position=p-View.transform.up*.20f; npc.transform.rotation=View.transform.rotation;Blob(p,.4f,.28f);}
+  for(int i=0;i<5;i++){Vector3 p=grid.Snap(new Vector3((i-2)*3,0,i%2==0?0:6));var resident=new GameObject("Harbor resident");resident.transform.SetParent(transform);resident.transform.position=p;var npc=CityPixelWalker.Create(resident.transform,i%2==0?5:4,definition.spriteShader,(i%2==0?"05-C":"04-C")+(i+1));npc.transform.rotation=View.transform.rotation;npc.Pose((i*2)%8,4);Blob(p,.4f,.28f);}
+
   Particles("Golden dust",new Vector3(0,3,4),new Vector3(18,5,13),new Color(1,.84f,.48f,.35f),.035f,1.5f,13);
   Particles("Sea mist",new Vector3(0,.1f,-6),new Vector3(22,.8f,5),new Color(.7f,.8f,.79f,.065f),2.2f,.22f,12);
   Particles("Chimney smoke",new Vector3(-4,6,8),new Vector3(.2f,.2f,.2f),new Color(.53f,.48f,.4f,.22f),.32f,.7f,10);
@@ -57,9 +72,10 @@ public sealed partial class CityDiorama : MonoBehaviour {
  public Vector2 Project(Vector3 p){var v=View.WorldToViewportPoint(p);if(v.z<=View.nearClipPlane)return new Vector2(-1000,-1000);return new Vector2(ScreenViewport.x+v.x*ScreenViewport.width,ScreenViewport.y+(1-v.y)*ScreenViewport.height);}
  public void GoTo(Vector3 target,string destination=""){path=grid.Path(Player.position,target);arrival=destination;Status=path.Count==0?"该位置无法到达，请选择石板路或桥面。":"正在沿道路行走…";}
  public bool HasPath(Vector3 from,Vector3 to)=>grid.Path(from,to).Count>0;
- void Update(){if(Player==null||world.Paused)return;float dt=Mathf.Min(Time.unscaledDeltaTime,.1f);animationTime+=dt;KeyboardWalk(dt);
- if(Input.GetMouseButtonDown(0)&&ScreenViewport.Contains(LiveGui.Mouse)&&!LiveGui.PointerOverControl){Vector2 p=LiveGui.Mouse;var ray=View.ViewportPointToRay(new Vector3((p.x-ScreenViewport.x)/ScreenViewport.width,1-(p.y-ScreenViewport.y)/ScreenViewport.height,0));if(Physics.Raycast(ray,out var hit,180,1<<FloorLayer))GoTo(hit.point);else Status="水域不可步行，请沿石阶、码头或拱桥前进。";}
- if(path.Count>0){Vector3 before=Player.position;Player.position=Vector3.MoveTowards(before,path[0],dt*4.2f*world.State.settings.moveSpeed);WalkedDistance+=Vector3.Distance(before,Player.position);Vector3 d=Player.position-before;Vector3 local=View.transform.InverseTransformDirection(d);if(d.sqrMagnitude>.000001f){float a=Mathf.Atan2(-local.x,-local.y)*Mathf.Rad2Deg;Facing=((Mathf.RoundToInt(a/45)+8)%8);}int frame=(int)(animationTime*7)%walks.rows;Rect uv=walks.rects[frame*8+Facing];walker.mainTextureScale=new Vector2(uv.width,uv.height);walker.mainTextureOffset=new Vector2(uv.x,uv.y);if(Vector3.Distance(Player.position,path[0])<.025f)path.RemoveAt(0);if(path.Count==0){Status="已到达。";if(arrival!=""){string next=arrival;arrival="";game.Change(next);}}}else{Rect uv=walks.rects[Facing];walker.mainTextureScale=new Vector2(uv.width,uv.height);walker.mainTextureOffset=new Vector2(uv.x,uv.y);}
+ void Update(){if(Player==null||world.Paused)return;float dt=Mathf.Min(Time.unscaledDeltaTime,.1f);Vector2 keys=new Vector2(Input.GetAxisRaw("Horizontal"),Input.GetAxisRaw("Vertical"));bool keyboard=keys.sqrMagnitude>.01f;bool moved=keyboard&&MoveKeyboard(keys,dt);
+ if(!keyboard&&Input.GetMouseButtonDown(0)&&ScreenViewport.Contains(LiveGui.Mouse)&&!LiveGui.PointerOverControl){Vector2 p=LiveGui.Mouse;var ray=View.ViewportPointToRay(new Vector3((p.x-ScreenViewport.x)/ScreenViewport.width,1-(p.y-ScreenViewport.y)/ScreenViewport.height,0));if(Physics.Raycast(ray,out var hit,180,1<<FloorLayer))GoTo(hit.point);else Status="水域不可步行，请沿石阶、码头或拱桥前进。";}
+ if(!keyboard&&path.Count>0){Vector3 before=Player.position;Player.position=Vector3.MoveTowards(before,path[0],dt*4.2f*world.State.settings.moveSpeed);WalkedDistance+=Vector3.Distance(before,Player.position);moved=(Player.position-before).sqrMagnitude>.000001f;Vector3 d=Player.position-before;if(d.sqrMagnitude>.000001f)Facing=MaritimeLegend.CharacterArt.PixelWalkActor.DirectionFor(new Vector2(d.x,d.z));if(Vector3.Distance(Player.position,path[0])<.025f)path.RemoveAt(0);if(path.Count==0){Status="已到达。";if(arrival!=""){string next=arrival;arrival="";game.Change(next);}}}
+ PixelWalker.Animate(Facing,moved&&(keyboard||path.Count>0),dt);
  FollowCamera(dt);shadow.position=Player.position+new Vector3(0,.035f,-.18f);foreach(var flag in flags){var mesh=flag.GetComponent<MeshFilter>().sharedMesh;var vertices=mesh.vertices;for(int i=0;i<vertices.Length;i++)vertices[i].z=Mathf.Sin(Time.time*2.3f+vertices[i].x*4)*.10f;mesh.vertices=vertices;}
  }
  void OnDestroy(){kit?.Dispose();if(Image!=null)Image.Release();foreach(var o in owned)if(o!=null)Destroy(o);}

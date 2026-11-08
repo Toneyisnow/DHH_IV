@@ -1,0 +1,119 @@
+{
+  "navigation_grid": [
+    1672,
+    941
+  ],
+  "minimum_route_clearance": 10,
+  "connected_ocean_pixels": 759041,
+  "ports": [
+    {
+      "id": "malacca",
+      "name": "马六甲",
+      "clearance": 18.396373748779297,
+      "ocean_component": 1,
+      "shore_distance": 14.512376357314956,
+      "placement_error": 31.85934940181528,
+      "image_ready": true
+    },
+    {
+      "id": "manila",
+      "name": "马尼拉",
+      "clearance": 18.0048885345459,
+      "ocean_component": 1,
+      "shore_distance": 18.907534427975673,
+      "placement_error": 5.7961737584809825,
+      "image_ready": true
+    },
+    {
+      "id": "batavia",
+      "name": "巴达维亚",
+      "clearance": 18.043481826782227,
+      "ocean_component": 1,
+      "shore_distance": 13.494900683698356,
+      "placement_error": 3.5762042830085234,
+      "image_ready": true
+    },
+    {
+      "id": "palembang",
+      "name": "巨港",
+      "clearance": 18.231843948364258,
+      "ocean_component": 1,
+      "shore_distance": 18.678505832099447,
+      "placement_error": 28.717572560421143,
+      "image_ready": true
+    },
+    {
+      "id": "surabaya",
+      "name": "泗水",
+      "clearance": 18.10422706604004,
+      "ocean_component": 1,
+      "shore_distance": 12.578743323116894,
+      "placement_error": 3.1280966608140797,
+      "image_ready": true
+    },
+    {
+      "id": "brunei",
+      "name": "文莱",
+      "clearance": 18.01400375366211,
+      "ocean_component": 1,
+      "shore_distance": 11.264619041244021,
+      "placement_error": 3.9028016702530275,
+      "image_ready": true
+    },
+    {
+      "id": "makassar",
+      "name": "望加锡",
+      "clearance": 18.317256927490234,
+      "ocean_component": 1,
+      "shore_distance": 18.002847436213827,
+      "placement_error": 11.460872527771896,
+      "image_ready": true
+    },
+    {
+      "id": "manado",
+      "name": "万鸦老",
+      "clearance": 18.010629653930664,
+      "ocean_component": 1,
+      "shore_distance": 11.43156116004136,
+      "placement_error": 12.579441425709984,
+      "image_ready": true
+    },
+    {
+      "id": "ternate",
+      "name": "德尔纳特",
+      "clearance": 18.737682342529297,
+      "ocean_component": 1,
+      "shore_distance": 10.317777999066104,
+      "placement_error": 0.25130087789307254,
+      "image_ready": true
+    },
+    {
+      "id": "ambon",
+      "name": "安汶",
+      "clearance": 18.093509674072266,
+      "ocean_component": 1,
+      "shore_distance": 11.76344425439363,
+      "placement_error": 1.025867667624081,
+      "image_ready": true
+    },
+    {
+      "id": "giadinh",
+      "name": "嘉定",
+      "clearance": 18.443103790283203,
+      "ocean_component": 1,
+      "shore_distance": 14.429449236923737,
+      "placement_error": 18.768391296843188,
+      "image_ready": true
+    },
+    {
+      "id": "ayutthaya",
+      "name": "大城",
+      "clearance": 18.17091941833496,
+      "ocean_component": 1,
+      "shore_distance": 11.250849516949378,
+      "placement_error": 5.424704797885715,
+      "image_ready": true
+    }
+  ],
+  "all_ports_share_open_ocean": true
+}

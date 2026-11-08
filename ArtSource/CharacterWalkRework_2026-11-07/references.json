@@ -1,0 +1,90 @@
+[
+  {
+    "id": "01",
+    "source": "D:\\SourceCode\\Git\\toneyisnow\\DHH_IV\\ArtSource\\CharacterArt_V2\\01-Europe-v2-slim.png",
+    "sha256": "E2E9A5D3D7BD03D91010FB1E8E0466A41248645275B6A30AD9A54705E74EAD53",
+    "archivedReference": "References/Character_01-concept-board.png",
+    "figure": "left full figure",
+    "wardrobeBoard": "01-Europe-Male.png",
+    "status": "reference archived; not yet generated",
+    "identityNamespace": "V2-eight-characters",
+    "layered": false
+  },
+  {
+    "id": "02",
+    "source": "D:\\SourceCode\\Git\\toneyisnow\\DHH_IV\\ArtSource\\CharacterArt_V2\\01-Europe-v2-slim.png",
+    "sha256": "E2E9A5D3D7BD03D91010FB1E8E0466A41248645275B6A30AD9A54705E74EAD53",
+    "archivedReference": "References/Character_02-concept-board.png",
+    "figure": "right full figure",
+    "wardrobeBoard": "02-Europe-Female.png",
+    "status": "reference archived; not yet generated",
+    "identityNamespace": "V2-eight-characters",
+    "layered": false
+  },
+  {
+    "id": "03",
+    "source": "D:\\SourceCode\\Git\\toneyisnow\\DHH_IV\\ArtSource\\CharacterArt_V2\\02-Asia-Ming-v2.png",
+    "sha256": "EADDC7227E336994AF1E76C1679D9056C6AFBA8400109ABF8318589804C719FB",
+    "archivedReference": "References/Character_03-concept-board.png",
+    "figure": "left full figure",
+    "wardrobeBoard": "03-Asia-Male.png",
+    "status": "reference archived; not yet generated",
+    "identityNamespace": "V2-eight-characters",
+    "layered": false
+  },
+  {
+    "id": "04",
+    "source": "D:\\SourceCode\\Git\\toneyisnow\\DHH_IV\\ArtSource\\CharacterArt_V2\\02-Asia-Ming-v2.png",
+    "sha256": "EADDC7227E336994AF1E76C1679D9056C6AFBA8400109ABF8318589804C719FB",
+    "archivedReference": "References/Character_04-concept-board.png",
+    "figure": "right full figure",
+    "wardrobeBoard": "04-Asia-Female-slim-waist.png",
+    "status": "reference archived; not yet generated",
+    "identityNamespace": "V2-eight-characters",
+    "layered": false
+  },
+  {
+    "id": "05",
+    "source": "D:\\SourceCode\\Git\\toneyisnow\\DHH_IV\\ArtSource\\CharacterArt_V2\\03-Africa-v2-slim.png",
+    "sha256": "78585DBA61B6ECEFC9E0391C23E11E67CFE3106D5CE756D8CDF9E217BE43B8A8",
+    "archivedReference": "References/Character_05-concept-board.png",
+    "figure": "left full figure",
+    "wardrobeBoard": "05-Africa-Male.png",
+    "status": "reference archived; not yet generated",
+    "identityNamespace": "V2-eight-characters",
+    "layered": false
+  },
+  {
+    "id": "06",
+    "source": "D:\\SourceCode\\Git\\toneyisnow\\DHH_IV\\ArtSource\\CharacterArt_V2\\03-Africa-v2-slim.png",
+    "sha256": "78585DBA61B6ECEFC9E0391C23E11E67CFE3106D5CE756D8CDF9E217BE43B8A8",
+    "archivedReference": "References/Character_06-concept-board.png",
+    "figure": "right full figure",
+    "wardrobeBoard": "06-Africa-Female.png",
+    "status": "reference archived; not yet generated",
+    "identityNamespace": "V2-eight-characters",
+    "layered": false
+  },
+  {
+    "id": "07",
+    "source": "D:\\SourceCode\\Git\\toneyisnow\\DHH_IV\\ArtSource\\CharacterArt_V2\\04-LatinAmerica-v2-slim.png",
+    "sha256": "9E77980D04E91DBD11C74F0127ECE37494DDC961E4FAE1070BAA7ECF22F581E3",
+    "archivedReference": "References/Character_07-concept-board.png",
+    "figure": "left full figure",
+    "wardrobeBoard": "07-LatinAmerica-Male.png",
+    "status": "reference archived; not yet generated",
+    "identityNamespace": "V2-eight-characters",
+    "layered": false
+  },
+  {
+    "id": "08",
+    "source": "D:\\SourceCode\\Git\\toneyisnow\\DHH_IV\\ArtSource\\CharacterArt_V2\\04-LatinAmerica-v2-slim.png",
+    "sha256": "9E77980D04E91DBD11C74F0127ECE37494DDC961E4FAE1070BAA7ECF22F581E3",
+    "archivedReference": "References/Character_08-concept-board.png",
+    "figure": "right full figure",
+    "wardrobeBoard": "08-LatinAmerica-Female.png",
+    "status": "reference archived; not yet generated",
+    "identityNamespace": "V2-eight-characters",
+    "layered": false
+  }
+]

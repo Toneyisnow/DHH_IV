@@ -83,12 +83,18 @@ public sealed partial class CityDiorama {
   View.transform.position=immediate?desired:Vector3.SmoothDamp(View.transform.position,desired,ref cameraVelocity,.24f,Mathf.Infinity,dt);
   if(walkerQuad!=null)walkerQuad.rotation=View.transform.rotation;
  }
- void KeyboardWalk(float dt) {
-  float x=Input.GetAxisRaw("Horizontal"),z=Input.GetAxisRaw("Vertical");
-  if(Mathf.Abs(x)+Mathf.Abs(z)<.1f)return;
-  Vector3 delta=new Vector3(x,0,z).normalized*.85f;
-  var next=grid.Snap(Player.position+delta);
-  if(Vector3.Distance(next,Player.position+delta)<.7f){var localPath=grid.Path(Player.position,next);if(localPath.Count<=4){path=localPath;arrival="";}}
+ // Shared by real keyboard input and runtime regression checks.
+ internal bool MoveKeyboard(Vector2 input,float dt) {
+  if(input.sqrMagnitude<.01f)return false;
+  input=new Vector2(Mathf.Sign(input.x)* (Mathf.Abs(input.x)>.1f?1:0),Mathf.Sign(input.y)*(Mathf.Abs(input.y)>.1f?1:0)).normalized;
+  path.Clear();arrival="";
+  Facing=MaritimeLegend.CharacterArt.PixelWalkActor.DirectionFor(input);
+  Vector3 delta=new Vector3(input.x,0,input.y)*4.2f*Mathf.Clamp(dt,0,.1f)*world.State.settings.moveSpeed;
+  Vector3 before=Player.position;
+  bool moved=grid.TryMove(before,delta,out var next);Player.position=next;
+  WalkedDistance+=Vector3.Distance(before,next);
+  Status=moved?"正在沿道路行走…":"前方不可通行。";
+  return moved;
  }
 }
 }

@@ -1,0 +1,13 @@
+{
+  "directions": 8,
+  "changedWalkFrames": 32,
+  "headsUnchanged": true,
+  "idlesUnchanged": false,
+  "passingOverrides": [
+    "E",
+    "SE",
+    "W lower skirt/shoes",
+    "SW"
+  ],
+  "idleLocalCorrection": "W pouch region x87..101,y93..114 only; pose unchanged"
+}

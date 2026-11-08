@@ -9,8 +9,12 @@ public sealed class ManualSeaV2Runtime : IDisposable {
  readonly ManualSeaV2Environment environment; readonly ManualSeaV2Instances instances;
  readonly ManualSeaV2Ship[] ships; readonly Material water,cloud,fog; readonly Texture2D exploration;
  readonly Transform fogVeil;readonly ManualSeaV2CloudLayer cloudLayer;
+ readonly Material shipContact;readonly Transform[] shipContacts;
+ readonly ManualSeaV2Ports ports;
+ public string HoverPort(Vector2 pointer)=>ports.Hover(pointer);
  readonly Color[] pixels=new Color[SeaExploration.Width*SeaExploration.Height];
- float minimumZoom=24,maximumZoom=120;
+ float minimumZoom=8,maximumZoom=120;
+ public float DepartureZoom=>Mathf.Min(maximumZoom,minimumZoom+2);
  public float SightRadius=72; float lastSight=-1;
  SeaExploration knowledge; Vector3 lastRevealPosition=new Vector3(float.PositiveInfinity,0,0);
  public RenderTexture Image {get;}
@@ -26,6 +30,18 @@ public sealed class ManualSeaV2Runtime : IDisposable {
   root=UnityEngine.Object.Instantiate(prefab,owner);root.name="Manual Sailing V2 runtime";
   environment=root.GetComponentInChildren<ManualSeaV2Environment>(true);camera=environment.view;orbit=camera.GetComponent<ManualSeaV2Camera>();
   instances=root.GetComponentInChildren<ManualSeaV2Instances>(true);ships=root.GetComponentsInChildren<ManualSeaV2Ship>(true);
+  ports=new ManualSeaV2Ports(root.transform,camera);
+  shipContact=new Material(Resources.Load<Shader>("Shaders/ManualSeaV2ShipContact"));
+  shipContacts=new Transform[ships.Length];
+  for(int i=0;i<ships.Length;i++){
+   var contact=GameObject.CreatePrimitive(PrimitiveType.Quad);contact.name="Ship water contact";contact.layer=Layer;
+   contact.transform.SetParent(root.transform,false);contact.transform.localScale=new Vector3(7,12,1);
+   UnityEngine.Object.Destroy(contact.GetComponent<Collider>());
+   var renderer=contact.GetComponent<Renderer>();renderer.sharedMaterial=shipContact;
+   renderer.shadowCastingMode=UnityEngine.Rendering.ShadowCastingMode.Off;renderer.receiveShadows=false;
+   var properties=new MaterialPropertyBlock();properties.SetFloat("_Phase",i*2.399f);renderer.SetPropertyBlock(properties);
+   shipContacts[i]=contact.transform;
+  }
   water=new Material(environment.water);foreach(var renderer in root.GetComponentsInChildren<MeshRenderer>(true))if(renderer.sharedMaterial==environment.water)renderer.sharedMaterial=water;environment.water=water;
   Image=new RenderTexture(1920,1080,24){name="Manual Sailing V2",antiAliasing=2};Image.Create();camera.targetTexture=Image;camera.aspect=16f/9;camera.farClipPlane=12000;camera.depthTextureMode|=DepthTextureMode.Depth;
   cloud=new Material(Resources.Load<Material>("Materials/SoutheastAsiaV2/Clouds"));fog=new Material(Resources.Load<Shader>("Shaders/ManualSeaV2Exploration"));
@@ -42,7 +58,7 @@ public sealed class ManualSeaV2Runtime : IDisposable {
   fogVeil.localPosition=Vector3.forward*depth;fogVeil.localRotation=Quaternion.identity;fogVeil.localScale=new Vector3(height*camera.aspect*1.002f,height*1.002f,1);
  }
  public void Orbit(float drag,float scroll){SetView(Yaw+drag*2.2f,Zoom*Mathf.Exp(-scroll*.12f));}
- public void Center(Vector2 uv){orbit.focus=World(uv);orbit.ApplyPose();}
+ public void Center(Vector2 uv){orbit.focus=World(uv)+Vector3.up*Mathf.Lerp(5,0,Mathf.InverseLerp(10,30,Zoom));orbit.ApplyPose();}
  public void Follow(Vector2 uv)=>Center(uv);
  public Vector2 Project(Vector2 uv){var p=camera.WorldToViewportPoint(World(uv));return p.z<=0?new Vector2(-10000,-10000):new Vector2(p.x*1920,(1-p.y)*1080);}
  public bool TryUnproject(Vector2 pointer,out Vector2 uv){var ray=camera.ViewportPointToRay(new Vector3(pointer.x/1920,1-pointer.y/1080,0));if(new Plane(Vector3.up,Vector3.zero).Raycast(ray,out float d)){uv=UV(ray.GetPoint(d));return true;}uv=default;return false;}
@@ -63,18 +79,21 @@ public sealed class ManualSeaV2Runtime : IDisposable {
    if(Input.GetKeyDown(KeyCode.Alpha2))environment.mode=ManualSeaV2Environment.SkyMode.Sunset;
    if(Input.GetKeyDown(KeyCode.Alpha3))environment.mode=ManualSeaV2Environment.SkyMode.Night;
    environment.Apply();Shader.SetGlobalVector("_SeaCloudLight",-environment.sun.transform.forward);
+   shipContact.SetColor("_FoamColor",environment.mode==ManualSeaV2Environment.SkyMode.Night?new Color(.28f,.43f,.59f):environment.mode==ManualSeaV2Environment.SkyMode.Sunset?new Color(.9f,.74f,.52f):new Color(.7f,.94f,.94f));
    for(int i=0;i<ships.Length;i++){var f=i==0?null:state.sailing.manualFollowers[i-1];Vector2 uv=i==0?position:new Vector2((float)f.x,(float)f.y);double heading=i==0?state.heading:f.heading;
     ships[i].transform.position=World(uv);var direction=i==0?SeaInstrumentMath.WorldDirection(heading):new Vector2((float)Math.Cos(heading),(float)Math.Sin(heading));ships[i].heading=new Vector3(direction.x,0,-direction.y);
     ships[i].sailTrim=(float)SailingFormulas.SailDegrees(state.trim);ships[i].sailOpening=opening;ships[i].windFill=(float)SailingFormulas.WindFill(state.heading,state.trim,state.wind);ships[i].Refresh();
+    shipContacts[i].position=ships[i].transform.position+Vector3.up*.025f;
+    shipContacts[i].rotation=Quaternion.LookRotation(Vector3.up,ships[i].heading);
    }
    var sky=environment.skies[(int)environment.mode];
    fog.SetFloat("_FogSkyMode",sky.GetFloat("_Mode"));fog.SetVector("_FogSunDirection",sky.GetVector("_SunDirection"));
    fog.SetFloat("_FogStarDensity",sky.GetFloat("_StarDensity"));fog.SetFloat("_FogStarBrightness",sky.GetFloat("_StarBrightness"));
-   cloudLayer.Render(-environment.sun.transform.forward);instances.Render();camera.Render();
+   ports.Render(knowledge,environment.mode);cloudLayer.Render(-environment.sun.transform.forward);instances.Render();camera.Render();
   }finally{Shader.SetGlobalFloat("_SeaCloudEnabled",0);RenderSettings.skybox=oldSky;RenderSettings.ambientLight=ambient;RenderSettings.ambientMode=ambientMode;RenderSettings.sun=sun;RenderSettings.fog=oldFog;}
  }
  public void SetActive(bool value){if(root.activeSelf!=value)root.SetActive(value);}
  public void Capture(string path){var previous=RenderTexture.active;RenderTexture.active=Image;var tex=new Texture2D(Image.width,Image.height,TextureFormat.RGB24,false);tex.ReadPixels(new Rect(0,0,Image.width,Image.height),0,0);tex.Apply();System.IO.File.WriteAllBytes(path,tex.EncodeToPNG());UnityEngine.Object.Destroy(tex);RenderTexture.active=previous;}
- public void Dispose(){Image.Release();foreach(var obj in new UnityEngine.Object[]{root,Image,water,cloud,fog,exploration})if(obj)UnityEngine.Object.Destroy(obj);}
+ public void Dispose(){ports.Dispose();Image.Release();foreach(var obj in new UnityEngine.Object[]{root,Image,water,cloud,fog,exploration,shipContact})if(obj)UnityEngine.Object.Destroy(obj);}
 }
 }

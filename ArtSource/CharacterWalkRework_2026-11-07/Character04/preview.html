@@ -1,0 +1,24 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><title>Character04 八方向行走审阅</title>
+<style>body{margin:24px;background:#171d25;color:#e9e2d7;font:16px system-ui}h1{font-size:24px}button,select,input{font:inherit;margin:6px;padding:6px}canvas{image-rendering:pixelated;background:repeating-conic-gradient(#303740 0 25%,#38414c 0 50%) 0/24px 24px;border:1px solid #65707a} .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:1150px}.card{text-align:center}.card canvas{width:100%;max-width:280px}p{color:#bac5cf}#single{width:336px;height:336px}label{display:inline-block} .status{color:#e2bc77}</style>
+<h1>Character04 · 大头卡通行走图</h1><p class="status">大头卡通八方向行走图 · 4 帧行走 + 1 帧停止。原搭配；头部、衣色与身体图层保存在 Layers。</p>
+<label>尺寸 <select id="size"><option>168</option></select></label><label>帧率 <input id="fps" type="range" min="1" max="12" value="6"><span id="speed">6</span></label><button id="play">暂停</button><button id="step">下一帧</button><button id="idle">停止姿势</button><label>帧 <input id="frame" type="range" min="0" max="4" value="0"></label>
+<p>方向顺序 N / NE / E / SE / S / SW / W / NW。暂停后可逐帧比较；第 5 格是独立停止图。</p><div class="grid" id="grid"></div>
+<h2>移动与转向预览</h2><p>单击下面画布后使用方向键或 WASD 移动，松键保持当前方向停止。此项是浏览器预览，不代表 Unity 验证。</p><canvas id="stage" width="1008" height="420" tabindex="0" style="max-width:100%;background:#36483e"></canvas>
+<script>
+const dirs=['N','NE','E','SE','S','SW','W','NW'];let size=168,img=new Image(),playing=true,idle=false,f=0,last=0;
+const grid=document.getElementById('grid'),canvases=dirs.map(d=>{const card=document.createElement('div');card.className='card';card.innerHTML='<b>'+d+'</b><br><canvas width="168" height="168"></canvas>';grid.appendChild(card);return card.querySelector('canvas')});
+function load(){size=+document.getElementById('size').value;img.src='Review'+size+'/walk-sheet.png';canvases.forEach(c=>{c.width=c.height=size})}load();document.getElementById('size').onchange=load;
+document.getElementById('play').onclick=()=>{playing=!playing;idle=false;document.getElementById('play').textContent=playing?'暂停':'播放'};
+document.getElementById('step').onclick=()=>{playing=false;idle=false;f=(f+1)%5;document.getElementById('play').textContent='播放'};
+document.getElementById('idle').onclick=()=>{idle=!idle};document.getElementById('frame').oninput=e=>{f=+e.target.value;playing=false;idle=false};
+const stage=document.getElementById('stage'),keys=new Set();let x=504,y=250,face=4,phase=0,prev=0;
+stage.onkeydown=e=>{if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight','w','a','s','d'].includes(e.key)){e.preventDefault();keys.add(e.key)}};stage.onkeyup=e=>keys.delete(e.key);stage.onblur=()=>keys.clear();
+function draw(ctx,d,frame,dx=0,dy=0){ctx.imageSmoothingEnabled=false;ctx.drawImage(img,frame*size,d*size,size,size,dx,dy,size,size)}
+function tick(t){requestAnimationFrame(tick);if(!img.complete||!img.naturalWidth)return;const fps=+document.getElementById('fps').value;document.getElementById('speed').textContent=fps;
+if(playing&&!idle&&t-last>1000/fps){f=(f+1)%4;last=t}const frame=idle?4:f;document.getElementById('frame').value=frame;canvases.forEach((c,i)=>{const ctx=c.getContext('2d');ctx.clearRect(0,0,size,size);draw(ctx,i,frame)});
+const dt=Math.min((t-prev)/1000,.05);prev=t;let dx=+(keys.has('ArrowRight')||keys.has('d'))-+(keys.has('ArrowLeft')||keys.has('a')),dy=+(keys.has('ArrowDown')||keys.has('s'))-+(keys.has('ArrowUp')||keys.has('w'));const moving=dx||dy;
+if(moving){face=dirs.indexOf((dy<0?'N':dy>0?'S':'')+(dx>0?'E':dx<0?'W':''));const n=Math.hypot(dx,dy);x=Math.max(size/2,Math.min(stage.width-size/2,x+dx/n*90*dt));y=Math.max(size,Math.min(stage.height-10,y+dy/n*90*dt));phase+=dt*fps}else phase=0;
+const ctx=stage.getContext('2d');ctx.clearRect(0,0,stage.width,stage.height);ctx.strokeStyle='#65715e';for(let i=0;i<stage.width;i+=42){ctx.beginPath();ctx.moveTo(i,0);ctx.lineTo(i,stage.height);ctx.stroke()}for(let i=0;i<stage.height;i+=42){ctx.beginPath();ctx.moveTo(0,i);ctx.lineTo(stage.width,i);ctx.stroke()}draw(ctx,face,moving?Math.floor(phase)%4:4,Math.round(x-size/2),Math.round(y-size+10));}
+requestAnimationFrame(tick);
+</script></html>
+

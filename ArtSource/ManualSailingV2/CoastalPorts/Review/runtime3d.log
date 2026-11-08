@@ -1,0 +1,1288 @@
+Mono path[0] = 'D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Builds/SailingV2Integrated/MaritimeLegend_Data/Managed'
+Mono config path = 'D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Builds/SailingV2Integrated/MonoBleedingEdge/etc'
+Found 3 interfaces on host : 0) 192.168.240.1 1) 10.0.0.99 2) 10.0.0.24
+Player connection [69484]  Target information:
+
+Player connection [69484]  * "[IP] 192.168.240.1 [Port] 55000 [Flags] 2 [Guid] 1474552770 [EditorId] 3218670109 [Version] 1048832 [Id] WindowsPlayer(2,toneyalien12) [Debug] 0 [PackageName] WindowsPlayer [ProjectName] 航海世家" 
+
+Player connection [69484]  * "[IP] 10.0.0.99 [Port] 55000 [Flags] 2 [Guid] 1474552770 [EditorId] 3218670109 [Version] 1048832 [Id] WindowsPlayer(2,toneyalien12) [Debug] 0 [PackageName] WindowsPlayer [ProjectName] 航海世家" 
+
+Player connection [69484]  * "[IP] 10.0.0.24 [Port] 55000 [Flags] 2 [Guid] 1474552770 [EditorId] 3218670109 [Version] 1048832 [Id] WindowsPlayer(2,toneyalien12) [Debug] 0 [PackageName] WindowsPlayer [ProjectName] 航海世家" 
+
+Player connection [69484] Started UDP target info broadcast (1) on [225.0.0.222:54997].
+
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Initialize engine version: 6000.3.10f1 (e35f0c77bd8e)
+[Subsystems] Discovering subsystems at path D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Builds/SailingV2Integrated/MaritimeLegend_Data/UnitySubsystems
+Forcing GfxDevice: Direct3D 11
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Ti (ID=0x2489)
+    Vendor:   NVIDIA
+    VRAM:     8024 MB
+    Driver:   32.0.16.1060
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.218 seconds
+- Finished resetting the current domain, in  0.003 seconds
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+UnloadTime: 1.005900 ms
+Unloading 6 Unused Serialized files (Serialized files now loaded: 4)
+UnloadTime: 2.539600 ms
+Unloading 84 unused Assets / (1.0 KB). Loaded Objects now: 2585.
+Memory consumption went from 57.5 MB to 57.5 MB.
+Total: 1.782300 ms (FindLiveObjects: 0.116800 ms CreateObjectMapping: 0.070100 ms MarkObjects: 1.526800 ms  DeleteObjects: 0.060900 ms)
+
+V2_CHECK_PASS legacy city expansion preserves progress
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:23)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS legacy overseas save assigned coastal city
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:24)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS random starting city persists across reload
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:26)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS random start can select every Southeast Asia city
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:28)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS actual departure and zoom malacca
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:29)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS actual departure and zoom manila
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:29)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS actual departure and zoom batavia
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:29)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS actual departure and zoom palembang
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:29)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS actual departure and zoom surabaya
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:29)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS actual departure and zoom brunei
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:29)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS actual departure and zoom makassar
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:29)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS actual departure and zoom manado
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:29)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS actual departure and zoom ternate
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:29)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS actual departure and zoom ambon
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:29)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS actual departure and zoom giadinh
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:29)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS actual departure and zoom ayutthaya
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:29)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS departure beside actual city
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:33)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS initial zoom is minimum 8 plus 2
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:34)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS departure follower on navigable water
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:35)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS departure follower on navigable water
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:35)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS initial fleet separated from every other ship
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:37)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS resume does not reset position or camera
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:38)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS repeat departure resets city spawn and close camera
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:39)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS compass cardinal 0
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:41)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS compass cardinal 90
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:41)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS compass cardinal 180
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:41)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS compass cardinal 270
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:41)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS compass independent of camera orbit
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:42)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS compass blocks navigation clicks
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:43)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS compass atlas loaded
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:44)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS port exists 0
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:53)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS solid 3D geometry 0
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS hover visible 3D surface 0
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:60)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS unknown port name hidden 0
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:62)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS port exists 1
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:53)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS solid 3D geometry 1
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS hover visible 3D surface 1
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:60)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS unknown port name hidden 1
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:62)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS port exists 2
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:53)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS solid 3D geometry 2
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS hover visible 3D surface 2
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:60)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS unknown port name hidden 2
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:62)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS port exists 3
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:53)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS solid 3D geometry 3
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS hover visible 3D surface 3
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:60)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS unknown port name hidden 3
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:62)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS port exists 4
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:53)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS solid 3D geometry 4
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS hover visible 3D surface 4
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:60)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS unknown port name hidden 4
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:62)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS port exists 5
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:53)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS solid 3D geometry 5
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS hover visible 3D surface 5
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:60)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS unknown port name hidden 5
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:62)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS port exists 6
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:53)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS solid 3D geometry 6
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS hover visible 3D surface 6
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:60)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS unknown port name hidden 6
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:62)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS port exists 7
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:53)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS solid 3D geometry 7
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS hover visible 3D surface 7
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:60)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS unknown port name hidden 7
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:62)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS port exists 8
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:53)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS solid 3D geometry 8
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS hover visible 3D surface 8
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:60)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS unknown port name hidden 8
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:62)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS port exists 9
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:53)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS solid 3D geometry 9
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS hover visible 3D surface 9
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:60)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS unknown port name hidden 9
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:62)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS port exists 10
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:53)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS solid 3D geometry 10
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS hover visible 3D surface 10
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:60)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS unknown port name hidden 10
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:62)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS port exists 11
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:53)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS solid 3D geometry 11
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS hover visible 3D surface 11
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:60)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS unknown port name hidden 11
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:62)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS city stays fixed during camera orbit
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:69)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS city stays fixed during camera orbit
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:69)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS city stays fixed during camera orbit
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:69)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS city stays fixed during camera orbit
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:69)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 4)
+UnloadTime: 0.378100 ms
+Unloading 2043 unused Assets / (88.0 KB). Loaded Objects now: 5571.
+Memory consumption went from 112.6 MB to 112.6 MB.
+Total: 2.851400 ms (FindLiveObjects: 0.330800 ms CreateObjectMapping: 0.138600 ms MarkObjects: 1.885900 ms  DeleteObjects: 0.495300 ms)
+
+V2_CHECK_PASS regional city opens with correct identity malacca
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS regional city opens with correct identity manila
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS regional city opens with correct identity batavia
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS regional city opens with correct identity palembang
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS regional city opens with correct identity surabaya
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS regional city opens with correct identity brunei
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS regional city opens with correct identity makassar
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS regional city opens with correct identity manado
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS regional city opens with correct identity ternate
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS regional city opens with correct identity ambon
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS regional city opens with correct identity giadinh
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+V2_CHECK_PASS regional city opens with correct identity ayutthaya
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame:V2Assert (bool,string) (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.SailingV2Smoke.cs:122)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+PORTS_COMPASS_PASS
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+MaritimeLegend.MaritimeGame/<CheckPortsCompass>d__244:MoveNext () (at D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets/Tests/PlayMode/MaritimeGame.PortsCompassSmoke.cs:76)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input System polling thread exited.
+Input System module state changed to: Shutdown.
+PlayerConnection::Cleanup##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1794090248764,"processId":53252,"allocatedMemory":60305,"memoryLabels":[{"Default":136},{"NewDelete":104},{"Manager":9427},{"VertexData":1104},{"GfxDevice":792},{"Audio":752},{"Serialization":520},{"JobScheduler":32768},{"String":577},{"DynamicArray":4480},{"HashMap":3584},{"PoolAlloc":192},{"CloudService":144},{"WebRequest":3517},{"VR":1872},{"Video":144},{"Subsystems":96},{"Accessibility":80},{"CoreBusinessMetrics":120}]}

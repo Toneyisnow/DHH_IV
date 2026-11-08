@@ -1,0 +1,11 @@
+{
+  "changedFrames": [
+    "E-02.png",
+    "W-02.png",
+    "E-04.png",
+    "W-04.png"
+  ],
+  "changedRegion": "y112..167 lower skirt/shoes plus obsolete E skirt tips y96..111 outside hands/gear",
+  "upperBodiesUnchanged": true,
+  "other36FramesUnchanged": true
+}

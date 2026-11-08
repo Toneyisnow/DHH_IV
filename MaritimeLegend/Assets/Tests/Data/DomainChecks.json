@@ -7,7 +7,7 @@
     },
     {
       "id": "expectedPorts",
-      "value": 8,
+      "value": 19,
       "usage": "s in requested table\");Check(c.ports.Length==8&&c.partners.Length==12&&c.recipes.Length==33"
     },
     {

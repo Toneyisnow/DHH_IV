@@ -1,0 +1,71 @@
+{
+  "character": "V2-06",
+  "cellSize": 168,
+  "directions": [
+    "N",
+    "NE",
+    "E",
+    "SE",
+    "S",
+    "SW",
+    "W",
+    "NW"
+  ],
+  "walkFrames": 4,
+  "idleFrame": 4,
+  "colorScope": "top and skirt only; cape unchanged",
+  "accessories": "existing beads recolored; C2 silver hoop earrings",
+  "variants": [
+    {
+      "id": "C1-H5",
+      "name": "原搭配",
+      "head": "H5",
+      "top": null,
+      "skirt": null,
+      "cape": null,
+      "beads": null
+    },
+    {
+      "id": "C2-H1",
+      "name": "旅行搭配",
+      "head": "H1",
+      "top": [
+        224,
+        212,
+        185
+      ],
+      "skirt": [
+        90,
+        60,
+        43
+      ],
+      "cape": null,
+      "beads": [
+        42,
+        156,
+        155
+      ]
+    },
+    {
+      "id": "C5-H7",
+      "name": "绿色搭配",
+      "head": "H7",
+      "top": [
+        111,
+        139,
+        110
+      ],
+      "skirt": [
+        35,
+        77,
+        60
+      ],
+      "cape": null,
+      "beads": [
+        166,
+        60,
+        48
+      ]
+    }
+  ]
+}

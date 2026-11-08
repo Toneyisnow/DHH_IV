@@ -1,0 +1,1 @@
+const sharp=require('C:/Users/charl/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/sharp');(async()=>{for(const id of ['04','05'])await sharp(__dirname+'/Character'+id+'/Review168/walk-sheet.png').extract({left:0,top:672,width:840,height:168}).resize(1680,336,{kernel:'nearest'}).png().toFile(__dirname+'/Character'+id+'/front-frames.png');})();

@@ -26,6 +26,8 @@ public partial class MaritimeGame {
   if(Btn(1590,976,270,56,"紧急返港救援")){Notify(g.Rescue(),10);seaOwner=null;Change("城市");}
   Label(40,914,1350,34,"出发水域："+voyage.manualSpawnPort+"  ·  距离 "+distance.ToString("0.0000")+"  ·  俯角 "+indianOcean.Pitch.ToString("0")+"°"+(g.ManualFleet.shortage?"  ·  补给不足，请返港":""),small);
   SailingInstruments();
+  SailingCompass();
+  SailingPortTooltip();
   GUI.enabled=enabled;
   if(prompt!=null&&!paused){Panel(new Rect(355,425,1210,300));Label(390,455,1130,110,SeaText(c.SeaEncounter(prompt.definitionId).promptKey));if(Btn(420,610,510,65,SeaText("ui.sailing.accept")))ResolveSeaPrompt(prompt,true);if(Btn(990,610,510,65,SeaText("ui.sailing.decline")))ResolveSeaPrompt(prompt,false);}
  }

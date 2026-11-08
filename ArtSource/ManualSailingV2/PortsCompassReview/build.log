@@ -1,0 +1,42 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.3/staging' branch; Version is '6000.3.10f1 (e35f0c77bd8e) revision 14901004'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-charl" at "2026-11-07T17:03:52.9351208Z"
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'en' Physical Memory: 32443 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-11-07T17:03:52Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 19672, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              6906dfeb95e144e79d84f455b50cb2a0
+  Correlation Id:          5eeb90a643a89f0556e16ef970d49a99
+  External correlation Id: 4228792635881525127
+  Machine Id:              ahkCBMpFGkS5dEjRWzhYlmGmQRw=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-charl" (connect: 0.00s, validation: 0.00s, handshake: 0.21s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-charl-notifications" at "2026-11-07T17:03:53.1518379Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 6614505-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.01
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.25s
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Unity.exe
+-batchmode
+-quit
+-projectPath
+D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend
+-executeMethod
+MaritimeLegend.Editor.SailingV2Integration.Build
+-logFile
+D:/SourceCode/Git/toneyisnow/DHH_IV/ArtSource/ManualSailingV2/PortsCompassReview/build.log
+Successfully changed project path to: D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend
+D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend
+Exiting without the bug reporter. Application will terminate with return code 1

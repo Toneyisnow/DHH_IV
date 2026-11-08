@@ -1,0 +1,32 @@
+{
+  "status": "review-only",
+  "character": "V2-04",
+  "cellSize": 128,
+  "columns": 5,
+  "rows": [
+    "N",
+    "NE",
+    "E",
+    "SE",
+    "S",
+    "SW",
+    "W",
+    "NW"
+  ],
+  "walkFrames": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "idleFrame": 4,
+  "fps": 8,
+  "pivotPixels": [
+    64,
+    10
+  ],
+  "pivotOrigin": "bottom-left",
+  "filter": "Point",
+  "layered": false,
+  "unityVerified": false
+}

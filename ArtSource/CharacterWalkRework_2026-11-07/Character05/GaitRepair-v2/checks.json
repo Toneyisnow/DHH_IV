@@ -1,0 +1,14 @@
+{
+  "changedDirections": [
+    "NE",
+    "SW",
+    "W",
+    "NW"
+  ],
+  "approvedSEUnchanged": true,
+  "approvedEUnchanged": true,
+  "idlesUnchanged": false,
+  "headsUnchanged": true,
+  "changedWalkFrames": 15,
+  "idleEquipmentCorrection": "W hip pouch region only; original pose retained"
+}
