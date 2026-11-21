@@ -1,0 +1,1 @@
+REGIONAL_CITY_V2_PASS: six coastal samples; two anchored floating boats each; water-only dock and shipyard footprints; road connector widths and rotations; three grass geometries; 1-2 second random viewport crossings, groups of 2-3, both bird sizes; shader compilation passed.

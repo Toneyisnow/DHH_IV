@@ -44,7 +44,7 @@ namespace MaritimeLegend.Domain {
             if(!NormalSailing||DialogueOpen)return;
             if(double.IsNaN(x)||double.IsNaN(y)||double.IsInfinity(x)||double.IsInfinity(y))throw new ArgumentException("Invalid target");
             if(Math.Abs(x-S.seaX)+Math.Abs(y-S.seaY)<1e-9)return;
-            S.heading=SailingFormulas.Turn(S.heading,Math.Atan2(y-S.seaY,x-S.seaX),C.balance.sailing.turnDegreesPerSecond,seconds);
+            S.heading=SailingFormulas.Turn(S.heading,StreamedSailing?Math.Atan2((S.seaY-y)/540,WorldMap.DeltaX(S.seaX,x)/960):WorldSailing?Math.Atan2(S.seaY-y,WorldMap.DeltaX(S.seaX,x)):Math.Atan2(y-S.seaY,x-S.seaX),C.balance.sailing.turnDegreesPerSecond,seconds);
         }
         public void AdjustSail(double axis,double seconds,bool reset=false) {
             GameCalendar.ValidateSeconds(seconds);

@@ -1,0 +1,7 @@
+north_sea: World 960x540; chunks 215; near triangles 272542; far triangles 71152; props 10206; cells 672
+mediterranean_sea: World 960x540; chunks 231; near triangles 318532; far triangles 81760; props 7113; cells 596
+africa: World 960x540; chunks 141; near triangles 149088; far triangles 38554; props 4548; cells 334
+indian_ocean: World 960x540; chunks 166; near triangles 227306; far triangles 58360; props 7256; cells 511
+southeast_asia: World 960x540; chunks 180; near triangles 159506; far triangles 43344; props 7338; cells 531
+east_asia: World 960x540; chunks 150; near triangles 213174; far triangles 54408; props 7616; cells 391
+new_world: World 960x540; chunks 150; near triangles 157604; far triangles 41438; props 6360; cells 447

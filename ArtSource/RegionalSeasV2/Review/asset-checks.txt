@@ -1,0 +1,4 @@
+PASS SEA: 360/360 near/far terrain meshes byte-identical to approved baseline
+PASS SEA: height/coast/forest field byte-identical to approved baseline
+PASS 7 regions: valid data, safe three-ship review anchorages, original water parameters
+PASS 21 full-resolution player screenshots present

@@ -22,7 +22,7 @@ namespace MaritimeLegend {
    g.AdjustSail(axis,seconds,reset);
    instrumentWheelAngle=reset?0:SeaInstrumentMath.WheelStep(instrumentWheelAngle,axis,seconds);
   }
-  Vector2 InstrumentScreenDirection(Vector2 direction){var uv=new Vector2(direction.x/CoastNavigation.Width,direction.y/CoastNavigation.Height);return (indianOcean.Project(SeaPosition+uv*10)-indianOcean.Project(SeaPosition)).normalized;}
+  Vector2 InstrumentScreenDirection(Vector2 direction){if(IsWorldSea)return (ProjectManualSea(SeaPosition+new Vector2(direction.x,-direction.y)*10)-ProjectManualSea(SeaPosition)).normalized;var uv=new Vector2(direction.x/CoastNavigation.Width,direction.y/CoastNavigation.Height);return (indianOcean.Project(SeaPosition+uv*10)-indianOcean.Project(SeaPosition)).normalized;}
   internal float InstrumentShipAngle {get{var d=InstrumentScreenDirection(SeaInstrumentMath.WorldDirection(s.heading));return Mathf.Atan2(d.y,d.x)*Mathf.Rad2Deg+90;}}
   void InstrumentSprite(Texture2D art,Vector2 center,float size,float angle){var matrix=GUI.matrix;LiveGuiUtility.RotateAroundPivot(angle,center);GUI.DrawTexture(new Rect(center.x-size/2,center.y-size/2,size,size),art);GUI.matrix=matrix;}
   void SailingInstruments(){

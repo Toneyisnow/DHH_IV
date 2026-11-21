@@ -1,0 +1,7 @@
+Solid-building geometry audit
+HarborMerchantHouse: vertices=35052, XYZ bounds=(7.72, 9.18, 8.98), signed component volume=421.51, all 6 normal directions PASS
+RedResidence: vertices=30264, XYZ bounds=(5.72, 7.78, 7.28), signed component volume=207.77, all 6 normal directions PASS
+OchreResidence: vertices=30120, XYZ bounds=(5.52, 7.52, 7.18), signed component volume=190.20, all 6 normal directions PASS
+TownHall: vertices=34368, XYZ bounds=(9.42, 8.68, 8.38), signed component volume=466.66, all 6 normal directions PASS
+RedResidence: vertices=30264, XYZ bounds=(5.72, 7.78, 7.28), signed component volume=207.77, all 6 normal directions PASS
+Perspective projected width at 10m / 30m = 3 (expected 3)

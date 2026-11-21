@@ -1,0 +1,910 @@
+{
+    "version": "2.0",
+    "roadTileSize": 4.0,
+    "roadWidth": 2.0,
+    "shorelineZ": 0.0,
+    "waterSide": "Z < 0",
+    "flight": "2-3 birds; two sizes of same species; 1-2 seconds per crossing",
+    "elements": [
+        {
+            "region": "Europe",
+            "element": "HouseB",
+            "prefab": "Prefabs/Cities/Europe/V2/HouseB"
+        },
+        {
+            "region": "Europe",
+            "element": "TownHall",
+            "prefab": "Prefabs/Cities/Europe/V2/TownHall"
+        },
+        {
+            "region": "Europe",
+            "element": "BoatA",
+            "prefab": "Prefabs/Cities/Europe/V2/BoatA"
+        },
+        {
+            "region": "Europe",
+            "element": "BoatB",
+            "prefab": "Prefabs/Cities/Europe/V2/BoatB"
+        },
+        {
+            "region": "Europe",
+            "element": "TreeA_Slim",
+            "prefab": "Prefabs/Cities/Europe/V2/TreeA_Slim"
+        },
+        {
+            "region": "Europe",
+            "element": "TreeA_Short",
+            "prefab": "Prefabs/Cities/Europe/V2/TreeA_Short"
+        },
+        {
+            "region": "Europe",
+            "element": "TreeA_DeadBranches",
+            "prefab": "Prefabs/Cities/Europe/V2/TreeA_DeadBranches"
+        },
+        {
+            "region": "Europe",
+            "element": "RepairPlatform",
+            "prefab": "Prefabs/Cities/Europe/V2/RepairPlatform"
+        },
+        {
+            "region": "Europe",
+            "element": "TreeB_Slim",
+            "prefab": "Prefabs/Cities/Europe/V2/TreeB_Slim"
+        },
+        {
+            "region": "Europe",
+            "element": "TreeB_Short",
+            "prefab": "Prefabs/Cities/Europe/V2/TreeB_Short"
+        },
+        {
+            "region": "Europe",
+            "element": "TreeB_DeadBranches",
+            "prefab": "Prefabs/Cities/Europe/V2/TreeB_DeadBranches"
+        },
+        {
+            "region": "Europe",
+            "element": "HalfBuiltBoat",
+            "prefab": "Prefabs/Cities/Europe/V2/HalfBuiltBoat"
+        },
+        {
+            "region": "Europe",
+            "element": "RoadStraight",
+            "prefab": "Prefabs/Cities/Europe/V2/RoadStraight"
+        },
+        {
+            "region": "Europe",
+            "element": "RoadCorner",
+            "prefab": "Prefabs/Cities/Europe/V2/RoadCorner"
+        },
+        {
+            "region": "Europe",
+            "element": "RoadTee",
+            "prefab": "Prefabs/Cities/Europe/V2/RoadTee"
+        },
+        {
+            "region": "Europe",
+            "element": "RoadCross",
+            "prefab": "Prefabs/Cities/Europe/V2/RoadCross"
+        },
+        {
+            "region": "Europe",
+            "element": "RoadEnd",
+            "prefab": "Prefabs/Cities/Europe/V2/RoadEnd"
+        },
+        {
+            "region": "Europe",
+            "element": "RoadPlaza",
+            "prefab": "Prefabs/Cities/Europe/V2/RoadPlaza"
+        },
+        {
+            "region": "Europe",
+            "element": "GrassRound",
+            "prefab": "Prefabs/Cities/Europe/V2/GrassRound"
+        },
+        {
+            "region": "Europe",
+            "element": "GrassWide",
+            "prefab": "Prefabs/Cities/Europe/V2/GrassWide"
+        },
+        {
+            "region": "Europe",
+            "element": "GrassCorner",
+            "prefab": "Prefabs/Cities/Europe/V2/GrassCorner"
+        },
+        {
+            "region": "Europe",
+            "element": "HouseA",
+            "prefab": "Prefabs/Cities/Europe/V2/HouseA"
+        },
+        {
+            "region": "Europe",
+            "element": "Market",
+            "prefab": "Prefabs/Cities/Europe/V2/Market"
+        },
+        {
+            "region": "Europe",
+            "element": "BirdLarge",
+            "prefab": "Prefabs/Cities/Europe/V2/BirdLarge"
+        },
+        {
+            "region": "Europe",
+            "element": "BirdSmall",
+            "prefab": "Prefabs/Cities/Europe/V2/BirdSmall"
+        },
+        {
+            "region": "Europe",
+            "element": "BirdFlock",
+            "prefab": "Prefabs/Cities/Europe/V2/BirdFlock"
+        },
+        {
+            "region": "Europe",
+            "element": "Dock",
+            "prefab": "Prefabs/Cities/Europe/V2/Dock"
+        },
+        {
+            "region": "Europe",
+            "element": "Shipyard",
+            "prefab": "Prefabs/Cities/Europe/V2/Shipyard"
+        },
+        {
+            "region": "Europe",
+            "element": "Water",
+            "prefab": "Prefabs/Cities/Europe/V2/Water"
+        },
+        {
+            "region": "Europe",
+            "element": "CoastalSample",
+            "prefab": "Prefabs/Cities/Europe/V2/CoastalSample"
+        },
+        {
+            "region": "Nordic",
+            "element": "HouseB",
+            "prefab": "Prefabs/Cities/Nordic/V2/HouseB"
+        },
+        {
+            "region": "Nordic",
+            "element": "TownHall",
+            "prefab": "Prefabs/Cities/Nordic/V2/TownHall"
+        },
+        {
+            "region": "Nordic",
+            "element": "BoatA",
+            "prefab": "Prefabs/Cities/Nordic/V2/BoatA"
+        },
+        {
+            "region": "Nordic",
+            "element": "BoatB",
+            "prefab": "Prefabs/Cities/Nordic/V2/BoatB"
+        },
+        {
+            "region": "Nordic",
+            "element": "TreeA_Slim",
+            "prefab": "Prefabs/Cities/Nordic/V2/TreeA_Slim"
+        },
+        {
+            "region": "Nordic",
+            "element": "TreeA_Short",
+            "prefab": "Prefabs/Cities/Nordic/V2/TreeA_Short"
+        },
+        {
+            "region": "Nordic",
+            "element": "TreeA_DeadBranches",
+            "prefab": "Prefabs/Cities/Nordic/V2/TreeA_DeadBranches"
+        },
+        {
+            "region": "Nordic",
+            "element": "RepairPlatform",
+            "prefab": "Prefabs/Cities/Nordic/V2/RepairPlatform"
+        },
+        {
+            "region": "Nordic",
+            "element": "TreeB_Slim",
+            "prefab": "Prefabs/Cities/Nordic/V2/TreeB_Slim"
+        },
+        {
+            "region": "Nordic",
+            "element": "TreeB_Short",
+            "prefab": "Prefabs/Cities/Nordic/V2/TreeB_Short"
+        },
+        {
+            "region": "Nordic",
+            "element": "TreeB_DeadBranches",
+            "prefab": "Prefabs/Cities/Nordic/V2/TreeB_DeadBranches"
+        },
+        {
+            "region": "Nordic",
+            "element": "HalfBuiltBoat",
+            "prefab": "Prefabs/Cities/Nordic/V2/HalfBuiltBoat"
+        },
+        {
+            "region": "Nordic",
+            "element": "RoadStraight",
+            "prefab": "Prefabs/Cities/Nordic/V2/RoadStraight"
+        },
+        {
+            "region": "Nordic",
+            "element": "RoadCorner",
+            "prefab": "Prefabs/Cities/Nordic/V2/RoadCorner"
+        },
+        {
+            "region": "Nordic",
+            "element": "RoadTee",
+            "prefab": "Prefabs/Cities/Nordic/V2/RoadTee"
+        },
+        {
+            "region": "Nordic",
+            "element": "RoadCross",
+            "prefab": "Prefabs/Cities/Nordic/V2/RoadCross"
+        },
+        {
+            "region": "Nordic",
+            "element": "RoadEnd",
+            "prefab": "Prefabs/Cities/Nordic/V2/RoadEnd"
+        },
+        {
+            "region": "Nordic",
+            "element": "RoadPlaza",
+            "prefab": "Prefabs/Cities/Nordic/V2/RoadPlaza"
+        },
+        {
+            "region": "Nordic",
+            "element": "GrassRound",
+            "prefab": "Prefabs/Cities/Nordic/V2/GrassRound"
+        },
+        {
+            "region": "Nordic",
+            "element": "GrassWide",
+            "prefab": "Prefabs/Cities/Nordic/V2/GrassWide"
+        },
+        {
+            "region": "Nordic",
+            "element": "GrassCorner",
+            "prefab": "Prefabs/Cities/Nordic/V2/GrassCorner"
+        },
+        {
+            "region": "Nordic",
+            "element": "HouseA",
+            "prefab": "Prefabs/Cities/Nordic/V2/HouseA"
+        },
+        {
+            "region": "Nordic",
+            "element": "Market",
+            "prefab": "Prefabs/Cities/Nordic/V2/Market"
+        },
+        {
+            "region": "Nordic",
+            "element": "BirdLarge",
+            "prefab": "Prefabs/Cities/Nordic/V2/BirdLarge"
+        },
+        {
+            "region": "Nordic",
+            "element": "BirdSmall",
+            "prefab": "Prefabs/Cities/Nordic/V2/BirdSmall"
+        },
+        {
+            "region": "Nordic",
+            "element": "BirdFlock",
+            "prefab": "Prefabs/Cities/Nordic/V2/BirdFlock"
+        },
+        {
+            "region": "Nordic",
+            "element": "Dock",
+            "prefab": "Prefabs/Cities/Nordic/V2/Dock"
+        },
+        {
+            "region": "Nordic",
+            "element": "Shipyard",
+            "prefab": "Prefabs/Cities/Nordic/V2/Shipyard"
+        },
+        {
+            "region": "Nordic",
+            "element": "Water",
+            "prefab": "Prefabs/Cities/Nordic/V2/Water"
+        },
+        {
+            "region": "Nordic",
+            "element": "CoastalSample",
+            "prefab": "Prefabs/Cities/Nordic/V2/CoastalSample"
+        },
+        {
+            "region": "Mediterranean",
+            "element": "HouseB",
+            "prefab": "Prefabs/Cities/Mediterranean/V2/HouseB"
+        },
+        {
+            "region": "Mediterranean",
+            "element": "TownHall",
+            "prefab": "Prefabs/Cities/Mediterranean/V2/TownHall"
+        },
+        {
+            "region": "Mediterranean",
+            "element": "BoatA",
+            "prefab": "Prefabs/Cities/Mediterranean/V2/BoatA"
+        },
+        {
+            "region": "Mediterranean",
+            "element": "BoatB",
+            "prefab": "Prefabs/Cities/Mediterranean/V2/BoatB"
+        },
+        {
+            "region": "Mediterranean",
+            "element": "TreeA_Slim",
+            "prefab": "Prefabs/Cities/Mediterranean/V2/TreeA_Slim"
+        },
+        {
+            "region": "Mediterranean",
+            "element": "TreeA_Short",
+            "prefab": "Prefabs/Cities/Mediterranean/V2/TreeA_Short"
+        },
+        {
+            "region": "Mediterranean",
+            "element": "TreeA_DeadBranches",
+            "prefab": "Prefabs/Cities/Mediterranean/V2/TreeA_DeadBranches"
+        },
+        {
+            "region": "Mediterranean",
+            "element": "RepairPlatform",
+            "prefab": "Prefabs/Cities/Mediterranean/V2/RepairPlatform"
+        },
+        {
+            "region": "Mediterranean",
+            "element": "TreeB_Slim",
+            "prefab": "Prefabs/Cities/Mediterranean/V2/TreeB_Slim"
+        },
+        {
+            "region": "Mediterranean",
+            "element": "TreeB_Short",
+            "prefab": "Prefabs/Cities/Mediterranean/V2/TreeB_Short"
+        },
+        {
+            "region": "Mediterranean",
+            "element": "TreeB_DeadBranches",
+            "prefab": "Prefabs/Cities/Mediterranean/V2/TreeB_DeadBranches"
+        },
+        {
+            "region": "Mediterranean",
+            "element": "HalfBuiltBoat",
+            "prefab": "Prefabs/Cities/Mediterranean/V2/HalfBuiltBoat"
+        },
+        {
+            "region": "Mediterranean",
+            "element": "RoadStraight",
+            "prefab": "Prefabs/Cities/Mediterranean/V2/RoadStraight"
+        },
+        {
+            "region": "Mediterranean",
+            "element": "RoadCorner",
+            "prefab": "Prefabs/Cities/Mediterranean/V2/RoadCorner"
+        },
+        {
+            "region": "Mediterranean",
+            "element": "RoadTee",
+            "prefab": "Prefabs/Cities/Mediterranean/V2/RoadTee"
+        },
+        {
+            "region": "Mediterranean",
+            "element": "RoadCross",
+            "prefab": "Prefabs/Cities/Mediterranean/V2/RoadCross"
+        },
+        {
+            "region": "Mediterranean",
+            "element": "RoadEnd",
+            "prefab": "Prefabs/Cities/Mediterranean/V2/RoadEnd"
+        },
+        {
+            "region": "Mediterranean",
+            "element": "RoadPlaza",
+            "prefab": "Prefabs/Cities/Mediterranean/V2/RoadPlaza"
+        },
+        {
+            "region": "Mediterranean",
+            "element": "GrassRound",
+            "prefab": "Prefabs/Cities/Mediterranean/V2/GrassRound"
+        },
+        {
+            "region": "Mediterranean",
+            "element": "GrassWide",
+            "prefab": "Prefabs/Cities/Mediterranean/V2/GrassWide"
+        },
+        {
+            "region": "Mediterranean",
+            "element": "GrassCorner",
+            "prefab": "Prefabs/Cities/Mediterranean/V2/GrassCorner"
+        },
+        {
+            "region": "Mediterranean",
+            "element": "HouseA",
+            "prefab": "Prefabs/Cities/Mediterranean/V2/HouseA"
+        },
+        {
+            "region": "Mediterranean",
+            "element": "Market",
+            "prefab": "Prefabs/Cities/Mediterranean/V2/Market"
+        },
+        {
+            "region": "Mediterranean",
+            "element": "BirdLarge",
+            "prefab": "Prefabs/Cities/Mediterranean/V2/BirdLarge"
+        },
+        {
+            "region": "Mediterranean",
+            "element": "BirdSmall",
+            "prefab": "Prefabs/Cities/Mediterranean/V2/BirdSmall"
+        },
+        {
+            "region": "Mediterranean",
+            "element": "BirdFlock",
+            "prefab": "Prefabs/Cities/Mediterranean/V2/BirdFlock"
+        },
+        {
+            "region": "Mediterranean",
+            "element": "Dock",
+            "prefab": "Prefabs/Cities/Mediterranean/V2/Dock"
+        },
+        {
+            "region": "Mediterranean",
+            "element": "Shipyard",
+            "prefab": "Prefabs/Cities/Mediterranean/V2/Shipyard"
+        },
+        {
+            "region": "Mediterranean",
+            "element": "Water",
+            "prefab": "Prefabs/Cities/Mediterranean/V2/Water"
+        },
+        {
+            "region": "Mediterranean",
+            "element": "CoastalSample",
+            "prefab": "Prefabs/Cities/Mediterranean/V2/CoastalSample"
+        },
+        {
+            "region": "Africa",
+            "element": "HouseB",
+            "prefab": "Prefabs/Cities/Africa/V2/HouseB"
+        },
+        {
+            "region": "Africa",
+            "element": "TownHall",
+            "prefab": "Prefabs/Cities/Africa/V2/TownHall"
+        },
+        {
+            "region": "Africa",
+            "element": "BoatA",
+            "prefab": "Prefabs/Cities/Africa/V2/BoatA"
+        },
+        {
+            "region": "Africa",
+            "element": "BoatB",
+            "prefab": "Prefabs/Cities/Africa/V2/BoatB"
+        },
+        {
+            "region": "Africa",
+            "element": "TreeA_Slim",
+            "prefab": "Prefabs/Cities/Africa/V2/TreeA_Slim"
+        },
+        {
+            "region": "Africa",
+            "element": "TreeA_Short",
+            "prefab": "Prefabs/Cities/Africa/V2/TreeA_Short"
+        },
+        {
+            "region": "Africa",
+            "element": "TreeA_DeadBranches",
+            "prefab": "Prefabs/Cities/Africa/V2/TreeA_DeadBranches"
+        },
+        {
+            "region": "Africa",
+            "element": "RepairPlatform",
+            "prefab": "Prefabs/Cities/Africa/V2/RepairPlatform"
+        },
+        {
+            "region": "Africa",
+            "element": "TreeB_Slim",
+            "prefab": "Prefabs/Cities/Africa/V2/TreeB_Slim"
+        },
+        {
+            "region": "Africa",
+            "element": "TreeB_Short",
+            "prefab": "Prefabs/Cities/Africa/V2/TreeB_Short"
+        },
+        {
+            "region": "Africa",
+            "element": "TreeB_DeadBranches",
+            "prefab": "Prefabs/Cities/Africa/V2/TreeB_DeadBranches"
+        },
+        {
+            "region": "Africa",
+            "element": "HalfBuiltBoat",
+            "prefab": "Prefabs/Cities/Africa/V2/HalfBuiltBoat"
+        },
+        {
+            "region": "Africa",
+            "element": "RoadStraight",
+            "prefab": "Prefabs/Cities/Africa/V2/RoadStraight"
+        },
+        {
+            "region": "Africa",
+            "element": "RoadCorner",
+            "prefab": "Prefabs/Cities/Africa/V2/RoadCorner"
+        },
+        {
+            "region": "Africa",
+            "element": "RoadTee",
+            "prefab": "Prefabs/Cities/Africa/V2/RoadTee"
+        },
+        {
+            "region": "Africa",
+            "element": "RoadCross",
+            "prefab": "Prefabs/Cities/Africa/V2/RoadCross"
+        },
+        {
+            "region": "Africa",
+            "element": "RoadEnd",
+            "prefab": "Prefabs/Cities/Africa/V2/RoadEnd"
+        },
+        {
+            "region": "Africa",
+            "element": "RoadPlaza",
+            "prefab": "Prefabs/Cities/Africa/V2/RoadPlaza"
+        },
+        {
+            "region": "Africa",
+            "element": "GrassRound",
+            "prefab": "Prefabs/Cities/Africa/V2/GrassRound"
+        },
+        {
+            "region": "Africa",
+            "element": "GrassWide",
+            "prefab": "Prefabs/Cities/Africa/V2/GrassWide"
+        },
+        {
+            "region": "Africa",
+            "element": "GrassCorner",
+            "prefab": "Prefabs/Cities/Africa/V2/GrassCorner"
+        },
+        {
+            "region": "Africa",
+            "element": "HouseA",
+            "prefab": "Prefabs/Cities/Africa/V2/HouseA"
+        },
+        {
+            "region": "Africa",
+            "element": "Market",
+            "prefab": "Prefabs/Cities/Africa/V2/Market"
+        },
+        {
+            "region": "Africa",
+            "element": "BirdLarge",
+            "prefab": "Prefabs/Cities/Africa/V2/BirdLarge"
+        },
+        {
+            "region": "Africa",
+            "element": "BirdSmall",
+            "prefab": "Prefabs/Cities/Africa/V2/BirdSmall"
+        },
+        {
+            "region": "Africa",
+            "element": "BirdFlock",
+            "prefab": "Prefabs/Cities/Africa/V2/BirdFlock"
+        },
+        {
+            "region": "Africa",
+            "element": "Dock",
+            "prefab": "Prefabs/Cities/Africa/V2/Dock"
+        },
+        {
+            "region": "Africa",
+            "element": "Shipyard",
+            "prefab": "Prefabs/Cities/Africa/V2/Shipyard"
+        },
+        {
+            "region": "Africa",
+            "element": "Water",
+            "prefab": "Prefabs/Cities/Africa/V2/Water"
+        },
+        {
+            "region": "Africa",
+            "element": "CoastalSample",
+            "prefab": "Prefabs/Cities/Africa/V2/CoastalSample"
+        },
+        {
+            "region": "Asia",
+            "element": "HouseB",
+            "prefab": "Prefabs/Cities/Asia/V2/HouseB"
+        },
+        {
+            "region": "Asia",
+            "element": "TownHall",
+            "prefab": "Prefabs/Cities/Asia/V2/TownHall"
+        },
+        {
+            "region": "Asia",
+            "element": "BoatA",
+            "prefab": "Prefabs/Cities/Asia/V2/BoatA"
+        },
+        {
+            "region": "Asia",
+            "element": "BoatB",
+            "prefab": "Prefabs/Cities/Asia/V2/BoatB"
+        },
+        {
+            "region": "Asia",
+            "element": "TreeA_Slim",
+            "prefab": "Prefabs/Cities/Asia/V2/TreeA_Slim"
+        },
+        {
+            "region": "Asia",
+            "element": "TreeA_Short",
+            "prefab": "Prefabs/Cities/Asia/V2/TreeA_Short"
+        },
+        {
+            "region": "Asia",
+            "element": "TreeA_DeadBranches",
+            "prefab": "Prefabs/Cities/Asia/V2/TreeA_DeadBranches"
+        },
+        {
+            "region": "Asia",
+            "element": "RepairPlatform",
+            "prefab": "Prefabs/Cities/Asia/V2/RepairPlatform"
+        },
+        {
+            "region": "Asia",
+            "element": "TreeB_Slim",
+            "prefab": "Prefabs/Cities/Asia/V2/TreeB_Slim"
+        },
+        {
+            "region": "Asia",
+            "element": "TreeB_Short",
+            "prefab": "Prefabs/Cities/Asia/V2/TreeB_Short"
+        },
+        {
+            "region": "Asia",
+            "element": "TreeB_DeadBranches",
+            "prefab": "Prefabs/Cities/Asia/V2/TreeB_DeadBranches"
+        },
+        {
+            "region": "Asia",
+            "element": "HalfBuiltBoat",
+            "prefab": "Prefabs/Cities/Asia/V2/HalfBuiltBoat"
+        },
+        {
+            "region": "Asia",
+            "element": "RoadStraight",
+            "prefab": "Prefabs/Cities/Asia/V2/RoadStraight"
+        },
+        {
+            "region": "Asia",
+            "element": "RoadCorner",
+            "prefab": "Prefabs/Cities/Asia/V2/RoadCorner"
+        },
+        {
+            "region": "Asia",
+            "element": "RoadTee",
+            "prefab": "Prefabs/Cities/Asia/V2/RoadTee"
+        },
+        {
+            "region": "Asia",
+            "element": "RoadCross",
+            "prefab": "Prefabs/Cities/Asia/V2/RoadCross"
+        },
+        {
+            "region": "Asia",
+            "element": "RoadEnd",
+            "prefab": "Prefabs/Cities/Asia/V2/RoadEnd"
+        },
+        {
+            "region": "Asia",
+            "element": "RoadPlaza",
+            "prefab": "Prefabs/Cities/Asia/V2/RoadPlaza"
+        },
+        {
+            "region": "Asia",
+            "element": "GrassRound",
+            "prefab": "Prefabs/Cities/Asia/V2/GrassRound"
+        },
+        {
+            "region": "Asia",
+            "element": "GrassWide",
+            "prefab": "Prefabs/Cities/Asia/V2/GrassWide"
+        },
+        {
+            "region": "Asia",
+            "element": "GrassCorner",
+            "prefab": "Prefabs/Cities/Asia/V2/GrassCorner"
+        },
+        {
+            "region": "Asia",
+            "element": "HouseA",
+            "prefab": "Prefabs/Cities/Asia/V2/HouseA"
+        },
+        {
+            "region": "Asia",
+            "element": "Market",
+            "prefab": "Prefabs/Cities/Asia/V2/Market"
+        },
+        {
+            "region": "Asia",
+            "element": "BirdLarge",
+            "prefab": "Prefabs/Cities/Asia/V2/BirdLarge"
+        },
+        {
+            "region": "Asia",
+            "element": "BirdSmall",
+            "prefab": "Prefabs/Cities/Asia/V2/BirdSmall"
+        },
+        {
+            "region": "Asia",
+            "element": "BirdFlock",
+            "prefab": "Prefabs/Cities/Asia/V2/BirdFlock"
+        },
+        {
+            "region": "Asia",
+            "element": "Dock",
+            "prefab": "Prefabs/Cities/Asia/V2/Dock"
+        },
+        {
+            "region": "Asia",
+            "element": "Shipyard",
+            "prefab": "Prefabs/Cities/Asia/V2/Shipyard"
+        },
+        {
+            "region": "Asia",
+            "element": "Water",
+            "prefab": "Prefabs/Cities/Asia/V2/Water"
+        },
+        {
+            "region": "Asia",
+            "element": "CoastalSample",
+            "prefab": "Prefabs/Cities/Asia/V2/CoastalSample"
+        },
+        {
+            "region": "SouthAmerica",
+            "element": "HouseB",
+            "prefab": "Prefabs/Cities/SouthAmerica/V2/HouseB"
+        },
+        {
+            "region": "SouthAmerica",
+            "element": "TownHall",
+            "prefab": "Prefabs/Cities/SouthAmerica/V2/TownHall"
+        },
+        {
+            "region": "SouthAmerica",
+            "element": "BoatA",
+            "prefab": "Prefabs/Cities/SouthAmerica/V2/BoatA"
+        },
+        {
+            "region": "SouthAmerica",
+            "element": "BoatB",
+            "prefab": "Prefabs/Cities/SouthAmerica/V2/BoatB"
+        },
+        {
+            "region": "SouthAmerica",
+            "element": "TreeA_Slim",
+            "prefab": "Prefabs/Cities/SouthAmerica/V2/TreeA_Slim"
+        },
+        {
+            "region": "SouthAmerica",
+            "element": "TreeA_Short",
+            "prefab": "Prefabs/Cities/SouthAmerica/V2/TreeA_Short"
+        },
+        {
+            "region": "SouthAmerica",
+            "element": "TreeA_DeadBranches",
+            "prefab": "Prefabs/Cities/SouthAmerica/V2/TreeA_DeadBranches"
+        },
+        {
+            "region": "SouthAmerica",
+            "element": "RepairPlatform",
+            "prefab": "Prefabs/Cities/SouthAmerica/V2/RepairPlatform"
+        },
+        {
+            "region": "SouthAmerica",
+            "element": "TreeB_Slim",
+            "prefab": "Prefabs/Cities/SouthAmerica/V2/TreeB_Slim"
+        },
+        {
+            "region": "SouthAmerica",
+            "element": "TreeB_Short",
+            "prefab": "Prefabs/Cities/SouthAmerica/V2/TreeB_Short"
+        },
+        {
+            "region": "SouthAmerica",
+            "element": "TreeB_DeadBranches",
+            "prefab": "Prefabs/Cities/SouthAmerica/V2/TreeB_DeadBranches"
+        },
+        {
+            "region": "SouthAmerica",
+            "element": "HalfBuiltBoat",
+            "prefab": "Prefabs/Cities/SouthAmerica/V2/HalfBuiltBoat"
+        },
+        {
+            "region": "SouthAmerica",
+            "element": "RoadStraight",
+            "prefab": "Prefabs/Cities/SouthAmerica/V2/RoadStraight"
+        },
+        {
+            "region": "SouthAmerica",
+            "element": "RoadCorner",
+            "prefab": "Prefabs/Cities/SouthAmerica/V2/RoadCorner"
+        },
+        {
+            "region": "SouthAmerica",
+            "element": "RoadTee",
+            "prefab": "Prefabs/Cities/SouthAmerica/V2/RoadTee"
+        },
+        {
+            "region": "SouthAmerica",
+            "element": "RoadCross",
+            "prefab": "Prefabs/Cities/SouthAmerica/V2/RoadCross"
+        },
+        {
+            "region": "SouthAmerica",
+            "element": "RoadEnd",
+            "prefab": "Prefabs/Cities/SouthAmerica/V2/RoadEnd"
+        },
+        {
+            "region": "SouthAmerica",
+            "element": "RoadPlaza",
+            "prefab": "Prefabs/Cities/SouthAmerica/V2/RoadPlaza"
+        },
+        {
+            "region": "SouthAmerica",
+            "element": "GrassRound",
+            "prefab": "Prefabs/Cities/SouthAmerica/V2/GrassRound"
+        },
+        {
+            "region": "SouthAmerica",
+            "element": "GrassWide",
+            "prefab": "Prefabs/Cities/SouthAmerica/V2/GrassWide"
+        },
+        {
+            "region": "SouthAmerica",
+            "element": "GrassCorner",
+            "prefab": "Prefabs/Cities/SouthAmerica/V2/GrassCorner"
+        },
+        {
+            "region": "SouthAmerica",
+            "element": "HouseA",
+            "prefab": "Prefabs/Cities/SouthAmerica/V2/HouseA"
+        },
+        {
+            "region": "SouthAmerica",
+            "element": "Market",
+            "prefab": "Prefabs/Cities/SouthAmerica/V2/Market"
+        },
+        {
+            "region": "SouthAmerica",
+            "element": "BirdLarge",
+            "prefab": "Prefabs/Cities/SouthAmerica/V2/BirdLarge"
+        },
+        {
+            "region": "SouthAmerica",
+            "element": "BirdSmall",
+            "prefab": "Prefabs/Cities/SouthAmerica/V2/BirdSmall"
+        },
+        {
+            "region": "SouthAmerica",
+            "element": "BirdFlock",
+            "prefab": "Prefabs/Cities/SouthAmerica/V2/BirdFlock"
+        },
+        {
+            "region": "SouthAmerica",
+            "element": "Dock",
+            "prefab": "Prefabs/Cities/SouthAmerica/V2/Dock"
+        },
+        {
+            "region": "SouthAmerica",
+            "element": "Shipyard",
+            "prefab": "Prefabs/Cities/SouthAmerica/V2/Shipyard"
+        },
+        {
+            "region": "SouthAmerica",
+            "element": "Water",
+            "prefab": "Prefabs/Cities/SouthAmerica/V2/Water"
+        },
+        {
+            "region": "SouthAmerica",
+            "element": "CoastalSample",
+            "prefab": "Prefabs/Cities/SouthAmerica/V2/CoastalSample"
+        }
+    ]
+}

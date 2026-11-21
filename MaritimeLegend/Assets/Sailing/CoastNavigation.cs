@@ -7,10 +7,13 @@ public sealed class CoastNavigation : ISeaNavigationPolicy {
  public const float Width=1672,Height=941,Clearance=0,SlideFactor=.22f;
  public Vector2 Origin;public bool Contact {get;private set;} public bool Sliding {get;private set;}
  readonly int width,height;readonly float[] distances;readonly float clearanceLimit;
+ readonly Func<Vector2,float> streamedDistance;
+ public CoastNavigation(Func<Vector2,float> sample,float clearance=9){streamedDistance=sample;clearanceLimit=clearance;}
  public CoastNavigation(byte[] bytes,float clearance=Clearance){clearanceLimit=clearance;using(var reader=new BinaryReader(new MemoryStream(bytes))){width=reader.ReadInt32();height=reader.ReadInt32();distances=new float[width*height];for(int i=0;i<distances.Length;i++)distances[i]=reader.ReadSingle();}}
  public Vector2 Pixels(Vector2 uv)=>new Vector2(uv.x*Width,uv.y*Height);
  public Vector2 UV(Vector2 p)=>new Vector2(p.x/Width,p.y/Height);
  public float Distance(Vector2 p){
+  if(streamedDistance!=null)return streamedDistance(p);
   float edge=Mathf.Min(p.x,p.y,Width-1-p.x,Height-1-p.y);if(edge<0)return edge;
   int x=Mathf.Clamp((int)p.x,0,width-2),y=Mathf.Clamp((int)p.y,0,height-2);float tx=p.x-x,ty=p.y-y;
   // Match the two triangles clipped by IndianOceanRenderer.BuildLand exactly.

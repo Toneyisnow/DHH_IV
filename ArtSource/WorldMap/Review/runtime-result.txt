@@ -1,0 +1,2 @@
+PASS: asynchronous world resources; bounded residency; 5 rendered views; port departure, cyclic seam crossing, polar boundary, picking.
+Not a hardware frame-time benchmark.

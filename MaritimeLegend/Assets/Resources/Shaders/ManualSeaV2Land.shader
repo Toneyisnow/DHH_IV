@@ -7,10 +7,10 @@ Shader "Maritime/ManualSeaV2/Land"
  #pragma surface surf Lambert fullforwardshadows vertex:vert
  #pragma target 3.0
  #include "ManualSeaV2Clouds.cginc"
- float _Grain;
+ float _Grain,_SeaLargeWorld;
  struct Input {float4 color:COLOR;float3 worldPos;};
  void vert(inout appdata_full v,out Input o) {UNITY_INITIALIZE_OUTPUT(Input,o);o.color=v.color;}
- float hash(float2 p) {return frac(sin(dot(p,float2(127.1,311.7)))*43758.5453);}
+ float hash(float2 p) {if(_SeaLargeWorld>.5)p=p-floor(p/256)*256;return frac(sin(dot(p,float2(127.1,311.7)))*43758.5453);}
  void surf(Input i,inout SurfaceOutput o) {
   float grain=hash(floor(i.worldPos.xz*22));
   float strokes=hash(floor(i.worldPos.xz*4));

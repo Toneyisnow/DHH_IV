@@ -1,0 +1,1463 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-charl" at "2026-11-08T20:25:19.0690582Z"
+Built from '6000.3/staging' branch; Version is '6000.3.10f1 (e35f0c77bd8e) revision 14901004'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'en' Physical Memory: 32443 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-11-08T20:25:19Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 19672, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              9ac803e7a2da4f929ff904bcd099d2c0
+  Correlation Id:          5eeb90a643a89f0556e16ef970d49a99
+  External correlation Id: 1437305856222649002
+  Machine Id:              ahkCBMpFGkS5dEjRWzhYlmGmQRw=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-charl" (connect: 0.00s, validation: 0.01s, handshake: 0.15s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-charl-notifications" at "2026-11-08T20:25:19.2217499Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 6614505-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.19s
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Unity.exe
+-batchmode
+-force-d3d11
+-quit
+-projectPath
+D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace
+-executeMethod
+MaritimeLegend.Editor.RegionalCityElementsBuilder.Build
+-regionalReview
+D:\SourceCode\Git\toneyisnow\DHH_IV\ArtSource\RegionalCityElements\Review
+-logFile
+D:\SourceCode\Git\toneyisnow\DHH_IV\ArtSource\RegionalCityElements\Review\build.log
+Successfully changed project path to: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace
+D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+Player connection [71552]  Target information:
+
+Player connection [71552]  * "[IP] 192.168.240.1 [Port] 55506 [Flags] 2 [Guid] 2585771164 [EditorId] 2585771164 [Version] 1048832 [Id] WindowsEditor(7,toneyalien12) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [71552]  * "[IP] 10.0.0.99 [Port] 55506 [Flags] 2 [Guid] 2585771164 [EditorId] 2585771164 [Version] 1048832 [Id] WindowsEditor(7,toneyalien12) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [71552]  * "[IP] 10.0.0.24 [Port] 55506 [Flags] 2 [Guid] 2585771164 [EditorId] 2585771164 [Version] 1048832 [Id] WindowsEditor(7,toneyalien12) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [71552] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [71552] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-60976" after 0.5 seconds.
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Artifact Garbage Collection - Removed 55 unused hashed content files
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.10f1 (e35f0c77bd8e)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace/Assets
+Forcing GfxDevice: Direct3D 11
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Ti (ID=0x2489)
+    Vendor:   NVIDIA
+    VRAM:     8024 MB
+    Driver:   32.0.16.1060
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56976
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.004600 seconds.
+- Loaded All Assemblies, in  0.602 seconds
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Licensing::Client] Successfully resolved entitlement details
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.055 seconds
+Domain Reload Profiling: 2650ms
+	BeginReloadAssembly (194ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (17ms)
+	RebuildCommonClasses (55ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (74ms)
+	LoadAllAssembliesAndSetupDomain (254ms)
+		LoadAssemblies (171ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (250ms)
+			TypeCache.Refresh (247ms)
+				TypeCache.ScanAssembly (228ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (2056ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2004ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (107ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (116ms)
+			ProcessInitializeOnLoadAttributes (210ms)
+			ProcessInitializeOnLoadMethodAttributes (1564ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Package Manager] Registered 62 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.ai.navigation@2.0.10 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.ai.navigation@c33a115e9883)
+    com.unity.collab-proxy@2.11.3 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.collab-proxy@e566cd3e7623)
+    com.unity.ide.rider@3.0.39 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.ide.rider@4504839d03f7)
+    com.unity.ide.visualstudio@2.0.26 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.ide.visualstudio@a99d56dec63f)
+    com.unity.inputsystem@1.18.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.inputsystem@57d0e36f6123)
+    com.unity.localization@1.5.13 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.localization@ef5a0677859d)
+    com.unity.timeline@1.8.10 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.timeline@7f8b2fb101b6)
+    com.unity.visualscripting@1.9.9 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.visualscripting@191c0d7e3b69)
+    com.unity.addressables@2.9.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.addressables@de8760a788ae)
+    com.unity.nuget.newtonsoft-json@3.2.2 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.nuget.newtonsoft-json@4dfd81071c64)
+    com.unity.searcher@4.9.4 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.searcher@d45a78918735)
+    com.unity.burst@1.8.28 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.burst@07790c2d06d9)
+    com.unity.mathematics@1.3.3 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.mathematics@19a9377c4ffa)
+    com.unity.collections@2.6.2 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.collections@aea9d3bd5e19)
+    com.unity.profiling.core@1.0.3 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.profiling.core@8a49f7027d06)
+    com.unity.scriptablebuildpipeline@2.6.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.scriptablebuildpipeline@a633a2d168ec)
+    com.unity.nuget.mono-cecil@1.11.6 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff)
+    com.unity.test-framework.performance@3.2.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.test-framework.performance@0840f58e4562)
+  Built-in packages:
+    com.unity.multiplayer.center@1.0.1 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.multiplayer.center@f01f4ba8d00a)
+    com.unity.render-pipelines.universal@17.3.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.render-pipelines.universal@37e0d4fc2503)
+    com.unity.test-framework@1.6.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.test-framework@0b7a23ab2e1d)
+    com.unity.ugui@2.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.ugui@bb329a87fcdc)
+    com.unity.modules.accessibility@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.screencapture@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.terrainphysics)
+    com.unity.modules.tilemap@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.tilemap)
+    com.unity.modules.ui@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.video)
+    com.unity.modules.vr@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.vr)
+    com.unity.modules.wind@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.modules.hierarchycore)
+    com.unity.ext.nunit@2.0.5 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.ext.nunit@d8c07649098d)
+    com.unity.render-pipelines.core@17.3.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.render-pipelines.core@04ab0eefa0c3)
+    com.unity.shadergraph@17.3.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.shadergraph@c8830f61858d)
+    com.unity.render-pipelines.universal-config@17.0.3 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\.BuildWorkspace\Library\PackageCache\com.unity.render-pipelines.universal-config@8dc1aab4af1d)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.00 seconds
+[ScriptCompilation] Requested script compilation because: Assetdatabase observed changes in script compilation related files
+Starting: C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aEDbg.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: D:/SourceCode/Git/toneyisnow/DHH_IV/MaritimeLegend/.BuildWorkspace
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 2s354ms
+[773/991    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[987/991    1s] Csc Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp-Editor.dll (+2 others)
+[988/991    0s] ILPostProcess Library/Bee/artifacts/1900b0aEDbg.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp-Editor.dll, with 136 defines and 344 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[989/991    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+[990/991    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+*** Tundra build success (2.26 seconds), 5 items updated, 991 evaluated
+AssetDatabase: script compilation time: 3.188425s
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.208 seconds
+Start importing ProjectSettings/QualitySettings.asset using Guid(00000000000000009000000000000000) (LibraryAssetImporter) -> (artifact id: '2babe2ccb608ede727d159ed48a73984') in 0.0240996 seconds
+Refreshing native plugins compatible for Editor in 1.24 ms, found 3 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  6.561 seconds
+Domain Reload Profiling: 7763ms
+	BeginReloadAssembly (371ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (47ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (154ms)
+	RebuildCommonClasses (41ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (738ms)
+		LoadAssemblies (527ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (333ms)
+			TypeCache.Refresh (231ms)
+				TypeCache.ScanAssembly (214ms)
+			BuildScriptInfoCaches (85ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (6561ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (6353ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (41ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (302ms)
+			ProcessInitializeOnLoadAttributes (5843ms)
+			ProcessInitializeOnLoadMethodAttributes (140ms)
+			AfterProcessingInitializeOnLoad (17ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (23ms)
+Refreshing native plugins compatible for Editor in 1.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=b2fdb9cddeb8811419822d1fc673cb5a): Total: 12.714 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=1 (actual=1, local cache=0, cache server=0)
+		Asset DB Process Time: managed=3 ms, native=7590 ms
+		Asset DB Callback time: managed=530 ms, native=12 ms
+		Scripting: domain reloads=1, domain reload time=1209 ms, compile time=3191 ms, other=176 ms
+		Project Asset Count: scripts=1703, non-scripts=3848
+		Asset File Changes: new=0, changed=2, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokeCustomDependenciesCallbacks: 0.001ms
+	InvokePackagesCallback: 8.238ms
+	ApplyChangesToAssetFolders: 0.870ms
+	Scan: 441.611ms
+	OnSourceAssetsModified: 0.954ms
+	CategorizeAssetsWithTransientArtifact: 74.938ms
+	ProcessAssetsWithTransientArtifactChanges: 104.269ms
+	CategorizeAssets: 79.936ms
+	ImportOutOfDateAssets: 6603.631ms (3378.757ms without children)
+		ImportManagerImport: 29.797ms (5.420ms without children)
+			ImportInProcess: 24.348ms
+			UpdateCategorizedAssets: 0.029ms
+		CompileScripts: 3190.884ms
+		ReloadNativeAssets: 0.061ms
+		UnloadImportedAssets: 1.913ms
+		ReloadImportedAssets: 0.000ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 1.175ms
+		InitializingProgressBar: 0.001ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.001ms
+		OnDemandSchedulerStart: 1.043ms
+	PostProcessAllAssets: 531.899ms
+	Hotreload: 3.839ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.003ms
+	UnloadStreamsBegin: 1.767ms
+	PersistCurrentRevisions: 0.359ms
+	UnloadStreamsEnd: 0.002ms
+	GenerateScriptTypeHashes: 3.950ms
+	Untracked: 4861.482ms
+
+Application.AssetDatabase Initial Refresh End
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Scanning for USB devices : 6.640ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-航海世家
+Unloading 194 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7507 unused Assets / (12.8 MB). Loaded Objects now: 8301.
+Memory consumption went from 259.5 MB to 246.8 MB.
+Total: 16.457800 ms (FindLiveObjects: 0.720300 ms CreateObjectMapping: 0.794000 ms MarkObjects: 7.870800 ms  DeleteObjects: 7.071200 ms)
+
+Asset Pipeline Refresh (id=e2bc8fbf53df87c4788db8ba0633ec98): Total: 0.089 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Europe/Elements.png using Guid(d2f1887cf1e51354aa852d985ec92bd1) (TextureImporter) -> (artifact id: 'd99f39237d120ee2644d5800c8a1989b') in 0.0710762 seconds
+Refreshing native plugins compatible for Editor in 1.29 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=2892968d6b980ba48b2d49dc6c7773f2): Total: 0.168 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Europe/Road.png using Guid(b33c8802ef6fb2e4fbb88b9f3f2d7e9e) (TextureImporter) -> (artifact id: 'fe832f8eb8055f44d8ef65ccc669b953') in 0.0130735 seconds
+Refreshing native plugins compatible for Editor in 1.28 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=2bfda5287c7313345a344c80957241c7): Total: 0.036 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Europe/Road.png using Guid(b33c8802ef6fb2e4fbb88b9f3f2d7e9e) (TextureImporter) -> (artifact id: 'fe832f8eb8055f44d8ef65ccc669b953') in 0.0119912 seconds
+Refreshing native plugins compatible for Editor in 1.35 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=e2fec20813266074187c4c02eb06be39): Total: 0.037 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=21eef8a14bcdf20488df63495a704e16): Total: 0.011 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Europe/House.png using Guid(cdd774db887f1f941869c10a41762f72) (TextureImporter) -> (artifact id: 'e613584d67d6108e47bf3f0eb236ff9b') in 0.0189461 seconds
+Refreshing native plugins compatible for Editor in 1.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=174ac378c4e5ae14895db1d79413322d): Total: 0.050 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Europe/House.png using Guid(cdd774db887f1f941869c10a41762f72) (TextureImporter) -> (artifact id: 'e613584d67d6108e47bf3f0eb236ff9b') in 0.0181735 seconds
+Refreshing native plugins compatible for Editor in 1.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=45fc575110463b643b48f51e49395bac): Total: 0.048 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Prefabs/Cities/Europe/House.prefab using Guid(6c854da146354fa449f8141f38d03753) (PrefabImporter) -> (artifact id: '01d8ad33e9a2c40e44c85c48fcf7a22c') in 0.0073595 seconds
+Start importing Assets/Resources/Prefabs/Cities/Europe/Sample.prefab using Guid(22348f0b1695d5942a2b486631737938) (PrefabImporter) -> (artifact id: '8a37c04df7b52579c6053ebc90a96ee7') in 0.0226889 seconds
+Refreshing native plugins compatible for Editor in 1.33 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=7d9b6239756fe7b40a8c9c0dde69106a): Total: 0.077 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Europe/Tree.png using Guid(cb693e9bd75584f4ab4aa94abb00a909) (TextureImporter) -> (artifact id: 'da734d24feb39a08e0e3cdb5cd9f6389') in 0.0178485 seconds
+Refreshing native plugins compatible for Editor in 1.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=70ce6f03d92eee04197cd7d3c8cf8b15): Total: 0.047 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Europe/Tree.png using Guid(cb693e9bd75584f4ab4aa94abb00a909) (TextureImporter) -> (artifact id: 'da734d24feb39a08e0e3cdb5cd9f6389') in 0.0190148 seconds
+Refreshing native plugins compatible for Editor in 1.28 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=2cdee5322eea92842a51545452337584): Total: 0.050 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=0767458c1955a414f8965c5f472ab6f1): Total: 0.011 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Europe/Market.png using Guid(704e2f0c2ae8e3b4e932e576c6133d49) (TextureImporter) -> (artifact id: '8f42421b2ec5989d39e5b4d8073759f7') in 0.0150861 seconds
+Refreshing native plugins compatible for Editor in 1.41 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=04b08305a720f174db2f7e60edf1e97c): Total: 0.039 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Europe/Market.png using Guid(704e2f0c2ae8e3b4e932e576c6133d49) (TextureImporter) -> (artifact id: '8f42421b2ec5989d39e5b4d8073759f7') in 0.0153449 seconds
+Refreshing native plugins compatible for Editor in 1.29 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=58da879d22c4c1f47be77210d884ffcb): Total: 0.042 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=1514df68b672d474eb24419a83935784): Total: 0.011 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Europe/Eave.png using Guid(c230336bdb008784baefa3f2245462ac) (TextureImporter) -> (artifact id: '46555ee3512812e088d57e95555f689d') in 0.0088573 seconds
+Refreshing native plugins compatible for Editor in 1.23 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=2d90a9195ef83a246a1e271f2b00d939): Total: 0.032 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Europe/Eave.png using Guid(c230336bdb008784baefa3f2245462ac) (TextureImporter) -> (artifact id: '46555ee3512812e088d57e95555f689d') in 0.0081232 seconds
+Refreshing native plugins compatible for Editor in 1.38 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=77295f00fcd24fa4bb756fa30a752d7a): Total: 0.031 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=c66196d8b37b4a947bcafc48854e3881): Total: 0.010 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Europe/Bird.png using Guid(d564bacaa133fa44c9170cae00e9abd3) (TextureImporter) -> (artifact id: 'd34cead7531b07fe1f9fa34074146e7e') in 0.0111219 seconds
+Refreshing native plugins compatible for Editor in 1.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=93c45ca004c260d48bae3ac0874b7e5d): Total: 0.036 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Europe/Bird.png using Guid(d564bacaa133fa44c9170cae00e9abd3) (TextureImporter) -> (artifact id: 'd34cead7531b07fe1f9fa34074146e7e') in 0.0114836 seconds
+Refreshing native plugins compatible for Editor in 1.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=919172198f94563458b8a3b48cd42b67): Total: 0.043 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=70b5eb18acbe303488c1354998ec1db1): Total: 0.013 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Prefabs/Cities/Europe/House.prefab using Guid(6c854da146354fa449f8141f38d03753) (PrefabImporter) -> (artifact id: '3b55970f999b6be800ed70438378e097') in 0.0094473 seconds
+Start importing Assets/Resources/Prefabs/Cities/Europe/Sample.prefab using Guid(22348f0b1695d5942a2b486631737938) (PrefabImporter) -> (artifact id: 'ce7cf9274c1573ddc54b3c092acb2dc6') in 0.0171738 seconds
+Refreshing native plugins compatible for Editor in 1.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=1ed4b1a600dcce649b57be8b20efd792): Total: 0.081 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Prefabs/Cities/Europe/Sample.prefab using Guid(22348f0b1695d5942a2b486631737938) (PrefabImporter) -> (artifact id: 'b3716f308e7b669ea053d08c7854e304') in 0.0179498 seconds
+Refreshing native plugins compatible for Editor in 2.37 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=e77b64cb3d8e0fb48987aa6caafa18f0): Total: 0.082 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Europe/Elements.png using Guid(d2f1887cf1e51354aa852d985ec92bd1) (TextureImporter) -> (artifact id: 'a3453eb60aaefaa307924af98d617103') in 0.0821626 seconds
+Refreshing native plugins compatible for Editor in 1.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=83ec2a875c582b44da522e45774bc022): Total: 0.151 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=b043d4e2d8d67a34da7830ac4938138f): Total: 0.022 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Nordic/Elements.png using Guid(f234a3ecd7ddf8946bd63d5b0cc5960b) (TextureImporter) -> (artifact id: '9494448b8e4784a5df653eb00b4a8180') in 0.0733746 seconds
+Refreshing native plugins compatible for Editor in 1.38 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=5d9906193743a1d4586e7f3e638846a4): Total: 0.143 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Nordic/Road.png using Guid(119e97c5cdbb7c8439164cfab5c87177) (TextureImporter) -> (artifact id: '8db263be96b52a037ac84c71f4f31866') in 0.0164407 seconds
+Refreshing native plugins compatible for Editor in 1.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=b05c2d3caaa4eec49a618e095b2eeba8): Total: 0.045 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Nordic/Road.png using Guid(119e97c5cdbb7c8439164cfab5c87177) (TextureImporter) -> (artifact id: '8db263be96b52a037ac84c71f4f31866') in 0.0149991 seconds
+Refreshing native plugins compatible for Editor in 1.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=65c2f498c1da8fb4d8cc8f2d63b0fdfe): Total: 0.044 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=26928ea72a6a58848889e6bf401a66f4): Total: 0.013 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Nordic/House.png using Guid(c49a0aa01cf90334c97c17293460ad58) (TextureImporter) -> (artifact id: 'cf83f81bda834ff8bfe213d907af2207') in 0.0168237 seconds
+Refreshing native plugins compatible for Editor in 1.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=e08a377c203e50346aeddea2f964c384): Total: 0.049 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Nordic/House.png using Guid(c49a0aa01cf90334c97c17293460ad58) (TextureImporter) -> (artifact id: 'cf83f81bda834ff8bfe213d907af2207') in 0.0156017 seconds
+Refreshing native plugins compatible for Editor in 1.39 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=dd20643f6071ccf4bb33cd086ac74a91): Total: 0.040 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Prefabs/Cities/Nordic/House.prefab using Guid(3bad63c487b9f0d4c9290ed2782ac50b) (PrefabImporter) -> (artifact id: '7ab982f0201b97afb7bec32e0fed6225') in 0.0495509 seconds
+Start importing Assets/Resources/Prefabs/Cities/Nordic/Sample.prefab using Guid(d5918e03cba9ccb47964142a12e27b62) (PrefabImporter) -> (artifact id: 'e43d1b470d3232971f842269e03c26a7') in 0.0229768 seconds
+Refreshing native plugins compatible for Editor in 1.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=0ff19a6394bbba34db8833138358b22a): Total: 0.142 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Nordic/Tree.png using Guid(9484dfa9f603eef478cf3c513f871938) (TextureImporter) -> (artifact id: 'd57ac38d2ca9297e5a434d1633cf164d') in 0.0164691 seconds
+Refreshing native plugins compatible for Editor in 1.34 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=710e9fbb6ae09854ebb7d5ef9c9233f9): Total: 0.042 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Nordic/Tree.png using Guid(9484dfa9f603eef478cf3c513f871938) (TextureImporter) -> (artifact id: 'd57ac38d2ca9297e5a434d1633cf164d') in 0.0152282 seconds
+Refreshing native plugins compatible for Editor in 1.29 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=361620c479403674a815bcff74260e17): Total: 0.045 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=fede12b124f173249b1adb43ce1ceaad): Total: 0.010 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Nordic/Market.png using Guid(56c92125e9c8fcb41ba9261433b66852) (TextureImporter) -> (artifact id: '1ed6d3bc50f763884c591c43179ad9e9') in 0.0134705 seconds
+Refreshing native plugins compatible for Editor in 1.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=d1cebe442910e7149aadc33696c5a26c): Total: 0.036 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Nordic/Market.png using Guid(56c92125e9c8fcb41ba9261433b66852) (TextureImporter) -> (artifact id: '1ed6d3bc50f763884c591c43179ad9e9') in 0.0133843 seconds
+Refreshing native plugins compatible for Editor in 1.22 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=294ea8225756e1b488438e1a0a4817b8): Total: 0.036 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=d8c2ad85ee098b043b64f114ee82896c): Total: 0.010 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Nordic/Eave.png using Guid(fc049031956a77940be326e039484240) (TextureImporter) -> (artifact id: '9664599dc001b6874474a1c1ebb4fa28') in 0.0090991 seconds
+Refreshing native plugins compatible for Editor in 1.28 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=f4277ba68d397da4b8c1e8669e97ff5e): Total: 0.033 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Nordic/Eave.png using Guid(fc049031956a77940be326e039484240) (TextureImporter) -> (artifact id: '9664599dc001b6874474a1c1ebb4fa28') in 0.0090985 seconds
+Refreshing native plugins compatible for Editor in 1.20 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=025de30fe93f32d489380d1074159a40): Total: 0.032 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=966e056e4c9ae4e44b36386c922f31bd): Total: 0.010 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Nordic/Bird.png using Guid(bdff4045a52db6d4793cd6ec05daa178) (TextureImporter) -> (artifact id: 'a6f9434b23fc723f2e80c28dcbbcda80') in 0.0105229 seconds
+Refreshing native plugins compatible for Editor in 1.24 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=18deb3944aea13f44b8f4d74139ef71f): Total: 0.032 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Nordic/Bird.png using Guid(bdff4045a52db6d4793cd6ec05daa178) (TextureImporter) -> (artifact id: 'a6f9434b23fc723f2e80c28dcbbcda80') in 0.0104539 seconds
+Refreshing native plugins compatible for Editor in 1.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=92913c154e78a304fbc79790e6905cfe): Total: 0.034 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=4aaf65b789ba78147a8f03568cd3d3ee): Total: 0.010 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Prefabs/Cities/Nordic/House.prefab using Guid(3bad63c487b9f0d4c9290ed2782ac50b) (PrefabImporter) -> (artifact id: 'afca8297caec767cac093cb92654f98f') in 0.0060571 seconds
+Start importing Assets/Resources/Prefabs/Cities/Nordic/Sample.prefab using Guid(d5918e03cba9ccb47964142a12e27b62) (PrefabImporter) -> (artifact id: '88f728f614cf7e72b5b1bd534724b22c') in 0.0114173 seconds
+Refreshing native plugins compatible for Editor in 1.20 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=e8f02bd7f8d84864d9a161aa25469eb3): Total: 0.059 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Prefabs/Cities/Nordic/Sample.prefab using Guid(d5918e03cba9ccb47964142a12e27b62) (PrefabImporter) -> (artifact id: '9432e238fd0c1aace8fa3c0f4ed017f7') in 0.0112915 seconds
+Refreshing native plugins compatible for Editor in 1.17 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=05e1509bde7d6a64788bec75840a0250): Total: 0.054 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Nordic/Elements.png using Guid(f234a3ecd7ddf8946bd63d5b0cc5960b) (TextureImporter) -> (artifact id: '3854e8e19e32c9da8897c8f317ea903d') in 0.0624947 seconds
+Refreshing native plugins compatible for Editor in 1.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=00487f0ed515bb74186914d67224929f): Total: 0.114 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=21ccdfd76140b4741b661b4de3f587f4): Total: 0.016 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Mediterranean/Elements.png using Guid(91be373e542efc94898dac84d7eead4e) (TextureImporter) -> (artifact id: 'afa166e1a1b8579daa0f581cf3375ab7') in 0.0638967 seconds
+Refreshing native plugins compatible for Editor in 1.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=3598fe1133a8fbc42ada5b7071d58609): Total: 0.116 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Mediterranean/Road.png using Guid(3c9c99916b8a7aa42b92e5a0a38fd2a1) (TextureImporter) -> (artifact id: '560e078279bcc6124c9777b860848624') in 0.0114565 seconds
+Refreshing native plugins compatible for Editor in 1.19 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=e784c4aa3df71fa42a38f0943d3aceac): Total: 0.034 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Mediterranean/Road.png using Guid(3c9c99916b8a7aa42b92e5a0a38fd2a1) (TextureImporter) -> (artifact id: '560e078279bcc6124c9777b860848624') in 0.0105662 seconds
+Refreshing native plugins compatible for Editor in 1.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=bb263b3236d017a49877dc75a2a7eb22): Total: 0.033 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=bbf58c6230fa7f94b9394905151ceaa9): Total: 0.010 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Mediterranean/House.png using Guid(d08e4c726f461314abcbefb0c4d3f65e) (TextureImporter) -> (artifact id: '7280415d08c0b1b64893a451eaae1f6a') in 0.0148884 seconds
+Refreshing native plugins compatible for Editor in 1.23 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=c25cf9577b5973a47afb6d78f0817eac): Total: 0.040 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Mediterranean/House.png using Guid(d08e4c726f461314abcbefb0c4d3f65e) (TextureImporter) -> (artifact id: '7280415d08c0b1b64893a451eaae1f6a') in 0.0154136 seconds
+Refreshing native plugins compatible for Editor in 1.32 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=d4e1a996a544c154cad5eded7f2922f0): Total: 0.041 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Prefabs/Cities/Mediterranean/House.prefab using Guid(43669c090ce4b3f4588e0ffb4ed68f8f) (PrefabImporter) -> (artifact id: '7f1ecde3dced9672004b221fbca73521') in 0.0071264 seconds
+Start importing Assets/Resources/Prefabs/Cities/Mediterranean/Sample.prefab using Guid(f9bf0f111522d4242b810a1227e28a11) (PrefabImporter) -> (artifact id: '16ed2aab25ac692aa484a68ec4ff1666') in 0.0196743 seconds
+Refreshing native plugins compatible for Editor in 1.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=d9aa3f9e2e3bf3f4f9b7367801963671): Total: 0.074 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Mediterranean/Tree.png using Guid(841cc9350d7712f47b7cdc555719c1f7) (TextureImporter) -> (artifact id: '550c7ebc728b86a2f0f964f6f2165f6e') in 0.0145648 seconds
+Refreshing native plugins compatible for Editor in 1.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=4a580848033dd204ab313cae9be5300b): Total: 0.037 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Mediterranean/Tree.png using Guid(841cc9350d7712f47b7cdc555719c1f7) (TextureImporter) -> (artifact id: '550c7ebc728b86a2f0f964f6f2165f6e') in 0.0140803 seconds
+Refreshing native plugins compatible for Editor in 1.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=2aa4bdb967255374ab605a149494e9e8): Total: 0.038 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=81820ef2c494f5a4f95d0a4b520f9469): Total: 0.010 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Mediterranean/Market.png using Guid(23368fea1b139c84a8008f08ef1bd4d0) (TextureImporter) -> (artifact id: '94a9a842199140471d53acf0210efe37') in 0.0131393 seconds
+Refreshing native plugins compatible for Editor in 1.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=18ef6493e65f6224fa089e86e526484f): Total: 0.035 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Mediterranean/Market.png using Guid(23368fea1b139c84a8008f08ef1bd4d0) (TextureImporter) -> (artifact id: '94a9a842199140471d53acf0210efe37') in 0.0127521 seconds
+Refreshing native plugins compatible for Editor in 1.11 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=f44113efa04ce484389643b79f41cfc2): Total: 0.034 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=41908b5b685c065429bb459fe8de5115): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Mediterranean/Eave.png using Guid(d371d05ead015ef4fbe1956056db5b61) (TextureImporter) -> (artifact id: '59c323a46a5d95e3c63cd7eae26bda0f') in 0.0067638 seconds
+Refreshing native plugins compatible for Editor in 1.12 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=7dd7deb9a510730458d10a1a8d12d00e): Total: 0.028 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Mediterranean/Eave.png using Guid(d371d05ead015ef4fbe1956056db5b61) (TextureImporter) -> (artifact id: '59c323a46a5d95e3c63cd7eae26bda0f') in 0.0066797 seconds
+Refreshing native plugins compatible for Editor in 1.29 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=e388d51e9329f9f458635f1341af4fd5): Total: 0.029 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=a15cb226d4bf18d42b64483468933c43): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Mediterranean/Bird.png using Guid(923f45ead00f24b4c8472b5d1c2caa44) (TextureImporter) -> (artifact id: '5c1d1dfe15b0f973ce257d11444c5701') in 0.0096677 seconds
+Refreshing native plugins compatible for Editor in 1.19 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=da80b11fb62055f47821c5de8c4e7dcb): Total: 0.032 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Mediterranean/Bird.png using Guid(923f45ead00f24b4c8472b5d1c2caa44) (TextureImporter) -> (artifact id: '5c1d1dfe15b0f973ce257d11444c5701') in 0.0080213 seconds
+Refreshing native plugins compatible for Editor in 1.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=80739a05d89aeed4286c40ad491440c2): Total: 0.032 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=862d8f0326565874bb94a83017577322): Total: 0.010 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Prefabs/Cities/Mediterranean/House.prefab using Guid(43669c090ce4b3f4588e0ffb4ed68f8f) (PrefabImporter) -> (artifact id: '456d8093504d247b2c26fbda7b692759') in 0.0063165 seconds
+Start importing Assets/Resources/Prefabs/Cities/Mediterranean/Sample.prefab using Guid(f9bf0f111522d4242b810a1227e28a11) (PrefabImporter) -> (artifact id: '5cd8645cee021314f1eb3c73a503e82f') in 0.0123458 seconds
+Refreshing native plugins compatible for Editor in 1.22 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=cd687dafea1b618448f5a501df8e28a9): Total: 0.060 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Prefabs/Cities/Mediterranean/Sample.prefab using Guid(f9bf0f111522d4242b810a1227e28a11) (PrefabImporter) -> (artifact id: '17a5c5d77d2f6b849a5b0b9c09487402') in 0.0117811 seconds
+Refreshing native plugins compatible for Editor in 1.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=4e4505c1ed6feab4ca5f2db5cb7b03fa): Total: 0.054 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Mediterranean/Elements.png using Guid(91be373e542efc94898dac84d7eead4e) (TextureImporter) -> (artifact id: '8ef405759928c4909f57d05adb75eaca') in 0.0596053 seconds
+Refreshing native plugins compatible for Editor in 1.19 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=f5300c2daca2f2e49aad579173b1f8be): Total: 0.111 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=91f78c8532627a247bc3be71dd2c015c): Total: 0.017 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Africa/Elements.png using Guid(9656c75b7de13f04095aff355f830dca) (TextureImporter) -> (artifact id: '7354a9ed2ec0664dfaa67049f740f302') in 0.0646049 seconds
+Refreshing native plugins compatible for Editor in 1.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=27882e254373ae44b8ffaab97cea4ed2): Total: 0.116 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Africa/Road.png using Guid(ffe5e33ca7f534848a12a05e0f18cf32) (TextureImporter) -> (artifact id: '9637e12f535a4b2df0586286df89dcf5') in 0.0122151 seconds
+Refreshing native plugins compatible for Editor in 1.17 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=8f5c118b953092f468f26410a6c76885): Total: 0.034 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Africa/Road.png using Guid(ffe5e33ca7f534848a12a05e0f18cf32) (TextureImporter) -> (artifact id: '9637e12f535a4b2df0586286df89dcf5') in 0.0117667 seconds
+Refreshing native plugins compatible for Editor in 1.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=7e7f3745d11928e4c9d137d997492d6b): Total: 0.035 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=d1af579c3bf9a0447b9d4d79b49b2611): Total: 0.010 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Africa/House.png using Guid(77033d85c52295945a0b727f22b2d6f8) (TextureImporter) -> (artifact id: 'a38b28cdf3ac7767085460a4260e8927') in 0.0154915 seconds
+Refreshing native plugins compatible for Editor in 1.11 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=a32ce72047151f04ead4bc010bc5ed9a): Total: 0.037 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Africa/House.png using Guid(77033d85c52295945a0b727f22b2d6f8) (TextureImporter) -> (artifact id: 'a38b28cdf3ac7767085460a4260e8927') in 0.0205368 seconds
+Refreshing native plugins compatible for Editor in 1.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=e4069cc8a250c694bbd3373eaf3e1a0b): Total: 0.046 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Prefabs/Cities/Africa/House.prefab using Guid(a4142e546dc0f954ba58f827e2ca77b4) (PrefabImporter) -> (artifact id: '998fbbc25fabd291d0522dde2aa06a14') in 0.010017 seconds
+Start importing Assets/Resources/Prefabs/Cities/Africa/Sample.prefab using Guid(46e7fbf68a8a1f8499ece869b80afca3) (PrefabImporter) -> (artifact id: '24a1a7bca24d9496dd884c1893cc759e') in 0.0263188 seconds
+Refreshing native plugins compatible for Editor in 1.93 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=ef27410da1a116f4bb75665b6d7e87a2): Total: 0.096 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Africa/Tree.png using Guid(9143fa3fdad33a349b842fa47d7a0775) (TextureImporter) -> (artifact id: 'e563b6090f880d028d1e5cf6d8b5995a') in 0.0149308 seconds
+Refreshing native plugins compatible for Editor in 1.41 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=17f0eec54305c0e4f82633375d270a03): Total: 0.041 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Africa/Tree.png using Guid(9143fa3fdad33a349b842fa47d7a0775) (TextureImporter) -> (artifact id: 'e563b6090f880d028d1e5cf6d8b5995a') in 0.014979 seconds
+Refreshing native plugins compatible for Editor in 1.27 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=8353b4809ccd3214499d140a0745433e): Total: 0.043 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=5ff2cd4178dc63844b7c73c3eb1b792e): Total: 0.012 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Africa/Market.png using Guid(9fb3ff2e49dbdb4459a1494f4b2ff32e) (TextureImporter) -> (artifact id: 'd5e95100a953291a2048f1c8dfb901d5') in 0.0148307 seconds
+Refreshing native plugins compatible for Editor in 1.28 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=014aec6bd7c1f124b820bb3dbb51eac8): Total: 0.038 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Africa/Market.png using Guid(9fb3ff2e49dbdb4459a1494f4b2ff32e) (TextureImporter) -> (artifact id: 'd5e95100a953291a2048f1c8dfb901d5') in 0.0141463 seconds
+Refreshing native plugins compatible for Editor in 1.24 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=304170f2902caea4c972b71f44c27a44): Total: 0.038 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=7bb8e6e25313ff445b84a3018f467cd2): Total: 0.010 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Africa/Eave.png using Guid(501803670d060fd468ce49bf909c6160) (TextureImporter) -> (artifact id: '8695f5a93c6b2e10a75cf2436cd657d7') in 0.0089044 seconds
+Refreshing native plugins compatible for Editor in 1.17 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=77caa13e86b7e53419b59e749c638651): Total: 0.030 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Africa/Eave.png using Guid(501803670d060fd468ce49bf909c6160) (TextureImporter) -> (artifact id: '8695f5a93c6b2e10a75cf2436cd657d7') in 0.0093552 seconds
+Refreshing native plugins compatible for Editor in 1.14 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=496cdcc82f63c084d8fcfd37d0c6766a): Total: 0.031 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=e2b6c6f61d8cdf6429d2d92ab833504d): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Africa/Bird.png using Guid(ee0d38edcc4ba744aa357ad53bbcc071) (TextureImporter) -> (artifact id: '54340d2f87870fe3a008daf13f4e5ddf') in 0.0110899 seconds
+Refreshing native plugins compatible for Editor in 1.75 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=deadb40b10460264e8dd01b574573bdc): Total: 0.033 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Africa/Bird.png using Guid(ee0d38edcc4ba744aa357ad53bbcc071) (TextureImporter) -> (artifact id: '54340d2f87870fe3a008daf13f4e5ddf') in 0.0102807 seconds
+Refreshing native plugins compatible for Editor in 1.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=639640ea745b4d847bc9d745551a575e): Total: 0.033 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=2ca8d7a9fb8460c4a8c0f03fd9412d7a): Total: 0.010 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Prefabs/Cities/Africa/House.prefab using Guid(a4142e546dc0f954ba58f827e2ca77b4) (PrefabImporter) -> (artifact id: 'a1fb763eb2bef771375ea5ccbc1cdfec') in 0.0070616 seconds
+Start importing Assets/Resources/Prefabs/Cities/Africa/Sample.prefab using Guid(46e7fbf68a8a1f8499ece869b80afca3) (PrefabImporter) -> (artifact id: '05bc576fa4d6bbc91b7bd026fec76631') in 0.0130954 seconds
+Refreshing native plugins compatible for Editor in 1.26 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=b9bb975f1f53d6c4aa65027d1b05f865): Total: 0.067 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Prefabs/Cities/Africa/Sample.prefab using Guid(46e7fbf68a8a1f8499ece869b80afca3) (PrefabImporter) -> (artifact id: '986f4b6cef08b701ee6f355d18b33bb1') in 0.0158525 seconds
+Refreshing native plugins compatible for Editor in 1.27 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=7771978de7eab1a47ac893f251c116aa): Total: 0.066 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Africa/Elements.png using Guid(9656c75b7de13f04095aff355f830dca) (TextureImporter) -> (artifact id: 'f8e92293c676bdb649d9c18dcd447fbd') in 0.0651908 seconds
+Refreshing native plugins compatible for Editor in 1.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=397d507cfd952ae448183d8dbcff6b7e): Total: 0.120 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=bd37c573ded537f4299a41c94d394db4): Total: 0.016 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Asia/Elements.png using Guid(b435eb212d8e1c447a78e4666b08589b) (TextureImporter) -> (artifact id: 'b5d92c7b4fb8bd729173b254dab2eb49') in 0.0622741 seconds
+Refreshing native plugins compatible for Editor in 1.17 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=3e2fd0acfda6ef542bab1ec7cc365402): Total: 0.113 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Asia/Road.png using Guid(c9e3f66503f11af4abcaa8eb4b7bbee0) (TextureImporter) -> (artifact id: 'ace56689663e354a3fbc787f1d3f9939') in 0.0109812 seconds
+Refreshing native plugins compatible for Editor in 1.27 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=087a14bc308009244af45502b68d531d): Total: 0.034 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Asia/Road.png using Guid(c9e3f66503f11af4abcaa8eb4b7bbee0) (TextureImporter) -> (artifact id: 'ace56689663e354a3fbc787f1d3f9939') in 0.0112945 seconds
+Refreshing native plugins compatible for Editor in 1.17 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=7cae2a1aa92ee3546bd0e53009fbd1fe): Total: 0.034 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=fb0f4afaab87409439816f7df1a245de): Total: 0.010 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Asia/House.png using Guid(57784643de218eb4ca21773fb8a9351e) (TextureImporter) -> (artifact id: 'c351b1df4810e922371d497b09ccef5a') in 0.0164126 seconds
+Refreshing native plugins compatible for Editor in 1.24 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=8c3344c4376113e489d200ddbb3b2a51): Total: 0.043 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Asia/House.png using Guid(57784643de218eb4ca21773fb8a9351e) (TextureImporter) -> (artifact id: 'c351b1df4810e922371d497b09ccef5a') in 0.0161021 seconds
+Refreshing native plugins compatible for Editor in 1.19 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=d423cfebe6caa6f40abebd9c2fca0fd9): Total: 0.041 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Prefabs/Cities/Asia/House.prefab using Guid(ce607735588fcc3499aeda47e90f3d32) (PrefabImporter) -> (artifact id: '21004a6c49d739e3d2e170787ea2dfe9') in 0.0061353 seconds
+Start importing Assets/Resources/Prefabs/Cities/Asia/Sample.prefab using Guid(14d870c93f023a848b0bcca49cb7af71) (PrefabImporter) -> (artifact id: 'f1a7f144afea94c6810a556530a9f974') in 0.0167269 seconds
+Refreshing native plugins compatible for Editor in 1.16 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=26d5406604d62c640b6cdef09a751bbc): Total: 0.063 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Asia/Tree.png using Guid(fd52965fba934f2449a992d56293569a) (TextureImporter) -> (artifact id: '954765ca020872938b52386793be4b15') in 0.0125146 seconds
+Refreshing native plugins compatible for Editor in 1.17 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=5cf553838f5ab3248805c7102cadd4a1): Total: 0.033 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Asia/Tree.png using Guid(fd52965fba934f2449a992d56293569a) (TextureImporter) -> (artifact id: '954765ca020872938b52386793be4b15') in 0.0121075 seconds
+Refreshing native plugins compatible for Editor in 1.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=e2773eb25c6568444be2358b36057f2a): Total: 0.035 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=b55fabd1bc6a87842ab2778f031894e5): Total: 0.010 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Asia/Market.png using Guid(92f05dd3079745740bdbfbfa7d550479) (TextureImporter) -> (artifact id: 'b0a23bdc582a1a4d414bcb0ee3d54854') in 0.0156005 seconds
+Refreshing native plugins compatible for Editor in 1.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=2c9be98e22ff2ad4085325561805fad8): Total: 0.040 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Asia/Market.png using Guid(92f05dd3079745740bdbfbfa7d550479) (TextureImporter) -> (artifact id: 'b0a23bdc582a1a4d414bcb0ee3d54854') in 0.0132538 seconds
+Refreshing native plugins compatible for Editor in 1.16 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=7c5c9c7f83b38c44fad6512c855fcb3c): Total: 0.036 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=ea3d598424bb1af47870965e15f43049): Total: 0.010 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Asia/Eave.png using Guid(5f97d6d0bd6047147a695f416984a38f) (TextureImporter) -> (artifact id: '1088322aefdf9c46f8bf1f211cdcc54e') in 0.0092051 seconds
+Refreshing native plugins compatible for Editor in 1.22 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=96b78465fe6ea374abcbcfdd58442001): Total: 0.032 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Asia/Eave.png using Guid(5f97d6d0bd6047147a695f416984a38f) (TextureImporter) -> (artifact id: '1088322aefdf9c46f8bf1f211cdcc54e') in 0.0088738 seconds
+Refreshing native plugins compatible for Editor in 1.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=c3384b22863ad8b4dbca78cd1e741df7): Total: 0.035 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=0dcfd1b19a78c5f45b9b3d5019a5fba0): Total: 0.010 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Asia/Bird.png using Guid(1da42afc887a7784abb6ef856d988921) (TextureImporter) -> (artifact id: 'e6cf00753a75589687fd19a5e7b8a256') in 0.0088826 seconds
+Refreshing native plugins compatible for Editor in 1.43 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=d69196eea9d79b14bb756c1f34fb22b0): Total: 0.033 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Asia/Bird.png using Guid(1da42afc887a7784abb6ef856d988921) (TextureImporter) -> (artifact id: 'e6cf00753a75589687fd19a5e7b8a256') in 0.0088411 seconds
+Refreshing native plugins compatible for Editor in 1.20 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=88eaffbb91a7dd44794e0db4abe28273): Total: 0.033 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=9d42546f1d033484285218274e6da5ac): Total: 0.010 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Prefabs/Cities/Asia/House.prefab using Guid(ce607735588fcc3499aeda47e90f3d32) (PrefabImporter) -> (artifact id: '4afe217879f9e2c22aeb9ce666a171eb') in 0.0067309 seconds
+Start importing Assets/Resources/Prefabs/Cities/Asia/Sample.prefab using Guid(14d870c93f023a848b0bcca49cb7af71) (PrefabImporter) -> (artifact id: '9197847673b64e366e2bf01d1cf22515') in 0.0120547 seconds
+Refreshing native plugins compatible for Editor in 1.30 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=45bc7e732f6c7464992114936e4b863e): Total: 0.060 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Prefabs/Cities/Asia/Sample.prefab using Guid(14d870c93f023a848b0bcca49cb7af71) (PrefabImporter) -> (artifact id: 'e02512b2d0ddf8b4c15cc43d92495fd6') in 0.0123235 seconds
+Refreshing native plugins compatible for Editor in 1.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=4ea441347f382fe4795e405196660a20): Total: 0.055 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/Asia/Elements.png using Guid(b435eb212d8e1c447a78e4666b08589b) (TextureImporter) -> (artifact id: 'ae2a55077b2c9e5141823e07d69fa0df') in 0.0593356 seconds
+Refreshing native plugins compatible for Editor in 1.28 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=7d271cebb02cfc34db7d0207f531d73b): Total: 0.115 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=7cb9b7bdedab5de47b4ea769c0f2c807): Total: 0.019 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/SouthAmerica/Elements.png using Guid(20d3140cd31f98148aa9d5725f5d914d) (TextureImporter) -> (artifact id: '1461683cc15541648c5386b1187a86e5') in 0.0601155 seconds
+Refreshing native plugins compatible for Editor in 1.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=bf26fb30556569d428c5fb133165d107): Total: 0.113 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/SouthAmerica/Road.png using Guid(d14e9b978e174e7449bb70deefe4a51c) (TextureImporter) -> (artifact id: '0d778fde7226853e09e587ec544c185d') in 0.0119059 seconds
+Refreshing native plugins compatible for Editor in 1.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=46b9b1495405bf747b44bb7f37b82655): Total: 0.033 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/SouthAmerica/Road.png using Guid(d14e9b978e174e7449bb70deefe4a51c) (TextureImporter) -> (artifact id: '0d778fde7226853e09e587ec544c185d') in 0.0112893 seconds
+Refreshing native plugins compatible for Editor in 1.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=067d1cd2a7a0d364fb0c1669c72b8a1c): Total: 0.033 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=a9dd65c4e051d2041b68361cb9f3f271): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/SouthAmerica/House.png using Guid(a20c895a0713ca741a2918cd7b12c2e5) (TextureImporter) -> (artifact id: '6ec9c9d44e1d892678a8be384766a231') in 0.0154389 seconds
+Refreshing native plugins compatible for Editor in 1.16 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=4278538b0dcc84b428fb526bb5478547): Total: 0.037 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/SouthAmerica/House.png using Guid(a20c895a0713ca741a2918cd7b12c2e5) (TextureImporter) -> (artifact id: '6ec9c9d44e1d892678a8be384766a231') in 0.0146211 seconds
+Refreshing native plugins compatible for Editor in 1.19 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=42acf55e0a723914c9464cbab348edf3): Total: 0.037 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Prefabs/Cities/SouthAmerica/House.prefab using Guid(f7928feb8090f55408308d7d09ec341c) (PrefabImporter) -> (artifact id: 'f636b17299e68d79764efba920062f29') in 0.0064945 seconds
+Start importing Assets/Resources/Prefabs/Cities/SouthAmerica/Sample.prefab using Guid(60c86f60a00c5104c9afc63bee558044) (PrefabImporter) -> (artifact id: '54bb78cd1ec3fd2b733050e418286f6d') in 0.017042 seconds
+Refreshing native plugins compatible for Editor in 1.20 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=7b55ae26d580ddc4ebb840cf5d01c707): Total: 0.068 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/SouthAmerica/Tree.png using Guid(13203429ff3e8c4479fd63ecf128e0e8) (TextureImporter) -> (artifact id: '866f29cb6b68fb208fce5c52d9425138') in 0.0142836 seconds
+Refreshing native plugins compatible for Editor in 1.14 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=63e58ea7ddafc0d4c9c5714bd5c52532): Total: 0.037 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/SouthAmerica/Tree.png using Guid(13203429ff3e8c4479fd63ecf128e0e8) (TextureImporter) -> (artifact id: '866f29cb6b68fb208fce5c52d9425138') in 0.0146639 seconds
+Refreshing native plugins compatible for Editor in 1.14 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=2e869242af8bebc4e88419f6a3aee3f5): Total: 0.038 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=eb73efda0d5d45a43bd49c5533ddbc67): Total: 0.010 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/SouthAmerica/Market.png using Guid(879a920642a18014a935f79851af51c7) (TextureImporter) -> (artifact id: '9c07940a3c1dc0c6cbf9e1a13f8fe307') in 0.0123013 seconds
+Refreshing native plugins compatible for Editor in 1.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=e77780e9a1de78549b3e181f52d53101): Total: 0.037 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/SouthAmerica/Market.png using Guid(879a920642a18014a935f79851af51c7) (TextureImporter) -> (artifact id: '9c07940a3c1dc0c6cbf9e1a13f8fe307') in 0.0158611 seconds
+Refreshing native plugins compatible for Editor in 1.33 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=598dbfe6c738aef44b5a5de541514134): Total: 0.038 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=1f648bf3300d3ec44b455fd70fda1728): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/SouthAmerica/Eave.png using Guid(e46ca6c560930c2488ffd90e8359e0c7) (TextureImporter) -> (artifact id: '6a82f9b92aa65b687e4efa69a2ea6be2') in 0.0082817 seconds
+Refreshing native plugins compatible for Editor in 1.22 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=13180d2a21fcdc14691e3d437f64605c): Total: 0.031 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/SouthAmerica/Eave.png using Guid(e46ca6c560930c2488ffd90e8359e0c7) (TextureImporter) -> (artifact id: '6a82f9b92aa65b687e4efa69a2ea6be2') in 0.008658 seconds
+Refreshing native plugins compatible for Editor in 1.24 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=336b621660546ff4aa6a69ddee45bd69): Total: 0.034 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=a1c31eaff35f9ad47877cf305cd10ed0): Total: 0.010 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/SouthAmerica/Bird.png using Guid(3f1a44159a7e15143a7041e1f34f7b88) (TextureImporter) -> (artifact id: '59b4f89c4219608c0b5a11a9310dc523') in 0.0094578 seconds
+Refreshing native plugins compatible for Editor in 1.17 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=e807ac172f4aa0443abf3041d193653b): Total: 0.032 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/SouthAmerica/Bird.png using Guid(3f1a44159a7e15143a7041e1f34f7b88) (TextureImporter) -> (artifact id: '59b4f89c4219608c0b5a11a9310dc523') in 0.0091045 seconds
+Refreshing native plugins compatible for Editor in 1.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=be10c7ca5cc30c340bb754db9ea0f8f2): Total: 0.031 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=588b38a130dba444f8d1d433dca23984): Total: 0.010 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Prefabs/Cities/SouthAmerica/House.prefab using Guid(f7928feb8090f55408308d7d09ec341c) (PrefabImporter) -> (artifact id: 'b95fc660c228df40d45be6dd8ec8a678') in 0.0087962 seconds
+Start importing Assets/Resources/Prefabs/Cities/SouthAmerica/Sample.prefab using Guid(60c86f60a00c5104c9afc63bee558044) (PrefabImporter) -> (artifact id: '40933db0bf4d7136e421855016a60c0a') in 0.012885 seconds
+Refreshing native plugins compatible for Editor in 1.20 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=18aacd44c2603ba47ae50c0164901959): Total: 0.064 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Prefabs/Cities/SouthAmerica/Sample.prefab using Guid(60c86f60a00c5104c9afc63bee558044) (PrefabImporter) -> (artifact id: 'b7c36f8f862f2681517299a3bd2af136') in 0.0139936 seconds
+Refreshing native plugins compatible for Editor in 1.24 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=e55141cc0937e6c4da7e6365044ef4f7): Total: 0.073 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Sprites/Cities/SouthAmerica/Elements.png using Guid(20d3140cd31f98148aa9d5725f5d914d) (TextureImporter) -> (artifact id: '3663bcadc30f1f5fcc1298a09650b9d5') in 0.0613816 seconds
+Refreshing native plugins compatible for Editor in 1.26 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=3ec7dd416566c944da533a7c83a97470): Total: 0.116 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=e56d22545d030974ab97ae77589d618f): Total: 0.028 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Start importing Assets/Resources/Materials/Cities/Mediterranean/Road.mat using Guid(006ed9a8f0fe9574986a79dafa11b1d9) (NativeFormatImporter)Main Object Name 'Mediterranean Road' does not match filename 'Road'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: 'be073fc38d81f34f886a4a6286575a1b') in 0.0066561 seconds
+Start importing Assets/Resources/Materials/Cities/Africa/House.mat using Guid(b0088cbc1b9693d4aa77be8e4ff31309) (NativeFormatImporter)Main Object Name 'Africa House' does not match filename 'House'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '8f37554272a66b6769d49a356fd64be7') in 0.0055278 seconds
+Start importing Assets/Resources/Materials/Cities/Europe/Market.mat using Guid(e0e1eec087f91ea469146167bce1034b) (NativeFormatImporter)Main Object Name 'Europe Market' does not match filename 'Market'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '347a7fadef08de1a001ee963f6bf5033') in 0.0059189 seconds
+Start importing Assets/Resources/Materials/Cities/Africa/Bird.mat using Guid(01cb65930afc10040b60a50386d9de56) (NativeFormatImporter)Main Object Name 'Africa Bird' does not match filename 'Bird'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '6e1ae9de3273e409161ffd611d57a819') in 0.0057878 seconds
+Start importing Assets/Resources/Materials/Cities/Africa/Road.mat using Guid(9108ea35f7928f148a9256d72bf3665f) (NativeFormatImporter)Main Object Name 'Africa Road' does not match filename 'Road'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: 'f74a0df255e60ee5e61a8eb54371213b') in 0.0057661 seconds
+Start importing Assets/Resources/Materials/Cities/SouthAmerica/Eave.mat using Guid(33188e29953a690478087d88781b5940) (NativeFormatImporter)Main Object Name 'SouthAmerica Eave' does not match filename 'Eave'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '3c75e452760b41c5eeefcc3746774f3b') in 0.0059127 seconds
+Start importing Assets/Resources/Materials/Cities/SouthAmerica/House.mat using Guid(a3dfc882c1f6c5d4d9524c3c4ed25868) (NativeFormatImporter)Main Object Name 'SouthAmerica House' does not match filename 'House'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '3094d94c198d7d3161d9e5c990574ffe') in 0.005948 seconds
+Start importing Assets/Resources/Materials/Cities/Nordic/House.mat using Guid(84ba966ab59e58748a5f0de4b0ca811a) (NativeFormatImporter)Main Object Name 'Nordic House' does not match filename 'House'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '34c305847bac0008020a3625512193d8') in 0.005515 seconds
+Start importing Assets/Resources/Materials/Cities/Africa/Market.mat using Guid(e5b27f91a549cf34182d95b3ffcf861a) (NativeFormatImporter)Main Object Name 'Africa Market' does not match filename 'Market'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '1820dd2dd8f1a3a418e8995af6ff3195') in 0.0059792 seconds
+Start importing Assets/Resources/Materials/Cities/Europe/Eave.mat using Guid(66becee4915ea0d41b72e0850829649b) (NativeFormatImporter)Main Object Name 'Europe Eave' does not match filename 'Eave'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: 'b6dc1cc9dcd019d360b4cbdfe68872ad') in 0.0056744 seconds
+Start importing Assets/Resources/Materials/Cities/Mediterranean/House.mat using Guid(76c557e88ab1c044ea544a2fe28c219c) (NativeFormatImporter)Main Object Name 'Mediterranean House' does not match filename 'House'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '5611a175fc1c03137a7c298f9f5b1e05') in 0.0056277 seconds
+Start importing Assets/Resources/Materials/Cities/Nordic/Market.mat using Guid(96b8148c0ab0e3447a839b1748e0e420) (NativeFormatImporter)Main Object Name 'Nordic Market' does not match filename 'Market'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '78904749580f9fb0781fd3b774da86b5') in 0.0058903 seconds
+Start importing Assets/Resources/Materials/Cities/Nordic/Eave.mat using Guid(d60655c59ec7fda4288caad9b931c6f3) (NativeFormatImporter)Main Object Name 'Nordic Eave' does not match filename 'Eave'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: 'a9d3ade7a3df07354c69d1ecbb784f5b') in 0.0057673 seconds
+Start importing Assets/Resources/Materials/Cities/SouthAmerica/Market.mat using Guid(f6c0569aaf2caf943a75a2fe119f3606) (NativeFormatImporter)Main Object Name 'SouthAmerica Market' does not match filename 'Market'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '48c1ed78be111c6e07d255fb491bbaac') in 0.0063061 seconds
+Start importing Assets/Resources/Materials/Cities/SouthAmerica/Bird.mat using Guid(371de21e790633c468492f2097c1090d) (NativeFormatImporter)Main Object Name 'SouthAmerica Bird' does not match filename 'Bird'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: 'b8018fdad3b19f727c9cd5f286be1316') in 0.005671 seconds
+Start importing Assets/Resources/Materials/Cities/Europe/Bird.mat using Guid(57d429d56315c2f4d8e76f0a00e927ac) (NativeFormatImporter)Main Object Name 'Europe Bird' does not match filename 'Bird'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '450e370cd3303f1507a021ea44ecab58') in 0.0059685 seconds
+Start importing Assets/Resources/Materials/Cities/Asia/Bird.mat using Guid(f7da17858f2698b46b91a23077a32dc4) (NativeFormatImporter)Main Object Name 'Asia Bird' does not match filename 'Bird'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: 'bae1ee599267ccb7c925703b55ebcd5b') in 0.0062681 seconds
+Start importing Assets/Resources/Materials/Cities/SouthAmerica/Tree.mat using Guid(283240359a5feff4f891e5a1c022ced7) (NativeFormatImporter)Main Object Name 'SouthAmerica Tree' does not match filename 'Tree'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '17316bfb176ce0dd3aa12d26b10b42a6') in 0.0058603 seconds
+Start importing Assets/Resources/Materials/Cities/Europe/House.mat using Guid(3846748701ae88d4182639c7f3c352ce) (NativeFormatImporter)Main Object Name 'Europe House' does not match filename 'House'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '99da230d3d9c2adab609f0ebc3120bfc') in 0.0057098 seconds
+Start importing Assets/Resources/Materials/Cities/Europe/Tree.mat using Guid(e81602f61ffc5564a9fb24d21c66be17) (NativeFormatImporter)Main Object Name 'Europe Tree' does not match filename 'Tree'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '19837a6e76495c4f64bbca9b838764d9') in 0.0062127 seconds
+Start importing Assets/Resources/Materials/Cities/Europe/Road.mat using Guid(f896d7ad541987c43ac6845ff4373d78) (NativeFormatImporter)Main Object Name 'Europe Road' does not match filename 'Road'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: 'af2834fde4dd7b9ca8eb64d3e662ca2c') in 0.006235 seconds
+Start importing Assets/Resources/Materials/Cities/Mediterranean/Tree.mat using Guid(198e361147a13564b98e6f5b6ef774d8) (NativeFormatImporter)Main Object Name 'Mediterranean Tree' does not match filename 'Tree'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '94cda0ee9182d2d65de991bbb9d14b60') in 0.0060181 seconds
+Start importing Assets/Resources/Materials/Cities/Mediterranean/Bird.mat using Guid(498629d4a5d80334ebee4344e720ab9e) (NativeFormatImporter)Main Object Name 'Mediterranean Bird' does not match filename 'Bird'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '6967169c8df46716175379a6f1b5af23') in 0.0053725 seconds
+Start importing Assets/Resources/Materials/Cities/Africa/Tree.mat using Guid(99f6afe12950f8447bfa4bcce4199fa9) (NativeFormatImporter)Main Object Name 'Africa Tree' does not match filename 'Tree'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '1e1b90ec4983501758dd5c12c603a007') in 0.006101 seconds
+Start importing Assets/Resources/Materials/Cities/Mediterranean/Market.mat using Guid(5a8dfccd8bb81e74fb9a7f97d9a2f9dc) (NativeFormatImporter)Main Object Name 'Mediterranean Market' does not match filename 'Market'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: 'c5aaf87fdc54273ca4792481d8ace42b') in 0.0068055 seconds
+Start importing Assets/Resources/Materials/Cities/Asia/Tree.mat using Guid(8ae4e561f2097f547bf010b354ea785a) (NativeFormatImporter)Main Object Name 'Asia Tree' does not match filename 'Tree'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '2bd46c2c60670d76d79cd2439089484f') in 0.0061226 seconds
+Start importing Assets/Resources/Materials/Cities/Mediterranean/Eave.mat using Guid(aa650066494f23046bc0347013f4b7af) (NativeFormatImporter)Main Object Name 'Mediterranean Eave' does not match filename 'Eave'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: 'e97b35a4d159aa0ae19cd89e2a4efb06') in 0.0055369 seconds
+Start importing Assets/Resources/Materials/Cities/Asia/Market.mat using Guid(cac12a80c90900b4883c343753f63afa) (NativeFormatImporter)Main Object Name 'Asia Market' does not match filename 'Market'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '115a451905cf4d74cef9a2306a8f7b17') in 0.0058169 seconds
+Start importing Assets/Resources/Materials/Cities/Nordic/Bird.mat using Guid(bcb3c7deb1b289846832769141e538cd) (NativeFormatImporter)Main Object Name 'Nordic Bird' does not match filename 'Bird'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: 'f94552ac04fb50a1f1f59b3e07ca78b1') in 0.0055642 seconds
+Start importing Assets/Resources/Materials/Cities/Nordic/Tree.mat using Guid(8daf0ecd7ab4b214a8e93ee5e76d1897) (NativeFormatImporter)Main Object Name 'Nordic Tree' does not match filename 'Tree'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: 'e9e471cb19cff62592b9c8657966bcc7') in 0.0058851 seconds
+Start importing Assets/Resources/Materials/Cities/Nordic/Road.mat using Guid(6e84107f2fe7501458553f627bdcc595) (NativeFormatImporter)Main Object Name 'Nordic Road' does not match filename 'Road'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '77ac9e4b7efd2949537c5bdc6f786b12') in 0.0064136 seconds
+Start importing Assets/Resources/Materials/Cities/Asia/Road.mat using Guid(7e8e5b5ea856f8d4cae1868317109721) (NativeFormatImporter)Main Object Name 'Asia Road' does not match filename 'Road'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '853b38cea9450a7ab4ac8022f7085846') in 0.0058055 seconds
+Start importing Assets/Resources/Materials/Cities/SouthAmerica/Road.mat using Guid(4f1f8ba6842b2b941a31e475be21cb8e) (NativeFormatImporter)Main Object Name 'SouthAmerica Road' does not match filename 'Road'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '6209d19e579b46e329487ec42f995855') in 0.0065233 seconds
+Start importing Assets/Resources/Materials/Cities/Africa/Eave.mat using Guid(efeb4d9e71fa89445a70c6416d0d3bd5) (NativeFormatImporter)Main Object Name 'Africa Eave' does not match filename 'Eave'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: 'd1e128743bff806a7e47347ab1d14313') in 0.0055833 seconds
+Start importing Assets/Resources/Materials/Cities/Asia/House.mat using Guid(efafd6943f4e70f49995da243df19bbb) (NativeFormatImporter)Main Object Name 'Asia House' does not match filename 'House'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: 'e8f0cdaa73359a47884a21ec2b7ef62d') in 0.0057497 seconds
+Start importing Assets/Resources/Materials/Cities/Asia/Eave.mat using Guid(ff515aa6ba7df4342b627cad07550ddd) (NativeFormatImporter)Main Object Name 'Asia Eave' does not match filename 'Eave'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '84198764ead9362615d14c8ffdd4c515') in 0.0061231 seconds
+Start importing Assets/Resources/Models/Cities/Asia/Tree.asset using Guid(00a38f02aa6c957488a74bbaefff83db) (NativeFormatImporter)Main Object Name 'Tree anchored wind grid' does not match filename 'Tree'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: 'a032b074b52dc5c2f9366aee726d4706') in 0.0061778 seconds
+Start importing Assets/Resources/Models/Cities/SouthAmerica/House.asset using Guid(1053699b055e7954c881ddcb6702a29c) (NativeFormatImporter)Main Object Name 'House anchored wind grid' does not match filename 'House'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: 'b357d9e1f8eb098872b7e14a853374f9') in 0.0058537 seconds
+Start importing Assets/Resources/Models/Cities/Mediterranean/Road.asset using Guid(90303627414baf64db8743ca7b403b19) (NativeFormatImporter)Main Object Name 'Road anchored wind grid' does not match filename 'Road'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '94cb333f2918c4d776da2fb3b9300fd4') in 0.0055514 seconds
+Start importing Assets/Resources/Models/Cities/Nordic/Bird.asset using Guid(b0d7da1c4b1644b4b9ed1455019e42b6) (NativeFormatImporter)Main Object Name 'Bird anchored wind grid' does not match filename 'Bird'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '84e3c83d56b3d35ff030c14c1401e3e8') in 0.0056567 seconds
+Start importing Assets/Resources/Models/Cities/Nordic/Tree.asset using Guid(61faf3e8fe652044dbaefd98def7c75f) (NativeFormatImporter)Main Object Name 'Tree anchored wind grid' does not match filename 'Tree'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '8b36505fa568033869e130050a443747') in 0.006141 seconds
+Start importing Assets/Resources/Models/Cities/Europe/Bird.asset using Guid(2242fdced8d86da4294be252f97719b0) (NativeFormatImporter)Main Object Name 'Bird anchored wind grid' does not match filename 'Bird'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '85a2fabb6d88f4573bc73cb827dacb91') in 0.0055799 seconds
+Start importing Assets/Resources/Models/Cities/Europe/House.asset using Guid(624d2bc8d8e7a5044a2d1d8cca7b5505) (NativeFormatImporter)Main Object Name 'House anchored wind grid' does not match filename 'House'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '7ca054c73fcdac1d91c6f564946409b2') in 0.0053491 seconds
+Start importing Assets/Resources/Models/Cities/Nordic/House.asset using Guid(92735ce6c68be1b4eb8ba89580ce4016) (NativeFormatImporter)Main Object Name 'House anchored wind grid' does not match filename 'House'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '30db19d5e86ebe384c762846b2d095b3') in 0.0051966 seconds
+Start importing Assets/Resources/Models/Cities/Asia/Bird.asset using Guid(e2f37ee2edb7ae345a08240493f57fa9) (NativeFormatImporter)Main Object Name 'Bird anchored wind grid' does not match filename 'Bird'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '0462ef127d6b00c91c2eb091737c31ca') in 0.0057093 seconds
+Start importing Assets/Resources/Models/Cities/Mediterranean/Eave.asset using Guid(3318874170837d34b863909e9797c969) (NativeFormatImporter)Main Object Name 'Eave anchored wind grid' does not match filename 'Eave'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: 'f5552e6db60b48b91e274c902ff73cc3') in 0.0056005 seconds
+Start importing Assets/Resources/Models/Cities/SouthAmerica/Eave.asset using Guid(a37096ca2e83fec45bebfb63d9012f02) (NativeFormatImporter)Main Object Name 'Eave anchored wind grid' does not match filename 'Eave'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '6ba92b77bd67c2f2300caddfe4de29a2') in 0.0060803 seconds
+Start importing Assets/Resources/Models/Cities/Europe/Road.asset using Guid(85c736ca598346c46884ac06f5a783eb) (NativeFormatImporter)Main Object Name 'Road anchored wind grid' does not match filename 'Road'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '1c023b1128afecec284e44f5145de6a7') in 0.005655 seconds
+Start importing Assets/Resources/Models/Cities/SouthAmerica/Tree.asset using Guid(c54f90dfe34997f41b92635631188b4c) (NativeFormatImporter)Main Object Name 'Tree anchored wind grid' does not match filename 'Tree'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '87db29fd3cd3865c8dd547803bcdcb30') in 0.0057875 seconds
+Start importing Assets/Resources/Models/Cities/Asia/Eave.asset using Guid(47e096ed0d0e8354f8eeaa15ac916780) (NativeFormatImporter)Main Object Name 'Eave anchored wind grid' does not match filename 'Eave'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '27967681142f2af31f6e8db04958c247') in 0.0054546 seconds
+Start importing Assets/Resources/Models/Cities/Nordic/Road.asset using Guid(a7404d043ca99aa4e92114930274ce08) (NativeFormatImporter)Main Object Name 'Road anchored wind grid' does not match filename 'Road'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: 'd50c38fd55c1de6652fa92c7a2abfa83') in 0.0058349 seconds
+Start importing Assets/Resources/Models/Cities/Africa/Eave.asset using Guid(d7afe9cfc4397d6448030e31a680f8f0) (NativeFormatImporter)Main Object Name 'Eave anchored wind grid' does not match filename 'Eave'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: 'dc576d62b02640c23a2a1a1a06514c34') in 0.0063978 seconds
+Start importing Assets/Resources/Models/Cities/Mediterranean/House.asset using Guid(08d29cdd78679cd468c228a41e7feb06) (NativeFormatImporter)Main Object Name 'House anchored wind grid' does not match filename 'House'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '154ad79cbf19a6baa4c3cdb77d502994') in 0.0056429 seconds
+Start importing Assets/Resources/Models/Cities/Mediterranean/Tree.asset using Guid(39c27a545a537f94aae8954900a5660d) (NativeFormatImporter)Main Object Name 'Tree anchored wind grid' does not match filename 'Tree'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '411d129b4f3b438d795fc52db18a5ab8') in 0.0053542 seconds
+Start importing Assets/Resources/Models/Cities/Africa/Road.asset using Guid(890513f188397404997325d31f46deee) (NativeFormatImporter)Main Object Name 'Road anchored wind grid' does not match filename 'Road'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '4acdad16a7aeb6b3cd0dc7d1f34bf060') in 0.0055503 seconds
+Start importing Assets/Resources/Models/Cities/Africa/House.asset using Guid(aa30b2295b7ff2c40a36d3ec1507b3df) (NativeFormatImporter)Main Object Name 'House anchored wind grid' does not match filename 'House'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: 'e3ccf6559ab31f7638d3acd844d527d6') in 0.0057428 seconds
+Start importing Assets/Resources/Models/Cities/Nordic/Market.asset using Guid(3b1f56e9d25bc75429e8b583d31b1d36) (NativeFormatImporter)Main Object Name 'Market anchored wind grid' does not match filename 'Market'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '7464c12b87db638342420dc3a9833d26') in 0.0058098 seconds
+Start importing Assets/Resources/Models/Cities/Asia/House.asset using Guid(ab0e849e57f7f2c4bb6c78ae0b363773) (NativeFormatImporter)Main Object Name 'House anchored wind grid' does not match filename 'House'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '959148492fa36b8c52687555d174b435') in 0.0058452 seconds
+Start importing Assets/Resources/Models/Cities/Europe/Market.asset using Guid(eb0c33851ef2bc243b7ef1178dd86382) (NativeFormatImporter)Main Object Name 'Market anchored wind grid' does not match filename 'Market'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '6dc45bc443bfcf6637b46e43a9ef6ba6') in 0.0058236 seconds
+Start importing Assets/Resources/Models/Cities/Europe/Tree.asset using Guid(5caad139680206848b5a0b6540f4dd96) (NativeFormatImporter)Main Object Name 'Tree anchored wind grid' does not match filename 'Tree'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '9b1d079ba9e16e093c58b59582f27d49') in 0.0053726 seconds
+Start importing Assets/Resources/Models/Cities/SouthAmerica/Market.asset using Guid(acde5e1ea96982043b4335f999e3726d) (NativeFormatImporter)Main Object Name 'Market anchored wind grid' does not match filename 'Market'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '733de162fa4c100fd87ca981a89ad3b5') in 0.0057354 seconds
+Start importing Assets/Resources/Models/Cities/Mediterranean/Bird.asset using Guid(ecc8b8e6de9520a479362b975f79753e) (NativeFormatImporter)Main Object Name 'Bird anchored wind grid' does not match filename 'Bird'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: 'ed5010dc39901b4a1987694d8b660ff2') in 0.0057501 seconds
+Start importing Assets/Resources/Models/Cities/SouthAmerica/Bird.asset using Guid(9de7c7d70dd0a5d4c9cdddd2494b5be1) (NativeFormatImporter)Main Object Name 'Bird anchored wind grid' does not match filename 'Bird'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '84e7f6a6625923bc4d781907cdcf5999') in 0.0063368 seconds
+Start importing Assets/Resources/Models/Cities/Africa/Bird.asset using Guid(dd6323ad7e9c2be469914304e87a395e) (NativeFormatImporter)Main Object Name 'Bird anchored wind grid' does not match filename 'Bird'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '8b5db7b1fefd6acc742ee5eeb1ee6c2a') in 0.0064423 seconds
+Start importing Assets/Resources/Models/Cities/Nordic/Eave.asset using Guid(3edd1dd5721008741bde8ecc221fdf2b) (NativeFormatImporter)Main Object Name 'Eave anchored wind grid' does not match filename 'Eave'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: 'f0075aea02fd8fb3e9ccf108a97cbb30') in 0.0066414 seconds
+Start importing Assets/Resources/Models/Cities/Africa/Tree.asset using Guid(6e3daa6b5d8d4524ba5972a5b3b807c7) (NativeFormatImporter)Main Object Name 'Tree anchored wind grid' does not match filename 'Tree'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '67185e1a1e6b70a766350c5e36a92a5a') in 0.0058145 seconds
+Start importing Assets/Resources/Models/Cities/Mediterranean/Market.asset using Guid(beb7cc3191a4e2b4f847fd37cc1c5fea) (NativeFormatImporter)Main Object Name 'Market anchored wind grid' does not match filename 'Market'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: 'af3a5f1cf6946dd7c7f1987a9794726b') in 0.0058724 seconds
+Start importing Assets/Resources/Models/Cities/Europe/Eave.asset using Guid(2fd561e30040b41418e76d675e572dfa) (NativeFormatImporter)Main Object Name 'Eave anchored wind grid' does not match filename 'Eave'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '629b7ab1bff2a29f0e633252a76204ee') in 0.0066163 seconds
+Start importing Assets/Resources/Models/Cities/Asia/Market.asset using Guid(4fb5a803d3188ef4da179c7f9af40175) (NativeFormatImporter)Main Object Name 'Market anchored wind grid' does not match filename 'Market'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '89303b987662d6bbaf5ad78856cb2ec5') in 0.0058343 seconds
+Start importing Assets/Resources/Models/Cities/Africa/Market.asset using Guid(af935b45f4a48fa479b819b21125b2c1) (NativeFormatImporter)Main Object Name 'Market anchored wind grid' does not match filename 'Market'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: 'b797911b26b5b24f840587302ea9f740') in 0.0062614 seconds
+Start importing Assets/Resources/Models/Cities/Asia/Road.asset using Guid(bf6b232af78af5e46a04d86e7cfef58a) (NativeFormatImporter)Main Object Name 'Road anchored wind grid' does not match filename 'Road'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '3fe392e46d43f4cc0bac6cae483957fe') in 0.0061855 seconds
+Start importing Assets/Resources/Models/Cities/SouthAmerica/Road.asset using Guid(dfbdf5a0276245a41addba4d2f2f5551) (NativeFormatImporter)Main Object Name 'Road anchored wind grid' does not match filename 'Road'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:67)
+
+[Assets/Editor/RegionalCityElementsBuilder.cs line 67]
+
+ -> (artifact id: '28eb8e46e693e6cd61a11a8cc3e972b1') in 0.0064033 seconds
+Refreshing native plugins compatible for Editor in 1.36 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=ea52e6582d66ab643bfc521ac342b5bf): Total: 0.537 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+	Summary:
+		Imports: total=72 (actual=72, local cache=0, cache server=0)
+		Asset DB Process Time: managed=6 ms, native=504 ms
+		Asset DB Callback time: managed=22 ms, native=2 ms
+		Scripting: domain reloads=0, domain reload time=0 ms, compile time=0 ms, other=0 ms
+		Project Asset Count: scripts=1703, non-scripts=3848
+		Asset File Changes: new=0, changed=72, moved=0, deleted=0
+		Scan Filter Count: 90
+	InvokeCustomDependenciesCallbacks: 0.001ms
+	InvokePackagesCallback: 0.001ms
+	ApplyChangesToAssetFolders: 0.160ms
+	Scan: 14.219ms
+	OnSourceAssetsModified: 0.239ms
+	CategorizeAssetsWithTransientArtifact: 0.094ms
+	ProcessAssetsWithTransientArtifactChanges: 0.090ms
+	CategorizeAssets: 20.824ms
+	ImportOutOfDateAssets: 470.855ms (0.487ms without children)
+		ImportManagerImport: 468.399ms (9.111ms without children)
+			ImportInProcess: 458.929ms
+			UpdateCategorizedAssets: 0.359ms
+		ReloadNativeAssets: 0.162ms
+		UnloadImportedAssets: 0.290ms
+		ReloadImportedAssets: 0.010ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.957ms
+		InitializingProgressBar: 0.008ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.003ms
+		OnDemandSchedulerStart: 0.540ms
+	PostProcessAllAssets: 23.259ms
+	Hotreload: 1.790ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.297ms
+	UnloadStreamsBegin: 0.003ms
+	PersistCurrentRevisions: 0.748ms
+	UnloadStreamsEnd: 0.289ms
+	Untracked: 4.049ms
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1373 unused Assets / (7.2 MB). Loaded Objects now: 8306.
+Memory consumption went from 255.0 MB to 247.8 MB.
+Total: 10.524300 ms (FindLiveObjects: 0.468400 ms CreateObjectMapping: 0.393200 ms MarkObjects: 8.190000 ms  DeleteObjects: 1.471200 ms)
+
+Unloading 151 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 439 unused Assets / (3.7 MB). Loaded Objects now: 8312.
+Memory consumption went from 227.1 MB to 223.3 MB.
+Total: 9.317600 ms (FindLiveObjects: 0.303300 ms CreateObjectMapping: 0.241400 ms MarkObjects: 8.101900 ms  DeleteObjects: 0.670100 ms)
+
+Start importing ProjectSettings/QualitySettings.asset using Guid(00000000000000009000000000000000) (LibraryAssetImporter) -> (artifact id: 'f18dfed0d1e65825aeada0185d823cc6') in 0.0067443 seconds
+Refreshing native plugins compatible for Editor in 1.34 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=144b1de1eb588734cbe4e0d70b12639f): Total: 0.059 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Scenes/ArtPreview/RegionalCityElements.unity using Guid(efadb55793c40104e9dd5a4edf7ff9b5) (DefaultImporter) -> (artifact id: 'c4196b2ed23bb30bdd28327fc5cf14c3') in 0.0014924 seconds
+Refreshing native plugins compatible for Editor in 1.26 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=efc728f893644644abf29d793e6b76a0): Total: 0.043 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+REGIONAL_CITY_LIBRARY_PASS: 6 styles, 36 element prefabs, 6 sample prefabs; atlas bounds and rendered motion checked.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MaritimeLegend.Editor.RegionalCityElementsBuilder:Build () (at Assets/Editor/RegionalCityElementsBuilder.cs:69)
+
+(Filename: Assets/Editor/RegionalCityElementsBuilder.cs Line: 69)
+
+Batchmode quit successfully invoked - shutting down!
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input System polling thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-charl-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-charl channel disconnected successfully.
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+Exiting batchmode successfully now!
+Exiting without the bug reporter. Application will terminate with return code 0

@@ -1,0 +1,3 @@
+SAILING_1016_CHECKS_PASS
+MANUAL_SAILING_CHECKS_PASS: skill endpoints and midpoint, speed formula, shallow water, terrain coastline agreement, swept collisions, turn in place, continuous following, slack gathering, save roundtrip, sailing architecture.
+WORLD_SAILING_CHECKS_PASS 294897 assertions; all shared chunk edges, ports, cyclic movement, walls, migration and clock

@@ -12,7 +12,7 @@ namespace MaritimeLegend {public partial class MaritimeGame {
   yield return null;
   string output=Path.Combine(Application.dataPath,"..","Evidence","PortsCompass");Directory.CreateDirectory(output);
   LiveGui.Camera.targetTexture=new RenderTexture(1920,1080,24);LiveGui.Camera.targetTexture.Create();
-  s=GameService.New(c,0,0,"休闲",StateFactory.Appearance(c),"Ports compass review",42);s.pendingEvents.Clear();s.city=6;g=new GameService(c,s);g.Depart(7);page="航海";paused=true;
+  s=GameService.New(c,0,0,"休闲",StateFactory.Appearance(c),"Ports compass review",42);s.pendingEvents.Clear();s.city=6;g=new GameService(c,s);s.sailing.preferWorldMap=false;g.Depart(7);page="航海";paused=true;
   yield return new WaitForSecondsRealtime(2);
   try{
    // Simulate the reported legacy overseas city / sea-centre save.
@@ -26,7 +26,7 @@ namespace MaritimeLegend {public partial class MaritimeGame {
    V2Assert(legacy.city==assigned,"random starting city persists across reload");
    var choices=new System.Collections.Generic.HashSet<int>();for(uint seed=1;seed<=300;seed++)choices.Add(GameService.RandomSoutheastAsiaPort(c,seed*7919));
    V2Assert(choices.Count==12,"random start can select every Southeast Asia city");
-   foreach(var coastal in ManualSeaPortCatalog.All){s.atSea=false;s.city=coastal.gamePortId;g.Depart(coastal.gamePortId==6?8:6);EnsureManualSea();V2Assert(Vector2.Distance(SeaPosition,coastal.Spawn)<.00001f&&s.sailing.manualSpawnPort==coastal.name&&Mathf.Abs(ManualSeaZoom-10)<.001f,"actual departure and zoom "+coastal.id);}
+   foreach(var coastal in ManualSeaPortCatalog.All){s.atSea=false;s.city=coastal.gamePortId;g.Depart(coastal.gamePortId==6?8:6);EnsureManualSea();V2Assert(Vector2.Distance(SeaPosition,coastal.Spawn)<.00001f&&s.sailing.manualSpawnPort==coastal.name&&Mathf.Abs(ManualSeaZoom-10)<.001f,"actual departure and zoom "+coastal.id);V2Assert(Mathf.Abs(CompassBearing)<.001f,"departure camera faces north "+coastal.id);}
    s.atSea=false;s.city=6;g.Depart(8);
    EnsureManualSea();
    var departure=ManualSeaPortCatalog.Departure(6,"马六甲");
@@ -37,9 +37,10 @@ namespace MaritimeLegend {public partial class MaritimeGame {
    V2Assert(Vector2.Distance(f0,f1)>=21.99f&&Vector2.Distance(f0,seaCoast.Pixels(SeaPosition))>=21.99f&&Vector2.Distance(f1,seaCoast.Pixels(SeaPosition))>=21.99f,"initial fleet separated from every other ship");
    var position=SeaPosition;s.sailing.manualZoom=46;seaOwner=null;EnsureManualSea();V2Assert(SeaPosition==position&&Mathf.Abs(ManualSeaZoom-46)<.001f,"resume does not reset position or camera");
    s.atSea=false;s.city=6;g.Depart(7);EnsureManualSea();V2Assert(Mathf.Abs(ManualSeaZoom-10)<.001f&&Vector2.Distance(SeaPosition,departure.Spawn)<.00001f,"repeat departure resets city spawn and close camera");
-   double[] headings={-Math.PI/2,0,Math.PI/2,Math.PI};float[] expected={0,90,180,270};
-   for(int i=0;i<4;i++){s.heading=headings[i];V2Assert(Mathf.Abs(Mathf.DeltaAngle(CompassBearing,expected[i]))<.01f,"compass cardinal "+expected[i]);}
-   s.heading=.6;float bearing=CompassBearing;indianOcean.SetView(123,100);V2Assert(Mathf.Abs(CompassBearing-bearing)<.01f,"compass independent of camera orbit");
+   foreach(float yaw in new[]{0f,90f,180f,270f,-90f,450f}){indianOcean.SetView(yaw,40);V2Assert(Mathf.Abs(Mathf.DeltaAngle(CompassBearing,Mathf.Repeat(yaw,360)))<.01f,"compass follows camera yaw "+yaw);}
+   indianOcean.SetView(123,100);float bearing=CompassBearing;
+   foreach(double heading in new[]{-Math.PI/2,0,Math.PI/2,Math.PI}){s.heading=heading;V2Assert(Mathf.Abs(CompassBearing-bearing)<.01f,"ship steering does not rotate camera compass");}
+   s.heading=.6;
    V2Assert(!SetManualSeaTarget(CompassRect.center),"compass blocks navigation clicks");
    V2Assert(Resources.Load<Texture2D>("Sprites/UI/ManualSailing/Compass/sheet")!=null,"compass atlas loaded");
   }catch(Exception e){Debug.LogException(e);Application.Quit(1);yield break;}

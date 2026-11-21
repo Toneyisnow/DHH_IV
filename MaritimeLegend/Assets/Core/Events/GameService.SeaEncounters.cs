@@ -10,7 +10,7 @@ namespace MaritimeLegend.Domain {
             sailing.encounters.RemoveAll(e=>e.status!="Prompting"&&e.expiresAt<=sailing.foregroundSeconds);
             // No default permissive water mask: art coordinates are not collision data.
             // Injection enables automatic spawning when a real region geometry adapter is supplied.
-            if(SeaPlacement==null)return;
+            if(SeaPlacement==null||WorldSailing)return;
             sailing.spawnCountdown-=seconds;
             if(sailing.spawnCountdown>0)return;
             ScheduleEncounter();
@@ -40,6 +40,9 @@ namespace MaritimeLegend.Domain {
             S.sailing.encounterSeed=seed;S.sailing.encounters.Add(e);return e;
         }
         public bool ContactSeaEncounter(string instanceId) {
+            // Legacy encounters retain their original local coordinates and rewards.
+            // They cannot be contacted using the new world coordinate system.
+            if(WorldSailing)return false;
             if(!NormalSailing||DialogueOpen)return false;
             var e=S.sailing.encounters.FirstOrDefault(x=>x.instanceId==instanceId);
             if(e==null||e.claimed||e.status!="Available"||e.regionId!=S.sailing.regionId||e.ignoreUntil>S.sailing.foregroundSeconds||e.expiresAt<=S.sailing.foregroundSeconds)return false;

@@ -11,26 +11,29 @@ public sealed class ManualSeaV2Runtime : IDisposable {
  readonly Transform fogVeil;readonly ManualSeaV2CloudLayer cloudLayer;
  readonly Material shipContact;readonly Transform[] shipContacts;
  readonly ManualSeaV2Ports ports;
- public string HoverPort(Vector2 pointer)=>ports.Hover(pointer);
+ public string HoverPort(Vector2 pointer)=>ports?.Hover(pointer);
  readonly Color[] pixels=new Color[SeaExploration.Width*SeaExploration.Height];
  float minimumZoom=8,maximumZoom=120;
  public float DepartureZoom=>Mathf.Min(maximumZoom,minimumZoom+2);
  public float SightRadius=72; float lastSight=-1;
  SeaExploration knowledge; Vector3 lastRevealPosition=new Vector3(float.PositiveInfinity,0,0);
  public RenderTexture Image {get;}
+ public Camera View=>camera;
+ public Action<Camera,Material,ManualSeaV2Instances> DrawTerrain;
+ public bool ExternalExploration;
  public ManualSeaV2Environment.SkyMode SkyMode=>environment.mode;
  public void SetSkyMode(ManualSeaV2Environment.SkyMode mode){environment.mode=mode;}
  public float Zoom=>orbit.distance;public float Pitch=>orbit.pitch;public float Yaw=>orbit.yaw;
  public static Vector3 World(Vector2 uv)=>new Vector3((uv.x-.5f)*960,0,(.5f-uv.y)*540);
  public static Vector2 UV(Vector3 p)=>new Vector2(p.x/960+.5f,.5f-p.z/540);
- public ManualSeaV2Runtime(Transform owner){
+ public ManualSeaV2Runtime(Transform owner,string mapResource="Environment/SoutheastAsiaV2/Runtime",bool includePorts=true){
   if(LiveGui.Camera)LiveGui.Camera.cullingMask&=~(1<<Layer);
-  var prefab=Resources.Load<GameObject>("Environment/SoutheastAsiaV2/Runtime");
+  var prefab=Resources.Load<GameObject>(mapResource);
   if(!prefab)throw new InvalidOperationException("V2 runtime prefab is missing. Run Prepare integrated V2 scene.");
   root=UnityEngine.Object.Instantiate(prefab,owner);root.name="Manual Sailing V2 runtime";
   environment=root.GetComponentInChildren<ManualSeaV2Environment>(true);camera=environment.view;orbit=camera.GetComponent<ManualSeaV2Camera>();
   instances=root.GetComponentInChildren<ManualSeaV2Instances>(true);ships=root.GetComponentsInChildren<ManualSeaV2Ship>(true);
-  ports=new ManualSeaV2Ports(root.transform,camera);
+  if(includePorts)ports=new ManualSeaV2Ports(root.transform,camera);
   shipContact=new Material(Resources.Load<Shader>("Shaders/ManualSeaV2ShipContact"));
   shipContacts=new Transform[ships.Length];
   for(int i=0;i<ships.Length;i++){
@@ -71,7 +74,7 @@ public sealed class ManualSeaV2Runtime : IDisposable {
  public void AdvanceWeather(SailingState state,double wind,double seconds,double speed)=>cloudLayer.AdvanceWeather(state,wind,seconds,speed);
  public void Render(GameState state,float opening){
   cloudLayer.BindWeather(state.sailing);
-  var position=new Vector2((float)state.seaX,(float)state.seaY);Reveal(state.sailing,position);Center(position);
+  var position=new Vector2((float)state.seaX,(float)state.seaY);if(!ExternalExploration)Reveal(state.sailing,position);Center(position);
   var oldSky=RenderSettings.skybox;var ambient=RenderSettings.ambientLight;var ambientMode=RenderSettings.ambientMode;var sun=RenderSettings.sun;bool oldFog=RenderSettings.fog;
   try{
    root.SetActive(true);environment.Apply();Shader.SetGlobalFloat("_SeaCloudEnabled",1);
@@ -89,11 +92,13 @@ public sealed class ManualSeaV2Runtime : IDisposable {
    var sky=environment.skies[(int)environment.mode];
    fog.SetFloat("_FogSkyMode",sky.GetFloat("_Mode"));fog.SetVector("_FogSunDirection",sky.GetVector("_SunDirection"));
    fog.SetFloat("_FogStarDensity",sky.GetFloat("_StarDensity"));fog.SetFloat("_FogStarBrightness",sky.GetFloat("_StarBrightness"));
-   ports.Render(knowledge,environment.mode);cloudLayer.Render(-environment.sun.transform.forward);instances.Render();camera.Render();
+   ports?.Render(knowledge,environment.mode);cloudLayer.Render(-environment.sun.transform.forward);DrawTerrain?.Invoke(camera,water,instances);instances.Render();camera.Render();
   }finally{Shader.SetGlobalFloat("_SeaCloudEnabled",0);RenderSettings.skybox=oldSky;RenderSettings.ambientLight=ambient;RenderSettings.ambientMode=ambientMode;RenderSettings.sun=sun;RenderSettings.fog=oldFog;}
  }
  public void SetActive(bool value){if(root.activeSelf!=value)root.SetActive(value);}
+ public void SetExploration(Color[] values,Vector2 hexOffset){exploration.SetPixels(values);exploration.Apply(false);fog.SetVector("_HexOffset",hexOffset);}
+ public void SetStreamingRange(Vector2 center){fog.SetVector("_StreamRange",new Vector4(center.x,center.y,480,600));}
  public void Capture(string path){var previous=RenderTexture.active;RenderTexture.active=Image;var tex=new Texture2D(Image.width,Image.height,TextureFormat.RGB24,false);tex.ReadPixels(new Rect(0,0,Image.width,Image.height),0,0);tex.Apply();System.IO.File.WriteAllBytes(path,tex.EncodeToPNG());UnityEngine.Object.Destroy(tex);RenderTexture.active=previous;}
- public void Dispose(){ports.Dispose();Image.Release();foreach(var obj in new UnityEngine.Object[]{root,Image,water,cloud,fog,exploration,shipContact})if(obj)UnityEngine.Object.Destroy(obj);}
+ public void Dispose(){ports?.Dispose();Image.Release();foreach(var obj in new UnityEngine.Object[]{root,Image,water,cloud,fog,exploration,shipContact})if(obj)UnityEngine.Object.Destroy(obj);}
 }
 }

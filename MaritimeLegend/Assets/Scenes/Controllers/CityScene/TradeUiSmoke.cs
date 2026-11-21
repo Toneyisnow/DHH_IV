@@ -21,7 +21,7 @@ public sealed class TradeUiSmoke : MonoBehaviour {
   foreach(var name in new[]{"小麦","橄榄油","羊毛","陶器"})if(!FindObjectsByType<Text>(FindObjectsSortMode.None).Any(t=>t.gameObject.activeInHierarchy&&t.text==name))throw new Exception("Missing test cargo "+name);
   var saleScroll=FindObjectsByType<ScrollRect>(FindObjectsSortMode.None).Single(x=>x.name=="SaleGoods");
   if(!saleScroll.horizontal||saleScroll.vertical||saleScroll.horizontalScrollbar.gameObject.activeSelf)throw new Exception("Empty horizontal panel scrollbar should be hidden");
-  var originalSize=saleScroll.content.sizeDelta;saleScroll.content.sizeDelta=new Vector2(1200,originalSize.y);Canvas.ForceUpdateCanvases();yield return null;
+  var originalSize=saleScroll.content.sizeDelta;saleScroll.content.sizeDelta=new Vector2(1800,originalSize.y);Canvas.ForceUpdateCanvases();yield return null;
   var wheel=new UnityEngine.EventSystems.PointerEventData(UnityEngine.EventSystems.EventSystem.current){scrollDelta=new Vector2(0,-1)};saleScroll.OnScroll(wheel);if(saleScroll.horizontalNormalizedPosition<=0)throw new Exception("Mouse wheel did not scroll horizontal panel");
   saleScroll.content.sizeDelta=originalSize;saleScroll.horizontalNormalizedPosition=0;Canvas.ForceUpdateCanvases();yield return null;
   if(FindObjectsByType<Text>(FindObjectsSortMode.None).Any(t=>t.gameObject.activeInHierarchy&&t.text=="选择商品开始交易"))throw new Exception("Default hint still visible");
@@ -36,7 +36,7 @@ public sealed class TradeUiSmoke : MonoBehaviour {
   if(products.GetComponentsInChildren<Button>().First()!=buttons[0])throw new Exception("Market cards were rebuilt");
   var hover=buttons[0].GetComponent<TradeCardHover>();var rt=buttons[0].GetComponent<RectTransform>();float resting=rt.anchoredPosition.y;hover.OnPointerEnter(null);yield return new WaitForSecondsRealtime(.15f);if(rt.anchoredPosition.y<resting+5)throw new Exception("Hover lift missing");CapturePanel("Evidence/TradeUI/market-hover.png",panel);hover.OnPointerExit(null);
   CapturePanel("Evidence/TradeUI/market-pending-purchases.png",panel);yield return new WaitForSecondsRealtime(2);
-  int before=owner.s.cargo.batches.Sum(b=>b.quantity);var confirm=FindObjectsByType<Button>(FindObjectsSortMode.None).Single(b=>b.name=="确认成交"&&b.gameObject.activeInHierarchy);if(!confirm.interactable)throw new Exception("Cannot confirm draft");confirm.onClick.Invoke();yield return null;
+  int before=owner.s.cargo.batches.Sum(b=>b.quantity);var confirm=FindObjectsByType<Button>(FindObjectsSortMode.None).Single(b=>b.name=="交易"&&b.gameObject.activeInHierarchy);if(!confirm.interactable)throw new Exception("Cannot confirm draft");confirm.onClick.Invoke();yield return null;
   if(owner.s.cargo.batches.Sum(b=>b.quantity)!=before)throw new Exception("Runtime cargo commit mismatch");
   if(!File.Exists(Path.GetFullPath("Evidence/TradeUI/market-real-data.png")))throw new Exception("Screenshot missing");
   Debug.Log("TRADE_UI_RUNTIME_PASS");Application.Quit();

@@ -1,0 +1,9 @@
+newmtl Maritime/CitySurface
+Kd 1.06 1.03 0.94
+
+newmtl Maritime/NordicHarborSurface
+Kd 0.5 0.5 0.43
+
+newmtl Maritime/NordicHarborWater
+Kd 0.07999995 0.2499999 0.2699999
+

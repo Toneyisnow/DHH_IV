@@ -1,0 +1,12 @@
+{
+  "description": "Authored rectangular atlas registration, degrees [west,south,east,north]. Illustration coastlines are stylized, not surveyed. Smooth overlap uses a common world field.",
+  "regions": [
+    {"id":"africa","bounds":[-30,-40,60,35]},
+    {"id":"new_world","bounds":[-100,4,-60,30]},
+    {"id":"indian_ocean","bounds":[35,-30,110,30]},
+    {"id":"north_sea","bounds":[-25,40,45,80]},
+    {"id":"mediterranean_sea","bounds":[-12,25,45,48]},
+    {"id":"east_asia","bounds":[102,17,152,50]},
+    {"id":"southeast_asia","bounds":[94.25020446289541,-15.351610904098845,136.43999511111875,22.714241223769367]}
+  ]
+}

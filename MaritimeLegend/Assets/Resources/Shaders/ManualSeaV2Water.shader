@@ -16,10 +16,10 @@ Shader "Maritime/ManualSeaV2/Water" {
  #include "UnityCG.cginc"
  #include "ManualSeaV2Clouds.cginc"
  sampler2D _DepthMap;float4 _MapBounds,_DeepColor,_ShallowColor,_SkyTint,_SunColor,_SunDirection,_ViewForward;
- float _WaveSpeed,_WaveLength,_WaveStrength,_FoamStrength,_PreviewTime,_Evening,_Night;
+ float _WaveSpeed,_WaveLength,_WaveStrength,_FoamStrength,_PreviewTime,_Evening,_Night,_SeaLargeWorld;
  struct v2f{float4 pos:SV_POSITION;float3 world:TEXCOORD0;};
  v2f vert(appdata_base v){v2f o;o.pos=UnityObjectToClipPos(v.vertex);o.world=mul(unity_ObjectToWorld,v.vertex).xyz;return o;}
- float hash(float2 p){return frac(sin(dot(p,float2(127.1,311.7)))*43758.5453);}
+ float hash(float2 p){if(_SeaLargeWorld>.5)p=p-floor(p/256)*256;return frac(sin(dot(p,float2(127.1,311.7)))*43758.5453);}
  float noise(float2 p){float2 a=floor(p),f=frac(p);f=f*f*f*(f*(f*6-15)+10);return lerp(lerp(hash(a),hash(a+float2(1,0)),f.x),lerp(hash(a+float2(0,1)),hash(a+1),f.x),f.y);}
  fixed4 frag(v2f i):SV_Target {
   float t=(_PreviewTime>=0?_PreviewTime:_Time.y)*_WaveSpeed;float2 p=i.world.xz;

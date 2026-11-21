@@ -1,0 +1,164 @@
+[
+  {
+    "source": "Assets\\AutoSailing_Map_Pack\\01_map\\north_sea.png",
+    "style_reference": "Assets/AutoSailing_Map_Pack/01_map/east_asia.png",
+    "grid": [
+      1254,
+      706
+    ],
+    "world": [
+      960,
+      540
+    ],
+    "land_fraction": 0.5519346589497178,
+    "height_max": 26.054128646850586,
+    "deep_summit_rule": "height > 15 AND inland distance > 18; smooth transitions",
+    "elevation": "authored illustration-derived relief, not surveyed geography",
+    "id": "north_sea",
+    "terrain_sha256": "d41fa61aea90b5d95bbe1f1b079b8525e330bb767c784ebb029449694c51ed99",
+    "source_sha256": "2c65637ec44cdb030b2785ec76939e7c29e3c69c293bdf92a8620a9b7242d2d5",
+    "review_uv": [
+      0.5075818036711891,
+      0.500709219858156
+    ]
+  },
+  {
+    "source": "Assets\\AutoSailing_Map_Pack\\01_map\\mediterranean_sea.png",
+    "style_reference": "Assets/AutoSailing_Map_Pack/01_map/east_asia.png",
+    "grid": [
+      1254,
+      706
+    ],
+    "world": [
+      960,
+      540
+    ],
+    "land_fraction": 0.6837044968847563,
+    "height_max": 30.274744033813477,
+    "deep_summit_rule": "height > 15 AND inland distance > 18; smooth transitions",
+    "elevation": "authored illustration-derived relief, not surveyed geography",
+    "id": "mediterranean_sea",
+    "terrain_sha256": "6ad132e57709fe2114596a8c10c8ac7c5a9d899df4b786ce9c8df9ec54b265da",
+    "source_sha256": "708847e95ec65004c448652a4fbcf7a1dbc7a58644c55a45ecb439fe237a04f1",
+    "review_uv": [
+      0.5211492418196328,
+      0.5645390070921986
+    ]
+  },
+  {
+    "source": "Assets\\AutoSailing_Map_Pack\\01_map\\africa.png",
+    "style_reference": "Assets/AutoSailing_Map_Pack/01_map/east_asia.png",
+    "grid": [
+      1254,
+      706
+    ],
+    "world": [
+      960,
+      540
+    ],
+    "land_fraction": 0.3125375568718345,
+    "height_max": 30.27383041381836,
+    "deep_summit_rule": "height > 15 AND inland distance > 18; smooth transitions",
+    "elevation": "authored illustration-derived relief, not surveyed geography",
+    "id": "africa",
+    "terrain_sha256": "15ee9d460229d69b0ad3848de611be1b70aaa40d2a9f73e2c90817c3a98e78f4",
+    "source_sha256": "5ee13cddb3a61931357acbc38e9f50c2bbfe2ac9fcf8947d333c0631506290fd",
+    "review_uv": [
+      0.3687150837988827,
+      0.5702127659574469
+    ]
+  },
+  {
+    "source": "Assets\\AutoSailing_Map_Pack\\01_map\\indian_ocean.png",
+    "style_reference": "Assets/AutoSailing_Map_Pack/01_map/east_asia.png",
+    "grid": [
+      1254,
+      706
+    ],
+    "world": [
+      960,
+      540
+    ],
+    "land_fraction": 0.483209536847527,
+    "height_max": 30.30031394958496,
+    "deep_summit_rule": "height > 15 AND inland distance > 18; smooth transitions",
+    "elevation": "authored illustration-derived relief, not surveyed geography",
+    "id": "indian_ocean",
+    "terrain_sha256": "77c79d75824a19e24db5c87eab04573b7101a2e70cd2694fa60ce28cc3742cc3",
+    "source_sha256": "ca457da0753438c2e59a53f1ddadac02379a601a7c508b16022efd465debfc6b",
+    "review_uv": [
+      0.48842777334397447,
+      0.5078014184397163
+    ]
+  },
+  {
+    "source": "Assets\\AutoSailing_Map_Pack\\01_map\\southeast_asia.png",
+    "style_reference": "Assets/AutoSailing_Map_Pack/01_map/east_asia.png",
+    "grid": [
+      1254,
+      706
+    ],
+    "world": [
+      960,
+      540
+    ],
+    "land_fraction": 0.3017460274430604,
+    "height_max": 29.843286514282227,
+    "deep_summit_rule": "height > 15 AND inland distance > 18; smooth transitions",
+    "elevation": "authored illustration-derived relief, not surveyed geography",
+    "id": "southeast_asia",
+    "terrain_sha256": "5f1c4bbdbadda3955c533e015bad4075bd554503b8af7b20aca0e16731902dec",
+    "source_sha256": "7a61f0ff92148c34dd16388e6acc36be8176617d67376b98fa76cba6c386b06f",
+    "review_uv": [
+      0.4588986432561852,
+      0.4014184397163121
+    ],
+    "baseline_byte_identical": true
+  },
+  {
+    "source": "Assets\\AutoSailing_Map_Pack\\01_map\\east_asia.png",
+    "style_reference": "Assets/AutoSailing_Map_Pack/01_map/east_asia.png",
+    "grid": [
+      1254,
+      706
+    ],
+    "world": [
+      960,
+      540
+    ],
+    "land_fraction": 0.4604122332614952,
+    "height_max": 30.419340133666992,
+    "deep_summit_rule": "height > 15 AND inland distance > 18; smooth transitions",
+    "elevation": "authored illustration-derived relief, not surveyed geography",
+    "id": "east_asia",
+    "terrain_sha256": "a4d991cc4f60b490be1a32306368e9320dcab81948993b209fd3100e43914fb3",
+    "source_sha256": "2f75156d770f4d28060e9a02c54dd385c9cd31fca0b160aa4ff8971484428753",
+    "review_uv": [
+      0.49640861931364727,
+      0.5063829787234042
+    ]
+  },
+  {
+    "source": "Assets\\AutoSailing_Map_Pack\\01_map\\new_world.png",
+    "style_reference": "Assets/AutoSailing_Map_Pack/01_map/east_asia.png",
+    "grid": [
+      1254,
+      706
+    ],
+    "world": [
+      960,
+      540
+    ],
+    "land_fraction": 0.32267734750215743,
+    "height_max": 29.816238403320312,
+    "deep_summit_rule": "height > 15 AND inland distance > 18; smooth transitions",
+    "elevation": "authored illustration-derived relief, not surveyed geography",
+    "id": "new_world",
+    "terrain_sha256": "62cd7ec77210ddda2fb4f7e1153b5a7684e951cecb1d63d04a8efe05ab5cf8f4",
+    "source_sha256": "c02c275b29c18a0fa3f8615dba9dde6c85f61dd2b87cf1c3b4413d5e16c4ac1b",
+    "review_uv": [
+      0.5003990422984836,
+      0.500709219858156
+    ]
+  }
+]

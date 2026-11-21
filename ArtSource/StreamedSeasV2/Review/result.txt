@@ -1,0 +1,1 @@
+PASS 536 checks; async loading, safe departure, picking, bidirectional wrap, two polar walls, distant eviction, exploration save, missing-resource blocking/retry. Resident 196; evictions 132; estimated bytes 160826216.

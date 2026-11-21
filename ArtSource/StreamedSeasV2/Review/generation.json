@@ -1,0 +1,81 @@
+{
+  "chunks": 2304,
+  "landChunks": 1506,
+  "sampleStep": 1.25,
+  "source": "seven authored regional heightfields + coarse global gap fill",
+  "registration": {
+    "description": "Authored rectangular atlas registration, degrees [west,south,east,north]. Illustration coastlines are stylized, not surveyed. Smooth overlap uses a common world field.",
+    "regions": [
+      {
+        "id": "africa",
+        "bounds": [
+          -30,
+          -40,
+          60,
+          35
+        ],
+        "sourceSha256": "15ee9d460229d69b0ad3848de611be1b70aaa40d2a9f73e2c90817c3a98e78f4"
+      },
+      {
+        "id": "new_world",
+        "bounds": [
+          -100,
+          4,
+          -60,
+          30
+        ],
+        "sourceSha256": "62cd7ec77210ddda2fb4f7e1153b5a7684e951cecb1d63d04a8efe05ab5cf8f4"
+      },
+      {
+        "id": "indian_ocean",
+        "bounds": [
+          35,
+          -30,
+          110,
+          30
+        ],
+        "sourceSha256": "77c79d75824a19e24db5c87eab04573b7101a2e70cd2694fa60ce28cc3742cc3"
+      },
+      {
+        "id": "north_sea",
+        "bounds": [
+          -25,
+          40,
+          45,
+          80
+        ],
+        "sourceSha256": "d41fa61aea90b5d95bbe1f1b079b8525e330bb767c784ebb029449694c51ed99"
+      },
+      {
+        "id": "mediterranean_sea",
+        "bounds": [
+          -12,
+          25,
+          45,
+          48
+        ],
+        "sourceSha256": "6ad132e57709fe2114596a8c10c8ac7c5a9d899df4b786ce9c8df9ec54b265da"
+      },
+      {
+        "id": "east_asia",
+        "bounds": [
+          102,
+          17,
+          152,
+          50
+        ],
+        "sourceSha256": "a4d991cc4f60b490be1a32306368e9320dcab81948993b209fd3100e43914fb3"
+      },
+      {
+        "id": "southeast_asia",
+        "bounds": [
+          94.25020446289541,
+          -15.351610904098845,
+          136.43999511111875,
+          22.714241223769367
+        ],
+        "sourceSha256": "5f1c4bbdbadda3955c533e015bad4075bd554503b8af7b20aca0e16731902dec"
+      }
+    ]
+  }
+}

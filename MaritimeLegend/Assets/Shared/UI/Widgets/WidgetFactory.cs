@@ -20,9 +20,9 @@ public sealed class StockCardData {public Sprite image;public string name,grade,
 public static class StockCardWidget {
  public static void Render(WidgetFactory ui,Transform parent,Rect r,StockCardData data,bool market){
   if(data==null){ui.Label(parent,new Rect(r.x+15,r.y+10,65,r.height-20),"▱",40,new Color(.35f,.48f,.48f),TextAnchor.MiddleCenter);ui.Label(parent,new Rect(r.x+88,r.y,90,r.height),"空货仓",16,new Color(.45f,.56f,.54f));return;}
-  var imageRect=market?new Rect(r.x+24,r.y+30,r.width-48,116):new Rect(r.x+6,r.y+10,78,78);
+  var imageRect=market?new Rect(r.x+24,r.y+30,r.width-48,r.height-104):new Rect(r.x+6,r.y+10,78,78);
   if(data.image!=null)ui.Image(parent,"ProductImage",imageRect,data.image,data.dim?new Color(.3f,.3f,.3f):Color.white);else ui.Label(parent,imageRect,"◇",34,null,TextAnchor.MiddleCenter);
-  if(market){ui.Label(parent,new Rect(r.x+98,r.y+5,r.width-108,24),data.grade,16,data.gradeColor,TextAnchor.MiddleRight);ui.Label(parent,new Rect(r.x+12,r.y+148,r.width-24,30),data.name,20);ui.Label(parent,new Rect(r.x+12,r.y+181,r.width-24,32),data.price,22,ui.accent);ui.Label(parent,new Rect(r.x+10,r.y+5,88,24),data.stock,14);}
+  if(market){ui.Label(parent,new Rect(r.x+98,r.y+5,r.width-108,24),data.grade,16,data.gradeColor,TextAnchor.MiddleRight);ui.Label(parent,new Rect(r.x+12,r.y+r.height-72,r.width-24,30),data.name,20);ui.Label(parent,new Rect(r.x+12,r.y+r.height-39,r.width-24,32),data.price,22,ui.accent);ui.Label(parent,new Rect(r.x+10,r.y+5,88,24),data.stock,14);}
   else{ui.Label(parent,new Rect(r.x+100,r.y+14,r.width-105,20),data.grade,13,data.gradeColor);ui.Label(parent,new Rect(r.x+100,r.y+34,r.width-105,28),data.name,16);ui.Label(parent,new Rect(r.x+100,r.y+64,r.width-105,25),data.price,16,ui.accent);}
  }
 }

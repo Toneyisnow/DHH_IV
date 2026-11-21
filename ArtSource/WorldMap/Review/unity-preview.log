@@ -1,0 +1,439 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.3/staging' branch; Version is '6000.3.10f1 (e35f0c77bd8e) revision 14901004'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Channel LicenseClient-charl doesn't exist
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'en' Physical Memory: 32443 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-11-15T21:08:57Z
+[Licensing::Module] Successfully launched the LicensingClient (PId: 32904)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-charl" at "2026-11-15T21:08:57.8095465Z"
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Unity.exe
+-batchmode
+-force-d3d11
+-projectPath
+D:/SourceCode/Git/toneyisnow/DHH_IV/ArtSource/WorldMap/UnityPreview
+-executeMethod
+MaritimeLegend.Editor.WorldSeaIntegration.Verify
+-worldReview
+D:/SourceCode/Git/toneyisnow/DHH_IV/ArtSource/WorldMap/Review
+-logFile
+D:/SourceCode/Git/toneyisnow/DHH_IV/ArtSource/WorldMap/Review/unity-preview.log
+Successfully changed project path to: D:/SourceCode/Git/toneyisnow/DHH_IV/ArtSource/WorldMap/UnityPreview
+D:/SourceCode/Git/toneyisnow/DHH_IV/ArtSource/WorldMap/UnityPreview
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+Player connection [36244]  Target information:
+
+Player connection [36244]  * "[IP] 172.28.64.1 [Port] 55504 [Flags] 2 [Guid] 3340122060 [EditorId] 3340122060 [Version] 1048832 [Id] WindowsEditor(7,toneyalien12) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [36244]  * "[IP] 10.0.0.99 [Port] 55504 [Flags] 2 [Guid] 3340122060 [EditorId] 3340122060 [Version] 1048832 [Id] WindowsEditor(7,toneyalien12) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [36244]  * "[IP] 10.0.0.24 [Port] 55504 [Flags] 2 [Guid] 3340122060 [EditorId] 3340122060 [Version] 1048832 [Id] WindowsEditor(7,toneyalien12) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [36244] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [36244] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-40172" after 0.4 seconds.
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              7936c373678e4cbab986e9222117cb0b
+  Correlation Id:          ba73712fea7f4ebe2fada3ea94c5b989
+  External correlation Id: 6639844941185239346
+  Machine Id:              ahkCBMpFGkS5dEjRWzhYlmGmQRw=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-charl" (connect: 0.57s, validation: 0.05s, handshake: 2.86s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-charl-notifications" at "2026-11-15T21:09:00.7175839Z"
+[Licensing::Module] Connected to LicensingClient (PId: 32904, launch time: 0.02, total connection time: 3.47s)
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 6614505-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.01
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 3.54s
+[Licensing::Module] Licensing is initialized (took 2.26s).
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.10f1 (e35f0c77bd8e)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/SourceCode/Git/toneyisnow/DHH_IV/ArtSource/WorldMap/UnityPreview/Assets
+Forcing GfxDevice: Direct3D 11
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Ti (ID=0x2489)
+    Vendor:   NVIDIA
+    VRAM:     8024 MB
+    Driver:   32.0.16.1060
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56172
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.003630 seconds.
+- Loaded All Assemblies, in  0.525 seconds
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Licensing::Client] Successfully resolved entitlement details
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.890 seconds
+Domain Reload Profiling: 1409ms
+	BeginReloadAssembly (181ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (16ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (65ms)
+	LoadAllAssembliesAndSetupDomain (214ms)
+		LoadAssemblies (160ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (209ms)
+			TypeCache.Refresh (206ms)
+				TypeCache.ScanAssembly (190ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (890ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (845ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (95ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (109ms)
+			ProcessInitializeOnLoadAttributes (211ms)
+			ProcessInitializeOnLoadMethodAttributes (424ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Package Manager] Registered 4 packages:
+  Built-in packages:
+    com.unity.modules.imgui@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\ArtSource\WorldMap\UnityPreview\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\ArtSource\WorldMap\UnityPreview\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.physics@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\ArtSource\WorldMap\UnityPreview\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.imageconversion@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\ArtSource\WorldMap\UnityPreview\Library\PackageCache\com.unity.modules.imageconversion)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.00 seconds
+[Package Manager] Done resolving packages in 0.11 seconds
+[Package Manager] Registered 4 packages:
+  Built-in packages:
+    com.unity.modules.imgui@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\ArtSource\WorldMap\UnityPreview\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\ArtSource\WorldMap\UnityPreview\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.physics@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\ArtSource\WorldMap\UnityPreview\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.imageconversion@1.0.0 (location: D:\SourceCode\Git\toneyisnow\DHH_IV\ArtSource\WorldMap\UnityPreview\Library\PackageCache\com.unity.modules.imageconversion)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.00 seconds
+A meta data file (.meta) exists but its asset 'Assets/Core/Localization/LocalizationService.cs' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+A meta data file (.meta) exists but its asset 'Assets/Core/Simulation/WorldSession.cs' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+[ScriptCompilation] Requested script compilation because: Assetdatabase observed changes in script compilation related files
+Starting: C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aEDbg.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: D:/SourceCode/Git/toneyisnow/DHH_IV/ArtSource/WorldMap/UnityPreview
+DisplayProgressbar: Compiling Scripts
+ExitCode: 4 Duration: 1s240ms
+Rebuilding DAG because FileSignature timestamp changed: Library/Bee/1900b0aEDbg-inputdata.json
+*** Tundra requires additional run (1.16 seconds), 1 items updated, 150 evaluated
+Starting: C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Data\netcorerun\netcorerun.exe "C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Data\Tools\BuildPipeline\ScriptCompilationBuildProgram.exe" "Library/Bee/1900b0aEDbg.dag.json" "Library/Bee/1900b0aEDbg-inputdata.json" "Library\Bee\buildprogram0.traceevents"
+WorkingDir: D:/SourceCode/Git/toneyisnow/DHH_IV/ArtSource/WorldMap/UnityPreview
+ExitCode: 0 Duration: 0s283ms
+Starting: C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aEDbg.dag" --continue-on-failure --dagfilejson="Library\Bee\1900b0aEDbg.dag.json" --profile="Library/Bee/backend2.traceevents" ScriptAssemblies
+WorkingDir: D:/SourceCode/Git/toneyisnow/DHH_IV/ArtSource/WorldMap/UnityPreview
+ExitCode: 0 Duration: 0s898ms
+Finished compiling graph: 160 nodes, 573 flattened edges (563 ToBuild, 4 ToUse), maximum node priority 18
+[150/157    0s] WriteText Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp.rsp
+[151/157    0s] Csc Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp.dll (+2 others)
+[152/157    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb
+[153/157    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll
+[154/157    0s] Csc Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp-Editor.dll (+2 others)
+[155/157    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+[156/157    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+*** Tundra build success (0.85 seconds), 7 items updated, 157 evaluated
+AssetDatabase: script compilation time: 2.987905s
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.442 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.633 seconds
+Domain Reload Profiling: 1069ms
+	BeginReloadAssembly (335ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (154ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (14ms)
+		LoadAssemblies (128ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (634ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (460ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (65ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (152ms)
+			ProcessInitializeOnLoadAttributes (173ms)
+			ProcessInitializeOnLoadMethodAttributes (52ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Start importing Assets/Resources/Shaders/WorldSeaWater.shader using Guid(b4be05e8eb9234848a12549a3c40e38f) (ShaderImporter)Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+ -> (artifact id: '04610999c09823d11d4bf7b392ae045c') in 0.0777418 seconds
+Start importing Assets/Resources/Shaders/WorldSeaLand.shader using Guid(495768908526b8242b6b831ec06969f1) (ShaderImporter) -> (artifact id: '5714a6188d0c93c57f856d115646624d') in 0.008284 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=7f16b1b45dbde5a458b7c1842d7f2829): Total: 4.600 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=2 (actual=2, local cache=0, cache server=0)
+		Asset DB Process Time: managed=2 ms, native=894 ms
+		Asset DB Callback time: managed=105 ms, native=152 ms
+		Scripting: domain reloads=1, domain reload time=443 ms, compile time=2990 ms, other=12 ms
+		Project Asset Count: scripts=92, non-scripts=1686
+		Asset File Changes: new=1, changed=7, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokeCustomDependenciesCallbacks: 0.002ms
+	InvokePackagesCallback: 122.000ms
+	ApplyChangesToAssetFolders: 0.277ms
+	Scan: 72.425ms
+	OnSourceAssetsModified: 1.446ms
+	CategorizeAssetsWithTransientArtifact: 0.310ms
+	ProcessAssetsWithTransientArtifactChanges: 1.083ms
+	CategorizeAssets: 9.316ms
+	ImportOutOfDateAssets: 726.879ms (-2357.386ms without children)
+		ImportManagerImport: 90.719ms (3.896ms without children)
+			ImportInProcess: 86.762ms
+			UpdateCategorizedAssets: 0.061ms
+		CompileScripts: 2989.852ms
+		ReloadNativeAssets: 0.001ms
+		UnloadImportedAssets: 0.241ms
+		ReloadImportedAssets: 2.681ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.203ms
+		InitializingProgressBar: 0.008ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.001ms
+		OnDemandSchedulerStart: 0.560ms
+	PostProcessAllAssets: 135.845ms
+	Hotreload: 0.818ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.004ms
+	UnloadStreamsBegin: 1.904ms
+	PersistCurrentRevisions: 0.224ms
+	UnloadStreamsEnd: 0.003ms
+	GenerateScriptTypeHashes: 0.001ms
+	Untracked: 3527.406ms
+
+Application.AssetDatabase Initial Refresh End
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Scanning for USB devices : 6.094ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-UnityPreview
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 94 unused Assets / (507.6 KB). Loaded Objects now: 721.
+Memory consumption went from 99.0 MB to 98.5 MB.
+Total: 6.542800 ms (FindLiveObjects: 0.154600 ms CreateObjectMapping: 0.096800 ms MarkObjects: 6.023700 ms  DeleteObjects: 0.265600 ms)
+
+WORLD_SAILING_CHECKS_PASS 294896 assertions; all shared chunk edges, ports, cyclic movement, walls, migration and clock
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MaritimeLegend.Editor.WorldSailingChecks:Run () (at Assets/Tests/EditMode/Editor/WorldSailingChecks.cs:53)
+MaritimeLegend.Editor.WorldSeaIntegration:Verify () (at Assets/Editor/WorldSeaIntegration.cs:25)
+
+(Filename: Assets/Tests/EditMode/Editor/WorldSailingChecks.cs Line: 53)
+
+Unloading 81 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 81 unused Assets / (64.7 KB). Loaded Objects now: 726.
+Memory consumption went from 99.3 MB to 99.2 MB.
+Total: 5.965300 ms (FindLiveObjects: 0.064900 ms CreateObjectMapping: 0.010400 ms MarkObjects: 5.801400 ms  DeleteObjects: 0.086900 ms)
+
+Start importing Assets/Scenes/WorldSailingTest.unity using Guid(149405229ada2af49a2e66b36b461243) (DefaultImporter) -> (artifact id: '5eadaec220626ddfd43f3688b4dd72db') in 0.0013697 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=a3ffc5bda11b33b47b2dc80e7ba7e562): Total: 0.018 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+[Project] Loading completed in 13.228 seconds
+	Project init time: 				10.124 seconds
+		Template init time: 		0.000 seconds
+		Package Manager init time: 		2.668 seconds
+		Asset Database init time: 		0.247 seconds
+		Global illumination init time: 	0.004 seconds
+		Assemblies load time: 			1.442 seconds
+		Unity extensions init time: 	0.001 seconds
+		Asset Database refresh time: 	4.600 seconds
+	Scene opening time: 			2.695 seconds
+##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1794776950431,"processId":40172,"projectLoad":13.2281042,"projectInit":10.1244808,"templateInit":0.0,"packageManagerInit":2.6683687,"assetDatabaseInit":0.2471037,"globalIlluminationInit":0.0037981,"assembliesLoad":1.4415333,"unityExtensionsInit":0.0006451,"assetDatabaseRefresh":4.6000844,"sceneOpening":2.6947142}
+##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1794776950431,"processId":40172,"editorVersion":"6000.3.10f1 (e35f0c77bd8e)","branch":"6000.3/staging","buildType":"Release","platform":"Windows"}
+Asset Pipeline Refresh (id=0db19ec849461b0438d5ed5693ae579d): Total: 0.017 seconds - Initiated by RefreshV2(ForceSynchronousImport)
+Asset Pipeline Refresh (id=dde6dadcf0b145746b80677a618ec3d6): Total: 0.014 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Start Indexing on Editor startup
+[Indexing] Starting Initial Indexing for Assets
+[UnityConnectServicesConfig] config is NOT valid, switching to default
+Created GICache directory at C:/Users/charl/AppData/LocalLow/Unity/Caches/GiCache. Took: 0.039s, timestamps: [13.235 - 13.274]
+WORLD_RENDER_STAGE 0 resident=48 visible=24 estimatedBytes=38164224 position=5455,3787.5
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MaritimeLegend.Editor.WorldSeaIntegration:Tick () (at Assets/Editor/WorldSeaIntegration.cs:42)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Editor/WorldSeaIntegration.cs Line: 42)
+
+WORLD_RENDER_STAGE 1 resident=41 visible=26 estimatedBytes=17740600 position=9030,2620
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MaritimeLegend.Editor.WorldSeaIntegration:Tick () (at Assets/Editor/WorldSeaIntegration.cs:42)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Editor/WorldSeaIntegration.cs Line: 42)
+
+WORLD_RENDER_STAGE 2 resident=41 visible=24 estimatedBytes=3063388 position=11518,1920
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MaritimeLegend.Editor.WorldSeaIntegration:Tick () (at Assets/Editor/WorldSeaIntegration.cs:42)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Editor/WorldSeaIntegration.cs Line: 42)
+
+WORLD_RENDER_STAGE 3 resident=43 visible=26 estimatedBytes=3135212 position=2.00000000000546,1920
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MaritimeLegend.Editor.WorldSeaIntegration:Tick () (at Assets/Editor/WorldSeaIntegration.cs:42)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Editor/WorldSeaIntegration.cs Line: 42)
+
+TrimDiskCacheJob: Current cache size 189mb
+WORLD_RENDER_STAGE 4 resident=24 visible=4 estimatedBytes=7976556 position=5760,5120
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MaritimeLegend.Editor.WorldSeaIntegration:Tick () (at Assets/Editor/WorldSeaIntegration.cs:42)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Editor/WorldSeaIntegration.cs Line: 42)
+
+WORLD_RENDER_VERIFY_PASS
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MaritimeLegend.Editor.WorldSeaIntegration:Finish () (at Assets/Editor/WorldSeaIntegration.cs:53)
+MaritimeLegend.Editor.WorldSeaIntegration:Tick () (at Assets/Editor/WorldSeaIntegration.cs:47)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/Editor/WorldSeaIntegration.cs Line: 53)
+
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input System polling thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-charl-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-charl channel disconnected successfully.
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+Checking for leaked weakptr:
+  Found no leaked weakptrs.
+[Package Manager] Server process was shutdown
+##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1794776983644,"processId":40172,"allocatedMemory":16021106,"memoryLabels":[{"Default":29313},{"Permanent":15236},{"NewDelete":67619},{"Thread":4230344},{"Manager":33501},{"VertexData":488},{"Geometry":816},{"Texture":296},{"Shader":80021},{"Material":24},{"GfxDevice":55617},{"Animation":392},{"Audio":2664},{"FreeType":8},{"FontEngine":736},{"Physics":2090},{"Physics2D":16},{"Serialization":592},{"Input":14984},{"JobScheduler":33024},{"TextLib":216},{"Mono":32},{"ScriptingNativeRuntime":155060},{"BaseObject":1619696},{"Resource":1336},{"Renderer":3000},{"Transform":4685},{"File":1016},{"WebCam":616},{"Culling":32},{"Terrain":11394},{"Wind":24},{"STL":40},{"String":23574},{"DynamicArray":79206},{"HashMap":3840143},{"Utility":2660822},{"Curl":2696},{"PoolAlloc":2056},{"AI":80},{"TypeTree":5341},{"ScriptManager":512},{"RuntimeInitializeOnLoadManager":64},{"SpriteAtlas":112},{"GI":7792},{"Director":8240},{"CloudService":8928},{"WebRequest":808},{"VR":47994},{"SceneManager":504},{"Video":208},{"LazyScriptCache":32},{"Camera":17},{"Secure":2113},{"SerializationCache":1576},{"APIUpdating":10320},{"Subsystems":336},{"VirtualTexturing":57888},{"StaticSafetyDebugInfo":278528},{"Analytics":384},{"Hierarchy":608},{"CoreStats":13032},{"Identifiers":12960},{"Gui":96},{"EditorUtility":89516},{"VersionControl":4},{"Undo":947},{"AssetDatabase":2453133},{"EditorGi":328},{"UnityConnect":29232},{"Upm":1896},{"AssetCompliance":64},{"DrivenProperties":72},{"LocalIPC":211},{"ProfilerEditor":9746},{"CoreBusinessMetrics":2867},{"Licensing":1232},{"AssetReference":32},{"IPCStream":32}]}

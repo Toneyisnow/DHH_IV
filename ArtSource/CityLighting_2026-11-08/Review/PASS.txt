@@ -1,0 +1,1 @@
+Lisbon stairs traversed, Venice bridge crossed, 8-direction atlas frames, depth buffer captured, weather cycled, perspective follow and dolly verified, large district reachable, authored 8 x (4 walk + 1 idle) frames and shadow lights verified, eight-scene structure retained. These are runtime captures, not static concept mockups.

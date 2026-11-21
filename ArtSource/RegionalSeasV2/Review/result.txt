@@ -1,0 +1,2 @@
+PASS: 7 maps x 3 skies rendered with ManualSeaV2Runtime; original shaders, ships, clouds and camera.
+Art review only; global registration and streaming are not implemented here.

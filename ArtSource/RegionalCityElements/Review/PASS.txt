@@ -1,0 +1,1 @@
+Six atlas alpha bounds validated; 36 elements and six samples authored; 96 frames at 12 fps captured per region; isolated motion verified for every element; regional shader has no compilation errors. Review images are Unity renders, not concept mockups.

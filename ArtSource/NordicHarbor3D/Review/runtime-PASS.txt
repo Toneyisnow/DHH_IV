@@ -1,0 +1,1 @@
+Standalone runtime PASS; isolated NordicHarborScene, five solid building instances, perspective camera and both reference/side render captures.

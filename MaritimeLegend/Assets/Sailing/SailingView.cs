@@ -8,12 +8,14 @@ public partial class MaritimeGame {
  internal void SailingView(){
   var voyage=s.sailing;var sh=s.ships[0];var prompt=g.PromptedEncounter;bool enabled=GUI.enabled;GUI.enabled=enabled&&prompt==null;
   ManualSeaBackdrop();
+  if(IsWorldSea){WorldSailingView();GUI.enabled=enabled;return;}
   var origin=new Vector2(voyage.manualSpawnX,voyage.manualSpawnY);float distance=Vector2.Distance(SeaPosition,origin);
   Fill(new Rect(32,28,440,94),new Color(.025f,.09f,.13f,.76f));Label(54,40,420,40,"东南亚 V2 · 手动航海",heading);Label(56,86,400,30,GameCalendar.Date(voyage.calendar.elapsedGameDays)+"  /  三船纵队",small);
   // Temporary manual V2 lighting controls; no saved time/weather changes.
   if(Btn(590,32,170,54,"Sunny"))indianOcean.SetSkyMode(ManualSeaV2Environment.SkyMode.Sunny);
   if(Btn(775,32,170,54,"Sunset"))indianOcean.SetSkyMode(ManualSeaV2Environment.SkyMode.Sunset);
   if(Btn(960,32,170,54,"Night"))indianOcean.SetSkyMode(ManualSeaV2Environment.SkyMode.Night);
+  if(Btn(1150,32,250,54,"世界手动航海")){EnterWorldSea();GUI.enabled=enabled;return;}
   if(Btn(1680,32,208,54,"暂停 / ESC"))paused=true;
   if(Btn(1430,100,458,50,"返回出发水域 · "+voyage.manualSpawnPort)){seaTarget=origin;seaHasTarget=true;seaStopped=false;}
   Fill(new Rect(30,958,1860,94),new Color(.025f,.09f,.13f,.88f));

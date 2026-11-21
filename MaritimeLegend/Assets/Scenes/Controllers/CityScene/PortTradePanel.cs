@@ -7,7 +7,7 @@ using UnityEngine.UI;
 using MaritimeLegend.Domain;
 using MaritimeLegend.UI.Widgets;
 namespace MaritimeLegend {
-// Native uGUI implementation of the approved fixed 1920x1080 prototype.
+// Native uGUI trading layout; retain the existing 1920x1080 reference scale and art.
 public sealed class PortTradePanel : MonoBehaviour {
  MaritimeGame owner;GameService game;TradeSession draft;Canvas canvas;RectTransform root,body,flyLayer;Font font;Text status;
  bool drawing;
@@ -48,47 +48,47 @@ public sealed class PortTradePanel : MonoBehaviour {
  void Item(Transform parent,Rect r,TradeSession.Item item,bool dim=false,bool market=false,int price=0){
   StockCardData data=null;
   if(item!=null){icons.TryGetValue(item.product,out var sprite);data=new StockCardData{image=sprite,name=game.C.Product(item.product).name,grade=item.quality==0?"✦":new string('★',item.quality),gradeColor=grades[item.quality],price=price.ToString("N0")+(market?" 金币":""),dim=dim,stock=market?"库存  "+draft.Stock(item.product,item.quality):null};}
-  StockCardWidget.Render(Widgets,parent,r,data,market);
+  if(!market){var face=Box(parent,"CardFace",new Rect(r.x,r.y,188,100));face.localScale=Vector3.one*(r.width/188f);StockCardWidget.Render(Widgets,face,new Rect(0,0,188,100),data,false);}
+  else StockCardWidget.Render(Widgets,parent,r,data,true);
  }
  void Draw(){
   drawing=true;cursors.Clear();used.Clear();targets.Clear();
   Text(body,new Rect(48,15,600,24),game.C.ports[game.S.city].name,16);Text(body,new Rect(48,36,360,55),"港口交易所",36,gold);Text(body,new Rect(370,46,550,36),GameCalendar.Date(game.S.sailing.calendar.elapsedGameDays),19);Text(body,new Rect(1420,24,430,60),"金币  "+game.S.gold.ToString("N0"),30,gold,TextAnchor.MiddleRight);
-  Button(body,new Rect(1676,1018,196,48),"返回城市",()=>{owner.Change("城市");canvas.gameObject.SetActive(false);game=null;});
-  Background(body,new Rect(48,107,1824,1),gold*.5f);Text(body,new Rect(48,120,500,40),"城市供货",26);Text(body,new Rect(674,120,1100,40),"船队与产业园",26);
+  Background(body,new Rect(48,107,1824,1),gold*.5f);Text(body,new Rect(48,120,500,40),"商店",26);
   var offers=new List<Tuple<string,int>>();foreach(var m in game.S.cities[game.S.city].market)for(int q=0;q<SaveContract.QualityCount;q++)if(m.Stock(q)>0)offers.Add(Tuple.Create(m.product,q));
   offers=offers.OrderByDescending(o=>game.C.ports[game.S.city].raw.Contains(o.Item1)).ThenBy(o=>o.Item1).ThenByDescending(o=>o.Item2).ToList();
-  var city=Scroll(body,"CityGoods",new Rect(48,171,590,700),16+(float)Math.Ceiling(offers.Count/3f)*232-12);
-  for(int i=0;i<offers.Count;i++){var o=offers[i];int price=draft.Quote(o.Item1,o.Item2,true);var r=new Rect(i%3*192,i/3*232+8,180,220);bool can=draft.Stock(o.Item1,o.Item2)>0&&draft.balance>=price;RectTransform card=null;card=Button(city,r,"",()=>Buy(o.Item1,o.Item2,card),can);targets["market:"+o.Item1+":"+o.Item2]=card;Item(card,new Rect(0,0,180,220),new TradeSession.Item{product=o.Item1,quality=o.Item2},!can,true,price);}
-  Background(body,new Rect(48,879,590,1),gold*.3f);var sell=Scroll(body,"SaleGoods",new Rect(48,887,590,110),Math.Max(0,draft.sales.Count*192-12),true);
-  for(int i=0;i<draft.sales.Count;i++){var sale=draft.sales[i];RectTransform card=null;card=Button(sell,new Rect(i*192,6,180,100),"",()=>Return(sale,card),!flying.Contains(sale.item.id));targets["sale:"+sale.item.id]=card;if(!flying.Contains(sale.item.id))Item(card,new Rect(0,0,180,100),sale.item,false,false,draft.Quote(sale.item.product,sale.item.quality,false));}
-  float fleetHeight=0;foreach(var h in draft.holds.Where(x=>!x.warehouse))fleetHeight+=42+(float)Math.Ceiling(Math.Max(6,h.cells.Count)/6f)*110+18;
-  var fleet=Scroll(body,"Fleet",new Rect(674,171,1198,395),fleetHeight);float y=0;
-  for(int h=0;h<draft.holds.Count;h++){var hold=draft.holds[h];if(hold.warehouse)continue;Text(fleet,new Rect(12,y,1130,34),hold.name+(hold.locked?" · 运输中":""),22,h==draft.lastHold?gold:paper);if(h==draft.lastHold)Background(fleet,new Rect(0,y,2,38),gold);y+=42;DrawHold(fleet,h,y);y+=(float)Math.Ceiling(Math.Max(6,hold.cells.Count)/6f)*110+18;}
-  Background(body,new Rect(674,582,1198,1),gold*.3f);Text(body,new Rect(686,592,1000,34),"产业园仓库",23,draft.holds.Last().warehouse&&draft.lastHold==draft.holds.Count-1?gold:paper);
-  if(draft.holds.Last().warehouse){int h=draft.holds.Count-1;var warehouse=Scroll(body,"Warehouse",new Rect(674,633,1198,225),(float)Math.Ceiling(draft.holds[h].cells.Count/6f)*110);DrawHold(warehouse,h,0);}else Text(body,new Rect(686,650,1000,70),"当前城市尚未开放产业园仓库",20);
-  Text(body,new Rect(674,970,1198,28),"点击空货仓选定收货船只或仓库 · 点击货物准备卖出 · 点击待售货物放回",16);
+  var city=Scroll(body,"CityGoods",new Rect(48,171,792,812),16+(float)Math.Ceiling(offers.Count/4f)*400);
+  for(int i=0;i<offers.Count;i++){var o=offers[i];int price=draft.Quote(o.Item1,o.Item2,true);var r=new Rect(i%4*194,i/4*400+8,182,384);bool can=draft.Stock(o.Item1,o.Item2)>0&&draft.balance>=price;RectTransform card=null;card=Button(city,r,"",()=>Buy(o.Item1,o.Item2,card),can);targets["market:"+o.Item1+":"+o.Item2]=card;Item(card,new Rect(0,0,182,384),new TradeSession.Item{product=o.Item1,quality=o.Item2},!can,true,price);}
+  var tabs=Scroll(body,"HoldTabs",new Rect(872,120,1000,56),draft.holds.Count*224,true);
+  for(int h=0;h<draft.holds.Count;h++){int selected=h;var hold=draft.holds[h];Button(tabs,new Rect(h*224,6,212,44),hold.name+(hold.locked?" · 运输中":""),()=>{draft.lastHold=selected;draft.Evaluate();Draw();},true,h==draft.lastHold?new Color(.51f,.42f,.25f):panel);}
+  if(draft.holds.Count>0){int h=draft.lastHold;var hold=draft.holds[h];var cargo=Scroll(body,"Fleet",new Rect(872,202,1000,418),(float)Math.Ceiling(Math.Max(6,hold.cells.Count)/6f)*122);DrawHold(cargo,h,0);}
+  Background(body,new Rect(872,650,1000,1),gold*.3f);Text(body,new Rect(884,664,900,40),"待售",26);
+  var sell=Scroll(body,"SaleGoods",new Rect(872,720,1000,132),Math.Max(0,draft.sales.Count*164-6),true);
+  for(int i=0;i<draft.sales.Count;i++){var sale=draft.sales[i];RectTransform card=null;card=Button(sell,new Rect(i*164,6,158,116),"",()=>Return(sale,card),!flying.Contains(sale.item.id));targets["sale:"+sale.item.id]=card;if(!flying.Contains(sale.item.id))Item(card,new Rect(0,0,158,84),sale.item,false,false,draft.Quote(sale.item.product,sale.item.quality,false));Text(card,new Rect(6,88,146,22),draft.holds[sale.hold].name,13,gold);}
+  status=Text(body,new Rect(884,885,976,70),draft.error,18);
   Background(body,new Rect(48,1012,1824,1),gold*.6f);
-  var totals=Text(body,new Rect(48,1018,850,48),"买入  "+draft.buyTotal.ToString("N0")+"     卖出  "+draft.sellTotal.ToString("N0")+"     成交后余额  "+draft.balance.ToString("N0"),22,gold);
-  float hintX=48+Math.Min(totals.preferredWidth,850)+24;totals.rectTransform.sizeDelta=new Vector2(hintX-72,48);
-  status=Text(body,new Rect(hintX,1018,1432-hintX,48),draft.error,16);
-  Button(body,new Rect(1456,1018,196,48),"确认成交",Commit,draft.Count>0&&draft.error==""&&flying.Count==0,new Color(.51f,.42f,.25f));
+  Text(body,new Rect(48,1018,1040,48),"总收入  "+draft.sellTotal.ToString("N0")+"     总支出  "+draft.buyTotal.ToString("N0"),22,gold);
+  Button(body,new Rect(1236,1018,196,48),"取消",()=>{draft=new TradeSession(game);Draw();},draft.Count>0&&flying.Count==0);
+  Button(body,new Rect(1456,1018,196,48),"交易",Commit,draft.Count>0&&draft.error==""&&flying.Count==0,new Color(.51f,.42f,.25f));
+  Button(body,new Rect(1676,1018,196,48),"返回城市",()=>{owner.Change("城市");canvas.gameObject.SetActive(false);game=null;});
   foreach(var node in pooled.Values)if(node!=null&&!used.Contains(node))node.gameObject.SetActive(false);drawing=false;
  }
  void DrawHold(RectTransform parent,int h,float y){var hold=draft.holds[h];int count=hold.warehouse?hold.cells.Count:Math.Max(6,hold.cells.Count);
   for(int i=0;i<count;i++){int slot=i;bool reserved=i>=hold.slotLimit&&(i>=hold.cells.Count||hold.cells[i]==null);var item=i<hold.cells.Count?hold.cells[i]:null;RectTransform card=null;
-   card=Button(parent,new Rect(i%6*197+12,y+i/6*110+6,188,100),"",()=>Select(h,slot,card),!reserved&&!hold.locked&&(item==null||!flying.Contains(item.id)),reserved?new Color(.08f,.14f,.16f,.3f):(Color?)null);
+   card=Button(parent,new Rect(i%6*164,y+i/6*122+6,158,116),"",()=>Select(h,slot,card),!reserved&&!hold.locked&&(item==null||!flying.Contains(item.id)),reserved?new Color(.08f,.14f,.16f,.3f):(Color?)null);
    targets["hold:"+h+":"+i]=card;
-   if(reserved){Text(card,new Rect(0,0,188,100),i<6&&!hold.warehouse?"预留货仓":"—",16,new Color(.33f,.43f,.43f),TextAnchor.MiddleCenter);continue;}
-   if(item==null||!flying.Contains(item.id))Item(card,new Rect(0,0,188,100),item,false,false,item==null?0:draft.Quote(item.product,item.quality,!item.bought));
-   if(i>=hold.slotLimit)Text(card,new Rect(3,80,95,18),"待整理货物",11,gold);
+   if(reserved){Text(card,new Rect(0,0,158,116),i<6&&!hold.warehouse?"预留货仓":"—",16,new Color(.33f,.43f,.43f),TextAnchor.MiddleCenter);continue;}
+   if(item==null||!flying.Contains(item.id))Item(card,new Rect(0,0,158,84),item,false,false,item==null?0:draft.Quote(item.product,item.quality,item.bought));
+   if(item!=null&&item.bought){Background(card,new Rect(0,0,158,2),gold);Text(card,new Rect(6,88,146,22),"待买入",13,gold);}
+   else if(i>=hold.slotLimit)Text(card,new Rect(6,88,146,22),"待整理货物",11,gold);
   }
  }
  Vector2 Position(RectTransform card){return (Vector2)root.InverseTransformPoint(card.TransformPoint(new Vector3(0,0,0)))+new Vector2(960,-540);}
- void Animate(TradeSession.Item item,Vector2 from,string target){flying.Add(item.id);Draw();Canvas.ForceUpdateCanvases();if(!targets.TryGetValue(target,out var destination)){flying.Remove(item.id);Draw();return;}Vector2 to=Position(destination);to.x=Mathf.Clamp(to.x,48,1684);to.y=Mathf.Clamp(to.y,-893,-171);StartCoroutine(Fly(item,from,to));}
- IEnumerator Fly(TradeSession.Item item,Vector2 from,Vector2 to){var ghost=Box(flyLayer,"InFlight",new Rect(from.x,-from.y,188,100));Background(ghost,new Rect(0,0,188,2),gold);Background(ghost,new Rect(0,98,188,2),gold);Background(ghost,new Rect(0,0,2,100),gold);Background(ghost,new Rect(186,0,2,100),gold);float start=Time.unscaledTime;while(Time.unscaledTime-start<.323f){ghost.anchoredPosition=Vector2.Lerp(from,to,(Time.unscaledTime-start)/.323f);yield return null;}Destroy(ghost.gameObject);flying.Remove(item.id);if(canvas.gameObject.activeSelf)Draw();}
+ void Animate(TradeSession.Item item,Vector2 from,string target){flying.Add(item.id);Draw();Canvas.ForceUpdateCanvases();if(!targets.TryGetValue(target,out var destination)){flying.Remove(item.id);Draw();return;}Vector2 to=Position(destination);to.x=Mathf.Clamp(to.x,48,1714);to.y=Mathf.Clamp(to.y,-893,-171);StartCoroutine(Fly(item,from,to));}
+ IEnumerator Fly(TradeSession.Item item,Vector2 from,Vector2 to){var ghost=Box(flyLayer,"InFlight",new Rect(from.x,-from.y,158,116));Background(ghost,new Rect(0,0,158,2),gold);Background(ghost,new Rect(0,114,158,2),gold);Background(ghost,new Rect(0,0,2,116),gold);Background(ghost,new Rect(156,0,2,116),gold);float start=Time.unscaledTime;while(Time.unscaledTime-start<.323f){ghost.anchoredPosition=Vector2.Lerp(from,to,(Time.unscaledTime-start)/.323f);yield return null;}Destroy(ghost.gameObject);flying.Remove(item.id);if(canvas.gameObject.activeSelf)Draw();}
  void Buy(string id,int q,RectTransform card){Vector2 from=Position(card);if(!draft.Buy(id,q,out int slot)){status.text=draft.error;return;}Animate(draft.holds[draft.lastHold].cells[slot],from,"hold:"+draft.lastHold+":"+slot);}
  void Select(int h,int slot,RectTransform card){Vector2 from=Position(card);var item=draft.holds[h].cells[slot];if(!draft.Select(h,slot)){Draw();return;}Animate(item,from,item.bought?"market:"+item.product+":"+item.quality:"sale:"+item.id);}
- void Return(TradeSession.Sale sale,RectTransform card){Vector2 from=Position(card);if(!draft.Return(sale,out int slot)){status.text=draft.error;return;}Animate(sale.item,from,"hold:"+sale.hold+":"+slot);}
+ void Return(TradeSession.Sale sale,RectTransform card){Vector2 from=Position(card);if(!draft.Return(sale,out int slot)){status.text=draft.error;return;}draft.lastHold=sale.hold;Animate(sale.item,from,"hold:"+sale.hold+":"+slot);}
  void Commit(){if(flying.Count>0)return;if(!draft.Commit(out GameState next)){status.text=draft.error;return;}owner.ApplyTrade(next);game=owner.g;draft=new TradeSession(game);Draw();status.text="交易完成，已自动保存。";}
 }
 public partial class MaritimeGame {

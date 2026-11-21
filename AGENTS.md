@@ -17,6 +17,14 @@
 
 - Costume variants and save portraits must retain the approved V2 figure's identity, face silhouette, head-to-body ratio, neck length, shoulder width, limb proportions, waist position, pose, and painterly style. Only clothing, cloak, headwear, and accessories may vary. Never use a head-only portrait to regenerate the torso; use the approved full figure as the edit base. The user's African female proportional reference is preserved at `ArtSource/CharacterArt_V2/SaveSelection/WaistPortraits/06-user-approved-proportions.png`. Earlier enlarged-head/fashion-portrait waist renders are rejected references, not anatomy masters.
 
+# NPC art and animation (user-confirmed 2026-11-08)
+
+- NPC clothing and hair must be much simpler than protagonists: plain linen/wool garments, restrained colors, simple closures, plain short hair or a basic tied hairstyle. Avoid ornate trim, embroidery, decorative metal fasteners, layered heroic capes, elaborate curled hair and braided crowns.
+- Keep the requested two hair options and two outfit/mantle options, but distinguish them by simple cut and silhouette rather than decoration. A plain working outfit and a plain cold-weather outfit are suitable; not every outfit needs a cape.
+- Nordic V1 in `ArtSource/NPC/Nordic/V1/` failed user gait review. Its 320 exported frames and zero crop warnings do NOT mean valid four-phase animation. Do not use its gait as a motion reference or publish it as accepted art.
+- Generate and inspect one direction's four walking phases before expanding to other directions and wardrobe combinations. Trace both shoulder–elbow–wrist chains and both hip–knee–foot chains. Frames 1/3 must exchange leading arm/leg; frames 2/4 must exchange supporting and passing legs. Pixel differences, pose counts, tiny translations, and palette changes are not evidence of alternating gait.
+- Validate native-size frames, enlarged 1/3 and 2/4 comparisons, and a slow 1→2→3→4→1 loop. Record per-direction evidence and failures. Never mark uncertain/occluded limb alternation as passed. Keep independent stop frames outside the walk loop.
+
 # Trading UI terminology
 
 - Ship and warehouse cargo slots are uniformly called “货仓” in player-facing Chinese text. Use “空货仓” for empty slots; avoid “货舱”, “船舱”, and “仓位” for these slots.

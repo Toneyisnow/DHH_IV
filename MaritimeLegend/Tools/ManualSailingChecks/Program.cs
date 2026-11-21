@@ -17,6 +17,7 @@ namespace UnityEngine {
   public static float Dot(Vector2 a,Vector2 b)=>a.x*b.x+a.y*b.y;public static float Distance(Vector2 a,Vector2 b)=>(a-b).magnitude;
  }
  public static class Mathf {
+  public static float Lerp(float a,float b,float t)=>a+(b-a)*Math.Clamp(t,0,1);
   public const float PI=(float)Math.PI;
   public static float Min(float a,float b)=>Math.Min(a,b);public static float Min(params float[] v){float result=float.PositiveInfinity;foreach(var x in v)result=Math.Min(result,x);return result;}
   public static float Max(float a,float b)=>Math.Max(a,b);public static int Max(int a,int b)=>Math.Max(a,b);
@@ -25,4 +26,4 @@ namespace UnityEngine {
  }
 }
 namespace UnityEditor {public class MenuItem:Attribute {public MenuItem(string text){}}}
-class Program {static void Main(){MaritimeLegend.Editor.ManualSailingChecks.Run();}}
+class Program {static void Main(){MaritimeLegend.Editor.ManualSailingChecks.Run();MaritimeLegend.Editor.WorldSailingChecks.Run();}}

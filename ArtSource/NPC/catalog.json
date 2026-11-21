@@ -1,0 +1,81 @@
+{
+  "tool": "built-in image_gen",
+  "regions": [
+    {
+      "id": "Europe",
+      "name": "欧洲",
+      "status": "planned"
+    },
+    {
+      "id": "Nordic",
+      "name": "北欧",
+      "status": "v1-rejected-revision-required"
+    },
+    {
+      "id": "Mediterranean",
+      "name": "地中海",
+      "status": "planned"
+    },
+    {
+      "id": "Africa",
+      "name": "非洲",
+      "status": "planned"
+    },
+    {
+      "id": "Asia",
+      "name": "亚洲",
+      "status": "planned"
+    },
+    {
+      "id": "SouthAmerica",
+      "name": "南美",
+      "status": "planned"
+    }
+  ],
+  "characters": [
+    {
+      "id": "01-Male",
+      "name": "成年男性",
+      "design": "adult male dockworker, sandy blond hair and short beard",
+      "h1": "short side-parted wavy blond hair",
+      "h2": "collar-length blond hair tied low",
+      "m1": "indigo wool doublet, cream linen sleeves, brown knee breeches, cream stockings, leather boots, slate short shoulder cape",
+      "m2": "pine green long wool coat, oatmeal short shoulder mantle, brown knee breeches, cream stockings and leather boots"
+    },
+    {
+      "id": "02-Female",
+      "name": "成年女性",
+      "design": "adult Nordic female town merchant aged 30, fair skin, chestnut hair, calm friendly eyes, average practical build",
+      "h1": "chestnut hair in a braided crown",
+      "h2": "chestnut hair center-parted with a low braided bun",
+      "m1": "muted blue fitted wool bodice, cream linen blouse, ankle-length brown skirt with oatmeal apron, brown boots, short slate blue shoulder shawl",
+      "m2": "forest green wool bodice and ankle-length skirt, cream blouse, muted rust short cape tied at chest, brown boots"
+    },
+    {
+      "id": "03-Elder",
+      "name": "老人",
+      "design": "elderly Nordic male retired sailor aged 72, silver hair, trimmed white beard, kind weathered wrinkled face, broad nose, slightly stooped but mobile",
+      "h1": "short silver hair with receding temples",
+      "h2": "shoulder-length silver hair gathered into a small low tail",
+      "m1": "slate blue wool buttoned jacket, cream linen shirt, brown knee breeches and stockings, plain leather boots, oatmeal shoulder cape",
+      "m2": "long dark pine green wool coat, muted rust wool shoulder mantle, brown knee breeches and stockings, plain leather boots"
+    },
+    {
+      "id": "04-Child",
+      "name": "小孩",
+      "design": "Nordic girl child aged 9, strawberry blond hair, freckles, round youthful cheeks, innocent curious expression, clearly CHILD proportions, shorter limbs and small shoulders, fully clothed modest everyday civilian",
+      "h1": "two simple strawberry blond braids",
+      "h2": "chin-length strawberry blond bob with short side fringe",
+      "m1": "muted blue wool dress over cream linen blouse, oatmeal apron, brown stockings and ankle boots, small slate shoulder cape",
+      "m2": "muted russet wool dress over cream linen blouse, pine green short shoulder cape, brown stockings and ankle boots"
+    }
+  ],
+  "hairOptions": 2,
+  "costumeMantleOptions": 2,
+  "combinationsPerCharacter": 4,
+  "layered": false,
+  "unityVerified": false,
+  "gaitApproved": false,
+  "artDirectionApproved": false,
+  "productionSpecification": "PRODUCTION.md"
+}

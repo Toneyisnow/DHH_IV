@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "status": "regional_art_review",
+  "renderer": "ManualSeaV2Runtime",
+  "georeferenced": false,
+  "streamingReady": false,
+  "regions": [
+    {
+      "id": "north_sea",
+      "prefab": "Environment/RegionalSeasV2/north_sea/Runtime",
+      "terrain": "Models/Environment/RegionalSeasV2/north_sea/terrain",
+      "reviewUV": [
+        0.5075818036711891,
+        0.500709219858156
+      ]
+    },
+    {
+      "id": "mediterranean_sea",
+      "prefab": "Environment/RegionalSeasV2/mediterranean_sea/Runtime",
+      "terrain": "Models/Environment/RegionalSeasV2/mediterranean_sea/terrain",
+      "reviewUV": [
+        0.5211492418196328,
+        0.5645390070921986
+      ]
+    },
+    {
+      "id": "africa",
+      "prefab": "Environment/RegionalSeasV2/africa/Runtime",
+      "terrain": "Models/Environment/RegionalSeasV2/africa/terrain",
+      "reviewUV": [
+        0.3687150837988827,
+        0.5702127659574469
+      ]
+    },
+    {
+      "id": "indian_ocean",
+      "prefab": "Environment/RegionalSeasV2/indian_ocean/Runtime",
+      "terrain": "Models/Environment/RegionalSeasV2/indian_ocean/terrain",
+      "reviewUV": [
+        0.48842777334397447,
+        0.5078014184397163
+      ]
+    },
+    {
+      "id": "southeast_asia",
+      "prefab": "Environment/RegionalSeasV2/southeast_asia/Runtime",
+      "terrain": "Models/Environment/RegionalSeasV2/southeast_asia/terrain",
+      "reviewUV": [
+        0.4588986432561852,
+        0.4014184397163121
+      ]
+    },
+    {
+      "id": "east_asia",
+      "prefab": "Environment/RegionalSeasV2/east_asia/Runtime",
+      "terrain": "Models/Environment/RegionalSeasV2/east_asia/terrain",
+      "reviewUV": [
+        0.49640861931364727,
+        0.5063829787234042
+      ]
+    },
+    {
+      "id": "new_world",
+      "prefab": "Environment/RegionalSeasV2/new_world/Runtime",
+      "terrain": "Models/Environment/RegionalSeasV2/new_world/terrain",
+      "reviewUV": [
+        0.5003990422984836,
+        0.500709219858156
+      ]
+    }
+  ]
+}

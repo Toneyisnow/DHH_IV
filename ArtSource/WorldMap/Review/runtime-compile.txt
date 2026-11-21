@@ -1,0 +1,11 @@
+D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\Assets\Shared\UI\MaritimeGame.cs(10,729): warning CS0649: Field 'MaritimeGame.mapPan' is never assigned to, and will always have its default value [D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\Temp\WorldCompile\WorldCompile.csproj]
+D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\Assets\Sailing\ManualSeaPortCatalog.cs(12,60): warning CS0649: Field 'ManualSeaPortCatalog.Data.ports' is never assigned to, and will always have its default value null [D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\Temp\WorldCompile\WorldCompile.csproj]
+
+Build succeeded.
+
+D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\Assets\Shared\UI\MaritimeGame.cs(10,729): warning CS0649: Field 'MaritimeGame.mapPan' is never assigned to, and will always have its default value [D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\Temp\WorldCompile\WorldCompile.csproj]
+D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\Assets\Sailing\ManualSeaPortCatalog.cs(12,60): warning CS0649: Field 'ManualSeaPortCatalog.Data.ports' is never assigned to, and will always have its default value null [D:\SourceCode\Git\toneyisnow\DHH_IV\MaritimeLegend\Temp\WorldCompile\WorldCompile.csproj]
+    2 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:04.16

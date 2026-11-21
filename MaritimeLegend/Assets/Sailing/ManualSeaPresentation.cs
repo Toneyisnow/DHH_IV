@@ -8,8 +8,11 @@ public partial class MaritimeGame {
  internal Vector2 SeaCamera=>seaCamera;
  internal bool HasManualSeaTarget=>seaHasTarget;
  internal Vector2 SeaPosition=>new Vector2((float)s.seaX,(float)s.seaY);
- void OnDestroy(){DisposeLanguages();if(indianOcean!=null)indianOcean.Dispose();}
+ void OnDestroy(){DisposeLanguages();if(indianOcean!=null)indianOcean.Dispose();if(worldSea!=null)worldSea.Dispose();}
  internal void EnsureManualSea() {
+  if(g.StreamedSailing||s.sailing.manualMapId==WorldMap.Id||(string.IsNullOrEmpty(s.sailing.manualMapId)&&s.sailing.preferWorldMap)){EnsureWorldSea();return;}
+  if(g.RestoreRegionalSailing())Notify("已恢复原手动航海画面；世界试验航行位置已保留，航程与物资不变。");
+  if(worldSea!=null)worldSea.SetActive(false);g.WorldStreamingBlocked=false;
   if(indianOcean==null){
    indianOcean=new ManualSeaV2Runtime(transform);
    var coastBytes=Resources.Load<TextAsset>("Environment/SoutheastAsiaV2/coast-distance").bytes;
@@ -29,7 +32,7 @@ public partial class MaritimeGame {
     var spawn=port.Spawn;
     if(seaCoast.Distance(seaCoast.Pixels(spawn))<18)throw new System.InvalidOperationException("Departure berth is not navigable: "+port.name);
     s.sailing.manualMapId="southeast_asia_v2";s.sailing.manualSpawnPort=port.name;s.sailing.manualSpawnX=spawn.x;s.sailing.manualSpawnY=spawn.y;
-    s.sailing.manualYaw=port.DepartureYaw;s.sailing.manualZoom=indianOcean.DepartureZoom;s.seaX=spawn.x;s.seaY=spawn.y;
+    s.sailing.manualYaw=0;s.sailing.manualZoom=indianOcean.DepartureZoom;s.seaX=spawn.x;s.seaY=spawn.y;
     var land=ManualSeaV2Runtime.UV(port.Position);
     s.heading=System.Math.Atan2(spawn.y-land.y,spawn.x-land.x);
     s.sailing.manualFollowers=null;g.SetSeaRegion("southeast_asia");
@@ -59,11 +62,13 @@ public partial class MaritimeGame {
  }
  internal bool SetManualSeaTarget(Vector2 pointer) {
   EnsureManualSea();if(pointer.y<190||pointer.y>930||pointer.x<0||pointer.x>1920||OverSailingInstruments(pointer))return false;
+  if(IsWorldSea){if(!worldSea.TryUnproject(pointer,out seaTarget))return false;seaHasTarget=true;seaStopped=false;return true;}
   if(!indianOcean.TryUnproject(pointer,out seaTarget))return false;seaTarget.x=Mathf.Clamp(seaTarget.x,.001f,.999f);seaTarget.y=Mathf.Clamp(seaTarget.y,.001f,.999f);
   seaHasTarget=true;seaStopped=false;return true;
  }
  internal void TickManualSea(double seconds) {
   EnsureManualSea();seaAnimationClock+=(float)seconds;
+  if(IsWorldSea){TickWorldSea(seconds);return;}
   indianOcean.AdvanceWeather(s.sailing,s.wind,seconds,c.balance.navigation.windSpeed*4*c.balance.navigation.minSailSpeed*.02);
   if(!LiveGui.PointerOverControl&&!OverSailingInstruments(LiveGui.Mouse)){indianOcean.Orbit(Input.GetMouseButton(1)?Input.GetAxis("Mouse X"):0,Input.mouseScrollDelta.y);s.sailing.manualYaw=indianOcean.Yaw;s.sailing.manualZoom=indianOcean.Zoom;}
   // Simulate the whole chain in bounded steps, independently of GUI repaint frequency.
@@ -78,16 +83,16 @@ public partial class MaritimeGame {
   indianOcean.Follow(SeaPosition);indianOcean.Reveal(s.sailing,SeaPosition);seaCamera=SeaPosition;
  }
  void ManualSeaBackdrop() {
-  EnsureManualSea();indianOcean.Render(s,throttle);
+  EnsureManualSea();if(IsWorldSea){WorldSeaBackdrop();return;}indianOcean.Render(s,throttle);
   GUI.DrawTexture(new Rect(0,0,1920,1080),indianOcean.Image,ScaleMode.StretchToFill);
   if(seaHasTarget){var p=indianOcean.Project(seaTarget);if(p.y>190&&p.y<930&&p.x>20&&p.x<1900){
    float radius=18+Mathf.Sin(Time.time*3)*3;for(int k=0;k<24;k++){float a=k*Mathf.PI/12,b=(k+1)*Mathf.PI/12;Line(p+new Vector2(Mathf.Cos(a),Mathf.Sin(a)*.5f)*radius,p+new Vector2(Mathf.Cos(b),Mathf.Sin(b)*.5f)*radius,gold,2);}Label(p.x+24,p.y-20,140,35,"航行目标",small);}}
  }
 
- internal Vector2 ProjectManualSea(Vector2 point)=>indianOcean.Project(point);
- internal float ManualSeaZoom=>indianOcean.Zoom;
- internal float ManualSeaPitch=>indianOcean.Pitch;
- internal Vector2 UnprojectManualSea(Vector2 point)=>indianOcean.Unproject(point);
+ internal Vector2 ProjectManualSea(Vector2 point)=>IsWorldSea?worldSea.Project(point):indianOcean.Project(point);
+ internal float ManualSeaZoom=>IsWorldSea?worldSea.Zoom:indianOcean.Zoom;
+ internal float ManualSeaPitch=>IsWorldSea?worldSea.Pitch:indianOcean.Pitch;
+ internal Vector2 UnprojectManualSea(Vector2 point)=>IsWorldSea?(worldSea.TryUnproject(point,out var p)?p:SeaPosition):indianOcean.Unproject(point);
  internal void SetIndianReview(Vector2 center,float yaw,float zoom){EnsureManualSea();s.seaX=center.x;s.seaY=center.y;s.sailing.manualFollowers=null;EnsureManualSea();seaStopped=true;seaHasTarget=false;indianOcean.SetView(yaw,zoom);indianOcean.Center(center);}
  internal void CaptureIndianMap(string path)=>indianOcean.Capture(path);
 }

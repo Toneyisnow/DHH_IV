@@ -30,7 +30,7 @@ namespace MaritimeLegend {public partial class MaritimeGame {
    var old=(int[])fog.tiles.Clone();fog.Reveal(180,-80);fog.Reveal(0,0,12);
    V2Assert(fog.tiles.Zip(old,(a,b)=>a>=b).All(x=>x),"exploration is monotonic");
    V2Assert(JsonUtility.FromJson<SeaExploration>(JsonUtility.ToJson(fog)).tiles.SequenceEqual(fog.tiles),"fog JSON round trip");
-   s=GameService.New(c,0,0,"休闲",StateFactory.Appearance(c),"V2 integration test",42);s.pendingEvents.Clear();g=new GameService(c,s);g.Depart(1);s.sailing.cloudSeed=4227;page="航海";paused=true;
+   s=GameService.New(c,0,0,"休闲",StateFactory.Appearance(c),"V2 integration test",42);s.pendingEvents.Clear();g=new GameService(c,s);s.sailing.preferWorldMap=false;g.Depart(1);s.sailing.cloudSeed=4227;page="航海";paused=true;
   }catch(Exception e){Debug.LogException(e);Application.Quit(1);yield break;}
   yield return new WaitForSecondsRealtime(3);
   try{

@@ -1,0 +1,13 @@
+const fs=require('node:fs'),path=require('node:path');
+const root=__dirname;
+const checksFile=path.join(root,'checks.json'),checks=JSON.parse(fs.readFileSync(checksFile,'utf8'));
+Object.assign(checks,{status:'rejected-gait-and-art-direction',artDirectionApproved:false,gaitApproved:false,structuralChecksOnly:true,gaitReview:'Audit/REVIEW.md'});
+fs.writeFileSync(checksFile,JSON.stringify(checks,null,2));
+const catalogFile=path.join(root,'../../catalog.json'),catalog=JSON.parse(fs.readFileSync(catalogFile,'utf8'));
+catalog.regions.find(r=>r.id==='Nordic').status='v1-rejected-revision-required';catalog.artDirectionApproved=false;catalog.gaitApproved=false;catalog.productionSpecification='PRODUCTION.md';
+fs.writeFileSync(catalogFile,JSON.stringify(catalog,null,2));
+const page=path.join(root,'preview.html');let html=fs.readFileSync(page,'utf8');
+html=html.replace('ART REVIEW V1','V1 · REVIEW FAILED');
+html=html.replace('这是美术预览版：部分迈腿和摆臂仍需精修，未接入 Unity；换装通过完整图集切换。','V1 复审不合格：服装与发型过于精致；多套动作重复半周期，尚非有效四帧行走。仅保留问题对照，未接入 Unity。');
+html=html.replace('<a href="README.md">制作说明</a>','<a href="Audit/REVIEW.md">步态问题复审</a> · <a href="../../PRODUCTION.md">修订制作规范</a> · <a href="README.md">制作说明</a>');
+fs.writeFileSync(page,html);console.log('V1 marked rejected in checks, catalog and preview. Original generated art preserved.');

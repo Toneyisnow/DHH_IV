@@ -5,6 +5,12 @@ namespace MaritimeLegend.Domain {
         public int version; public string regionId,mode="normal",backgroundId="";
         // Additive regional presentation state; old saves start at a new safe Indian anchorage.
         public string manualMapId="",manualSpawnPort="";
+        public bool preferWorldMap=true;
+        public PreviousManualVoyage suspendedWorldVoyage;
+        public int worldCoordinateVersion;
+        public PreviousManualVoyage previousManualVoyage;
+        public List<WorldExploredChunk> worldExploration=new List<WorldExploredChunk>();
+        public List<StreamedHex> streamedExploration=new List<StreamedHex>();
         public float manualSpawnX,manualSpawnY,manualYaw,manualZoom=70;
         public ManualFollowerState[] manualFollowers;
         public SeaExploration southeastAsiaExploration;
@@ -18,6 +24,7 @@ namespace MaritimeLegend.Domain {
         public GameCalendarState calendar=new GameCalendarState();
     }
     [Serializable] public class ManualFollowerState { public double x,y,heading; }
+    [Serializable] public class StreamedHex {public int x,y,value;}
     [Serializable] public class FleetDayState {
         public string fleetId; public long lastSettledDay; public int experience;
         public bool shortage; public double foodSpent,waterSpent,energySpent;

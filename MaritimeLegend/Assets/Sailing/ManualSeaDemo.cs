@@ -9,7 +9,7 @@ public sealed class ManualSeaDemo : MonoBehaviour {
  [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]static void Boot(){var args=Environment.GetCommandLineArgs();if(args.Contains("-manualSeaDemo")||args.Contains("-manualSeaSmoke"))new GameObject("Manual sailing preview").AddComponent<ManualSeaDemo>();}
  void Start(){DontDestroyOnLoad(gameObject);verify=Environment.GetCommandLineArgs().Contains("-manualSeaSmoke");game=FindAnyObjectByType<MaritimeGame>();
   string root=Path.GetFullPath(Path.Combine(Application.dataPath,"..","ManualSeaUserData"));Directory.CreateDirectory(root);SaveStore.TestDirectory=root;UserDataPaths.TestRoot=root;
-  game.s=GameService.New(game.c,0,0,"休闲",StateFactory.Appearance(game.c),"印度洋试航",42);game.g=new GameService(game.c,game.s);game.s.pendingEvents.Clear();game.g.Depart(1);game.Change("航海");game.EnsureManualSea();
+  game.s=GameService.New(game.c,0,0,"休闲",StateFactory.Appearance(game.c),"印度洋试航",42);game.g=new GameService(game.c,game.s);game.s.pendingEvents.Clear();game.s.sailing.preferWorldMap=false;game.g.Depart(1);game.Change("航海");game.EnsureManualSea();
   if(verify){LiveGui.Camera.targetTexture=new RenderTexture(1920,1080,24);LiveGui.Camera.targetTexture.Create();}
  }
  string Evidence(string name){var dir=Path.GetFullPath(Path.Combine(Application.dataPath,"..","Evidence"));Directory.CreateDirectory(dir);return Path.Combine(dir,name+".png");}

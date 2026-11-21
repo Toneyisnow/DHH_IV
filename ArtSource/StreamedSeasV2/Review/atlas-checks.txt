@@ -1,0 +1,1 @@
+PASS 1755432 shared-edge samples including east/west wrap; height, coast, forest and normal halos. Maximum shared-edge delta 0. All 19 departure berths safe.

@@ -10,6 +10,7 @@
         "dependencies": {
           "Unity.Addressables": "0.0.0.0",
           "Unity.AI.Navigation": "0.0.0.0",
+          "Unity.AI.Navigation.Editor.ConversionSystem": "0.0.0.0",
           "Unity.AI.Navigation.Updater": "0.0.0.0",
           "Unity.Burst.CodeGen": "0.0.0.0",
           "Unity.Burst": "0.0.0.0",
@@ -93,6 +94,7 @@
           "UnityEditor.TextRenderingModule": "0.0.0.0",
           "UnityEditor.TilemapModule": "0.0.0.0",
           "UnityEditor.TreeModule": "0.0.0.0",
+          "UnityEditor.UI": "1.0.0.0",
           "UnityEditor.UIAutomationModule": "0.0.0.0",
           "UnityEditor.UIBuilderModule": "0.0.0.0",
           "UnityEditor.UIElementsModule": "0.0.0.0",
@@ -204,6 +206,14 @@
       "Unity.AI.Navigation/0.0.0.0": {
         "runtime": {
           "Unity.AI.Navigation.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Unity.AI.Navigation.Editor.ConversionSystem/0.0.0.0": {
+        "runtime": {
+          "Unity.AI.Navigation.Editor.ConversionSystem.dll": {
             "assemblyVersion": "0.0.0.0",
             "fileVersion": "0.0.0.0"
           }
@@ -870,6 +880,14 @@
           "UnityEditor.TreeModule.dll": {
             "assemblyVersion": "0.0.0.0",
             "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "UnityEditor.UI/1.0.0.0": {
+        "runtime": {
+          "UnityEditor.UI.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -1632,22 +1650,6 @@
             "fileVersion": "0.0.0.0"
           }
         }
-      },
-      "Unity.AI.Navigation.Editor.ConversionSystem/0.0.0.0": {
-        "runtime": {
-          "Unity.AI.Navigation.Editor.ConversionSystem.dll": {
-            "assemblyVersion": "0.0.0.0",
-            "fileVersion": "0.0.0.0"
-          }
-        }
-      },
-      "UnityEditor.UI/1.0.0.0": {
-        "runtime": {
-          "UnityEditor.UI.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
       }
     }
   },
@@ -1663,6 +1665,11 @@
       "sha512": ""
     },
     "Unity.AI.Navigation/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Unity.AI.Navigation.Editor.ConversionSystem/0.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
@@ -2078,6 +2085,11 @@
       "sha512": ""
     },
     "UnityEditor.TreeModule/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UnityEditor.UI/1.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
@@ -2553,16 +2565,6 @@
       "sha512": ""
     },
     "UnityEngine.XRModule/0.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Unity.AI.Navigation.Editor.ConversionSystem/0.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "UnityEditor.UI/1.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

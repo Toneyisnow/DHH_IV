@@ -1,0 +1,1 @@
+PASS: real player Update, asynchronous loading, cyclic crossing, two followers, stop, rotated picking, north wall.
