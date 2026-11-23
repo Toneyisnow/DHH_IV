@@ -10,7 +10,8 @@ namespace MaritimeLegend {
  }
  public static class ManualSeaPortCatalog {
   [Serializable] sealed class Data {public ManualSeaPort[] ports;}
-  static ManualSeaPort[] ports;
+  static ManualSeaPort[] ports,worldPorts;
+  public static ManualSeaPort[] WorldAll {get{if(worldPorts==null){var asset=Resources.Load<TextAsset>("Data/StreamedSeasV2/cities");if(!asset)throw new InvalidOperationException("Missing world city catalog");worldPorts=JsonUtility.FromJson<Data>(asset.text).ports;Resources.UnloadAsset(asset);}return worldPorts;}}
   public static ManualSeaPort[] All {get{if(ports==null){var asset=Resources.Load<TextAsset>("Environment/SoutheastAsiaV2/ports");if(!asset)throw new InvalidOperationException("Missing Southeast Asia port catalog");ports=JsonUtility.FromJson<Data>(asset.text).ports;}return ports;}}
   public static ManualSeaPort Departure(int gamePortId,string name){foreach(var p in All)if((p.gamePortId>=0&&p.gamePortId==gamePortId)||p.name==name)return p;return null;}
  }

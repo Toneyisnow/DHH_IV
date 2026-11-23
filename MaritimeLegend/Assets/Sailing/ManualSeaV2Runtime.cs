@@ -15,7 +15,7 @@ public sealed class ManualSeaV2Runtime : IDisposable {
  readonly Color[] pixels=new Color[SeaExploration.Width*SeaExploration.Height];
  float minimumZoom=8,maximumZoom=120;
  public float DepartureZoom=>Mathf.Min(maximumZoom,minimumZoom+2);
- public float SightRadius=72; float lastSight=-1;
+ public float SightRadius=72;public float CitySightRadius=36; float lastSight=-1;
  SeaExploration knowledge; Vector3 lastRevealPosition=new Vector3(float.PositiveInfinity,0,0);
  public RenderTexture Image {get;}
  public Camera View=>camera;
@@ -69,7 +69,7 @@ public sealed class ManualSeaV2Runtime : IDisposable {
  public void Reveal(SailingState state,Vector2 position){
   var data=state.southeastAsiaExploration??(state.southeastAsiaExploration=new SeaExploration());var p=World(position);
   bool rebound=knowledge!=data;if(!rebound&&(p-lastRevealPosition).sqrMagnitude<.000001f&&lastSight==SightRadius)return;knowledge=data;lastRevealPosition=p;lastSight=SightRadius;
-  if(data.Reveal(p.x,p.z,SightRadius)||rebound){for(int i=0;i<pixels.Length;i++){float a=data.tiles[i]==2?0:data.tiles[i]==1?.4f:1;pixels[i]=new Color(a,a,a,1);}exploration.SetPixels(pixels);exploration.Apply(false);}
+  if(data.Reveal(p.x,p.z,SightRadius)||rebound){for(int i=0;i<pixels.Length;i++){float a=SeaExploration.FogOpacity(data.tiles[i]);pixels[i]=new Color(a,a,a,1);}exploration.SetPixels(pixels);exploration.Apply(false);}
  }
  public void AdvanceWeather(SailingState state,double wind,double seconds,double speed)=>cloudLayer.AdvanceWeather(state,wind,seconds,speed);
  public void Render(GameState state,float opening){
@@ -92,7 +92,7 @@ public sealed class ManualSeaV2Runtime : IDisposable {
    var sky=environment.skies[(int)environment.mode];
    fog.SetFloat("_FogSkyMode",sky.GetFloat("_Mode"));fog.SetVector("_FogSunDirection",sky.GetVector("_SunDirection"));
    fog.SetFloat("_FogStarDensity",sky.GetFloat("_StarDensity"));fog.SetFloat("_FogStarBrightness",sky.GetFloat("_StarBrightness"));
-   ports?.Render(knowledge,environment.mode);cloudLayer.Render(-environment.sun.transform.forward);DrawTerrain?.Invoke(camera,water,instances);instances.Render();camera.Render();
+   ports?.Render(knowledge,environment.mode,World(position),CitySightRadius);cloudLayer.Render(-environment.sun.transform.forward);DrawTerrain?.Invoke(camera,water,instances);instances.Render();camera.Render();
   }finally{Shader.SetGlobalFloat("_SeaCloudEnabled",0);RenderSettings.skybox=oldSky;RenderSettings.ambientLight=ambient;RenderSettings.ambientMode=ambientMode;RenderSettings.sun=sun;RenderSettings.fog=oldFog;}
  }
  public void SetActive(bool value){if(root.activeSelf!=value)root.SetActive(value);}

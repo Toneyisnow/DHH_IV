@@ -14,7 +14,7 @@ namespace MaritimeLegend {public partial class MaritimeGame {
   if(worldSea==null)worldSea=new StreamedSeaRuntime(transform);
   if(!g.StreamedSailing){g.EnterStreamedSailing(worldSea.Map);worldSeaOwner=null;}
   g.WorldMapData=worldSea.Map;g.SeaNavigation=worldSea.Navigation;
-  worldSea.SightRadius=(float)g.WorldVisionRadius;
+  worldSea.SightRadius=(float)g.WorldVisionRadius;worldSea.CitySightRadius=(float)g.WorldCityDiscoveryRadius;
   var settings=SailingScene.Active;if(settings)worldSea.ConfigureCamera(settings.minimumZoom,settings.maximumZoom,settings.pitch);
   if(indianOcean!=null)indianOcean.SetActive(false);
   if(worldSeaOwner!=s){
@@ -27,7 +27,7 @@ namespace MaritimeLegend {public partial class MaritimeGame {
  void TickWorldSea(double seconds){
   worldSea.AdvanceWeather(s.sailing,s.wind,seconds,c.balance.navigation.windSpeed*4*c.balance.navigation.minSailSpeed*.02);
   worldSea.turnRate=c.balance.sailing.turnDegreesPerSecond;
-  if(!LiveGui.PointerOverControl&&!OverSailingInstruments(LiveGui.Mouse)){worldSea.Orbit(Input.GetMouseButton(1)?Input.GetAxis("Mouse X"):0,Input.mouseScrollDelta.y);s.sailing.manualYaw=worldSea.Yaw;s.sailing.manualZoom=worldSea.Zoom;}
+  if(!sailingOverviewOpen&&!LiveGui.PointerOverControl&&!OverSailingInstruments(LiveGui.Mouse)){worldSea.Orbit(Input.GetMouseButton(1)?Input.GetAxis("Mouse X"):0,Input.mouseScrollDelta.y);s.sailing.manualYaw=worldSea.Yaw;s.sailing.manualZoom=worldSea.Zoom;}
   worldSea.Update(s);g.WorldStreamingBlocked=!worldSea.NavigationReady;if(g.WorldStreamingBlocked){s.sailing.speed=0;return;}
   for(double remaining=seconds;remaining>1e-9;){double step=Math.Min(remaining,1.0/60);remaining-=step;
    double targetX=WorldMap.DeltaX(s.seaX,seaTarget.x)/960,targetY=(seaTarget.y-s.seaY)/540,distance=Math.Sqrt(targetX*targetX+targetY*targetY);
@@ -60,9 +60,9 @@ namespace MaritimeLegend {public partial class MaritimeGame {
   string status=g.WorldStreamingBlocked?"海域加载中":nav.LatitudeWall!=0?(nav.LatitudeWall>0?"已到达北纬80°航行边界":"已到达南纬80°航行边界"):seaStopped?"已停船":nav.Contact?(nav.Sliding?"沿岸慢行":"海岸阻挡"):"航行中";
   Fill(new Rect(30,958,1860,94),new Color(.025f,.09f,.13f,.88f));
   Label(52,971,1020,34,status+" · 航速 "+v.speed.ToString("0.0000")+" · 帆 "+(throttle*100).ToString("0")+"% ×"+SailingFormulas.SailPower(throttle,s.heading,s.trim,s.wind).ToString("0.00")+" · 船体 "+sh.hull.ToString("0")+" · 粮 "+sh.food.ToString("0.0")+" · 水 "+sh.water.ToString("0.0"),small);
-  Label(52,1011,1050,32,"左键航行 · 右键水平环绕 · 滚轮缩放 · 空格停船 · W/S 收放帆 · A/D 调帆",small);
+  Label(52,1011,1050,32,"左键航行 · 右键水平环绕 · 滚轮缩放 · 空格停船 · W/S 收放帆 · A/D 调帆 · Tab 海域/世界地图",small);
   if(Btn(1080,976,190,56,seaStopped?"继续航行":"停船"))seaStopped=!seaStopped;
-  WorldPort nearest=null;double best=WorldMap.PortRadius;foreach(var p in worldSea.Map.ports){double d=WorldMap.Distance(s.seaX,s.seaY,p.x,p.y);if(d<=best){best=d;nearest=p;}}
+  WorldPort nearest=null;double best=WorldMap.PortRadius;foreach(var p in worldSea.Map.ports){double d=WorldMap.Distance(s.seaX,s.seaY,p.x,p.y);if(d<=best&&(s.discovered.Contains(p.id)||s.visited.Contains(p.id)||d<g.WorldCityDiscoveryRadius)){best=d;nearest=p;}}
   if(Btn(1290,976,280,56,nearest==null?"靠近港口后入港":"入港 · "+nearest.name,nearest!=null&&!g.WorldStreamingBlocked)){
    if(nearest.id==s.seaFrom){s.city=s.seaFrom;s.atSea=false;v.speed=0;g.SetSeaRegion(c.sailingDefaults.portRegions[s.city]);Change("城市");}
    else{s.seaTo=nearest.id;Notify(g.Arrive());if(!s.atSea)Change("城市");}

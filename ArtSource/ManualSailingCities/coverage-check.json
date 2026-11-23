@@ -1,0 +1,121 @@
+{
+  "total": 19,
+  "coordinates": 19,
+  "layouts": 19,
+  "cities": [
+    {
+      "id": 0,
+      "name": "里斯本",
+      "layout": "lisbon",
+      "nearestLandDistance": 16.12
+    },
+    {
+      "id": 1,
+      "name": "塞维利亚",
+      "layout": "seville",
+      "nearestLandDistance": 14.56
+    },
+    {
+      "id": 2,
+      "name": "威尼斯",
+      "layout": "venice",
+      "nearestLandDistance": 14.14
+    },
+    {
+      "id": 3,
+      "name": "亚历山大",
+      "layout": "alexandria",
+      "nearestLandDistance": 42.76
+    },
+    {
+      "id": 4,
+      "name": "伊斯坦布尔",
+      "layout": "istanbul",
+      "nearestLandDistance": 14.56
+    },
+    {
+      "id": 5,
+      "name": "果阿",
+      "layout": "goa",
+      "nearestLandDistance": 14.42
+    },
+    {
+      "id": 6,
+      "name": "马六甲",
+      "layout": "malacca",
+      "nearestLandDistance": 14.42
+    },
+    {
+      "id": 7,
+      "name": "杭州",
+      "layout": "hangzhou",
+      "nearestLandDistance": 15.62
+    },
+    {
+      "id": 8,
+      "name": "马尼拉",
+      "layout": "manila",
+      "nearestLandDistance": 34.99
+    },
+    {
+      "id": 9,
+      "name": "巴达维亚",
+      "layout": "batavia",
+      "nearestLandDistance": 15.62
+    },
+    {
+      "id": 10,
+      "name": "巨港",
+      "layout": "palembang",
+      "nearestLandDistance": 14.14
+    },
+    {
+      "id": 11,
+      "name": "泗水",
+      "layout": "surabaya",
+      "nearestLandDistance": 14.14
+    },
+    {
+      "id": 12,
+      "name": "文莱",
+      "layout": "brunei",
+      "nearestLandDistance": 14.42
+    },
+    {
+      "id": 13,
+      "name": "望加锡",
+      "layout": "makassar",
+      "nearestLandDistance": 14.14
+    },
+    {
+      "id": 14,
+      "name": "万鸦老",
+      "layout": "manado",
+      "nearestLandDistance": 40.2
+    },
+    {
+      "id": 15,
+      "name": "德尔纳特",
+      "layout": "ternate",
+      "nearestLandDistance": 15.23
+    },
+    {
+      "id": 16,
+      "name": "安汶",
+      "layout": "ambon",
+      "nearestLandDistance": 15.23
+    },
+    {
+      "id": 17,
+      "name": "嘉定",
+      "layout": "giadinh",
+      "nearestLandDistance": 14.56
+    },
+    {
+      "id": 18,
+      "name": "大城",
+      "layout": "ayutthaya",
+      "nearestLandDistance": 14.56
+    }
+  ]
+}

@@ -5,13 +5,17 @@ namespace MaritimeLegend {
   void OrdinarySailingInput(double seconds) {
    if(g.DialogueOpen||settingsOpen||confirm!=""||s.pendingEvents.Count>0||g.PromptedEncounter!=null)return;
    EnsureManualSea();
+   if(Input.GetKeyDown(KeyCode.Tab))sailingOverviewMode=(SailingOverviewMode)(((int)sailingOverviewMode+1)%3);
+   if(!sailingOverviewOpen){
    if(Input.GetMouseButtonDown(0)&&!LiveGui.PointerOverControl)SetManualSeaTarget(LiveGui.Mouse);
    if(Input.GetKeyDown(KeyCode.Space))seaStopped=!seaStopped;
    double axis=(Input.GetKey(KeyCode.D)||Input.GetKey(KeyCode.RightArrow)?1:0)-(Input.GetKey(KeyCode.A)||Input.GetKey(KeyCode.LeftArrow)?1:0);
    ApplyManualSailInput(axis,seconds,Input.GetKeyDown(KeyCode.R));
    if(Input.GetKey(KeyCode.W))throttle=Mathf.Min(1,throttle+(float)seconds);
    if(Input.GetKey(KeyCode.S))throttle=Mathf.Max(0,throttle-(float)seconds);
+   }
    TickManualSea(seconds);
+   g.DiscoverNearbyCities();
    foreach(var e in s.sailing.encounters)if(g.ContactSeaEncounter(e.instanceId)){Save(true);break;}
   }
  }

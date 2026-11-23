@@ -1,0 +1,137 @@
+{
+  "ports": [
+    {
+      "id": "malacca",
+      "name": "马六甲",
+      "gamePortId": 6,
+      "height": 13.0,
+      "aspect": 1.242798353909465
+    },
+    {
+      "id": "manila",
+      "name": "马尼拉",
+      "gamePortId": 8,
+      "height": 13.0,
+      "aspect": 1.2284263959390862
+    },
+    {
+      "id": "batavia",
+      "name": "巴达维亚",
+      "gamePortId": 9,
+      "height": 13.0,
+      "aspect": 1.276008492569002
+    },
+    {
+      "id": "palembang",
+      "name": "巨港",
+      "gamePortId": 10,
+      "height": 13.0,
+      "aspect": 1.202020202020202
+    },
+    {
+      "id": "surabaya",
+      "name": "泗水",
+      "gamePortId": 11,
+      "height": 13.0,
+      "aspect": 1.287344398340249
+    },
+    {
+      "id": "brunei",
+      "name": "文莱",
+      "gamePortId": 12,
+      "height": 13.0,
+      "aspect": 1.1798631476050832
+    },
+    {
+      "id": "makassar",
+      "name": "望加锡",
+      "gamePortId": 13,
+      "height": 13.0,
+      "aspect": 1.2554744525547445
+    },
+    {
+      "id": "manado",
+      "name": "万鸦老",
+      "gamePortId": 14,
+      "height": 13.0,
+      "aspect": 1.1163873370577282
+    },
+    {
+      "id": "ternate",
+      "name": "德尔纳特",
+      "gamePortId": 15,
+      "height": 13.0,
+      "aspect": 1.1861137897782064
+    },
+    {
+      "id": "ambon",
+      "name": "安汶",
+      "gamePortId": 16,
+      "height": 13.0,
+      "aspect": 1.155844155844156
+    },
+    {
+      "id": "giadinh",
+      "name": "嘉定",
+      "gamePortId": 17,
+      "height": 13.0,
+      "aspect": 1.212655601659751
+    },
+    {
+      "id": "ayutthaya",
+      "name": "大城",
+      "gamePortId": 18,
+      "height": 13.0,
+      "aspect": 1.0676552363299352
+    },
+    {
+      "id": "hangzhou",
+      "name": "杭州",
+      "gamePortId": 7,
+      "height": 13,
+      "aspect": 1.55
+    },
+    {
+      "id": "lisbon",
+      "name": "里斯本",
+      "gamePortId": 0,
+      "height": 13,
+      "aspect": 1.55
+    },
+    {
+      "id": "seville",
+      "name": "塞维利亚",
+      "gamePortId": 1,
+      "height": 13,
+      "aspect": 1.55
+    },
+    {
+      "id": "venice",
+      "name": "威尼斯",
+      "gamePortId": 2,
+      "height": 13,
+      "aspect": 1.55
+    },
+    {
+      "id": "alexandria",
+      "name": "亚历山大",
+      "gamePortId": 3,
+      "height": 13,
+      "aspect": 1.55
+    },
+    {
+      "id": "istanbul",
+      "name": "伊斯坦布尔",
+      "gamePortId": 4,
+      "height": 13,
+      "aspect": 1.55
+    },
+    {
+      "id": "goa",
+      "name": "果阿",
+      "gamePortId": 5,
+      "height": 13,
+      "aspect": 1.55
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "buildings": [
+    {
+      "x": 0,
+      "z": -0.2,
+      "w": 0.28,
+      "d": 0.24,
+      "h": 0.3,
+      "tiers": 2,
+      "tower": true,
+      "stilts": false
+    },
+    {
+      "x": -0.27,
+      "z": -0.15,
+      "w": 0.19,
+      "d": 0.18,
+      "h": 0.19,
+      "tiers": 2,
+      "tower": false,
+      "stilts": false
+    },
+    {
+      "x": 0.28,
+      "z": -0.12,
+      "w": 0.18,
+      "d": 0.2,
+      "h": 0.2,
+      "tiers": 2,
+      "tower": false,
+      "stilts": false
+    },
+    {
+      "x": -0.27,
+      "z": 0.15,
+      "w": 0.2,
+      "d": 0.18,
+      "h": 0.16,
+      "tiers": 1,
+      "tower": false,
+      "stilts": false
+    },
+    {
+      "x": 0,
+      "z": 0.15,
+      "w": 0.22,
+      "d": 0.18,
+      "h": 0.18,
+      "tiers": 1,
+      "tower": false,
+      "stilts": false
+    },
+    {
+      "x": 0.28,
+      "z": 0.17,
+      "w": 0.18,
+      "d": 0.18,
+      "h": 0.16,
+      "tiers": 1,
+      "tower": false,
+      "stilts": false
+    }
+  ],
+  "wall": [
+    0.84,
+    0.79,
+    0.64
+  ],
+  "roof": [
+    0.22,
+    0.29,
+    0.31
+  ],
+  "palms": 0
+}

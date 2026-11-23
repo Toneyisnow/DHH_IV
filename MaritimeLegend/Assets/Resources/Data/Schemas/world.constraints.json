@@ -84,6 +84,12 @@
       "integer": true,
       "minimum": 0,
       "maximum": 2147483647
+    },
+    {
+      "name": "cityDiscoveryVisionFraction",
+      "integer": false,
+      "minimum": 0.01,
+      "maximum": 1
     }
   ]
 }

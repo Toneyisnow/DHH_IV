@@ -8,7 +8,7 @@ public partial class MaritimeGame {
  internal Vector2 SeaCamera=>seaCamera;
  internal bool HasManualSeaTarget=>seaHasTarget;
  internal Vector2 SeaPosition=>new Vector2((float)s.seaX,(float)s.seaY);
- void OnDestroy(){DisposeLanguages();if(indianOcean!=null)indianOcean.Dispose();if(worldSea!=null)worldSea.Dispose();}
+ void OnDestroy(){sailingOverview?.Dispose();DisposeLanguages();if(indianOcean!=null)indianOcean.Dispose();if(worldSea!=null)worldSea.Dispose();}
  internal void EnsureManualSea() {
   if(g.StreamedSailing||s.sailing.manualMapId==WorldMap.Id||(string.IsNullOrEmpty(s.sailing.manualMapId)&&s.sailing.preferWorldMap)){EnsureWorldSea();return;}
   if(g.RestoreRegionalSailing())Notify("已恢复原手动航海画面；世界试验航行位置已保留，航程与物资不变。");
@@ -58,10 +58,12 @@ public partial class MaritimeGame {
    }
   }
   indianOcean.SightRadius=Mathf.Clamp((float)g.ManualVisionRadius*960,12,480);
+  g.RegionalPortDistance=id=>{var port=ManualSeaPortCatalog.Departure(id,"");return port==null?double.PositiveInfinity:Vector3.Distance(ManualSeaV2Runtime.World(SeaPosition),ManualSeaV2Runtime.World(port.Spawn));};
+  indianOcean.CitySightRadius=indianOcean.SightRadius*(float)g.CityDiscoveryVisionFraction;
   g.SeaNavigation=seaCoast;
  }
  internal bool SetManualSeaTarget(Vector2 pointer) {
-  EnsureManualSea();if(pointer.y<190||pointer.y>930||pointer.x<0||pointer.x>1920||OverSailingInstruments(pointer))return false;
+  EnsureManualSea();if(sailingOverviewOpen)return false;if(pointer.y<190||pointer.y>930||pointer.x<0||pointer.x>1920||OverSailingInstruments(pointer))return false;
   if(IsWorldSea){if(!worldSea.TryUnproject(pointer,out seaTarget))return false;seaHasTarget=true;seaStopped=false;return true;}
   if(!indianOcean.TryUnproject(pointer,out seaTarget))return false;seaTarget.x=Mathf.Clamp(seaTarget.x,.001f,.999f);seaTarget.y=Mathf.Clamp(seaTarget.y,.001f,.999f);
   seaHasTarget=true;seaStopped=false;return true;
@@ -70,7 +72,7 @@ public partial class MaritimeGame {
   EnsureManualSea();seaAnimationClock+=(float)seconds;
   if(IsWorldSea){TickWorldSea(seconds);return;}
   indianOcean.AdvanceWeather(s.sailing,s.wind,seconds,c.balance.navigation.windSpeed*4*c.balance.navigation.minSailSpeed*.02);
-  if(!LiveGui.PointerOverControl&&!OverSailingInstruments(LiveGui.Mouse)){indianOcean.Orbit(Input.GetMouseButton(1)?Input.GetAxis("Mouse X"):0,Input.mouseScrollDelta.y);s.sailing.manualYaw=indianOcean.Yaw;s.sailing.manualZoom=indianOcean.Zoom;}
+  if(!sailingOverviewOpen&&!LiveGui.PointerOverControl&&!OverSailingInstruments(LiveGui.Mouse)){indianOcean.Orbit(Input.GetMouseButton(1)?Input.GetAxis("Mouse X"):0,Input.mouseScrollDelta.y);s.sailing.manualYaw=indianOcean.Yaw;s.sailing.manualZoom=indianOcean.Zoom;}
   // Simulate the whole chain in bounded steps, independently of GUI repaint frequency.
   for(double remaining=seconds;remaining>1e-9;) {
    double step=System.Math.Min(remaining,1.0/60);remaining-=step;

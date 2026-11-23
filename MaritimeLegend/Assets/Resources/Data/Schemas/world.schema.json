@@ -23,7 +23,8 @@
         "windIntervalRange",
         "hoursPerDay",
         "maxCommandsPerTick",
-        "discoveryExperience"
+        "discoveryExperience",
+        "cityDiscoveryVisionFraction"
       ],
       "properties": {
         "secondsPerHour": {
@@ -95,6 +96,11 @@
           "type": "integer",
           "minimum": 0,
           "maximum": 2147483647
+        },
+        "cityDiscoveryVisionFraction": {
+          "type": "number",
+          "minimum": 0.01,
+          "maximum": 1
         }
       }
     }

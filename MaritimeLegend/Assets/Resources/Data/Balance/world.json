@@ -13,6 +13,7 @@
     "windIntervalRange": 120,
     "hoursPerDay": 24,
     "maxCommandsPerTick": 128,
-    "discoveryExperience": 10
+    "discoveryExperience": 10,
+    "cityDiscoveryVisionFraction": 0.5
   }
 }

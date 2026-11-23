@@ -30,6 +30,7 @@ public int windIntervalRange;
 public int hoursPerDay;
 public int maxCommandsPerTick;
 public int discoveryExperience;
+public double cityDiscoveryVisionFraction=.5;
 }
 [Serializable] public class EconomyParameters {
 public int minimumRawSupplyPorts;

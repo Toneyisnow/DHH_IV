@@ -6,9 +6,10 @@ public partial class MaritimeGame {
  LocalizationService sailingText;
  string SeaText(string key,params object[] args){if(sailingText==null)sailingText=new LocalizationService(c.localizationPlan);return sailingText.Text(CurrentLanguage,key,args);}
  internal void SailingView(){
-  var voyage=s.sailing;var sh=s.ships[0];var prompt=g.PromptedEncounter;bool enabled=GUI.enabled;GUI.enabled=enabled&&prompt==null;
+  if(messageTime<=0&&g.TryTakeCityDiscovery(out int discoveredCity)){Notify("发现新城市："+c.ports[discoveredCity].name);Save(true);}
+  var voyage=s.sailing;var sh=s.ships[0];var prompt=g.PromptedEncounter;bool enabled=GUI.enabled;GUI.enabled=enabled&&prompt==null&&!sailingOverviewOpen;
   ManualSeaBackdrop();
-  if(IsWorldSea){WorldSailingView();GUI.enabled=enabled;return;}
+  if(IsWorldSea){WorldSailingView();GUI.enabled=enabled;SailingOverviewUI();return;}
   var origin=new Vector2(voyage.manualSpawnX,voyage.manualSpawnY);float distance=Vector2.Distance(SeaPosition,origin);
   Fill(new Rect(32,28,440,94),new Color(.025f,.09f,.13f,.76f));Label(54,40,420,40,"东南亚 V2 · 手动航海",heading);Label(56,86,400,30,GameCalendar.Date(voyage.calendar.elapsedGameDays)+"  /  三船纵队",small);
   // Temporary manual V2 lighting controls; no saved time/weather changes.
@@ -20,7 +21,7 @@ public partial class MaritimeGame {
   if(Btn(1430,100,458,50,"返回出发水域 · "+voyage.manualSpawnPort)){seaTarget=origin;seaHasTarget=true;seaStopped=false;}
   Fill(new Rect(30,958,1860,94),new Color(.025f,.09f,.13f,.88f));
   Label(52,971,970,34,(seaStopped?"已停船":seaCoast.Contact?(seaCoast.Sliding?"沿岸慢行":"海岸阻挡"):"航行中")+"  ·  航速 "+voyage.speed.ToString("0.0000")+"  ·  帆 "+(throttle*100).ToString("0")+"% ×"+SailingFormulas.SailPower(throttle,s.heading,s.trim,s.wind).ToString("0.00")+"  ·  船体 "+sh.hull.ToString("0")+"  ·  粮 "+sh.food.ToString("0.0")+"  ·  水 "+sh.water.ToString("0.0"),small);
-  Label(52,1011,1000,32,"左键航行 · 右键水平环绕 · 滚轮缩放 · 空格停船 · W/S 收放帆 · A/D 调帆",small);
+  Label(52,1011,1000,32,"左键航行 · 右键水平环绕 · 滚轮缩放 · 空格停船 · W/S 收放帆 · A/D 调帆 · Tab 海域/世界地图",small);
   if(Btn(1080,976,190,56,seaStopped?"继续航行":"停船"))seaStopped=!seaStopped;
   if(Btn(1290,976,280,56,"结束航行 / 返回城市",distance<.025f)){
    s.atSea=false;s.city=s.seaFrom;voyage.speed=0;voyage.manualMapId="";g.SetSeaRegion(c.sailingDefaults.portRegions[s.city]);seaOwner=null;Change("城市");
@@ -31,6 +32,7 @@ public partial class MaritimeGame {
   SailingCompass();
   SailingPortTooltip();
   GUI.enabled=enabled;
+  SailingOverviewUI();
   if(prompt!=null&&!paused){Panel(new Rect(355,425,1210,300));Label(390,455,1130,110,SeaText(c.SeaEncounter(prompt.definitionId).promptKey));if(Btn(420,610,510,65,SeaText("ui.sailing.accept")))ResolveSeaPrompt(prompt,true);if(Btn(990,610,510,65,SeaText("ui.sailing.decline")))ResolveSeaPrompt(prompt,false);}
  }
  void ResolveSeaPrompt(SeaEncounterState e,bool accept){var key=g.ResolveSeaEncounter(e.instanceId,accept);Notify(SeaText(key,e.quantity>0?c.Product(e.productId).name:"",e.quantity,e.energyCost));Save(true);}

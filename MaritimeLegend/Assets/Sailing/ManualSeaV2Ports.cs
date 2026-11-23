@@ -30,16 +30,16 @@ public sealed class ManualSeaV2Ports : IDisposable {
   int ix=Mathf.Min((int)x,terrainWidth-2),iy=Mathf.Min((int)y,terrainHeight-2);
   return Mathf.Lerp(Mathf.Lerp(heights[iy*terrainWidth+ix],heights[iy*terrainWidth+ix+1],x-ix),Mathf.Lerp(heights[(iy+1)*terrainWidth+ix],heights[(iy+1)*terrainWidth+ix+1],x-ix),y-iy);
  }
- public void Render(SeaExploration explored,ManualSeaV2Environment.SkyMode mode){
+ public void Render(SeaExploration explored,ManualSeaV2Environment.SkyMode mode,Vector3 ship,float discoveryRadius){
   knowledge=explored;
-  for(int i=0;i<ports.Length;i++){var port=ports[i];SeaExploration.Hex(port.x,port.z,out int q,out int r);objects[i].SetActive(explored!=null&&explored.At(q,r)>0);}
+  for(int i=0;i<ports.Length;i++){var port=ports[i];SeaExploration.Hex(port.x,port.z,out int q,out int r);objects[i].SetActive(explored!=null&&explored.At(q,r)>0&&Vector3.Distance(ship,ManualSeaV2Runtime.World(port.Spawn))<discoveryRadius);}
   material.color=mode==ManualSeaV2Environment.SkyMode.Night?new Color(.32f,.43f,.59f):mode==ManualSeaV2Environment.SkyMode.Sunset?new Color(1,.75f,.51f):new Color(.96f,.98f,.92f);
  }
  public string Hover(Vector2 pointer){
   if(knowledge==null)return null;
   var ray=camera.ViewportPointToRay(new Vector3(pointer.x/1920,1-pointer.y/1080,0));float nearest=float.MaxValue;string name=null;
   for(int i=0;i<ports.Length;i++){
-   var port=ports[i];SeaExploration.Hex(port.x,port.z,out int q,out int r);if(knowledge.At(q,r)!=2)continue;
+   var port=ports[i];SeaExploration.Hex(port.x,port.z,out int q,out int r);if(!objects[i].activeInHierarchy||knowledge.At(q,r)!=2)continue;
    if(colliders[i].Raycast(ray,out var hit,2000)&&hit.distance<nearest&&Visible(hit.point)){nearest=hit.distance;name=port.name;}
   }return name;
  }

@@ -73,6 +73,26 @@ public static class WorldSailingChecks {
   var exactNav=new MaritimeLegend.StreamedSeaNavigation(field);field.known=false;exactNav.ResolveMove(8000,2500,8001,2500,out x,out y);Near(x,8000,"streamed unknown holds position");Check(exactNav.Loading,"streamed unknown requests wait");field.known=true;
   exactNav.ResolveMove(WorldMap.Width-.2,2560,WorldMap.Width+.2,2560,out x,out y);Check(x<.201&&x>.199,"original collision kernel across east seam");
   exactNav.ResolveMove(8000,5120,8001,5122,out x,out y);Near(y,5120,"original collision kernel polar clamp");Check(x>8000.99,"original collision kernel wall tangent");
+  // Discovery uses half of fog vision by default, persists, and only queues a first-time notice.
+  var discoveryState=GameService.New(catalog,0,0,"休闲",StateFactory.Appearance(catalog),"Discovery checks",73);
+  var discoveryGame=new GameService(catalog,discoveryState);discoveryState.pendingEvents.Clear();discoveryState.atSea=true;
+  discoveryGame.EnterWorldSailing(map);discoveryGame.WorldMapData=map;
+  var hangzhou=map.Port(7);discoveryState.discovered.Remove(7);
+  double originalFraction=catalog.balance.world.cityDiscoveryVisionFraction;
+  catalog.balance.world.cityDiscoveryVisionFraction=.5;
+  Near(discoveryGame.WorldCityDiscoveryRadius,discoveryGame.WorldVisionRadius*.5,"city visibility defaults to half fog vision");
+  discoveryState.seaY=hangzhou.y;discoveryState.seaX=hangzhou.x+discoveryGame.WorldCityDiscoveryRadius*1.01;
+  discoveryGame.DiscoverNearbyCities();Check(!discoveryState.discovered.Contains(7),"city hidden outside discovery radius");
+  discoveryState.seaX=hangzhou.x+discoveryGame.WorldCityDiscoveryRadius*.99;
+  discoveryGame.DiscoverNearbyCities();Check(discoveryState.discovered.Contains(7),"Hangzhou discovered inside radius");
+  Check(discoveryGame.TryTakeCityDiscovery(out int foundCity)&&foundCity==7,"first discovery queues city notification");
+  discoveryGame.DiscoverNearbyCities();Check(!discoveryGame.TryTakeCityDiscovery(out foundCity),"stationary ship does not repeat discovery");
+  var discoveryReload=JsonUtility.FromJson<GameState>(JsonUtility.ToJson(discoveryState));
+  var reloadedDiscoveryGame=new GameService(catalog,discoveryReload){WorldMapData=map};
+  reloadedDiscoveryGame.DiscoverNearbyCities();Check(!reloadedDiscoveryGame.TryTakeCityDiscovery(out foundCity),"save reload does not repeat discovery");
+  catalog.balance.world.cityDiscoveryVisionFraction=.25;
+  Near(discoveryGame.WorldCityDiscoveryRadius,discoveryGame.WorldVisionRadius*.25,"discovery distance is configurable");
+  catalog.balance.world.cityDiscoveryVisionFraction=originalFraction;
   Debug.Log("WORLD_SAILING_CHECKS_PASS "+checks+" assertions; all shared chunk edges, ports, cyclic movement, walls, migration and clock");
  }
 }

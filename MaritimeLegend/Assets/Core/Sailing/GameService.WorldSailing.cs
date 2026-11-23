@@ -16,10 +16,13 @@ public partial class GameService {
  public bool WorldStreamingBlocked {get;set;}
  public WorldMapManifest WorldMapData {get;set;}
  public double WorldVisionRadius=>Math.Max(12,Math.Min(480,ManualVisionRadius*WorldMap.LegacySpeedScale));
+ public double CityDiscoveryVisionFraction=>Clamp(C.balance.world.cityDiscoveryVisionFraction,0.01,1);
+ public double WorldCityDiscoveryRadius=>WorldVisionRadius*CityDiscoveryVisionFraction;
+ public Func<int,double> RegionalPortDistance;
  bool PortInManualVision(int id,double legacyVision){
-  if(WorldSailing){if(WorldMapData==null)return false;var p=WorldMapData.Port(id);return WorldMap.Distance(S.seaX,S.seaY,p.x,p.y)<WorldVisionRadius;}
-  if(S.sailing.manualMapId=="indian_ocean"||S.sailing.manualMapId=="southeast_asia_v2")return false;
-  var old=C.ports[id];return Math.Sqrt(Math.Pow(old.x-S.seaX,2)+Math.Pow(old.y-S.seaY,2))<legacyVision;
+  if(WorldSailing){if(WorldMapData==null)return false;var p=WorldMapData.Port(id);return WorldMap.Distance(S.seaX,S.seaY,p.x,p.y)<WorldCityDiscoveryRadius;}
+  if(S.sailing.manualMapId=="indian_ocean"||S.sailing.manualMapId=="southeast_asia_v2")return RegionalPortDistance!=null&&RegionalPortDistance(id)<Math.Max(12,Math.Min(480,legacyVision*960))*CityDiscoveryVisionFraction;
+  var old=C.ports[id];return Math.Sqrt(Math.Pow(old.x-S.seaX,2)+Math.Pow(old.y-S.seaY,2))<legacyVision*CityDiscoveryVisionFraction;
  }
  public void EnterWorldSailing(WorldMapManifest map){
   map.Validate();WorldMapData=map;

@@ -16,7 +16,7 @@ public sealed class StreamedSeaRuntime:IDisposable {
  public WorldMapManifest Map {get;}public StreamedSeaNavigation Navigation {get;}public StreamedSeaNavigation FollowerNavigation {get;}
  public RenderTexture Image=>renderer.Image;public float Yaw=>renderer.Yaw;public float Zoom=>renderer.Zoom;public float Pitch=>renderer.Pitch;
  public bool NavigationReady {get;private set;}public int ResidentChunks=>terrain.Count;public int PendingChunks=>terrain.Pending;public int Failures=>terrain.Failures;public int Evictions=>terrain.Evictions;
- public int DisplayCount=>display.Count;public long EstimatedBytes=>terrain.Bytes;public float SightRadius=72;
+ public int DisplayCount=>display.Count;public long EstimatedBytes=>terrain.Bytes;public float SightRadius=72;public float CitySightRadius=36;
  public string Diagnostic=>$"海域 {ResidentChunks} · 加载 {PendingChunks}"+(Failures>0?$" · 重试 {Failures}":"");
  public StreamedSeaRuntime(Transform parent){
   var text=Resources.Load<TextAsset>("Data/StreamedSeasV2/atlas");if(!text)throw new InvalidOperationException("Missing streamed regional atlas");atlas=JsonUtility.FromJson<StreamedSeaAtlas>(text.text);atlas.Validate();Resources.UnloadAsset(text);
@@ -90,13 +90,13 @@ public sealed class StreamedSeaRuntime:IDisposable {
   for(int y=r-extent;y<=r+extent;y++)for(int x=q-extent;x<=q+extent;x++){double wx=SeaExploration.TileSpacing*(x+y*.5),wy=y*18,dist=Math.Sqrt((wx-focusX)*(wx-focusX)+(wy-focusY)*(wy-focusY));if(dist>SightRadius+SeaExploration.TileSpacing)continue;long key=FogKey(x,y);int value=dist<=SightRadius?2:1;
    if(!explored.TryGetValue(key,out var h)){h=new StreamedHex{x=(int)(key>>32),y=(int)key};explored.Add(key,h);state.streamedExploration.Add(h);}if(h.value<value){h.value=value;changed=true;}}
   if(!moved&&!changed)return;
-  for(int y=0;y<64;y++)for(int x=0;x<96;x++){var key=FogKey(q+x-48,r+y-32);int value=explored.TryGetValue(key,out var h)?h.value:0;float a=value==2?0:value==1?.4f:1;fog[y*96+x]=new Color(a,a,a,1);}renderer.SetExploration(fog,new Vector2(q,r));
+  for(int y=0;y<64;y++)for(int x=0;x<96;x++){var key=FogKey(q+x-48,r+y-32);int value=explored.TryGetValue(key,out var h)?h.value:0;float a=SeaExploration.FogOpacity(value);fog[y*96+x]=new Color(a,a,a,1);}renderer.SetExploration(fog,new Vector2(q,r));
  }
  public void Render(GameState state,float opening){
   Update(state);var uv=Local(state.seaX,state.seaY);viewState.seaX=uv.x;viewState.seaY=uv.y;viewState.heading=state.heading;viewState.trim=state.trim;viewState.wind=state.wind;
   viewState.sailing.cloudSeed=state.sailing.cloudSeed;viewState.sailing.cloudOffsetX=state.sailing.cloudOffsetX;viewState.sailing.cloudOffsetZ=state.sailing.cloudOffsetZ;
   for(int i=0;i<2;i++){var f=state.sailing.manualFollowers?[i];var pos=f==null?uv:Local(f.x,f.y);var proxy=viewState.sailing.manualFollowers[i];proxy.x=pos.x;proxy.y=pos.y;proxy.heading=f==null?state.heading:f.heading;}
-  ports.SetActive(true);ports.Update(Map.ports,focusX,focusY,SightRadius,renderer.SkyMode);
+  ports.SetActive(true);ports.Update(Map.ports,focusX,focusY,CitySightRadius,renderer.SkyMode);
   Shader.SetGlobalFloat("_SeaLargeWorld",1);try{renderer.Render(viewState,opening);}finally{Shader.SetGlobalFloat("_SeaLargeWorld",0);}
  }
  public string HoverPort(Vector2 pointer)=>ports.Hover(pointer);

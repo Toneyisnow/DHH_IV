@@ -6,8 +6,18 @@ public partial class GameService : IMarketService,IProductionService {
         public readonly GameWorkflow Workflow; public readonly Catalog C; public readonly GameState S; public readonly InventoryService Inventory; public readonly SkillResolver Skills; readonly QualityRoller quality;
         public GameService(Catalog c,GameState s){C=c;S=s;Skills=new SkillResolver(c);quality=new QualityRoller(c);Inventory=new InventoryService(c);EnsurePortStates();EnsureSailingState();EnsureTradeInventories();Workflow=new GameWorkflow(this);}
         public void Tick(double real,bool paused){Workflow.Advance(real,paused);}
+        readonly Queue<int> cityDiscoveries=new Queue<int>();
+        public bool TryTakeCityDiscovery(out int city){if(cityDiscoveries.Count==0){city=-1;return false;}city=cityDiscoveries.Dequeue();return true;}
+        public void DiscoverNearbyCities(){
+         if(!S.atSea)return;
+         double vision=ManualVisionRadius;
+         foreach(var port in C.ports)if(!S.discovered.Contains(port.id)&&PortInManualVision(port.id,vision)){
+          S.discovered.Add(port.id);Gain(C.balance.skills.visionSkill,C.balance.world.discoveryExperience);
+          Log("发现新城市："+port.name);cityDiscoveries.Enqueue(port.id);
+         }
+        }
         public double ManualVisionRadius=>C.balance.world.visionRadius*(1+S.skillLevels[C.balance.skills.visionSkill]*C.balance.world.visionPerLevel+(HasPartner(C.balance.partnerRoles.scout)?C.balance.world.scoutVisionBonus:0)+(HasPartner(C.balance.partnerRoles.navigator)?C.balance.world.navigatorVisionBonus:0));
-        internal void AdvanceWorld(double real){S.playSeconds+=real;AdvanceCalendar(real);S.worldHours+=real*24/C.balance.sailing.realSecondsPerGameDay;while(S.npcHours+1<=S.worldHours){S.npcHours++;MarketHour();}if(S.atSea){double vision=ManualVisionRadius;foreach(var port in C.ports){if(!S.discovered.Contains(port.id)&&PortInManualVision(port.id,vision)){S.discovered.Add(port.id);Gain(C.balance.skills.visionSkill,C.balance.world.discoveryExperience);Log("探明港口："+port.name);}}var ship=S.ships[0];ship.hull=Math.Max(1,ship.hull-real*(ship.food>0?C.balance.world.fedHullDecay:C.balance.world.starvingHullDecay));S.windTimer-=real;if(S.windTimer<=0){S.windTimer=C.balance.world.windIntervalMin+QualityRoller.Random(ref S.seed)*C.balance.world.windIntervalRange;S.wind=QualityRoller.Random(ref S.seed)*Math.PI*2;}}}
+        internal void AdvanceWorld(double real){S.playSeconds+=real;AdvanceCalendar(real);S.worldHours+=real*24/C.balance.sailing.realSecondsPerGameDay;while(S.npcHours+1<=S.worldHours){S.npcHours++;MarketHour();}if(S.atSea){DiscoverNearbyCities();var ship=S.ships[0];ship.hull=Math.Max(1,ship.hull-real*(ship.food>0?C.balance.world.fedHullDecay:C.balance.world.starvingHullDecay));S.windTimer-=real;if(S.windTimer<=0){S.windTimer=C.balance.world.windIntervalMin+QualityRoller.Random(ref S.seed)*C.balance.world.windIntervalRange;S.wind=QualityRoller.Random(ref S.seed)*Math.PI*2;}}}
         public static string QualityName(int q){return q==0?"S":q.ToString();}
         public static double Clamp(double v,double min,double max){return Math.Max(min,Math.Min(max,v));}
 }}

@@ -6,6 +6,8 @@ namespace MaritimeLegend.Domain {
   public const float Radius=12;
   public string mapId="southeast_asia_v2";
   public int[] tiles=new int[Width*Height]; // 0 unknown, 1 discovered, 2 explored; never demote.
+  // Shared by the sailing fog and the world overview: unknown is fully black.
+  public static float FogOpacity(int value)=>value==2?0:value==1?.4f:1;
   public static void Hex(double x,double z,out int q,out int r){
    double a=(Math.Sqrt(3)/3*x-z/3)/Radius,b=2*z/(3*Radius),c=-a-b;
    int ia=(int)Math.Round(a),ib=(int)Math.Round(b),ic=(int)Math.Round(c);
